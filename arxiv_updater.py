@@ -27,7 +27,7 @@ QUERY_TERMS = {
     ],
     'exclude': []
 }
-MAX_NEW_PAPERS = 50
+MAX_NEW_PAPERS = 5
 LATEST_PAPERS_COUNT = 20
 
 def extract_arxiv_id(url):
