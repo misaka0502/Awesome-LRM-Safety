@@ -69,7 +69,7 @@ def write_to_article_json(papers):
 
 if __name__ == "__main__":
     # 示例：通过标题查找论文
-    title_to_find = "o3-mini vs DeepSeek-R1: Which One is Safer?"
+    title_to_find = "Visuomotor Policy Learning via Action Diffusion"
     papers = fetch_papers_by_title(title_to_find)
     # write_to_article_json(papers)
     print(papers)

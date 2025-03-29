@@ -7,16 +7,21 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 # 配置参数
 QUERY_TERMS = {
     'include': [
-        "cat:cs",  # computer science
-        "DeepSeek-R1",
-        "DeepSeek R1",
-        "o1",
-        "o3",
-        "o3-mini",
+        "cat:cs.RO",  # computer science
+        "Reinforcement Learning",
+        "Robot",
+        "robotics",
+        "legged robot",
+        "Proximal Policy Optimization",
+        "actor critic",
         "safety",
-        "jailbreak",
-        "Long Chain-of-Thought Reasoning",
-        "CoT-enabled models",
+        "sim2real",
+        "imitation learning",
+        "model predictive control",
+        "manipulation",
+        "robot manipulation",
+        "robotic arm",
+        "manipulator"
     ],
     'exclude': []
 }
