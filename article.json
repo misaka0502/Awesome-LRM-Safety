@@ -1,0 +1,702 @@
+[
+  {
+    "title": "HS-SLAM: Hybrid Representation with Structural Supervision for Improved Dense SLAM",
+    "url": "http://arxiv.org/abs/2503.21778v1",
+    "arxiv_id": "2503.21778v1",
+    "authors": [
+      "Ziren Gong",
+      "Fabio Tosi",
+      "Youmin Zhang",
+      "Stefano Mattoccia",
+      "Matteo Poggi"
+    ],
+    "published": "2025-03-27T17:59:54+00:00",
+    "summary": "NeRF-based SLAM has recently achieved promising results in tracking and reconstruction. However, existing methods face challenges in providing sufficient scene representation, capturing structural information, and maintaining global consistency in scenes emerging significant movement or being forgotten. To this end, we present HS-SLAM to tackle these problems. To enhance scene representation capacity, we propose a hybrid encoding network that combines the complementary strengths of hash-grid, tri-planes, and one-blob, improving the completeness and smoothness of reconstruction. Additionally, we introduce structural supervision by sampling patches of non-local pixels rather than individual rays to better capture the scene structure. To ensure global consistency, we implement an active global bundle adjustment (BA) to eliminate camera drifts and mitigate accumulative errors. Experimental results demonstrate that HS-SLAM outperforms the baselines in tracking and reconstruction accuracy while maintaining the efficiency required for robotics."
+  },
+  {
+    "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+    "url": "http://arxiv.org/abs/2503.21776v1",
+    "arxiv_id": "2503.21776v1",
+    "authors": [
+      "Kaituo Feng",
+      "Kaixiong Gong",
+      "Bohao Li",
+      "Zonghao Guo",
+      "Yibing Wang",
+      "Tianshuo Peng",
+      "Benyou Wang",
+      "Xiangyu Yue"
+    ],
+    "published": "2025-03-27T17:59:51+00:00",
+    "summary": "Inspired by DeepSeek-R1's success in eliciting reasoning abilities through rule-based reinforcement learning (RL), we introduce Video-R1 as the first attempt to systematically explore the R1 paradigm for eliciting video reasoning within multimodal large language models (MLLMs). However, directly applying RL training with the GRPO algorithm to video reasoning presents two primary challenges: (i) a lack of temporal modeling for video reasoning, and (ii) the scarcity of high-quality video-reasoning data. To address these issues, we first propose the T-GRPO algorithm, which encourages models to utilize temporal information in videos for reasoning. Additionally, instead of relying solely on video data, we incorporate high-quality image-reasoning data into the training process. We have constructed two datasets: Video-R1-COT-165k for SFT cold start and Video-R1-260k for RL training, both comprising image and video data. Experimental results demonstrate that Video-R1 achieves significant improvements on video reasoning benchmarks such as VideoMMMU and VSI-Bench, as well as on general video benchmarks including MVBench and TempCompass, etc. Notably, Video-R1-7B attains a 35.8% accuracy on video spatial reasoning benchmark VSI-bench, surpassing the commercial proprietary model GPT-4o. All codes, models, data are released."
+  },
+  {
+    "title": "Optical control of orbital magnetism in magic angle twisted bilayer graphene",
+    "url": "http://arxiv.org/abs/2503.21750v1",
+    "arxiv_id": "2503.21750v1",
+    "authors": [
+      "Eylon Persky",
+      "Minhao He",
+      "Jiaqi Cai",
+      "Takashi Taniguchi",
+      "Kenji Watanabe",
+      "Xiaodong Xu",
+      "Aharon Kapitulnik"
+    ],
+    "published": "2025-03-27T17:56:23+00:00",
+    "summary": "Flat bands in graphene-based moir\\'e structures host a wide range of emerging strongly correlated and topological phenomena. Optically probing and controlling them can reveal important information such as symmetry and dynamics, but have so far been challenging due to the small energy gap compared to optical wavelengths. Here, we report near infrared optical control of orbital magnetism and associated anomalous Hall effects (AHE) in a magic angle twisted bilayer graphene (MATBG) on monolayer WSe$_2$ device. We show that the properties of the AHE, such as hysteresis and amplitude, can be controlled by light near integer moir\\'e fillings, where spontaneous ferromagnetism exists. By modulating the light helicity, we observe periodic modulation of the transverse resistance in a wide range of fillings, indicating light induced orbital magnetization through a large inverse Faraday effect. At the transition between metallic and AHE regimes, we also reveal large and random switching of the Hall resistivity, which are attributed to optical control of percolating cluster of magnetic domains. Our results open the door to optical manipulation of correlation and topology in MATBG and related structures."
+  },
+  {
+    "title": "GateLens: A Reasoning-Enhanced LLM Agent for Automotive Software Release Analytics",
+    "url": "http://arxiv.org/abs/2503.21735v1",
+    "arxiv_id": "2503.21735v1",
+    "authors": [
+      "Arsham Gholamzadeh Khoee",
+      "Shuai Wang",
+      "Yinan Yu",
+      "Robert Feldt",
+      "Dhasarathy Parthasarathy"
+    ],
+    "published": "2025-03-27T17:48:32+00:00",
+    "summary": "Ensuring the reliability and effectiveness of software release decisions is critical, particularly in safety-critical domains like automotive systems. Precise analysis of release validation data, often presented in tabular form, plays a pivotal role in this process. However, traditional methods that rely on manual analysis of extensive test datasets and validation metrics are prone to delays and high costs. Large Language Models (LLMs) offer a promising alternative but face challenges in analytical reasoning, contextual understanding, handling out-of-scope queries, and processing structured test data consistently; limitations that hinder their direct application in safety-critical scenarios. This paper introduces GateLens, an LLM-based tool for analyzing tabular data in the automotive domain. GateLens translates natural language queries into Relational Algebra (RA) expressions and then generates optimized Python code. It outperforms the baseline system on benchmarking datasets, achieving higher F1 scores and handling complex and ambiguous queries with greater robustness. Ablation studies confirm the critical role of the RA module, with performance dropping sharply when omitted. Industrial evaluations reveal that GateLens reduces analysis time by over 80% while maintaining high accuracy and reliability. As demonstrated by presented results, GateLens achieved high performance without relying on few-shot examples, showcasing strong generalization across various query types from diverse company roles. Insights from deploying GateLens with a partner automotive company offer practical guidance for integrating AI into critical workflows such as release validation. Results show that by automating test result analysis, GateLens enables faster, more informed, and dependable release decisions, and can thus advance software scalability and reliability in automotive systems."
+  },
+  {
+    "title": "ReaRAG: Knowledge-guided Reasoning Enhances Factuality of Large Reasoning Models with Iterative Retrieval Augmented Generation",
+    "url": "http://arxiv.org/abs/2503.21729v1",
+    "arxiv_id": "2503.21729v1",
+    "authors": [
+      "Zhicheng Lee",
+      "Shulin Cao",
+      "Jinxin Liu",
+      "Jiajie Zhang",
+      "Weichuan Liu",
+      "Xiaoyin Che",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "published": "2025-03-27T17:44:18+00:00",
+    "summary": "Large Reasoning Models (LRMs) exhibit remarkable reasoning abilities but rely primarily on parametric knowledge, limiting factual accuracy. While recent works equip reinforcement learning (RL)-based LRMs with retrieval capabilities, they suffer from overthinking and lack robustness in reasoning, reducing their effectiveness in question answering (QA) tasks. To address this, we propose ReaRAG, a factuality-enhanced reasoning model that explores diverse queries without excessive iterations. Our solution includes a novel data construction framework with an upper bound on the reasoning chain length. Specifically, we first leverage an LRM to generate deliberate thinking, then select an action from a predefined action space (Search and Finish). For Search action, a query is executed against the RAG engine, where the result is returned as observation to guide reasoning steps later. This process iterates until a Finish action is chosen. Benefiting from ReaRAG's strong reasoning capabilities, our approach outperforms existing baselines on multi-hop QA. Further analysis highlights its strong reflective ability to recognize errors and refine its reasoning trajectory. Our study enhances LRMs' factuality while effectively integrating robust reasoning for Retrieval-Augmented Generation (RAG)."
+  },
+  {
+    "title": "Enhancing Underwater Navigation through Cross-Correlation-Aware Deep INS/DVL Fusion",
+    "url": "http://arxiv.org/abs/2503.21727v1",
+    "arxiv_id": "2503.21727v1",
+    "authors": [
+      "Nadav Cohen",
+      "Itzik Klein"
+    ],
+    "published": "2025-03-27T17:38:43+00:00",
+    "summary": "The accurate navigation of autonomous underwater vehicles critically depends on the precision of Doppler velocity log (DVL) velocity measurements. Recent advancements in deep learning have demonstrated significant potential in improving DVL outputs by leveraging spatiotemporal dependencies across multiple sensor modalities. However, integrating these estimates into model-based filters, such as the extended Kalman filter, introduces statistical inconsistencies, most notably, cross-correlations between process and measurement noise. This paper addresses this challenge by proposing a cross-correlation-aware deep INS/DVL fusion framework. Building upon BeamsNet, a convolutional neural network designed to estimate AUV velocity using DVL and inertial data, we integrate its output into a navigation filter that explicitly accounts for the cross-correlation induced between the noise sources. This approach improves filter consistency and better reflects the underlying sensor error structure. Evaluated on two real-world underwater trajectories, the proposed method outperforms both least squares and cross-correlation-neglecting approaches in terms of state uncertainty. Notably, improvements exceed 10% in velocity and misalignment angle confidence metrics. Beyond demonstrating empirical performance, this framework provides a theoretically principled mechanism for embedding deep learning outputs within stochastic filters."
+  },
+  {
+    "title": "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "url": "http://arxiv.org/abs/2503.21720v1",
+    "arxiv_id": "2503.21720v1",
+    "authors": [
+      "Souradip Chakraborty",
+      "Sujay Bhatt",
+      "Udari Madhushani Sehwag",
+      "Soumya Suvra Ghosal",
+      "Jiahao Qiu",
+      "Mengdi Wang",
+      "Dinesh Manocha",
+      "Furong Huang",
+      "Alec Koppel",
+      "Sumitra Ganesh"
+    ],
+    "published": "2025-03-27T17:34:25+00:00",
+    "summary": "Alignment of Large Language models (LLMs) is crucial for safe and trustworthy deployment in applications. Reinforcement learning from human feedback (RLHF) has emerged as an effective technique to align LLMs to human preferences and broader utilities, but it requires updating billions of model parameters, which is computationally expensive. Controlled Decoding, by contrast, provides a mechanism for aligning a model at inference time without retraining. However, single-agent decoding approaches often struggle to adapt to diverse tasks due to the complexity and variability inherent in these tasks. To strengthen the test-time performance w.r.t the target task, we propose a mixture of agent-based decoding strategies leveraging the existing off-the-shelf aligned LLM policies. Treating each prior policy as an agent in the spirit of mixture of agent collaboration, we develop a decoding method that allows for inference-time alignment through a token-level selection strategy among multiple agents. For each token, the most suitable LLM is dynamically chosen from a pool of models based on a long-term utility metric. This policy-switching mechanism ensures optimal model selection at each step, enabling efficient collaboration and alignment among LLMs during decoding. Theoretical analysis of our proposed algorithm establishes optimal performance with respect to the target task represented via a target reward for the given off-the-shelf models. We conduct comprehensive empirical evaluations with open-source aligned models on diverse tasks and preferences, which demonstrates the merits of this approach over single-agent decoding baselines. Notably, Collab surpasses the current SoTA decoding strategy, achieving an improvement of up to 1.56x in average reward and 71.89% in GPT-4 based win-tie rate."
+  },
+  {
+    "title": "Complex Pressure Node Formation and Resonances Induced by Scatterers in a Standing-Wave Acoustic Cavity",
+    "url": "http://arxiv.org/abs/2503.21712v1",
+    "arxiv_id": "2503.21712v1",
+    "authors": [
+      "Rizwan Ullah",
+      "Andres Barrio-Zhang",
+      "Arezoo M. Ardekani"
+    ],
+    "published": "2025-03-27T17:24:41+00:00",
+    "summary": "Acoustic pressure nodes in acoustophoretic devices are crucial for applications in tissue engineering, cell analysis, and particle trapping. Typically, a single primary node forms at the half-wavelength resonance condition, while its shape and position are constrained by the dimensions of the channel. The generation of additional nodes, along with control over their positions and shapes, is highly desirable in biomedical applications and could significantly enhance particle manipulation capabilities. To explore this potential, we numerically demonstrate the formation of additional, complex-shaped, nodes alongside the primary one, by a circular scatterer within a rectangular cavity. We identify three distinct types: ring, protuberant, and crescent nodes, whose formation depends on the size of the scatterer, its placement in the middle of the channel, and its corresponding resonant frequency. The key mechanism behind this formation is the enhancement of internal reflections, increasing destructive interference to promote node generation. To achieve this, we employ three key concepts: using a low-aspect ratio channel, positioning a rigid circular scatterer in the middle of the channel, and modeling all surfaces as perfect reflectors. Furthermore, we analyze the impact of the scatterer on acoustic pressure and quality factor, which is defined as the ratio of stored acoustic energy to damped acoustic energy per cycle. We show that additional nodes emerge in the presence of a scatterer, but they come at the cost of reduced acoustic pressure and energy in the channel. In summary, this study provides information on generating complex nodes in a standing wave acoustic cavity at the fundamental frequency, which has numerous applications for particle manipulation in acoustofluidic devices."
+  },
+  {
+    "title": "Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks",
+    "url": "http://arxiv.org/abs/2503.21696v1",
+    "arxiv_id": "2503.21696v1",
+    "authors": [
+      "Wenqi Zhang",
+      "Mengna Wang",
+      "Gangao Liu",
+      "Xu Huixin",
+      "Yiwei Jiang",
+      "Yongliang Shen",
+      "Guiyang Hou",
+      "Zhe Zheng",
+      "Hang Zhang",
+      "Xin Li",
+      "Weiming Lu",
+      "Peng Li",
+      "Yueting Zhuang"
+    ],
+    "published": "2025-03-27T17:00:51+00:00",
+    "summary": "Recent advances in deep thinking models have demonstrated remarkable reasoning capabilities on mathematical and coding tasks. However, their effectiveness in embodied domains which require continuous interaction with environments through image action interleaved trajectories remains largely -unexplored. We present Embodied Reasoner, a model that extends o1 style reasoning to interactive embodied search tasks. Unlike mathematical reasoning that relies primarily on logical deduction, embodied scenarios demand spatial understanding, temporal reasoning, and ongoing self-reflection based on interaction history. To address these challenges, we synthesize 9.3k coherent Observation-Thought-Action trajectories containing 64k interactive images and 90k diverse thinking processes (analysis, spatial reasoning, reflection, planning, and verification). We develop a three-stage training pipeline that progressively enhances the model's capabilities through imitation learning, self-exploration via rejection sampling, and self-correction through reflection tuning. The evaluation shows that our model significantly outperforms those advanced visual reasoning models, e.g., it exceeds OpenAI o1, o3-mini, and Claude-3.7 by +9\\%, 24\\%, and +13\\%. Analysis reveals our model exhibits fewer repeated searches and logical inconsistencies, with particular advantages in complex long-horizon tasks. Real-world environments also show our superiority while exhibiting fewer repeated searches and logical inconsistency cases."
+  },
+  {
+    "title": "LLM-Gomoku: A Large Language Model-Based System for Strategic Gomoku with Self-Play and Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2503.21683v1",
+    "arxiv_id": "2503.21683v1",
+    "authors": [
+      "Hui Wang"
+    ],
+    "published": "2025-03-27T16:52:25+00:00",
+    "summary": "In recent years, large language models (LLMs) have shown significant advancements in natural language processing (NLP), with strong capa-bilities in generation, comprehension, and rea-soning. These models have found applications in education, intelligent decision-making, and gaming. However, effectively utilizing LLMs for strategic planning and decision-making in the game of Gomoku remains a challenge. This study aims to develop a Gomoku AI system based on LLMs, simulating the human learning process of playing chess. The system is de-signed to understand and apply Gomoku strat-egies and logic to make rational decisions. The research methods include enabling the model to \"read the board,\" \"understand the rules,\" \"select strategies,\" and \"evaluate positions,\" while en-hancing its abilities through self-play and rein-forcement learning. The results demonstrate that this approach significantly improves the se-lection of move positions, resolves the issue of generating illegal positions, and reduces pro-cess time through parallel position evaluation. After extensive self-play training, the model's Gomoku-playing capabilities have been notably enhanced."
+  },
+  {
+    "title": "A tale of two goals: leveraging sequentiality in multi-goal scenarios",
+    "url": "http://arxiv.org/abs/2503.21677v1",
+    "arxiv_id": "2503.21677v1",
+    "authors": [
+      "Olivier Serris",
+      "St\u00e9phane Doncieux",
+      "Olivier Sigaud"
+    ],
+    "published": "2025-03-27T16:47:46+00:00",
+    "summary": "Several hierarchical reinforcement learning methods leverage planning to create a graph or sequences of intermediate goals, guiding a lower-level goal-conditioned (GC) policy to reach some final goals. The low-level policy is typically conditioned on the current goal, with the aim of reaching it as quickly as possible. However, this approach can fail when an intermediate goal can be reached in multiple ways, some of which may make it impossible to continue toward subsequent goals. To address this issue, we introduce two instances of Markov Decision Process (MDP) where the optimization objective favors policies that not only reach the current goal but also subsequent ones. In the first, the agent is conditioned on both the current and final goals, while in the second, it is conditioned on the next two goals in the sequence. We conduct a series of experiments on navigation and pole-balancing tasks in which sequences of intermediate goals are given. By evaluating policies trained with TD3+HER on both the standard GC-MDP and our proposed MDPs, we show that, in most cases, conditioning on the next two goals improves stability and sample efficiency over other approaches."
+  },
+  {
+    "title": "A friendly introduction to triangular transport",
+    "url": "http://arxiv.org/abs/2503.21673v1",
+    "arxiv_id": "2503.21673v1",
+    "authors": [
+      "Maximilian Ramgraber",
+      "Daniel Sharp",
+      "Mathieu Le Provost",
+      "Youssef Marzouk"
+    ],
+    "published": "2025-03-27T16:41:14+00:00",
+    "summary": "Decision making under uncertainty is a cross-cutting challenge in science and engineering. Most approaches to this challenge employ probabilistic representations of uncertainty. In complicated systems accessible only via data or black-box models, however, these representations are rarely known. We discuss how to characterize and manipulate such representations using triangular transport maps, which approximate any complex probability distribution as a transformation of a simple, well-understood distribution. The particular structure of triangular transport guarantees many desirable mathematical and computational properties that translate well into solving practical problems. Triangular maps are actively used for density estimation, (conditional) generative modelling, Bayesian inference, data assimilation, optimal experimental design, and related tasks. While there is ample literature on the development and theory of triangular transport methods, this manuscript provides a detailed introduction for scientists interested in employing measure transport without assuming a formal mathematical background. We build intuition for the key foundations of triangular transport, discuss many aspects of its practical implementation, and outline the frontiers of this field."
+  },
+  {
+    "title": "Towards Fully Automated Decision-Making Systems for Greenhouse Control: Challenges and Opportunities",
+    "url": "http://arxiv.org/abs/2503.21640v1",
+    "arxiv_id": "2503.21640v1",
+    "authors": [
+      "Yongshuai Liu",
+      "Taeyeong Choi",
+      "Xin Liu"
+    ],
+    "published": "2025-03-27T16:06:59+00:00",
+    "summary": "Machine learning has been successful in building control policies to drive a complex system to desired states in various applications (e.g. games, robotics, etc.). To be specific, a number of parameters of policy can be automatically optimized from the observations of environment to be able to generate a sequence of decisions leading to the best performance. In this survey paper, we particularly explore such policy-learning techniques for another unique, practical use-case scenario--farming, in which critical decisions (e.g., water supply, heating, etc.) must be made in a timely manner to minimize risks (e.g., damage to plants) while maximizing the revenue (e.g., healthy crops) in the end. We first provide a broad overview of latest studies on it to identify not only domain-specific challenges but opportunities with potential solutions, some of which are suggested as promising directions for future research. Also, we then introduce our successful approach to being ranked second among 46 teams at the ''3rd Autonomous Greenhouse Challenge'' to use this specific example to discuss the lessons learned about important considerations for design to create autonomous farm-management systems."
+  },
+  {
+    "title": "Vortex-Free Intrinsic Orbital Angular Momentum",
+    "url": "http://arxiv.org/abs/2503.21632v1",
+    "arxiv_id": "2503.21632v1",
+    "authors": [
+      "Wenxiang Yan",
+      "Zheng Yuan",
+      "Yuan Gao",
+      "Xian Long",
+      "Zhi-Cheng Ren",
+      "Xi-Lin Wang",
+      "Jianping Ding",
+      "Hui-Tian Wang"
+    ],
+    "published": "2025-03-27T15:54:58+00:00",
+    "summary": "For three decades, optical orbital angular momentum (OAM) has been synonymous with phase vortices. Here, our research challenges this paradigm by demonstrating a vortex-free intrinsic OAM arising from three-dimensional caustic trajectories in structured light fields, distinct from traditional vortex-based mechanisms. Optical OAM was traditionally considered rare, predominantly manifesting during high-order atomic and molecular transitions. The conceptual shift initiated by Allen et al. in 1992, which showed that laser beams with optical vortex--characterized by their twisted wavefronts--naturally carry intrinsic OAM, laid the groundwork for subsequent studies. However, the exploration of intrinsic OAM in vortex-free laser modes remains a largely untapped area. Addressing this gap, our research proposes a third category of optical intrinsic angular momentum--termed \"vortex-free OAM\"--that complements spin angular momentum (SAM) in circularly polarized beams and OAM in vortex beams. This new form of OAM is governed by a hydrodynamic analogy between light propagation and fluid dynamics, linking the orbital motion of energy streamlines to quantifiable angular momentum. Through numerical simulations, experimental measurements, and investigations of the mechanical transfer of OAM to trapped particles using optical tweezers, we establish vortex-free OAM as a universal property of structured fields with three-dimensional caustic trajectories. Furthermore, we propose a unified hydrodynamic framework that transcends traditional wavefront-centric models, facilitating the generalization of OAM analysis to both vortex and vortex-free regimes. This framework not only enhances our understanding of the physical origin of optical angular momentum but also unlocks new opportunities in optical manipulation, classical and quantum communications, and light-matter interaction technologies."
+  },
+  {
+    "title": "UI-R1: Enhancing Action Prediction of GUI Agents by Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2503.21620v1",
+    "arxiv_id": "2503.21620v1",
+    "authors": [
+      "Zhengxi Lu",
+      "Yuxiang Chai",
+      "Yaxuan Guo",
+      "Xi Yin",
+      "Liang Liu",
+      "Hao Wang",
+      "Guanjing Xiong",
+      "Hongsheng Li"
+    ],
+    "published": "2025-03-27T15:39:30+00:00",
+    "summary": "The recent DeepSeek-R1 has showcased the emergence of reasoning capabilities in LLMs through reinforcement learning (RL) with rule-based rewards. Building on this idea, we are the first to explore how rule-based RL can enhance the reasoning capabilities of multimodal large language models (MLLMs) for graphic user interface (GUI) action prediction tasks. To this end, we curate a small yet high-quality dataset of 136 challenging tasks, encompassing five common action types on mobile devices. We also introduce a unified rule-based action reward, enabling model optimization via policy-based algorithms such as Group Relative Policy Optimization (GRPO). Experimental results demonstrate that our proposed data-efficient model, UI-R1-3B, achieves substantial improvements on both in-domain (ID) and out-of-domain (OOD) tasks. Specifically, on the ID benchmark AndroidControl, the action type accuracy improves by 15%, while grounding accuracy increases by 10.3%, compared with the base model (i.e. Qwen2.5-VL-3B). On the OOD GUI grounding benchmark ScreenSpot-Pro, our model surpasses the base model by 6.0% and achieves competitive performance with larger models (e.g., OS-Atlas-7B), which are trained via supervised fine-tuning (SFT) on 76K data. These results underscore the potential of rule-based reinforcement learning to advance GUI understanding and control, paving the way for future research in this domain."
+  },
+  {
+    "title": "A Deep Reinforcement Learning-based Approach for Adaptive Handover Protocols",
+    "url": "http://arxiv.org/abs/2503.21601v1",
+    "arxiv_id": "2503.21601v1",
+    "authors": [
+      "Johannes Voigt",
+      "Peter Jiacheng Gu",
+      "Peter Rost"
+    ],
+    "published": "2025-03-27T15:20:59+00:00",
+    "summary": "The use of higher frequencies in mobile communication systems leads to smaller cell sizes, resulting in the deployment of more base stations and an increase in handovers to support user mobility. This can lead to frequent radio link failures and reduced data rates. In this work, we propose a handover optimization method using proximal policy optimization (PPO) to develop an adaptive handover protocol. Our PPO-based agent, implemented in the base stations, is highly adaptive to varying user equipment speeds and outperforms the 3GPP-standardized 5G NR handover procedure in terms of average data rate and radio link failure rate. Additionally, our simulation environment is carefully designed to ensure high accuracy, realistic user movements, and fair benchmarking against the 3GPP handover method."
+  },
+  {
+    "title": "Prompt, Divide, and Conquer: Bypassing Large Language Model Safety Filters via Segmented and Distributed Prompt Processing",
+    "url": "http://arxiv.org/abs/2503.21598v1",
+    "arxiv_id": "2503.21598v1",
+    "authors": [
+      "Johan Wahr\u00e9us",
+      "Ahmed Hussain",
+      "Panos Papadimitratos"
+    ],
+    "published": "2025-03-27T15:19:55+00:00",
+    "summary": "Large Language Models (LLMs) have transformed task automation and content generation across various domains while incorporating safety filters to prevent misuse. We introduce a novel jailbreaking framework that employs distributed prompt processing combined with iterative refinements to bypass these safety measures, particularly in generating malicious code. Our architecture consists of four key modules: prompt segmentation, parallel processing, response aggregation, and LLM-based jury evaluation. Tested on 500 malicious prompts across 10 cybersecurity categories, the framework achieves a 73.2% Success Rate (SR) in generating malicious code. Notably, our comparative analysis reveals that traditional single-LLM judge evaluation overestimates SRs (93.8%) compared to our LLM jury system (73.2%), with manual verification confirming that single-judge assessments often accept incomplete implementations. Moreover, we demonstrate that our distributed architecture improves SRs by 12% over the non-distributed approach in an ablation study, highlighting both the effectiveness of distributed prompt processing and the importance of robust evaluation methodologies in assessing jailbreak attempts."
+  },
+  {
+    "title": "Dataset and Analysis of Long-Term Skill Acquisition in Robot-Assisted Minimally Invasive Surgery",
+    "url": "http://arxiv.org/abs/2503.21591v1",
+    "arxiv_id": "2503.21591v1",
+    "authors": [
+      "Yarden Sharon",
+      "Alex Geftler",
+      "Hanna Kossowsky Lev",
+      "Ilana Nisky"
+    ],
+    "published": "2025-03-27T15:08:03+00:00",
+    "summary": "Objective: We aim to investigate long-term robotic surgical skill acquisition among surgical residents and the effects of training intervals and fatigue on performance. Methods: For six months, surgical residents participated in three training sessions once a month, surrounding a single 26-hour hospital shift. In each shift, they participated in training sessions scheduled before, during, and after the shift. In each training session, they performed three dry-lab training tasks: Ring Tower Transfer, Knot-Tying, and Suturing. We collected a comprehensive dataset, including videos synchronized with kinematic data, activity tracking, and scans of the suturing pads. Results: We collected a dataset of 972 trials performed by 18 residents of different surgical specializations. Participants demonstrated consistent performance improvement across all tasks. In addition, we found variations in between-shift learning and forgetting across metrics and tasks, and hints for possible effects of fatigue. Conclusion: The findings from our first analysis shed light on the long-term learning processes of robotic surgical skills with extended intervals and varying levels of fatigue. Significance: This study lays the groundwork for future research aimed at optimizing training protocols and enhancing AI applications in surgery, ultimately contributing to improved patient outcomes. The dataset will be made available upon acceptance of our journal submission."
+  },
+  {
+    "title": "Cooking Task Planning using LLM and Verified by Graph Network",
+    "url": "http://arxiv.org/abs/2503.21564v1",
+    "arxiv_id": "2503.21564v1",
+    "authors": [
+      "Ryunosuke Takebayashi",
+      "Vitor Hideyo Isume",
+      "Takuya Kiyokawa",
+      "Weiwei Wan",
+      "Kensuke Harada"
+    ],
+    "published": "2025-03-27T14:47:43+00:00",
+    "summary": "Cooking tasks remain a challenging problem for robotics due to their complexity. Videos of people cooking are a valuable source of information for such task, but introduces a lot of variability in terms of how to translate this data to a robotic environment. This research aims to streamline this process, focusing on the task plan generation step, by using a Large Language Model (LLM)-based Task and Motion Planning (TAMP) framework to autonomously generate cooking task plans from videos with subtitles, and execute them. Conventional LLM-based task planning methods are not well-suited for interpreting the cooking video data due to uncertainty in the videos, and the risk of hallucination in its output. To address both of these problems, we explore using LLMs in combination with Functional Object-Oriented Networks (FOON), to validate the plan and provide feedback in case of failure. This combination can generate task sequences with manipulation motions that are logically correct and executable by a robot. We compare the execution of the generated plans for 5 cooking recipes from our approach against the plans generated by a few-shot LLM-only approach for a dual-arm robot setup. It could successfully execute 4 of the plans generated by our approach, whereas only 1 of the plans generated by solely using the LLM could be executed."
+  },
+  {
+    "title": "Amplifying solid-state high harmonic generations with momentum k-gaps in band structure engineering",
+    "url": "http://arxiv.org/abs/2503.21549v1",
+    "arxiv_id": "2503.21549v1",
+    "authors": [
+      "Yiming Pan",
+      "Danni Chen",
+      "Xiaoxi Xu",
+      "Zhaopin Chen",
+      "Huaiqiang Wang"
+    ],
+    "published": "2025-03-27T14:37:42+00:00",
+    "summary": "We propose a novel amplification mechanism for high harmonic generation (HHG) in solids by leveraging bandgap engineering with momentum k-gaps. By constructing a simple diatomic lattice featuring balanced, alternating gain and loss profiles, facilitated by an array of four-level systems, we explore the physics of k-gap-amplified Bloch oscillations in the intraband channel of solid-state HHG. Through numerical simulations, we elucidate the coexistence of amplification and harmonic radiation processes in a solid. Our finding reveals that advanced bandgap engineering can define k-space optical devices - such as Brillouin cavity, Bloch-Zener oscillator and k-gap amplifier - thereby enabling the coherent manipulation of semiconductor radiation and high harmonic generation in both semiconductor superlattices and artificial materials. Furthermore, we analyze the spectrogram and material realizations required for amplifying solid-state HHG. These results underscore the potential of k-gap band structure engineering to advance coherent light sources at extremely short wavelengths."
+  },
+  {
+    "title": "Combining Graph Attention Networks and Distributed Optimization for Multi-Robot Mixed-Integer Convex Programming",
+    "url": "http://arxiv.org/abs/2503.21548v1",
+    "arxiv_id": "2503.21548v1",
+    "authors": [
+      "Viet-Anh Le",
+      "Panagiotis Kounatidis",
+      "Andreas A. Malikopoulos"
+    ],
+    "published": "2025-03-27T14:36:45+00:00",
+    "summary": "In this paper, we develop a fast mixed-integer convex programming (MICP) framework for multi-robot navigation by combining graph attention networks and distributed optimization. We formulate a mixed-integer optimization problem for receding horizon motion planning of a multi-robot system, taking into account the surrounding obstacles. To address the resulting multi-agent MICP problem in real time, we propose a framework that utilizes heterogeneous graph attention networks to learn the latent mapping from problem parameters to optimal binary solutions. Furthermore, we apply a distributed proximal alternating direction method of multipliers algorithm for solving the convex continuous optimization problem. We demonstrate the effectiveness of our proposed framework through experiments conducted on a robotic testbed."
+  },
+  {
+    "title": "Shape Adaptive Reconfigurable Holographic Surfaces",
+    "url": "http://arxiv.org/abs/2503.21542v1",
+    "arxiv_id": "2503.21542v1",
+    "authors": [
+      "Jalal Jalali",
+      "Mostafa Darabi",
+      "Rodrigo C. de Lamare"
+    ],
+    "published": "2025-03-27T14:33:19+00:00",
+    "summary": "Reconfigurable Intelligent Surfaces (RIS) have emerged as a key solution to dynamically adjust wireless propagation by tuning the reflection coefficients of large arrays of passive elements. Reconfigurable Holographic Surfaces (RHS) build on the same foundation as RIS but extend it by employing holographic principles for finer-grained wave manipulation | that is, applying higher spatial control over the reflected signals for more precise beam steering. In this paper, we investigate shape-adaptive RHS deployments in a multi-user network. Rather than treating each RHS as a uniform reflecting surface, we propose a selective element activation strategy that dynamically adapts the spatial arrangement of deployed RHS regions to a subset of predefined shapes. In particular, we formulate a system throughput maximization problem that optimizes the shape of the selected RHS elements, active beamforming at the access point (AP), and passive beamforming at the RHS to enhance coverage and mitigate signal blockage. The resulting problem is non-convex and becomes even more challenging to solve as the number of RHS and users increases; to tackle this, we introduce an alternating optimization (AO) approach that efficiently finds near-optimal solutions irrespective of the number or spatial configuration of RHS. Numerical results demonstrate that shape adaptation enables more efficient resource distribution, enhancing the effectiveness of multi-RHS deployments as the network scales."
+  },
+  {
+    "title": "Combining Artificial Users and Psychotherapist Assessment to Evaluate Large Language Model-based Mental Health Chatbots",
+    "url": "http://arxiv.org/abs/2503.21540v1",
+    "arxiv_id": "2503.21540v1",
+    "authors": [
+      "Florian Onur Kuhlmeier",
+      "Leon Hanschmann",
+      "Melina Rabe",
+      "Stefan Luettke",
+      "Eva-Lotta Brakemeier",
+      "Alexander Maedche"
+    ],
+    "published": "2025-03-27T14:31:17+00:00",
+    "summary": "Large Language Models (LLMs) promise to overcome limitations of rule-based mental health chatbots through more natural conversations. However, evaluating LLM-based mental health chatbots presents a significant challenge: Their probabilistic nature requires comprehensive testing to ensure therapeutic quality, yet conducting such evaluations with people with depression would impose an additional burden on vulnerable people and risk exposing them to potentially harmful content. Our paper presents an evaluation approach for LLM-based mental health chatbots that combines dialogue generation with artificial users and dialogue evaluation by psychotherapists. We developed artificial users based on patient vignettes, systematically varying characteristics such as depression severity, personality traits, and attitudes toward chatbots, and let them interact with a LLM-based behavioral activation chatbot. Ten psychotherapists evaluated 48 randomly selected dialogues using standardized rating scales to assess the quality of behavioral activation and its therapeutic capabilities. We found that while artificial users showed moderate authenticity, they enabled comprehensive testing across different users. In addition, the chatbot demonstrated promising capabilities in delivering behavioral activation and maintaining safety. Furthermore, we identified deficits, such as ensuring the appropriateness of the activity plan, which reveals necessary improvements for the chatbot. Our framework provides an effective method for evaluating LLM-based mental health chatbots while protecting vulnerable people during the evaluation process. Future research should improve the authenticity of artificial users and develop LLM-augmented evaluation tools to make psychotherapist evaluation more efficient, and thus further advance the evaluation of LLM-based mental health chatbots."
+  },
+  {
+    "title": "Bayesian Pseudo Posterior Mechanism for Differentially Private Machine Learning",
+    "url": "http://arxiv.org/abs/2503.21528v1",
+    "arxiv_id": "2503.21528v1",
+    "authors": [
+      "Robert Chew",
+      "Matthew R. Williams",
+      "Elan A. Segarra",
+      "Alexander J. Preiss",
+      "Amanda Konet",
+      "Terrance D. Savitsky"
+    ],
+    "published": "2025-03-27T14:17:05+00:00",
+    "summary": "Differential privacy (DP) is becoming increasingly important for deployed machine learning applications because it provides strong guarantees for protecting the privacy of individuals whose data is used to train models. However, DP mechanisms commonly used in machine learning tend to struggle on many real world distributions, including highly imbalanced or small labeled training sets. In this work, we propose a new scalable DP mechanism for deep learning models, SWAG-PPM, by using a pseudo posterior distribution that downweights by-record likelihood contributions proportionally to their disclosure risks as the randomized mechanism. As a motivating example from official statistics, we demonstrate SWAG-PPM on a workplace injury text classification task using a highly imbalanced public dataset published by the U.S. Occupational Safety and Health Administration (OSHA). We find that SWAG-PPM exhibits only modest utility degradation against a non-private comparator while greatly outperforming the industry standard DP-SGD for a similar privacy budget."
+  },
+  {
+    "title": "Behavioral response to mobile phone evacuation alerts",
+    "url": "http://arxiv.org/abs/2503.21497v1",
+    "arxiv_id": "2503.21497v1",
+    "authors": [
+      "Erick Elejalde",
+      "Timur Naushirvanov",
+      "Kyriaki Kalimeri",
+      "Elisa Omodei",
+      "M\u00e1rton Karsai",
+      "Loreto Bravo",
+      "Leo Ferres"
+    ],
+    "published": "2025-03-27T13:33:56+00:00",
+    "summary": "This study examines behavioral responses to mobile phone evacuation alerts during the February 2024 wildfires in Valpara\\'iso, Chile. Using anonymized mobile network data from 580,000 devices, we analyze population movement following emergency SMS notifications. Results reveal three key patterns: (1) initial alerts trigger immediate evacuation responses with connectivity dropping by 80\\% within 1.5 hours, while subsequent messages show diminishing effects; (2) substantial evacuation also occurs in non-warned areas, indicating potential transportation congestion; (3) socioeconomic disparities exist in evacuation timing, with high-income areas evacuating faster and showing less differentiation between warned and non-warned locations. Statistical modeling demonstrates socioeconomic variations in both evacuation decision rates and recovery patterns. These findings inform emergency communication strategies for climate-driven disasters, highlighting the need for targeted alerts, socioeconomically calibrated messaging, and staged evacuation procedures to enhance public safety during crises."
+  },
+  {
+    "title": "Data-Driven Contact-Aware Control Method for Real-Time Deformable Tool Manipulation: A Case Study in the Environmental Swabbing",
+    "url": "http://arxiv.org/abs/2503.21491v1",
+    "arxiv_id": "2503.21491v1",
+    "authors": [
+      "Siavash Mahmoudi",
+      "Amirreza Davar",
+      "Dongyi Wang"
+    ],
+    "published": "2025-03-27T13:27:46+00:00",
+    "summary": "Deformable Object Manipulation (DOM) remains a critical challenge in robotics due to the complexities of developing suitable model-based control strategies. Deformable Tool Manipulation (DTM) further complicates this task by introducing additional uncertainties between the robot and its environment. While humans effortlessly manipulate deformable tools using touch and experience, robotic systems struggle to maintain stability and precision. To address these challenges, we present a novel State-Adaptive Koopman LQR (SA-KLQR) control framework for real-time deformable tool manipulation, demonstrated through a case study in environmental swab sampling for food safety. This method leverages Koopman operator-based control to linearize nonlinear dynamics while adapting to state-dependent variations in tool deformation and contact forces. A tactile-based feedback system dynamically estimates and regulates the swab tool's angle, contact pressure, and surface coverage, ensuring compliance with food safety standards. Additionally, a sensor-embedded contact pad monitors force distribution to mitigate tool pivoting and deformation, improving stability during dynamic interactions. Experimental results validate the SA-KLQR approach, demonstrating accurate contact angle estimation, robust trajectory tracking, and reliable force regulation. The proposed framework enhances precision, adaptability, and real-time control in deformable tool manipulation, bridging the gap between data-driven learning and optimal control in robotic interaction tasks."
+  },
+  {
+    "title": "DATA-WA: Demand-based Adaptive Task Assignment with Dynamic Worker Availability Windows",
+    "url": "http://arxiv.org/abs/2503.21458v1",
+    "arxiv_id": "2503.21458v1",
+    "authors": [
+      "Jinwen Chen",
+      "Jiannan Guo",
+      "Dazhuo Qiu",
+      "Yawen Li",
+      "Guanhua Ye",
+      "Yan Zhao",
+      "Kai Zheng"
+    ],
+    "published": "2025-03-27T12:46:12+00:00",
+    "summary": "With the rapid advancement of mobile networks and the widespread use of mobile devices, spatial crowdsourcing, which involves assigning location-based tasks to mobile workers, has gained significant attention. However, most existing research focuses on task assignment at the current moment, overlooking the fluctuating demand and supply between tasks and workers over time. To address this issue, we introduce an adaptive task assignment problem, which aims to maximize the number of assigned tasks by dynamically adjusting task assignments in response to changing demand and supply. We develop a spatial crowdsourcing framework, namely demand-based adaptive task assignment with dynamic worker availability windows, which consists of two components including task demand prediction and task assignment. In the first component, we construct a graph adjacency matrix representing the demand dependency relationships in different regions and employ a multivariate time series learning approach to predict future task demands. In the task assignment component, we adjust tasks to workers based on these predictions, worker availability windows, and the current task assignments, where each worker has an availability window that indicates the time periods they are available for task assignments. To reduce the search space of task assignments and be efficient, we propose a worker dependency separation approach based on graph partition and a task value function with reinforcement learning. Experiments on real data demonstrate that our proposals are both effective and efficient."
+  },
+  {
+    "title": "Towards Generating Realistic 3D Semantic Training Data for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2503.21449v1",
+    "arxiv_id": "2503.21449v1",
+    "authors": [
+      "Lucas Nunes",
+      "Rodrigo Marcuzzi",
+      "Jens Behley",
+      "Cyrill Stachniss"
+    ],
+    "published": "2025-03-27T12:41:42+00:00",
+    "summary": "Semantic scene understanding is crucial for robotics and computer vision applications. In autonomous driving, 3D semantic segmentation plays an important role for enabling safe navigation. Despite significant advances in the field, the complexity of collecting and annotating 3D data is a bottleneck in this developments. To overcome that data annotation limitation, synthetic simulated data has been used to generate annotated data on demand. There is still however a domain gap between real and simulated data. More recently, diffusion models have been in the spotlight, enabling close-to-real data synthesis. Those generative models have been recently applied to the 3D data domain for generating scene-scale data with semantic annotations. Still, those methods either rely on image projection or decoupled models trained with different resolutions in a coarse-to-fine manner. Such intermediary representations impact the generated data quality due to errors added in those transformations. In this work, we propose a novel approach able to generate 3D semantic scene-scale data without relying on any projection or decoupled trained multi-resolution models, achieving more realistic semantic scene data generation compared to previous state-of-the-art methods. Besides improving 3D semantic scene-scale data synthesis, we thoroughly evaluate the use of the synthetic scene samples as labeled data to train a semantic segmentation network. In our experiments, we show that using the synthetic annotated data generated by our method as training data together with the real semantic segmentation labels, leads to an improvement in the semantic segmentation model performance. Our results show the potential of generated scene-scale point clouds to generate more training data to extend existing datasets, reducing the data annotation effort. Our code is available at https://github.com/PRBonn/3DiSS."
+  },
+  {
+    "title": "On Learning-Based Traffic Monitoring With a Swarm of Drones",
+    "url": "http://arxiv.org/abs/2503.21433v1",
+    "arxiv_id": "2503.21433v1",
+    "authors": [
+      "Marko Maljkovic",
+      "Nikolas Geroliminis"
+    ],
+    "published": "2025-03-27T12:18:49+00:00",
+    "summary": "Efficient traffic monitoring is crucial for managing urban transportation networks, especially under congested and dynamically changing traffic conditions. Drones offer a scalable and cost-effective alternative to fixed sensor networks. However, deploying fleets of low-cost drones for traffic monitoring poses challenges in adaptability, scalability, and real-time operation. To address these issues, we propose a learning-based framework for decentralized traffic monitoring with drone swarms, targeting the uneven and unpredictable distribution of monitoring needs across urban areas. Our approach introduces a semi-decentralized reinforcement learning model, which trains a single Q-function using the collective experience of the swarm. This model supports full scalability, flexible deployment, and, when hardware allows, the online adaptation of each drone's action-selection mechanism. We first train and evaluate the model in a synthetic traffic environment, followed by a case study using real traffic data from Shenzhen, China, to validate its performance and demonstrate its potential for real-world applications in complex urban monitoring tasks."
+  },
+  {
+    "title": "STAMICS: Splat, Track And Map with Integrated Consistency and Semantics for Dense RGB-D SLAM",
+    "url": "http://arxiv.org/abs/2503.21425v1",
+    "arxiv_id": "2503.21425v1",
+    "authors": [
+      "Yongxu Wang",
+      "Xu Cao",
+      "Weiyun Yi",
+      "Zhaoxin Fan"
+    ],
+    "published": "2025-03-27T12:10:51+00:00",
+    "summary": "Simultaneous Localization and Mapping (SLAM) is a critical task in robotics, enabling systems to autonomously navigate and understand complex environments. Current SLAM approaches predominantly rely on geometric cues for mapping and localization, but they often fail to ensure semantic consistency, particularly in dynamic or densely populated scenes. To address this limitation, we introduce STAMICS, a novel method that integrates semantic information with 3D Gaussian representations to enhance both localization and mapping accuracy. STAMICS consists of three key components: a 3D Gaussian-based scene representation for high-fidelity reconstruction, a graph-based clustering technique that enforces temporal semantic consistency, and an open-vocabulary system that allows for the classification of unseen objects. Extensive experiments show that STAMICS significantly improves camera pose estimation and map quality, outperforming state-of-the-art methods while reducing reconstruction errors. Code will be public available."
+  },
+  {
+    "title": "Exploring the Roles of Large Language Models in Reshaping Transportation Systems: A Survey, Framework, and Roadmap",
+    "url": "http://arxiv.org/abs/2503.21411v1",
+    "arxiv_id": "2503.21411v1",
+    "authors": [
+      "Tong Nie",
+      "Jian Sun",
+      "Wei Ma"
+    ],
+    "published": "2025-03-27T11:56:27+00:00",
+    "summary": "Modern transportation systems face pressing challenges due to increasing demand, dynamic environments, and heterogeneous information integration. The rapid evolution of Large Language Models (LLMs) offers transformative potential to address these challenges. Extensive knowledge and high-level capabilities derived from pretraining evolve the default role of LLMs as text generators to become versatile, knowledge-driven task solvers for intelligent transportation systems. This survey first presents LLM4TR, a novel conceptual framework that systematically categorizes the roles of LLMs in transportation into four synergetic dimensions: information processors, knowledge encoders, component generators, and decision facilitators. Through a unified taxonomy, we systematically elucidate how LLMs bridge fragmented data pipelines, enhance predictive analytics, simulate human-like reasoning, and enable closed-loop interactions across sensing, learning, modeling, and managing tasks in transportation systems. For each role, our review spans diverse applications, from traffic prediction and autonomous driving to safety analytics and urban mobility optimization, highlighting how emergent capabilities of LLMs such as in-context learning and step-by-step reasoning can enhance the operation and management of transportation systems. We further curate practical guidance, including available resources and computational guidelines, to support real-world deployment. By identifying challenges in existing LLM-based solutions, this survey charts a roadmap for advancing LLM-driven transportation research, positioning LLMs as central actors in the next generation of cyber-physical-social mobility ecosystems. Online resources can be found in the project page: https://github.com/tongnie/awesome-llm4tr."
+  },
+  {
+    "title": "Neuro-Symbolic Imitation Learning: Discovering Symbolic Abstractions for Skill Learning",
+    "url": "http://arxiv.org/abs/2503.21406v1",
+    "arxiv_id": "2503.21406v1",
+    "authors": [
+      "Leon Keller",
+      "Daniel Tanneberg",
+      "Jan Peters"
+    ],
+    "published": "2025-03-27T11:50:29+00:00",
+    "summary": "Imitation learning is a popular method for teaching robots new behaviors. However, most existing methods focus on teaching short, isolated skills rather than long, multi-step tasks. To bridge this gap, imitation learning algorithms must not only learn individual skills but also an abstract understanding of how to sequence these skills to perform extended tasks effectively. This paper addresses this challenge by proposing a neuro-symbolic imitation learning framework. Using task demonstrations, the system first learns a symbolic representation that abstracts the low-level state-action space. The learned representation decomposes a task into easier subtasks and allows the system to leverage symbolic planning to generate abstract plans. Subsequently, the system utilizes this task decomposition to learn a set of neural skills capable of refining abstract plans into actionable robot commands. Experimental results in three simulated robotic environments demonstrate that, compared to baselines, our neuro-symbolic approach increases data efficiency, improves generalization capabilities, and facilitates interpretability."
+  },
+  {
+    "title": "AcL: Action Learner for Fault-Tolerant Quadruped Locomotion Control",
+    "url": "http://arxiv.org/abs/2503.21401v1",
+    "arxiv_id": "2503.21401v1",
+    "authors": [
+      "Tianyu Xu",
+      "Yaoyu Cheng",
+      "Pinxi Shen",
+      "Lin Zhao",
+      "Electrical",
+      "Computer Engineering",
+      "National University of Singapore",
+      "Singapore",
+      "Mechanical Engineering",
+      "National University of Singapore",
+      "Singapore"
+    ],
+    "published": "2025-03-27T11:47:20+00:00",
+    "summary": "Quadrupedal robots can learn versatile locomotion skills but remain vulnerable when one or more joints lose power. In contrast, dogs and cats can adopt limping gaits when injured, demonstrating their remarkable ability to adapt to physical conditions. Inspired by such adaptability, this paper presents Action Learner (AcL), a novel teacher-student reinforcement learning framework that enables quadrupeds to autonomously adapt their gait for stable walking under multiple joint faults. Unlike conventional teacher-student approaches that enforce strict imitation, AcL leverages teacher policies to generate style rewards, guiding the student policy without requiring precise replication. We train multiple teacher policies, each corresponding to a different fault condition, and subsequently distill them into a single student policy with an encoder-decoder architecture. While prior works primarily address single-joint faults, AcL enables quadrupeds to walk with up to four faulty joints across one or two legs, autonomously switching between different limping gaits when faults occur. We validate AcL on a real Go2 quadruped robot under single- and double-joint faults, demonstrating fault-tolerant, stable walking, smooth gait transitions between normal and lamb gaits, and robustness against external disturbances."
+  },
+  {
+    "title": "Forces and symmetry breaking of a living meso-swimmer",
+    "url": "http://arxiv.org/abs/2503.21396v1",
+    "arxiv_id": "2503.21396v1",
+    "authors": [
+      "Rafael A. Lara",
+      "N. Sharadhi",
+      "Anna A. L. Huttunen",
+      "Lotta Ansas",
+      "Ensio J. G. Rislakki",
+      "Matilda Backholm"
+    ],
+    "published": "2025-03-27T11:39:36+00:00",
+    "summary": "Swimming is ubiquitous in nature and crucial for the survival of a wide range of organisms. The physics of swimming at the viscosity-dominated microscale and inertia-dominated macroscale is well studied. However, in between lies a notoriously complicated mesoscale with swimmers affected by non-linear and time-dependent fluid mechanics. The intricate motility strategies as well as the complex and periodically changing shapes of these meso-organisms add extra challenges for accurately modelling their dynamics. Here, we have further developed the micropipette force sensor to experimentally study the physics of biological meso-swimming dynamics. We directly probe the swimming forces of the meso-organism Artemia sp. and determine how the propulsive force scales with body size. We show that this scaling law is universal for a wide range of micro- to meso-organisms, regardless of body shape, swimming strategy, or the addition of inertia at the mesoscale. Through deep neural network-based image analysis, we determine the time-reversal symmetry breaking of Artemia as it transitions from the viscous regime to the mesoscale. We discover that this model meso-swimmer achieves an increased propulsive force by increasing its level of time-reversal symmetry breaking. These results capture fundamental aspects of biological meso-swimming dynamics and provide guidance for future biomimicking meso-robot designs."
+  },
+  {
+    "title": "HybridoNet-Adapt: A Domain-Adapted Framework for Accurate Lithium-Ion Battery RUL Prediction",
+    "url": "http://arxiv.org/abs/2503.21392v1",
+    "arxiv_id": "2503.21392v1",
+    "authors": [
+      "Khoa Tran",
+      "Bao Huynh",
+      "Tri Le",
+      "Lam Pham",
+      "Vy-Rin Nguyen"
+    ],
+    "published": "2025-03-27T11:35:25+00:00",
+    "summary": "Accurate prediction of the remaining useful life (RUL) in Lithium-ion battery (LIB) health management systems is crucial for ensuring reliability and safety. Current methods typically assume that training and testing data share the same distribution, overlooking the benefits of incorporating diverse data sources to enhance model performance. To address this limitation, we introduce a data-independent RUL prediction framework along with its domain adaptation (DA) approach, which leverages heterogeneous data sources for improved target predictions. Our approach integrates comprehensive data preprocessing, including feature extraction, denoising, and normalization, with a data-independent prediction model that combines Long Short-Term Memory (LSTM), Multihead Attention, and a Neural Ordinary Differential Equation (NODE) block, termed HybridoNet. The domain-adapted version, HybridoNet Adapt, is trained using a novel technique inspired by the Domain-Adversarial Neural Network (DANN) framework, a regression ensemble method, and Maximum Mean Discrepancy (MMD) to learn domain-invariant features from labeled cycling data in the source and target domains. Experimental results demonstrate that our approach outperforms state-of-the-art techniques, providing reliable RUL predictions for real-world applications."
+  },
+  {
+    "title": "Andreev bound states and supercurrent in an unconventional superconductor-altermagnetic Josephson junction",
+    "url": "http://arxiv.org/abs/2503.21391v1",
+    "arxiv_id": "2503.21391v1",
+    "authors": [
+      "Mohammad Alipourzadeh",
+      "Yaser Hajati"
+    ],
+    "published": "2025-03-27T11:34:53+00:00",
+    "summary": "Motivated by the orientation-dependent properties of d-wave superconductors (SCs), we investigate Andreev bound states (ABSs) and Josephson current in s-wave SC/altermagnet/d-wave SC (S/AM/D) and d-wave SC/altermagnet/d-wave SC (D/AM/D) junctions. The asymmetric S/AM/D junction exhibits a node-less ABSs spectrum with distinct spin states, arising from AM manipulation. In contrast, a symmetric D/AM/D junction with $\\pm 45^\\circ$-oriented order parameters exhibits a nodal ABSs spectrum, characterized by spin-split sinusoidal curves. This behavior arises from the angular dependence of the d-wave pairing potential, which introduces a $\\pi$-shift in the ABSs spectrum of the D/AM/D junction compared to that of conventional S/AM/S junctions. Additionally, the positions of the ABSs nodes in the D/AM/D junction can be controlled by adjusting the length and strength of the AM layer. Analysis of the free energy and Josephson current reveals additional extrema in the free energy at intermediate phase differences, leading to skewness and a non-sinusoidal behavior in the current-phase relationship of both configurations. These zero-supercurrent phase differences can be tuned by adjusting the properties of the AM layer such as AM strength and length. These findings provide new insights into AM-based Josephson junctions."
+  },
+  {
+    "title": "Controlling Large Language Model with Latent Actions",
+    "url": "http://arxiv.org/abs/2503.21383v1",
+    "arxiv_id": "2503.21383v1",
+    "authors": [
+      "Chengxing Jia",
+      "Ziniu Li",
+      "Pengyuan Wang",
+      "Yi-Chen Li",
+      "Zhenyu Hou",
+      "Yuxiao Dong",
+      "Yang Yu"
+    ],
+    "published": "2025-03-27T11:25:22+00:00",
+    "summary": "Adapting Large Language Models (LLMs) to downstream tasks using Reinforcement Learning (RL) has proven to be an effective approach. However, LLMs do not inherently define the structure of an agent for RL training, particularly in terms of defining the action space. This paper studies learning a compact latent action space to enhance the controllability and exploration of RL for LLMs. We propose Controlling Large Language Models with Latent Actions (CoLA), a framework that integrates a latent action space into pre-trained LLMs. We apply CoLA to the Llama-3.1-8B model. Our experiments demonstrate that, compared to RL with token-level actions, CoLA's latent action enables greater semantic diversity in text generation. For enhancing downstream tasks, we show that CoLA with RL achieves a score of 42.4 on the math500 benchmark, surpassing the baseline score of 38.2, and reaches 68.2 when augmented with a Monte Carlo Tree Search variant. Furthermore, CoLA with RL consistently improves performance on agent-based tasks without degrading the pre-trained LLM's capabilities, unlike the baseline. Finally, CoLA reduces computation time by half in tasks involving enhanced thinking prompts for LLMs by RL. These results highlight CoLA's potential to advance RL-based adaptation of LLMs for downstream applications."
+  },
+  {
+    "title": "Ultrafast Saddletronics",
+    "url": "http://arxiv.org/abs/2503.21376v1",
+    "arxiv_id": "2503.21376v1",
+    "authors": [
+      "Sangeeta Sharma",
+      "Deepika Gill",
+      "John Kay Dewhurst",
+      "Peter Elliott",
+      "Sam Shallcross"
+    ],
+    "published": "2025-03-27T11:09:26+00:00",
+    "summary": "Low energy valleys in the band structure of 2d materials represent a potential route to the ultrafast writing of information in quantum matter by laser light, with excited charge at the K or K$^\\ast$ valleys representing the fundamental states of 1 and 0. Here we demonstrate that a second electronic feature, the saddle point, is endowed with lightwave control over information states. Linearly polarized light is shown to excite 2 of the 3 inequivalent M point saddles in graphene, generating three possible excited configurations, with which of these are realised determined by the polarization vector direction. We show that saddle excitation is highly robust, with \"saddle polarized\" states created both in the sub-cycle strong field regime and the long time limit of extended multi-cycle pulses. Our findings, applicable to other members of the graphene family and Xenes such as stanene, point towards a rich and ultrafast light based manipulation of matter based on the saddle point."
+  },
+  {
+    "title": "A Data-Driven Method for INS/DVL Alignment",
+    "url": "http://arxiv.org/abs/2503.21350v1",
+    "arxiv_id": "2503.21350v1",
+    "authors": [
+      "Guy Damari",
+      "Itzik Klein"
+    ],
+    "published": "2025-03-27T10:38:37+00:00",
+    "summary": "Autonomous underwater vehicles (AUVs) are sophisticated robotic platforms crucial for a wide range of applications. The accuracy of AUV navigation systems is critical to their success. Inertial sensors and Doppler velocity logs (DVL) fusion is a promising solution for long-range underwater navigation. However, the effectiveness of this fusion depends heavily on an accurate alignment between the inertial sensors and the DVL. While current alignment methods show promise, there remains significant room for improvement in terms of accuracy, convergence time, and alignment trajectory efficiency. In this research we propose an end-to-end deep learning framework for the alignment process. By leveraging deep-learning capabilities, such as noise reduction and capture of nonlinearities in the data, we show using simulative data, that our proposed approach enhances both alignment accuracy and reduces convergence time beyond current model-based methods."
+  },
+  {
+    "title": "UGNA-VPR: A Novel Training Paradigm for Visual Place Recognition Based on Uncertainty-Guided NeRF Augmentation",
+    "url": "http://arxiv.org/abs/2503.21338v1",
+    "arxiv_id": "2503.21338v1",
+    "authors": [
+      "Yehui Shen",
+      "Lei Zhang",
+      "Qingqiu Li",
+      "Xiongwei Zhao",
+      "Yue Wang",
+      "Huimin Lu",
+      "Xieyuanli Chen"
+    ],
+    "published": "2025-03-27T10:14:46+00:00",
+    "summary": "Visual place recognition (VPR) is crucial for robots to identify previously visited locations, playing an important role in autonomous navigation in both indoor and outdoor environments. However, most existing VPR datasets are limited to single-viewpoint scenarios, leading to reduced recognition accuracy, particularly in multi-directional driving or feature-sparse scenes. Moreover, obtaining additional data to mitigate these limitations is often expensive. This paper introduces a novel training paradigm to improve the performance of existing VPR networks by enhancing multi-view diversity within current datasets through uncertainty estimation and NeRF-based data augmentation. Specifically, we initially train NeRF using the existing VPR dataset. Then, our devised self-supervised uncertainty estimation network identifies places with high uncertainty. The poses of these uncertain places are input into NeRF to generate new synthetic observations for further training of VPR networks. Additionally, we propose an improved storage method for efficient organization of augmented and original training data. We conducted extensive experiments on three datasets and tested three different VPR backbone networks. The results demonstrate that our proposed training paradigm significantly improves VPR performance by fully utilizing existing data, outperforming other training approaches. We further validated the effectiveness of our approach on self-recorded indoor and outdoor datasets, consistently demonstrating superior results. Our dataset and code have been released at \\href{https://github.com/nubot-nudt/UGNA-VPR}{https://github.com/nubot-nudt/UGNA-VPR}."
+  },
+  {
+    "title": "Safety of particle filters: Some first results on the time evolution of particle filter estimates",
+    "url": "http://arxiv.org/abs/2503.21334v1",
+    "arxiv_id": "2503.21334v1",
+    "authors": [
+      "Mathieu Gerber"
+    ],
+    "published": "2025-03-27T10:13:00+00:00",
+    "summary": "Particle filters (PFs) is a class of Monte Carlo algorithms that propagate over time a set of $N\\in\\mathbb{N}$ particles which can be used to estimate, in an online fashion, the sequence of filtering distributions $(\\hat{\\eta}_t)_{t\\geq 1}$ defined by a state-space model. Despite the popularity of PFs, the time evolution of their estimates does not appear to have been previously studied in the literature. Denoting by $(\\hat{\\eta}_t^N)_{t\\geq 1}$ the PF estimate of $(\\hat{\\eta}_t)_{t\\geq 1}$ and letting $\\kappa\\in (0,1)$, we first show that for any number of particles $N$ it holds that, with probability one, we have $\\|\\hat{\\eta}_t^N- \\hat{\\eta}_t\\|\\geq \\kappa$ for infinitely many $t\\geq 1$, with $\\|\\cdot\\|$ a measure of distance between probability distributions. Considering a simple filtering problem we then provide reassuring results concerning the ability of PFs to estimate jointly a finite set $\\{\\hat{\\eta}_t\\}_{t=1}^T$ of filtering distributions by studying $\\P(\\sup_{t\\in\\{1,\\dots,T\\}}\\|\\hat{\\eta}_t^{N}-\\hat{\\eta}_t\\|\\geq \\kappa)$. Finally, on the same toy filtering problem, we prove that sequential quasi-Monte Carlo, a randomized quasi-Monte Carlo version of PF algorithms, offers greater safety guarantees than PFs in the sense that, for this algorithm, it holds that $\\lim_{N\\rightarrow\\infty}\\sup_{t\\geq 1}\\|\\hat{\\eta}_t^N-\\hat{\\eta}_t\\|=0$ with probability one."
+  },
+  {
+    "title": "Tailoring non-collinear magnetism and 3d $-$ 4f exchange interactions in RVO$_3$ epitaxial thin films",
+    "url": "http://arxiv.org/abs/2503.21327v1",
+    "arxiv_id": "2503.21327v1",
+    "authors": [
+      "O. Copie",
+      "J. Varignon",
+      "I. C. Infante",
+      "M. Martirosyan",
+      "F. Choueikani",
+      "P. Ohresser",
+      "P. -E. Janolin",
+      "A. Pautrat",
+      "A. David",
+      "P. Ghosez",
+      "W. Prellier"
+    ],
+    "published": "2025-03-27T10:07:43+00:00",
+    "summary": "In orthorhombic perovskite oxides (RMO$_3$), substituting R$^{3+}$ rare-earth cations tailors the spin, orbital, and charge degrees of freedom of the central M$^{3+}$ transition metal cations through lattice distortions. In turn, these modify also the surrounding environment of R$^{3+}$. When both R$^{3+}$ and M$^{3+}$ exhibit magnetic properties, phenomena such as spin reorientation and magnetization reversal can occur. In fact, the underlying exchange interactions between M-$3d$ spins and R-$4f$ magnetic moments enrich the multifunctional character of RMO$_3$, particularly when combined with structural distortions. They play a crucial role in achieving appealing properties such as robust magnetoelectricity with non-collinear magnetic orders. Here, we explore the exchange coupling in epitaxial PrVO$_3$ thin films, selectively probing the magnetism of cation sublattices, and uncovering simultaneous V$^{3+}$ $3d$ spin reorientation and Pr$^{3+}$ $4f$ magnetization reversal using spectroscopy techniques. By strain engineering, we manipulate the lattice distortions to rationalize their role in coupling $3d$ spins and $4f$ magnetic moments. Theorectical calculations show that octahedral rotations and Jahn-Teller distortions act as tuning mechanisms, promoting competition between orbital and spin orders. The observed coupling between magnetic cations and lattice distortions can be extended to other orthorhombic RMO$_3$ systems, advancing the understanding of controlling spins in engineered perovskite heterostructures and superlattices."
+  },
+  {
+    "title": "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+    "url": "http://arxiv.org/abs/2503.21315v1",
+    "arxiv_id": "2503.21315v1",
+    "authors": [
+      "Cheng Wang",
+      "Yiwei Wang",
+      "Yujun Cai",
+      "Bryan Hooi"
+    ],
+    "published": "2025-03-27T09:54:37+00:00",
+    "summary": "Retrieval-augmented generation (RAG) systems enhance large language models by incorporating external knowledge, addressing issues like outdated internal knowledge and hallucination. However, their reliance on external knowledge bases makes them vulnerable to corpus poisoning attacks, where adversarial passages can be injected to manipulate retrieval results. Existing methods for crafting such passages, such as random token replacement or training inversion models, are often slow and computationally expensive, requiring either access to retriever's gradients or large computational resources. To address these limitations, we propose Dynamic Importance-Guided Genetic Algorithm (DIGA), an efficient black-box method that leverages two key properties of retrievers: insensitivity to token order and bias towards influential tokens. By focusing on these characteristics, DIGA dynamically adjusts its genetic operations to generate effective adversarial passages with significantly reduced time and memory usage. Our experimental evaluation shows that DIGA achieves superior efficiency and scalability compared to existing methods, while maintaining comparable or better attack success rates across multiple datasets."
+  },
+  {
+    "title": "DeBackdoor: A Deductive Framework for Detecting Backdoor Attacks on Deep Models with Limited Data",
+    "url": "http://arxiv.org/abs/2503.21305v1",
+    "arxiv_id": "2503.21305v1",
+    "authors": [
+      "Dorde Popovic",
+      "Amin Sadeghi",
+      "Ting Yu",
+      "Sanjay Chawla",
+      "Issa Khalil"
+    ],
+    "published": "2025-03-27T09:31:10+00:00",
+    "summary": "Backdoor attacks are among the most effective, practical, and stealthy attacks in deep learning. In this paper, we consider a practical scenario where a developer obtains a deep model from a third party and uses it as part of a safety-critical system. The developer wants to inspect the model for potential backdoors prior to system deployment. We find that most existing detection techniques make assumptions that are not applicable to this scenario. In this paper, we present a novel framework for detecting backdoors under realistic restrictions. We generate candidate triggers by deductively searching over the space of possible triggers. We construct and optimize a smoothed version of Attack Success Rate as our search objective. Starting from a broad class of template attacks and just using the forward pass of a deep model, we reverse engineer the backdoor attack. We conduct extensive evaluation on a wide range of attacks, models, and datasets, with our technique performing almost perfectly across these settings."
+  },
+  {
+    "title": "Optimizing Resource Allocation and Scheduling towards FRMCS and GSM-R networks coexistence in Railway Systems",
+    "url": "http://arxiv.org/abs/2503.21300v1",
+    "arxiv_id": "2503.21300v1",
+    "authors": [
+      "Mohamed Aziz Aboud",
+      "Nawel Zangar",
+      "Rami Langar",
+      "Marion Berbineau",
+      "Jerome Madec"
+    ],
+    "published": "2025-03-27T09:26:49+00:00",
+    "summary": "The actual railway communication system used in Europe for high-speed trains (HST) is called the GSM-R system, which is a communication system based on 2G infrastructure. This system is meant to be replaced by a new system based on 5G NR infrastructure called the Future Railway Mobile Communication System (FRMCS) by 2030. For the next years, both systems will probably coexist in the same frequency band since the migration from GSM-R to FRMCS is planned to be done progressively until the GSM-R system is completely shut down, mainly due to safety and budget constraints. In this paper, we study the resource allocation for the FRMCS system sharing the same frequency band as the already deployed GSM-R system. We formulate the resource allocation problem as an integer linear problem (ILP), known to be NP-hard.To solve it in a reasonable time, we propose a scheduling algorithm, called Intelligent Traffic Scheduling Preemptor (ITSP), that allocates resources for the different FRMCS traffic types considered (critical traffic and performance traffic) in the same frequency band with the GSM-R system. Our algorithm is channel quality Indicator (CQI) aware and uses the preemption mechanism in 5G NR standards to optimize the resource allocation for the FRMCS system without impacting the actual GSM-R resource allocation in the context of the white space concept."
+  },
+  {
+    "title": "Lidar-only Odometry based on Multiple Scan-to-Scan Alignments over a Moving Window",
+    "url": "http://arxiv.org/abs/2503.21293v1",
+    "arxiv_id": "2503.21293v1",
+    "authors": [
+      "Aaron Kurda",
+      "Simon Steuernagel",
+      "Marcus Baum"
+    ],
+    "published": "2025-03-27T09:22:27+00:00",
+    "summary": "Lidar-only odometry considers the pose estimation of a mobile robot based on the accumulation of motion increments extracted from consecutive lidar scans. Many existing approaches to the problem use a scan-to-map registration, which neglects the accumulation of errors within the maintained map due to drift. Other methods use a refinement step that jointly optimizes the local map on a feature basis. We propose a solution that avoids this by using multiple independent scan-to-scan Iterative Closest Points (ICP) registrations to previous scans in order to derive constraints for a pose graph. The optimization of the pose graph then not only yields an accurate estimate for the latest pose, but also enables the refinement of previous scans in the optimization window. By avoiding the need to recompute the scan-to-scan alignments, the computational load is minimized. Extensive evaluation on the public KITTI and MulRan datasets as well as on a custom automotive lidar dataset is carried out. Results show that the proposed approach achieves state-of-the-art estimation accuracy, while alleviating the mentioned issues."
+  },
+  {
+    "title": "An analysis of higher-order kinematics formalisms for an innovative surgical parallel robot",
+    "url": "http://arxiv.org/abs/2503.21291v1",
+    "arxiv_id": "2503.21291v1",
+    "authors": [
+      "Calin Vaida",
+      "Iosif Birlescu",
+      "Bogdan Gherman",
+      "Daniel Condurache",
+      "Damien Chablat",
+      "Doina Pisla"
+    ],
+    "published": "2025-03-27T09:20:35+00:00",
+    "summary": "The paper presents a novel modular hybrid parallel robot for pancreatic surgery and its higher-order kinematics derived based on various formalisms. The classical vector, homogeneous transformation matrices and dual quaternion approaches are studied for the kinematic functions using both classical differentiation and multidual algebra. The algorithms for inverse kinematics for all three studied formalisms are presented for both differentiation and multidual algebra approaches. Furthermore, these algorithms are compared based on numerical stability, execution times and number and type of mathematical functions and operators contained in each algorithm. A statistical analysis shows that there is significant improvement in execution time for the algorithms implemented using multidual algebra, while the numerical stability is appropriate for all algorithms derived based on differentiation and multidual algebra. While the implementation of the kinematic algorithms using multidual algebra shows positive results when benchmarked on a standard PC, further work is required to evaluate the multidual algorithms on hardware/software used for the modular parallel robot command and control."
+  },
+  {
+    "title": "Haptic bilateral teleoperation system for free-hand dental procedures",
+    "url": "http://arxiv.org/abs/2503.21288v1",
+    "arxiv_id": "2503.21288v1",
+    "authors": [
+      "Lorenzo Pagliara",
+      "Enrico Ferrentino",
+      "Andrea Chiacchio",
+      "Giovanni Russo"
+    ],
+    "published": "2025-03-27T09:11:34+00:00",
+    "summary": "Free-hand dental procedures are typically repetitive, time-consuming and require high precision and manual dexterity. Dental robots can play a key role in improving procedural accuracy and safety, enhancing patient comfort, and reducing operator workload. However, robotic solutions for free-hand procedures remain limited or completely lacking, and their acceptance is still low. To address this gap, we develop a haptic bilateral teleoperation system (HBTS) for free-hand dental procedures. The system includes a dedicated mechanical end-effector, compatible with standard clinical tools, and equipped with an endoscopic camera for improved visibility of the intervention site. By ensuring motion and force correspondence between the operator's actions and the robot's movements, monitored through visual feedback, we enhance the operator's sensory awareness and motor accuracy. Furthermore, recognizing the need to ensure procedural safety, we limit interaction forces by scaling the motion references provided to the admittance controller based solely on measured contact forces. This ensures effective force limitation in all contact states without requiring prior knowledge of the environment. The proposed HBTS is validated in a dental scaling procedure using a dental phantom. The results show that the system improves the naturalness, safety, and accuracy of teleoperation, highlighting its potential to enhance free-hand dental procedures."
+  },
+  {
+    "title": "Output-Feedback Boundary Control of Thermally and Flow-Induced Vibrations in Slender Timoshenko Beams",
+    "url": "http://arxiv.org/abs/2503.21281v1",
+    "arxiv_id": "2503.21281v1",
+    "authors": [
+      "Chengyi Wang",
+      "Ji Wang"
+    ],
+    "published": "2025-03-27T09:01:30+00:00",
+    "summary": "This work is motivated by the engineering challenge of suppressing vibrations in turbine blades of aero engines, which often operate under extreme thermal conditions and high-Mach aerodynamic environments that give rise to complex vibration phenomena, commonly referred to as thermally-induced and flow-induced vibrations. Using Hamilton's variational principle, the system is modeled as a rotating slender Timoshenko beam under thermal and aerodynamic loads, described by a mixed hyperbolic-parabolic PDE system where instabilities occur both within the PDE domain and at the uncontrolled boundary, and the two types of PDEs are cascaded in the domain. For such a system, we present the state-feedback control design based on the PDE backstepping method. Recognizing that the distributed temperature gradients and structural vibrations in the Timoshenko beam are typically unmeasurable in practice, we design a state observer for the mixed hyperbolic-parabolic PDE system. Based on this observer, an output-feedback controller is then built to regulate the overall system using only available boundary measurements. In the closed-loop system, the state of the uncontrolled boundary, i.e., the furthest state from the control input, is proved to be exponentially convergent to zero, and all signals are proved as uniformly ultimately bounded. The proposed control design is validated on an aero-engine flexible blade under extreme thermal and aerodynamic conditions."
+  },
+  {
+    "title": "Tackling paper mills requires us to prevent future contamination and clean up the past -- the case of the journal Bioengineered",
+    "url": "http://arxiv.org/abs/2503.21267v1",
+    "arxiv_id": "2503.21267v1",
+    "authors": [
+      "Rene Aquarius",
+      "Elisabeth M. Bik",
+      "David Bimler",
+      "Morten P. Oksvold",
+      "Kevin Patrick"
+    ],
+    "published": "2025-03-27T08:47:35+00:00",
+    "summary": "Introduction: Taylor & Francis journal Bioengineered has been targeted by paper mills. The goal of this study is to identify problematic articles published in Bioengineered during the period when the journal was affected by paper mills (2021-2022) and compare this to the number of problematic articles we can identify in the years prior (2019-2020).   Methods: Dimensions was used to search for articles that contained the terms mouse OR mice OR rat OR rats in title or abstract, published in Bioengineered between January 1st 2010 to December 31st 2024. All articles were assessed by eye and by using software to detect inappropriate image duplication and manipulation. An article was classified as problematic if it contained inappropriate image duplication or manipulation or had been previously retracted. Problematic articles were reported on PubPeer by the authors, if they had not been reported previously. All included articles were assess for post-publication editorial decisions.   Results: We have excluded all articles published in 2024 from further analysis, as these were all retraction notices. We assessed the remaining 878 articles, of which 226 (25.7%) were identified as problematic. Of the problematic articles, 35 had been previously retracted One article was retracted, which was later nullified. One article received a correction. None of the included articles received an expression of concern or the Taylor & Francis under investigation pop-up.   Conclusions: Taylor & Francis lack of editorial action has left the scientific community vulnerable to reading and citing hundreds of problematic articles published in Bioengineered. To uphold scientific integrity, Taylor & Francis should use the findings of this study as a starting point to systematically identify all compromised articles in Bioengineered and take appropriate editorial action."
+  }
+]
