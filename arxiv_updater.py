@@ -21,7 +21,9 @@ QUERY_TERMS = {
         "manipulation",
         "robot manipulation",
         "robotic arm",
-        "manipulator"
+        "manipulator",
+        "VLA",
+        "vision language action model"
     ],
     'exclude': []
 }
