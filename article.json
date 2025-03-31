@@ -1,5 +1,72 @@
 [
   {
+    "title": "Q-Insight: Understanding Image Quality via Visual Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2503.22679v1",
+    "arxiv_id": "2503.22679v1",
+    "authors": [
+      "Weiqi Li",
+      "Xuanyu Zhang",
+      "Shijie Zhao",
+      "Yabin Zhang",
+      "Junlin Li",
+      "Li Zhang",
+      "Jian Zhang"
+    ],
+    "published": "2025-03-28T17:59:54+00:00",
+    "summary": "Image quality assessment (IQA) focuses on the perceptual visual quality of images, playing a crucial role in downstream tasks such as image reconstruction, compression, and generation. The rapid advancement of multi-modal large language models (MLLMs) has significantly broadened the scope of IQA, moving toward comprehensive image quality understanding that incorporates content analysis, degradation perception, and comparison reasoning beyond mere numerical scoring. Previous MLLM-based methods typically either generate numerical scores lacking interpretability or heavily rely on supervised fine-tuning (SFT) using large-scale annotated datasets to provide descriptive assessments, limiting their flexibility and applicability. In this paper, we propose Q-Insight, a reinforcement learning-based model built upon group relative policy optimization (GRPO), which demonstrates strong visual reasoning capability for image quality understanding while requiring only a limited amount of rating scores and degradation labels. By jointly optimizing score regression and degradation perception tasks with carefully designed reward functions, our approach effectively exploits their mutual benefits for enhanced performance. Extensive experiments demonstrate that Q-Insight substantially outperforms existing state-of-the-art methods in both score regression and degradation perception tasks, while exhibiting impressive zero-shot generalization to comparison reasoning tasks. Code will be available at https://github.com/lwq20020127/Q-Insight."
+  },
+  {
+    "title": "Verifying Nonlinear Neural Feedback Systems using Polyhedral Enclosures",
+    "url": "http://arxiv.org/abs/2503.22660v1",
+    "arxiv_id": "2503.22660v1",
+    "authors": [
+      "Samuel I. Akinwande",
+      "Chelsea Sidrane",
+      "Mykel J. Kochenderfer",
+      "Clark Barrett"
+    ],
+    "published": "2025-03-28T17:45:23+00:00",
+    "summary": "As dynamical systems equipped with neural network controllers (neural feedback systems) become increasingly prevalent, it is critical to develop methods to ensure their safe operation. Verifying safety requires extending control theoretic analysis methods to these systems. Although existing techniques can efficiently handle linear neural feedback systems, relatively few scalable methods address the nonlinear case. We propose a novel algorithm for forward reachability analysis of nonlinear neural feedback systems. The approach leverages the structure of the nonlinear transition functions of the systems to compute tight polyhedral enclosures (i.e., abstractions). These enclosures, combined with the neural controller, are then encoded as a mixed-integer linear program (MILP). Optimizing this MILP yields a sound over-approximation of the forward-reachable set. We evaluate our algorithm on representative benchmarks and demonstrate an order of magnitude improvement over the current state of the art."
+  },
+  {
+    "title": "Finding Unknown Unknowns using Cyber-Physical System Simulators (Extended Report)",
+    "url": "http://arxiv.org/abs/2503.22646v1",
+    "arxiv_id": "2503.22646v1",
+    "authors": [
+      "Semaan Douglas Wehbe",
+      "Stanley Bak"
+    ],
+    "published": "2025-03-28T17:32:26+00:00",
+    "summary": "Simulation-based approaches are among the most practical means to search for safety violations, bugs, and other unexpected events in cyber-physical systems (CPS). Where existing approaches search for simulations violating a formal specification or maximizing a notion of coverage, in this work we propose a new goal for testing: to discover unknown rare behaviors by examining discrete mode sequences. We assume a CPS simulator outputs mode information, and strive to explore the sequences of modes produced by varying the initial state or time-varying uncertainties. We hypothesize that rare mode sequences are often the most interesting to a designer, and we develop two accelerated sampling algorithms that speed up the process of finding such sequences. We evaluate our approach on several benchmarks, ranging from synthetic examples to Simulink diagrams of a CPS, demonstrating in some cases a speedup of over 100x compared with a random sampling strategy."
+  },
+  {
+    "title": "Empirical Analysis of Sim-and-Real Cotraining Of Diffusion Policies For Planar Pushing from Pixels",
+    "url": "http://arxiv.org/abs/2503.22634v1",
+    "arxiv_id": "2503.22634v1",
+    "authors": [
+      "Adam Wei",
+      "Abhinav Agarwal",
+      "Boyuan Chen",
+      "Rohan Bosworth",
+      "Nicholas Pfaff",
+      "Russ Tedrake"
+    ],
+    "published": "2025-03-28T17:25:57+00:00",
+    "summary": "In imitation learning for robotics, cotraining with demonstration data generated both in simulation and on real hardware has emerged as a powerful recipe to overcome the sim2real gap. This work seeks to elucidate basic principles of this sim-and-real cotraining to help inform simulation design, sim-and-real dataset creation, and policy training. Focusing narrowly on the canonical task of planar pushing from camera inputs enabled us to be thorough in our study. These experiments confirm that cotraining with simulated data \\emph{can} dramatically improve performance in real, especially when real data is limited. Performance gains scale with simulated data, but eventually plateau; real-world data increases this performance ceiling. The results also suggest that reducing the domain gap in physics may be more important than visual fidelity for non-prehensile manipulation tasks. Perhaps surprisingly, having some visual domain gap actually helps the cotrained policy -- binary probes reveal that high-performing policies learn to distinguish simulated domains from real. We conclude by investigating this nuance and mechanisms that facilitate positive transfer between sim-and-real. In total, our experiments span over 40 real-world policies (evaluated on 800+ trials) and 200 simulated policies (evaluated on 40,000+ trials)."
+  },
+  {
+    "title": "Reinforcement Learning for Machine Learning Model Deployment: Evaluating Multi-Armed Bandits in ML Ops Environments",
+    "url": "http://arxiv.org/abs/2503.22595v1",
+    "arxiv_id": "2503.22595v1",
+    "authors": [
+      "S. Aaron McClendon",
+      "Vishaal Venkatesh",
+      "Juan Morinelli"
+    ],
+    "published": "2025-03-28T16:42:21+00:00",
+    "summary": "In modern ML Ops environments, model deployment is a critical process that traditionally relies on static heuristics such as validation error comparisons and A/B testing. However, these methods require human intervention to adapt to real-world deployment challenges, such as model drift or unexpected performance degradation. We investigate whether reinforcement learning, specifically multi-armed bandit (MAB) algorithms, can dynamically manage model deployment decisions more effectively. Our approach enables more adaptive production environments by continuously evaluating deployed models and rolling back underperforming ones in real-time. We test six model selection strategies across two real-world datasets and find that RL based approaches match or exceed traditional methods in performance. Our findings suggest that reinforcement learning (RL)-based model management can improve automation, reduce reliance on manual interventions, and mitigate risks associated with post-deployment model failures."
+  },
+  {
     "title": "HS-SLAM: Hybrid Representation with Structural Supervision for Improved Dense SLAM",
     "url": "http://arxiv.org/abs/2503.21778v1",
     "arxiv_id": "2503.21778v1",
