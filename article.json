@@ -1,5 +1,75 @@
 [
   {
+    "title": "SeGuE: Semantic Guided Exploration for Mobile Robots",
+    "url": "http://arxiv.org/abs/2504.03629v1",
+    "arxiv_id": "2504.03629v1",
+    "authors": [
+      "Cody Simons",
+      "Aritra Samanta",
+      "Amit K. Roy-Chowdhury",
+      "Konstantinos Karydis"
+    ],
+    "published": "2025-04-04T17:46:45+00:00",
+    "summary": "The rise of embodied AI applications has enabled robots to perform complex tasks which require a sophisticated understanding of their environment. To enable successful robot operation in such settings, maps must be constructed so that they include semantic information, in addition to geometric information. In this paper, we address the novel problem of semantic exploration, whereby a mobile robot must autonomously explore an environment to fully map both its structure and the semantic appearance of features. We develop a method based on next-best-view exploration, where potential poses are scored based on the semantic features visible from that pose. We explore two alternative methods for sampling potential views and demonstrate the effectiveness of our framework in both simulation and physical experiments. Automatic creation of high-quality semantic maps can enable robots to better understand and interact with their environments and enable future embodied AI applications to be more easily deployed."
+  },
+  {
+    "title": "Align to Structure: Aligning Large Language Models with Structural Information",
+    "url": "http://arxiv.org/abs/2504.03622v1",
+    "arxiv_id": "2504.03622v1",
+    "authors": [
+      "Zae Myung Kim",
+      "Anand Ramachandran",
+      "Farideh Tavazoee",
+      "Joo-Kyung Kim",
+      "Oleg Rokhlenko",
+      "Dongyeop Kang"
+    ],
+    "published": "2025-04-04T17:40:04+00:00",
+    "summary": "Generating long, coherent text remains a challenge for large language models (LLMs), as they lack hierarchical planning and structured organization in discourse generation. We introduce Structural Alignment, a novel method that aligns LLMs with human-like discourse structures to enhance long-form text generation. By integrating linguistically grounded discourse frameworks into reinforcement learning, our approach guides models to produce coherent and well-organized outputs. We employ a dense reward scheme within a Proximal Policy Optimization framework, assigning fine-grained, token-level rewards based on the discourse distinctiveness relative to human writing. Two complementary reward models are evaluated: the first improves readability by scoring surface-level textual features to provide explicit structuring, while the second reinforces deeper coherence and rhetorical sophistication by analyzing global discourse patterns through hierarchical discourse motifs, outperforming both standard and RLHF-enhanced models in tasks such as essay generation and long-document summarization. All training data and code will be publicly shared at https://github.com/minnesotanlp/struct_align."
+  },
+  {
+    "title": "Optimization of a Triangular Delaunay Mesh Generator using Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2504.03610v1",
+    "arxiv_id": "2504.03610v1",
+    "authors": [
+      "Will Thacher",
+      "Per-Olof Persson",
+      "Yulong Pan"
+    ],
+    "published": "2025-04-04T17:30:50+00:00",
+    "summary": "In this work we introduce a triangular Delaunay mesh generator that can be trained using reinforcement learning to maximize a given mesh quality metric. Our mesh generator consists of a graph neural network that distributes and modifies vertices, and a standard Delaunay algorithm to triangulate the vertices. We explore various design choices and evaluate our mesh generator on various tasks including mesh generation, mesh improvement, and producing variable resolution meshes. The learned mesh generator outputs meshes that are comparable to those produced by Triangle and DistMesh, two popular Delaunay-based mesh generators."
+  },
+  {
+    "title": "Robust Human Registration with Body Part Segmentation on Noisy Point Clouds",
+    "url": "http://arxiv.org/abs/2504.03602v1",
+    "arxiv_id": "2504.03602v1",
+    "authors": [
+      "Kai Lascheit",
+      "Daniel Barath",
+      "Marc Pollefeys",
+      "Leonidas Guibas",
+      "Francis Engelmann"
+    ],
+    "published": "2025-04-04T17:17:33+00:00",
+    "summary": "Registering human meshes to 3D point clouds is essential for applications such as augmented reality and human-robot interaction but often yields imprecise results due to noise and background clutter in real-world data. We introduce a hybrid approach that incorporates body-part segmentation into the mesh fitting process, enhancing both human pose estimation and segmentation accuracy. Our method first assigns body part labels to individual points, which then guide a two-step SMPL-X fitting: initial pose and orientation estimation using body part centroids, followed by global refinement of the point cloud alignment. Additionally, we demonstrate that the fitted human mesh can refine body part labels, leading to improved segmentation. Evaluations on the cluttered and noisy real-world datasets InterCap, EgoBody, and BEHAVE show that our approach significantly outperforms prior methods in both pose estimation and segmentation accuracy. Code and results are available on our project website: https://segfit.github.io"
+  },
+  {
+    "title": "Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation",
+    "url": "http://arxiv.org/abs/2504.03597v1",
+    "arxiv_id": "2504.03597v1",
+    "authors": [
+      "Jad Abou-Chakra",
+      "Lingfeng Sun",
+      "Krishan Rana",
+      "Brandon May",
+      "Karl Schmeckpeper",
+      "Maria Vittoria Minniti",
+      "Laura Herlant"
+    ],
+    "published": "2025-04-04T17:05:56+00:00",
+    "summary": "Recent advancements in behavior cloning have enabled robots to perform complex manipulation tasks. However, accurately assessing training performance remains challenging, particularly for real-world applications, as behavior cloning losses often correlate poorly with actual task success. Consequently, researchers resort to success rate metrics derived from costly and time-consuming real-world evaluations, making the identification of optimal policies and detection of overfitting or underfitting impractical. To address these issues, we propose real-is-sim, a novel behavior cloning framework that incorporates a dynamic digital twin (based on Embodied Gaussians) throughout the entire policy development pipeline: data collection, training, and deployment. By continuously aligning the simulated world with the physical world, demonstrations can be collected in the real world with states extracted from the simulator. The simulator enables flexible state representations by rendering image inputs from any viewpoint or extracting low-level state information from objects embodied within the scene. During training, policies can be directly evaluated within the simulator in an offline and highly parallelizable manner. Finally, during deployment, policies are run within the simulator where the real robot directly tracks the simulated robot's joints, effectively decoupling policy execution from real hardware and mitigating traditional domain-transfer challenges. We validate real-is-sim on the PushT manipulation task, demonstrating strong correlation between success rates obtained in the simulator and real-world evaluations. Videos of our system can be found at https://realissim.rai-inst.com."
+  },
+  {
     "title": "Concept Lancet: Image Editing with Compositional Representation Transplant",
     "url": "http://arxiv.org/abs/2504.02828v1",
     "arxiv_id": "2504.02828v1",
