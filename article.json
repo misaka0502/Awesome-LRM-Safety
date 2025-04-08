@@ -1,5 +1,70 @@
 [
   {
+    "title": "Ionomeric extracellular matrices for dynamic soft robotic tissue engineering devices through protein sulfonation",
+    "url": "http://arxiv.org/abs/2504.05302v1",
+    "arxiv_id": "2504.05302v1",
+    "authors": [
+      "Matthew K Burgess",
+      "Ryan T Murray",
+      "Veronica M Lucian",
+      "Zekun Liu",
+      "Robin O Cleveland",
+      "Callum J Beeston",
+      "Malavika Nair"
+    ],
+    "published": "2025-04-07T17:59:11+00:00",
+    "summary": "Conventional tissue engineering methodologies frequently depend on pharmacological strategies to induce or expedite tissue repair. However, bioengineered strategies incorporating biophysical stimulation have emerged as promising alternatives. Electroactive materials facilitate the provision of controlled electrical, mechanical, and electromechanical stimuli, which support cell proliferation and tissue remodelling. Despite their ability to supply external electrical and mechanical stimuli to the tissue microenvironment, the electroactive polymers in use today often lack critical biochemical signals essential for native-like cell-cell and cell-scaffold interactions, thereby constraining their regenerative capabilities. To address the demand for biomimetic materials that possess enhanced capabilities in promoting cell and tissue stimulation, we present the development of a novel class of polymers called ionomeric extracellular matrices (iECMs). By utilising the linker-mediated conjugation of sulfonic acid biomolecules (taurine) to the backbone of an extracellular matrix protein (collagen), we illustrate the potential of iECMs as the first electromechanical actuating material platform derived entirely from ECM materials, paving the way for dynamic and soft-robotic platforms for a wide range of tissue engineering applications."
+  },
+  {
+    "title": "Truthful or Fabricated? Using Causal Attribution to Mitigate Reward Hacking in Explanations",
+    "url": "http://arxiv.org/abs/2504.05294v1",
+    "arxiv_id": "2504.05294v1",
+    "authors": [
+      "Pedro Ferreira",
+      "Wilker Aziz",
+      "Ivan Titov"
+    ],
+    "published": "2025-04-07T17:49:23+00:00",
+    "summary": "Chain-of-thought explanations are widely used to inspect the decision process of large language models (LLMs) and to evaluate the trustworthiness of model outputs, making them important for effective collaboration between LLMs and humans. We demonstrate that preference optimization - a key step in the alignment phase - can inadvertently reduce the faithfulness of these explanations. This occurs because the reward model (RM), which guides alignment, is tasked with optimizing both the expected quality of the response and the appropriateness of the explanations (e.g., minimizing bias or adhering to safety standards), creating potential conflicts. The RM lacks a mechanism to assess the consistency between the model's internal decision process and the generated explanation. Consequently, the LLM may engage in \"reward hacking\" by producing a final response that scores highly while giving an explanation tailored to maximize reward rather than accurately reflecting its reasoning. To address this issue, we propose enriching the RM's input with a causal attribution of the prediction, allowing the RM to detect discrepancies between the generated self-explanation and the model's decision process. In controlled settings, we show that this approach reduces the tendency of the LLM to generate misleading explanations."
+  },
+  {
+    "title": "Using Physiological Measures, Gaze, and Facial Expressions to Model Human Trust in a Robot Partner",
+    "url": "http://arxiv.org/abs/2504.05291v1",
+    "arxiv_id": "2504.05291v1",
+    "authors": [
+      "Haley N. Green",
+      "Tariq Iqbal"
+    ],
+    "published": "2025-04-07T17:45:17+00:00",
+    "summary": "With robots becoming increasingly prevalent in various domains, it has become crucial to equip them with tools to achieve greater fluency in interactions with humans. One of the promising areas for further exploration lies in human trust. A real-time, objective model of human trust could be used to maximize productivity, preserve safety, and mitigate failure. In this work, we attempt to use physiological measures, gaze, and facial expressions to model human trust in a robot partner. We are the first to design an in-person, human-robot supervisory interaction study to create a dedicated trust dataset. Using this dataset, we train machine learning algorithms to identify the objective measures that are most indicative of trust in a robot partner, advancing trust prediction in human-robot interactions. Our findings indicate that a combination of sensor modalities (blood volume pulse, electrodermal activity, skin temperature, and gaze) can enhance the accuracy of detecting human trust in a robot partner. Furthermore, the Extra Trees, Random Forest, and Decision Trees classifiers exhibit consistently better performance in measuring the person's trust in the robot partner. These results lay the groundwork for constructing a real-time trust model for human-robot interaction, which could foster more efficient interactions between humans and robots."
+  },
+  {
+    "title": "RobustDexGrasp: Robust Dexterous Grasping of General Objects from Single-view Perception",
+    "url": "http://arxiv.org/abs/2504.05287v1",
+    "arxiv_id": "2504.05287v1",
+    "authors": [
+      "Hui Zhang",
+      "Zijian Wu",
+      "Linyi Huang",
+      "Sammy Christen",
+      "Jie Song"
+    ],
+    "published": "2025-04-07T17:38:19+00:00",
+    "summary": "Robust grasping of various objects from single-view perception is fundamental for dexterous robots. Previous works often rely on fully observable objects, expert demonstrations, or static grasping poses, which restrict their generalization ability and adaptability to external disturbances. In this paper, we present a reinforcement-learning-based framework that enables zero-shot dynamic dexterous grasping of a wide range of unseen objects from single-view perception, while performing adaptive motions to external disturbances. We utilize a hand-centric object representation for shape feature extraction that emphasizes interaction-relevant local shapes, enhancing robustness to shape variance and uncertainty. To enable effective hand adaptation to disturbances with limited observations, we propose a mixed curriculum learning strategy, which first utilizes imitation learning to distill a policy trained with privileged real-time visual-tactile feedback, and gradually transfers to reinforcement learning to learn adaptive motions under disturbances caused by observation noises and dynamic randomization. Our experiments demonstrate strong generalization in grasping unseen objects with random poses, achieving success rates of 97.0% across 247,786 simulated objects and 94.6% across 512 real objects. We also demonstrate the robustness of our method to various disturbances, including unobserved object movement and external forces, through both quantitative and qualitative evaluations. Project Page: https://zdchan.github.io/Robust_DexGrasp/"
+  },
+  {
+    "title": "Manipulating phases in many-body interacting systems with subsystem resetting",
+    "url": "http://arxiv.org/abs/2504.05260v1",
+    "arxiv_id": "2504.05260v1",
+    "authors": [
+      "Anish Acharya",
+      "Rupak Majumder",
+      "Shamik Gupta"
+    ],
+    "published": "2025-04-07T16:53:44+00:00",
+    "summary": "Stabilizing thermodynamically unstable phases in many-body systems -- such as suppressing pathological neuronal synchronization in Parkinson's disease or maintaining magnetic order across broad temperature ranges -- remains a persistent challenge. In traditional approaches, such phases are stabilized through intervening in the dynamics of all system constituents or introducing additional interactions. Here, we offer a hitherto-unexplored alternative -- subsystem resetting, whereby intervention in the dynamics of only a part of the system, and that too only occasionally in time, is implemented through resetting its state to a reset configuration. Just playing with a few parameters, e.g., the nature of the reset configuration and the size of the reset subsystem, one achieves a remarkable and robust control over the phase diagram of the bare dynamics. We demonstrate that these universal effects span a wide variety of scenarios, including equilibrium and non-equilibrium, mean-field and non-mean-field dynamics, with and without quenched disorder. Despite the challenges posed by memory effects, we obtain explicit analytical predictions, validated by simulations."
+  },
+  {
     "title": "SeGuE: Semantic Guided Exploration for Mobile Robots",
     "url": "http://arxiv.org/abs/2504.03629v1",
     "arxiv_id": "2504.03629v1",
