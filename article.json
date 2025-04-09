@@ -1,5 +1,76 @@
 [
   {
+    "title": "Underwater Robotic Simulators Review for Autonomous System Development",
+    "url": "http://arxiv.org/abs/2504.06245v1",
+    "arxiv_id": "2504.06245v1",
+    "authors": [
+      "Sara Aldhaheri",
+      "Yang Hu",
+      "Yongchang Xie",
+      "Peng Wu",
+      "Dimitrios Kanoulas",
+      "Yuanchang Liu"
+    ],
+    "published": "2025-04-08T17:43:48+00:00",
+    "summary": "The increasing complexity of underwater robotic systems has led to a surge in simulation platforms designed to support perception, planning, and control tasks in marine environments. However, selecting the most appropriate underwater robotic simulator (URS) remains a challenge due to wide variations in fidelity, extensibility, and task suitability. This paper presents a comprehensive review and comparative analysis of five state-of-the-art, ROS-compatible, open-source URSs: Stonefish, DAVE, HoloOcean, MARUS, and UNav-Sim. Each simulator is evaluated across multiple criteria including sensor fidelity, environmental realism, sim-to-real capabilities, and research impact. We evaluate them across architectural design, sensor and physics modeling, task capabilities, and research impact. Additionally, we discuss ongoing challenges in sim-to-real transfer and highlight the need for standardization and benchmarking in the field. Our findings aim to guide practitioners in selecting effective simulation environments and inform future development of more robust and transferable URSs."
+  },
+  {
+    "title": "Addressing Relative Degree Issues in Control Barrier Function Synthesis with Physics-Informed Neural Networks",
+    "url": "http://arxiv.org/abs/2504.06242v1",
+    "arxiv_id": "2504.06242v1",
+    "authors": [
+      "Lukas Brunke",
+      "Siqi Zhou",
+      "Francesco D'Orazio",
+      "Angela P. Schoellig"
+    ],
+    "published": "2025-04-08T17:41:43+00:00",
+    "summary": "In robotics, control barrier function (CBF)-based safety filters are commonly used to enforce state constraints. A critical challenge arises when the relative degree of the CBF varies across the state space. This variability can create regions within the safe set where the control input becomes unconstrained. When implemented as a safety filter, this may result in chattering near the safety boundary and ultimately compromise system safety. To address this issue, we propose a novel approach for CBF synthesis by formulating it as solving a set of boundary value problems. The solutions to the boundary value problems are determined using physics-informed neural networks (PINNs). Our approach ensures that the synthesized CBFs maintain a constant relative degree across the set of admissible states, thereby preventing unconstrained control scenarios. We illustrate the approach in simulation and further verify it through real-world quadrotor experiments, demonstrating its effectiveness in preserving desired system safety properties."
+  },
+  {
+    "title": "Dictionary-free Koopman Predictive Control for Autonomous Vehicles in Mixed Traffic",
+    "url": "http://arxiv.org/abs/2504.06240v1",
+    "arxiv_id": "2504.06240v1",
+    "authors": [
+      "Xu Shang",
+      "Zhaojian Li",
+      "Yang Zheng"
+    ],
+    "published": "2025-04-08T17:40:54+00:00",
+    "summary": "Koopman Model Predictive Control (KMPC) and Data-EnablEd Predictive Control (DeePC) use linear models to approximate nonlinear systems and integrate them with predictive control. Both approaches have recently demonstrated promising performance in controlling Connected and Autonomous Vehicles (CAVs) in mixed traffic. However, selecting appropriate lifting functions for the Koopman operator in KMPC is challenging, while the data-driven representation from Willems' fundamental lemma in DeePC must be updated to approximate the local linearization when the equilibrium traffic state changes. In this paper, we propose a dictionary-free Koopman model predictive control (DF-KMPC) for CAV control. In particular, we first introduce a behavioral perspective to identify the optimal dictionary-free Koopman linear model. We then utilize an iterative algorithm to compute a data-driven approximation of the dictionary-free Koopman representation. Integrating this data-driven linear representation with predictive control leads to our DF-KMPC, which eliminates the need to select lifting functions and update the traffic equilibrium state. Nonlinear traffic simulations show that DF-KMPC effectively mitigates traffic waves and improves tracking performance."
+  },
+  {
+    "title": "Accessible and Pedagogically-Grounded Explainability for Human-Robot Interaction: A Framework Based on UDL and Symbolic Interfaces",
+    "url": "http://arxiv.org/abs/2504.06189v1",
+    "arxiv_id": "2504.06189v1",
+    "authors": [
+      "Francisco J. Rodr\u00edguez Lera",
+      "Raquel Fern\u00e1ndez Hern\u00e1ndez",
+      "Sonia Lopez Gonz\u00e1lez",
+      "Miguel Angel Gonz\u00e1lez-Santamarta",
+      "Francisco Jes\u00fas Rodr\u00edguez Sedano",
+      "Camino Fernandez Llamas"
+    ],
+    "published": "2025-04-08T16:33:52+00:00",
+    "summary": "This paper presents a novel framework for accessible and pedagogically-grounded robot explainability, designed to support human-robot interaction (HRI) with users who have diverse cognitive, communicative, or learning needs. We combine principles from Universal Design for Learning (UDL) and Universal Design (UD) with symbolic communication strategies to facilitate the alignment of mental models between humans and robots. Our approach employs Asterics Grid and ARASAAC pictograms as a multimodal, interpretable front-end, integrated with a lightweight HTTP-to-ROS 2 bridge that enables real-time interaction and explanation triggering. We emphasize that explainability is not a one-way function but a bidirectional process, where human understanding and robot transparency must co-evolve. We further argue that in educational or assistive contexts, the role of a human mediator (e.g., a teacher) may be essential to support shared understanding. We validate our framework with examples of multimodal explanation boards and discuss how it can be extended to different scenarios in education, assistive robotics, and inclusive AI."
+  },
+  {
+    "title": "Plug and Play Distributed Control of Clustered Energy Hub Networks",
+    "url": "http://arxiv.org/abs/2504.06179v1",
+    "arxiv_id": "2504.06179v1",
+    "authors": [
+      "Varsha Behrunani",
+      "Cara Koepele",
+      "Jared Miller",
+      "Ahmed Aboudonia",
+      "Philipp Heer",
+      "Roy S. Smith",
+      "John Lygeros"
+    ],
+    "published": "2025-04-08T16:21:23+00:00",
+    "summary": "The transition to renewable energy is driving the rise of distributed multi-energy systems, in which individual energy hubs and prosumers (e.g., homes, industrial campuses) generate, store, and trade energy. Economic Model Predictive Control (MPC) schemes are widely used to optimize operation of energy hubs by efficiently dispatching resources and minimizing costs while ensuring operational constraints are met. Peer-to-peer (P2P) energy trading among hubs enhances network efficiency and reduces costs but also increases computational and privacy challenges, especially as the network scales. Additionally, current distributed control techniques require global recomputation whenever the network topology changes, limiting scalability. To address these challenges, we propose a clustering-based P2P trading framework that enables plug-and-play operation, allowing energy hubs to seamlessly join or leave without requiring network-wide controller updates. The impact is restricted to the hubs within the affected cluster. The energy trading problem is formulated as a bi-level bargaining game, where inter-cluster trading commitments are determined at the cluster level, while energy dispatch and cost-sharing among hubs within a cluster are refined at the hub level. Both levels are solved in a distributed manner using ADMM, ensuring computational feasibility and privacy preservation. Moreover, we develop plug-and-play procedures to handle dynamic topology changes at both the hub and cluster levels, minimizing disruptions across the network. Simulation results demonstrate that the proposed bi-level framework reduces operational costs, and enables scalable energy management under plug-and-play operation."
+  },
+  {
     "title": "Ionomeric extracellular matrices for dynamic soft robotic tissue engineering devices through protein sulfonation",
     "url": "http://arxiv.org/abs/2504.05302v1",
     "arxiv_id": "2504.05302v1",
