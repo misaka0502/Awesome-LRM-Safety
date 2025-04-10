@@ -1,5 +1,87 @@
 [
   {
+    "title": "Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual Learning",
+    "url": "http://arxiv.org/abs/2504.07097v1",
+    "arxiv_id": "2504.07097v1",
+    "authors": [
+      "Nikhil Shivakumar Nayak",
+      "Krishnateja Killamsetty",
+      "Ligong Han",
+      "Abhishek Bhandwaldar",
+      "Prateek Chanda",
+      "Kai Xu",
+      "Hao Wang",
+      "Aldo Pareja",
+      "Oleg Silkin",
+      "Mustafa Eyceoz",
+      "Akash Srivastava"
+    ],
+    "published": "2025-04-09T17:59:42+00:00",
+    "summary": "Continual learning in large language models (LLMs) is prone to catastrophic forgetting, where adapting to new tasks significantly degrades performance on previously learned ones. Existing methods typically rely on low-rank, parameter-efficient updates that limit the model's expressivity and introduce additional parameters per task, leading to scalability issues. To address these limitations, we propose a novel continual full fine-tuning approach leveraging adaptive singular value decomposition (SVD). Our method dynamically identifies task-specific low-rank parameter subspaces and constrains updates to be orthogonal to critical directions associated with prior tasks, thus effectively minimizing interference without additional parameter overhead or storing previous task gradients. We evaluate our approach extensively on standard continual learning benchmarks using both encoder-decoder (T5-Large) and decoder-only (LLaMA-2 7B) models, spanning diverse tasks including classification, generation, and reasoning. Empirically, our method achieves state-of-the-art results, up to 7% higher average accuracy than recent baselines like O-LoRA, and notably maintains the model's general linguistic capabilities, instruction-following accuracy, and safety throughout the continual learning process by reducing forgetting to near-negligible levels. Our adaptive SVD framework effectively balances model plasticity and knowledge retention, providing a practical, theoretically grounded, and computationally scalable solution for continual learning scenarios in large language models."
+  },
+  {
+    "title": "Neural Motion Simulator: Pushing the Limit of World Models in Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2504.07095v1",
+    "arxiv_id": "2504.07095v1",
+    "authors": [
+      "Chenjie Hao",
+      "Weyl Lu",
+      "Yifan Xu",
+      "Yubei Chen"
+    ],
+    "published": "2025-04-09T17:59:32+00:00",
+    "summary": "An embodied system must not only model the patterns of the external world but also understand its own motion dynamics. A motion dynamic model is essential for efficient skill acquisition and effective planning. In this work, we introduce the neural motion simulator (MoSim), a world model that predicts the future physical state of an embodied system based on current observations and actions. MoSim achieves state-of-the-art performance in physical state prediction and provides competitive performance across a range of downstream tasks. This works shows that when a world model is accurate enough and performs precise long-horizon predictions, it can facilitate efficient skill acquisition in imagined worlds and even enable zero-shot reinforcement learning. Furthermore, MoSim can transform any model-free reinforcement learning (RL) algorithm into a model-based approach, effectively decoupling physical environment modeling from RL algorithm development. This separation allows for independent advancements in RL algorithms and world modeling, significantly improving sample efficiency and enhancing generalization capabilities. Our findings highlight that world models for motion dynamics is a promising direction for developing more versatile and capable embodied systems."
+  },
+  {
+    "title": "FlashDepth: Real-time Streaming Video Depth Estimation at 2K Resolution",
+    "url": "http://arxiv.org/abs/2504.07093v1",
+    "arxiv_id": "2504.07093v1",
+    "authors": [
+      "Gene Chou",
+      "Wenqi Xian",
+      "Guandao Yang",
+      "Mohamed Abdelfattah",
+      "Bharath Hariharan",
+      "Noah Snavely",
+      "Ning Yu",
+      "Paul Debevec"
+    ],
+    "published": "2025-04-09T17:59:31+00:00",
+    "summary": "A versatile video depth estimation model should (1) be accurate and consistent across frames, (2) produce high-resolution depth maps, and (3) support real-time streaming. We propose FlashDepth, a method that satisfies all three requirements, performing depth estimation on a 2044x1148 streaming video at 24 FPS. We show that, with careful modifications to pretrained single-image depth models, these capabilities are enabled with relatively little data and training. We evaluate our approach across multiple unseen datasets against state-of-the-art depth models, and find that ours outperforms them in terms of boundary sharpness and speed by a significant margin, while maintaining competitive accuracy. We hope our model will enable various applications that require high-resolution depth, such as video editing, and online decision-making, such as robotics."
+  },
+  {
+    "title": "AssistanceZero: Scalably Solving Assistance Games",
+    "url": "http://arxiv.org/abs/2504.07091v1",
+    "arxiv_id": "2504.07091v1",
+    "authors": [
+      "Cassidy Laidlaw",
+      "Eli Bronstein",
+      "Timothy Guo",
+      "Dylan Feng",
+      "Lukas Berglund",
+      "Justin Svegliato",
+      "Stuart Russell",
+      "Anca Dragan"
+    ],
+    "published": "2025-04-09T17:59:03+00:00",
+    "summary": "Assistance games are a promising alternative to reinforcement learning from human feedback (RLHF) for training AI assistants. Assistance games resolve key drawbacks of RLHF, such as incentives for deceptive behavior, by explicitly modeling the interaction between assistant and user as a two-player game where the assistant cannot observe their shared goal. Despite their potential, assistance games have only been explored in simple settings. Scaling them to more complex environments is difficult because it requires both solving intractable decision-making problems under uncertainty and accurately modeling human users' behavior. We present the first scalable approach to solving assistance games and apply it to a new, challenging Minecraft-based assistance game with over $10^{400}$ possible goals. Our approach, AssistanceZero, extends AlphaZero with a neural network that predicts human actions and rewards, enabling it to plan under uncertainty. We show that AssistanceZero outperforms model-free RL algorithms and imitation learning in the Minecraft-based assistance game. In a human study, our AssistanceZero-trained assistant significantly reduces the number of actions participants take to complete building tasks in Minecraft. Our results suggest that assistance games are a tractable framework for training effective AI assistants in complex environments. Our code and models are available at https://github.com/cassidylaidlaw/minecraft-building-assistance-game."
+  },
+  {
+    "title": "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility",
+    "url": "http://arxiv.org/abs/2504.07086v1",
+    "arxiv_id": "2504.07086v1",
+    "authors": [
+      "Andreas Hochlehnert",
+      "Hardik Bhatnagar",
+      "Vishaal Udandarao",
+      "Samuel Albanie",
+      "Ameya Prabhu",
+      "Matthias Bethge"
+    ],
+    "published": "2025-04-09T17:58:17+00:00",
+    "summary": "Reasoning has emerged as the next major frontier for language models (LMs), with rapid advances from both academic and industrial labs. However, this progress often outpaces methodological rigor, with many evaluations relying on benchmarking practices that lack transparency, robustness, or statistical grounding. In this work, we conduct a comprehensive empirical study and find that current mathematical reasoning benchmarks are highly sensitive to subtle implementation choices - including decoding parameters, random seeds, prompt formatting, and even hardware and software-framework configurations. Performance gains reported in recent studies frequently hinge on unclear comparisons or unreported sources of variance. To address these issues, we propose a standardized evaluation framework with clearly defined best practices and reporting standards. Using this framework, we reassess recent methods and find that reinforcement learning (RL) approaches yield only modest improvements - far below prior claims - and are prone to overfitting, especially on small-scale benchmarks like AIME24. In contrast, supervised finetuning (SFT) methods show consistently stronger generalization. To foster reproducibility, we release all code, prompts, and model outputs, for reasoning benchmarks, establishing more rigorous foundations for future work."
+  },
+  {
     "title": "Underwater Robotic Simulators Review for Autonomous System Development",
     "url": "http://arxiv.org/abs/2504.06245v1",
     "arxiv_id": "2504.06245v1",
