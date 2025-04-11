@@ -1,5 +1,88 @@
 [
   {
+    "title": "Perception-R1: Pioneering Perception Policy with Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2504.07954v1",
+    "arxiv_id": "2504.07954v1",
+    "authors": [
+      "En Yu",
+      "Kangheng Lin",
+      "Liang Zhao",
+      "Jisheng Yin",
+      "Yana Wei",
+      "Yuang Peng",
+      "Haoran Wei",
+      "Jianjian Sun",
+      "Chunrui Han",
+      "Zheng Ge",
+      "Xiangyu Zhang",
+      "Daxin Jiang",
+      "Jingyu Wang",
+      "Wenbing Tao"
+    ],
+    "published": "2025-04-10T17:58:27+00:00",
+    "summary": "Inspired by the success of DeepSeek-R1, we explore the potential of rule-based reinforcement learning (RL) in MLLM post-training for perception policy learning. While promising, our initial experiments reveal that incorporating a thinking process through RL does not consistently lead to performance gains across all visual perception tasks. This leads us to delve into the essential role of RL in the context of visual perception. In this work, we return to the fundamentals and explore the effects of RL on different perception tasks. We observe that the perceptual complexity is a major factor in determining the effectiveness of RL. We also observe that reward design plays a crucial role in further approching the upper limit of model perception. To leverage these findings, we propose Perception-R1, a scalable RL framework using GRPO during MLLM post-training. With a standard Qwen2.5-VL-3B-Instruct, Perception-R1 achieves +4.2% on RefCOCO+, +17.9% on PixMo-Count, +4.2% on PageOCR, and notably, 31.9% AP on COCO2017 val for the first time, establishing a strong baseline for perception policy learning."
+  },
+  {
+    "title": "Echo: An Open-Source, Low-Cost Teleoperation System with Force Feedback for Dataset Collection in Robot Learning",
+    "url": "http://arxiv.org/abs/2504.07939v1",
+    "arxiv_id": "2504.07939v1",
+    "authors": [
+      "Artem Bazhenov",
+      "Sergei Satsevich",
+      "Sergei Egorov",
+      "Farit Khabibullin",
+      "Dzmitry Tsetserukou"
+    ],
+    "published": "2025-04-10T17:51:37+00:00",
+    "summary": "In this article, we propose Echo, a novel joint-matching teleoperation system designed to enhance the collection of datasets for manual and bimanual tasks. Our system is specifically tailored for controlling the UR manipulator and features a custom controller with force feedback and adjustable sensitivity modes, enabling precise and intuitive operation. Additionally, Echo integrates a user-friendly dataset recording interface, simplifying the process of collecting high-quality training data for imitation learning. The system is designed to be reliable, cost-effective, and easily reproducible, making it an accessible tool for researchers, laboratories, and startups passionate about advancing robotics through imitation learning. Although the current implementation focuses on the UR manipulator, Echo architecture is reconfigurable and can be adapted to other manipulators and humanoid systems. We demonstrate the effectiveness of Echo through a series of experiments, showcasing its ability to perform complex bimanual tasks and its potential to accelerate research in the field. We provide assembly instructions, a hardware description, and code at https://eterwait.github.io/Echo/."
+  },
+  {
+    "title": "Echo Chamber: RL Post-training Amplifies Behaviors Learned in Pretraining",
+    "url": "http://arxiv.org/abs/2504.07912v1",
+    "arxiv_id": "2504.07912v1",
+    "authors": [
+      "Rosie Zhao",
+      "Alexandru Meterez",
+      "Sham Kakade",
+      "Cengiz Pehlevan",
+      "Samy Jelassi",
+      "Eran Malach"
+    ],
+    "published": "2025-04-10T17:15:53+00:00",
+    "summary": "Reinforcement learning (RL)-based fine-tuning has become a crucial step in post-training language models for advanced mathematical reasoning and coding. Following the success of frontier reasoning models, recent work has demonstrated that RL fine-tuning consistently improves performance, even in smaller-scale models; however, the underlying mechanisms driving these improvements are not well-understood. Understanding the effects of RL fine-tuning requires disentangling its interaction with pretraining data composition, hyperparameters, and model scale, but such problems are exacerbated by the lack of transparency regarding the training data used in many existing models. In this work, we present a systematic end-to-end study of RL fine-tuning for mathematical reasoning by training models entirely from scratch on different mixtures of fully open datasets. We investigate the effects of various RL fine-tuning algorithms (PPO, GRPO, and Expert Iteration) across models of different scales. Our study reveals that RL algorithms consistently converge towards a dominant output distribution, amplifying patterns in the pretraining data. We also find that models of different scales trained on the same data mixture will converge to distinct output distributions, suggesting that there are scale-dependent biases in model generalization. Moreover, we find that RL post-training on simpler questions can lead to performance gains on harder ones, indicating that certain reasoning capabilities generalize across tasks. Our findings show that small-scale proxies in controlled settings can elicit interesting insights regarding the role of RL in shaping language model behavior."
+  },
+  {
+    "title": "Fast Adaptation with Behavioral Foundation Models",
+    "url": "http://arxiv.org/abs/2504.07896v1",
+    "arxiv_id": "2504.07896v1",
+    "authors": [
+      "Harshit Sikchi",
+      "Andrea Tirinzoni",
+      "Ahmed Touati",
+      "Yingchen Xu",
+      "Anssi Kanervisto",
+      "Scott Niekum",
+      "Amy Zhang",
+      "Alessandro Lazaric",
+      "Matteo Pirotta"
+    ],
+    "published": "2025-04-10T16:14:17+00:00",
+    "summary": "Unsupervised zero-shot reinforcement learning (RL) has emerged as a powerful paradigm for pretraining behavioral foundation models (BFMs), enabling agents to solve a wide range of downstream tasks specified via reward functions in a zero-shot fashion, i.e., without additional test-time learning or planning. This is achieved by learning self-supervised task embeddings alongside corresponding near-optimal behaviors and incorporating an inference procedure to directly retrieve the latent task embedding and associated policy for any given reward function. Despite promising results, zero-shot policies are often suboptimal due to errors induced by the unsupervised training process, the embedding, and the inference procedure. In this paper, we focus on devising fast adaptation strategies to improve the zero-shot performance of BFMs in a few steps of online interaction with the environment while avoiding any performance drop during the adaptation process. Notably, we demonstrate that existing BFMs learn a set of skills containing more performant policies than those identified by their inference procedure, making them well-suited for fast adaptation. Motivated by this observation, we propose both actor-critic and actor-only fast adaptation strategies that search in the low-dimensional task-embedding space of the pre-trained BFM to rapidly improve the performance of its zero-shot policies on any downstream task. Notably, our approach mitigates the initial \"unlearning\" phase commonly observed when fine-tuning pre-trained RL models. We evaluate our fast adaptation strategies on top of four state-of-the-art zero-shot RL methods in multiple navigation and locomotion domains. Our results show that they achieve 10-40% improvement over their zero-shot performance in a few tens of episodes, outperforming existing baselines."
+  },
+  {
+    "title": "The Role of Buffer Gas in Shaping the D1 Line Spectrum of Potassium Vapour",
+    "url": "http://arxiv.org/abs/2504.07888v1",
+    "arxiv_id": "2504.07888v1",
+    "authors": [
+      "Sharaa A. Alqarni",
+      "Danielle Pizzey",
+      "Steven A Wrathmall",
+      "Ifan G Hughes"
+    ],
+    "published": "2025-04-10T16:01:57+00:00",
+    "summary": "In this study, we investigate the effect of buffer gas and magnetic field on the spectral line shapes of the potassium D1 transition using sealed vapour cells filled with varying amounts of neon as a buffer gas. Employing a dual-temperature control system, we independently manipulate the cell body and stem temperatures to explore Doppler and collisional effects on the spectrum. Our results show how the Voigt spectral profile changes from Gaussian- to Lorentzian-dominated forms due to pressure broadening and shifts caused by collisions between potassium atoms and neon. Our measurements are in excellent agreement with the literature values for potassium-neon collisions. For the first time we were able to incorporate the buffer-gas shift and broadening into the modified Voigt profile via the ElecSus code, and found excellent agreement between the predicted and measured line profiles. We also analyse the potassium D1 spectral lines in the hyperfine Paschen-Back regime using strong magnetic fields, demonstrating how Zeeman splitting modifies the pressure-broadened line shape. This work provides valuable insights into collision-induced broadening and shifts, enhancing our understanding of potassium spectroscopy and its application in the development of advanced magneto-optical filters for solar physics and other applications."
+  },
+  {
     "title": "Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual Learning",
     "url": "http://arxiv.org/abs/2504.07097v1",
     "arxiv_id": "2504.07097v1",
