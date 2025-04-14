@@ -1,5 +1,73 @@
 [
   {
+    "title": "BiFlex: A Passive Bimodal Stiffness Flexible Wrist for Manipulation in Unstructured Environments",
+    "url": "http://arxiv.org/abs/2504.08706v1",
+    "arxiv_id": "2504.08706v1",
+    "authors": [
+      "Gu-Cheol Jeong",
+      "Stefano Dalla Gasperina",
+      "Ashish D. Deshpande",
+      "Lillian Chin",
+      "Roberto Mart\u00edn-Mart\u00edn"
+    ],
+    "published": "2025-04-11T17:16:13+00:00",
+    "summary": "Robotic manipulation in unstructured, humancentric environments poses a dual challenge: achieving the precision need for delicate free-space operation while ensuring safety during unexpected contact events. Traditional wrists struggle to balance these demands, often relying on complex control schemes or complicated mechanical designs to mitigate potential damage from force overload. In response, we present BiFlex, a flexible robotic wrist that uses a soft buckling honeycomb structure to provides a natural bimodal stiffness response. The higher stiffness mode enables precise household object manipulation, while the lower stiffness mode provides the compliance needed to adapt to external forces. We design BiFlex to maintain a fingertip deflection of less than 1 cm while supporting loads up to 500g and create a BiFlex wrist for many grippers, including Panda, Robotiq, and BaRiFlex. We validate BiFlex under several real-world experimental evaluations, including surface wiping, precise pick-and-place, and grasping under environmental constraints. We demonstrate that BiFlex simplifies control while maintaining precise object manipulation and enhanced safety in real-world applications."
+  },
+  {
+    "title": "Offline Reinforcement Learning using Human-Aligned Reward Labeling for Autonomous Emergency Braking in Occluded Pedestrian Crossing",
+    "url": "http://arxiv.org/abs/2504.08704v1",
+    "arxiv_id": "2504.08704v1",
+    "authors": [
+      "Vinal Asodia",
+      "Zhenhua Feng",
+      "Saber Fallah"
+    ],
+    "published": "2025-04-11T17:11:21+00:00",
+    "summary": "Effective leveraging of real-world driving datasets is crucial for enhancing the training of autonomous driving systems. While Offline Reinforcement Learning enables the training of autonomous vehicles using such data, most available datasets lack meaningful reward labels. Reward labeling is essential as it provides feedback for the learning algorithm to distinguish between desirable and undesirable behaviors, thereby improving policy performance. This paper presents a novel pipeline for generating human-aligned reward labels. The proposed approach addresses the challenge of absent reward signals in real-world datasets by generating labels that reflect human judgment and safety considerations. The pipeline incorporates an adaptive safety component, activated by analyzing semantic segmentation maps, allowing the autonomous vehicle to prioritize safety over efficiency in potential collision scenarios. The proposed pipeline is applied to an occluded pedestrian crossing scenario with varying levels of pedestrian traffic, using synthetic and simulation data. The results indicate that the generated reward labels closely match the simulation reward labels. When used to train the driving policy using Behavior Proximal Policy Optimisation, the results are competitive with other baselines. This demonstrates the effectiveness of our method in producing reliable and human-aligned reward signals, facilitating the training of autonomous driving systems through Reinforcement Learning outside of simulation environments and in alignment with human values."
+  },
+  {
+    "title": "Preparation and coherent manipulation of toroidal moments in molecules",
+    "url": "http://arxiv.org/abs/2504.08701v1",
+    "arxiv_id": "2504.08701v1",
+    "authors": [
+      "Kieran Hymas",
+      "Alessandro Soncini"
+    ],
+    "published": "2025-04-11T17:07:23+00:00",
+    "summary": "Molecules with an odd number of electrons are expected to display paramagnetic behaviour in a uniform magnetic field. Instead, a vanishing magnetization is often measured in a family of lanthanide complexes known as Single Molecule Toroics. The anomaly can be explained in terms of degenerate quantum states in which electron spins and orbital currents give rise to time-odd and space-odd magnetic vortices known as toroidal moments, carrying a vanishing magnetic dipole. Resilient to stray magnetic fields and susceptible to electric manipulation, toroidal moments are sparking growing interest for applications in spintronics, magnonics, and photonics. While macroscopic toroidal moments have been observed in extended systems such as bulk low-dimensional non-collinear ferromagnets, theoretically predicted quantum toroidal states in molecules are yet to be observed, as it is currently unclear how to split degenerate states carrying counter-rotating vortices via existing experimental setups. Here we propose a realistic experimental protocol to polarize and observe molecular toroidal moments using pulsed microwave radiation. Modelling the spin-dynamics in a pulsed MW-field, we find that three resonant MW-pulses, delivered either sequentially or simultaneously, to a class of MDy$_6$ (M = Al$^{3+}$, Cr$^{3+}$) molecules consisting of coupled Dy$_3$ toroidal moieties, can selectively and coherently transfer population to a long-lived polarized toroidal state. The ensuing magneto-electric properties can then be used as a read-out mechanism. Our results provide a strategy to measure and coherently manipulate toroidal states in molecular systems, which is expected to trigger applications of molecular toroidal states to quantum technologies."
+  },
+  {
+    "title": "Performance Evaluation of Trajectory Tracking Controllers for a Quadruped Robot Leg",
+    "url": "http://arxiv.org/abs/2504.08698v1",
+    "arxiv_id": "2504.08698v1",
+    "authors": [
+      "Hossein Shojaei",
+      "Hamid Rahmanei",
+      "Seyed Hossein Sadati"
+    ],
+    "published": "2025-04-11T17:04:53+00:00",
+    "summary": "The complexities in the dynamic model of the legged robots make it necessary to utilize model-free controllers in the task of trajectory tracking. In This paper, an adaptive transpose Jacobian approach is proposed to deal with the dynamic model complexity, which utilizes an adaptive PI-algorithm to adjust the control gains. The performance of the proposed control algorithm is compared with the conventional transpose Jacobian and sliding mode control algorithms and evaluated by the root mean square of the errors and control input energy criteria. In order to appraise the effectiveness of the proposed control system, simulations are carried out in MATLAB/Simulink software for a quadruped robot leg for semi-elliptical path tracking. The obtained results show that the proposed adaptive transpose Jacobian reduces the overshoot and root mean square of the errors and at the same time, decreases the control input energy. Moreover, transpose Jacobin and adaptive transpose Jacobian are more robust to changes in initial conditions compared to the conventional sliding mode control. Furthermore, sliding mode control performs well up to 20% uncertainties in the parameters due to its model-based nature, whereas the transpose Jacobin and the proposed adaptive transpose Jacobian algorithms show promising results even in higher mass uncertainties."
+  },
+  {
+    "title": "Pobogot -- An Open-Hardware Open-Source Low Cost Robot for Swarm Robotics",
+    "url": "http://arxiv.org/abs/2504.08686v1",
+    "arxiv_id": "2504.08686v1",
+    "authors": [
+      "Alessia Loi",
+      "Loona Macabre",
+      "J\u00e9r\u00e9my Fersula",
+      "Keivan Amini",
+      "Leo Cazenille",
+      "Fabien Caura",
+      "Alexandre Guerre",
+      "St\u00e9phane Gourichon",
+      "Olivier Dauchot",
+      "Nicolas Bredeche"
+    ],
+    "published": "2025-04-11T16:47:59+00:00",
+    "summary": "This paper describes the Pogobot, an open-source and open-hardware platform specifically designed for research involving swarm robotics. Pogobot features vibration-based locomotion, infrared communication, and an array of sensors in a cost-effective package (approx. 250~euros/unit). The platform's modular design, comprehensive API, and extensible architecture facilitate the implementation of swarm intelligence algorithms and distributed online reinforcement learning algorithms. Pogobots offer an accessible alternative to existing platforms while providing advanced capabilities including directional communication between units. More than 200 Pogobots are already being used on a daily basis at Sorbonne Universit\\'e and PSL to study self-organizing systems, programmable active matter, discrete reaction-diffusion-advection systems as well as models of social learning and evolution."
+  },
+  {
     "title": "Perception-R1: Pioneering Perception Policy with Reinforcement Learning",
     "url": "http://arxiv.org/abs/2504.07954v1",
     "arxiv_id": "2504.07954v1",
