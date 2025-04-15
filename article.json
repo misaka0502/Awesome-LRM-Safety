@@ -1,5 +1,76 @@
 [
   {
+    "title": "Decoupled Diffusion Sparks Adaptive Scene Generation",
+    "url": "http://arxiv.org/abs/2504.10485v1",
+    "arxiv_id": "2504.10485v1",
+    "authors": [
+      "Yunsong Zhou",
+      "Naisheng Ye",
+      "William Ljungbergh",
+      "Tianyu Li",
+      "Jiazhi Yang",
+      "Zetong Yang",
+      "Hongzi Zhu",
+      "Christoffer Petersson",
+      "Hongyang Li"
+    ],
+    "published": "2025-04-14T17:59:57+00:00",
+    "summary": "Controllable scene generation could reduce the cost of diverse data collection substantially for autonomous driving. Prior works formulate the traffic layout generation as predictive progress, either by denoising entire sequences at once or by iteratively predicting the next frame. However, full sequence denoising hinders online reaction, while the latter's short-sighted next-frame prediction lacks precise goal-state guidance. Further, the learned model struggles to generate complex or challenging scenarios due to a large number of safe and ordinal driving behaviors from open datasets. To overcome these, we introduce Nexus, a decoupled scene generation framework that improves reactivity and goal conditioning by simulating both ordinal and challenging scenarios from fine-grained tokens with independent noise states. At the core of the decoupled pipeline is the integration of a partial noise-masking training strategy and a noise-aware schedule that ensures timely environmental updates throughout the denoising process. To complement challenging scenario generation, we collect a dataset consisting of complex corner cases. It covers 540 hours of simulated data, including high-risk interactions such as cut-in, sudden braking, and collision. Nexus achieves superior generation realism while preserving reactivity and goal orientation, with a 40% reduction in displacement error. We further demonstrate that Nexus improves closed-loop planning by 20% through data augmentation and showcase its capability in safety-critical data generation."
+  },
+  {
+    "title": "Weight Ensembling Improves Reasoning in Language Models",
+    "url": "http://arxiv.org/abs/2504.10478v1",
+    "arxiv_id": "2504.10478v1",
+    "authors": [
+      "Xingyu Dang",
+      "Christina Baek",
+      "Kaiyue Wen",
+      "Zico Kolter",
+      "Aditi Raghunathan"
+    ],
+    "published": "2025-04-14T17:59:07+00:00",
+    "summary": "We investigate a failure mode that arises during the training of reasoning models, where the diversity of generations begins to collapse, leading to suboptimal test-time scaling. Notably, the Pass@1 rate reliably improves during supervised finetuning (SFT), but Pass@k rapidly deteriorates. Surprisingly, a simple intervention of interpolating the weights of the latest SFT checkpoint with an early checkpoint, otherwise known as WiSE-FT, almost completely recovers Pass@k while also improving Pass@1. The WiSE-FT variant achieves better test-time scaling (Best@k, majority vote) and achieves superior results with less data when tuned further by reinforcement learning. Finally, we find that WiSE-FT provides complementary performance gains that cannot be achieved only through diversity-inducing decoding strategies, like temperature scaling. We formalize a bias-variance tradeoff of Pass@k with respect to the expectation and variance of Pass@1 over the test distribution. We find that WiSE-FT can reduce bias and variance simultaneously, while temperature scaling inherently trades-off between bias and variance."
+  },
+  {
+    "title": "Co-optimizing Physical Reconfiguration Parameters and Controllers for an Origami-inspired Reconfigurable Manipulator",
+    "url": "http://arxiv.org/abs/2504.10474v1",
+    "arxiv_id": "2504.10474v1",
+    "authors": [
+      "Zhe Chen",
+      "Li Chen",
+      "Hao Zhang",
+      "Jianguo Zhao"
+    ],
+    "published": "2025-04-14T17:56:38+00:00",
+    "summary": "Reconfigurable robots that can change their physical configuration post-fabrication have demonstrate their potential in adapting to different environments or tasks. However, it is challenging to determine how to optimally adjust reconfigurable parameters for a given task, especially when the controller depends on the robot's configuration. In this paper, we address this problem using a tendon-driven reconfigurable manipulator composed of multiple serially connected origami-inspired modules as an example. Under tendon actuation, these modules can achieve different shapes and motions, governed by joint stiffnesses (reconfiguration parameters) and the tendon displacements (control inputs). We leverage recent advances in co-optimization of design and control for robotic system to treat reconfiguration parameters as design variables and optimize them using reinforcement learning techniques. We first establish a forward model based on the minimum potential energy method to predict the shape of the manipulator under tendon actuations. Using the forward model as the environment dynamics, we then co-optimize the control policy (on the tendon displacements) and joint stiffnesses of the modules for goal reaching tasks while ensuring collision avoidance. Through co-optimization, we obtain optimized joint stiffness and the corresponding optimal control policy to enable the manipulator to accomplish the task that would be infeasible with fixed reconfiguration parameters (i.e., fixed joint stiffness). We envision the co-optimization framework can be extended to other reconfigurable robotic systems, enabling them to optimally adapt their configuration and behavior for diverse tasks and environments."
+  },
+  {
+    "title": "GUI-R1 : A Generalist R1-Style Vision-Language Action Model For GUI Agents",
+    "url": "http://arxiv.org/abs/2504.10458v1",
+    "arxiv_id": "2504.10458v1",
+    "authors": [
+      "Xiaobo Xia",
+      "Run Luo"
+    ],
+    "published": "2025-04-14T17:45:54+00:00",
+    "summary": "Existing efforts in building Graphical User Interface (GUI) agents largely rely on the training paradigm of supervised fine-tuning on Large Vision-Language Models (LVLMs). However, this approach not only demands extensive amounts of training data but also struggles to effectively understand GUI screenshots and generalize to unseen interfaces. The issue significantly limits its application in real-world scenarios, especially for high-level tasks. Inspired by Reinforcement Fine-Tuning (RFT) in large reasoning models (e.g., DeepSeek-R1), which efficiently enhances the problem-solving capabilities of large language models in real-world settings, we propose \\name, the first reinforcement learning framework designed to enhance the GUI capabilities of LVLMs in high-level real-world task scenarios, through unified action space rule modeling. By leveraging a small amount of carefully curated high-quality data across multiple platforms (including Windows, Linux, MacOS, Android, and Web) and employing policy optimization algorithms such as Group Relative Policy Optimization (GRPO) to update the model, \\name achieves superior performance using only 0.02\\% of the data (3K vs. 13M) compared to previous state-of-the-art methods like OS-Atlas across eight benchmarks spanning three different platforms (mobile, desktop, and web). These results demonstrate the immense potential of reinforcement learning based on unified action space rule modeling in improving the execution capabilities of LVLMs for real-world GUI agent tasks."
+  },
+  {
+    "title": "Anchor Token Matching: Implicit Structure Locking for Training-free AR Image Editing",
+    "url": "http://arxiv.org/abs/2504.10434v1",
+    "arxiv_id": "2504.10434v1",
+    "authors": [
+      "Taihang Hu",
+      "Linxuan Li",
+      "Kai Wang",
+      "Yaxing Wang",
+      "Jian Yang",
+      "Ming-Ming Cheng"
+    ],
+    "published": "2025-04-14T17:25:19+00:00",
+    "summary": "Text-to-image generation has seen groundbreaking advancements with diffusion models, enabling high-fidelity synthesis and precise image editing through cross-attention manipulation. Recently, autoregressive (AR) models have re-emerged as powerful alternatives, leveraging next-token generation to match diffusion models. However, existing editing techniques designed for diffusion models fail to translate directly to AR models due to fundamental differences in structural control. Specifically, AR models suffer from spatial poverty of attention maps and sequential accumulation of structural errors during image editing, which disrupt object layouts and global consistency. In this work, we introduce Implicit Structure Locking (ISLock), the first training-free editing strategy for AR visual models. Rather than relying on explicit attention manipulation or fine-tuning, ISLock preserves structural blueprints by dynamically aligning self-attention patterns with reference images through the Anchor Token Matching (ATM) protocol. By implicitly enforcing structural consistency in latent space, our method ISLock enables structure-aware editing while maintaining generative autonomy. Extensive experiments demonstrate that ISLock achieves high-quality, structure-consistent edits without additional training and is superior or comparable to conventional editing techniques. Our findings pioneer the way for efficient and flexible AR-based image editing, further bridging the performance gap between diffusion and autoregressive generative models. The code will be publicly available at https://github.com/hutaiHang/ATM"
+  },
+  {
     "title": "BiFlex: A Passive Bimodal Stiffness Flexible Wrist for Manipulation in Unstructured Environments",
     "url": "http://arxiv.org/abs/2504.08706v1",
     "arxiv_id": "2504.08706v1",
