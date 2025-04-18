@@ -1,5 +1,80 @@
 [
   {
+    "title": "ViTa-Zero: Zero-shot Visuotactile Object 6D Pose Estimation",
+    "url": "http://arxiv.org/abs/2504.13179v1",
+    "arxiv_id": "2504.13179v1",
+    "authors": [
+      "Hongyu Li",
+      "James Akl",
+      "Srinath Sridhar",
+      "Tye Brady",
+      "Taskin Padir"
+    ],
+    "published": "2025-04-17T17:59:56+00:00",
+    "summary": "Object 6D pose estimation is a critical challenge in robotics, particularly for manipulation tasks. While prior research combining visual and tactile (visuotactile) information has shown promise, these approaches often struggle with generalization due to the limited availability of visuotactile data. In this paper, we introduce ViTa-Zero, a zero-shot visuotactile pose estimation framework. Our key innovation lies in leveraging a visual model as its backbone and performing feasibility checking and test-time optimization based on physical constraints derived from tactile and proprioceptive observations. Specifically, we model the gripper-object interaction as a spring-mass system, where tactile sensors induce attractive forces, and proprioception generates repulsive forces. We validate our framework through experiments on a real-world robot setup, demonstrating its effectiveness across representative visual backbones and manipulation scenarios, including grasping, object picking, and bimanual handover. Compared to the visual models, our approach overcomes some drastic failure modes while tracking the in-hand object pose. In our experiments, our approach shows an average increase of 55% in AUC of ADD-S and 60% in ADD, along with an 80% lower position error compared to FoundationPose."
+  },
+  {
+    "title": "Novel Demonstration Generation with Gaussian Splatting Enables Robust One-Shot Manipulation",
+    "url": "http://arxiv.org/abs/2504.13175v1",
+    "arxiv_id": "2504.13175v1",
+    "authors": [
+      "Sizhe Yang",
+      "Wenye Yu",
+      "Jia Zeng",
+      "Jun Lv",
+      "Kerui Ren",
+      "Cewu Lu",
+      "Dahua Lin",
+      "Jiangmiao Pang"
+    ],
+    "published": "2025-04-17T17:59:43+00:00",
+    "summary": "Visuomotor policies learned from teleoperated demonstrations face challenges such as lengthy data collection, high costs, and limited data diversity. Existing approaches address these issues by augmenting image observations in RGB space or employing Real-to-Sim-to-Real pipelines based on physical simulators. However, the former is constrained to 2D data augmentation, while the latter suffers from imprecise physical simulation caused by inaccurate geometric reconstruction. This paper introduces RoboSplat, a novel method that generates diverse, visually realistic demonstrations by directly manipulating 3D Gaussians. Specifically, we reconstruct the scene through 3D Gaussian Splatting (3DGS), directly edit the reconstructed scene, and augment data across six types of generalization with five techniques: 3D Gaussian replacement for varying object types, scene appearance, and robot embodiments; equivariant transformations for different object poses; visual attribute editing for various lighting conditions; novel view synthesis for new camera perspectives; and 3D content generation for diverse object types. Comprehensive real-world experiments demonstrate that RoboSplat significantly enhances the generalization of visuomotor policies under diverse disturbances. Notably, while policies trained on hundreds of real-world demonstrations with additional 2D data augmentation achieve an average success rate of 57.2%, RoboSplat attains 87.8% in one-shot settings across six types of generalization in the real world."
+  },
+  {
+    "title": "A New Semidefinite Relaxation for Linear and Piecewise-Affine Optimal Control with Time Scaling",
+    "url": "http://arxiv.org/abs/2504.13170v1",
+    "arxiv_id": "2504.13170v1",
+    "authors": [
+      "Lujie Yang",
+      "Tobia Marcucci",
+      "Pablo A. Parrilo",
+      "Russ Tedrake"
+    ],
+    "published": "2025-04-17T17:59:23+00:00",
+    "summary": "We introduce a semidefinite relaxation for optimal control of linear systems with time scaling. These problems are inherently nonconvex, since the system dynamics involves bilinear products between the discretization time step and the system state and controls. The proposed relaxation is closely related to the standard second-order semidefinite relaxation for quadratic constraints, but we carefully select a subset of the possible bilinear terms and apply a change of variables to achieve empirically tight relaxations while keeping the computational load light. We further extend our method to handle piecewise-affine (PWA) systems by formulating the PWA optimal-control problem as a shortest-path problem in a graph of convex sets (GCS). In this GCS, different paths represent different mode sequences for the PWA system, and the convex sets model the relaxed dynamics within each mode. By combining a tight convex relaxation of the GCS problem with our semidefinite relaxation with time scaling, we can solve PWA optimal-control problems through a single semidefinite program."
+  },
+  {
+    "title": "Generate, but Verify: Reducing Hallucination in Vision-Language Models with Retrospective Resampling",
+    "url": "http://arxiv.org/abs/2504.13169v1",
+    "arxiv_id": "2504.13169v1",
+    "authors": [
+      "Tsung-Han Wu",
+      "Heekyung Lee",
+      "Jiaxin Ge",
+      "Joseph E. Gonzalez",
+      "Trevor Darrell",
+      "David M. Chan"
+    ],
+    "published": "2025-04-17T17:59:22+00:00",
+    "summary": "Vision-Language Models (VLMs) excel at visual understanding but often suffer from visual hallucinations, where they generate descriptions of nonexistent objects, actions, or concepts, posing significant risks in safety-critical applications. Existing hallucination mitigation methods typically follow one of two paradigms: generation adjustment, which modifies decoding behavior to align text with visual inputs, and post-hoc verification, where external models assess and correct outputs. While effective, generation adjustment methods often rely on heuristics and lack correction mechanisms, while post-hoc verification is complicated, typically requiring multiple models and tending to reject outputs rather than refine them. In this work, we introduce REVERSE, a unified framework that integrates hallucination-aware training with on-the-fly self-verification. By leveraging a new hallucination-verification dataset containing over 1.3M semi-synthetic samples, along with a novel inference-time retrospective resampling technique, our approach enables VLMs to both detect hallucinations during generation and dynamically revise those hallucinations. Our evaluations show that REVERSE achieves state-of-the-art hallucination reduction, outperforming the best existing methods by up to 12% on CHAIR-MSCOCO and 28% on HaloQuest. Our dataset, model, and code are available at: https://reverse-vlm.github.io."
+  },
+  {
+    "title": "RUKA: Rethinking the Design of Humanoid Hands with Learning",
+    "url": "http://arxiv.org/abs/2504.13165v1",
+    "arxiv_id": "2504.13165v1",
+    "authors": [
+      "Anya Zorin",
+      "Irmak Guzey",
+      "Billy Yan",
+      "Aadhithya Iyer",
+      "Lisa Kondrich",
+      "Nikhil X. Bhattasali",
+      "Lerrel Pinto"
+    ],
+    "published": "2025-04-17T17:58:59+00:00",
+    "summary": "Dexterous manipulation is a fundamental capability for robotic systems, yet progress has been limited by hardware trade-offs between precision, compactness, strength, and affordability. Existing control methods impose compromises on hand designs and applications. However, learning-based approaches present opportunities to rethink these trade-offs, particularly to address challenges with tendon-driven actuation and low-cost materials. This work presents RUKA, a tendon-driven humanoid hand that is compact, affordable, and capable. Made from 3D-printed parts and off-the-shelf components, RUKA has 5 fingers with 15 underactuated degrees of freedom enabling diverse human-like grasps. Its tendon-driven actuation allows powerful grasping in a compact, human-sized form factor. To address control challenges, we learn joint-to-actuator and fingertip-to-actuator models from motion-capture data collected by the MANUS glove, leveraging the hand's morphological accuracy. Extensive evaluations demonstrate RUKA's superior reachability, durability, and strength compared to other robotic hands. Teleoperation tasks further showcase RUKA's dexterous movements. The open-source design and assembly instructions of RUKA, code, and data are available at https://ruka-hand.github.io/."
+  },
+  {
     "title": "Adapting a World Model for Trajectory Following in a 3D Game",
     "url": "http://arxiv.org/abs/2504.12299v1",
     "arxiv_id": "2504.12299v1",
