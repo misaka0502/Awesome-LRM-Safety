@@ -1,5 +1,93 @@
 [
   {
+    "title": "VisuLogic: A Benchmark for Evaluating Visual Reasoning in Multi-modal Large Language Models",
+    "url": "http://arxiv.org/abs/2504.15279v1",
+    "arxiv_id": "2504.15279v1",
+    "authors": [
+      "Weiye Xu",
+      "Jiahao Wang",
+      "Weiyun Wang",
+      "Zhe Chen",
+      "Wengang Zhou",
+      "Aijun Yang",
+      "Lewei Lu",
+      "Houqiang Li",
+      "Xiaohua Wang",
+      "Xizhou Zhu",
+      "Wenhai Wang",
+      "Jifeng Dai",
+      "Jinguo Zhu"
+    ],
+    "published": "2025-04-21T17:59:53+00:00",
+    "summary": "Visual reasoning is a core component of human intelligence and a critical capability for advanced multimodal models. Yet current reasoning evaluations of multimodal large language models (MLLMs) often rely on text descriptions and allow language-based reasoning shortcuts, failing to measure genuine vision-centric reasoning. To address this, we introduce VisuLogic: a benchmark of 1,000 human-verified problems across six categories (e.g., quantitative shifts, spatial relations, attribute comparisons). These various types of questions can be evaluated to assess the visual reasoning capabilities of MLLMs from multiple perspectives. We evaluate leading MLLMs on this benchmark and analyze their results to identify common failure modes. Most models score below 30% accuracy-only slightly above the 25% random baseline and far below the 51.4% achieved by humans-revealing significant gaps in visual reasoning. Furthermore, we provide a supplementary training dataset and a reinforcement-learning baseline to support further progress."
+  },
+  {
+    "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
+    "url": "http://arxiv.org/abs/2504.15280v1",
+    "arxiv_id": "2504.15280v1",
+    "authors": [
+      "Chun-Hsiao Yeh",
+      "Chenyu Wang",
+      "Shengbang Tong",
+      "Ta-Ying Cheng",
+      "Rouyu Wang",
+      "Tianzhe Chu",
+      "Yuexiang Zhai",
+      "Yubei Chen",
+      "Shenghua Gao",
+      "Yi Ma"
+    ],
+    "published": "2025-04-21T17:59:53+00:00",
+    "summary": "Multi-view understanding, the ability to reconcile visual information across diverse viewpoints for effective navigation, manipulation, and 3D scene comprehension, is a fundamental challenge in Multi-Modal Large Language Models (MLLMs) to be used as embodied agents. While recent MLLMs have shown impressive advances in high-level reasoning and planning, they frequently fall short when confronted with multi-view geometric consistency and cross-view correspondence. To comprehensively evaluate the challenges of MLLMs in multi-view scene reasoning, we propose All-Angles Bench, a benchmark of over 2,100 human carefully annotated multi-view question-answer pairs across 90 diverse real-world scenes. Our six tasks (counting, attribute identification, relative distance, relative direction, object manipulation, and camera pose estimation) specifically test model's geometric correspondence and the capacity to align information consistently across views. Our extensive experiments, benchmark on 27 representative MLLMs including Gemini-2.0-Flash, Claude-3.7-Sonnet, and GPT-4o against human evaluators reveals a substantial performance gap, indicating that current MLLMs remain far from human-level proficiency. Through in-depth analysis, we show that MLLMs are particularly underperforming under two aspects: (1) cross-view correspondence for partially occluded views and (2) establishing the coarse camera poses. These findings highlight the necessity of domain-specific refinements or modules that embed stronger multi-view awareness. We believe that our All-Angles Bench offers valuable insights and contribute to bridging the gap between MLLMs and human-level multi-view understanding. The project and benchmark are publicly available at https://danielchyeh.github.io/All-Angles-Bench/."
+  },
+  {
+    "title": "DRAWER: Digital Reconstruction and Articulation With Environment Realism",
+    "url": "http://arxiv.org/abs/2504.15278v1",
+    "arxiv_id": "2504.15278v1",
+    "authors": [
+      "Hongchi Xia",
+      "Entong Su",
+      "Marius Memmel",
+      "Arhan Jain",
+      "Raymond Yu",
+      "Numfor Mbiziwo-Tiapo",
+      "Ali Farhadi",
+      "Abhishek Gupta",
+      "Shenlong Wang",
+      "Wei-Chiu Ma"
+    ],
+    "published": "2025-04-21T17:59:49+00:00",
+    "summary": "Creating virtual digital replicas from real-world data unlocks significant potential across domains like gaming and robotics. In this paper, we present DRAWER, a novel framework that converts a video of a static indoor scene into a photorealistic and interactive digital environment. Our approach centers on two main contributions: (i) a reconstruction module based on a dual scene representation that reconstructs the scene with fine-grained geometric details, and (ii) an articulation module that identifies articulation types and hinge positions, reconstructs simulatable shapes and appearances and integrates them into the scene. The resulting virtual environment is photorealistic, interactive, and runs in real time, with compatibility for game engines and robotic simulation platforms. We demonstrate the potential of DRAWER by using it to automatically create an interactive game in Unreal Engine and to enable real-to-sim-to-real transfer for robotics applications."
+  },
+  {
+    "title": "Stop Summation: Min-Form Credit Assignment Is All Process Reward Model Needs for Reasoning",
+    "url": "http://arxiv.org/abs/2504.15275v1",
+    "arxiv_id": "2504.15275v1",
+    "authors": [
+      "Jie Cheng",
+      "Ruixi Qiao",
+      "Lijun Li",
+      "Chao Guo",
+      "Junle Wang",
+      "Gang Xiong",
+      "Yisheng Lv",
+      "Fei-Yue Wang"
+    ],
+    "published": "2025-04-21T17:59:02+00:00",
+    "summary": "Process reward models (PRMs) have proven effective for test-time scaling of Large Language Models (LLMs) on challenging reasoning tasks. However, reward hacking issues with PRMs limit their successful application in reinforcement fine-tuning. In this paper, we identify the main cause of PRM-induced reward hacking: the canonical summation-form credit assignment in reinforcement learning (RL), which defines the value as cumulative gamma-decayed future rewards, easily induces LLMs to hack steps with high rewards. To address this, we propose PURE: Process sUpervised Reinforcement lEarning. The key innovation of PURE is a min-form credit assignment that formulates the value function as the minimum of future rewards. This method significantly alleviates reward hacking by limiting the value function range and distributing advantages more reasonably. Through extensive experiments on 3 base models, we show that PRM-based approaches enabling min-form credit assignment achieve comparable reasoning performance to verifiable reward-based methods within only 30% steps. In contrast, the canonical sum-form credit assignment collapses training even at the beginning! Additionally, when we supplement PRM-based fine-tuning with just 10% verifiable rewards, we further alleviate reward hacking and produce the best fine-tuned model based on Qwen2.5-Math-7B in our experiments, achieving 82.5% accuracy on AMC23 and 53.3% average accuracy across 5 benchmarks. Moreover, we summarize the observed reward hacking cases and analyze the causes of training collapse. Code and models are available at https://github.com/CJReinforce/PURE."
+  },
+  {
+    "title": "Interpretable Locomotion Prediction in Construction Using a Memory-Driven LLM Agent With Chain-of-Thought Reasoning",
+    "url": "http://arxiv.org/abs/2504.15263v1",
+    "arxiv_id": "2504.15263v1",
+    "authors": [
+      "Ehsan Ahmadi",
+      "Chao Wang"
+    ],
+    "published": "2025-04-21T17:45:21+00:00",
+    "summary": "Construction tasks are inherently unpredictable, with dynamic environments and safety-critical demands posing significant risks to workers. Exoskeletons offer potential assistance but falter without accurate intent recognition across diverse locomotion modes. This paper presents a locomotion prediction agent leveraging Large Language Models (LLMs) augmented with memory systems, aimed at improving exoskeleton assistance in such settings. Using multimodal inputs - spoken commands and visual data from smart glasses - the agent integrates a Perception Module, Short-Term Memory (STM), Long-Term Memory (LTM), and Refinement Module to predict locomotion modes effectively. Evaluation reveals a baseline weighted F1-score of 0.73 without memory, rising to 0.81 with STM, and reaching 0.90 with both STM and LTM, excelling with vague and safety-critical commands. Calibration metrics, including a Brier Score drop from 0.244 to 0.090 and ECE from 0.222 to 0.044, affirm improved reliability. This framework supports safer, high-level human-exoskeleton collaboration, with promise for adaptive assistive systems in dynamic industries."
+  },
+  {
     "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
     "url": "http://arxiv.org/abs/2504.13837v1",
     "arxiv_id": "2504.13837v1",
