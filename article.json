@@ -1,5 +1,76 @@
 [
   {
+    "title": "LiDPM: Rethinking Point Diffusion for Lidar Scene Completion",
+    "url": "http://arxiv.org/abs/2504.17791v1",
+    "arxiv_id": "2504.17791v1",
+    "authors": [
+      "Tetiana Martyniuk",
+      "Gilles Puy",
+      "Alexandre Boulch",
+      "Renaud Marlet",
+      "Raoul de Charette"
+    ],
+    "published": "2025-04-24T17:59:59+00:00",
+    "summary": "Training diffusion models that work directly on lidar points at the scale of outdoor scenes is challenging due to the difficulty of generating fine-grained details from white noise over a broad field of view. The latest works addressing scene completion with diffusion models tackle this problem by reformulating the original DDPM as a local diffusion process. It contrasts with the common practice of operating at the level of objects, where vanilla DDPMs are currently used. In this work, we close the gap between these two lines of work. We identify approximations in the local diffusion formulation, show that they are not required to operate at the scene level, and that a vanilla DDPM with a well-chosen starting point is enough for completion. Finally, we demonstrate that our method, LiDPM, leads to better results in scene completion on SemanticKITTI. The project page is https://astra-vision.github.io/LiDPM ."
+  },
+  {
+    "title": "Gripper Keypose and Object Pointflow as Interfaces for Bimanual Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2504.17784v1",
+    "arxiv_id": "2504.17784v1",
+    "authors": [
+      "Yuyin Yang",
+      "Zetao Cai",
+      "Yang Tian",
+      "Jia Zeng",
+      "Jiangmiao Pang"
+    ],
+    "published": "2025-04-24T17:58:30+00:00",
+    "summary": "Bimanual manipulation is a challenging yet crucial robotic capability, demanding precise spatial localization and versatile motion trajectories, which pose significant challenges to existing approaches. Existing approaches fall into two categories: keyframe-based strategies, which predict gripper poses in keyframes and execute them via motion planners, and continuous control methods, which estimate actions sequentially at each timestep. The keyframe-based method lacks inter-frame supervision, struggling to perform consistently or execute curved motions, while the continuous method suffers from weaker spatial perception. To address these issues, this paper introduces an end-to-end framework PPI (keyPose and Pointflow Interface), which integrates the prediction of target gripper poses and object pointflow with the continuous actions estimation. These interfaces enable the model to effectively attend to the target manipulation area, while the overall framework guides diverse and collision-free trajectories. By combining interface predictions with continuous actions estimation, PPI demonstrates superior performance in diverse bimanual manipulation tasks, providing enhanced spatial localization and satisfying flexibility in handling movement restrictions. In extensive evaluations, PPI significantly outperforms prior methods in both simulated and real-world experiments, achieving state-of-the-art performance with a +16.1% improvement on the RLBench2 simulation benchmark and an average of +27.5% gain across four challenging real-world tasks. Notably, PPI exhibits strong stability, high precision, and remarkable generalization capabilities in real-world scenarios. Project page: https://yuyinyang3y.github.io/PPI/"
+  },
+  {
+    "title": "Josephson anomalous vortices",
+    "url": "http://arxiv.org/abs/2504.17779v1",
+    "arxiv_id": "2504.17779v1",
+    "authors": [
+      "Dan Crawford",
+      "Stefan Ili\u0107",
+      "Pauli Virtanen",
+      "Tero T. Heikkil\u00e4"
+    ],
+    "published": "2025-04-24T17:56:00+00:00",
+    "summary": "We show that vortices with circulating current, related with odd-frequency triplet pairing, appear in Josephson junctions where the barrier is a weak ferromagnet with strong spin-orbit coupling. By both symmetry analysis and microscopic methods we show that there is an additional term - a rotary invariant - in the superconducting free energy which allows for magnetoelectric effects even when the previously considered Lifshitz invariant vanishes. We show that the size, shape, and position of these vortices can be controlled by manipulating Rashba spin-orbit coupling in the weak link, via gates, and we suggest that these vortices could be detected via scanning magnetometry techniques. We also show that the transverse triplet components of the superconducting correlations can form a texture."
+  },
+  {
+    "title": "Integrating Learning-Based Manipulation and Physics-Based Locomotion for Whole-Body Badminton Robot Control",
+    "url": "http://arxiv.org/abs/2504.17771v1",
+    "arxiv_id": "2504.17771v1",
+    "authors": [
+      "Haochen Wang",
+      "Zhiwei Shi",
+      "Chengxi Zhu",
+      "Yafei Qiao",
+      "Cheng Zhang",
+      "Fan Yang",
+      "Pengjie Ren",
+      "Lan Lu",
+      "Dong Xuan"
+    ],
+    "published": "2025-04-24T17:46:29+00:00",
+    "summary": "Learning-based methods, such as imitation learning (IL) and reinforcement learning (RL), can produce excel control policies over challenging agile robot tasks, such as sports robot. However, no existing work has harmonized learning-based policy with model-based methods to reduce training complexity and ensure the safety and stability for agile badminton robot control. In this paper, we introduce \\ourmethod, a novel hybrid control system for agile badminton robots. Specifically, we propose a model-based strategy for chassis locomotion which provides a base for arm policy. We introduce a physics-informed ``IL+RL'' training framework for learning-based arm policy. In this train framework, a model-based strategy with privileged information is used to guide arm policy training during both IL and RL phases. In addition, we train the critic model during IL phase to alleviate the performance drop issue when transitioning from IL to RL. We present results on our self-engineered badminton robot, achieving 94.5% success rate against the serving machine and 90.7% success rate against human players. Our system can be easily generalized to other agile mobile manipulation tasks such as agile catching and table tennis. Our project website: https://dreamstarring.github.io/HAMLET/."
+  },
+  {
+    "title": "Zeptosecond free-electron compression through temporal lensing",
+    "url": "http://arxiv.org/abs/2504.17770v1",
+    "arxiv_id": "2504.17770v1",
+    "authors": [
+      "Xin Jin",
+      "Cruz I. Velasco",
+      "F. Javier Garc\u00eda de Abajo"
+    ],
+    "published": "2025-04-24T17:41:22+00:00",
+    "summary": "The pursuit of ever-shorter time scales is a frontier in modern physics, exemplified by the synthesis of attosecond light pulses -- an achievement made possible by coherently superimposing a broad range of photon energies, as required by the uncertainty principle. However, extending this progress into the zeptosecond regime poses significant challenges, as it demands phase-correlated optical spectra spanning hundreds of electronvolts. In this context, electrons offer a compelling alternative to light because they can be coherently manipulated to form broad energy superpositions, as demonstrated by the generation of attosecond pulses in ultrafast electron microscopes. Here, we propose a practical scheme for compressing free electrons into the zeptosecond domain by modulating their wave functions using suitably tailored broadband light fields. Building on recent advances in {free-electron--light--matter} interactions, our method introduces the concept of temporal lensing -- an extension of conventional optical lensing to the time domain -- to produce electron pulses with arbitrarily short durations."
+  },
+  {
     "title": "Latent Diffusion Planning for Imitation Learning",
     "url": "http://arxiv.org/abs/2504.16925v1",
     "arxiv_id": "2504.16925v1",
