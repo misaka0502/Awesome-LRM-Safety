@@ -1,5 +1,75 @@
 [
   {
+    "title": "Generalization Capability for Imitation Learning",
+    "url": "http://arxiv.org/abs/2504.18538v1",
+    "arxiv_id": "2504.18538v1",
+    "authors": [
+      "Yixiao Wang"
+    ],
+    "published": "2025-04-25T17:59:59+00:00",
+    "summary": "Imitation learning holds the promise of equipping robots with versatile skills by learning from expert demonstrations. However, policies trained on finite datasets often struggle to generalize beyond the training distribution. In this work, we present a unified perspective on the generalization capability of imitation learning, grounded in both information theorey and data distribution property. We first show that the generalization gap can be upper bounded by (i) the conditional information bottleneck on intermediate representations and (ii) the mutual information between the model parameters and the training dataset. This characterization provides theoretical guidance for designing effective training strategies in imitation learning, particularly in determining whether to freeze, fine-tune, or train large pretrained encoders (e.g., vision-language models or vision foundation models) from scratch to achieve better generalization. Furthermore, we demonstrate that high conditional entropy from input to output induces a flatter likelihood landscape, thereby reducing the upper bound on the generalization gap. In addition, it shortens the stochastic gradient descent (SGD) escape time from sharp local minima, which may increase the likelihood of reaching global optima under fixed optimization budgets. These insights explain why imitation learning often exhibits limited generalization and underscore the importance of not only scaling the diversity of input data but also enriching the variability of output labels conditioned on the same input."
+  },
+  {
+    "title": "E-VLC: A Real-World Dataset for Event-based Visible Light Communication And Localization",
+    "url": "http://arxiv.org/abs/2504.18521v1",
+    "arxiv_id": "2504.18521v1",
+    "authors": [
+      "Shintaro Shiba",
+      "Quan Kong",
+      "Norimasa Kobori"
+    ],
+    "published": "2025-04-25T17:43:20+00:00",
+    "summary": "Optical communication using modulated LEDs (e.g., visible light communication) is an emerging application for event cameras, thanks to their high spatio-temporal resolutions. Event cameras can be used simply to decode the LED signals and also to localize the camera relative to the LED marker positions. However, there is no public dataset to benchmark the decoding and localization in various real-world settings. We present, to the best of our knowledge, the first public dataset that consists of an event camera, a frame camera, and ground-truth poses that are precisely synchronized with hardware triggers. It provides various camera motions with various sensitivities in different scene brightness settings, both indoor and outdoor. Furthermore, we propose a novel method of localization that leverages the Contrast Maximization framework for motion estimation and compensation. The detailed analysis and experimental results demonstrate the advantages of LED-based localization with events over the conventional AR-marker--based one with frames, as well as the efficacy of the proposed method in localization. We hope that the proposed dataset serves as a future benchmark for both motion-related classical computer vision tasks and LED marker decoding tasks simultaneously, paving the way to broadening applications of event cameras on mobile devices. https://woven-visionai.github.io/evlc-dataset"
+  },
+  {
+    "title": "Intelligent Attacks and Defense Methods in Federated Learning-enabled Energy-Efficient Wireless Networks",
+    "url": "http://arxiv.org/abs/2504.18519v1",
+    "arxiv_id": "2504.18519v1",
+    "authors": [
+      "Han Zhang",
+      "Hao Zhou",
+      "Medhat Elsayed",
+      "Majid Bavand",
+      "Raimundas Gaigalas",
+      "Yigit Ozcan",
+      "Melike Erol-Kantarci"
+    ],
+    "published": "2025-04-25T17:40:35+00:00",
+    "summary": "Federated learning (FL) is a promising technique for learning-based functions in wireless networks, thanks to its distributed implementation capability. On the other hand, distributed learning may increase the risk of exposure to malicious attacks where attacks on a local model may spread to other models by parameter exchange. Meanwhile, such attacks can be hard to detect due to the dynamic wireless environment, especially considering local models can be heterogeneous with non-independent and identically distributed (non-IID) data. Therefore, it is critical to evaluate the effect of malicious attacks and develop advanced defense techniques for FL-enabled wireless networks. In this work, we introduce a federated deep reinforcement learning-based cell sleep control scenario that enhances the energy efficiency of the network. We propose multiple intelligent attacks targeting the learning-based approach and we propose defense methods to mitigate such attacks. In particular, we have designed two attack models, generative adversarial network (GAN)-enhanced model poisoning attack and regularization-based model poisoning attack. As a counteraction, we have proposed two defense schemes, autoencoder-based defense, and knowledge distillation (KD)-enabled defense. The autoencoder-based defense method leverages an autoencoder to identify the malicious participants and only aggregate the parameters of benign local models during the global aggregation, while KD-based defense protects the model from attacks by controlling the knowledge transferred between the global model and local models."
+  },
+  {
+    "title": "Examining the Impact of Optical Aberrations to Image Classification and Object Detection Models",
+    "url": "http://arxiv.org/abs/2504.18510v1",
+    "arxiv_id": "2504.18510v1",
+    "authors": [
+      "Patrick M\u00fcller",
+      "Alexander Braun",
+      "Margret Keuper"
+    ],
+    "published": "2025-04-25T17:23:47+00:00",
+    "summary": "Deep neural networks (DNNs) have proven to be successful in various computer vision applications such that models even infer in safety-critical situations. Therefore, vision models have to behave in a robust way to disturbances such as noise or blur. While seminal benchmarks exist to evaluate model robustness to diverse corruptions, blur is often approximated in an overly simplistic way to model defocus, while ignoring the different blur kernel shapes that result from optical systems. To study model robustness against realistic optical blur effects, this paper proposes two datasets of blur corruptions, which we denote OpticsBench and LensCorruptions. OpticsBench examines primary aberrations such as coma, defocus, and astigmatism, i.e. aberrations that can be represented by varying a single parameter of Zernike polynomials. To go beyond the principled but synthetic setting of primary aberrations, LensCorruptions samples linear combinations in the vector space spanned by Zernike polynomials, corresponding to 100 real lenses. Evaluations for image classification and object detection on ImageNet and MSCOCO show that for a variety of different pre-trained models, the performance on OpticsBench and LensCorruptions varies significantly, indicating the need to consider realistic image corruptions to evaluate a model's robustness against blur."
+  },
+  {
+    "title": "Boxi: Design Decisions in the Context of Algorithmic Performance for Robotics",
+    "url": "http://arxiv.org/abs/2504.18500v1",
+    "arxiv_id": "2504.18500v1",
+    "authors": [
+      "Jonas Frey",
+      "Turcan Tuna",
+      "Lanke Frank Tarimo Fu",
+      "Cedric Weibel",
+      "Katharine Patterson",
+      "Benjamin Krummenacher",
+      "Matthias M\u00fcller",
+      "Julian Nubert",
+      "Maurice Fallon",
+      "Cesar Cadena",
+      "Marco Hutter"
+    ],
+    "published": "2025-04-25T17:11:48+00:00",
+    "summary": "Achieving robust autonomy in mobile robots operating in complex and unstructured environments requires a multimodal sensor suite capable of capturing diverse and complementary information. However, designing such a sensor suite involves multiple critical design decisions, such as sensor selection, component placement, thermal and power limitations, compute requirements, networking, synchronization, and calibration. While the importance of these key aspects is widely recognized, they are often overlooked in academia or retained as proprietary knowledge within large corporations. To improve this situation, we present Boxi, a tightly integrated sensor payload that enables robust autonomy of robots in the wild. This paper discusses the impact of payload design decisions made to optimize algorithmic performance for downstream tasks, specifically focusing on state estimation and mapping. Boxi is equipped with a variety of sensors: two LiDARs, 10 RGB cameras including high-dynamic range, global shutter, and rolling shutter models, an RGB-D camera, 7 inertial measurement units (IMUs) of varying precision, and a dual antenna RTK GNSS system. Our analysis shows that time synchronization, calibration, and sensor modality have a crucial impact on the state estimation performance. We frame this analysis in the context of cost considerations and environment-specific challenges. We also present a mobile sensor suite `cookbook` to serve as a comprehensive guideline, highlighting generalizable key design considerations and lessons learned during the development of Boxi. Finally, we demonstrate the versatility of Boxi being used in a variety of applications in real-world scenarios, contributing to robust autonomy. More details and code: https://github.com/leggedrobotics/grand_tour_box"
+  },
+  {
     "title": "LiDPM: Rethinking Point Diffusion for Lidar Scene Completion",
     "url": "http://arxiv.org/abs/2504.17791v1",
     "arxiv_id": "2504.17791v1",
