@@ -1,5 +1,74 @@
 [
   {
+    "title": "MP-SfM: Monocular Surface Priors for Robust Structure-from-Motion",
+    "url": "http://arxiv.org/abs/2504.20040v1",
+    "arxiv_id": "2504.20040v1",
+    "authors": [
+      "Zador Pataki",
+      "Paul-Edouard Sarlin",
+      "Johannes L. Sch\u00f6nberger",
+      "Marc Pollefeys"
+    ],
+    "published": "2025-04-28T17:59:52+00:00",
+    "summary": "While Structure-from-Motion (SfM) has seen much progress over the years, state-of-the-art systems are prone to failure when facing extreme viewpoint changes in low-overlap, low-parallax or high-symmetry scenarios. Because capturing images that avoid these pitfalls is challenging, this severely limits the wider use of SfM, especially by non-expert users. We overcome these limitations by augmenting the classical SfM paradigm with monocular depth and normal priors inferred by deep neural networks. Thanks to a tight integration of monocular and multi-view constraints, our approach significantly outperforms existing ones under extreme viewpoint changes, while maintaining strong performance in standard conditions. We also show that monocular priors can help reject faulty associations due to symmetries, which is a long-standing problem for SfM. This makes our approach the first capable of reliably reconstructing challenging indoor environments from few images. Through principled uncertainty propagation, it is robust to errors in the priors, can handle priors inferred by different models with little tuning, and will thus easily benefit from future progress in monocular depth and normal estimation. Our code is publicly available at https://github.com/cvg/mpsfm."
+  },
+  {
+    "title": "SpatialReasoner: Towards Explicit and Generalizable 3D Spatial Reasoning",
+    "url": "http://arxiv.org/abs/2504.20024v1",
+    "arxiv_id": "2504.20024v1",
+    "authors": [
+      "Wufei Ma",
+      "Yu-Cheng Chou",
+      "Qihao Liu",
+      "Xingrui Wang",
+      "Celso de Melo",
+      "Jieneng Chen",
+      "Jianwen Xie",
+      "Alan Yuille"
+    ],
+    "published": "2025-04-28T17:48:43+00:00",
+    "summary": "Recent studies in 3D spatial reasoning explore data-driven approaches and achieve enhanced spatial reasoning performance with reinforcement learning (RL). However, these methods typically perform spatial reasoning in an implicit manner, and it remains underexplored whether the acquired 3D knowledge generalizes to unseen question types at any stage of the training. In this work we introduce SpatialReasoner, a novel large vision-language model (LVLM) that address 3D spatial reasoning with explicit 3D representations shared between stages -- 3D perception, computation, and reasoning. Explicit 3D representations provide a coherent interface that supports advanced 3D spatial reasoning and enable us to study the factual errors made by LVLMs. Results show that our SpatialReasoner achieve improved performance on a variety of spatial reasoning benchmarks and generalizes better when evaluating on novel 3D spatial reasoning questions. Our study bridges the 3D parsing capabilities of prior visual foundation models with the powerful reasoning abilities of large language models, opening new directions for 3D spatial reasoning."
+  },
+  {
+    "title": "Modular Machine Learning: An Indispensable Path towards New-Generation Large Language Models",
+    "url": "http://arxiv.org/abs/2504.20020v1",
+    "arxiv_id": "2504.20020v1",
+    "authors": [
+      "Xin Wang",
+      "Haoyang Li",
+      "Zeyang Zhang",
+      "Haibo Chen",
+      "Wenwu Zhu"
+    ],
+    "published": "2025-04-28T17:42:02+00:00",
+    "summary": "Large language models (LLMs) have dramatically advanced machine learning research including natural language processing, computer vision, data mining, etc., yet they still exhibit critical limitations in reasoning, factual consistency, and interpretability. In this paper, we introduce a novel learning paradigm -- Modular Machine Learning (MML) -- as an essential approach toward new-generation LLMs. MML decomposes the complex structure of LLMs into three interdependent components: modular representation, modular model, and modular reasoning, aiming to enhance LLMs' capability of counterfactual reasoning, mitigating hallucinations, as well as promoting fairness, safety, and transparency. Specifically, the proposed MML paradigm can: i) clarify the internal working mechanism of LLMs through the disentanglement of semantic components; ii) allow for flexible and task-adaptive model design; iii) enable interpretable and logic-driven decision-making process. We present a feasible implementation of MML-based LLMs via leveraging advanced techniques such as disentangled representation learning, neural architecture search and neuro-symbolic learning. We critically identify key challenges, such as the integration of continuous neural and discrete symbolic processes, joint optimization, and computational scalability, present promising future research directions that deserve further exploration. Ultimately, the integration of the MML paradigm with LLMs has the potential to bridge the gap between statistical (deep) learning and formal (logical) reasoning, thereby paving the way for robust, adaptable, and trustworthy AI systems across a wide range of real-world applications."
+  },
+  {
+    "title": "Modelling of Underwater Vehicles using Physics-Informed Neural Networks with Control",
+    "url": "http://arxiv.org/abs/2504.20019v1",
+    "arxiv_id": "2504.20019v1",
+    "authors": [
+      "Abdelhakim Amer",
+      "David Felsager",
+      "Yury Brodskiy",
+      "Andriy Sarabakha"
+    ],
+    "published": "2025-04-28T17:38:57+00:00",
+    "summary": "Physics-informed neural networks (PINNs) integrate physical laws with data-driven models to improve generalization and sample efficiency. This work introduces an open-source implementation of the Physics-Informed Neural Network with Control (PINC) framework, designed to model the dynamics of an underwater vehicle. Using initial states, control actions, and time inputs, PINC extends PINNs to enable physically consistent transitions beyond the training domain. Various PINC configurations are tested, including differing loss functions, gradient-weighting schemes, and hyperparameters. Validation on a simulated underwater vehicle demonstrates more accurate long-horizon predictions compared to a non-physics-informed baseline"
+  },
+  {
+    "title": "Kinodynamic Trajectory Following with STELA: Simultaneous Trajectory Estimation & Local Adaptation",
+    "url": "http://arxiv.org/abs/2504.20009v1",
+    "arxiv_id": "2504.20009v1",
+    "authors": [
+      "Edgar Granados",
+      "Sumanth Tangirala",
+      "Kostas E. Bekris"
+    ],
+    "published": "2025-04-28T17:29:22+00:00",
+    "summary": "State estimation and control are often addressed separately, leading to unsafe execution due to sensing noise, execution errors, and discrepancies between the planning model and reality. Simultaneous control and trajectory estimation using probabilistic graphical models has been proposed as a unified solution to these challenges. Previous work, however, relies heavily on appropriate Gaussian priors and is limited to holonomic robots with linear time-varying models. The current research extends graphical optimization methods to vehicles with arbitrary dynamical models via Simultaneous Trajectory Estimation and Local Adaptation (STELA). The overall approach initializes feasible trajectories using a kinodynamic, sampling-based motion planner. Then, it simultaneously: (i) estimates the past trajectory based on noisy observations, and (ii) adapts the controls to be executed to minimize deviations from the planned, feasible trajectory, while avoiding collisions. The proposed factor graph representation of trajectories in STELA can be applied for any dynamical system given access to first or second-order state update equations, and introduces the duration of execution between two states in the trajectory discretization as an optimization variable. These features provide both generalization and flexibility in trajectory following. In addition to targeting computational efficiency, the proposed strategy performs incremental updates of the factor graph using the iSAM algorithm and introduces a time-window mechanism. This mechanism allows the factor graph to be dynamically updated to operate over a limited history and forward horizon of the planned trajectory. This enables online updates of controls at a minimum of 10Hz. Experiments demonstrate that STELA achieves at least comparable performance to previous frameworks on idealized vehicles with linear dynamics.[...]"
+  },
+  {
     "title": "Generalization Capability for Imitation Learning",
     "url": "http://arxiv.org/abs/2504.18538v1",
     "arxiv_id": "2504.18538v1",
