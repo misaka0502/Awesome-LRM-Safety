@@ -1,5 +1,69 @@
 [
   {
+    "title": "Toward Efficient Exploration by Large Language Model Agents",
+    "url": "http://arxiv.org/abs/2504.20997v1",
+    "arxiv_id": "2504.20997v1",
+    "authors": [
+      "Dilip Arumugam",
+      "Thomas L. Griffiths"
+    ],
+    "published": "2025-04-29T17:59:48+00:00",
+    "summary": "A burgeoning area within reinforcement learning (RL) is the design of sequential decision-making agents centered around large language models (LLMs). While autonomous decision-making agents powered by modern LLMs could facilitate numerous real-world applications, such successes demand agents that are capable of data-efficient RL. One key obstacle to achieving data efficiency in RL is exploration, a challenge that we demonstrate many recent proposals for LLM agent designs struggle to contend with. Meanwhile, classic algorithms from the RL literature known to gracefully address exploration require technical machinery that can be challenging to operationalize in purely natural language settings. In this work, rather than relying on finetuning or in-context learning to coax LLMs into implicitly imitating a RL algorithm, we illustrate how LLMs can be used to explicitly implement an existing RL algorithm (Posterior Sampling for Reinforcement Learning) whose capacity for statistically-efficient exploration is already well-studied. We offer empirical results demonstrating how our LLM-based implementation of a known, data-efficient RL algorithm can be considerably more effective in natural language tasks that demand prudent exploration."
+  },
+  {
+    "title": "TesserAct: Learning 4D Embodied World Models",
+    "url": "http://arxiv.org/abs/2504.20995v1",
+    "arxiv_id": "2504.20995v1",
+    "authors": [
+      "Haoyu Zhen",
+      "Qiao Sun",
+      "Hongxin Zhang",
+      "Junyan Li",
+      "Siyuan Zhou",
+      "Yilun Du",
+      "Chuang Gan"
+    ],
+    "published": "2025-04-29T17:59:30+00:00",
+    "summary": "This paper presents an effective approach for learning novel 4D embodied world models, which predict the dynamic evolution of 3D scenes over time in response to an embodied agent's actions, providing both spatial and temporal consistency. We propose to learn a 4D world model by training on RGB-DN (RGB, Depth, and Normal) videos. This not only surpasses traditional 2D models by incorporating detailed shape, configuration, and temporal changes into their predictions, but also allows us to effectively learn accurate inverse dynamic models for an embodied agent. Specifically, we first extend existing robotic manipulation video datasets with depth and normal information leveraging off-the-shelf models. Next, we fine-tune a video generation model on this annotated dataset, which jointly predicts RGB-DN (RGB, Depth, and Normal) for each frame. We then present an algorithm to directly convert generated RGB, Depth, and Normal videos into a high-quality 4D scene of the world. Our method ensures temporal and spatial coherence in 4D scene predictions from embodied scenarios, enables novel view synthesis for embodied environments, and facilitates policy learning that significantly outperforms those derived from prior video-based world models."
+  },
+  {
+    "title": "XPG-RL: Reinforcement Learning with Explainable Priority Guidance for Efficiency-Boosted Mechanical Search",
+    "url": "http://arxiv.org/abs/2504.20969v1",
+    "arxiv_id": "2504.20969v1",
+    "authors": [
+      "Yiting Zhang",
+      "Shichen Li",
+      "Elena Shrestha"
+    ],
+    "published": "2025-04-29T17:37:45+00:00",
+    "summary": "Mechanical search (MS) in cluttered environments remains a significant challenge for autonomous manipulators, requiring long-horizon planning and robust state estimation under occlusions and partial observability. In this work, we introduce XPG-RL, a reinforcement learning framework that enables agents to efficiently perform MS tasks through explainable, priority-guided decision-making based on raw sensory inputs. XPG-RL integrates a task-driven action prioritization mechanism with a learned context-aware switching strategy that dynamically selects from a discrete set of action primitives such as target grasping, occlusion removal, and viewpoint adjustment. Within this strategy, a policy is optimized to output adaptive threshold values that govern the discrete selection among action primitives. The perception module fuses RGB-D inputs with semantic and geometric features to produce a structured scene representation for downstream decision-making. Extensive experiments in both simulation and real-world settings demonstrate that XPG-RL consistently outperforms baseline methods in task success rates and motion efficiency, achieving up to 4.5$\\times$ higher efficiency in long-horizon tasks. These results underscore the benefits of integrating domain knowledge with learnable decision-making policies for robust and efficient robotic manipulation."
+  },
+  {
+    "title": "Opinion-Driven Decision-Making for Multi-Robot Navigation through Narrow Corridors",
+    "url": "http://arxiv.org/abs/2504.20947v1",
+    "arxiv_id": "2504.20947v1",
+    "authors": [
+      "Norah K. Alghamdi",
+      "Shinkyu Park"
+    ],
+    "published": "2025-04-29T17:14:55+00:00",
+    "summary": "We propose an opinion-driven navigation framework for multi-robot traversal through a narrow corridor. Our approach leverages a multi-agent decision-making model known as the Nonlinear Opinion Dynamics (NOD) to address the narrow corridor passage problem, formulated as a multi-robot navigation game. By integrating the NOD model with a multi-robot path planning algorithm, we demonstrate that the framework effectively reduces the likelihood of deadlocks during corridor traversal. To ensure scalability with an increasing number of robots, we introduce a game reduction technique that enables efficient coordination in larger groups. Extensive simulation studies are conducted to validate the effectiveness of the proposed approach."
+  },
+  {
+    "title": "Scenario-based Compositional Verification of Autonomous Systems with Neural Perception",
+    "url": "http://arxiv.org/abs/2504.20942v1",
+    "arxiv_id": "2504.20942v1",
+    "authors": [
+      "Christopher Watson",
+      "Rajeev Alur",
+      "Divya Gopinath",
+      "Ravi Mangal",
+      "Corina S. Pasareanu"
+    ],
+    "published": "2025-04-29T17:06:22+00:00",
+    "summary": "Recent advances in deep learning have enabled the development of autonomous systems that use deep neural networks for perception. Formal verification of these systems is challenging due to the size and complexity of the perception DNNs as well as hard-to-quantify, changing environment conditions. To address these challenges, we propose a probabilistic verification framework for autonomous systems based on the following key concepts: (1) Scenario-based Modeling: We decompose the task (e.g., car navigation) into a composition of scenarios, each representing a different environment condition. (2) Probabilistic Abstractions: For each scenario, we build a compact abstraction of perception based on the DNN's performance on an offline dataset that represents the scenario's environment condition. (3) Symbolic Reasoning and Acceleration: The abstractions enable efficient compositional verification of the autonomous system via symbolic reasoning and a novel acceleration proof rule that bounds the error probability of the system under arbitrary variations of environment conditions. We illustrate our approach on two case studies: an experimental autonomous system that guides airplanes on taxiways using high-dimensional perception DNNs and a simulation model of an F1Tenth autonomous car using LiDAR observations."
+  },
+  {
     "title": "MP-SfM: Monocular Surface Priors for Robust Structure-from-Motion",
     "url": "http://arxiv.org/abs/2504.20040v1",
     "arxiv_id": "2504.20040v1",
