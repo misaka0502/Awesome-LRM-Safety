@@ -1,5 +1,93 @@
 [
   {
+    "title": "A Survey of Interactive Generative Video",
+    "url": "http://arxiv.org/abs/2504.21853v1",
+    "arxiv_id": "2504.21853v1",
+    "authors": [
+      "Jiwen Yu",
+      "Yiran Qin",
+      "Haoxuan Che",
+      "Quande Liu",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Di Zhang",
+      "Kun Gai",
+      "Hao Chen",
+      "Xihui Liu"
+    ],
+    "published": "2025-04-30T17:59:02+00:00",
+    "summary": "Interactive Generative Video (IGV) has emerged as a crucial technology in response to the growing demand for high-quality, interactive video content across various domains. In this paper, we define IGV as a technology that combines generative capabilities to produce diverse high-quality video content with interactive features that enable user engagement through control signals and responsive feedback. We survey the current landscape of IGV applications, focusing on three major domains: 1) gaming, where IGV enables infinite exploration in virtual worlds; 2) embodied AI, where IGV serves as a physics-aware environment synthesizer for training agents in multimodal interaction with dynamically evolving scenes; and 3) autonomous driving, where IGV provides closed-loop simulation capabilities for safety-critical testing and validation. To guide future development, we propose a comprehensive framework that decomposes an ideal IGV system into five essential modules: Generation, Control, Memory, Dynamics, and Intelligence. Furthermore, we systematically analyze the technical challenges and future directions in realizing each component for an ideal IGV system, such as achieving real-time generation, enabling open-domain control, maintaining long-term coherence, simulating accurate physics, and integrating causal reasoning. We believe that this systematic analysis will facilitate future research and development in the field of IGV, ultimately advancing the technology toward more sophisticated and practical applications."
+  },
+  {
+    "title": "Active Light Modulation to Counter Manipulation of Speech Visual Content",
+    "url": "http://arxiv.org/abs/2504.21846v1",
+    "arxiv_id": "2504.21846v1",
+    "authors": [
+      "Hadleigh Schwartz",
+      "Xiaofeng Yan",
+      "Charles J. Carver",
+      "Xia Zhou"
+    ],
+    "published": "2025-04-30T17:55:24+00:00",
+    "summary": "High-profile speech videos are prime targets for falsification, owing to their accessibility and influence. This work proposes Spotlight, a low-overhead and unobtrusive system for protecting live speech videos from visual falsification of speaker identity and lip and facial motion. Unlike predominant falsification detection methods operating in the digital domain, Spotlight creates dynamic physical signatures at the event site and embeds them into all video recordings via imperceptible modulated light. These physical signatures encode semantically-meaningful features unique to the speech event, including the speaker's identity and facial motion, and are cryptographically-secured to prevent spoofing. The signatures can be extracted from any video downstream and validated against the portrayed speech content to check its integrity. Key elements of Spotlight include (1) a framework for generating extremely compact (i.e., 150-bit), pose-invariant speech video features, based on locality-sensitive hashing; and (2) an optical modulation scheme that embeds >200 bps into video while remaining imperceptible both in video and live. Prototype experiments on extensive video datasets show Spotlight achieves AUCs $\\geq$ 0.99 and an overall true positive rate of 100% in detecting falsified videos. Further, Spotlight is highly robust across recording conditions, video post-processing techniques, and white-box adversarial attacks on its video feature extraction methodologies."
+  },
+  {
+    "title": "Neuro-Symbolic Generation of Explanations for Robot Policies with Weighted Signal Temporal Logic",
+    "url": "http://arxiv.org/abs/2504.21841v1",
+    "arxiv_id": "2504.21841v1",
+    "authors": [
+      "Mikihisa Yuasa",
+      "Ramavarapu S. Sreenivas",
+      "Huy T. Tran"
+    ],
+    "published": "2025-04-30T17:51:20+00:00",
+    "summary": "Neural network-based policies have demonstrated success in many robotic applications, but often lack human-explanability, which poses challenges in safety-critical deployments. To address this, we propose a neuro-symbolic explanation framework that generates a weighted signal temporal logic (wSTL) specification to describe a robot policy in a interpretable form. Existing methods typically produce explanations that are verbose and inconsistent, which hinders explainability, and loose, which do not give meaningful insights into the underlying policy. We address these issues by introducing a simplification process consisting of predicate filtering, regularization, and iterative pruning. We also introduce three novel explainability evaluation metrics -- conciseness, consistency, and strictness -- to assess explanation quality beyond conventional classification metrics. Our method is validated in three simulated robotic environments, where it outperforms baselines in generating concise, consistent, and strict wSTL explanations without sacrificing classification accuracy. This work bridges policy learning with formal methods, contributing to safer and more transparent decision-making in robotics."
+  },
+  {
+    "title": "An Underwater, Fault-Tolerant, Laser-Aided Robotic Multi-Modal Dense SLAM System for Continuous Underwater In-Situ Observation",
+    "url": "http://arxiv.org/abs/2504.21826v1",
+    "arxiv_id": "2504.21826v1",
+    "authors": [
+      "Yaming Ou",
+      "Junfeng Fan",
+      "Chao Zhou",
+      "Pengju Zhang",
+      "Zongyuan Shen",
+      "Yichen Fu",
+      "Xiaoyan Liu",
+      "Zengguang Hou"
+    ],
+    "published": "2025-04-30T17:30:13+00:00",
+    "summary": "Existing underwater SLAM systems are difficult to work effectively in texture-sparse and geometrically degraded underwater environments, resulting in intermittent tracking and sparse mapping. Therefore, we present Water-DSLAM, a novel laser-aided multi-sensor fusion system that can achieve uninterrupted, fault-tolerant dense SLAM capable of continuous in-situ observation in diverse complex underwater scenarios through three key innovations: Firstly, we develop Water-Scanner, a multi-sensor fusion robotic platform featuring a self-designed Underwater Binocular Structured Light (UBSL) module that enables high-precision 3D perception. Secondly, we propose a fault-tolerant triple-subsystem architecture combining: 1) DP-INS (DVL- and Pressure-aided Inertial Navigation System): fusing inertial measurement unit, doppler velocity log, and pressure sensor based Error-State Kalman Filter (ESKF) to provide high-frequency absolute odometry 2) Water-UBSL: a novel Iterated ESKF (IESKF)-based tight coupling between UBSL and DP-INS to mitigate UBSL's degeneration issues 3) Water-Stereo: a fusion of DP-INS and stereo camera for accurate initialization and tracking. Thirdly, we introduce a multi-modal factor graph back-end that dynamically fuses heterogeneous sensor data. The proposed multi-sensor factor graph maintenance strategy efficiently addresses issues caused by asynchronous sensor frequencies and partial data loss. Experimental results demonstrate Water-DSLAM achieves superior robustness (0.039 m trajectory RMSE and 100\\% continuity ratio during partial sensor dropout) and dense mapping (6922.4 points/m^3 in 750 m^3 water volume, approximately 10 times denser than existing methods) in various challenging environments, including pools, dark underwater scenes, 16-meter-deep sinkholes, and field rivers. Our project is available at https://water-scanner.github.io/."
+  },
+  {
+    "title": "DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition",
+    "url": "http://arxiv.org/abs/2504.21801v1",
+    "arxiv_id": "2504.21801v1",
+    "authors": [
+      "Z. Z. Ren",
+      "Zhihong Shao",
+      "Junxiao Song",
+      "Huajian Xin",
+      "Haocheng Wang",
+      "Wanjia Zhao",
+      "Liyue Zhang",
+      "Zhe Fu",
+      "Qihao Zhu",
+      "Dejian Yang",
+      "Z. F. Wu",
+      "Zhibin Gou",
+      "Shirong Ma",
+      "Hongxuan Tang",
+      "Yuxuan Liu",
+      "Wenjun Gao",
+      "Daya Guo",
+      "Chong Ruan"
+    ],
+    "published": "2025-04-30T16:57:48+00:00",
+    "summary": "We introduce DeepSeek-Prover-V2, an open-source large language model designed for formal theorem proving in Lean 4, with initialization data collected through a recursive theorem proving pipeline powered by DeepSeek-V3. The cold-start training procedure begins by prompting DeepSeek-V3 to decompose complex problems into a series of subgoals. The proofs of resolved subgoals are synthesized into a chain-of-thought process, combined with DeepSeek-V3's step-by-step reasoning, to create an initial cold start for reinforcement learning. This process enables us to integrate both informal and formal mathematical reasoning into a unified model. The resulting model, DeepSeek-Prover-V2-671B, achieves state-of-the-art performance in neural theorem proving, reaching 88.9% pass ratio on the MiniF2F-test and solving 49 out of 658 problems from PutnamBench. In addition to standard benchmarks, we introduce ProverBench, a collection of 325 formalized problems, to enrich our evaluation, including 15 selected problems from the recent AIME competitions (years 24-25). Further evaluation on these 15 AIME problems shows that the model successfully solves 6 of them. In comparison, DeepSeek-V3 solves 8 of these problems using majority voting, highlighting that the gap between formal and informal mathematical reasoning in large language models is substantially narrowing."
+  },
+  {
     "title": "Toward Efficient Exploration by Large Language Model Agents",
     "url": "http://arxiv.org/abs/2504.20997v1",
     "arxiv_id": "2504.20997v1",
