@@ -1,5 +1,82 @@
 [
   {
+    "title": "T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT",
+    "url": "http://arxiv.org/abs/2505.00703v1",
+    "arxiv_id": "2505.00703v1",
+    "authors": [
+      "Dongzhi Jiang",
+      "Ziyu Guo",
+      "Renrui Zhang",
+      "Zhuofan Zong",
+      "Hao Li",
+      "Le Zhuo",
+      "Shilin Yan",
+      "Pheng-Ann Heng",
+      "Hongsheng Li"
+    ],
+    "published": "2025-05-01T17:59:46+00:00",
+    "summary": "Recent advancements in large language models have demonstrated how chain-of-thought (CoT) and reinforcement learning (RL) can improve performance. However, applying such reasoning strategies to the visual generation domain remains largely unexplored. In this paper, we present T2I-R1, a novel reasoning-enhanced text-to-image generation model, powered by RL with a bi-level CoT reasoning process. Specifically, we identify two levels of CoT that can be utilized to enhance different stages of generation: (1) the semantic-level CoT for high-level planning of the prompt and (2) the token-level CoT for low-level pixel processing during patch-by-patch generation. To better coordinate these two levels of CoT, we introduce BiCoT-GRPO with an ensemble of generation rewards, which seamlessly optimizes both generation CoTs within the same training step. By applying our reasoning strategies to the baseline model, Janus-Pro, we achieve superior performance with 13% improvement on T2I-CompBench and 19% improvement on the WISE benchmark, even surpassing the state-of-the-art model FLUX.1. Code is available at: https://github.com/CaraJ7/T2I-R1"
+  },
+  {
+    "title": "Robotic Visual Instruction",
+    "url": "http://arxiv.org/abs/2505.00693v1",
+    "arxiv_id": "2505.00693v1",
+    "authors": [
+      "Yanbang Li",
+      "Ziyang Gong",
+      "Haoyang Li",
+      "Haoyang Li",
+      "Xiaoqi Huang",
+      "Haolan Kang",
+      "Guangping Bai",
+      "Xianzheng Ma"
+    ],
+    "published": "2025-05-01T17:55:05+00:00",
+    "summary": "Recently, natural language has been the primary medium for human-robot interaction. However, its inherent lack of spatial precision for robotic control introduces challenges such as ambiguity and verbosity. To address these limitations, we introduce the Robotic Visual Instruction (RoVI), a novel paradigm to guide robotic tasks through an object-centric, hand-drawn symbolic representation. RoVI effectively encodes spatial-temporal information into human-interpretable visual instructions through 2D sketches, utilizing arrows, circles, colors, and numbers to direct 3D robotic manipulation. To enable robots to understand RoVI better and generate precise actions based on RoVI, we present Visual Instruction Embodied Workflow (VIEW), a pipeline formulated for RoVI-conditioned policies. This approach leverages Vision-Language Models (VLMs) to interpret RoVI inputs, decode spatial and temporal constraints from 2D pixel space via keypoint extraction, and then transform them into executable 3D action sequences. We additionally curate a specialized dataset of 15K instances to fine-tune small VLMs for edge deployment, enabling them to effectively learn RoVI capabilities. Our approach is rigorously validated across 11 novel tasks in both real and simulated environments, demonstrating significant generalization capability. Notably, VIEW achieves an 87.5% success rate in real-world scenarios involving unseen tasks that feature multi-step actions, with disturbances, and trajectory-following requirements. Code and Datasets in this paper will be released soon."
+  },
+  {
+    "title": "Towards Autonomous Micromobility through Scalable Urban Simulation",
+    "url": "http://arxiv.org/abs/2505.00690v1",
+    "arxiv_id": "2505.00690v1",
+    "authors": [
+      "Wayne Wu",
+      "Honglin He",
+      "Chaoyuan Zhang",
+      "Jack He",
+      "Seth Z. Zhao",
+      "Ran Gong",
+      "Quanyi Li",
+      "Bolei Zhou"
+    ],
+    "published": "2025-05-01T17:52:29+00:00",
+    "summary": "Micromobility, which utilizes lightweight mobile machines moving in urban public spaces, such as delivery robots and mobility scooters, emerges as a promising alternative to vehicular mobility. Current micromobility depends mostly on human manual operation (in-person or remote control), which raises safety and efficiency concerns when navigating busy urban environments full of unpredictable obstacles and pedestrians. Assisting humans with AI agents in maneuvering micromobility devices presents a viable solution for enhancing safety and efficiency. In this work, we present a scalable urban simulation solution to advance autonomous micromobility. First, we build URBAN-SIM - a high-performance robot learning platform for large-scale training of embodied agents in interactive urban scenes. URBAN-SIM contains three critical modules: Hierarchical Urban Generation pipeline, Interactive Dynamics Generation strategy, and Asynchronous Scene Sampling scheme, to improve the diversity, realism, and efficiency of robot learning in simulation. Then, we propose URBAN-BENCH - a suite of essential tasks and benchmarks to gauge various capabilities of the AI agents in achieving autonomous micromobility. URBAN-BENCH includes eight tasks based on three core skills of the agents: Urban Locomotion, Urban Navigation, and Urban Traverse. We evaluate four robots with heterogeneous embodiments, such as the wheeled and legged robots, across these tasks. Experiments on diverse terrains and urban structures reveal each robot's strengths and limitations."
+  },
+  {
+    "title": "Multi-Constraint Safe Reinforcement Learning via Closed-form Solution for Log-Sum-Exp Approximation of Control Barrier Functions",
+    "url": "http://arxiv.org/abs/2505.00671v1",
+    "arxiv_id": "2505.00671v1",
+    "authors": [
+      "Chenggang Wang",
+      "Xinyi Wang",
+      "Yutong Dong",
+      "Lei Song",
+      "Xinping Guan"
+    ],
+    "published": "2025-05-01T17:22:11+00:00",
+    "summary": "The safety of training task policies and their subsequent application using reinforcement learning (RL) methods has become a focal point in the field of safe RL. A central challenge in this area remains the establishment of theoretical guarantees for safety during both the learning and deployment processes. Given the successful implementation of Control Barrier Function (CBF)-based safety strategies in a range of control-affine robotic systems, CBF-based safe RL demonstrates significant promise for practical applications in real-world scenarios. However, integrating these two approaches presents several challenges. First, embedding safety optimization within the RL training pipeline requires that the optimization outputs be differentiable with respect to the input parameters, a condition commonly referred to as differentiable optimization, which is non-trivial to solve. Second, the differentiable optimization framework confronts significant efficiency issues, especially when dealing with multi-constraint problems. To address these challenges, this paper presents a CBF-based safe RL architecture that effectively mitigates the issues outlined above. The proposed approach constructs a continuous AND logic approximation for the multiple constraints using a single composite CBF. By leveraging this approximation, a close-form solution of the quadratic programming is derived for the policy network in RL, thereby circumventing the need for differentiable optimization within the end-to-end safe RL pipeline. This strategy significantly reduces computational complexity because of the closed-form solution while maintaining safety guarantees. Simulation results demonstrate that, in comparison to existing approaches relying on differentiable optimization, the proposed method significantly reduces training computational costs while ensuring provable safety throughout the training process."
+  },
+  {
+    "title": "Deep Reinforcement Learning for Urban Air Quality Management: Multi-Objective Optimization of Pollution Mitigation Booth Placement in Metropolitan Environments",
+    "url": "http://arxiv.org/abs/2505.00668v1",
+    "arxiv_id": "2505.00668v1",
+    "authors": [
+      "Kirtan Rajesh",
+      "Suvidha Rupesh Kumar"
+    ],
+    "published": "2025-05-01T17:19:48+00:00",
+    "summary": "Urban air pollution remains a pressing global concern, particularly in densely populated and traffic-intensive metropolitan areas like Delhi, where exposure to harmful pollutants severely impacts public health. Delhi, being one of the most polluted cities globally, experiences chronic air quality issues due to vehicular emissions, industrial activities, and construction dust, which exacerbate its already fragile atmospheric conditions. Traditional pollution mitigation strategies, such as static air purifying installations, often fail to maximize their impact due to suboptimal placement and limited adaptability to dynamic urban environments. This study presents a novel deep reinforcement learning (DRL) framework to optimize the placement of air purification booths to improve the air quality index (AQI) in the city of Delhi. We employ Proximal Policy Optimization (PPO), a state-of-the-art reinforcement learning algorithm, to iteratively learn and identify high-impact locations based on multiple spatial and environmental factors, including population density, traffic patterns, industrial influence, and green space constraints. Our approach is benchmarked against conventional placement strategies, including random and greedy AQI-based methods, using multi-dimensional performance evaluation metrics such as AQI improvement, spatial coverage, population and traffic impact, and spatial entropy. Experimental results demonstrate that the RL-based approach outperforms baseline methods by achieving a balanced and effective distribution of air purification infrastructure. Notably, the DRL framework achieves an optimal trade-off between AQI reduction and high-coverage deployment, ensuring equitable environmental benefits across urban regions. The findings underscore the potential of AI-driven spatial optimization in advancing smart city initiatives and data-driven urban air quality management."
+  },
+  {
     "title": "A Survey of Interactive Generative Video",
     "url": "http://arxiv.org/abs/2504.21853v1",
     "arxiv_id": "2504.21853v1",
