@@ -1,5 +1,90 @@
 [
   {
+    "title": "GENMO: A GENeralist Model for Human MOtion",
+    "url": "http://arxiv.org/abs/2505.01425v1",
+    "arxiv_id": "2505.01425v1",
+    "authors": [
+      "Jiefeng Li",
+      "Jinkun Cao",
+      "Haotian Zhang",
+      "Davis Rempe",
+      "Jan Kautz",
+      "Umar Iqbal",
+      "Ye Yuan"
+    ],
+    "published": "2025-05-02T17:59:55+00:00",
+    "summary": "Human motion modeling traditionally separates motion generation and estimation into distinct tasks with specialized models. Motion generation models focus on creating diverse, realistic motions from inputs like text, audio, or keyframes, while motion estimation models aim to reconstruct accurate motion trajectories from observations like videos. Despite sharing underlying representations of temporal dynamics and kinematics, this separation limits knowledge transfer between tasks and requires maintaining separate models. We present GENMO, a unified Generalist Model for Human Motion that bridges motion estimation and generation in a single framework. Our key insight is to reformulate motion estimation as constrained motion generation, where the output motion must precisely satisfy observed conditioning signals. Leveraging the synergy between regression and diffusion, GENMO achieves accurate global motion estimation while enabling diverse motion generation. We also introduce an estimation-guided training objective that exploits in-the-wild videos with 2D annotations and text descriptions to enhance generative diversity. Furthermore, our novel architecture handles variable-length motions and mixed multimodal conditions (text, audio, video) at different time intervals, offering flexible control. This unified approach creates synergistic benefits: generative priors improve estimated motions under challenging conditions like occlusions, while diverse video data enhances generation capabilities. Extensive experiments demonstrate GENMO's effectiveness as a generalist framework that successfully handles multiple human motion tasks within a single model."
+  },
+  {
+    "title": "Neutrino mass generation in asymptotically safe gravity",
+    "url": "http://arxiv.org/abs/2505.01422v1",
+    "arxiv_id": "2505.01422v1",
+    "authors": [
+      "Gustavo P. de Brito",
+      "Astrid Eichhorn",
+      "Antonio D. Pereira",
+      "Masatoshi Yamada"
+    ],
+    "published": "2025-05-02T17:58:14+00:00",
+    "summary": "There exist several distinct phenomenological models to generate neutrino masses. We explore, which of these models can consistently be embedded in a quantum theory of gravity and matter. We proceed by invoking a minimal number of degrees of freedom beyond the Standard Model. Thus, we first investigate whether the Weinberg operator, a dimension-five-operator that generates neutrino masses without requiring degrees of freedom beyond the Standard Model, can arise in asymptotically safe quantum gravity. We find a negative answer with far-reaching consequences: new degrees of freedom beyond gravity and the Standard Model are necessary to give neutrinos a mass in the asymptotic-safety paradigm. Second, we explore whether the type-I Seesaw mechanism is viable and discover an upper bound on the Seesaw scale. The bound depends on the mass of the visible neutrino. We find a numerical value of $10^{14}\\, \\rm GeV$ for this bound when neglecting neutrino mixing for a visible mass of $10^{-10}\\, \\rm GeV$. Conversely, for the most ``natural\" value of the Seesaw scale in a quantum-gravity setting, which is the Planck scale, we predict an upper bound for the neutrino mass of the visible neutrino of approximately $10^{-15}\\, \\rm GeV$. Third, we explore whether neutrinos could also be Pseudo-Dirac-neutrinos in asymptotic safety and find that this possibility can be accommodated."
+  },
+  {
+    "title": "Evaluating Frontier Models for Stealth and Situational Awareness",
+    "url": "http://arxiv.org/abs/2505.01420v1",
+    "arxiv_id": "2505.01420v1",
+    "authors": [
+      "Mary Phuong",
+      "Roland S. Zimmermann",
+      "Ziyue Wang",
+      "David Lindner",
+      "Victoria Krakovna",
+      "Sarah Cogan",
+      "Allan Dafoe",
+      "Lewis Ho",
+      "Rohin Shah"
+    ],
+    "published": "2025-05-02T17:57:14+00:00",
+    "summary": "Recent work has demonstrated the plausibility of frontier AI models scheming -- knowingly and covertly pursuing an objective misaligned with its developer's intentions. Such behavior could be very hard to detect, and if present in future advanced systems, could pose severe loss of control risk. It is therefore important for AI developers to rule out harm from scheming prior to model deployment. In this paper, we present a suite of scheming reasoning evaluations measuring two types of reasoning capabilities that we believe are prerequisites for successful scheming: First, we propose five evaluations of ability to reason about and circumvent oversight (stealth). Second, we present eleven evaluations for measuring a model's ability to instrumentally reason about itself, its environment and its deployment (situational awareness). We demonstrate how these evaluations can be used as part of a scheming inability safety case: a model that does not succeed on these evaluations is almost certainly incapable of causing severe harm via scheming in real deployment. We run our evaluations on current frontier models and find that none of them show concerning levels of either situational awareness or stealth."
+  },
+  {
+    "title": "Propagation and circulating modes of reciprocal non-Hermitian skin effect",
+    "url": "http://arxiv.org/abs/2505.01417v1",
+    "arxiv_id": "2505.01417v1",
+    "authors": [
+      "Issei Takeda",
+      "Taiki Yoda",
+      "Yuto Moritake",
+      "Kenta Takata",
+      "Masaya Notomi"
+    ],
+    "published": "2025-05-02T17:52:36+00:00",
+    "summary": "The non-Hermitian skin effect (NHSE) is a novel localization phenomenon, in which all bulk states in a non-Hermitian system under certain conditions are localized at the edge of the system. Conventionally, most studies of NHSE have dealt with discrete lattice systems with non-reciprocal couplings. However in recent years, NHSE in a reciprocal two-dimensional continuous medium, such as photonic crystal systems, has also been reported. In particular, we have previously shown that NHSE also occurs in two-dimensional uniform media. In such two-dimensional systems, skin modes propagate in a direction perpendicular to the localization direction, and especially, they have the property of propagating in only one direction. In this paper, we show numerically an intriguing scattering phenomenon: when a scatterer is placed in the path of a skin mode, the scattering causes the skin mode to hop between opposing edges. In addition, we propose a new method of generating circulating modes with orbital angular momentum using this scattering phenomenon. Our work paves the way for new applications of NHSE as micro-sized optical devices manipulating or generating OAM."
+  },
+  {
+    "title": "Collection of fluorescence from an ion using trap-integrated photonics",
+    "url": "http://arxiv.org/abs/2505.01412v1",
+    "arxiv_id": "2505.01412v1",
+    "authors": [
+      "Felix W. Knollmann",
+      "Sabrina M. Corsetti",
+      "Ethan R. Clements",
+      "Reuel Swint",
+      "Aaron D. Leu",
+      "May E. Kim",
+      "Patrick T. Callahan",
+      "Dave Kharas",
+      "Thomas Mahony",
+      "Cheryl Sorace-Agaskar",
+      "Robert McConnell",
+      "Colin D. Bruzewicz",
+      "Isaac L. Chuang",
+      "Jelena Notaros",
+      "John Chiaverini"
+    ],
+    "published": "2025-05-02T17:42:20+00:00",
+    "summary": "Spontaneously emitted photons are entangled with the electronic and nuclear degrees of freedom of the emitting atom, so interference and measurement of these photons can entangle separate matter-based quantum systems as a resource for quantum information processing. However, the isotropic nature of spontaneous emission hinders the single-mode photonic operations required to generate entanglement. Current demonstrations rely on bulk photon-collection and manipulation optics that suffer from environment-induced phase instability, mode matching challenges, and system-to-system variability, factors that impede scaling to the large numbers of entangled pairs needed for quantum information processing. To address these limitations, we demonstrate a collection method that enables passive phase stability, straightforward photonic manipulation, and intrinsic reproducibility. Specifically, we engineer a waveguide-integrated grating to couple photons emitted from a trapped ion into a single optical mode within a microfabricated ion-trap chip. Using the integrated collection optic, we characterize the collection efficiency, image the ion, and detect the ion's quantum state. This proof-of-principle demonstration lays the foundation for leveraging the inherent stability and reproducibility of integrated photonics to efficiently create, manipulate, and measure multipartite quantum states in arrays of quantum emitters."
+  },
+  {
     "title": "T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT",
     "url": "http://arxiv.org/abs/2505.00703v1",
     "arxiv_id": "2505.00703v1",
