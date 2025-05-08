@@ -1,5 +1,78 @@
 [
   {
+    "title": "EchoInk-R1: Exploring Audio-Visual Reasoning in Multimodal LLMs via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2505.04623v1",
+    "arxiv_id": "2505.04623v1",
+    "authors": [
+      "Zhenghao Xing",
+      "Xiaowei Hu",
+      "Chi-Wing Fu",
+      "Wenhai Wang",
+      "Jifeng Dai",
+      "Pheng-Ann Heng"
+    ],
+    "published": "2025-05-07T17:59:49+00:00",
+    "summary": "Multimodal large language models (MLLMs) have advanced perception across text, vision, and audio, yet they often struggle with structured cross-modal reasoning, particularly when integrating audio and visual signals. We introduce EchoInk-R1, a reinforcement learning framework that enhances such reasoning in MLLMs. Built upon the Qwen2.5-Omni-7B foundation and optimized with Group Relative Policy Optimization (GRPO), EchoInk-R1 tackles multiple-choice question answering over synchronized audio-image pairs. To enable this, we curate AVQA-R1-6K, a dataset pairing such audio-image inputs with multiple-choice questions derived from OmniInstruct-v1. EchoInk-R1-7B achieves 85.77% accuracy on the validation set, outperforming the base model, which scores 80.53%, using only 562 reinforcement learning steps. Beyond accuracy, EchoInk-R1 demonstrates reflective reasoning by revisiting initial interpretations and refining responses when facing ambiguous multimodal inputs. These results suggest that lightweight reinforcement learning fine-tuning enhances cross-modal reasoning in MLLMs. EchoInk-R1 is the first framework to unify audio, visual, and textual modalities for general open-world reasoning via reinforcement learning. Code and data are publicly released to facilitate further research."
+  },
+  {
+    "title": "Merging and Disentangling Views in Visual Reinforcement Learning for Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2505.04619v1",
+    "arxiv_id": "2505.04619v1",
+    "authors": [
+      "Abdulaziz Almuzairee",
+      "Rohan Patil",
+      "Dwait Bhatt",
+      "Henrik I. Christensen"
+    ],
+    "published": "2025-05-07T17:59:28+00:00",
+    "summary": "Vision is well-known for its use in manipulation, especially using visual servoing. To make it robust, multiple cameras are needed to expand the field of view. That is computationally challenging. Merging multiple views and using Q-learning allows the design of more effective representations and optimization of sample efficiency. Such a solution might be expensive to deploy. To mitigate this, we introduce a Merge And Disentanglement (MAD) algorithm that efficiently merges views to increase sample efficiency while augmenting with single-view features to allow lightweight deployment and ensure robust policies. We demonstrate the efficiency and robustness of our approach using Meta-World and ManiSkill3. For project website and code, see https://aalmuzairee.github.io/mad"
+  },
+  {
+    "title": "ZeroSearch: Incentivize the Search Capability of LLMs without Searching",
+    "url": "http://arxiv.org/abs/2505.04588v1",
+    "arxiv_id": "2505.04588v1",
+    "authors": [
+      "Hao Sun",
+      "Zile Qiao",
+      "Jiayan Guo",
+      "Xuanbo Fan",
+      "Yingyan Hou",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Yan Zhang"
+    ],
+    "published": "2025-05-07T17:30:22+00:00",
+    "summary": "Effective information searching is essential for enhancing the reasoning and generation capabilities of large language models (LLMs). Recent research has explored using reinforcement learning (RL) to improve LLMs' search capabilities by interacting with live search engines in real-world environments. While these approaches show promising results, they face two major challenges: (1) Uncontrolled Document Quality: The quality of documents returned by search engines is often unpredictable, introducing noise and instability into the training process. (2) Prohibitively High API Costs: RL training requires frequent rollouts, potentially involving hundreds of thousands of search requests, which incur substantial API expenses and severely constrain scalability. To address these challenges, we introduce ZeroSearch, a reinforcement learning framework that incentivizes the search capabilities of LLMs without interacting with real search engines. Our approach begins with lightweight supervised fine-tuning to transform the LLM into a retrieval module capable of generating both relevant and noisy documents in response to a query. During RL training, we employ a curriculum-based rollout strategy that incrementally degrades the quality of generated documents, progressively eliciting the model's reasoning ability by exposing it to increasingly challenging retrieval scenarios. Extensive experiments demonstrate that ZeroSearch effectively incentivizes the search capabilities of LLMs using a 3B LLM as the retrieval module. Remarkably, a 7B retrieval module achieves comparable performance to the real search engine, while a 14B retrieval module even surpasses it. Furthermore, it generalizes well across both base and instruction-tuned models of various parameter sizes and is compatible with a wide range of RL algorithms."
+  },
+  {
+    "title": "Active Sampling for MRI-based Sequential Decision Making",
+    "url": "http://arxiv.org/abs/2505.04586v1",
+    "arxiv_id": "2505.04586v1",
+    "authors": [
+      "Yuning Du",
+      "Jingshuai Liu",
+      "Rohan Dharmakumar",
+      "Sotirios A. Tsaftaris"
+    ],
+    "published": "2025-05-07T17:27:51+00:00",
+    "summary": "Despite the superior diagnostic capability of Magnetic Resonance Imaging (MRI), its use as a Point-of-Care (PoC) device remains limited by high cost and complexity. To enable such a future by reducing the magnetic field strength, one key approach will be to improve sampling strategies. Previous work has shown that it is possible to make diagnostic decisions directly from k-space with fewer samples. Such work shows that single diagnostic decisions can be made, but if we aspire to see MRI as a true PoC, multiple and sequential decisions are necessary while minimizing the number of samples acquired. We present a novel multi-objective reinforcement learning framework enabling comprehensive, sequential, diagnostic evaluation from undersampled k-space data. Our approach during inference actively adapts to sequential decisions to optimally sample. To achieve this, we introduce a training methodology that identifies the samples that contribute the best to each diagnostic objective using a step-wise weighting reward function. We evaluate our approach in two sequential knee pathology assessment tasks: ACL sprain detection and cartilage thickness loss assessment. Our framework achieves diagnostic performance competitive with various policy-based benchmarks on disease detection, severity quantification, and overall sequential diagnosis, while substantially saving k-space samples. Our approach paves the way for the future of MRI as a comprehensive and affordable PoC device. Our code is publicly available at https://github.com/vios-s/MRI_Sequential_Active_Sampling"
+  },
+  {
+    "title": "Modeling Personalized Difficulty of Rehabilitation Exercises Using Causal Trees",
+    "url": "http://arxiv.org/abs/2505.04583v1",
+    "arxiv_id": "2505.04583v1",
+    "authors": [
+      "Nathaniel Dennler",
+      "Zhonghao Shi",
+      "Uksang Yoo",
+      "Stefanos Nikolaidis",
+      "Maja Matari\u0107"
+    ],
+    "published": "2025-05-07T17:21:45+00:00",
+    "summary": "Rehabilitation robots are often used in game-like interactions for rehabilitation to increase a person's motivation to complete rehabilitation exercises. By adjusting exercise difficulty for a specific user throughout the exercise interaction, robots can maximize both the user's rehabilitation outcomes and the their motivation throughout the exercise. Previous approaches have assumed exercises have generic difficulty values that apply to all users equally, however, we identified that stroke survivors have varied and unique perceptions of exercise difficulty. For example, some stroke survivors found reaching vertically more difficult than reaching farther but lower while others found reaching farther more challenging than reaching vertically. In this paper, we formulate a causal tree-based method to calculate exercise difficulty based on the user's performance. We find that this approach accurately models exercise difficulty and provides a readily interpretable model of why that exercise is difficult for both users and caretakers."
+  },
+  {
     "title": "AMO: Adaptive Motion Optimization for Hyper-Dexterous Humanoid Whole-Body Control",
     "url": "http://arxiv.org/abs/2505.03738v1",
     "arxiv_id": "2505.03738v1",
