@@ -1,5 +1,84 @@
 [
   {
+    "title": "H$^{\\mathbf{3}}$DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning",
+    "url": "http://arxiv.org/abs/2505.07819v1",
+    "arxiv_id": "2505.07819v1",
+    "authors": [
+      "Yiyang Lu",
+      "Yufeng Tian",
+      "Zhecheng Yuan",
+      "Xianbang Wang",
+      "Pu Hua",
+      "Zhengrong Xue",
+      "Huazhe Xu"
+    ],
+    "published": "2025-05-12T17:59:43+00:00",
+    "summary": "Visuomotor policy learning has witnessed substantial progress in robotic manipulation, with recent approaches predominantly relying on generative models to model the action distribution. However, these methods often overlook the critical coupling between visual perception and action prediction. In this work, we introduce $\\textbf{Triply-Hierarchical Diffusion Policy}~(\\textbf{H$^{\\mathbf{3}}$DP})$, a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H$^{3}$DP contains $\\mathbf{3}$ levels of hierarchy: (1) depth-aware input layering that organizes RGB-D observations based on depth information; (2) multi-scale visual representations that encode semantic features at varying levels of granularity; and (3) a hierarchically conditioned diffusion process that aligns the generation of coarse-to-fine actions with corresponding visual features. Extensive experiments demonstrate that H$^{3}$DP yields a $\\mathbf{+27.5\\%}$ average relative improvement over baselines across $\\mathbf{44}$ simulation tasks and achieves superior performance in $\\mathbf{4}$ challenging bimanual real-world manipulation tasks. Project Page: https://lyy-iiis.github.io/h3dp/."
+  },
+  {
+    "title": "DanceGRPO: Unleashing GRPO on Visual Generation",
+    "url": "http://arxiv.org/abs/2505.07818v1",
+    "arxiv_id": "2505.07818v1",
+    "authors": [
+      "Zeyue Xue",
+      "Jie Wu",
+      "Yu Gao",
+      "Fangyuan Kong",
+      "Lingting Zhu",
+      "Mengzhao Chen",
+      "Zhiheng Liu",
+      "Wei Liu",
+      "Qiushan Guo",
+      "Weilin Huang",
+      "Ping Luo"
+    ],
+    "published": "2025-05-12T17:59:34+00:00",
+    "summary": "Recent breakthroughs in generative models-particularly diffusion models and rectified flows-have revolutionized visual content creation, yet aligning model outputs with human preferences remains a critical challenge. Existing reinforcement learning (RL)-based methods for visual generation face critical limitations: incompatibility with modern Ordinary Differential Equations (ODEs)-based sampling paradigms, instability in large-scale training, and lack of validation for video generation. This paper introduces DanceGRPO, the first unified framework to adapt Group Relative Policy Optimization (GRPO) to visual generation paradigms, unleashing one unified RL algorithm across two generative paradigms (diffusion models and rectified flows), three tasks (text-to-image, text-to-video, image-to-video), four foundation models (Stable Diffusion, HunyuanVideo, FLUX, SkyReel-I2V), and five reward models (image/video aesthetics, text-image alignment, video motion quality, and binary reward). To our knowledge, DanceGRPO is the first RL-based unified framework capable of seamless adaptation across diverse generative paradigms, tasks, foundational models, and reward models. DanceGRPO demonstrates consistent and substantial improvements, which outperform baselines by up to 181% on benchmarks such as HPS-v2.1, CLIP Score, VideoAlign, and GenEval. Notably, DanceGRPO not only can stabilize policy optimization for complex video generation, but also enables generative policy to better capture denoising trajectories for Best-of-N inference scaling and learn from sparse binary feedback. Our results establish DanceGRPO as a robust and versatile solution for scaling Reinforcement Learning from Human Feedback (RLHF) tasks in visual generation, offering new insights into harmonizing reinforcement learning and visual synthesis. The code will be released."
+  },
+  {
+    "title": "Pixel Motion as Universal Representation for Robot Control",
+    "url": "http://arxiv.org/abs/2505.07817v1",
+    "arxiv_id": "2505.07817v1",
+    "authors": [
+      "Kanchana Ranasinghe",
+      "Xiang Li",
+      "Cristina Mata",
+      "Jongwoo Park",
+      "Michael S Ryoo"
+    ],
+    "published": "2025-05-12T17:59:32+00:00",
+    "summary": "We present LangToMo, a vision-language-action framework structured as a dual-system architecture that uses pixel motion forecasts as intermediate representations. Our high-level System 2, an image diffusion model, generates text-conditioned pixel motion sequences from a single frame to guide robot control. Pixel motion-a universal, interpretable, and motion-centric representation-can be extracted from videos in a self-supervised manner, enabling diffusion model training on web-scale video-caption data. Treating generated pixel motion as learned universal representations, our low level System 1 module translates these into robot actions via motion-to-action mapping functions, which can be either hand-crafted or learned with minimal supervision. System 2 operates as a high-level policy applied at sparse temporal intervals, while System 1 acts as a low-level policy at dense temporal intervals. This hierarchical decoupling enables flexible, scalable, and generalizable robot control under both unsupervised and supervised settings, bridging the gap between language, motion, and action. Checkout https://kahnchana.github.io/LangToMo for visualizations."
+  },
+  {
+    "title": "Imagine, Verify, Execute: Memory-Guided Agentic Exploration with Vision-Language Models",
+    "url": "http://arxiv.org/abs/2505.07815v1",
+    "arxiv_id": "2505.07815v1",
+    "authors": [
+      "Seungjae Lee",
+      "Daniel Ekpo",
+      "Haowen Liu",
+      "Furong Huang",
+      "Abhinav Shrivastava",
+      "Jia-Bin Huang"
+    ],
+    "published": "2025-05-12T17:59:11+00:00",
+    "summary": "Exploration is essential for general-purpose robotic learning, especially in open-ended environments where dense rewards, explicit goals, or task-specific supervision are scarce. Vision-language models (VLMs), with their semantic reasoning over objects, spatial relations, and potential outcomes, present a compelling foundation for generating high-level exploratory behaviors. However, their outputs are often ungrounded, making it difficult to determine whether imagined transitions are physically feasible or informative. To bridge the gap between imagination and execution, we present IVE (Imagine, Verify, Execute), an agentic exploration framework inspired by human curiosity. Human exploration is often driven by the desire to discover novel scene configurations and to deepen understanding of the environment. Similarly, IVE leverages VLMs to abstract RGB-D observations into semantic scene graphs, imagine novel scenes, predict their physical plausibility, and generate executable skill sequences through action tools. We evaluate IVE in both simulated and real-world tabletop environments. The results show that IVE enables more diverse and meaningful exploration than RL baselines, as evidenced by a 4.1 to 7.8x increase in the entropy of visited states. Moreover, the collected experience supports downstream learning, producing policies that closely match or exceed the performance of those trained on human-collected demonstrations."
+  },
+  {
+    "title": "DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies",
+    "url": "http://arxiv.org/abs/2505.07813v1",
+    "arxiv_id": "2505.07813v1",
+    "authors": [
+      "Tony Tao",
+      "Mohan Kumar Srirama",
+      "Jason Jingzhou Liu",
+      "Kenneth Shaw",
+      "Deepak Pathak"
+    ],
+    "published": "2025-05-12T17:59:05+00:00",
+    "summary": "Large-scale, diverse robot datasets have emerged as a promising path toward enabling dexterous manipulation policies to generalize to novel environments, but acquiring such datasets presents many challenges. While teleoperation provides high-fidelity datasets, its high cost limits its scalability. Instead, what if people could use their own hands, just as they do in everyday life, to collect data? In DexWild, a diverse team of data collectors uses their hands to collect hours of interactions across a multitude of environments and objects. To record this data, we create DexWild-System, a low-cost, mobile, and easy-to-use device. The DexWild learning framework co-trains on both human and robot demonstrations, leading to improved performance compared to training on each dataset individually. This combination results in robust robot policies capable of generalizing to novel environments, tasks, and embodiments with minimal additional robot-specific data. Experimental results demonstrate that DexWild significantly improves performance, achieving a 68.5% success rate in unseen environments-nearly four times higher than policies trained with robot data only-and offering 5.8x better cross-embodiment generalization. Video results, codebases, and instructions at https://dexwild.github.io"
+  },
+  {
     "title": "Anomalous spin dynamics after dual optical excitation",
     "url": "http://arxiv.org/abs/2505.06225v1",
     "arxiv_id": "2505.06225v1",
