@@ -1,5 +1,83 @@
 [
   {
+    "title": "UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations",
+    "url": "http://arxiv.org/abs/2505.08787v1",
+    "arxiv_id": "2505.08787v1",
+    "authors": [
+      "Hanjung Kim",
+      "Jaehyun Kang",
+      "Hyolim Kang",
+      "Meedeum Cho",
+      "Seon Joo Kim",
+      "Youngwoon Lee"
+    ],
+    "published": "2025-05-13T17:59:22+00:00",
+    "summary": "Mimicry is a fundamental learning mechanism in humans, enabling individuals to learn new tasks by observing and imitating experts. However, applying this ability to robots presents significant challenges due to the inherent differences between human and robot embodiments in both their visual appearance and physical capabilities. While previous methods bridge this gap using cross-embodiment datasets with shared scenes and tasks, collecting such aligned data between humans and robots at scale is not trivial. In this paper, we propose UniSkill, a novel framework that learns embodiment-agnostic skill representations from large-scale cross-embodiment video data without any labels, enabling skills extracted from human video prompts to effectively transfer to robot policies trained only on robot data. Our experiments in both simulation and real-world environments show that our cross-embodiment skills successfully guide robots in selecting appropriate actions, even with unseen video prompts. The project website can be found at: https://kimhanjung.github.io/UniSkill."
+  },
+  {
+    "title": "PCS-UQ: Uncertainty Quantification via the Predictability-Computability-Stability Framework",
+    "url": "http://arxiv.org/abs/2505.08784v1",
+    "arxiv_id": "2505.08784v1",
+    "authors": [
+      "Abhineet Agarwal",
+      "Michael Xiao",
+      "Rebecca Barter",
+      "Omer Ronen",
+      "Boyu Fan",
+      "Bin Yu"
+    ],
+    "published": "2025-05-13T17:58:16+00:00",
+    "summary": "As machine learning (ML) models are increasingly deployed in high-stakes domains, trustworthy uncertainty quantification (UQ) is critical for ensuring the safety and reliability of these models. Traditional UQ methods rely on specifying a true generative model and are not robust to misspecification. On the other hand, conformal inference allows for arbitrary ML models but does not consider model selection, which leads to large interval sizes. We tackle these drawbacks by proposing a UQ method based on the predictability, computability, and stability (PCS) framework for veridical data science proposed by Yu and Kumbier. Specifically, PCS-UQ addresses model selection by using a prediction check to screen out unsuitable models. PCS-UQ then fits these screened algorithms across multiple bootstraps to assess inter-sample variability and algorithmic instability, enabling more reliable uncertainty estimates. Further, we propose a novel calibration scheme that improves local adaptivity of our prediction sets. Experiments across $17$ regression and $6$ classification datasets show that PCS-UQ achieves the desired coverage and reduces width over conformal approaches by $\\approx 20\\%$. Further, our local analysis shows PCS-UQ often achieves target coverage across subgroups while conformal methods fail to do so. For large deep-learning models, we propose computationally efficient approximation schemes that avoid the expensive multiple bootstrap trainings of PCS-UQ. Across three computer vision benchmarks, PCS-UQ reduces prediction set size over conformal methods by $20\\%$. Theoretically, we show a modified PCS-UQ algorithm is a form of split conformal inference and achieves the desired coverage with exchangeable data."
+  },
+  {
+    "title": "Full-volume aberration-space holography",
+    "url": "http://arxiv.org/abs/2505.08777v1",
+    "arxiv_id": "2505.08777v1",
+    "authors": [
+      "Ian Christen",
+      "Christopher Panuski",
+      "Thomas Propson",
+      "Dirk Englund"
+    ],
+    "published": "2025-05-13T17:54:53+00:00",
+    "summary": "Simultaneous, diffraction-limited control of multiple optical beams is crucial for applications ranging from lithography to optogenetics, deep tissue imaging, and tweezer-based manipulation of cells, particles, or atoms. Despite the desire to address wider fields of view, deeper volumes, and increasingly-disordered media, spatially-varying aberrations currently restrict parallelized steering to a limited \"isoplanatic\" region over which the point spread function is invariant. Here, we overcome this limitation by combining individual propagation kernels accounting for site-specific aberrations into a single spatial light modulator (SLM) hologram. This \"aberration-space holography\" unlocks precise, parallel holographic shaping over the SLM's entire Nyquist-limited volume, enabling us to realize full-field, anisoplanatic aberration compensation for the first time. By simultaneously correcting 50 isoplanatic patches with 8 principal aberration modes, we demonstrate a full-field optical tweezer array with 8x larger field of view than the best isoplanatic correction. Extending to 3D, we increase the volume of a multiphoton volumetric display by 12x. These performance enhancements are immediately accessible to a diverse range of applications through our open-source software implementation, which combines aberration-space holography with automated experimental feedback, wavefront calibration, and alignment."
+  },
+  {
+    "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+    "url": "http://arxiv.org/abs/2505.08775v1",
+    "arxiv_id": "2505.08775v1",
+    "authors": [
+      "Rahul K. Arora",
+      "Jason Wei",
+      "Rebecca Soskin Hicks",
+      "Preston Bowman",
+      "Joaquin Qui\u00f1onero-Candela",
+      "Foivos Tsimpourlas",
+      "Michael Sharman",
+      "Meghan Shah",
+      "Andrea Vallone",
+      "Alex Beutel",
+      "Johannes Heidecke",
+      "Karan Singhal"
+    ],
+    "published": "2025-05-13T17:53:59+00:00",
+    "summary": "We present HealthBench, an open-source benchmark measuring the performance and safety of large language models in healthcare. HealthBench consists of 5,000 multi-turn conversations between a model and an individual user or healthcare professional. Responses are evaluated using conversation-specific rubrics created by 262 physicians. Unlike previous multiple-choice or short-answer benchmarks, HealthBench enables realistic, open-ended evaluation through 48,562 unique rubric criteria spanning several health contexts (e.g., emergencies, transforming clinical data, global health) and behavioral dimensions (e.g., accuracy, instruction following, communication). HealthBench performance over the last two years reflects steady initial progress (compare GPT-3.5 Turbo's 16% to GPT-4o's 32%) and more rapid recent improvements (o3 scores 60%). Smaller models have especially improved: GPT-4.1 nano outperforms GPT-4o and is 25 times cheaper. We additionally release two HealthBench variations: HealthBench Consensus, which includes 34 particularly important dimensions of model behavior validated via physician consensus, and HealthBench Hard, where the current top score is 32%. We hope that HealthBench grounds progress towards model development and applications that benefit human health."
+  },
+  {
+    "title": "Generative Molecular Design with Steerable and Granular Synthesizability Control",
+    "url": "http://arxiv.org/abs/2505.08774v1",
+    "arxiv_id": "2505.08774v1",
+    "authors": [
+      "Jeff Guo",
+      "V\u00edctor Sabanza-Gil",
+      "Zlatko Jon\u010dev",
+      "Jeremy S. Luterbacher",
+      "Philippe Schwaller"
+    ],
+    "published": "2025-05-13T17:53:54+00:00",
+    "summary": "Synthesizability in small molecule generative design remains a bottleneck. Existing works that do consider synthesizability can output predicted synthesis routes for generated molecules. However, there has been minimal attention in addressing the ease of synthesis and enabling flexibility to incorporate desired reaction constraints. In this work, we propose a small molecule generative design framework that enables steerable and granular synthesizability control. Generated molecules satisfy arbitrary multi-parameter optimization objectives with predicted synthesis routes containing pre-defined allowed reactions, while optionally avoiding others. One can also enforce that all reactions belong to a pre-defined set. We show the capability to mix-and-match these reaction constraints across the most common medicinal chemistry transformations. Next, we show how our framework can be used to valorize industrial byproducts towards de novo optimized molecules. Going further, we demonstrate how granular control over synthesizability constraints can loosely mimic virtual screening of ultra-large make-on-demand libraries. Using only a single GPU, we generate and dock 15k molecules to identify promising candidates in Freedom 4.0 constituting 142B make-on-demand molecules (assessing only 0.00001% of the library). Generated molecules satisfying the reaction constraints have > 90% exact match rate. Lastly, we benchmark our framework against recent synthesizability-constrained generative models and demonstrate the highest sample efficiency even when imposing the additional constraint that all molecules must be synthesizable from a single reaction type. The main theme is demonstrating that a pre-trained generalist molecular generative model can be incentivized to generate property-optimized small molecules under challenging synthesizability constraints through reinforcement learning."
+  },
+  {
     "title": "H$^{\\mathbf{3}}$DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning",
     "url": "http://arxiv.org/abs/2505.07819v1",
     "arxiv_id": "2505.07819v1",
