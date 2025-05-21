@@ -1,5 +1,88 @@
 [
   {
+    "title": "Mind the Gap: Bridging Thought Leap for Improved Chain-of-Thought Tuning",
+    "url": "http://arxiv.org/abs/2505.14684v1",
+    "arxiv_id": "2505.14684v1",
+    "authors": [
+      "Haolei Xu",
+      "Yuchen Yan",
+      "Yongliang Shen",
+      "Wenqi Zhang",
+      "Guiyang Hou",
+      "Shengpei Jiang",
+      "Kaitao Song",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang"
+    ],
+    "published": "2025-05-20T17:59:31+00:00",
+    "summary": "Large language models (LLMs) have achieved remarkable progress on mathemati-cal tasks through Chain-of-Thought (CoT) reasoning. However, existing mathematical CoT datasets often suffer from Thought Leaps due to experts omitting intermediate steps, which negatively impacts model learning and generalization. We propose the CoT Thought Leap Bridge Task, which aims to automatically detect leaps and generate missing intermediate reasoning steps to restore the completeness and coherence of CoT. To facilitate this, we constructed a specialized training dataset called ScaleQM+, based on the structured ScaleQuestMath dataset, and trained CoT-Bridge to bridge thought leaps. Through comprehensive experiments on mathematical reasoning benchmarks, we demonstrate that models fine-tuned on bridged datasets consistently outperform those trained on original datasets, with improvements of up to +5.87% on NuminaMath. Our approach effectively enhances distilled data (+3.02%) and provides better starting points for reinforcement learning (+3.1%), functioning as a plug-and-play module compatible with existing optimization techniques. Furthermore, CoT-Bridge demonstrate improved generalization to out-of-domain logical reasoning tasks, confirming that enhancing reasoning completeness yields broadly applicable benefits."
+  },
+  {
+    "title": "Emerging Properties in Unified Multimodal Pretraining",
+    "url": "http://arxiv.org/abs/2505.14683v1",
+    "arxiv_id": "2505.14683v1",
+    "authors": [
+      "Chaorui Deng",
+      "Deyao Zhu",
+      "Kunchang Li",
+      "Chenhui Gou",
+      "Feng Li",
+      "Zeyu Wang",
+      "Shu Zhong",
+      "Weihao Yu",
+      "Xiaonan Nie",
+      "Ziang Song",
+      "Guang Shi",
+      "Haoqi Fan"
+    ],
+    "published": "2025-05-20T17:59:30+00:00",
+    "summary": "Unifying multimodal understanding and generation has shown impressive capabilities in cutting-edge proprietary systems. In this work, we introduce BAGEL, an open0source foundational model that natively supports multimodal understanding and generation. BAGEL is a unified, decoder0only model pretrained on trillions of tokens curated from large0scale interleaved text, image, video, and web data. When scaled with such diverse multimodal interleaved data, BAGEL exhibits emerging capabilities in complex multimodal reasoning. As a result, it significantly outperforms open-source unified models in both multimodal generation and understanding across standard benchmarks, while exhibiting advanced multimodal reasoning abilities such as free-form image manipulation, future frame prediction, 3D manipulation, and world navigation. In the hope of facilitating further opportunities for multimodal research, we share the key findings, pretraining details, data creation protocal, and release our code and checkpoints to the community. The project page is at https://bagel-ai.org/"
+  },
+  {
+    "title": "Visionary-R1: Mitigating Shortcuts in Visual Reasoning with Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2505.14677v1",
+    "arxiv_id": "2505.14677v1",
+    "authors": [
+      "Jiaer Xia",
+      "Yuhang Zang",
+      "Peng Gao",
+      "Yixuan Li",
+      "Kaiyang Zhou"
+    ],
+    "published": "2025-05-20T17:58:35+00:00",
+    "summary": "Learning general-purpose reasoning capabilities has long been a challenging problem in AI. Recent research in large language models (LLMs), such as DeepSeek-R1, has shown that reinforcement learning techniques like GRPO can enable pre-trained LLMs to develop reasoning capabilities using simple question-answer pairs. In this paper, we aim to train visual language models (VLMs) to perform reasoning on image data through reinforcement learning and visual question-answer pairs, without any explicit chain-of-thought (CoT) supervision. Our findings indicate that simply applying reinforcement learning to a VLM -- by prompting the model to produce a reasoning chain before providing an answer -- can lead the model to develop shortcuts from easy questions, thereby reducing its ability to generalize across unseen data distributions. We argue that the key to mitigating shortcut learning is to encourage the model to interpret images prior to reasoning. Therefore, we train the model to adhere to a caption-reason-answer output format: initially generating a detailed caption for an image, followed by constructing an extensive reasoning chain. When trained on 273K CoT-free visual question-answer pairs and using only reinforcement learning, our model, named Visionary-R1, outperforms strong multimodal models, such as GPT-4o, Claude3.5-Sonnet, and Gemini-1.5-Pro, on multiple visual reasoning benchmarks."
+  },
+  {
+    "title": "Reward Reasoning Model",
+    "url": "http://arxiv.org/abs/2505.14674v1",
+    "arxiv_id": "2505.14674v1",
+    "authors": [
+      "Jiaxin Guo",
+      "Zewen Chi",
+      "Li Dong",
+      "Qingxiu Dong",
+      "Xun Wu",
+      "Shaohan Huang",
+      "Furu Wei"
+    ],
+    "published": "2025-05-20T17:58:03+00:00",
+    "summary": "Reward models play a critical role in guiding large language models toward outputs that align with human expectations. However, an open challenge remains in effectively utilizing test-time compute to enhance reward model performance. In this work, we introduce Reward Reasoning Models (RRMs), which are specifically designed to execute a deliberate reasoning process before generating final rewards. Through chain-of-thought reasoning, RRMs leverage additional test-time compute for complex queries where appropriate rewards are not immediately apparent. To develop RRMs, we implement a reinforcement learning framework that fosters self-evolved reward reasoning capabilities without requiring explicit reasoning traces as training data. Experimental results demonstrate that RRMs achieve superior performance on reward modeling benchmarks across diverse domains. Notably, we show that RRMs can adaptively exploit test-time compute to further improve reward accuracy. The pretrained reward reasoning models are available at https://huggingface.co/Reward-Reasoning."
+  },
+  {
+    "title": "SAFEPATH: Preventing Harmful Reasoning in Chain-of-Thought via Early Alignment",
+    "url": "http://arxiv.org/abs/2505.14667v1",
+    "arxiv_id": "2505.14667v1",
+    "authors": [
+      "Wonje Jeung",
+      "Sangyeon Yoon",
+      "Minsuk Kahng",
+      "Albert No"
+    ],
+    "published": "2025-05-20T17:54:54+00:00",
+    "summary": "Large Reasoning Models (LRMs) have become powerful tools for complex problem solving, but their structured reasoning pathways can lead to unsafe outputs when exposed to harmful prompts. Existing safety alignment methods reduce harmful outputs but can degrade reasoning depth, leading to significant trade-offs in complex, multi-step tasks, and remain vulnerable to sophisticated jailbreak attacks. To address this, we introduce SAFEPATH, a lightweight alignment method that fine-tunes LRMs to emit a short, 8-token Safety Primer at the start of their reasoning, in response to harmful prompts, while leaving the rest of the reasoning process unsupervised. Empirical results across multiple benchmarks indicate that SAFEPATH effectively reduces harmful outputs while maintaining reasoning performance. Specifically, SAFEPATH reduces harmful responses by up to 90.0% and blocks 83.3% of jailbreak attempts in the DeepSeek-R1-Distill-Llama-8B model, while requiring 295.9x less compute than Direct Refusal and 314.1x less than SafeChain. We further introduce a zero-shot variant that requires no fine-tuning. In addition, we provide a comprehensive analysis of how existing methods in LLMs generalize, or fail, when applied to reasoning-centric models, revealing critical gaps and new directions for safer AI."
+  },
+  {
     "title": "Trust, But Verify: A Self-Verification Approach to Reinforcement Learning with Verifiable Rewards",
     "url": "http://arxiv.org/abs/2505.13445v1",
     "arxiv_id": "2505.13445v1",
