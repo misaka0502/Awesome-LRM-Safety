@@ -1,5 +1,84 @@
 [
   {
+    "title": "GoT-R1: Unleashing Reasoning Capability of MLLM for Visual Generation with Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2505.17022v1",
+    "arxiv_id": "2505.17022v1",
+    "authors": [
+      "Chengqi Duan",
+      "Rongyao Fang",
+      "Yuqing Wang",
+      "Kun Wang",
+      "Linjiang Huang",
+      "Xingyu Zeng",
+      "Hongsheng Li",
+      "Xihui Liu"
+    ],
+    "published": "2025-05-22T17:59:58+00:00",
+    "summary": "Visual generation models have made remarkable progress in creating realistic images from text prompts, yet struggle with complex prompts that specify multiple objects with precise spatial relationships and attributes. Effective handling of such prompts requires explicit reasoning about the semantic content and spatial layout. We present GoT-R1, a framework that applies reinforcement learning to enhance semantic-spatial reasoning in visual generation. Building upon the Generation Chain-of-Thought approach, GoT-R1 enables models to autonomously discover effective reasoning strategies beyond predefined templates through carefully designed reinforcement learning. To achieve this, we propose a dual-stage multi-dimensional reward framework that leverages MLLMs to evaluate both the reasoning process and final output, enabling effective supervision across the entire generation pipeline. The reward system assesses semantic alignment, spatial accuracy, and visual quality in a unified approach. Experimental results demonstrate significant improvements on T2I-CompBench benchmark, particularly in compositional tasks involving precise spatial relationships and attribute binding. GoT-R1 advances the state-of-the-art in image generation by successfully transferring sophisticated reasoning capabilities to the visual generation domain. To facilitate future research, we make our code and pretrained models publicly available at https://github.com/gogoduan/GoT-R1."
+  },
+  {
+    "title": "SophiaVL-R1: Reinforcing MLLMs Reasoning with Thinking Reward",
+    "url": "http://arxiv.org/abs/2505.17018v1",
+    "arxiv_id": "2505.17018v1",
+    "authors": [
+      "Kaixuan Fan",
+      "Kaituo Feng",
+      "Haoming Lyu",
+      "Dongzhan Zhou",
+      "Xiangyu Yue"
+    ],
+    "published": "2025-05-22T17:59:53+00:00",
+    "summary": "Recent advances have shown success in eliciting strong reasoning abilities in multimodal large language models (MLLMs) through rule-based reinforcement learning (RL) with outcome rewards. However, this paradigm typically lacks supervision over the thinking process leading to the final outcome.As a result, the model may learn sub-optimal reasoning strategies, which can hinder its generalization ability. In light of this, we propose SophiaVL-R1, as an attempt to add reward signals for the thinking process in this paradigm. To achieve this, we first train a thinking reward model that evaluates the quality of the entire thinking process. Given that the thinking reward may be unreliable for certain samples due to reward hacking, we propose the Trust-GRPO method, which assigns a trustworthiness weight to the thinking reward during training. This weight is computed based on the thinking reward comparison of responses leading to correct answers versus incorrect answers, helping to mitigate the impact of potentially unreliable thinking rewards. Moreover, we design an annealing training strategy that gradually reduces the thinking reward over time, allowing the model to rely more on the accurate rule-based outcome reward in later training stages. Experiments show that our SophiaVL-R1 surpasses a series of reasoning MLLMs on various benchmarks (e.g., MathVisita, MMMU), demonstrating strong reasoning and generalization capabilities. Notably, our SophiaVL-R1-7B even outperforms LLaVA-OneVision-72B on most benchmarks, despite the latter having 10 times more parameters. All code, models, and datasets are made publicly available at https://github.com/kxfan2002/SophiaVL-R1."
+  },
+  {
+    "title": "Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO",
+    "url": "http://arxiv.org/abs/2505.17017v1",
+    "arxiv_id": "2505.17017v1",
+    "authors": [
+      "Chengzhuo Tong",
+      "Ziyu Guo",
+      "Renrui Zhang",
+      "Wenyu Shan",
+      "Xinyu Wei",
+      "Zhenghao Xing",
+      "Hongsheng Li",
+      "Pheng-Ann Heng"
+    ],
+    "published": "2025-05-22T17:59:49+00:00",
+    "summary": "Recent advancements underscore the significant role of Reinforcement Learning (RL) in enhancing the Chain-of-Thought (CoT) reasoning capabilities of large language models (LLMs). Two prominent RL algorithms, Direct Preference Optimization (DPO) and Group Relative Policy Optimization (GRPO), are central to these developments, showcasing different pros and cons. Autoregressive image generation, also interpretable as a sequential CoT reasoning process, presents unique challenges distinct from LLM-based CoT reasoning. These encompass ensuring text-image consistency, improving image aesthetic quality, and designing sophisticated reward models, rather than relying on simpler rule-based rewards. While recent efforts have extended RL to this domain, these explorations typically lack an in-depth analysis of the domain-specific challenges and the characteristics of different RL strategies. To bridge this gap, we provide the first comprehensive investigation of the GRPO and DPO algorithms in autoregressive image generation, evaluating their in-domain performance and out-of-domain generalization, while scrutinizing the impact of different reward models on their respective capabilities. Our findings reveal that GRPO and DPO exhibit distinct advantages, and crucially, that reward models possessing stronger intrinsic generalization capabilities potentially enhance the generalization potential of the applied RL algorithms. Furthermore, we systematically explore three prevalent scaling strategies to enhance both their in-domain and out-of-domain proficiency, deriving unique insights into efficiently scaling performance for each paradigm. We hope our study paves a new path for inspiring future work on developing more effective RL algorithms to achieve robust CoT reasoning in the realm of autoregressive image generation. Code is released at https://github.com/ZiyuGuo99/Image-Generation-CoT"
+  },
+  {
+    "title": "Interactive Post-Training for Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2505.17016v1",
+    "arxiv_id": "2505.17016v1",
+    "authors": [
+      "Shuhan Tan",
+      "Kairan Dou",
+      "Yue Zhao",
+      "Philipp Kr\u00e4henb\u00fchl"
+    ],
+    "published": "2025-05-22T17:59:45+00:00",
+    "summary": "We introduce RIPT-VLA, a simple and scalable reinforcement-learning-based interactive post-training paradigm that fine-tunes pretrained Vision-Language-Action (VLA) models using only sparse binary success rewards. Existing VLA training pipelines rely heavily on offline expert demonstration data and supervised imitation, limiting their ability to adapt to new tasks and environments under low-data regimes. RIPT-VLA addresses this by enabling interactive post-training with a stable policy optimization algorithm based on dynamic rollout sampling and leave-one-out advantage estimation.   RIPT-VLA has the following characteristics. First, it applies to various VLA models, resulting in an improvement on the lightweight QueST model by 21.2%, and the 7B OpenVLA-OFT model to an unprecedented 97.5% success rate. Second, it is computationally efficient and data-efficient: with only one demonstration, RIPT-VLA enables an unworkable SFT model (4%) to succeed with a 97% success rate within 15 iterations. Furthermore, we demonstrate that the policy learned by RIPT-VLA generalizes across different tasks and scenarios and is robust to the initial state context. These results highlight RIPT-VLA as a practical and effective paradigm for post-training VLA models through minimal supervision."
+  },
+  {
+    "title": "Multi-SpatialMLLM: Multi-Frame Spatial Understanding with Multi-Modal Large Language Models",
+    "url": "http://arxiv.org/abs/2505.17015v1",
+    "arxiv_id": "2505.17015v1",
+    "authors": [
+      "Runsen Xu",
+      "Weiyao Wang",
+      "Hao Tang",
+      "Xingyu Chen",
+      "Xiaodong Wang",
+      "Fu-Jen Chu",
+      "Dahua Lin",
+      "Matt Feiszli",
+      "Kevin J. Liang"
+    ],
+    "published": "2025-05-22T17:59:39+00:00",
+    "summary": "Multi-modal large language models (MLLMs) have rapidly advanced in visual tasks, yet their spatial understanding remains limited to single images, leaving them ill-suited for robotics and other real-world applications that require multi-frame reasoning. In this paper, we propose a framework to equip MLLMs with robust multi-frame spatial understanding by integrating depth perception, visual correspondence, and dynamic perception. Central to our approach is the MultiSPA dataset, a novel, large-scale collection of more than 27 million samples spanning diverse 3D and 4D scenes. Alongside MultiSPA, we introduce a comprehensive benchmark that tests a wide spectrum of spatial tasks under uniform metrics. Our resulting model, Multi-SpatialMLLM, achieves significant gains over baselines and proprietary systems, demonstrating scalable, generalizable multi-frame reasoning. We further observe multi-task benefits and early indications of emergent capabilities in challenging scenarios, and showcase how our model can serve as a multi-frame reward annotator for robotics."
+  },
+  {
     "title": "On the creation of narrow AI: hierarchy and nonlocality of neural network skills",
     "url": "http://arxiv.org/abs/2505.15811v1",
     "arxiv_id": "2505.15811v1",
