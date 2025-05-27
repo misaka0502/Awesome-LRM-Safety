@@ -74,6 +74,81 @@
     "summary": "Collision-free motion planning for redundant robot manipulators in complex environments is yet to be explored. Although recent advancements at the intersection of deep reinforcement learning (DRL) and robotics have highlighted its potential to handle versatile robotic tasks, current DRL-based collision-free motion planners for manipulators are highly costly, hindering their deployment and application. This is due to an overreliance on the minimum distance between the manipulator and obstacles, inadequate exploration and decision-making by DRL, and inefficient data acquisition and utilization. In this article, we propose URPlanner, a universal paradigm for collision-free robotic motion planning based on DRL. URPlanner offers several advantages over existing approaches: it is platform-agnostic, cost-effective in both training and deployment, and applicable to arbitrary manipulators without solving inverse kinematics. To achieve this, we first develop a parameterized task space and a universal obstacle avoidance reward that is independent of minimum distance. Second, we introduce an augmented policy exploration and evaluation algorithm that can be applied to various DRL algorithms to enhance their performance. Third, we propose an expert data diffusion strategy for efficient policy learning, which can produce a large-scale trajectory dataset from only a few expert demonstrations. Finally, the superiority of the proposed methods is comprehensively verified through experiments."
   },
   {
+    "title": "MineAnyBuild: Benchmarking Spatial Planning for Open-world AI Agents",
+    "url": "http://arxiv.org/abs/2505.20148v1",
+    "arxiv_id": "2505.20148v1",
+    "authors": [
+      "Ziming Wei",
+      "Bingqian Lin",
+      "Zijian Jiao",
+      "Yunshuang Nie",
+      "Liang Ma",
+      "Yuecheng Liu",
+      "Yuzheng Zhuang",
+      "Xiaodan Liang"
+    ],
+    "published": "2025-05-26T15:48:14+00:00",
+    "summary": "Spatial Planning is a crucial part in the field of spatial intelligence, which requires the understanding and planning about object arrangements in space perspective. AI agents with the spatial planning ability can better adapt to various real-world applications, including robotic manipulation, automatic assembly, urban planning etc. Recent works have attempted to construct benchmarks for evaluating the spatial intelligence of Multimodal Large Language Models (MLLMs). Nevertheless, these benchmarks primarily focus on spatial reasoning based on typical Visual Question-Answering (VQA) forms, which suffers from the gap between abstract spatial understanding and concrete task execution. In this work, we take a step further to build a comprehensive benchmark called MineAnyBuild, aiming to evaluate the spatial planning ability of open-world AI agents in the Minecraft game. Specifically, MineAnyBuild requires an agent to generate executable architecture building plans based on the given multi-modal human instructions. It involves 4,000 curated spatial planning tasks and also provides a paradigm for infinitely expandable data collection by utilizing rich player-generated content. MineAnyBuild evaluates spatial planning through four core supporting dimensions: spatial understanding, spatial reasoning, creativity, and spatial commonsense. Based on MineAnyBuild, we perform a comprehensive evaluation for existing MLLM-based agents, revealing the severe limitations but enormous potential in their spatial planning abilities. We believe our MineAnyBuild will open new avenues for the evaluation of spatial intelligence and help promote further development for open-world AI agents capable of spatial planning."
+  },
+  {
+    "title": "FUDOKI: Discrete Flow-based Unified Understanding and Generation via Kinetic-Optimal Velocities",
+    "url": "http://arxiv.org/abs/2505.20147v1",
+    "arxiv_id": "2505.20147v1",
+    "authors": [
+      "Jin Wang",
+      "Yao Lai",
+      "Aoxue Li",
+      "Shifeng Zhang",
+      "Jiacheng Sun",
+      "Ning Kang",
+      "Chengyue Wu",
+      "Zhenguo Li",
+      "Ping Luo"
+    ],
+    "published": "2025-05-26T15:46:53+00:00",
+    "summary": "The rapid progress of large language models (LLMs) has catalyzed the emergence of multimodal large language models (MLLMs) that unify visual understanding and image generation within a single framework. However, most existing MLLMs rely on autoregressive (AR) architectures, which impose inherent limitations on future development, such as the raster-scan order in image generation and restricted reasoning abilities in causal context modeling. In this work, we challenge the dominance of AR-based approaches by introducing FUDOKI, a unified multimodal model purely based on discrete flow matching, as an alternative to conventional AR paradigms. By leveraging metric-induced probability paths with kinetic optimal velocities, our framework goes beyond the previous masking-based corruption process, enabling iterative refinement with self-correction capability and richer bidirectional context integration during generation. To mitigate the high cost of training from scratch, we initialize FUDOKI from pre-trained AR-based MLLMs and adaptively transition to the discrete flow matching paradigm. Experimental results show that FUDOKI achieves performance comparable to state-of-the-art AR-based MLLMs across both visual understanding and image generation tasks, highlighting its potential as a foundation for next-generation unified multimodal models. Furthermore, we show that applying test-time scaling techniques to FUDOKI yields significant performance gains, further underscoring its promise for future enhancement through reinforcement learning."
+  },
+  {
+    "title": "MolEditRL: Structure-Preserving Molecular Editing via Discrete Diffusion and Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2505.20131v1",
+    "arxiv_id": "2505.20131v1",
+    "authors": [
+      "Yuanxin Zhuang",
+      "Dazhong Shen",
+      "Ying Sun"
+    ],
+    "published": "2025-05-26T15:29:08+00:00",
+    "summary": "Molecular editing aims to modify a given molecule to optimize desired chemical properties while preserving structural similarity. However, current approaches typically rely on string-based or continuous representations, which fail to adequately capture the discrete, graph-structured nature of molecules, resulting in limited structural fidelity and poor controllability. In this paper, we propose MolEditRL, a molecular editing framework that explicitly integrates structural constraints with precise property optimization. Specifically, MolEditRL consists of two stages: (1) a discrete graph diffusion model pretrained to reconstruct target molecules conditioned on source structures and natural language instructions; (2) an editing-aware reinforcement learning fine-tuning stage that further enhances property alignment and structural preservation by explicitly optimizing editing decisions under graph constraints. For comprehensive evaluation, we construct MolEdit-Instruct, the largest and most property-rich molecular editing dataset, comprising 3 million diverse examples spanning single- and multi-property tasks across 10 chemical attributes. Experimental results demonstrate that MolEditRL significantly outperforms state-of-the-art methods in both property optimization accuracy and structural fidelity, achieving a 74\\% improvement in editing success rate while using 98\\% fewer parameters."
+  },
+  {
+    "title": "Proxy-Free GFlowNet",
+    "url": "http://arxiv.org/abs/2505.20110v1",
+    "arxiv_id": "2505.20110v1",
+    "authors": [
+      "Ruishuo Chen",
+      "Xun Wang",
+      "Rui Hu",
+      "Zhuoran Li",
+      "Longbo Huang"
+    ],
+    "published": "2025-05-26T15:12:22+00:00",
+    "summary": "Generative Flow Networks (GFlowNets) are a promising class of generative models designed to sample diverse, high-reward structures by modeling distributions over compositional objects. In many real-world applications, obtaining the reward function for such objects is expensive, time-consuming, or requires human input, making it necessary to train GFlowNets from historical datasets. Most existing methods adopt a model-based approach, learning a proxy model from the dataset to approximate the reward function. However, this strategy inherently ties the quality of the learned policy to the accuracy of the proxy, introducing additional complexity and uncertainty into the training process. To overcome these limitations, we propose \\textbf{Trajectory-Distilled GFlowNet (TD-GFN)}, a \\emph{proxy-free} training framework that eliminates the need for out-of-dataset reward queries. Our method is motivated by the key observation that different edges in the associated directed acyclic graph (DAG) contribute unequally to effective policy learning. TD-GFN leverages inverse reinforcement learning to estimate edge-level rewards from the offline dataset, which are then used to ingeniously prune the DAG and guide backward trajectory sampling during training. This approach directs the policy toward high-reward regions while reducing the complexity of model fitting. Empirical results across multiple tasks show that TD-GFN trains both efficiently and reliably, significantly outperforming existing baselines in convergence speed and sample quality."
+  },
+  {
+    "title": "Classical-to-quantum transfer of geometric phase for non-interferometric phase measurement and manipulation of quantum state",
+    "url": "http://arxiv.org/abs/2505.20108v1",
+    "arxiv_id": "2505.20108v1",
+    "authors": [
+      "Vimlesh Kumar",
+      "Chahat Kaushik",
+      "M. Ebrahim-Zadeh",
+      "C. M. Chandrashekar",
+      "G. K. Samanta"
+    ],
+    "published": "2025-05-26T15:12:04+00:00",
+    "summary": "The geometric phase, originating from the cyclic evolution of a state, such as polarization on the Poincar\\'e sphere, is typically measured through interferometric approaches that often include unwanted contributions from the dynamic phase. Here, we present a non-interferometric technique based on quantum correlation of pair photons to measure the geometric phase of a classical beam. The transfer of geometric phase of the classical pump beam arising from the cyclic evolution of its polarization state on the Poincar\\'e sphere onto the polarization-entangled pair photons generated via spontaneous parametric down-conversion in a Sagnac interferometer enables easy control over the quantum state. Characterization of the generated quantum states reveals that the geometric phase of the pump beam controls the coincidence counts, entanglement visibility, Bell's parameter, quantum state tomography, and fidelity in close agreement with theoretical predictions. We observe sinusoidal modulation of the Bell's parameter and state fidelity with changes in the geometric phase, resulting in transitions between orthogonal Bell states and Bell-like maximally entangled states. Our results establish the geometric phase of the classical pump as a tunable parameter for quantum state control, offering a compact, passive platform for phase manipulation in quantum photonic systems, enabling geometric phase-based quantum gates, and compensating unwanted phase acquired by the quantum state on propagation."
+  },
+  {
     "title": "One RL to See Them All: Visual Triple Unified Reinforcement Learning",
     "url": "http://arxiv.org/abs/2505.18129v1",
     "arxiv_id": "2505.18129v1",
