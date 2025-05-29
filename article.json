@@ -1,5 +1,85 @@
 [
   {
+    "title": "Maximizing Confidence Alone Improves Reasoning",
+    "url": "http://arxiv.org/abs/2505.22660v1",
+    "arxiv_id": "2505.22660v1",
+    "authors": [
+      "Mihir Prabhudesai",
+      "Lili Chen",
+      "Alex Ippoliti",
+      "Katerina Fragkiadaki",
+      "Hao Liu",
+      "Deepak Pathak"
+    ],
+    "published": "2025-05-28T17:59:37+00:00",
+    "summary": "Reinforcement learning (RL) has enabled machine learning models to achieve significant advances in many fields. Most recently, RL has empowered frontier language models to solve challenging math, science, and coding problems. However, central to any RL algorithm is the reward function, and reward engineering is a notoriously difficult problem in any domain. In this paper, we propose RENT: Reinforcement Learning via Entropy Minimization -- a fully unsupervised RL method that requires no external reward or ground-truth answers, and instead uses the model's entropy of its underlying distribution as an intrinsic reward. We find that by reinforcing the chains of thought that yield high model confidence on its generated answers, the model improves its reasoning ability. In our experiments, we showcase these improvements on an extensive suite of commonly-used reasoning benchmarks, including GSM8K, MATH500, AMC, AIME, and GPQA, and models of varying sizes from the Qwen and Mistral families. The generality of our unsupervised learning method lends itself to applicability in a wide range of domains where external supervision is limited or unavailable."
+  },
+  {
+    "title": "The Climb Carves Wisdom Deeper Than the Summit: On the Noisy Rewards in Learning to Reason",
+    "url": "http://arxiv.org/abs/2505.22653v1",
+    "arxiv_id": "2505.22653v1",
+    "authors": [
+      "Ang Lv",
+      "Ruobing Xie",
+      "Xingwu Sun",
+      "Zhanhui Kang",
+      "Rui Yan"
+    ],
+    "published": "2025-05-28T17:59:03+00:00",
+    "summary": "Recent studies on post-training large language models (LLMs) for reasoning through reinforcement learning (RL) typically focus on tasks that can be accurately verified and rewarded, such as solving math problems. In contrast, our research investigates the impact of reward noise, a more practical consideration for real-world scenarios involving the post-training of LLMs using reward models. We found that LLMs demonstrate strong robustness to substantial reward noise. For example, manually flipping 40% of the reward function's outputs in math tasks still allows a Qwen-2.5-7B model to achieve rapid convergence, improving its performance on math tasks from 5% to 72%, compared to the 75% accuracy achieved by a model trained with noiseless rewards. Surprisingly, by only rewarding the appearance of key reasoning phrases (namely reasoning pattern reward, RPR), such as ``first, I need to''-without verifying the correctness of answers, the model achieved peak downstream performance (over 70% accuracy for Qwen-2.5-7B) comparable to models trained with strict correctness verification and accurate rewards. Recognizing the importance of the reasoning process over the final results, we combined RPR with noisy reward models. RPR helped calibrate the noisy reward models, mitigating potential false negatives and enhancing the LLM's performance on open-ended tasks. These findings suggest the importance of improving models' foundational abilities during the pre-training phase while providing insights for advancing post-training techniques. Our code and scripts are available at https://github.com/trestad/Noisy-Rewards-in-Learning-to-Reason."
+  },
+  {
+    "title": "WebDancer: Towards Autonomous Information Seeking Agency",
+    "url": "http://arxiv.org/abs/2505.22648v1",
+    "arxiv_id": "2505.22648v1",
+    "authors": [
+      "Jialong Wu",
+      "Baixuan Li",
+      "Runnan Fang",
+      "Wenbiao Yin",
+      "Liwen Zhang",
+      "Zhengwei Tao",
+      "Dingchu Zhang",
+      "Zekun Xi",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "published": "2025-05-28T17:57:07+00:00",
+    "summary": "Addressing intricate real-world problems necessitates in-depth information seeking and multi-step reasoning. Recent progress in agentic systems, exemplified by Deep Research, underscores the potential for autonomous multi-step research. In this work, we present a cohesive paradigm for building end-to-end agentic information seeking agents from a data-centric and training-stage perspective. Our approach consists of four key stages: (1) browsing data construction, (2) trajectories sampling, (3) supervised fine-tuning for effective cold start, and (4) reinforcement learning for enhanced generalisation. We instantiate this framework in a web agent based on the ReAct, WebDancer. Empirical evaluations on the challenging information seeking benchmarks, GAIA and WebWalkerQA, demonstrate the strong performance of WebDancer, achieving considerable results and highlighting the efficacy of our training paradigm. Further analysis of agent training provides valuable insights and actionable, systematic pathways for developing more capable agentic models. The codes and demo will be released in https://github.com/Alibaba-NLP/WebAgent."
+  },
+  {
+    "title": "FastTD3: Simple, Fast, and Capable Reinforcement Learning for Humanoid Control",
+    "url": "http://arxiv.org/abs/2505.22642v1",
+    "arxiv_id": "2505.22642v1",
+    "authors": [
+      "Younggyo Seo",
+      "Carmelo Sferrazza",
+      "Haoran Geng",
+      "Michal Nauman",
+      "Zhao-Heng Yin",
+      "Pieter Abbeel"
+    ],
+    "published": "2025-05-28T17:55:26+00:00",
+    "summary": "Reinforcement learning (RL) has driven significant progress in robotics, but its complexity and long training times remain major bottlenecks. In this report, we introduce FastTD3, a simple, fast, and capable RL algorithm that significantly speeds up training for humanoid robots in popular suites such as HumanoidBench, IsaacLab, and MuJoCo Playground. Our recipe is remarkably simple: we train an off-policy TD3 agent with several modifications -- parallel simulation, large-batch updates, a distributional critic, and carefully tuned hyperparameters. FastTD3 solves a range of HumanoidBench tasks in under 3 hours on a single A100 GPU, while remaining stable during training. We also provide a lightweight and easy-to-use implementation of FastTD3 to accelerate RL research in robotics."
+  },
+  {
+    "title": "SimProcess: High Fidelity Simulation of Noisy ICS Physical Processes",
+    "url": "http://arxiv.org/abs/2505.22638v1",
+    "arxiv_id": "2505.22638v1",
+    "authors": [
+      "Denis Donadel",
+      "Gabriele Crestanello",
+      "Giulio Morandini",
+      "Daniele Antonioli",
+      "Mauro Conti",
+      "Massimo Merro"
+    ],
+    "published": "2025-05-28T17:54:23+00:00",
+    "summary": "Industrial Control Systems (ICS) manage critical infrastructures like power grids and water treatment plants. Cyberattacks on ICSs can disrupt operations, causing severe economic, environmental, and safety issues. For example, undetected pollution in a water plant can put the lives of thousands at stake. ICS researchers have increasingly turned to honeypots -- decoy systems designed to attract attackers, study their behaviors, and eventually improve defensive mechanisms. However, existing ICS honeypots struggle to replicate the ICS physical process, making them susceptible to detection. Accurately simulating the noise in ICS physical processes is challenging because different factors produce it, including sensor imperfections and external interferences.   In this paper, we propose SimProcess, a novel framework to rank the fidelity of ICS simulations by evaluating how closely they resemble real-world and noisy physical processes. It measures the simulation distance from a target system by estimating the noise distribution with machine learning models like Random Forest. Unlike existing solutions that require detailed mathematical models or are limited to simple systems, SimProcess operates with only a timeseries of measurements from the real system, making it applicable to a broader range of complex dynamic systems. We demonstrate the framework's effectiveness through a case study using real-world power grid data from the EPIC testbed. We compare the performance of various simulation methods, including static and generative noise techniques. Our model correctly classifies real samples with a recall of up to 1.0. It also identifies Gaussian and Gaussian Mixture as the best distribution to simulate our power systems, together with a generative solution provided by an autoencoder, thereby helping developers to improve honeypot fidelity. Additionally, we make our code publicly available."
+  },
+  {
     "title": "AdInject: Real-World Black-Box Attacks on Web Agents via Advertising Delivery",
     "url": "http://arxiv.org/abs/2505.21499v1",
     "arxiv_id": "2505.21499v1",
