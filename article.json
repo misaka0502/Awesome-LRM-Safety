@@ -1,5 +1,90 @@
 [
   {
+    "title": "ReasonGen-R1: CoT for Autoregressive Image generation models through SFT and RL",
+    "url": "http://arxiv.org/abs/2505.24875v1",
+    "arxiv_id": "2505.24875v1",
+    "authors": [
+      "Yu Zhang",
+      "Yunqi Li",
+      "Yifan Yang",
+      "Rui Wang",
+      "Yuqing Yang",
+      "Dai Qi",
+      "Jianmin Bao",
+      "Dongdong Chen",
+      "Chong Luo",
+      "Lili Qiu"
+    ],
+    "published": "2025-05-30T17:59:48+00:00",
+    "summary": "Although chain-of-thought reasoning and reinforcement learning (RL) have driven breakthroughs in NLP, their integration into generative vision models remains underexplored. We introduce ReasonGen-R1, a two-stage framework that first imbues an autoregressive image generator with explicit text-based \"thinking\" skills via supervised fine-tuning on a newly generated reasoning dataset of written rationales, and then refines its outputs using Group Relative Policy Optimization. To enable the model to reason through text before generating images, We automatically generate and release a corpus of model crafted rationales paired with visual prompts, enabling controlled planning of object layouts, styles, and scene compositions. Our GRPO algorithm uses reward signals from a pretrained vision language model to assess overall visual quality, optimizing the policy in each update. Evaluations on GenEval, DPG, and the T2I benchmark demonstrate that ReasonGen-R1 consistently outperforms strong baselines and prior state-of-the-art models. More: aka.ms/reasongen."
+  },
+  {
+    "title": "ProxyThinker: Test-Time Guidance through Small Visual Reasoners",
+    "url": "http://arxiv.org/abs/2505.24872v1",
+    "arxiv_id": "2505.24872v1",
+    "authors": [
+      "Zilin Xiao",
+      "Jaywon Koo",
+      "Siru Ouyang",
+      "Jefferson Hernandez",
+      "Yu Meng",
+      "Vicente Ordonez"
+    ],
+    "published": "2025-05-30T17:59:43+00:00",
+    "summary": "Recent advancements in reinforcement learning with verifiable rewards have pushed the boundaries of the visual reasoning capabilities in large vision-language models (LVLMs). However, training LVLMs with reinforcement fine-tuning (RFT) is computationally expensive, posing a significant challenge to scaling model size. In this work, we propose ProxyThinker, an inference-time technique that enables large models to inherit the visual reasoning capabilities from small, slow-thinking visual reasoners without any training. By subtracting the output distributions of base models from those of RFT reasoners, ProxyThinker modifies the decoding dynamics and successfully elicits the slow-thinking reasoning demonstrated by the emerged sophisticated behaviors such as self-verification and self-correction. ProxyThinker consistently boosts performance on challenging visual benchmarks on spatial, mathematical, and multi-disciplinary reasoning, enabling untuned base models to compete with the performance of their full-scale RFT counterparts. Furthermore, our implementation efficiently coordinates multiple language models with parallelism techniques and achieves up to 38 $\\times$ faster inference compared to previous decoding-time methods, paving the way for the practical deployment of ProxyThinker. Code is available at https://github.com/MrZilinXiao/ProxyThinker."
+  },
+  {
+    "title": "MoDoMoDo: Multi-Domain Data Mixtures for Multimodal LLM Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2505.24871v1",
+    "arxiv_id": "2505.24871v1",
+    "authors": [
+      "Yiqing Liang",
+      "Jielin Qiu",
+      "Wenhao Ding",
+      "Zuxin Liu",
+      "James Tompkin",
+      "Mengdi Xu",
+      "Mengzhou Xia",
+      "Zhengzhong Tu",
+      "Laixi Shi",
+      "Jiacheng Zhu"
+    ],
+    "published": "2025-05-30T17:59:38+00:00",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as a powerful paradigm for post-training large language models (LLMs), achieving state-of-the-art performance on tasks with structured, verifiable answers. Applying RLVR to Multimodal LLMs (MLLMs) presents significant opportunities but is complicated by the broader, heterogeneous nature of vision-language tasks that demand nuanced visual, logical, and spatial capabilities. As such, training MLLMs using RLVR on multiple datasets could be beneficial but creates challenges with conflicting objectives from interaction among diverse datasets, highlighting the need for optimal dataset mixture strategies to improve generalization and reasoning. We introduce a systematic post-training framework for Multimodal LLM RLVR, featuring a rigorous data mixture problem formulation and benchmark implementation. Specifically, (1) We developed a multimodal RLVR framework for multi-dataset post-training by curating a dataset that contains different verifiable vision-language problems and enabling multi-domain online RL learning with different verifiable rewards; (2) We proposed a data mixture strategy that learns to predict the RL fine-tuning outcome from the data mixture distribution, and consequently optimizes the best mixture. Comprehensive experiments showcase that multi-domain RLVR training, when combined with mixture prediction strategies, can significantly boost MLLM general reasoning capacities. Our best mixture improves the post-trained model's accuracy on out-of-distribution benchmarks by an average of 5.24% compared to the same model post-trained with uniform data mixture, and by a total of 20.74% compared to the pre-finetuning baseline."
+  },
+  {
+    "title": "ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models",
+    "url": "http://arxiv.org/abs/2505.24864v1",
+    "arxiv_id": "2505.24864v1",
+    "authors": [
+      "Mingjie Liu",
+      "Shizhe Diao",
+      "Ximing Lu",
+      "Jian Hu",
+      "Xin Dong",
+      "Yejin Choi",
+      "Jan Kautz",
+      "Yi Dong"
+    ],
+    "published": "2025-05-30T17:59:01+00:00",
+    "summary": "Recent advances in reasoning-centric language models have highlighted reinforcement learning (RL) as a promising method for aligning models with verifiable rewards. However, it remains contentious whether RL truly expands a model's reasoning capabilities or merely amplifies high-reward outputs already latent in the base model's distribution, and whether continually scaling up RL compute reliably leads to improved reasoning performance. In this work, we challenge prevailing assumptions by demonstrating that prolonged RL (ProRL) training can uncover novel reasoning strategies that are inaccessible to base models, even under extensive sampling. We introduce ProRL, a novel training methodology that incorporates KL divergence control, reference policy resetting, and a diverse suite of tasks. Our empirical analysis reveals that RL-trained models consistently outperform base models across a wide range of pass@k evaluations, including scenarios where base models fail entirely regardless of the number of attempts. We further show that reasoning boundary improvements correlates strongly with task competence of base model and training duration, suggesting that RL can explore and populate new regions of solution space over time. These findings offer new insights into the conditions under which RL meaningfully expands reasoning boundaries in language models and establish a foundation for future work on long-horizon RL for reasoning. We release model weights to support further research: https://huggingface.co/nvidia/Nemotron-Research-Reasoning-Qwen-1.5B"
+  },
+  {
+    "title": "PB&J: Peanut Butter and Joints for Damped Articulation",
+    "url": "http://arxiv.org/abs/2505.24860v1",
+    "arxiv_id": "2505.24860v1",
+    "authors": [
+      "Avery S. Williamson",
+      "Michael J. Bennington",
+      "Ravesh Sukhnandan",
+      "Mrinali Nakhre",
+      "Yuemin Mao",
+      "Victoria A. Webster-Wood"
+    ],
+    "published": "2025-05-30T17:57:21+00:00",
+    "summary": "Many bioinspired robots mimic the rigid articulated joint structure of the human hand for grasping tasks, but experience high-frequency mechanical perturbations that can destabilize the system and negatively affect precision without a high-frequency controller. Despite having bandwidth-limited controllers that experience time delays between sensing and actuation, biological systems can respond successfully to and mitigate these high-frequency perturbations. Human joints include damping and stiffness that many rigid articulated bioinspired hand robots lack. To enable researchers to explore the effects of joint viscoelasticity in joint control, we developed a human-hand-inspired grasping robot with viscoelastic structures that utilizes accessible and bioderived materials to reduce the economic and environmental impact of prototyping novel robotic systems. We demonstrate that an elastic element at the finger joints is necessary to achieve concurrent flexion, which enables secure grasping of spherical objects. To significantly damp the manufactured finger joints, we modeled, manufactured, and characterized rotary dampers using peanut butter as an organic analog joint working fluid. Finally, we demonstrated that a real-time position-based controller could be used to successfully catch a lightweight falling ball. We developed this open-source, low-cost grasping platform that abstracts the morphological and mechanical properties of the human hand to enable researchers to explore questions about biomechanics in roboto that would otherwise be difficult to test in simulation or modeling."
+  },
+  {
     "title": "ZeroGUI: Automating Online GUI Learning at Zero Human Cost",
     "url": "http://arxiv.org/abs/2505.23762v1",
     "arxiv_id": "2505.23762v1",
