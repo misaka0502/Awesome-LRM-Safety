@@ -1,5 +1,99 @@
 [
   {
+    "title": "Object-centric 3D Motion Field for Robot Learning from Human Videos",
+    "url": "http://arxiv.org/abs/2506.04227v1",
+    "arxiv_id": "2506.04227v1",
+    "authors": [
+      "Zhao-Heng Yin",
+      "Sherry Yang",
+      "Pieter Abbeel"
+    ],
+    "published": "2025-06-04T17:59:06+00:00",
+    "summary": "Learning robot control policies from human videos is a promising direction for scaling up robot learning. However, how to extract action knowledge (or action representations) from videos for policy learning remains a key challenge. Existing action representations such as video frames, pixelflow, and pointcloud flow have inherent limitations such as modeling complexity or loss of information. In this paper, we propose to use object-centric 3D motion field to represent actions for robot learning from human videos, and present a novel framework for extracting this representation from videos for zero-shot control. We introduce two novel components in its implementation. First, a novel training pipeline for training a ''denoising'' 3D motion field estimator to extract fine object 3D motions from human videos with noisy depth robustly. Second, a dense object-centric 3D motion field prediction architecture that favors both cross-embodiment transfer and policy generalization to background. We evaluate the system in real world setups. Experiments show that our method reduces 3D motion estimation error by over 50% compared to the latest method, achieve 55% average success rate in diverse tasks where prior approaches fail~($\\lesssim 10$\\%), and can even acquire fine-grained manipulation skills like insertion."
+  },
+  {
+    "title": "Pseudo-Simulation for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2506.04218v1",
+    "arxiv_id": "2506.04218v1",
+    "authors": [
+      "Wei Cao",
+      "Marcel Hallgarten",
+      "Tianyu Li",
+      "Daniel Dauner",
+      "Xunjiang Gu",
+      "Caojun Wang",
+      "Yakov Miron",
+      "Marco Aiello",
+      "Hongyang Li",
+      "Igor Gilitschenski",
+      "Boris Ivanovic",
+      "Marco Pavone",
+      "Andreas Geiger",
+      "Kashyap Chitta"
+    ],
+    "published": "2025-06-04T17:57:53+00:00",
+    "summary": "Existing evaluation paradigms for Autonomous Vehicles (AVs) face critical limitations. Real-world evaluation is often challenging due to safety concerns and a lack of reproducibility, whereas closed-loop simulation can face insufficient realism or high computational costs. Open-loop evaluation, while being efficient and data-driven, relies on metrics that generally overlook compounding errors. In this paper, we propose pseudo-simulation, a novel paradigm that addresses these limitations. Pseudo-simulation operates on real datasets, similar to open-loop evaluation, but augments them with synthetic observations generated prior to evaluation using 3D Gaussian Splatting. Our key idea is to approximate potential future states the AV might encounter by generating a diverse set of observations that vary in position, heading, and speed. Our method then assigns a higher importance to synthetic observations that best match the AV's likely behavior using a novel proximity-based weighting scheme. This enables evaluating error recovery and the mitigation of causal confusion, as in closed-loop benchmarks, without requiring sequential interactive simulation. We show that pseudo-simulation is better correlated with closed-loop simulations (R^2=0.8) than the best existing open-loop approach (R^2=0.7). We also establish a public leaderboard for the community to benchmark new methodologies with pseudo-simulation. Our code is available at https://github.com/autonomousvision/navsim."
+  },
+  {
+    "title": "OWMM-Agent: Open World Mobile Manipulation With Multi-modal Agentic Data Synthesis",
+    "url": "http://arxiv.org/abs/2506.04217v1",
+    "arxiv_id": "2506.04217v1",
+    "authors": [
+      "Junting Chen",
+      "Haotian Liang",
+      "Lingxiao Du",
+      "Weiyun Wang",
+      "Mengkang Hu",
+      "Yao Mu",
+      "Wenhai Wang",
+      "Jifeng Dai",
+      "Ping Luo",
+      "Wenqi Shao",
+      "Lin Shao"
+    ],
+    "published": "2025-06-04T17:57:44+00:00",
+    "summary": "The rapid progress of navigation, manipulation, and vision models has made mobile manipulators capable in many specialized tasks. However, the open-world mobile manipulation (OWMM) task remains a challenge due to the need for generalization to open-ended instructions and environments, as well as the systematic complexity to integrate high-level decision making with low-level robot control based on both global scene understanding and current agent state. To address this complexity, we propose a novel multi-modal agent architecture that maintains multi-view scene frames and agent states for decision-making and controls the robot by function calling. A second challenge is the hallucination from domain shift. To enhance the agent performance, we further introduce an agentic data synthesis pipeline for the OWMM task to adapt the VLM model to our task domain with instruction fine-tuning. We highlight our fine-tuned OWMM-VLM as the first dedicated foundation model for mobile manipulators with global scene understanding, robot state tracking, and multi-modal action generation in a unified model. Through experiments, we demonstrate that our model achieves SOTA performance compared to other foundation models including GPT-4o and strong zero-shot generalization in real world. The project page is at https://github.com/HHYHRHY/OWMM-Agent"
+  },
+  {
+    "title": "Advancing Multimodal Reasoning: From Optimized Cold Start to Staged Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2506.04207v1",
+    "arxiv_id": "2506.04207v1",
+    "authors": [
+      "Shuang Chen",
+      "Yue Guo",
+      "Zhaochen Su",
+      "Yafu Li",
+      "Yulun Wu",
+      "Jiacheng Chen",
+      "Jiayu Chen",
+      "Weijie Wang",
+      "Xiaoye Qu",
+      "Yu Cheng"
+    ],
+    "published": "2025-06-04T17:51:08+00:00",
+    "summary": "Inspired by the remarkable reasoning capabilities of Deepseek-R1 in complex textual tasks, many works attempt to incentivize similar capabilities in Multimodal Large Language Models (MLLMs) by directly applying reinforcement learning (RL). However, they still struggle to activate complex reasoning. In this paper, rather than examining multimodal RL in isolation, we delve into current training pipelines and identify three crucial phenomena: 1) Effective cold start initialization is critical for enhancing MLLM reasoning. Intriguingly, we find that initializing with carefully selected text data alone can lead to performance surpassing many recent multimodal reasoning models, even before multimodal RL. 2) Standard GRPO applied to multimodal RL suffers from gradient stagnation, which degrades training stability and performance. 3) Subsequent text-only RL training, following the multimodal RL phase, further enhances multimodal reasoning. This staged training approach effectively balances perceptual grounding and cognitive reasoning development. By incorporating the above insights and addressing multimodal RL issues, we introduce ReVisual-R1, achieving a new state-of-the-art among open-source 7B MLLMs on challenging benchmarks including MathVerse, MathVision, WeMath, LogicVista, DynaMath, and challenging AIME2024 and AIME2025."
+  },
+  {
+    "title": "MACS: Multi-Agent Reinforcement Learning for Optimization of Crystal Structures",
+    "url": "http://arxiv.org/abs/2506.04195v1",
+    "arxiv_id": "2506.04195v1",
+    "authors": [
+      "Elena Zamaraeva",
+      "Christopher M. Collins",
+      "George R. Darling",
+      "Matthew S. Dyer",
+      "Bei Peng",
+      "Rahul Savani",
+      "Dmytro Antypov",
+      "Vladimir V. Gusev",
+      "Judith Clymo",
+      "Paul G. Spirakis",
+      "Matthew J. Rosseinsky"
+    ],
+    "published": "2025-06-04T17:40:57+00:00",
+    "summary": "Geometry optimization of atomic structures is a common and crucial task in computational chemistry and materials design. Following the learning to optimize paradigm, we propose a new multi-agent reinforcement learning method called Multi-Agent Crystal Structure optimization (MACS) to address periodic crystal structure optimization. MACS treats geometry optimization as a partially observable Markov game in which atoms are agents that adjust their positions to collectively discover a stable configuration. We train MACS across various compositions of reported crystalline materials to obtain a policy that successfully optimizes structures from the training compositions as well as structures of larger sizes and unseen compositions, confirming its excellent scalability and zero-shot transferability. We benchmark our approach against a broad range of state-of-the-art optimization methods and demonstrate that MACS optimizes periodic crystal structures significantly faster, with fewer energy calculations, and the lowest failure rate."
+  },
+  {
     "title": "UniWorld: High-Resolution Semantic Encoders for Unified Visual Understanding and Generation",
     "url": "http://arxiv.org/abs/2506.03147v1",
     "arxiv_id": "2506.03147v1",
