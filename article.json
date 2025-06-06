@@ -1,5 +1,87 @@
 [
   {
+    "title": "Why LLM Safety Guardrails Collapse After Fine-tuning: A Similarity Analysis Between Alignment and Fine-tuning Datasets",
+    "url": "http://arxiv.org/abs/2506.05346v1",
+    "arxiv_id": "2506.05346v1",
+    "authors": [
+      "Lei Hsiung",
+      "Tianyu Pang",
+      "Yung-Chen Tang",
+      "Linyue Song",
+      "Tsung-Yi Ho",
+      "Pin-Yu Chen",
+      "Yaoqing Yang"
+    ],
+    "published": "2025-06-05T17:59:55+00:00",
+    "summary": "Recent advancements in large language models (LLMs) have underscored their vulnerability to safety alignment jailbreaks, particularly when subjected to downstream fine-tuning. However, existing mitigation strategies primarily focus on reactively addressing jailbreak incidents after safety guardrails have been compromised, removing harmful gradients during fine-tuning, or continuously reinforcing safety alignment throughout fine-tuning. As such, they tend to overlook a critical upstream factor: the role of the original safety-alignment data. This paper therefore investigates the degradation of safety guardrails through the lens of representation similarity between upstream alignment datasets and downstream fine-tuning tasks. Our experiments demonstrate that high similarity between these datasets significantly weakens safety guardrails, making models more susceptible to jailbreaks. Conversely, low similarity between these two types of datasets yields substantially more robust models and thus reduces harmfulness score by up to 10.33%. By highlighting the importance of upstream dataset design in the building of durable safety guardrails and reducing real-world vulnerability to jailbreak attacks, these findings offer actionable insights for fine-tuning service providers."
+  },
+  {
+    "title": "ContentV: Efficient Training of Video Generation Models with Limited Compute",
+    "url": "http://arxiv.org/abs/2506.05343v1",
+    "arxiv_id": "2506.05343v1",
+    "authors": [
+      "Wenfeng Lin",
+      "Renjie Chen",
+      "Boyuan Liu",
+      "Shiyue Yan",
+      "Ruoyu Feng",
+      "Jiangchuan Wei",
+      "Yichen Zhang",
+      "Yimeng Zhou",
+      "Chao Feng",
+      "Jiao Ran",
+      "Qi Wu",
+      "Zuotao Liu",
+      "Mingyu Guo"
+    ],
+    "published": "2025-06-05T17:59:54+00:00",
+    "summary": "Recent advances in video generation demand increasingly efficient training recipes to mitigate escalating computational costs. In this report, we present ContentV, an 8B-parameter text-to-video model that achieves state-of-the-art performance (85.14 on VBench) after training on 256 x 64GB Neural Processing Units (NPUs) for merely four weeks. ContentV generates diverse, high-quality videos across multiple resolutions and durations from text prompts, enabled by three key innovations: (1) A minimalist architecture that maximizes reuse of pre-trained image generation models for video generation; (2) A systematic multi-stage training strategy leveraging flow matching for enhanced efficiency; and (3) A cost-effective reinforcement learning with human feedback framework that improves generation quality without requiring additional human annotations. All the code and models are available at: https://contentv.github.io."
+  },
+  {
+    "title": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
+    "url": "http://arxiv.org/abs/2506.05336v1",
+    "arxiv_id": "2506.05336v1",
+    "authors": [
+      "Ghazi Shazan Ahmad",
+      "Ahmed Heakl",
+      "Hanan Gani",
+      "Abdelrahman Shaker",
+      "Zhiqiang Shen",
+      "Ranjay Krishna",
+      "Fahad Shahbaz Khan",
+      "Salman Khan"
+    ],
+    "published": "2025-06-05T17:59:29+00:00",
+    "summary": "Spatio-temporal localization is vital for precise interactions across diverse domains, from biological research to autonomous navigation and interactive interfaces. Current video-based approaches, while proficient in tracking, lack the sophisticated reasoning capabilities of large language models, limiting their contextual understanding and generalization. We introduce VideoMolmo, a large multimodal model tailored for fine-grained spatio-temporal pointing conditioned on textual descriptions. Building upon the Molmo architecture, VideoMolmo incorporates a temporal module utilizing an attention mechanism to condition each frame on preceding frames, ensuring temporal consistency. Additionally, our novel temporal mask fusion pipeline employs SAM2 for bidirectional point propagation, significantly enhancing coherence across video sequences. This two-step decomposition, i.e., first using the LLM to generate precise pointing coordinates, then relying on a sequential mask-fusion module to produce coherent segmentation, not only simplifies the task for the language model but also enhances interpretability. Due to the lack of suitable datasets, we curate a comprehensive dataset comprising 72k video-caption pairs annotated with 100k object points. To evaluate the generalization of VideoMolmo, we introduce VPoS-Bench, a challenging out-of-distribution benchmark spanning five real-world scenarios: Cell Tracking, Egocentric Vision, Autonomous Driving, Video-GUI Interaction, and Robotics. We also evaluate our model on Referring Video Object Segmentation (Refer-VOS) and Reasoning VOS tasks. In comparison to existing models, VideoMolmo substantially improves spatio-temporal pointing accuracy and reasoning capability. Our code and models are publicly available at https://github.com/mbzuai-oryx/VideoMolmo."
+  },
+  {
+    "title": "AV-Reasoner: Improving and Benchmarking Clue-Grounded Audio-Visual Counting for MLLMs",
+    "url": "http://arxiv.org/abs/2506.05328v1",
+    "arxiv_id": "2506.05328v1",
+    "authors": [
+      "Lidong Lu",
+      "Guo Chen",
+      "Zhiqi Li",
+      "Yicheng Liu",
+      "Tong Lu"
+    ],
+    "published": "2025-06-05T17:58:33+00:00",
+    "summary": "Despite progress in video understanding, current MLLMs struggle with counting tasks. Existing benchmarks are limited by short videos, close-set queries, lack of clue annotations, and weak multimodal coverage. In this paper, we introduce CG-AV-Counting, a manually-annotated clue-grounded counting benchmark with 1,027 multimodal questions and 5,845 annotated clues over 497 long videos. It supports both black-box and white-box evaluation, serving as a comprehensive testbed for both end-to-end and reasoning-based counting. To explore ways to improve model's counting capability, we propose AV-Reasoner, a model trained with GRPO and curriculum learning to generalize counting ability from related tasks. AV-Reasoner achieves state-of-the-art results across multiple benchmarks, demonstrating the effectiveness of reinforcement learning. However, experiments show that on out-of-domain benchmarks, reasoning in the language space fails to bring performance gains. The code and benchmark have been realeased on https://av-reasoner.github.io."
+  },
+  {
+    "title": "ProJo4D: Progressive Joint Optimization for Sparse-View Inverse Physics Estimation",
+    "url": "http://arxiv.org/abs/2506.05317v1",
+    "arxiv_id": "2506.05317v1",
+    "authors": [
+      "Daniel Rho",
+      "Jun Myeong Choi",
+      "Biswadip Dey",
+      "Roni Sengupta"
+    ],
+    "published": "2025-06-05T17:55:56+00:00",
+    "summary": "Neural rendering has made significant strides in 3D reconstruction and novel view synthesis. With the integration with physics, it opens up new applications. The inverse problem of estimating physics from visual data, however, still remains challenging, limiting its effectiveness for applications like physically accurate digital twin creation in robotics and XR. Existing methods that incorporate physics into neural rendering frameworks typically require dense multi-view videos as input, making them impractical for scalable, real-world use. When presented with sparse multi-view videos, the sequential optimization strategy used by existing approaches introduces significant error accumulation, e.g., poor initial 3D reconstruction leads to bad material parameter estimation in subsequent stages. Instead of sequential optimization, directly optimizing all parameters at the same time also fails due to the highly non-convex and often non-differentiable nature of the problem. We propose ProJo4D, a progressive joint optimization framework that gradually increases the set of jointly optimized parameters guided by their sensitivity, leading to fully joint optimization over geometry, appearance, physical state, and material property. Evaluations on PAC-NeRF and Spring-Gaus datasets show that ProJo4D outperforms prior work in 4D future state prediction, novel view rendering of future state, and material parameter estimation, demonstrating its effectiveness in physically grounded 4D scene understanding. For demos, please visit the project webpage: https://daniel03c1.github.io/ProJo4D/"
+  },
+  {
     "title": "Object-centric 3D Motion Field for Robot Learning from Human Videos",
     "url": "http://arxiv.org/abs/2506.04227v1",
     "arxiv_id": "2506.04227v1",
