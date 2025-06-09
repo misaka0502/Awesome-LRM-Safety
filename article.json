@@ -1,5 +1,67 @@
 [
   {
+    "title": "PyGemini: Unified Software Development towards Maritime Autonomy Systems",
+    "url": "http://arxiv.org/abs/2506.06262v1",
+    "arxiv_id": "2506.06262v1",
+    "authors": [
+      "Kjetil Vasstein",
+      "Christian Le",
+      "Simon Lerv\u00e5g Breivik",
+      "Trygve Maukon Myhr",
+      "Annette Stahl",
+      "Edmund F\u00f8rland Brekke"
+    ],
+    "published": "2025-06-06T17:43:00+00:00",
+    "summary": "Ensuring the safety and certifiability of autonomous surface vessels (ASVs) requires robust decision-making systems, supported by extensive simulation, testing, and validation across a broad range of scenarios. However, the current landscape of maritime autonomy development is fragmented -- relying on disparate tools for communication, simulation, monitoring, and system integration -- which hampers interdisciplinary collaboration and inhibits the creation of compelling assurance cases, demanded by insurers and regulatory bodies. Furthermore, these disjointed tools often suffer from performance bottlenecks, vendor lock-in, and limited support for continuous integration workflows. To address these challenges, we introduce PyGemini, a permissively licensed, Python-native framework that builds on the legacy of Autoferry Gemini to unify maritime autonomy development. PyGemini introduces a novel Configuration-Driven Development (CDD) process that fuses Behavior-Driven Development (BDD), data-oriented design, and containerization to support modular, maintainable, and scalable software architectures. The framework functions as a stand-alone application, cloud-based service, or embedded library -- ensuring flexibility across research and operational contexts. We demonstrate its versatility through a suite of maritime tools -- including 3D content generation for simulation and monitoring, scenario generation for autonomy validation and training, and generative artificial intelligence pipelines for augmenting imagery -- thereby offering a scalable, maintainable, and performance-oriented foundation for future maritime robotics and autonomy research."
+  },
+  {
+    "title": "Reflect-then-Plan: Offline Model-Based Planning through a Doubly Bayesian Lens",
+    "url": "http://arxiv.org/abs/2506.06261v1",
+    "arxiv_id": "2506.06261v1",
+    "authors": [
+      "Jihwan Jeong",
+      "Xiaoyu Wang",
+      "Jingmin Wang",
+      "Scott Sanner",
+      "Pascal Poupart"
+    ],
+    "published": "2025-06-06T17:40:12+00:00",
+    "summary": "Offline reinforcement learning (RL) is crucial when online exploration is costly or unsafe but often struggles with high epistemic uncertainty due to limited data. Existing methods rely on fixed conservative policies, restricting adaptivity and generalization. To address this, we propose Reflect-then-Plan (RefPlan), a novel doubly Bayesian offline model-based (MB) planning approach. RefPlan unifies uncertainty modeling and MB planning by recasting planning as Bayesian posterior estimation. At deployment, it updates a belief over environment dynamics using real-time observations, incorporating uncertainty into MB planning via marginalization. Empirical results on standard benchmarks show that RefPlan significantly improves the performance of conservative offline RL policies. In particular, RefPlan maintains robust performance under high epistemic uncertainty and limited data, while demonstrating resilience to changing environment dynamics, improving the flexibility, generalizability, and robustness of offline-learned policies."
+  },
+  {
+    "title": "From NLVO to NAO: Reactive Robot Navigation using Velocity and Acceleration Obstacles",
+    "url": "http://arxiv.org/abs/2506.06255v1",
+    "arxiv_id": "2506.06255v1",
+    "authors": [
+      "Asher Stern",
+      "Zvi Shiller"
+    ],
+    "published": "2025-06-06T17:35:37+00:00",
+    "summary": "This paper introduces a novel approach for robot navigation in challenging dynamic environments. The proposed method builds upon the concept of Velocity Obstacles (VO) that was later extended to Nonlinear Velocity Obstacles (NLVO) to account for obstacles moving along nonlinear trajectories. The NLVO is extended in this paper to Acceleration Obstacles (AO) and Nonlinear Acceleration Obstacles (NAO) that account for velocity and acceleration constraints. Multi-robot navigation is achieved by using the same avoidance algorithm by all robots. At each time step, the trajectories of all robots are predicted based on their current velocity and acceleration to allow the computation of their respective NLVO, AO and NAO.   The introduction of AO and NAO allows the generation of safe avoidance maneuvers that account for the robot dynamic constraints better than could be done with the NLVO alone. This paper demonstrates the use of AO and NAO for robot navigation in challenging environments. It is shown that using AO and NAO enables simultaneous real-time collision avoidance while accounting for robot kinematics and a direct consideration of its dynamic constraints. The presented approach enables reactive and efficient navigation, with potential application for autonomous vehicles operating in complex dynamic environments."
+  },
+  {
+    "title": "Fermion parity switches imprinted in the photonic field of cavity embedded Kitaev chains",
+    "url": "http://arxiv.org/abs/2506.06237v1",
+    "arxiv_id": "2506.06237v1",
+    "authors": [
+      "Victor Fernandez Becerra",
+      "Olesia Dmytruk"
+    ],
+    "published": "2025-06-06T16:55:33+00:00",
+    "summary": "The entanglement of electronic states with quantum light in cavity embedded systems has opened new avenues to manipulate quantum materials. In this work we investigate the Kitaev chain coupled to a single mode photonic cavity. Using exact diagonalization we calculate the many-body energy spectrum of the electron-photon Hamiltonian in finite-length chains. We find two distinct types of ground states, one with a well defined parity and another with an alternating parity where a doubly degenerate ground state takes place at exceptional points, known as parity switching points. The double ground state hosts edge states weakly affected by the cavity coupling, even in the low frequency regime, in contrast with higher excited states showing strong dependence with the cavity coupling. Besides the electronic quantities, we also find that the photon number peaks at values of the chemical potential corresponding to parity switching points. Therefore, we suggest that quantum optics experiments could be employed to detect the double ground state hosting edge states weakly hybridized with light. Finally, calculations of photonic quadratures reveal squeezed states that are both captured by the exact diagonalization technique and mean field decoupling. However, within these two approaches differences in the photon probability in odd numbers of photons are reported."
+  },
+  {
+    "title": "Statistical Guarantees in Data-Driven Nonlinear Control: Conformal Robustness for Stability and Safety",
+    "url": "http://arxiv.org/abs/2506.06228v1",
+    "arxiv_id": "2506.06228v1",
+    "authors": [
+      "Ting-Wei Hsu",
+      "Hiroyasu Tsukamoto"
+    ],
+    "published": "2025-06-06T16:42:16+00:00",
+    "summary": "We present a true-dynamics-agnostic, statistically rigorous framework for establishing exponential stability and safety guarantees of closed-loop, data-driven nonlinear control. Central to our approach is the novel concept of conformal robustness, which robustifies the Lyapunov and zeroing barrier certificates of data-driven dynamical systems against model prediction uncertainties using conformal prediction. It quantifies these uncertainties by leveraging rank statistics of prediction scores over system trajectories, without assuming any specific underlying structure of the prediction model or distribution of the uncertainties. With the quantified uncertainty information, we further construct the conformally robust control Lyapunov function (CR-CLF) and control barrier function (CR-CBF), data-driven counterparts of the CLF and CBF, for fully data-driven control with statistical guarantees of finite-horizon exponential stability and safety. The performance of the proposed concept is validated in numerical simulations with four benchmark nonlinear control problems."
+  },
+  {
     "title": "Why LLM Safety Guardrails Collapse After Fine-tuning: A Similarity Analysis Between Alignment and Fine-tuning Datasets",
     "url": "http://arxiv.org/abs/2506.05346v1",
     "arxiv_id": "2506.05346v1",
