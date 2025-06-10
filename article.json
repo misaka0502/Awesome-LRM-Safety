@@ -1,5 +1,76 @@
 [
   {
+    "title": "Play to Generalize: Learning to Reason Through Game Play",
+    "url": "http://arxiv.org/abs/2506.08011v1",
+    "arxiv_id": "2506.08011v1",
+    "authors": [
+      "Yunfei Xie",
+      "Yinsong Ma",
+      "Shiyi Lan",
+      "Alan Yuille",
+      "Junfei Xiao",
+      "Chen Wei"
+    ],
+    "published": "2025-06-09T17:59:57+00:00",
+    "summary": "Developing generalizable reasoning capabilities in multimodal large language models (MLLMs) remains challenging. Motivated by cognitive science literature suggesting that gameplay promotes transferable cognitive skills, we propose a novel post-training paradigm, Visual Game Learning, or ViGaL, where MLLMs develop out-of-domain generalization of multimodal reasoning through playing arcade-like games. Specifically, we show that post-training a 7B-parameter MLLM via reinforcement learning (RL) on simple arcade-like games, e.g. Snake, significantly enhances its downstream performance on multimodal math benchmarks like MathVista, and on multi-discipline questions like MMMU, without seeing any worked solutions, equations, or diagrams during RL, suggesting the capture of transferable reasoning skills. Remarkably, our model outperforms specialist models tuned on multimodal reasoning data in multimodal reasoning benchmarks, while preserving the base model's performance on general visual benchmarks, a challenge where specialist models often fall short. Our findings suggest a new post-training paradigm: synthetic, rule-based games can serve as controllable and scalable pre-text tasks that unlock generalizable multimodal reasoning abilities in MLLMs."
+  },
+  {
+    "title": "Reinforcement Pre-Training",
+    "url": "http://arxiv.org/abs/2506.08007v1",
+    "arxiv_id": "2506.08007v1",
+    "authors": [
+      "Qingxiu Dong",
+      "Li Dong",
+      "Yao Tang",
+      "Tianzhu Ye",
+      "Yutao Sun",
+      "Zhifang Sui",
+      "Furu Wei"
+    ],
+    "published": "2025-06-09T17:59:53+00:00",
+    "summary": "In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling paradigm for large language models and reinforcement learning (RL). Specifically, we reframe next-token prediction as a reasoning task trained using RL, where it receives verifiable rewards for correctly predicting the next token for a given context. RPT offers a scalable method to leverage vast amounts of text data for general-purpose RL, rather than relying on domain-specific annotated answers. By incentivizing the capability of next-token reasoning, RPT significantly improves the language modeling accuracy of predicting the next tokens. Moreover, RPT provides a strong pre-trained foundation for further reinforcement fine-tuning. The scaling curves show that increased training compute consistently improves the next-token prediction accuracy. The results position RPT as an effective and promising scaling paradigm to advance language model pre-training."
+  },
+  {
+    "title": "Dynamic View Synthesis as an Inverse Problem",
+    "url": "http://arxiv.org/abs/2506.08004v1",
+    "arxiv_id": "2506.08004v1",
+    "authors": [
+      "Hidir Yesiltepe",
+      "Pinar Yanardag"
+    ],
+    "published": "2025-06-09T17:59:47+00:00",
+    "summary": "In this work, we address dynamic view synthesis from monocular videos as an inverse problem in a training-free setting. By redesigning the noise initialization phase of a pre-trained video diffusion model, we enable high-fidelity dynamic view synthesis without any weight updates or auxiliary modules. We begin by identifying a fundamental obstacle to deterministic inversion arising from zero-terminal signal-to-noise ratio (SNR) schedules and resolve it by introducing a novel noise representation, termed K-order Recursive Noise Representation. We derive a closed form expression for this representation, enabling precise and efficient alignment between the VAE-encoded and the DDIM inverted latents. To synthesize newly visible regions resulting from camera motion, we introduce Stochastic Latent Modulation, which performs visibility aware sampling over the latent space to complete occluded regions. Comprehensive experiments demonstrate that dynamic view synthesis can be effectively performed through structured latent manipulation in the noise initialization phase."
+  },
+  {
+    "title": "Aligning Text, Images, and 3D Structure Token-by-Token",
+    "url": "http://arxiv.org/abs/2506.08002v1",
+    "arxiv_id": "2506.08002v1",
+    "authors": [
+      "Aadarsh Sahoo",
+      "Vansh Tibrewal",
+      "Georgia Gkioxari"
+    ],
+    "published": "2025-06-09T17:59:37+00:00",
+    "summary": "Creating machines capable of understanding the world in 3D is essential in assisting designers that build and edit 3D environments and robots navigating and interacting within a three-dimensional space. Inspired by advances in language and image modeling, we investigate the potential of autoregressive models for a new modality: structured 3D scenes. To this end, we propose a unified LLM framework that aligns language, images, and 3D scenes and provide a detailed ''cookbook'' outlining critical design choices for achieving optimal training and performance addressing key questions related to data representation, modality-specific objectives, and more. We evaluate performance across four core 3D tasks -- rendering, recognition, instruction-following, and question-answering -- and four 3D datasets, synthetic and real-world. We extend our approach to reconstruct complex 3D object shapes by enriching our 3D modality with quantized shape encodings, and show our model's effectiveness on real-world 3D object recognition tasks. Project webpage: https://glab-caltech.github.io/kyvo/"
+  },
+  {
+    "title": "UA-Pose: Uncertainty-Aware 6D Object Pose Estimation and Online Object Completion with Partial References",
+    "url": "http://arxiv.org/abs/2506.07996v1",
+    "arxiv_id": "2506.07996v1",
+    "authors": [
+      "Ming-Feng Li",
+      "Xin Yang",
+      "Fu-En Wang",
+      "Hritam Basak",
+      "Yuyin Sun",
+      "Shreekant Gayaka",
+      "Min Sun",
+      "Cheng-Hao Kuo"
+    ],
+    "published": "2025-06-09T17:58:12+00:00",
+    "summary": "6D object pose estimation has shown strong generalizability to novel objects. However, existing methods often require either a complete, well-reconstructed 3D model or numerous reference images that fully cover the object. Estimating 6D poses from partial references, which capture only fragments of an object's appearance and geometry, remains challenging. To address this, we propose UA-Pose, an uncertainty-aware approach for 6D object pose estimation and online object completion specifically designed for partial references. We assume access to either (1) a limited set of RGBD images with known poses or (2) a single 2D image. For the first case, we initialize a partial object 3D model based on the provided images and poses, while for the second, we use image-to-3D techniques to generate an initial object 3D model. Our method integrates uncertainty into the incomplete 3D model, distinguishing between seen and unseen regions. This uncertainty enables confidence assessment in pose estimation and guides an uncertainty-aware sampling strategy for online object completion, enhancing robustness in pose estimation accuracy and improving object completeness. We evaluate our method on the YCB-Video, YCBInEOAT, and HO3D datasets, including RGBD sequences of YCB objects manipulated by robots and human hands. Experimental results demonstrate significant performance improvements over existing methods, particularly when object observations are incomplete or partially captured. Project page: https://minfenli.github.io/UA-Pose/"
+  },
+  {
     "title": "PyGemini: Unified Software Development towards Maritime Autonomy Systems",
     "url": "http://arxiv.org/abs/2506.06262v1",
     "arxiv_id": "2506.06262v1",
