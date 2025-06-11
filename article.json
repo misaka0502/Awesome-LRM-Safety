@@ -1,5 +1,88 @@
 [
   {
+    "title": "VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2506.09049v1",
+    "arxiv_id": "2506.09049v1",
+    "authors": [
+      "Li Kang",
+      "Xiufeng Song",
+      "Heng Zhou",
+      "Yiran Qin",
+      "Jie Yang",
+      "Xiaohong Liu",
+      "Philip Torr",
+      "Lei Bai",
+      "Zhenfei Yin"
+    ],
+    "published": "2025-06-10T17:59:44+00:00",
+    "summary": "Coordinating multiple embodied agents in dynamic environments remains a core challenge in artificial intelligence, requiring both perception-driven reasoning and scalable cooperation strategies. While recent works have leveraged large language models (LLMs) for multi-agent planning, a few have begun to explore vision-language models (VLMs) for visual reasoning. However, these VLM-based approaches remain limited in their support for diverse embodiment types. In this work, we introduce VIKI-Bench, the first hierarchical benchmark tailored for embodied multi-agent cooperation, featuring three structured levels: agent activation, task planning, and trajectory perception. VIKI-Bench includes diverse robot embodiments, multi-view visual observations, and structured supervision signals to evaluate reasoning grounded in visual inputs. To demonstrate the utility of VIKI-Bench, we propose VIKI-R, a two-stage framework that fine-tunes a pretrained vision-language model (VLM) using Chain-of-Thought annotated demonstrations, followed by reinforcement learning under multi-level reward signals. Our extensive experiments show that VIKI-R significantly outperforms baselines method across all task levels. Furthermore, we show that reinforcement learning enables the emergence of compositional cooperation patterns among heterogeneous agents. Together, VIKI-Bench and VIKI-R offer a unified testbed and method for advancing multi-agent, visual-driven cooperation in embodied AI systems."
+  },
+  {
+    "title": "Gradual Metaprogramming",
+    "url": "http://arxiv.org/abs/2506.09043v1",
+    "arxiv_id": "2506.09043v1",
+    "authors": [
+      "Tianyu Chen",
+      "Darshal Shetty",
+      "Jeremy G. Siek",
+      "Chao-Hong Chen",
+      "Weixi Ma",
+      "Arnaud Venet",
+      "Rocky Liu"
+    ],
+    "published": "2025-06-10T17:58:32+00:00",
+    "summary": "Data engineers increasingly use domain-specific languages (DSLs) to generate the code for data pipelines. Such DSLs are often embedded in Python. Unfortunately, there are challenges in debugging the generation of data pipelines: an error in a Python DSL script is often detected too late, after the execution of the script, and the source code location that triggers the error is hard to pinpoint.   In this paper, we focus on the F3 DSL of Meta (Facebook), which is a DSL embedded in Python (so it is dynamically-typed) to generate data pipeline description code that is statically-typed. We propose gradual metaprogramming to (1) provide a migration path toward statically typed DSLs, (2) immediately provide earlier detection of code generation type errors, and (3) report the source code location responsible for the type error. Gradual metaprogramming accomplishes this by type checking code fragments and incrementally performing runtime checks as they are spliced together. We define MetaGTLC, a metaprogramming calculus in which a gradually-typed metalanguage manipulates a statically-typed object language, and give semantics to it by translation to the cast calculus MetaCC. We prove that successful metaevaluation always generates a well-typed object program and mechanize the proof in Agda."
+  },
+  {
+    "title": "Cosmos-Drive-Dreams: Scalable Synthetic Driving Data Generation with World Foundation Models",
+    "url": "http://arxiv.org/abs/2506.09042v1",
+    "arxiv_id": "2506.09042v1",
+    "authors": [
+      "Xuanchi Ren",
+      "Yifan Lu",
+      "Tianshi Cao",
+      "Ruiyuan Gao",
+      "Shengyu Huang",
+      "Amirmojtaba Sabour",
+      "Tianchang Shen",
+      "Tobias Pfaff",
+      "Jay Zhangjie Wu",
+      "Runjian Chen",
+      "Seung Wook Kim",
+      "Jun Gao",
+      "Laura Leal-Taixe",
+      "Mike Chen",
+      "Sanja Fidler",
+      "Huan Ling"
+    ],
+    "published": "2025-06-10T17:58:17+00:00",
+    "summary": "Collecting and annotating real-world data for safety-critical physical AI systems, such as Autonomous Vehicle (AV), is time-consuming and costly. It is especially challenging to capture rare edge cases, which play a critical role in training and testing of an AV system. To address this challenge, we introduce the Cosmos-Drive-Dreams - a synthetic data generation (SDG) pipeline that aims to generate challenging scenarios to facilitate downstream tasks such as perception and driving policy training. Powering this pipeline is Cosmos-Drive, a suite of models specialized from NVIDIA Cosmos world foundation model for the driving domain and are capable of controllable, high-fidelity, multi-view, and spatiotemporally consistent driving video generation. We showcase the utility of these models by applying Cosmos-Drive-Dreams to scale the quantity and diversity of driving datasets with high-fidelity and challenging scenarios. Experimentally, we demonstrate that our generated data helps in mitigating long-tail distribution problems and enhances generalization in downstream tasks such as 3D lane detection, 3D object detection and driving policy learning. We open source our pipeline toolkit, dataset and model weights through the NVIDIA's Cosmos platform.   Project page: https://research.nvidia.com/labs/toronto-ai/cosmos_drive_dreams"
+  },
+  {
+    "title": "Deep Reinforcement Learning-Based RAN Slicing with Efficient Inter-Slice Isolation in Tactical Wireless Networks",
+    "url": "http://arxiv.org/abs/2506.09039v1",
+    "arxiv_id": "2506.09039v1",
+    "authors": [
+      "Abderrahime Filali",
+      "Diala Naboulsi",
+      "Georges Kaddoum"
+    ],
+    "published": "2025-06-10T17:57:33+00:00",
+    "summary": "The next generation of tactical networks (TNs) is poised to further leverage the key enablers of 5G and beyond 5G (B5G) technology, such as radio access network (RAN) slicing and the open RAN (O-RAN) paradigm, to unlock multiple architectural options and opportunities for a wide range of innovative applications. RAN slicing and the O-RAN paradigm are considered game changers in TNs, where the former makes it possible to tailor user services to users requirements, and the latter brings openness and intelligence to the management of the RAN. In TNs, bandwidth scarcity requires a dynamic bandwidth slicing strategy. Although this type of strategy ensures efficient bandwidth utilization, it compromises RAN slicing isolation in terms of quality of service (QoS) performance. To deal with this challenge, we propose a deep reinforcement learning (DRL)-based RAN slicing mechanism that achieves a trade-off between efficient RAN bandwidth sharing and appropriate inter- and intra-slice isolation. The proposed mechanism performs bandwidth allocation in two stages. In the first stage, the bandwidth is allocated to the RAN slices. In the second stage, each slice partitions its bandwidth among its associated users. In both stages, the slicing operation is constrained by several considerations related to improving the QoS of slices and users that in turn foster inter- and intra-slice isolation. The proposed RAN slicing mechanism is based on DRL algorithms to perform the bandwidth sharing operation in each stage. We propose to deploy the mechanism in an O-RAN architecture and describe the O-RAN functional blocks and the main DRL model lifecycle management phases involved. We also develop three different implementations of the proposed mechanism, each based on a different DRL algorithm, and evaluate their performance against multiple baselines across various parameters."
+  },
+  {
+    "title": "Router-R1: Teaching LLMs Multi-Round Routing and Aggregation via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2506.09033v1",
+    "arxiv_id": "2506.09033v1",
+    "authors": [
+      "Haozhen Zhang",
+      "Tao Feng",
+      "Jiaxuan You"
+    ],
+    "published": "2025-06-10T17:56:45+00:00",
+    "summary": "The rapid emergence of diverse large language models (LLMs) has spurred the development of LLM routers that assign user queries to the most suitable model. However, existing LLM routers typically perform a single-round, one-to-one mapping (\\textit{i.e.}, assigning each query to a single model in isolation), which limits their capability to tackle complex tasks that demand the complementary strengths of multiple LLMs. In this paper, we present \\textbf{Router-R1}, a reinforcement learning (RL)-based framework that formulates multi-LLM routing and aggregation as a sequential decision process. Router-R1 instantiates the router itself as a capable LLM, leveraging its reasoning ability to interleave \"think\" actions (internal deliberation) with \"route\" actions (dynamic model invocation), and integrates each response into its evolving context. To guide learning, we employ a lightweight rule-based reward comprising format rewards, final outcome rewards, and a novel cost reward for performance and cost trade-off optimization, opening a pathway toward optimizing performance-cost tradeoffs via RL. Router-R1 also conditions only on simple model descriptors such as pricing, latency, and example performance, enabling strong generalization to unseen model selection. Experiments on seven general and multi-hop QA benchmarks show that Router-R1 outperforms over several strong baselines, achieving superior performance while maintaining robust generalization and cost management.Code is available at https://github.com/ulab-uiuc/Router-R1."
+  },
+  {
     "title": "Play to Generalize: Learning to Reason Through Game Play",
     "url": "http://arxiv.org/abs/2506.08011v1",
     "arxiv_id": "2506.08011v1",
