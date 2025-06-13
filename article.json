@@ -1,5 +1,88 @@
 [
   {
+    "title": "Fine-Grained Perturbation Guidance via Attention Head Selection",
+    "url": "http://arxiv.org/abs/2506.10978v1",
+    "arxiv_id": "2506.10978v1",
+    "authors": [
+      "Donghoon Ahn",
+      "Jiwon Kang",
+      "Sanghyun Lee",
+      "Minjae Kim",
+      "Jaewon Min",
+      "Wooseok Jang",
+      "Saungwu Lee",
+      "Sayak Paul",
+      "Susung Hong",
+      "Seungryong Kim"
+    ],
+    "published": "2025-06-12T17:59:51+00:00",
+    "summary": "Recent guidance methods in diffusion models steer reverse sampling by perturbing the model to construct an implicit weak model and guide generation away from it. Among these approaches, attention perturbation has demonstrated strong empirical performance in unconditional scenarios where classifier-free guidance is not applicable. However, existing attention perturbation methods lack principled approaches for determining where perturbations should be applied, particularly in Diffusion Transformer (DiT) architectures where quality-relevant computations are distributed across layers. In this paper, we investigate the granularity of attention perturbations, ranging from the layer level down to individual attention heads, and discover that specific heads govern distinct visual concepts such as structure, style, and texture quality. Building on this insight, we propose \"HeadHunter\", a systematic framework for iteratively selecting attention heads that align with user-centric objectives, enabling fine-grained control over generation quality and visual attributes. In addition, we introduce SoftPAG, which linearly interpolates each selected head's attention map toward an identity matrix, providing a continuous knob to tune perturbation strength and suppress artifacts. Our approach not only mitigates the oversmoothing issues of existing layer-level perturbation but also enables targeted manipulation of specific visual styles through compositional head selection. We validate our method on modern large-scale DiT-based text-to-image models including Stable Diffusion 3 and FLUX.1, demonstrating superior performance in both general quality enhancement and style-specific guidance. Our work provides the first head-level analysis of attention perturbation in diffusion models, uncovering interpretable specialization within attention layers and enabling practical design of effective perturbation strategies."
+  },
+  {
+    "title": "Eye, Robot: Learning to Look to Act with a BC-RL Perception-Action Loop",
+    "url": "http://arxiv.org/abs/2506.10968v1",
+    "arxiv_id": "2506.10968v1",
+    "authors": [
+      "Justin Kerr",
+      "Kush Hari",
+      "Ethan Weber",
+      "Chung Min Kim",
+      "Brent Yi",
+      "Tyler Bonnen",
+      "Ken Goldberg",
+      "Angjoo Kanazawa"
+    ],
+    "published": "2025-06-12T17:59:11+00:00",
+    "summary": "Humans do not passively observe the visual world -- we actively look in order to act. Motivated by this principle, we introduce EyeRobot, a robotic system with gaze behavior that emerges from the need to complete real-world tasks. We develop a mechanical eyeball that can freely rotate to observe its surroundings and train a gaze policy to control it using reinforcement learning. We accomplish this by first collecting teleoperated demonstrations paired with a 360 camera. This data is imported into a simulation environment that supports rendering arbitrary eyeball viewpoints, allowing episode rollouts of eye gaze on top of robot demonstrations. We then introduce a BC-RL loop to train the hand and eye jointly: the hand (BC) agent is trained from rendered eye observations, and the eye (RL) agent is rewarded when the hand produces correct action predictions. In this way, hand-eye coordination emerges as the eye looks towards regions which allow the hand to complete the task. EyeRobot implements a foveal-inspired policy architecture allowing high resolution with a small compute budget, which we find also leads to the emergence of more stable fixation as well as improved ability to track objects and ignore distractors. We evaluate EyeRobot on five panoramic workspace manipulation tasks requiring manipulation in an arc surrounding the robot arm. Our experiments suggest EyeRobot exhibits hand-eye coordination behaviors which effectively facilitate manipulation over large workspaces with a single camera. See project site for videos: https://www.eyerobot.net/"
+  },
+  {
+    "title": "GENMANIP: LLM-driven Simulation for Generalizable Instruction-Following Manipulation",
+    "url": "http://arxiv.org/abs/2506.10966v1",
+    "arxiv_id": "2506.10966v1",
+    "authors": [
+      "Ning Gao",
+      "Yilun Chen",
+      "Shuai Yang",
+      "Xinyi Chen",
+      "Yang Tian",
+      "Hao Li",
+      "Haifeng Huang",
+      "Hanqing Wang",
+      "Tai Wang",
+      "Jiangmiao Pang"
+    ],
+    "published": "2025-06-12T17:59:04+00:00",
+    "summary": "Robotic manipulation in real-world settings remains challenging, especially regarding robust generalization. Existing simulation platforms lack sufficient support for exploring how policies adapt to varied instructions and scenarios. Thus, they lag behind the growing interest in instruction-following foundation models like LLMs, whose adaptability is crucial yet remains underexplored in fair comparisons. To bridge this gap, we introduce GenManip, a realistic tabletop simulation platform tailored for policy generalization studies. It features an automatic pipeline via LLM-driven task-oriented scene graph to synthesize large-scale, diverse tasks using 10K annotated 3D object assets. To systematically assess generalization, we present GenManip-Bench, a benchmark of 200 scenarios refined via human-in-the-loop corrections. We evaluate two policy types: (1) modular manipulation systems integrating foundation models for perception, reasoning, and planning, and (2) end-to-end policies trained through scalable data collection. Results show that while data scaling benefits end-to-end methods, modular systems enhanced with foundation models generalize more effectively across diverse scenarios. We anticipate this platform to facilitate critical insights for advancing policy generalization in realistic conditions. Project Page: https://genmanip.axi404.top/."
+  },
+  {
+    "title": "Build the web for agents, not agents for the web",
+    "url": "http://arxiv.org/abs/2506.10953v1",
+    "arxiv_id": "2506.10953v1",
+    "authors": [
+      "Xing Han L\u00f9",
+      "Gaurav Kamath",
+      "Marius Mosbach",
+      "Siva Reddy"
+    ],
+    "published": "2025-06-12T17:53:58+00:00",
+    "summary": "Recent advancements in Large Language Models (LLMs) and multimodal counterparts have spurred significant interest in developing web agents -- AI systems capable of autonomously navigating and completing tasks within web environments. While holding tremendous promise for automating complex web interactions, current approaches face substantial challenges due to the fundamental mismatch between human-designed interfaces and LLM capabilities. Current methods struggle with the inherent complexity of web inputs, whether processing massive DOM trees, relying on screenshots augmented with additional information, or bypassing the user interface entirely through API interactions. This position paper advocates for a paradigm shift in web agent research: rather than forcing web agents to adapt to interfaces designed for humans, we should develop a new interaction paradigm specifically optimized for agentic capabilities. To this end, we introduce the concept of an Agentic Web Interface (AWI), an interface specifically designed for agents to navigate a website. We establish six guiding principles for AWI design, emphasizing safety, efficiency, and standardization, to account for the interests of all primary stakeholders. This reframing aims to overcome fundamental limitations of existing interfaces, paving the way for more efficient, reliable, and transparent web agent design, which will be a collaborative effort involving the broader ML community."
+  },
+  {
+    "title": "Monitoring Decomposition Attacks in LLMs with Lightweight Sequential Monitors",
+    "url": "http://arxiv.org/abs/2506.10949v1",
+    "arxiv_id": "2506.10949v1",
+    "authors": [
+      "Chen Yueh-Han",
+      "Nitish Joshi",
+      "Yulin Chen",
+      "Maksym Andriushchenko",
+      "Rico Angell",
+      "He He"
+    ],
+    "published": "2025-06-12T17:50:58+00:00",
+    "summary": "Current LLM safety defenses fail under decomposition attacks, where a malicious goal is decomposed into benign subtasks that circumvent refusals. The challenge lies in the existing shallow safety alignment techniques: they only detect harm in the immediate prompt and do not reason about long-range intent, leaving them blind to malicious intent that emerges over a sequence of seemingly benign instructions. We therefore propose adding an external monitor that observes the conversation at a higher granularity. To facilitate our study of monitoring decomposition attacks, we curate the largest and most diverse dataset to date, including question-answering, text-to-image, and agentic tasks. We verify our datasets by testing them on frontier LLMs and show an 87% attack success rate on average on GPT-4o. This confirms that decomposition attack is broadly effective. Additionally, we find that random tasks can be injected into the decomposed subtasks to further obfuscate malicious intents. To defend in real time, we propose a lightweight sequential monitoring framework that cumulatively evaluates each subtask. We show that a carefully prompt engineered lightweight monitor achieves a 93% defense success rate, beating reasoning models like o3 mini as a monitor. Moreover, it remains robust against random task injection and cuts cost by 90% and latency by 50%. Our findings suggest that lightweight sequential monitors are highly effective in mitigating decomposition attacks and are viable in deployment."
+  },
+  {
     "title": "From Judgment to Interference: Early Stopping LLM Harmful Outputs via Streaming Content Monitoring",
     "url": "http://arxiv.org/abs/2506.09996v1",
     "arxiv_id": "2506.09996v1",
