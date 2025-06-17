@@ -1,5 +1,71 @@
 [
   {
+    "title": "Touch begins where vision ends: Generalizable policies for contact-rich manipulation",
+    "url": "http://arxiv.org/abs/2506.13762v1",
+    "arxiv_id": "2506.13762v1",
+    "authors": [
+      "Zifan Zhao",
+      "Siddhant Haldar",
+      "Jinda Cui",
+      "Lerrel Pinto",
+      "Raunaq Bhirangi"
+    ],
+    "published": "2025-06-16T17:59:48+00:00",
+    "summary": "Data-driven approaches struggle with precise manipulation; imitation learning requires many hard-to-obtain demonstrations, while reinforcement learning yields brittle, non-generalizable policies. We introduce VisuoTactile Local (ViTaL) policy learning, a framework that solves fine-grained manipulation tasks by decomposing them into two phases: a reaching phase, where a vision-language model (VLM) enables scene-level reasoning to localize the object of interest, and a local interaction phase, where a reusable, scene-agnostic ViTaL policy performs contact-rich manipulation using egocentric vision and tactile sensing. This approach is motivated by the observation that while scene context varies, the low-level interaction remains consistent across task instances. By training local policies once in a canonical setting, they can generalize via a localize-then-execute strategy. ViTaL achieves around 90% success on contact-rich tasks in unseen environments and is robust to distractors. ViTaL's effectiveness stems from three key insights: (1) foundation models for segmentation enable training robust visual encoders via behavior cloning; (2) these encoders improve the generalizability of policies learned using residual RL; and (3) tactile sensing significantly boosts performance in contact-rich tasks. Ablation studies validate each of these insights, and we demonstrate that ViTaL integrates well with high-level VLMs, enabling robust, reusable low-level skills. Results and videos are available at https://vitalprecise.github.io."
+  },
+  {
+    "title": "Prompting with the Future: Open-World Model Predictive Control with Interactive Digital Twins",
+    "url": "http://arxiv.org/abs/2506.13761v1",
+    "arxiv_id": "2506.13761v1",
+    "authors": [
+      "Chuanruo Ning",
+      "Kuan Fang",
+      "Wei-Chiu Ma"
+    ],
+    "published": "2025-06-16T17:59:33+00:00",
+    "summary": "Recent advancements in open-world robot manipulation have been largely driven by vision-language models (VLMs). While these models exhibit strong generalization ability in high-level planning, they struggle to predict low-level robot controls due to limited physical-world understanding. To address this issue, we propose a model predictive control framework for open-world manipulation that combines the semantic reasoning capabilities of VLMs with physically-grounded, interactive digital twins of the real-world environments. By constructing and simulating the digital twins, our approach generates feasible motion trajectories, simulates corresponding outcomes, and prompts the VLM with future observations to evaluate and select the most suitable outcome based on language instructions of the task. To further enhance the capability of pre-trained VLMs in understanding complex scenes for robotic control, we leverage the flexible rendering capabilities of the digital twin to synthesize the scene at various novel, unoccluded viewpoints. We validate our approach on a diverse set of complex manipulation tasks, demonstrating superior performance compared to baseline methods for language-conditioned robotic control using VLMs."
+  },
+  {
+    "title": "AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning",
+    "url": "http://arxiv.org/abs/2506.13757v1",
+    "arxiv_id": "2506.13757v1",
+    "authors": [
+      "Zewei Zhou",
+      "Tianhui Cai",
+      "Seth Z. Zhao",
+      "Yun Zhang",
+      "Zhiyu Huang",
+      "Bolei Zhou",
+      "Jiaqi Ma"
+    ],
+    "published": "2025-06-16T17:58:50+00:00",
+    "summary": "Recent advancements in Vision-Language-Action (VLA) models have shown promise for end-to-end autonomous driving by leveraging world knowledge and reasoning capabilities. However, current VLA models often struggle with physically infeasible action outputs, complex model structures, or unnecessarily long reasoning. In this paper, we propose AutoVLA, a novel VLA model that unifies reasoning and action generation within a single autoregressive generation model for end-to-end autonomous driving. AutoVLA performs semantic reasoning and trajectory planning directly from raw visual inputs and language instructions. We tokenize continuous trajectories into discrete, feasible actions, enabling direct integration into the language model. For training, we employ supervised fine-tuning to equip the model with dual thinking modes: fast thinking (trajectory-only) and slow thinking (enhanced with chain-of-thought reasoning). To further enhance planning performance and efficiency, we introduce a reinforcement fine-tuning method based on Group Relative Policy Optimization (GRPO), reducing unnecessary reasoning in straightforward scenarios. Extensive experiments across real-world and simulated datasets and benchmarks, including nuPlan, nuScenes, Waymo, and CARLA, demonstrate the competitive performance of AutoVLA in both open-loop and closed-loop settings. Qualitative results showcase the adaptive reasoning and accurate planning capabilities of AutoVLA in diverse scenarios."
+  },
+  {
+    "title": "MARCO: Hardware-Aware Neural Architecture Search for Edge Devices with Multi-Agent Reinforcement Learning and Conformal Prediction Filtering",
+    "url": "http://arxiv.org/abs/2506.13755v1",
+    "arxiv_id": "2506.13755v1",
+    "authors": [
+      "Arya Fayyazi",
+      "Mehdi Kamal",
+      "Massoud Pedram"
+    ],
+    "published": "2025-06-16T17:58:09+00:00",
+    "summary": "This paper introduces MARCO (Multi-Agent Reinforcement learning with Conformal Optimization), a novel hardware-aware framework for efficient neural architecture search (NAS) targeting resource-constrained edge devices. By significantly reducing search time and maintaining accuracy under strict hardware constraints, MARCO bridges the gap between automated DNN design and CAD for edge AI deployment. MARCO's core technical contribution lies in its unique combination of multi-agent reinforcement learning (MARL) with Conformal Prediction (CP) to accelerate the hardware/software co-design process for deploying deep neural networks. Unlike conventional once-for-all (OFA) supernet approaches that require extensive pretraining, MARCO decomposes the NAS task into a hardware configuration agent (HCA) and a Quantization Agent (QA). The HCA optimizes high-level design parameters, while the QA determines per-layer bit-widths under strict memory and latency budgets using a shared reward signal within a centralized-critic, decentralized-execution (CTDE) paradigm. A key innovation is the integration of a calibrated CP surrogate model that provides statistical guarantees (with a user-defined miscoverage rate) to prune unpromising candidate architectures before incurring the high costs of partial training or hardware simulation. This early filtering drastically reduces the search space while ensuring that high-quality designs are retained with a high probability. Extensive experiments on MNIST, CIFAR-10, and CIFAR-100 demonstrate that MARCO achieves a 3-4x reduction in total search time compared to an OFA baseline while maintaining near-baseline accuracy (within 0.3%). Furthermore, MARCO also reduces inference latency. Validation on a MAX78000 evaluation board confirms that simulator trends hold in practice, with simulator estimates deviating from measured values by less than 5%."
+  },
+  {
+    "title": "Edge Nearest Neighbor in Sampling-Based Motion Planning",
+    "url": "http://arxiv.org/abs/2506.13753v1",
+    "arxiv_id": "2506.13753v1",
+    "authors": [
+      "Stav Ashur",
+      "Nancy M. Amato",
+      "Sariel Har-Peled"
+    ],
+    "published": "2025-06-16T17:57:41+00:00",
+    "summary": "Neighborhood finders and nearest neighbor queries are fundamental parts of sampling based motion planning algorithms. Using different distance metrics or otherwise changing the definition of a neighborhood produces different algorithms with unique empiric and theoretical properties. In \\cite{l-pa-06} LaValle suggests a neighborhood finder for the Rapidly-exploring Random Tree RRT   algorithm \\cite{l-rrtnt-98} which finds the nearest neighbor of the sampled point on the swath of the tree, that is on the set of all of the points on the tree edges, using a hierarchical data structure. In this paper we implement such a neighborhood finder and show, theoretically and experimentally, that this results in more efficient algorithms, and suggest a variant of the Rapidly-exploring Random Graph RRG algorithm \\cite{f-isaom-10} that better exploits the exploration properties of the newly described subroutine for finding narrow passages."
+  },
+  {
     "title": "Compression Aware Certified Training",
     "url": "http://arxiv.org/abs/2506.11992v1",
     "arxiv_id": "2506.11992v1",
