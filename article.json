@@ -1,5 +1,79 @@
 [
   {
+    "title": "No Free Lunch: Rethinking Internal Feedback for LLM Reasoning",
+    "url": "http://arxiv.org/abs/2506.17219v1",
+    "arxiv_id": "2506.17219v1",
+    "authors": [
+      "Yanzhi Zhang",
+      "Zhaoxi Zhang",
+      "Haoxiang Guan",
+      "Yilin Cheng",
+      "Yitong Duan",
+      "Chen Wang",
+      "Yue Wang",
+      "Shuxin Zheng",
+      "Jiyan He"
+    ],
+    "published": "2025-06-20T17:59:52+00:00",
+    "summary": "Reinforcement learning has emerged as a powerful paradigm for post-training large language models (LLMs) to improve reasoning. Approaches like Reinforcement Learning from Human Feedback (RLHF) and Reinforcement Learning with Verifiable Rewards (RLVR) have shown strong results, but they require extensive external supervision. We investigate an alternative class of methods, Reinforcement Learning from Internal Feedback (RLIF), which relies solely on intrinsic model-derived signals instead of external rewards. In particular, we leverage unsupervised reward proxies such as token-level entropy, trajectory-level entropy, and self-certainty. Our theoretical analysis shows these internal objectives are partially equivalent, and we empirically evaluate various RLIF strategies on challenging math reasoning benchmarks. Experimental results demonstrate that RLIF can boost the reasoning performance of base LLMs at the beginning phase of the training, matching or surpassing RLVR techniques on these tasks. However, when training progresses, performance degrades even below the model before training. Moreover, we find that RLIF yields little improvement for instruction-tuned models, indicating diminishing returns of intrinsic feedback once an LLM is already instruction-tuned. We further analyze this limitation by mixing model weights and explain the reason of RLIF's training behaviors, providing practical guidelines for integrating internal feedback signals into LLM training. We hope our analysis of internal feedback will inform more principled and effective strategies for LLM post-training."
+  },
+  {
+    "title": "Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual Tokens",
+    "url": "http://arxiv.org/abs/2506.17218v1",
+    "arxiv_id": "2506.17218v1",
+    "authors": [
+      "Zeyuan Yang",
+      "Xueyang Yu",
+      "Delin Chen",
+      "Maohao Shen",
+      "Chuang Gan"
+    ],
+    "published": "2025-06-20T17:59:31+00:00",
+    "summary": "Vision-language models (VLMs) excel at multimodal understanding, yet their text-only decoding forces them to verbalize visual reasoning, limiting performance on tasks that demand visual imagination. Recent attempts train VLMs to render explicit images, but the heavy image-generation pre-training often hinders the reasoning ability. Inspired by the way humans reason with mental imagery-the internal construction and manipulation of visual cues-we investigate whether VLMs can reason through interleaved multimodal trajectories without producing explicit images. To this end, we present a Machine Mental Imagery framework, dubbed as Mirage, which augments VLM decoding with latent visual tokens alongside ordinary text. Concretely, whenever the model chooses to ``think visually'', it recasts its hidden states as next tokens, thereby continuing a multimodal trajectory without generating pixel-level images. Begin by supervising the latent tokens through distillation from ground-truth image embeddings, we then switch to text-only supervision to make the latent trajectory align tightly with the task objective. A subsequent reinforcement learning stage further enhances the multimodal reasoning capability. Experiments on diverse benchmarks demonstrate that Mirage unlocks stronger multimodal reasoning without explicit image generation."
+  },
+  {
+    "title": "Long-term Traffic Simulation with Interleaved Autoregressive Motion and Scenario Generation",
+    "url": "http://arxiv.org/abs/2506.17213v1",
+    "arxiv_id": "2506.17213v1",
+    "authors": [
+      "Xiuyu Yang",
+      "Shuhan Tan",
+      "Philipp Kr\u00e4henb\u00fchl"
+    ],
+    "published": "2025-06-20T17:59:21+00:00",
+    "summary": "An ideal traffic simulator replicates the realistic long-term point-to-point trip that a self-driving system experiences during deployment. Prior models and benchmarks focus on closed-loop motion simulation for initial agents in a scene. This is problematic for long-term simulation. Agents enter and exit the scene as the ego vehicle enters new regions. We propose InfGen, a unified next-token prediction model that performs interleaved closed-loop motion simulation and scene generation. InfGen automatically switches between closed-loop motion simulation and scene generation mode. It enables stable long-term rollout simulation. InfGen performs at the state-of-the-art in short-term (9s) traffic simulation, and significantly outperforms all other methods in long-term (30s) simulation. The code and model of InfGen will be released at https://orangesodahub.github.io/InfGen"
+  },
+  {
+    "title": "Part$^{2}$GS: Part-aware Modeling of Articulated Objects using 3D Gaussian Splatting",
+    "url": "http://arxiv.org/abs/2506.17212v1",
+    "arxiv_id": "2506.17212v1",
+    "authors": [
+      "Tianjiao Yu",
+      "Vedant Shah",
+      "Muntasir Wahed",
+      "Ying Shen",
+      "Kiet A. Nguyen",
+      "Ismini Lourentzou"
+    ],
+    "published": "2025-06-20T17:59:12+00:00",
+    "summary": "Articulated objects are common in the real world, yet modeling their structure and motion remains a challenging task for 3D reconstruction methods. In this work, we introduce Part$^{2}$GS, a novel framework for modeling articulated digital twins of multi-part objects with high-fidelity geometry and physically consistent articulation. Part$^{2}$GS leverages a part-aware 3D Gaussian representation that encodes articulated components with learnable attributes, enabling structured, disentangled transformations that preserve high-fidelity geometry. To ensure physically consistent motion, we propose a motion-aware canonical representation guided by physics-based constraints, including contact enforcement, velocity consistency, and vector-field alignment. Furthermore, we introduce a field of repel points to prevent part collisions and maintain stable articulation paths, significantly improving motion coherence over baselines. Extensive evaluations on both synthetic and real-world datasets show that Part$^{2}$GS consistently outperforms state-of-the-art methods by up to 10$\\times$ in Chamfer Distance for movable parts."
+  },
+  {
+    "title": "BREAD: Branched Rollouts from Expert Anchors Bridge SFT & RL for Reasoning",
+    "url": "http://arxiv.org/abs/2506.17211v1",
+    "arxiv_id": "2506.17211v1",
+    "authors": [
+      "Xuechen Zhang",
+      "Zijian Huang",
+      "Yingcong Li",
+      "Chenshun Ni",
+      "Jiasi Chen",
+      "Samet Oymak"
+    ],
+    "published": "2025-06-20T17:59:07+00:00",
+    "summary": "Small language models (SLMs) struggle to learn complex reasoning behaviors, especially when high-quality traces are scarce or difficult to learn from. The standard training approach combines a supervised fine-tuning (SFT) stage, often to distill capabilities of a larger model, followed by a reinforcement learning (RL)stage such as Group Relative Policy Optimization (GRPO). In this paper, we investigate the fundamental limitations of this SFT + RL paradigm and propose methods to overcome them. Under a suitable theoretical model, we demonstrate that the SFT + RL strategy can fail completely when (1) the expert's traces are too difficult for the small model to express, or (2) the small model's initialization has exponentially small likelihood of success. To address these, we introduce BREAD: a GRPO variant that unifies the SFT and RL stages via partial expert guidance and branched rollouts. When self-generated traces fail, BREAD adaptively inserts short expert prefixes/hints, allowing the small model to complete the rest of the reasoning path, and ensuring that each update includes at least one successful trace. This mechanism both densifies the reward signal and induces a natural learning curriculum. BREAD requires fewer than 40% of ground-truth traces, consistently outperforming standard GRPO while speeding up the training by about 3 times. Importantly, we demonstrate that BREAD helps the model solve problems that are otherwise unsolvable by the SFT + RL strategy, highlighting how branched rollouts and expert guidance can substantially boost SLM reasoning."
+  },
+  {
     "title": "Nabla-R2D3: Effective and Efficient 3D Diffusion Alignment with 2D Rewards",
     "url": "http://arxiv.org/abs/2506.15684v1",
     "arxiv_id": "2506.15684v1",
