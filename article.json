@@ -1,5 +1,87 @@
 [
   {
+    "title": "Unified Vision-Language-Action Model",
+    "url": "http://arxiv.org/abs/2506.19850v1",
+    "arxiv_id": "2506.19850v1",
+    "authors": [
+      "Yuqi Wang",
+      "Xinghang Li",
+      "Wenxuan Wang",
+      "Junbo Zhang",
+      "Yingyan Li",
+      "Yuntao Chen",
+      "Xinlong Wang",
+      "Zhaoxiang Zhang"
+    ],
+    "published": "2025-06-24T17:59:57+00:00",
+    "summary": "Vision-language-action models (VLAs) have garnered significant attention for their potential in advancing robotic manipulation. However, previous approaches predominantly rely on the general comprehension capabilities of vision-language models (VLMs) to generate action signals, often overlooking the rich temporal and causal structure embedded in visual observations. In this paper, we present UniVLA, a unified and native multimodal VLA model that autoregressively models vision, language, and action signals as discrete token sequences. This formulation enables flexible multimodal tasks learning, particularly from large-scale video data. By incorporating world modeling during post-training, UniVLA captures causal dynamics from videos, facilitating effective transfer to downstream policy learning--especially for long-horizon tasks. Our approach sets new state-of-the-art results across several widely used simulation benchmarks, including CALVIN, LIBERO, and Simplenv-Bridge, significantly surpassing previous methods. For example, UniVLA achieves 95.5% average success rate on LIBERO benchmark, surpassing pi0-FAST's 85.5%. We further demonstrate its broad applicability on real-world ALOHA manipulation and autonomous driving."
+  },
+  {
+    "title": "JoyAgents-R1: Joint Evolution Dynamics for Versatile Multi-LLM Agents with Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2506.19846v1",
+    "arxiv_id": "2506.19846v1",
+    "authors": [
+      "Ai Han",
+      "Junxing Hu",
+      "Pu Wei",
+      "Zhiqian Zhang",
+      "Yuhang Guo",
+      "Jiawei Lu",
+      "Zicheng Zhang"
+    ],
+    "published": "2025-06-24T17:59:31+00:00",
+    "summary": "Multi-agent reinforcement learning (MARL) has emerged as a prominent paradigm for increasingly complex tasks. However, joint evolution across heterogeneous agents remains challenging due to cooperative inefficiency and training instability. In this paper, we propose the joint evolution dynamics for MARL called JoyAgents-R1, which first applies Group Relative Policy Optimization (GRPO) to the joint training of heterogeneous multi-agents. By iteratively refining agents' large language models (LLMs) and memories, the method achieves holistic equilibrium with optimal decision-making and memory capabilities. Specifically, JoyAgents-R1 first implements node-wise Monte Carlo sampling on the behavior of each agent across entire reasoning trajectories to enhance GRPO sampling efficiency while maintaining policy diversity. Then, our marginal benefit-driven selection strategy identifies top-$K$ sampling groups with maximal reward fluctuations, enabling targeted agent model updates that improve training stability and maximize joint benefits through cost-effective parameter adjustments. Meanwhile, JoyAgents-R1 introduces an adaptive memory evolution mechanism that repurposes GRPO rewards as cost-free supervisory signals to eliminate repetitive reasoning and accelerate convergence. Experiments across general and domain-specific scenarios demonstrate that JoyAgents-R1 achieves performance comparable to that of larger LLMs while built on smaller open-source models."
+  },
+  {
+    "title": "Temporal-IRL: Modeling Port Congestion and Berth Scheduling with Inverse Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2506.19843v1",
+    "arxiv_id": "2506.19843v1",
+    "authors": [
+      "Guo Li",
+      "Zixiang Xu",
+      "Wei Zhang",
+      "Yikuan Hu",
+      "Xinyu Yang",
+      "Nikolay Aristov",
+      "Mingjie Tang",
+      "Elenna R Dugundji"
+    ],
+    "published": "2025-06-24T17:59:12+00:00",
+    "summary": "Predicting port congestion is crucial for maintaining reliable global supply chains. Accurate forecasts enableimprovedshipment planning, reducedelaysand costs, and optimizeinventoryanddistributionstrategies, thereby ensuring timely deliveries and enhancing supply chain resilience. To achieve accurate predictions, analyzing vessel behavior and their stay times at specific port terminals is essential, focusing particularly on berth scheduling under various conditions. Crucially, the model must capture and learn the underlying priorities and patterns of berth scheduling. Berth scheduling and planning are influenced by a range of factors, including incoming vessel size, waiting times, and the status of vessels within the port terminal. By observing historical Automatic Identification System (AIS) positions of vessels, we reconstruct berth schedules, which are subsequently utilized to determine the reward function via Inverse Reinforcement Learning (IRL). For this purpose, we modeled a specific terminal at the Port of New York/New Jersey and developed Temporal-IRL. This Temporal-IRL model learns berth scheduling to predict vessel sequencing at the terminal and estimate vessel port stay, encompassing both waiting and berthing times, to forecast port congestion. Utilizing data from Maher Terminal spanning January 2015 to September 2023, we trained and tested the model, achieving demonstrably excellent results."
+  },
+  {
+    "title": "ManiGaussian++: General Robotic Bimanual Manipulation with Hierarchical Gaussian World Model",
+    "url": "http://arxiv.org/abs/2506.19842v1",
+    "arxiv_id": "2506.19842v1",
+    "authors": [
+      "Tengbo Yu",
+      "Guanxing Lu",
+      "Zaijia Yang",
+      "Haoyuan Deng",
+      "Season Si Chen",
+      "Jiwen Lu",
+      "Wenbo Ding",
+      "Guoqiang Hu",
+      "Yansong Tang",
+      "Ziwei Wang"
+    ],
+    "published": "2025-06-24T17:59:06+00:00",
+    "summary": "Multi-task robotic bimanual manipulation is becoming increasingly popular as it enables sophisticated tasks that require diverse dual-arm collaboration patterns. Compared to unimanual manipulation, bimanual tasks pose challenges to understanding the multi-body spatiotemporal dynamics. An existing method ManiGaussian pioneers encoding the spatiotemporal dynamics into the visual representation via Gaussian world model for single-arm settings, which ignores the interaction of multiple embodiments for dual-arm systems with significant performance drop. In this paper, we propose ManiGaussian++, an extension of ManiGaussian framework that improves multi-task bimanual manipulation by digesting multi-body scene dynamics through a hierarchical Gaussian world model. To be specific, we first generate task-oriented Gaussian Splatting from intermediate visual features, which aims to differentiate acting and stabilizing arms for multi-body spatiotemporal dynamics modeling. We then build a hierarchical Gaussian world model with the leader-follower architecture, where the multi-body spatiotemporal dynamics is mined for intermediate visual representation via future scene prediction. The leader predicts Gaussian Splatting deformation caused by motions of the stabilizing arm, through which the follower generates the physical consequences resulted from the movement of the acting arm. As a result, our method significantly outperforms the current state-of-the-art bimanual manipulation techniques by an improvement of 20.2% in 10 simulated tasks, and achieves 60% success rate on average in 9 challenging real-world tasks. Our code is available at https://github.com/April-Yz/ManiGaussian_Bimanual."
+  },
+  {
+    "title": "Look to Locate: Vision-Based Multisensory Navigation with 3-D Digital Maps for GNSS-Challenged Environments",
+    "url": "http://arxiv.org/abs/2506.19827v1",
+    "arxiv_id": "2506.19827v1",
+    "authors": [
+      "Ola Elmaghraby",
+      "Eslam Mounier",
+      "Paulo Ricardo Marques de Araujo",
+      "Aboelmagd Noureldin"
+    ],
+    "published": "2025-06-24T17:44:03+00:00",
+    "summary": "In Global Navigation Satellite System (GNSS)-denied environments such as indoor parking structures or dense urban canyons, achieving accurate and robust vehicle positioning remains a significant challenge. This paper proposes a cost-effective, vision-based multi-sensor navigation system that integrates monocular depth estimation, semantic filtering, and visual map registration (VMR) with 3-D digital maps. Extensive testing in real-world indoor and outdoor driving scenarios demonstrates the effectiveness of the proposed system, achieving sub-meter accuracy of 92% indoors and more than 80% outdoors, with consistent horizontal positioning and heading average root mean-square errors of approximately 0.98 m and 1.25 {\\deg}, respectively. Compared to the baselines examined, the proposed solution significantly reduced drift and improved robustness under various conditions, achieving positioning accuracy improvements of approximately 88% on average. This work highlights the potential of cost-effective monocular vision systems combined with 3D maps for scalable, GNSS-independent navigation in land vehicles."
+  },
+  {
     "title": "TC-Light: Temporally Consistent Relighting for Dynamic Long Videos",
     "url": "http://arxiv.org/abs/2506.18904v1",
     "arxiv_id": "2506.18904v1",
