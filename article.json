@@ -1,5 +1,88 @@
 [
   {
+    "title": "IPFormer: Visual 3D Panoptic Scene Completion with Context-Adaptive Instance Proposals",
+    "url": "http://arxiv.org/abs/2506.20671v1",
+    "arxiv_id": "2506.20671v1",
+    "authors": [
+      "Markus Gross",
+      "Aya Fahmy",
+      "Danit Niwattananan",
+      "Dominik Muhle",
+      "Rui Song",
+      "Daniel Cremers",
+      "Henri Mee\u00df"
+    ],
+    "published": "2025-06-25T17:59:45+00:00",
+    "summary": "Semantic Scene Completion (SSC) has emerged as a pivotal approach for jointly learning scene geometry and semantics, enabling downstream applications such as navigation in mobile robotics. The recent generalization to Panoptic Scene Completion (PSC) advances the SSC domain by integrating instance-level information, thereby enhancing object-level sensitivity in scene understanding. While PSC was introduced using LiDAR modality, methods based on camera images remain largely unexplored. Moreover, recent Transformer-based SSC approaches utilize a fixed set of learned queries to reconstruct objects within the scene volume. Although these queries are typically updated with image context during training, they remain static at test time, limiting their ability to dynamically adapt specifically to the observed scene. To overcome these limitations, we propose IPFormer, the first approach that leverages context-adaptive instance proposals at train and test time to address vision-based 3D Panoptic Scene Completion. Specifically, IPFormer adaptively initializes these queries as panoptic instance proposals derived from image context and further refines them through attention-based encoding and decoding to reason about semantic instance-voxel relationships. Experimental results show that our approach surpasses state-of-the-art methods in overall panoptic metrics PQ$^\\dagger$ and PQ-All, matches performance in individual metrics, and achieves a runtime reduction exceeding 14$\\times$. Furthermore, our ablation studies reveal that dynamically deriving instance proposals from image context, as opposed to random initialization, leads to a 3.62% increase in PQ-All and a remarkable average improvement of 18.65% in combined Thing-metrics. These results highlight our introduction of context-adaptive instance proposals as a pioneering effort in addressing vision-based 3D Panoptic Scene Completion."
+  },
+  {
+    "title": "MMSearch-R1: Incentivizing LMMs to Search",
+    "url": "http://arxiv.org/abs/2506.20670v1",
+    "arxiv_id": "2506.20670v1",
+    "authors": [
+      "Jinming Wu",
+      "Zihao Deng",
+      "Wei Li",
+      "Yiding Liu",
+      "Bo You",
+      "Bo Li",
+      "Zejun Ma",
+      "Ziwei Liu"
+    ],
+    "published": "2025-06-25T17:59:42+00:00",
+    "summary": "Robust deployment of large multimodal models (LMMs) in real-world scenarios requires access to external knowledge sources, given the complexity and dynamic nature of real-world information. Existing approaches such as retrieval-augmented generation (RAG) and prompt engineered search agents rely on rigid pipelines, often leading to inefficient or excessive search behaviors. We present MMSearch-R1, the first end-to-end reinforcement learning framework that enables LMMs to perform on-demand, multi-turn search in real-world Internet environments. Our framework integrates both image and text search tools, allowing the model to reason about when and how to invoke them guided by an outcome-based reward with a search penalty. To support training, We collect a multimodal search VQA dataset through a semi-automated pipeline that covers diverse visual and textual knowledge needs and curate a search-balanced subset with both search-required and search-free samples, which proves essential for shaping efficient and on-demand search behavior. Extensive experiments on knowledge-intensive and info-seeking VQA tasks show that our model not only outperforms RAG-based baselines of the same model size, but also matches the performance of a larger RAG-based model while reducing search calls by over 30%. We further analyze key empirical findings to offer actionable insights for advancing research in multimodal search."
+  },
+  {
+    "title": "DemoDiffusion: One-Shot Human Imitation using pre-trained Diffusion Policy",
+    "url": "http://arxiv.org/abs/2506.20668v1",
+    "arxiv_id": "2506.20668v1",
+    "authors": [
+      "Sungjae Park",
+      "Homanga Bharadhwaj",
+      "Shubham Tulsiani"
+    ],
+    "published": "2025-06-25T17:59:01+00:00",
+    "summary": "We propose DemoDiffusion, a simple and scalable method for enabling robots to perform manipulation tasks in natural environments by imitating a single human demonstration. Our approach is based on two key insights. First, the hand motion in a human demonstration provides a useful prior for the robot's end-effector trajectory, which we can convert into a rough open-loop robot motion trajectory via kinematic retargeting. Second, while this retargeted motion captures the overall structure of the task, it may not align well with plausible robot actions in-context. To address this, we leverage a pre-trained generalist diffusion policy to modify the trajectory, ensuring it both follows the human motion and remains within the distribution of plausible robot actions. Our approach avoids the need for online reinforcement learning or paired human-robot data, enabling robust adaptation to new tasks and scenes with minimal manual effort. Experiments in both simulation and real-world settings show that DemoDiffusion outperforms both the base policy and the retargeted trajectory, enabling the robot to succeed even on tasks where the pre-trained generalist policy fails entirely. Project page: https://demodiffusion.github.io/"
+  },
+  {
+    "title": "The Decrypto Benchmark for Multi-Agent Reasoning and Theory of Mind",
+    "url": "http://arxiv.org/abs/2506.20664v1",
+    "arxiv_id": "2506.20664v1",
+    "authors": [
+      "Andrei Lupu",
+      "Timon Willi",
+      "Jakob Foerster"
+    ],
+    "published": "2025-06-25T17:55:27+00:00",
+    "summary": "As Large Language Models (LLMs) gain agentic abilities, they will have to navigate complex multi-agent scenarios, interacting with human users and other agents in cooperative and competitive settings. This will require new reasoning skills, chief amongst them being theory of mind (ToM), or the ability to reason about the \"mental\" states of other agents. However, ToM and other multi-agent abilities in LLMs are poorly understood, since existing benchmarks suffer from narrow scope, data leakage, saturation, and lack of interactivity. We thus propose Decrypto, a game-based benchmark for multi-agent reasoning and ToM drawing inspiration from cognitive science, computational pragmatics and multi-agent reinforcement learning. It is designed to be as easy as possible in all other dimensions, eliminating confounding factors commonly found in other benchmarks. To our knowledge, it is also the first platform for designing interactive ToM experiments.   We validate the benchmark design through comprehensive empirical evaluations of frontier LLMs, robustness studies, and human-AI cross-play experiments. We find that LLM game-playing abilities lag behind humans and simple word-embedding baselines. We then create variants of two classic cognitive science experiments within Decrypto to evaluate three key ToM abilities. Surprisingly, we find that state-of-the-art reasoning models are significantly worse at those tasks than their older counterparts. This demonstrates that Decrypto addresses a crucial gap in current reasoning and ToM evaluations, and paves the path towards better artificial agents."
+  },
+  {
+    "title": "Continuous operation of a coherent 3,000-qubit system",
+    "url": "http://arxiv.org/abs/2506.20660v1",
+    "arxiv_id": "2506.20660v1",
+    "authors": [
+      "Neng-Chun Chiu",
+      "Elias C. Trapp",
+      "Jinen Guo",
+      "Mohamed H. Abobeih",
+      "Luke M. Stewart",
+      "Simon Hollerith",
+      "Pavel Stroganov",
+      "Marcin Kalinowski",
+      "Alexandra A. Geim",
+      "Simon J. Evered",
+      "Sophie H. Li",
+      "Lisa M. Peters",
+      "Dolev Bluvstein",
+      "Tout T. Wang",
+      "Markus Greiner",
+      "Vladan Vuleti\u0107",
+      "Mikhail D. Lukin"
+    ],
+    "published": "2025-06-25T17:53:56+00:00",
+    "summary": "Neutral atoms are a promising platform for quantum science, enabling advances in areas ranging from quantum simulations and computation to metrology, atomic clocks and quantum networking. While atom losses typically limit these systems to a pulsed mode, continuous operation could significantly enhance cycle rates, remove bottlenecks in metrology, and enable deep-circuit quantum evolution through quantum error correction. Here we demonstrate an experimental architecture for high-rate, continuous reloading and operation of a large-scale atom array system while realizing coherent storage and manipulation of quantum information. Our approach utilizes a series of two optical lattice conveyor belts to transport atom reservoirs into the science region, where atoms are repeatedly extracted into optical tweezers without affecting the coherence of qubits stored nearby. Using a reloading rate of 300,000 atoms in tweezers per second, we create over 30,000 initialized qubits per second, which we leverage to assemble and maintain an array of over 3,000 atoms for more than two hours. Furthermore, we demonstrate persistent refilling of the array with atomic qubits in either a spin-polarized or a coherent superposition state while preserving the quantum state of stored qubits. Our results pave the way for realization of large-scale continuously operated atomic clocks, sensors, and fault-tolerant quantum computers."
+  },
+  {
     "title": "Unified Vision-Language-Action Model",
     "url": "http://arxiv.org/abs/2506.19850v1",
     "arxiv_id": "2506.19850v1",
