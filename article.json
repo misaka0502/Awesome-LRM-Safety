@@ -1,5 +1,88 @@
 [
   {
+    "title": "Whole-Body Conditioned Egocentric Video Prediction",
+    "url": "http://arxiv.org/abs/2506.21552v1",
+    "arxiv_id": "2506.21552v1",
+    "authors": [
+      "Yutong Bai",
+      "Danny Tran",
+      "Amir Bar",
+      "Yann LeCun",
+      "Trevor Darrell",
+      "Jitendra Malik"
+    ],
+    "published": "2025-06-26T17:59:59+00:00",
+    "summary": "We train models to Predict Ego-centric Video from human Actions (PEVA), given the past video and an action represented by the relative 3D body pose. By conditioning on kinematic pose trajectories, structured by the joint hierarchy of the body, our model learns to simulate how physical human actions shape the environment from a first-person point of view. We train an auto-regressive conditional diffusion transformer on Nymeria, a large-scale dataset of real-world egocentric video and body pose capture. We further design a hierarchical evaluation protocol with increasingly challenging tasks, enabling a comprehensive analysis of the model's embodied prediction and control abilities. Our work represents an initial attempt to tackle the challenges of modeling complex real-world environments and embodied agent behaviors with video prediction from the perspective of a human."
+  },
+  {
+    "title": "SiM3D: Single-instance Multiview Multimodal and Multisetup 3D Anomaly Detection Benchmark",
+    "url": "http://arxiv.org/abs/2506.21549v1",
+    "arxiv_id": "2506.21549v1",
+    "authors": [
+      "Alex Costanzino",
+      "Pierluigi Zama Ramirez",
+      "Luigi Lella",
+      "Matteo Ragaglia",
+      "Alessandro Oliva",
+      "Giuseppe Lisanti",
+      "Luigi Di Stefano"
+    ],
+    "published": "2025-06-26T17:59:55+00:00",
+    "summary": "We propose SiM3D, the first benchmark considering the integration of multiview and multimodal information for comprehensive 3D anomaly detection and segmentation (ADS), where the task is to produce a voxel-based Anomaly Volume. Moreover, SiM3D focuses on a scenario of high interest in manufacturing: single-instance anomaly detection, where only one object, either real or synthetic, is available for training. In this respect, SiM3D stands out as the first ADS benchmark that addresses the challenge of generalising from synthetic training data to real test data. SiM3D includes a novel multimodal multiview dataset acquired using top-tier industrial sensors and robots. The dataset features multiview high-resolution images (12 Mpx) and point clouds (7M points) for 333 instances of eight types of objects, alongside a CAD model for each type. We also provide manually annotated 3D segmentation GTs for anomalous test samples. To establish reference baselines for the proposed multiview 3D ADS task, we adapt prominent singleview methods and assess their performance using novel metrics that operate on Anomaly Volumes."
+  },
+  {
+    "title": "SAM4D: Segment Anything in Camera and LiDAR Streams",
+    "url": "http://arxiv.org/abs/2506.21547v1",
+    "arxiv_id": "2506.21547v1",
+    "authors": [
+      "Jianyun Xu",
+      "Song Wang",
+      "Ziqian Ni",
+      "Chunyong Hu",
+      "Sheng Yang",
+      "Jianke Zhu",
+      "Qiang Li"
+    ],
+    "published": "2025-06-26T17:59:14+00:00",
+    "summary": "We present SAM4D, a multi-modal and temporal foundation model designed for promptable segmentation across camera and LiDAR streams. Unified Multi-modal Positional Encoding (UMPE) is introduced to align camera and LiDAR features in a shared 3D space, enabling seamless cross-modal prompting and interaction. Additionally, we propose Motion-aware Cross-modal Memory Attention (MCMA), which leverages ego-motion compensation to enhance temporal consistency and long-horizon feature retrieval, ensuring robust segmentation across dynamically changing autonomous driving scenes. To avoid annotation bottlenecks, we develop a multi-modal automated data engine that synergizes VFM-driven video masklets, spatiotemporal 4D reconstruction, and cross-modal masklet fusion. This framework generates camera-LiDAR aligned pseudo-labels at a speed orders of magnitude faster than human annotation while preserving VFM-derived semantic fidelity in point cloud representations. We conduct extensive experiments on the constructed Waymo-4DSeg, which demonstrate the powerful cross-modal segmentation ability and great potential in data annotation of proposed SAM4D."
+  },
+  {
+    "title": "HalluSegBench: Counterfactual Visual Reasoning for Segmentation Hallucination Evaluation",
+    "url": "http://arxiv.org/abs/2506.21546v1",
+    "arxiv_id": "2506.21546v1",
+    "authors": [
+      "Xinzhuo Li",
+      "Adheesh Juvekar",
+      "Xingyou Liu",
+      "Muntasir Wahed",
+      "Kiet A. Nguyen",
+      "Ismini Lourentzou"
+    ],
+    "published": "2025-06-26T17:59:12+00:00",
+    "summary": "Recent progress in vision-language segmentation has significantly advanced grounded visual understanding. However, these models often exhibit hallucinations by producing segmentation masks for objects not grounded in the image content or by incorrectly labeling irrelevant regions. Existing evaluation protocols for segmentation hallucination primarily focus on label or textual hallucinations without manipulating the visual context, limiting their capacity to diagnose critical failures. In response, we introduce HalluSegBench, the first benchmark specifically designed to evaluate hallucinations in visual grounding through the lens of counterfactual visual reasoning. Our benchmark consists of a novel dataset of 1340 counterfactual instance pairs spanning 281 unique object classes, and a set of newly introduced metrics that quantify hallucination sensitivity under visually coherent scene edits. Experiments on HalluSegBench with state-of-the-art vision-language segmentation models reveal that vision-driven hallucinations are significantly more prevalent than label-driven ones, with models often persisting in false segmentation, highlighting the need for counterfactual reasoning to diagnose grounding fidelity."
+  },
+  {
+    "title": "WorldVLA: Towards Autoregressive Action World Model",
+    "url": "http://arxiv.org/abs/2506.21539v1",
+    "arxiv_id": "2506.21539v1",
+    "authors": [
+      "Jun Cen",
+      "Chaohui Yu",
+      "Hangjie Yuan",
+      "Yuming Jiang",
+      "Siteng Huang",
+      "Jiayan Guo",
+      "Xin Li",
+      "Yibing Song",
+      "Hao Luo",
+      "Fan Wang",
+      "Deli Zhao",
+      "Hao Chen"
+    ],
+    "published": "2025-06-26T17:55:40+00:00",
+    "summary": "We present WorldVLA, an autoregressive action world model that unifies action and image understanding and generation. Our WorldVLA intergrates Vision-Language-Action (VLA) model and world model in one single framework. The world model predicts future images by leveraging both action and image understanding, with the purpose of learning the underlying physics of the environment to improve action generation. Meanwhile, the action model generates the subsequent actions based on image observations, aiding in visual understanding and in turn helps visual generation of the world model. We demonstrate that WorldVLA outperforms standalone action and world models, highlighting the mutual enhancement between the world model and the action model. In addition, we find that the performance of the action model deteriorates when generating sequences of actions in an autoregressive manner. This phenomenon can be attributed to the model's limited generalization capability for action prediction, leading to the propagation of errors from earlier actions to subsequent ones. To address this issue, we propose an attention mask strategy that selectively masks prior actions during the generation of the current action, which shows significant performance improvement in the action chunk generation task."
+  },
+  {
     "title": "IPFormer: Visual 3D Panoptic Scene Completion with Context-Adaptive Instance Proposals",
     "url": "http://arxiv.org/abs/2506.20671v1",
     "arxiv_id": "2506.20671v1",
