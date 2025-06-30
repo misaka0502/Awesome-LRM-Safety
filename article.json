@@ -1,5 +1,75 @@
 [
   {
+    "title": "MiCo: Multi-image Contrast for Reinforcement Visual Reasoning",
+    "url": "http://arxiv.org/abs/2506.22434v1",
+    "arxiv_id": "2506.22434v1",
+    "authors": [
+      "Xi Chen",
+      "Mingkang Zhu",
+      "Shaoteng Liu",
+      "Xiaoyang Wu",
+      "Xiaogang Xu",
+      "Yu Liu",
+      "Xiang Bai",
+      "Hengshuang Zhao"
+    ],
+    "published": "2025-06-27T17:59:27+00:00",
+    "summary": "This work explores enabling Chain-of-Thought (CoT) reasoning to link visual cues across multiple images. A straightforward solution is to adapt rule-based reinforcement learning for Vision-Language Models (VLMs). However, such methods typically rely on manually curated question-answer pairs, which can be particularly challenging when dealing with fine grained visual details and complex logic across images. Inspired by self-supervised visual representation learning, we observe that images contain inherent constraints that can serve as supervision. Based on this insight, we construct image triplets comprising two augmented views of the same image and a third, similar but distinct image. During training, the model is prompted to generate a reasoning process to compare these images (i.e., determine same or different). Then we optimize the model with rule-based reinforcement learning. Due to the high visual similarity and the presence of augmentations, the model must attend to subtle visual changes and perform logical reasoning to succeed. Experiments show that, although trained solely on visual comparison tasks, the learned reasoning ability generalizes effectively to a wide range of questions. Without relying on any human-annotated question-answer pairs, our method achieves significant improvements on multi-image reasoning benchmarks and shows strong performance on general vision tasks."
+  },
+  {
+    "title": "Shape-for-Motion: Precise and Consistent Video Editing with 3D Proxy",
+    "url": "http://arxiv.org/abs/2506.22432v1",
+    "arxiv_id": "2506.22432v1",
+    "authors": [
+      "Yuhao Liu",
+      "Tengfei Wang",
+      "Fang Liu",
+      "Zhenwei Wang",
+      "Rynson W. H. Lau"
+    ],
+    "published": "2025-06-27T17:59:01+00:00",
+    "summary": "Recent advances in deep generative modeling have unlocked unprecedented opportunities for video synthesis. In real-world applications, however, users often seek tools to faithfully realize their creative editing intentions with precise and consistent control. Despite the progress achieved by existing methods, ensuring fine-grained alignment with user intentions remains an open and challenging problem. In this work, we present Shape-for-Motion, a novel framework that incorporates a 3D proxy for precise and consistent video editing. Shape-for-Motion achieves this by converting the target object in the input video to a time-consistent mesh, i.e., a 3D proxy, allowing edits to be performed directly on the proxy and then inferred back to the video frames. To simplify the editing process, we design a novel Dual-Propagation Strategy that allows users to perform edits on the 3D mesh of a single frame, and the edits are then automatically propagated to the 3D meshes of the other frames. The 3D meshes for different frames are further projected onto the 2D space to produce the edited geometry and texture renderings, which serve as inputs to a decoupled video diffusion model for generating edited results. Our framework supports various precise and physically-consistent manipulations across the video frames, including pose editing, rotation, scaling, translation, texture modification, and object composition. Our approach marks a key step toward high-quality, controllable video editing workflows. Extensive experiments demonstrate the superiority and effectiveness of our approach. Project page: https://shapeformotion.github.io/"
+  },
+  {
+    "title": "ARMOR: Robust Reinforcement Learning-based Control for UAVs under Physical Attacks",
+    "url": "http://arxiv.org/abs/2506.22423v1",
+    "arxiv_id": "2506.22423v1",
+    "authors": [
+      "Pritam Dash",
+      "Ethan Chan",
+      "Nathan P. Lawrence",
+      "Karthik Pattabiraman"
+    ],
+    "published": "2025-06-27T17:46:33+00:00",
+    "summary": "Unmanned Aerial Vehicles (UAVs) depend on onboard sensors for perception, navigation, and control. However, these sensors are susceptible to physical attacks, such as GPS spoofing, that can corrupt state estimates and lead to unsafe behavior. While reinforcement learning (RL) offers adaptive control capabilities, existing safe RL methods are ineffective against such attacks. We present ARMOR (Adaptive Robust Manipulation-Optimized State Representations), an attack-resilient, model-free RL controller that enables robust UAV operation under adversarial sensor manipulation. Instead of relying on raw sensor observations, ARMOR learns a robust latent representation of the UAV's physical state via a two-stage training framework. In the first stage, a teacher encoder, trained with privileged attack information, generates attack-aware latent states for RL policy training. In the second stage, a student encoder is trained via supervised learning to approximate the teacher's latent states using only historical sensor data, enabling real-world deployment without privileged information. Our experiments show that ARMOR outperforms conventional methods, ensuring UAV safety. Additionally, ARMOR improves generalization to unseen attacks and reduces training cost by eliminating the need for iterative adversarial training."
+  },
+  {
+    "title": "Spherical Pendulum with Quad-Rotor Thrust Vectoring Actuation -- A Novel Mechatronics and Control Benchmark Platform",
+    "url": "http://arxiv.org/abs/2506.22410v1",
+    "arxiv_id": "2506.22410v1",
+    "authors": [
+      "Yuchen Li",
+      "Omar Curiel",
+      "Sheng-Fan Wen",
+      "Tsu-Chin Tsao"
+    ],
+    "published": "2025-06-27T17:37:15+00:00",
+    "summary": "Motor-actuated pendulums have been established as arguably the most common laboratory prototypes used in control system education because of the relevance to robot manipulator control in industry. Meanwhile, multi-rotor drones like quadcopters have become popular in industrial applications but have not been broadly employed in control education laboratory. Platforms with pendulums and multi-rotor copters present classical yet intriguing multi-degree of freedom (DoF) dynamics and coordinate systems for the control system investigation. In this paper, we introduce a novel control platform in which a 2-DoF pendulum capable of azimuth and elevation rotation is actuated through vectored thrust generated by a quadcopter. Designed as a benchmark for mechatronics and nonlinear control education and research, the system integrates detailed mechatronic implementation with different control strategies. Specifically, we apply and compare small perturbation linearization (SPL), state feedback linearization (SFL), and partial feedback linearization (PFL) to the nonlinear system dynamics. The performances are evaluated by time specifications of step response and Root-Mean-Square (RMS) error of trajectory tracking. The robustness of the closed-loop system is validated under external disturbances, and both simulation and experimental results are presented to highlight the strengths and limitations of the nonlinear model-based control approaches."
+  },
+  {
+    "title": "Economic Model Predictive Control with a Non-Fixed Reference Trajectory for Optimal Microgrid Dispatch",
+    "url": "http://arxiv.org/abs/2506.22406v1",
+    "arxiv_id": "2506.22406v1",
+    "authors": [
+      "Avik Ghosh",
+      "Adil Khurram",
+      "Jan Kleissl",
+      "Sonia Martinez"
+    ],
+    "published": "2025-06-27T17:27:40+00:00",
+    "summary": "Economic Model Predictive Control (EMPC), instead of stabilizing a reference trajectory/state in the objective function like a Tracking MPC, optimizes the economic performance over the prediction horizon, making it attractive for economical microgrid (MG) dispatch. However, the demand charge component in the monthly electricity cost, make it difficult to be encapsulated in additive stage costs, and can make solutions violate the principle of optimality if naively introduced in the objective function. Moreover, previous EMPC based works mostly rely on a-priori knowledge of an optimal economic steady state or optimal periodic trajectory for performance guarantees, which are not useful or possibly don't exist respectively, for real-time economical MG dispatch where load/generation forecasts are known only 24-48 h in advance. This paper, first, proposes an EMPC formulation for a generic deterministic discrete non-linear time varying system with hard state and input constraints, without any a-priori requirements of an optimal economic steady state or optimal periodic trajectory. It is proved that under mild assumptions on terminal cost and region, the asymptotic average economic cost of the proposed method is no worse than the asymptotic average economic cost of any other non-fixed arbitrary reference trajectory which is known only until the current time-step. The EMPC framework is then leveraged for optimal MG dispatch by showing that the problem can be reformulated to satisfy the assumptions required for the asymptotic performance guarantee. Realistic simulations at the Port of San Diego MG demonstrated that the proposed method can also reduce monthly electricity costs in closed-loop with respect to reference trajectories generated by directly optimizing the electricity cost function over the prediction horizon or by tracking an ideal grid import curve in a majority of the cases."
+  },
+  {
     "title": "Whole-Body Conditioned Egocentric Video Prediction",
     "url": "http://arxiv.org/abs/2506.21552v1",
     "arxiv_id": "2506.21552v1",
