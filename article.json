@@ -1,5 +1,83 @@
 [
   {
+    "title": "MultiGen: Using Multimodal Generation in Simulation to Learn Multimodal Policies in Real",
+    "url": "http://arxiv.org/abs/2507.02864v1",
+    "arxiv_id": "2507.02864v1",
+    "authors": [
+      "Renhao Wang",
+      "Haoran Geng",
+      "Tingle Li",
+      "Feishi Wang",
+      "Gopala Anumanchipalli",
+      "Philipp Wu",
+      "Trevor Darrell",
+      "Boyi Li",
+      "Pieter Abbeel",
+      "Jitendra Malik",
+      "Alexei A. Efros"
+    ],
+    "published": "2025-07-03T17:59:58+00:00",
+    "summary": "Robots must integrate multiple sensory modalities to act effectively in the real world. Yet, learning such multimodal policies at scale remains challenging. Simulation offers a viable solution, but while vision has benefited from high-fidelity simulators, other modalities (e.g. sound) can be notoriously difficult to simulate. As a result, sim-to-real transfer has succeeded primarily in vision-based tasks, with multimodal transfer still largely unrealized. In this work, we tackle these challenges by introducing MultiGen, a framework that integrates large-scale generative models into traditional physics simulators, enabling multisensory simulation. We showcase our framework on the dynamic task of robot pouring, which inherently relies on multimodal feedback. By synthesizing realistic audio conditioned on simulation video, our method enables training on rich audiovisual trajectories -- without any real robot data. We demonstrate effective zero-shot transfer to real-world pouring with novel containers and liquids, highlighting the potential of generative modeling to both simulate hard-to-model modalities and close the multimodal sim-to-real gap."
+  },
+  {
+    "title": "LiteReality: Graphics-Ready 3D Scene Reconstruction from RGB-D Scans",
+    "url": "http://arxiv.org/abs/2507.02861v1",
+    "arxiv_id": "2507.02861v1",
+    "authors": [
+      "Zhening Huang",
+      "Xiaoyang Wu",
+      "Fangcheng Zhong",
+      "Hengshuang Zhao",
+      "Matthias Nie\u00dfner",
+      "Joan Lasenby"
+    ],
+    "published": "2025-07-03T17:59:55+00:00",
+    "summary": "We propose LiteReality, a novel pipeline that converts RGB-D scans of indoor environments into compact, realistic, and interactive 3D virtual replicas. LiteReality not only reconstructs scenes that visually resemble reality but also supports key features essential for graphics pipelines -- such as object individuality, articulation, high-quality physically based rendering materials, and physically based interaction. At its core, LiteReality first performs scene understanding and parses the results into a coherent 3D layout and objects with the help of a structured scene graph. It then reconstructs the scene by retrieving the most visually similar 3D artist-crafted models from a curated asset database. Next, the Material Painting module enhances realism by recovering high-quality, spatially varying materials. Finally, the reconstructed scene is integrated into a simulation engine with basic physical properties to enable interactive behavior. The resulting scenes are compact, editable, and fully compatible with standard graphics pipelines, making them suitable for applications in AR/VR, gaming, robotics, and digital twins. In addition, LiteReality introduces a training-free object retrieval module that achieves state-of-the-art similarity performance on the Scan2CAD benchmark, along with a robust material painting module capable of transferring appearances from images of any style to 3D assets -- even under severe misalignment, occlusion, and poor lighting. We demonstrate the effectiveness of LiteReality on both real-life scans and public datasets. Project page: https://litereality.github.io; Video: https://www.youtube.com/watch?v=ecK9m3LXg2c"
+  },
+  {
+    "title": "RefTok: Reference-Based Tokenization for Video Generation",
+    "url": "http://arxiv.org/abs/2507.02862v1",
+    "arxiv_id": "2507.02862v1",
+    "authors": [
+      "Xiang Fan",
+      "Xiaohang Sun",
+      "Kushan Thakkar",
+      "Zhu Liu",
+      "Vimal Bhat",
+      "Ranjay Krishna",
+      "Xiang Hao"
+    ],
+    "published": "2025-07-03T17:59:55+00:00",
+    "summary": "Effectively handling temporal redundancy remains a key challenge in learning video models. Prevailing approaches often treat each set of frames independently, failing to effectively capture the temporal dependencies and redundancies inherent in videos. To address this limitation, we introduce RefTok, a novel reference-based tokenization method capable of capturing complex temporal dynamics and contextual information. Our method encodes and decodes sets of frames conditioned on an unquantized reference frame. When decoded, RefTok preserves the continuity of motion and the appearance of objects across frames. For example, RefTok retains facial details despite head motion, reconstructs text correctly, preserves small patterns, and maintains the legibility of handwriting from the context. Across 4 video datasets (K600, UCF-101, BAIR Robot Pushing, and DAVIS), RefTok significantly outperforms current state-of-the-art tokenizers (Cosmos and MAGVIT) and improves all evaluated metrics (PSNR, SSIM, LPIPS) by an average of 36.7% at the same or higher compression ratios. When a video generation model is trained using RefTok's latents on the BAIR Robot Pushing task, the generations not only outperform MAGVIT-B but the larger MAGVIT-L, which has 4x more parameters, across all generation metrics by an average of 27.9%."
+  },
+  {
+    "title": "MOTIF: Modular Thinking via Reinforcement Fine-tuning in LLMs",
+    "url": "http://arxiv.org/abs/2507.02851v1",
+    "arxiv_id": "2507.02851v1",
+    "authors": [
+      "Purbesh Mitra",
+      "Sennur Ulukus"
+    ],
+    "published": "2025-07-03T17:55:43+00:00",
+    "summary": "Recent advancements in the reasoning capabilities of large language models (LLMs) show that employing group relative policy optimization (GRPO) algorithm for reinforcement learning (RL) training allows the models to use more thinking/reasoning tokens for generating better responses. However, LLMs can generate only a finite amount of tokens while maintaining attention to the previously generated tokens. This limit, also known as the context size of an LLM, is a bottleneck in LLM reasoning with arbitrarily large number of tokens. To think beyond the limit of context size, an LLM must employ a modular thinking strategy to reason over multiple rounds. In this work, we propose $\\textbf{MOTIF: Modular Thinking via Reinforcement Finetuning}$ -- an RL training method for generating thinking tokens in multiple rounds, effectively allowing the model to think with additional context size. We trained the open-source model Qwen2.5-3B-Instruct on GSM8K dataset via parameter efficient fine-tuning and tested its accuracy on MATH500 and AIME2024 benchmarks. Our experiments show 3.8\\% and 3.3\\% improvements over vanilla GRPO based training in the respective benchmarks. Furthermore, this improvement was achieved with only 15\\% of samples, thus demonstrating sample efficiency of MOTIF. Our code and models are available at https://github.com/purbeshmitra/MOTIF and https://huggingface.co/purbeshmitra/MOTIF, respectively."
+  },
+  {
+    "title": "StepHint: Multi-level Stepwise Hints Enhance Reinforcement Learning to Reason",
+    "url": "http://arxiv.org/abs/2507.02841v1",
+    "arxiv_id": "2507.02841v1",
+    "authors": [
+      "Kaiyi Zhang",
+      "Ang Lv",
+      "Jinpeng Li",
+      "Yongbo Wang",
+      "Feng Wang",
+      "Haoyuan Hu",
+      "Rui Yan"
+    ],
+    "published": "2025-07-03T17:51:06+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) is a promising approach for improving the complex reasoning abilities of large language models (LLMs). However, current RLVR methods face two significant challenges: the near-miss reward problem, where a small mistake can invalidate an otherwise correct reasoning process, greatly hindering training efficiency; and exploration stagnation, where models tend to focus on solutions within their ``comfort zone,'' lacking the motivation to explore potentially more effective alternatives. To address these challenges, we propose StepHint, a novel RLVR algorithm that utilizes multi-level stepwise hints to help models explore the solution space more effectively. StepHint generates valid reasoning chains from stronger models and partitions these chains into reasoning steps using our proposed adaptive partitioning method. The initial few steps are used as hints, and simultaneously, multiple-level hints (each comprising a different number of steps) are provided to the model. This approach directs the model's exploration toward a promising solution subspace while preserving its flexibility for independent exploration. By providing hints, StepHint mitigates the near-miss reward problem, thereby improving training efficiency. Additionally, the external reasoning pathways help the model develop better reasoning abilities, enabling it to move beyond its ``comfort zone'' and mitigate exploration stagnation. StepHint outperforms competitive RLVR enhancement methods across six mathematical benchmarks, while also demonstrating superior generalization and excelling over baselines on out-of-domain benchmarks."
+  },
+  {
     "title": "AC-DiT: Adaptive Coordination Diffusion Transformer for Mobile Manipulation",
     "url": "http://arxiv.org/abs/2507.01961v1",
     "arxiv_id": "2507.01961v1",
