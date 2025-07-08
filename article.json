@@ -1,5 +1,89 @@
 [
   {
+    "title": "Beyond One Shot, Beyond One Perspective: Cross-View and Long-Horizon Distillation for Better LiDAR Representations",
+    "url": "http://arxiv.org/abs/2507.05260v1",
+    "arxiv_id": "2507.05260v1",
+    "authors": [
+      "Xiang Xu",
+      "Lingdong Kong",
+      "Song Wang",
+      "Chuanwei Zhou",
+      "Qingshan Liu"
+    ],
+    "published": "2025-07-07T17:59:58+00:00",
+    "summary": "LiDAR representation learning aims to extract rich structural and semantic information from large-scale, readily available datasets, reducing reliance on costly human annotations. However, existing LiDAR representation strategies often overlook the inherent spatiotemporal cues in LiDAR sequences, limiting their effectiveness. In this work, we propose LiMA, a novel long-term image-to-LiDAR Memory Aggregation framework that explicitly captures longer range temporal correlations to enhance LiDAR representation learning. LiMA comprises three key components: 1) a Cross-View Aggregation module that aligns and fuses overlapping regions across neighboring camera views, constructing a more unified and redundancy-free memory bank; 2) a Long-Term Feature Propagation mechanism that efficiently aligns and integrates multi-frame image features, reinforcing temporal coherence during LiDAR representation learning; and 3) a Cross-Sequence Memory Alignment strategy that enforces consistency across driving sequences, improving generalization to unseen environments. LiMA maintains high pretraining efficiency and incurs no additional computational overhead during downstream tasks. Extensive experiments on mainstream LiDAR-based perception benchmarks demonstrate that LiMA significantly improves both LiDAR semantic segmentation and 3D object detection. We hope this work inspires more effective pretraining paradigms for autonomous driving. The code has be made publicly accessible for future research."
+  },
+  {
+    "title": "Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for Visual Reasoning",
+    "url": "http://arxiv.org/abs/2507.05255v1",
+    "arxiv_id": "2507.05255v1",
+    "authors": [
+      "Yana Wei",
+      "Liang Zhao",
+      "Jianjian Sun",
+      "Kangheng Lin",
+      "Jisheng Yin",
+      "Jingcheng Hu",
+      "Yinmin Zhang",
+      "En Yu",
+      "Haoran Lv",
+      "Zejia Weng",
+      "Jia Wang",
+      "Chunrui Han",
+      "Yuang Peng",
+      "Qi Han",
+      "Zheng Ge",
+      "Xiangyu Zhang",
+      "Daxin Jiang",
+      "Vishal M. Patel"
+    ],
+    "published": "2025-07-07T17:59:03+00:00",
+    "summary": "The remarkable reasoning capability of large language models (LLMs) stems from cognitive behaviors that emerge through reinforcement with verifiable rewards. This work investigates how to transfer this principle to Multimodal LLMs (MLLMs) to unlock advanced visual reasoning. We introduce a two-stage paradigm built on Qwen2.5-VL-7B: a massive linguistic cold-start fine-tuning, followed by multimodal reinforcement learning (RL) spanning nearly 1,000 steps, surpassing all previous open-source efforts in scale. This pioneering work reveals three fundamental insights: 1) Behavior transfer emerges surprisingly early in cold start due to linguistic mental imagery. 2) Cold start broadly memorizes visual behaviors, while RL critically discerns and scales up effective patterns. 3) Transfer strategically favors high-utility behaviors such as visual reflection. Our resulting model, Open-Vision-Reasoner (OVR), achieves state-of-the-art performance on a suite of reasoning benchmarks, including 95.3% on MATH500, 51.8% on MathVision and 54.6% on MathVerse. We release our model, data, and training dynamics to catalyze the development of more capable, behavior-aligned multimodal reasoners."
+  },
+  {
+    "title": "From Marginal to Joint Predictions: Evaluating Scene-Consistent Trajectory Prediction Approaches for Automated Driving",
+    "url": "http://arxiv.org/abs/2507.05254v1",
+    "arxiv_id": "2507.05254v1",
+    "authors": [
+      "Fabian Konstantinidis",
+      "Ariel Dallari Guerreiro",
+      "Raphael Trumpp",
+      "Moritz Sackmann",
+      "Ulrich Hofmann",
+      "Marco Caccamo",
+      "Christoph Stiller"
+    ],
+    "published": "2025-07-07T17:58:53+00:00",
+    "summary": "Accurate motion prediction of surrounding traffic participants is crucial for the safe and efficient operation of automated vehicles in dynamic environments. Marginal prediction models commonly forecast each agent's future trajectories independently, often leading to sub-optimal planning decisions for an automated vehicle. In contrast, joint prediction models explicitly account for the interactions between agents, yielding socially and physically consistent predictions on a scene level. However, existing approaches differ not only in their problem formulation but also in the model architectures and implementation details used, making it difficult to compare them. In this work, we systematically investigate different approaches to joint motion prediction, including post-processing of the marginal predictions, explicitly training the model for joint predictions, and framing the problem as a generative task. We evaluate each approach in terms of prediction accuracy, multi-modality, and inference efficiency, offering a comprehensive analysis of the strengths and limitations of each approach. Several prediction examples are available at https://frommarginaltojointpred.github.io/."
+  },
+  {
+    "title": "Action Space Reduction Strategies for Reinforcement Learning in Autonomous Driving",
+    "url": "http://arxiv.org/abs/2507.05251v1",
+    "arxiv_id": "2507.05251v1",
+    "authors": [
+      "Elahe Delavari",
+      "Feeza Khan Khanzada",
+      "Jaerock Kwon"
+    ],
+    "published": "2025-07-07T17:58:08+00:00",
+    "summary": "Reinforcement Learning (RL) offers a promising framework for autonomous driving by enabling agents to learn control policies through interaction with environments. However, large and high-dimensional action spaces often used to support fine-grained control can impede training efficiency and increase exploration costs. In this study, we introduce and evaluate two novel structured action space modification strategies for RL in autonomous driving: dynamic masking and relative action space reduction. These approaches are systematically compared against fixed reduction schemes and full action space baselines to assess their impact on policy learning and performance. Our framework leverages a multimodal Proximal Policy Optimization agent that processes both semantic image sequences and scalar vehicle states. The proposed dynamic and relative strategies incorporate real-time action masking based on context and state transitions, preserving action consistency while eliminating invalid or suboptimal choices. Through comprehensive experiments across diverse driving routes, we show that action space reduction significantly improves training stability and policy performance. The dynamic and relative schemes, in particular, achieve a favorable balance between learning speed, control precision, and generalization. These findings highlight the importance of context-aware action space design for scalable and reliable RL in autonomous driving tasks."
+  },
+  {
+    "title": "Response Attack: Exploiting Contextual Priming to Jailbreak Large Language Models",
+    "url": "http://arxiv.org/abs/2507.05248v1",
+    "arxiv_id": "2507.05248v1",
+    "authors": [
+      "Ziqi Miao",
+      "Lijun Li",
+      "Yuan Xiong",
+      "Zhenhua Liu",
+      "Pengyu Zhu",
+      "Jing Shao"
+    ],
+    "published": "2025-07-07T17:56:05+00:00",
+    "summary": "Contextual priming, where earlier stimuli covertly bias later judgments, offers an unexplored attack surface for large language models (LLMs). We uncover a contextual priming vulnerability in which the previous response in the dialogue can steer its subsequent behavior toward policy-violating content. Building on this insight, we propose Response Attack, which uses an auxiliary LLM to generate a mildly harmful response to a paraphrased version of the original malicious query. They are then formatted into the dialogue and followed by a succinct trigger prompt, thereby priming the target model to generate harmful content. Across eight open-source and proprietary LLMs, RA consistently outperforms seven state-of-the-art jailbreak techniques, achieving higher attack success rates. To mitigate this threat, we construct and release a context-aware safety fine-tuning dataset, which significantly reduces the attack success rate while preserving model capabilities. The code and data are available at https://github.com/Dtc7w3PQ/Response-Attack."
+  },
+  {
     "title": "MultiGen: Using Multimodal Generation in Simulation to Learn Multimodal Policies in Real",
     "url": "http://arxiv.org/abs/2507.02864v1",
     "arxiv_id": "2507.02864v1",
