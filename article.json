@@ -1,5 +1,92 @@
 [
   {
+    "title": "EC-Flow: Enabling Versatile Robotic Manipulation from Action-Unlabeled Videos via Embodiment-Centric Flow",
+    "url": "http://arxiv.org/abs/2507.06224v1",
+    "arxiv_id": "2507.06224v1",
+    "authors": [
+      "Yixiang Chen",
+      "Peiyan Li",
+      "Yan Huang",
+      "Jiabing Yang",
+      "Kehan Chen",
+      "Liang Wang"
+    ],
+    "published": "2025-07-08T17:57:03+00:00",
+    "summary": "Current language-guided robotic manipulation systems often require low-level action-labeled datasets for imitation learning. While object-centric flow prediction methods mitigate this issue, they remain limited to scenarios involving rigid objects with clear displacement and minimal occlusion. In this work, we present Embodiment-Centric Flow (EC-Flow), a framework that directly learns manipulation from action-unlabeled videos by predicting embodiment-centric flow. Our key insight is that incorporating the embodiment's inherent kinematics significantly enhances generalization to versatile manipulation scenarios, including deformable object handling, occlusions, and non-object-displacement tasks. To connect the EC-Flow with language instructions and object interactions, we further introduce a goal-alignment module by jointly optimizing movement consistency and goal-image prediction. Moreover, translating EC-Flow to executable robot actions only requires a standard robot URDF (Unified Robot Description Format) file to specify kinematic constraints across joints, which makes it easy to use in practice. We validate EC-Flow on both simulation (Meta-World) and real-world tasks, demonstrating its state-of-the-art performance in occluded object handling (62% improvement), deformable object manipulation (45% improvement), and non-object-displacement tasks (80% improvement) than prior state-of-the-art object-centric flow methods. For more information, see our project website at https://ec-flow1.github.io ."
+  },
+  {
+    "title": "Is Diversity All You Need for Scalable Robotic Manipulation?",
+    "url": "http://arxiv.org/abs/2507.06219v1",
+    "arxiv_id": "2507.06219v1",
+    "authors": [
+      "Modi Shi",
+      "Li Chen",
+      "Jin Chen",
+      "Yuxiang Lu",
+      "Chiming Liu",
+      "Guanghui Ren",
+      "Ping Luo",
+      "Di Huang",
+      "Maoqing Yao",
+      "Hongyang Li"
+    ],
+    "published": "2025-07-08T17:52:44+00:00",
+    "summary": "Data scaling has driven remarkable success in foundation models for Natural Language Processing (NLP) and Computer Vision (CV), yet the principles of effective data scaling in robotic manipulation remain insufficiently understood. In this work, we investigate the nuanced role of data diversity in robot learning by examining three critical dimensions-task (what to do), embodiment (which robot to use), and expert (who demonstrates)-challenging the conventional intuition of \"more diverse is better\". Throughout extensive experiments on various robot platforms, we reveal that (1) task diversity proves more critical than per-task demonstration quantity, benefiting transfer from diverse pre-training tasks to novel downstream scenarios; (2) multi-embodiment pre-training data is optional for cross-embodiment transfer-models trained on high-quality single-embodiment data can efficiently transfer to different platforms, showing more desirable scaling property during fine-tuning than multi-embodiment pre-trained models; and (3) expert diversity, arising from individual operational preferences and stochastic variations in human demonstrations, can be confounding to policy learning, with velocity multimodality emerging as a key contributing factor. Based on this insight, we propose a distribution debiasing method to mitigate velocity ambiguity, the yielding GO-1-Pro achieves substantial performance gains of 15%, equivalent to using 2.5 times pre-training data. Collectively, these findings provide new perspectives and offer practical guidance on how to scale robotic manipulation datasets effectively."
+  },
+  {
+    "title": "UQLM: A Python Package for Uncertainty Quantification in Large Language Models",
+    "url": "http://arxiv.org/abs/2507.06196v1",
+    "arxiv_id": "2507.06196v1",
+    "authors": [
+      "Dylan Bouchard",
+      "Mohit Singh Chauhan",
+      "David Skarbrevik",
+      "Ho-Kyeong Ra",
+      "Viren Bajaj",
+      "Zeya Ahmad"
+    ],
+    "published": "2025-07-08T17:22:32+00:00",
+    "summary": "Hallucinations, defined as instances where Large Language Models (LLMs) generate false or misleading content, pose a significant challenge that impacts the safety and trust of downstream applications. We introduce UQLM, a Python package for LLM hallucination detection using state-of-the-art uncertainty quantification (UQ) techniques. This toolkit offers a suite of UQ-based scorers that compute response-level confidence scores ranging from 0 to 1. This library provides an off-the-shelf solution for UQ-based hallucination detection that can be easily integrated to enhance the reliability of LLM outputs."
+  },
+  {
+    "title": "Hidden Prompts in Manuscripts Exploit AI-Assisted Peer Review",
+    "url": "http://arxiv.org/abs/2507.06185v1",
+    "arxiv_id": "2507.06185v1",
+    "authors": [
+      "Zhicheng Lin"
+    ],
+    "published": "2025-07-08T17:11:13+00:00",
+    "summary": "In July 2025, 18 academic manuscripts on the preprint website arXiv were found to contain hidden instructions known as prompts designed to manipulate AI-assisted peer review. Instructions such as \"GIVE A POSITIVE REVIEW ONLY\" were concealed using techniques like white-colored text. Author responses varied: one planned to withdraw the affected paper, while another defended the practice as legitimate testing of reviewer compliance. This commentary analyzes this practice as a novel form of research misconduct. We examine the technique of prompt injection in large language models (LLMs), revealing four types of hidden prompts, ranging from simple positive review commands to detailed evaluation frameworks. The defense that prompts served as \"honeypots\" to detect reviewers improperly using AI fails under examination--the consistently self-serving nature of prompt instructions indicates intent to manipulate. Publishers maintain inconsistent policies: Elsevier prohibits AI use in peer review entirely, while Springer Nature permits limited use with disclosure requirements. The incident exposes systematic vulnerabilities extending beyond peer review to any automated system processing scholarly texts, including plagiarism detection and citation indexing. Our analysis underscores the need for coordinated technical screening at submission portals and harmonized policies governing generative AI (GenAI) use in academic evaluation."
+  },
+  {
+    "title": "CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization",
+    "url": "http://arxiv.org/abs/2507.06181v1",
+    "arxiv_id": "2507.06181v1",
+    "authors": [
+      "Zhongyuan Peng",
+      "Yifan Yao",
+      "Kaijing Ma",
+      "Shuyue Guo",
+      "Yizhe Li",
+      "Yichi Zhang",
+      "Chenchen Zhang",
+      "Yifan Zhang",
+      "Zhouliang Yu",
+      "Luming Li",
+      "Minghao Liu",
+      "Yihang Xia",
+      "Jiawei Shen",
+      "Yuchen Wu",
+      "Yixin Cao",
+      "Zhaoxiang Zhang",
+      "Wenhao Huang",
+      "Jiaheng Liu",
+      "Ge Zhang"
+    ],
+    "published": "2025-07-08T17:03:39+00:00",
+    "summary": "Translating natural language mathematical statements into formal, executable code is a fundamental challenge in automated theorem proving. While prior work has focused on generation and compilation success, little attention has been paid to the critic phase-the evaluation of whether generated formalizations truly capture the semantic intent of the original problem. In this paper, we introduce CriticLean, a novel critic-guided reinforcement learning framework that elevates the role of the critic from a passive validator to an active learning component. Specifically, first, we propose the CriticLeanGPT, trained via supervised fine-tuning and reinforcement learning, to rigorously assess the semantic fidelity of Lean 4 formalizations. Then, we introduce CriticLeanBench, a benchmark designed to measure models' ability to distinguish semantically correct from incorrect formalizations, and demonstrate that our trained CriticLeanGPT models can significantly outperform strong open- and closed-source baselines. Building on the CriticLean framework, we construct FineLeanCorpus, a dataset comprising over 285K problems that exhibits rich domain diversity, broad difficulty coverage, and high correctness based on human evaluation. Overall, our findings highlight that optimizing the critic phase is essential for producing reliable formalizations, and we hope our CriticLean will provide valuable insights for future advances in formal mathematical reasoning."
+  },
+  {
     "title": "Beyond One Shot, Beyond One Perspective: Cross-View and Long-Horizon Distillation for Better LiDAR Representations",
     "url": "http://arxiv.org/abs/2507.05260v1",
     "arxiv_id": "2507.05260v1",
