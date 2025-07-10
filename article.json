@@ -1,5 +1,89 @@
 [
   {
+    "title": "Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data",
+    "url": "http://arxiv.org/abs/2507.07095v1",
+    "arxiv_id": "2507.07095v1",
+    "authors": [
+      "Ke Fan",
+      "Shunlin Lu",
+      "Minyue Dai",
+      "Runyi Yu",
+      "Lixing Xiao",
+      "Zhiyang Dou",
+      "Junting Dong",
+      "Lizhuang Ma",
+      "Jingbo Wang"
+    ],
+    "published": "2025-07-09T17:52:04+00:00",
+    "summary": "Generating diverse and natural human motion sequences based on textual descriptions constitutes a fundamental and challenging research area within the domains of computer vision, graphics, and robotics. Despite significant advancements in this field, current methodologies often face challenges regarding zero-shot generalization capabilities, largely attributable to the limited size of training datasets. Moreover, the lack of a comprehensive evaluation framework impedes the advancement of this task by failing to identify directions for improvement. In this work, we aim to push text-to-motion into a new era, that is, to achieve the generalization ability of zero-shot. To this end, firstly, we develop an efficient annotation pipeline and introduce MotionMillion-the largest human motion dataset to date, featuring over 2,000 hours and 2 million high-quality motion sequences. Additionally, we propose MotionMillion-Eval, the most comprehensive benchmark for evaluating zero-shot motion generation. Leveraging a scalable architecture, we scale our model to 7B parameters and validate its performance on MotionMillion-Eval. Our results demonstrate strong generalization to out-of-domain and complex compositional motions, marking a significant step toward zero-shot human motion generation. The code is available at https://github.com/VankouF/MotionMillion-Codes."
+  },
+  {
+    "title": "Graph-Based Complexity Metrics for Multi-Agent Curriculum Learning: A Validated Approach to Task Ordering in Cooperative Coordination Environments",
+    "url": "http://arxiv.org/abs/2507.07074v1",
+    "arxiv_id": "2507.07074v1",
+    "authors": [
+      "Farhaan Ebadulla",
+      "Dharini Hindlatti",
+      "Srinivaasan NS",
+      "Apoorva VH",
+      "Ayman Aftab"
+    ],
+    "published": "2025-07-09T17:31:35+00:00",
+    "summary": "Multi-agent reinforcement learning (MARL) faces significant challenges in task sequencing and curriculum design, particularly for cooperative coordination scenarios. While curriculum learning has demonstrated success in single-agent domains, principled approaches for multi-agent coordination remain limited due to the absence of validated task complexity metrics. This approach presents a graph-based coordination complexity metric that integrates agent dependency entropy, spatial interference patterns, and goal overlap analysis to predict task difficulty in multi-agent environments. The complexity metric achieves strong empirical validation with rho = 0.952 correlation (p < 0.001) between predicted complexity and empirical difficulty determined by random agent performance evaluation. This approach evaluates the curriculum learning framework using MADDPG across two distinct coordination environments: achieving 56x performance improvement in tight coordination tasks (MultiWalker) and demonstrating systematic task progression in cooperative navigation (Simple Spread). Through systematic analysis, coordination tightness emerges as a predictor of curriculum learning effectiveness, where environments requiring strict agent interdependence benefit substantially from structured progression. This approach provides a validated complexity metric for multi-agent curriculum design and establishes empirical guidelines for multi-robot coordination applications."
+  },
+  {
+    "title": "Emergent Multiferroic Altermagnets and Spin Control via Noncollinear Molecular Polarization",
+    "url": "http://arxiv.org/abs/2507.07039v1",
+    "arxiv_id": "2507.07039v1",
+    "authors": [
+      "Ziye Zhu",
+      "Yuntian Liu",
+      "Xunkai Duan",
+      "Jiayong Zhang",
+      "Bowen Hao",
+      "Su-Huai Wei",
+      "Igor Zutic",
+      "Tong Zhou"
+    ],
+    "published": "2025-07-09T17:05:24+00:00",
+    "summary": "Altermagnets, with spin splitting and vanishing magnetization, have been attributed to many fascinating phenomena and potential applications. In particular, integrating ferroelectricity with altermagnetism to enable magnetoelectric coupling and electric control of spin has drawn significant attention. However, its experimental realization and precise spin manipulation remain elusive. Here, by focusing on molecular ferroelectrics, the first discovered ferroelectrics renowned for their highly controllable molecular polarizations and structural flexibility, we reveal that these obstacles can be removed by an emergent multiferroic altermagnets with tunable spin polarization in a large class of fabricated organic materials. Using a symmetry-based design and a tight-binding model, we uncover the underlying mechanism of such molecular ferroelectric altermagnets and demonstrate how noncollinear molecular polarization can switch the spin polarization on and off and even reverse its sign. From the first-principles calculations, we verify the feasibility of these materials in a series of well-established hybrid organic-inorganic perovskites and metal-organic frameworks. Our findings bridge molecular ferroelectrics and altermagnetic spintronics, highlighting an unexplored potential of multifunctional organic multiferroics."
+  },
+  {
+    "title": "First Return, Entropy-Eliciting Explore",
+    "url": "http://arxiv.org/abs/2507.07017v1",
+    "arxiv_id": "2507.07017v1",
+    "authors": [
+      "Tianyu Zheng",
+      "Tianshun Xing",
+      "Qingshui Gu",
+      "Taoran Liang",
+      "Xingwei Qu",
+      "Xin Zhou",
+      "Yizhi Li",
+      "Zhoufutu Wen",
+      "Chenghua Lin",
+      "Wenhao Huang",
+      "Qian Liu",
+      "Ge Zhang",
+      "Zejun Ma"
+    ],
+    "published": "2025-07-09T16:45:48+00:00",
+    "summary": "Reinforcement Learning from Verifiable Rewards (RLVR) improves the reasoning abilities of Large Language Models (LLMs) but it struggles with unstable exploration. We propose FR3E (First Return, Entropy-Eliciting Explore), a structured exploration framework that identifies high-uncertainty decision points in reasoning trajectories and performs targeted rollouts to construct semantically grounded intermediate feedback. Our method provides targeted guidance without relying on dense supervision. Empirical results on mathematical reasoning benchmarks(AIME24) show that FR3E promotes more stable training, produces longer and more coherent responses, and increases the proportion of fully correct trajectories. These results highlight the framework's effectiveness in improving LLM reasoning through more robust and structured exploration."
+  },
+  {
+    "title": "When Context Is Not Enough: Modeling Unexplained Variability in Car-Following Behavior",
+    "url": "http://arxiv.org/abs/2507.07012v1",
+    "arxiv_id": "2507.07012v1",
+    "authors": [
+      "Chengyuan Zhang",
+      "Zhengbing He",
+      "Cathy Wu",
+      "Lijun Sun"
+    ],
+    "published": "2025-07-09T16:42:41+00:00",
+    "summary": "Modeling car-following behavior is fundamental to microscopic traffic simulation, yet traditional deterministic models often fail to capture the full extent of variability and unpredictability in human driving. While many modern approaches incorporate context-aware inputs (e.g., spacing, speed, relative speed), they frequently overlook structured stochasticity that arises from latent driver intentions, perception errors, and memory effects -- factors that are not directly observable from context alone. To fill the gap, this study introduces an interpretable stochastic modeling framework that captures not only context-dependent dynamics but also residual variability beyond what context can explain. Leveraging deep neural networks integrated with nonstationary Gaussian processes (GPs), our model employs a scenario-adaptive Gibbs kernel to learn dynamic temporal correlations in acceleration decisions, where the strength and duration of correlations between acceleration decisions evolve with the driving context. This formulation enables a principled, data-driven quantification of uncertainty in acceleration, speed, and spacing, grounded in both observable context and latent behavioral variability. Comprehensive experiments on the naturalistic vehicle trajectory dataset collected from the German highway, i.e., the HighD dataset, demonstrate that the proposed stochastic simulation method within this framework surpasses conventional methods in both predictive performance and interpretable uncertainty quantification. The integration of interpretability and accuracy makes this framework a promising tool for traffic analysis and safety-critical applications."
+  },
+  {
     "title": "EC-Flow: Enabling Versatile Robotic Manipulation from Action-Unlabeled Videos via Embodiment-Centric Flow",
     "url": "http://arxiv.org/abs/2507.06224v1",
     "arxiv_id": "2507.06224v1",
