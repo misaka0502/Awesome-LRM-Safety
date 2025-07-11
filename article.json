@@ -1,5 +1,100 @@
 [
   {
+    "title": "Traceable Evidence Enhanced Visual Grounded Reasoning: Evaluation and Methodology",
+    "url": "http://arxiv.org/abs/2507.07999v1",
+    "arxiv_id": "2507.07999v1",
+    "authors": [
+      "Haochen Wang",
+      "Xiangtai Li",
+      "Zilong Huang",
+      "Anran Wang",
+      "Jiacong Wang",
+      "Tao Zhang",
+      "Jiani Zheng",
+      "Sule Bai",
+      "Zijian Kang",
+      "Jiashi Feng",
+      "Zhuochen Wang",
+      "Zhaoxiang Zhang"
+    ],
+    "published": "2025-07-10T17:59:58+00:00",
+    "summary": "Models like OpenAI-o3 pioneer visual grounded reasoning by dynamically referencing visual regions, just like human \"thinking with images\". However, no benchmark exists to evaluate these capabilities holistically. To bridge this gap, we propose TreeBench (Traceable Evidence Evaluation Benchmark), a diagnostic benchmark built on three principles: (1) focused visual perception of subtle targets in complex scenes, (2) traceable evidence via bounding box evaluation, and (3) second-order reasoning to test object interactions and spatial hierarchies beyond simple object localization. Prioritizing images with dense objects, we initially sample 1K high-quality images from SA-1B, and incorporate eight LMM experts to manually annotate questions, candidate options, and answers for each image. After three stages of quality control, TreeBench consists of 405 challenging visual question-answering pairs, even the most advanced models struggle with this benchmark, where none of them reach 60% accuracy, e.g., OpenAI-o3 scores only 54.87. Furthermore, we introduce TreeVGR (Traceable Evidence Enhanced Visual Grounded Reasoning), a training paradigm to supervise localization and reasoning jointly with reinforcement learning, enabling accurate localizations and explainable reasoning pathways. Initialized from Qwen2.5-VL-7B, it improves V* Bench (+16.8), MME-RealWorld (+12.6), and TreeBench (+13.4), proving traceability is key to advancing vision-grounded reasoning. The code is available at https://github.com/Haochen-Wang409/TreeVGR."
+  },
+  {
+    "title": "Single-pass Adaptive Image Tokenization for Minimum Program Search",
+    "url": "http://arxiv.org/abs/2507.07995v1",
+    "arxiv_id": "2507.07995v1",
+    "authors": [
+      "Shivam Duggal",
+      "Sanghyun Byun",
+      "William T. Freeman",
+      "Antonio Torralba",
+      "Phillip Isola"
+    ],
+    "published": "2025-07-10T17:59:53+00:00",
+    "summary": "According to Algorithmic Information Theory (AIT) -- Intelligent representations compress data into the shortest possible program that can reconstruct its content, exhibiting low Kolmogorov Complexity (KC). In contrast, most visual representation learning systems use fixed-length representations for all inputs, ignoring variations in complexity or familiarity. Recent adaptive tokenization methods address this by allocating variable-length representations but typically require test-time search over multiple encodings to find the most predictive one. Inspired by Kolmogorov Complexity principles, we propose a single-pass adaptive tokenizer, KARL, which predicts the appropriate number of tokens for an image in a single forward pass, halting once its approximate KC is reached. The token count serves as a proxy for the minimum description length. KARL's training procedure closely resembles the Upside-Down Reinforcement Learning paradigm, as it learns to conditionally predict token halting based on a desired reconstruction quality. KARL matches the performance of recent adaptive tokenizers while operating in a single pass. We present scaling laws for KARL, analyzing the role of encoder/decoder size, continuous vs. discrete tokenization and more. Additionally, we offer a conceptual study drawing an analogy between Adaptive Image Tokenization and Algorithmic Information Theory, examining the predicted image complexity (KC) across axes such as structure vs. noise and in- vs. out-of-distribution familiarity -- revealing alignment with human intuition."
+  },
+  {
+    "title": "Skip a Layer or Loop it? Test-Time Depth Adaptation of Pretrained LLMs",
+    "url": "http://arxiv.org/abs/2507.07996v1",
+    "arxiv_id": "2507.07996v1",
+    "authors": [
+      "Ziyue Li",
+      "Yang Li",
+      "Tianyi Zhou"
+    ],
+    "published": "2025-07-10T17:59:53+00:00",
+    "summary": "Can a pretrained neural network adapt its architecture to different inputs without any finetuning? Do we need all layers for simple tasks, and are they adequate for challenging tasks? We found that the layers of a pretrained large language model (LLM) can be manipulated as separate modules to build a better and even shallower model customized for each test sample. In particular, each layer from the pretrained model can be skipped/pruned or repeated multiple times as recurrent neural networks (RNN), and stacked with others in arbitrary orders, yielding a chain-of-layers (CoLa) per sample. This compositional space greatly expands the scope of existing works on looped/recurrent pretrained modules, layer pruning, or early-exit networks. We develop a Monte Carlo Tree Search (MCTS) protocol to explore and identify the optimal CoLa for each sample from math and commonsense reasoning benchmarks. Compared to a static model of a fixed depth, CoLa allows shortcut paths (fast thinking), recurrence of the same layer(s) (slow thinking), and combining both, offering more flexible, dynamic architectures for different inputs. We conduct an extensive analysis of the MCTS-optimized CoLa, which leads to two key findings: (1) For >75% of samples with correct predictions by the original LLM, we can find shorter CoLa, suggesting a large space for improving inference efficiency; (2) For >60% of samples with originally incorrect predictions, we can identify CoLa achieving correct predictions, suggesting a large space of performance enhancement. Our results highlight the shortcomings of using a fixed architecture of pre-trained LLMs for inference on different samples and pave the way to unlock the generalization power of test-time depth adaptation."
+  },
+  {
+    "title": "Purcell enhancement of photogalvanic currents in a van der Waals plasmonic self-cavity",
+    "url": "http://arxiv.org/abs/2507.07987v1",
+    "arxiv_id": "2507.07987v1",
+    "authors": [
+      "Xinyu Li",
+      "Jesse Hagelstein",
+      "Gunda Kipp",
+      "Felix Sturm",
+      "Kateryna Kusyak",
+      "Yunfei Huang",
+      "Benedikt F. Schulte",
+      "Alexander M. Potts",
+      "Jonathan Stensberg",
+      "Victoria Quir\u00f3s-Cordero",
+      "Chiara Trovatello",
+      "Zhi Hao Peng",
+      "Chaowei Hu",
+      "Jonathan M. DeStefano",
+      "Michael Fechner",
+      "Takashi Taniguchi",
+      "Kenji Watanabe",
+      "P. James Schuck",
+      "Xiaodong Xu",
+      "Jiun-Haw Chu",
+      "Xiaoyang Zhu",
+      "Angel Rubio",
+      "Marios H. Michael",
+      "Matthew W. Day",
+      "Hope M. Bretscher",
+      "James W. McIver"
+    ],
+    "published": "2025-07-10T17:58:15+00:00",
+    "summary": "Cavities provide a means to manipulate the optical and electronic responses of quantum materials by selectively enhancing light-matter interaction at specific frequencies and momenta. While cavities typically involve external structures, exfoliated flakes of van der Waals (vdW) materials can form intrinsic self-cavities due to their small finite dimensions, confining electromagnetic fields into plasmonic cavity modes, characterized by standing-wave current distributions. While cavity-enhanced phenomena are well-studied at optical frequencies, the impact of self-cavities on nonlinear electronic responses--such as photogalvanic currents--remains largely unexplored, particularly in the terahertz regime, critical for emerging ultrafast optoelectronic technologies. Here, we report a self-cavity-induced Purcell enhancement of photogalvanic currents in the vdW semimetal WTe$_2$. Using ultrafast optoelectronic circuitry, we measured coherent near-field THz emission resulting from nonlinear photocurrents excited at the sample edges. We observed enhanced emission at finite frequencies, tunable via excitation fluence and sample geometry, which we attribute to plasmonic interference effects controlled by the cavity boundaries. We developed an analytical theory that captures the cavity resonance conditions and spectral response across multiple devices. Our findings establish WTe$_2$ as a bias-free, geometry-tunable THz emitter and demonstrate the potential of self-cavity engineering for controlling nonlinear, nonequilibrium dynamics in quantum materials."
+  },
+  {
+    "title": "EXPO: Stable Reinforcement Learning with Expressive Policies",
+    "url": "http://arxiv.org/abs/2507.07986v1",
+    "arxiv_id": "2507.07986v1",
+    "authors": [
+      "Perry Dong",
+      "Qiyang Li",
+      "Dorsa Sadigh",
+      "Chelsea Finn"
+    ],
+    "published": "2025-07-10T17:57:46+00:00",
+    "summary": "We study the problem of training and fine-tuning expressive policies with online reinforcement learning (RL) given an offline dataset. Training expressive policy classes with online RL present a unique challenge of stable value maximization. Unlike simpler Gaussian policies commonly used in online RL, expressive policies like diffusion and flow-matching policies are parameterized by a long denoising chain, which hinders stable gradient propagation from actions to policy parameters when optimizing against some value function. Our key insight is that we can address stable value maximization by avoiding direct optimization over value with the expressive policy and instead construct an on-the-fly RL policy to maximize Q-value. We propose Expressive Policy Optimization (EXPO), a sample-efficient online RL algorithm that utilizes an on-the-fly policy to maximize value with two parameterized policies -- a larger expressive base policy trained with a stable imitation learning objective and a light-weight Gaussian edit policy that edits the actions sampled from the base policy toward a higher value distribution. The on-the-fly policy optimizes the actions from the base policy with the learned edit policy and chooses the value maximizing action from the base and edited actions for both sampling and temporal-difference (TD) backup. Our approach yields up to 2-3x improvement in sample efficiency on average over prior methods both in the setting of fine-tuning a pretrained policy given offline data and in leveraging offline data to train online."
+  },
+  {
     "title": "Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data",
     "url": "http://arxiv.org/abs/2507.07095v1",
     "arxiv_id": "2507.07095v1",
