@@ -1,5 +1,82 @@
 [
   {
+    "title": "Multi-frequency analysis of the ALMA and VLA high resolution continuum observations of the substructured disc around CI Tau. Preference for sub-mm-sized low-porosity amorphous carbonaceous grains",
+    "url": "http://arxiv.org/abs/2507.08797v1",
+    "arxiv_id": "2507.08797v1",
+    "authors": [
+      "Francesco Zagaria",
+      "Stefano Facchini",
+      "Pietro Curone",
+      "Jonathan P. Williams",
+      "Cathie J. Clarke",
+      "\u00c1lvaro Ribas",
+      "Marco Tazzari",
+      "Enrique Mac\u00edas",
+      "Richard A. Booth",
+      "Giovanni P. Rosotti",
+      "Leonardo Testi"
+    ],
+    "published": "2025-07-11T17:58:24+00:00",
+    "summary": "(Abridged) We present high angular resolution and sensitivity ALMA 3.1 mm and VLA 9.1 mm observations of the disc around CI Tau. These new data were combined with similar-resolution archival ALMA 0.9 and 1.3 mm observations and new and archival VLA 7.1 mm, 2.0, 3.0, and 6.0 cm photometry to study the properties of dust in this system. At wavelengths <3.1 mm, CI Tau's continuum emission is very extended and highly substructured (with three gaps, four rings, and two additional gap-ring pairs identified by non-parametric visibility modelling). Instead, the VLA 9.1 mm data are dominated by a bright central component, only partially (< 50%) due to dust emission, surrounded by a marginally detected, faint, and smooth halo. We fitted the ALMA and VLA 9.1 mm data together, adopting a physical model that accounts for the effects of dust absorption and scattering. For our fiducial dust composition (\"Ricci\" opacities), we retrieved a flat maximum grain size distribution across the disc radius of $(7.1\\pm0.8)\\times10^{-2}$ cm, that we tentatively attributed to fragmentation of fragile dust or bouncing. We tested, for the first time, the dependence of our results on the adopted dust composition model to assess which mixture can best reproduce the observations. We found that the \"Ricci\" opacities work better than the traditionally adopted \"DSHARP\" ones, while graphite-rich mixtures perform significantly worse. We also show that, for our fiducial composition, the data prefer low-porosity (< 70%) grains, in contrast with claims of highly porous aggregates in younger sources, which we tentatively justified by time-dependent compaction. Our results are in line with constraints from disc population synthesis models and naturally arise from CI Tau's peculiar spectral behaviour, making this disc an ideal target for deeper cm-wavelength and dust polarisation follow-ups."
+  },
+  {
+    "title": "One Token to Fool LLM-as-a-Judge",
+    "url": "http://arxiv.org/abs/2507.08794v1",
+    "arxiv_id": "2507.08794v1",
+    "authors": [
+      "Yulai Zhao",
+      "Haolin Liu",
+      "Dian Yu",
+      "S. Y. Kung",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "published": "2025-07-11T17:55:22+00:00",
+    "summary": "Generative reward models (also known as LLMs-as-judges), which use large language models (LLMs) to evaluate answer quality, are increasingly adopted in reinforcement learning with verifiable rewards (RLVR). They are often preferred over rigid rule-based metrics, especially for complex reasoning tasks involving free-form outputs. In this paradigm, an LLM is typically prompted to compare a candidate answer against a ground-truth reference and assign a binary reward indicating correctness. Despite the seeming simplicity of this comparison task, we find that generative reward models exhibit surprising vulnerabilities to superficial manipulations: non-word symbols (e.g., \":\" or \".\") or reasoning openers like \"Thought process:\" and \"Let's solve this problem step by step.\" can often lead to false positive rewards. We demonstrate that this weakness is widespread across LLMs, datasets, and prompt formats, posing a serious threat for core algorithmic paradigms that rely on generative reward models, such as rejection sampling, preference optimization, and RLVR. To mitigate this issue, we introduce a simple yet effective data augmentation strategy and train a new generative reward model with substantially improved robustness. Our findings highlight the urgent need for more reliable LLM-based evaluation methods. We release our robust, general-domain reward model and its synthetic training data at https://huggingface.co/sarosavo/Master-RM and https://huggingface.co/datasets/sarosavo/Master-RM."
+  },
+  {
+    "title": "Optimistic Exploration for Risk-Averse Constrained Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2507.08793v1",
+    "arxiv_id": "2507.08793v1",
+    "authors": [
+      "James McCarthy",
+      "Radu Marinescu",
+      "Elizabeth Daly",
+      "Ivana Dusparic"
+    ],
+    "published": "2025-07-11T17:54:54+00:00",
+    "summary": "Risk-averse Constrained Reinforcement Learning (RaCRL) aims to learn policies that minimise the likelihood of rare and catastrophic constraint violations caused by an environment's inherent randomness. In general, risk-aversion leads to conservative exploration of the environment which typically results in converging to sub-optimal policies that fail to adequately maximise reward or, in some cases, fail to achieve the goal. In this paper, we propose an exploration-based approach for RaCRL called Optimistic Risk-averse Actor Critic (ORAC), which constructs an exploratory policy by maximising a local upper confidence bound of the state-action reward value function whilst minimising a local lower confidence bound of the risk-averse state-action cost value function. Specifically, at each step, the weighting assigned to the cost value is increased or decreased if it exceeds or falls below the safety constraint value. This way the policy is encouraged to explore uncertain regions of the environment to discover high reward states whilst still satisfying the safety constraints. Our experimental results demonstrate that the ORAC approach prevents convergence to sub-optimal policies and improves significantly the reward-cost trade-off in various continuous control tasks such as Safety-Gymnasium and a complex building energy management environment CityLearn."
+  },
+  {
+    "title": "Angular momentum dynamics of vortex particles in accelerators",
+    "url": "http://arxiv.org/abs/2507.08763v1",
+    "arxiv_id": "2507.08763v1",
+    "authors": [
+      "D. Karlovets",
+      "D. Grosman",
+      "I. Pavlov"
+    ],
+    "published": "2025-07-11T17:20:08+00:00",
+    "summary": "Experiments with spin-polarized beams of leptons and hadrons typically employ plane-wave states with definite momenta and energies. In contrast, vortex states represent cylindrical waves carrying a well-defined orbital angular momentum projection along the propagation direction. This projection can be arbitrarily large, endowing such particles with magnetic moments orders of magnitude greater than those of plane-wave states. Consequently, vortex particles could complement - or even replace - spin-polarized beams in high-energy collisions, enabling access to observables beyond the reach of the conventional states. Although relativistic vortex beams have yet to be realized, we investigate the radiative and non-radiative dynamics of angular momentum for vortex particles in accelerators. We compute the timescale for angular momentum loss via photon emission, finding it significantly longer than typical acceleration times. The non-radiative dynamics is governed by precession, with the orbital angular momentum precessing at a frequency markedly different from that of spin. Similar to spin tunes in circular accelerators, this can induce resonances that disrupt the beam's orbital momentum - occurring far more frequently for vortex beams than for spin-polarized ones. Thus, vortex particle acceleration can be more feasible in linacs, while Siberian snakes could serve as a tool for angular momentum manipulations."
+  },
+  {
+    "title": "Penalizing Infeasible Actions and Reward Scaling in Reinforcement Learning with Offline Data",
+    "url": "http://arxiv.org/abs/2507.08761v1",
+    "arxiv_id": "2507.08761v1",
+    "authors": [
+      "Jeonghye Kim",
+      "Yongjae Shin",
+      "Whiyoung Jung",
+      "Sunghoon Hong",
+      "Deunsol Yoon",
+      "Youngchul Sung",
+      "Kanghoon Lee",
+      "Woohyung Lim"
+    ],
+    "published": "2025-07-11T17:16:02+00:00",
+    "summary": "Reinforcement learning with offline data suffers from Q-value extrapolation errors. To address this issue, we first demonstrate that linear extrapolation of the Q-function beyond the data range is particularly problematic. To mitigate this, we propose guiding the gradual decrease of Q-values outside the data range, which is achieved through reward scaling with layer normalization (RS-LN) and a penalization mechanism for infeasible actions (PA). By combining RS-LN and PA, we develop a new algorithm called PARS. We evaluate PARS across a range of tasks, demonstrating superior performance compared to state-of-the-art algorithms in both offline training and online fine-tuning on the D4RL benchmark, with notable success in the challenging AntMaze Ultra task."
+  },
+  {
     "title": "Traceable Evidence Enhanced Visual Grounded Reasoning: Evaluation and Methodology",
     "url": "http://arxiv.org/abs/2507.07999v1",
     "arxiv_id": "2507.07999v1",
