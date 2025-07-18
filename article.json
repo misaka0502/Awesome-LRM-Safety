@@ -1,5 +1,75 @@
 [
   {
+    "title": "VisionThink: Smart and Efficient Vision Language Model via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2507.13348v1",
+    "arxiv_id": "2507.13348v1",
+    "authors": [
+      "Senqiao Yang",
+      "Junyi Li",
+      "Xin Lai",
+      "Bei Yu",
+      "Hengshuang Zhao",
+      "Jiaya Jia"
+    ],
+    "published": "2025-07-17T17:59:55+00:00",
+    "summary": "Recent advancements in vision-language models (VLMs) have improved performance by increasing the number of visual tokens, which are often significantly longer than text tokens. However, we observe that most real-world scenarios do not require such an extensive number of visual tokens. While the performance drops significantly in a small subset of OCR-related tasks, models still perform accurately in most other general VQA tasks with only 1/4 resolution. Therefore, we propose to dynamically process distinct samples with different resolutions, and present a new paradigm for visual token compression, namely, VisionThink. It starts with a downsampled image and smartly decides whether it is sufficient for problem solving. Otherwise, the model could output a special token to request the higher-resolution image. Compared to existing Efficient VLM methods that compress tokens using fixed pruning ratios or thresholds, VisionThink autonomously decides whether to compress tokens case by case. As a result, it demonstrates strong fine-grained visual understanding capability on OCR-related tasks, and meanwhile saves substantial visual tokens on simpler tasks. We adopt reinforcement learning and propose the LLM-as-Judge strategy to successfully apply RL to general VQA tasks. Moreover, we carefully design a reward function and penalty mechanism to achieve a stable and reasonable image resize call ratio. Extensive experiments demonstrate the superiority, efficiency, and effectiveness of our method. Our code is available at https://github.com/dvlab-research/VisionThink."
+  },
+  {
+    "title": "Latent Policy Steering with Embodiment-Agnostic Pretrained World Models",
+    "url": "http://arxiv.org/abs/2507.13340v1",
+    "arxiv_id": "2507.13340v1",
+    "authors": [
+      "Yiqi Wang",
+      "Mrinal Verghese",
+      "Jeff Schneider"
+    ],
+    "published": "2025-07-17T17:57:57+00:00",
+    "summary": "Learning visuomotor policies via imitation has proven effective across a wide range of robotic domains. However, the performance of these policies is heavily dependent on the number of training demonstrations, which requires expensive data collection in the real world. In this work, we aim to reduce data collection efforts when learning visuomotor robot policies by leveraging existing or cost-effective data from a wide range of embodiments, such as public robot datasets and the datasets of humans playing with objects (human data from play). Our approach leverages two key insights. First, we use optic flow as an embodiment-agnostic action representation to train a World Model (WM) across multi-embodiment datasets, and finetune it on a small amount of robot data from the target embodiment. Second, we develop a method, Latent Policy Steering (LPS), to improve the output of a behavior-cloned policy by searching in the latent space of the WM for better action sequences. In real world experiments, we observe significant improvements in the performance of policies trained with a small amount of data (over 50% relative improvement with 30 demonstrations and over 20% relative improvement with 50 demonstrations) by combining the policy with a WM pretrained on two thousand episodes sampled from the existing Open X-embodiment dataset across different robots or a cost-effective human dataset from play."
+  },
+  {
+    "title": "The Imitation Game: Turing Machine Imitator is Length Generalizable Reasoner",
+    "url": "http://arxiv.org/abs/2507.13332v1",
+    "arxiv_id": "2507.13332v1",
+    "authors": [
+      "Zhouqi Hua",
+      "Wenwei Zhang",
+      "Chengqi Lyu",
+      "Yuzhe Gu",
+      "Songyang Gao",
+      "Kuikun Liu",
+      "Kai Chen"
+    ],
+    "published": "2025-07-17T17:50:07+00:00",
+    "summary": "Length generalization, the ability to solve problems of longer sequences than those observed during training, poses a core challenge of Transformer-based large language models (LLM). Although existing studies have predominantly focused on data-driven approaches for arithmetic operations and symbolic manipulation tasks, these approaches tend to be task-specific with limited overall performance. To pursue a more general solution, this paper focuses on a broader case of reasoning problems that are computable, i.e., problems that algorithms can solve, thus can be solved by the Turing Machine. From this perspective, this paper proposes Turing MAchine Imitation Learning (TAIL) to improve the length generalization ability of LLMs. TAIL synthesizes chain-of-thoughts (CoT) data that imitate the execution process of a Turing Machine by computer programs, which linearly expands the reasoning steps into atomic states to alleviate shortcut learning and explicit memory fetch mechanism to reduce the difficulties of dynamic and long-range data access in elementary operations. To validate the reliability and universality of TAIL, we construct a challenging synthetic dataset covering 8 classes of algorithms and 18 tasks. Without bells and whistles, TAIL significantly improves the length generalization ability as well as the performance of Qwen2.5-7B on various tasks using only synthetic data, surpassing previous methods and DeepSeek-R1. The experimental results reveal that the key concepts in the Turing Machine, instead of the thinking styles, are indispensable for TAIL for length generalization, through which the model exhibits read-and-write behaviors consistent with the properties of the Turing Machine in their attention layers. This work provides a promising direction for future research in the learning of LLM reasoning from synthetic data."
+  },
+  {
+    "title": "Evaluating Reinforcement Learning Algorithms for Navigation in Simulated Robotic Quadrupeds: A Comparative Study Inspired by Guide Dog Behaviour",
+    "url": "http://arxiv.org/abs/2507.13277v1",
+    "arxiv_id": "2507.13277v1",
+    "authors": [
+      "Emma M. A. Harrison"
+    ],
+    "published": "2025-07-17T16:38:14+00:00",
+    "summary": "Robots are increasingly integrated across industries, particularly in healthcare. However, many valuable applications for quadrupedal robots remain overlooked. This research explores the effectiveness of three reinforcement learning algorithms in training a simulated quadruped robot for autonomous navigation and obstacle avoidance. The goal is to develop a robotic guide dog simulation capable of path following and obstacle avoidance, with long-term potential for real-world assistance to guide dogs and visually impaired individuals. It also seeks to expand research into medical 'pets', including robotic guide and alert dogs.   A comparative analysis of thirteen related research papers shaped key evaluation criteria, including collision detection, pathfinding algorithms, sensor usage, robot type, and simulation platforms. The study focuses on sensor inputs, collision frequency, reward signals, and learning progression to determine which algorithm best supports robotic navigation in complex environments.   Custom-made environments were used to ensure fair evaluation of all three algorithms under controlled conditions, allowing consistent data collection. Results show that Proximal Policy Optimization (PPO) outperformed Deep Q-Network (DQN) and Q-learning across all metrics, particularly in average and median steps to goal per episode.   By analysing these results, this study contributes to robotic navigation, AI and medical robotics, offering insights into the feasibility of AI-driven quadruped mobility and its role in assistive robotics."
+  },
+  {
+    "title": "QuestA: Expanding Reasoning Capacity in LLMs via Question Augmentation",
+    "url": "http://arxiv.org/abs/2507.13266v1",
+    "arxiv_id": "2507.13266v1",
+    "authors": [
+      "Jiazheng Li",
+      "Hong Lu",
+      "Kaiyue Wen",
+      "Zaiwen Yang",
+      "Jiaxuan Gao",
+      "Hongzhou Lin",
+      "Yi Wu",
+      "Jingzhao Zhang"
+    ],
+    "published": "2025-07-17T16:21:47+00:00",
+    "summary": "Reinforcement learning (RL) has become a key component in training large language reasoning models (LLMs). However, recent studies questions its effectiveness in improving multi-step reasoning-particularly on hard problems. To address this challenge, we propose a simple yet effective strategy via Question Augmentation: introduce partial solutions during training to reduce problem difficulty and provide more informative learning signals. Our method, QuestA, when applied during RL training on math reasoning tasks, not only improves pass@1 but also pass@k-particularly on problems where standard RL struggles to make progress. This enables continual improvement over strong open-source models such as DeepScaleR and OpenMath Nemotron, further enhancing their reasoning capabilities. We achieve new state-of-the-art results on math benchmarks using 1.5B-parameter models: 67.1% (+5.3%) on AIME24, 59.5% (+10.0%) on AIME25, and 35.5% (+4.0%) on HMMT25. Further, we provide theoretical explanations that QuestA improves sample efficiency, offering a practical and generalizable pathway for expanding reasoning capability through RL."
+  },
+  {
     "title": "MMHU: A Massive-Scale Multimodal Benchmark for Human Behavior Understanding",
     "url": "http://arxiv.org/abs/2507.12463v1",
     "arxiv_id": "2507.12463v1",
