@@ -1,5 +1,70 @@
 [
   {
+    "title": "CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2507.14111v1",
+    "arxiv_id": "2507.14111v1",
+    "authors": [
+      "Xiaoya Li",
+      "Xiaofei Sun",
+      "Albert Wang",
+      "Jiwei Li",
+      "Chris Shum"
+    ],
+    "published": "2025-07-18T17:43:56+00:00",
+    "summary": "The exponential growth in demand for GPU computing resources, driven by the rapid advancement of Large Language Models, has created an urgent need for automated CUDA optimization strategies. While recent advances in LLMs show promise for code generation, current SOTA models (e.g. R1, o1) achieve low success rates in improving CUDA speed. In this paper, we introduce CUDA-L1, an automated reinforcement learning framework for CUDA optimization.   CUDA-L1 achieves performance improvements on the CUDA optimization task: trained on NVIDIA A100, it delivers an average speedup of x17.7 across all 250 CUDA kernels of KernelBench, with peak speedups reaching x449. Furthermore, the model also demonstrates excellent portability across GPU architectures, achieving average speedups of x17.8 on H100, x19.0 on RTX 3090, x16.5 on L40, x14.7 on H800, and x13.9 on H20 despite being optimized specifically for A100. Beyond these benchmark results, CUDA-L1 demonstrates several remarkable properties: 1) Discovers a variety of CUDA optimization techniques and learns to combine them strategically to achieve optimal performance; 2) Uncovers fundamental principles of CUDA optimization; 3) Identifies non-obvious performance bottlenecks and rejects seemingly beneficial optimizations that harm performance.   The capabilities of CUDA-L1 demonstrate that reinforcement learning can transform an initially poor-performing LLM into an effective CUDA optimizer through speedup-based reward signals alone, without human expertise or domain knowledge. More importantly, the trained RL model extend the acquired reasoning abilities to new kernels. This paradigm opens possibilities for automated optimization of CUDA operations, and holds promise to substantially promote GPU efficiency and alleviate the rising pressure on GPU computing resources."
+  },
+  {
+    "title": "Automated Interpretation of Non-Destructive Evaluation Contour Maps Using Large Language Models for Bridge Condition Assessment",
+    "url": "http://arxiv.org/abs/2507.14107v1",
+    "arxiv_id": "2507.14107v1",
+    "authors": [
+      "Viraj Nishesh Darji",
+      "Callie C. Liao",
+      "Duoduo Liao"
+    ],
+    "published": "2025-07-18T17:39:03+00:00",
+    "summary": "Bridge maintenance and safety are essential for transportation authorities, and Non-Destructive Evaluation (NDE) techniques are critical to assessing structural integrity. However, interpreting NDE data can be time-consuming and requires expertise, potentially delaying decision-making. Recent advancements in Large Language Models (LLMs) offer new ways to automate and improve this analysis. This pilot study introduces a holistic assessment of LLM capabilities for interpreting NDE contour maps and demonstrates the effectiveness of LLMs in providing detailed bridge condition analyses. It establishes a framework for integrating LLMs into bridge inspection workflows, indicating that LLM-assisted analysis can enhance efficiency without compromising accuracy. In this study, several LLMs are explored with prompts specifically designed to enhance the quality of image descriptions, which are applied to interpret five different NDE contour maps obtained through technologies for assessing bridge conditions. Each LLM model is evaluated based on its ability to produce detailed descriptions, identify defects, provide actionable recommendations, and demonstrate overall accuracy. The research indicates that four of the nine models provide better image descriptions, effectively covering a wide range of topics related to the bridge's condition. The outputs from these four models are summarized using five different LLMs to form a comprehensive overview of the bridge. Notably, LLMs ChatGPT-4 and Claude 3.5 Sonnet generate more effective summaries. The findings suggest that LLMs have the potential to significantly improve efficiency and accuracy. This pilot study presents an innovative approach that leverages LLMs for image captioning in parallel and summarization, enabling faster decision-making in bridge maintenance and enhancing infrastructure management and safety assessments."
+  },
+  {
+    "title": "Project-connex Decompositions and Tractability of Aggregate Group-by Conjunctive Queries",
+    "url": "http://arxiv.org/abs/2507.14101v1",
+    "arxiv_id": "2507.14101v1",
+    "authors": [
+      "Diego Figueira",
+      "Cibele Freire"
+    ],
+    "published": "2025-07-18T17:30:14+00:00",
+    "summary": "We introduce 'project-connex' tree-width as a measure of tractability for counting and aggregate conjunctive queries over semirings with 'group-by' projection (also known as 'AJAR' or 'FAQ' queries). This elementary measure allows to obtain comparable complexity bounds to the ones obtained by previous structural conditions tailored for efficient evaluation of semiring aggregate queries, enumeration algorithms of conjunctive queries, and tractability of counting answers to conjunctive queries.   Project-connex tree decompositions are defined as the natural extension of the known notion of 'free-connex' decompositions. They allow for a unified, simple and intuitive algorithmic manipulation for evaluation of aggregate queries and explain some existing tractability results on conjunctive query enumeration, counting conjunctive query evaluation, and evaluation of semiring aggregate queries. Using this measure we also recover results relating tractable classes of counting conjunctive queries and bounded free-connex tree-width, or the constant-time delay enumeration of semiring aggregate queries over bounded project-connex classes. We further show that project-connex tree decompositions can be obtained via algorithms for computing classical tree decompositions."
+  },
+  {
+    "title": "Context-Aware Behavior Learning with Heuristic Motion Memory for Underwater Manipulation",
+    "url": "http://arxiv.org/abs/2507.14099v1",
+    "arxiv_id": "2507.14099v1",
+    "authors": [
+      "Markus Buchholz",
+      "Ignacio Carlucho",
+      "Michele Grimaldi",
+      "Maria Koskinopoulou",
+      "Yvan R. Petillot"
+    ],
+    "published": "2025-07-18T17:25:54+00:00",
+    "summary": "Autonomous motion planning is critical for efficient and safe underwater manipulation in dynamic marine environments. Current motion planning methods often fail to effectively utilize prior motion experiences and adapt to real-time uncertainties inherent in underwater settings. In this paper, we introduce an Adaptive Heuristic Motion Planner framework that integrates a Heuristic Motion Space (HMS) with Bayesian Networks to enhance motion planning for autonomous underwater manipulation. Our approach employs the Probabilistic Roadmap (PRM) algorithm within HMS to optimize paths by minimizing a composite cost function that accounts for distance, uncertainty, energy consumption, and execution time. By leveraging HMS, our framework significantly reduces the search space, thereby boosting computational performance and enabling real-time planning capabilities. Bayesian Networks are utilized to dynamically update uncertainty estimates based on real-time sensor data and environmental conditions, thereby refining the joint probability of path success. Through extensive simulations and real-world test scenarios, we showcase the advantages of our method in terms of enhanced performance and robustness. This probabilistic approach significantly advances the capability of autonomous underwater robots, ensuring optimized motion planning in the face of dynamic marine challenges."
+  },
+  {
+    "title": "Generative AI-Driven High-Fidelity Human Motion Simulation",
+    "url": "http://arxiv.org/abs/2507.14097v1",
+    "arxiv_id": "2507.14097v1",
+    "authors": [
+      "Hari Iyer",
+      "Neel Macwan",
+      "Atharva Jitendra Hude",
+      "Heejin Jeong",
+      "Shenghan Guo"
+    ],
+    "published": "2025-07-18T17:24:50+00:00",
+    "summary": "Human motion simulation (HMS) supports cost-effective evaluation of worker behavior, safety, and productivity in industrial tasks. However, existing methods often suffer from low motion fidelity. This study introduces Generative-AI-Enabled HMS (G-AI-HMS), which integrates text-to-text and text-to-motion models to enhance simulation quality for physical tasks. G-AI-HMS tackles two key challenges: (1) translating task descriptions into motion-aware language using Large Language Models aligned with MotionGPT's training vocabulary, and (2) validating AI-enhanced motions against real human movements using computer vision. Posture estimation algorithms are applied to real-time videos to extract joint landmarks, and motion similarity metrics are used to compare them with AI-enhanced sequences. In a case study involving eight tasks, the AI-enhanced motions showed lower error than human created descriptions in most scenarios, performing better in six tasks based on spatial accuracy, four tasks based on alignment after pose normalization, and seven tasks based on overall temporal similarity. Statistical analysis showed that AI-enhanced prompts significantly (p $<$ 0.0001) reduced joint error and temporal misalignment while retaining comparable posture accuracy."
+  },
+  {
     "title": "VisionThink: Smart and Efficient Vision Language Model via Reinforcement Learning",
     "url": "http://arxiv.org/abs/2507.13348v1",
     "arxiv_id": "2507.13348v1",
