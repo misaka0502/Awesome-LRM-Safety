@@ -1,5 +1,81 @@
 [
   {
+    "title": "Rubrics as Rewards: Reinforcement Learning Beyond Verifiable Domains",
+    "url": "http://arxiv.org/abs/2507.17746v1",
+    "arxiv_id": "2507.17746v1",
+    "authors": [
+      "Anisha Gunjal",
+      "Anthony Wang",
+      "Elaine Lau",
+      "Vaskar Nath",
+      "Bing Liu",
+      "Sean Hendryx"
+    ],
+    "published": "2025-07-23T17:57:55+00:00",
+    "summary": "Extending Reinforcement Learning with Verifiable Rewards (RLVR) to real-world tasks often requires balancing objective and subjective evaluation criteria. However, many such tasks lack a single, unambiguous ground truth-making it difficult to define reliable reward signals for post-training language models. While traditional preference-based methods offer a workaround, they rely on opaque reward functions that are difficult to interpret and prone to spurious correlations. We introduce $\\textbf{Rubrics as Rewards}$ (RaR), a framework that uses structured, checklist-style rubrics as interpretable reward signals for on-policy training with GRPO. Our best RaR method yields up to a $28\\%$ relative improvement on HealthBench-1k compared to simple Likert-based approaches, while matching or surpassing the performance of reward signals derived from expert-written references. By treating rubrics as structured reward signals, we show that RaR enables smaller-scale judge models to better align with human preferences and sustain robust performance across model scales."
+  },
+  {
+    "title": "Online Submission and Evaluation System Design for Competition Operations",
+    "url": "http://arxiv.org/abs/2507.17730v1",
+    "arxiv_id": "2507.17730v1",
+    "authors": [
+      "Zhe Chen",
+      "Daniel Harabor",
+      "Ryan Hechnenberger",
+      "Nathan R. Sturtevant"
+    ],
+    "published": "2025-07-23T17:44:10+00:00",
+    "summary": "Research communities have developed benchmark datasets across domains to compare the performance of algorithms and techniques However, tracking the progress in these research areas is not easy, as publications appear in different venues at the same time, and many of them claim to represent the state-of-the-art. To address this, research communities often organise periodic competitions to evaluate the performance of various algorithms and techniques, thereby tracking advancements in the field. However, these competitions pose a significant operational burden. The organisers must manage and evaluate a large volume of submissions. Furthermore, participants typically develop their solutions in diverse environments, leading to compatibility issues during the evaluation of their submissions. This paper presents an online competition system that automates the submission and evaluation process for a competition. The competition system allows organisers to manage large numbers of submissions efficiently, utilising isolated environments to evaluate submissions. This system has already been used successfully for several competitions, including the Grid-Based Pathfinding Competition and the League of Robot Runners competition."
+  },
+  {
+    "title": "Megrez2 Technical Report",
+    "url": "http://arxiv.org/abs/2507.17728v1",
+    "arxiv_id": "2507.17728v1",
+    "authors": [
+      "Boxun Li",
+      "Yadong Li",
+      "Zhiyuan Li",
+      "Congyi Liu",
+      "Weilin Liu",
+      "Guowei Niu",
+      "Zheyue Tan",
+      "Haiyang Xu",
+      "Zhuyu Yao",
+      "Tao Yuan",
+      "Dong Zhou",
+      "Yueqing Zhuang",
+      "Bo Zhao",
+      "Guohao Dai",
+      "Yu Wang"
+    ],
+    "published": "2025-07-23T17:43:07+00:00",
+    "summary": "We present Megrez2, a novel lightweight and high-performance language model architecture optimized for device native deployment. Megrez2 introduces a novel cross-layer expert sharing mechanism, which significantly reduces total parameter count by reusing expert modules across adjacent transformer layers while maintaining most of the model's capacity. It also incorporates pre-gated routing, enabling memory-efficient expert loading and faster inference. As the first instantiation of the Megrez2 architecture, we introduce the Megrez2-Preview model, which is pre-trained on a 5-trillion-token corpus and further enhanced through supervised fine-tuning and reinforcement learning with verifiable rewards. With only 3B activated and 7.5B stored parameters, Megrez2-Preview demonstrates competitive or superior performance compared to larger models on a wide range of tasks, including language understanding, instruction following, mathematical reasoning, and code generation. These results highlight the effectiveness of the Megrez2 architecture to achieve a balance between accuracy, efficiency, and deployability, making it a strong candidate for real-world, resource-constrained applications."
+  },
+  {
+    "title": "CA-Cut: Crop-Aligned Cutout for Data Augmentation to Learn More Robust Under-Canopy Navigation",
+    "url": "http://arxiv.org/abs/2507.17727v1",
+    "arxiv_id": "2507.17727v1",
+    "authors": [
+      "Robel Mamo",
+      "Taeyeong Choi"
+    ],
+    "published": "2025-07-23T17:41:55+00:00",
+    "summary": "State-of-the-art visual under-canopy navigation methods are designed with deep learning-based perception models to distinguish traversable space from crop rows. While these models have demonstrated successful performance, they require large amounts of training data to ensure reliability in real-world field deployment. However, data collection is costly, demanding significant human resources for in-field sampling and annotation. To address this challenge, various data augmentation techniques are commonly employed during model training, such as color jittering, Gaussian blur, and horizontal flip, to diversify training data and enhance model robustness. In this paper, we hypothesize that utilizing only these augmentation techniques may lead to suboptimal performance, particularly in complex under-canopy environments with frequent occlusions, debris, and non-uniform spacing of crops. Instead, we propose a novel augmentation method, so-called Crop-Aligned Cutout (CA-Cut) which masks random regions out in input images that are spatially distributed around crop rows on the sides to encourage trained models to capture high-level contextual features even when fine-grained information is obstructed. Our extensive experiments with a public cornfield dataset demonstrate that masking-based augmentations are effective for simulating occlusions and significantly improving robustness in semantic keypoint predictions for visual navigation. In particular, we show that biasing the mask distribution toward crop rows in CA-Cut is critical for enhancing both prediction accuracy and generalizability across diverse environments achieving up to a 36.9% reduction in prediction error. In addition, we conduct ablation studies to determine the number of masks, the size of each mask, and the spatial distribution of masks to maximize overall performance."
+  },
+  {
+    "title": "BetterCheck: Towards Safeguarding VLMs for Automotive Perception Systems",
+    "url": "http://arxiv.org/abs/2507.17722v1",
+    "arxiv_id": "2507.17722v1",
+    "authors": [
+      "Malsha Ashani Mahawatta Dona",
+      "Beatriz Cabrero-Daniel",
+      "Yinan Yu",
+      "Christian Berger"
+    ],
+    "published": "2025-07-23T17:32:17+00:00",
+    "summary": "Large language models (LLMs) are growingly extended to process multimodal data such as text and video simultaneously. Their remarkable performance in understanding what is shown in images is surpassing specialized neural networks (NNs) such as Yolo that is supporting only a well-formed but very limited vocabulary, ie., objects that they are able to detect. When being non-restricted, LLMs and in particular state-of-the-art vision language models (VLMs) show impressive performance to describe even complex traffic situations. This is making them potentially suitable components for automotive perception systems to support the understanding of complex traffic situations or edge case situation. However, LLMs and VLMs are prone to hallucination, which mean to either potentially not seeing traffic agents such as vulnerable road users who are present in a situation, or to seeing traffic agents who are not there in reality. While the latter is unwanted making an ADAS or autonomous driving systems (ADS) to unnecessarily slow down, the former could lead to disastrous decisions from an ADS. In our work, we are systematically assessing the performance of 3 state-of-the-art VLMs on a diverse subset of traffic situations sampled from the Waymo Open Dataset to support safety guardrails for capturing such hallucinations in VLM-supported perception systems. We observe that both, proprietary and open VLMs exhibit remarkable image understanding capabilities even paying thorough attention to fine details sometimes difficult to spot for us humans. However, they are also still prone to making up elements in their descriptions to date requiring hallucination detection strategies such as BetterCheck that we propose in our work."
+  },
+  {
     "title": "ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning",
     "url": "http://arxiv.org/abs/2507.16815v1",
     "arxiv_id": "2507.16815v1",
