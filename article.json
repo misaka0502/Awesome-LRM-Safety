@@ -1,5 +1,79 @@
 [
   {
+    "title": "Advancing Event Forecasting through Massive Training of Large Language Models: Challenges, Solutions, and Broader Impacts",
+    "url": "http://arxiv.org/abs/2507.19477v1",
+    "arxiv_id": "2507.19477v1",
+    "authors": [
+      "Sang-Woo Lee",
+      "Sohee Yang",
+      "Donghyun Kwak",
+      "Noah Y. Siegel"
+    ],
+    "published": "2025-07-25T17:59:13+00:00",
+    "summary": "Many recent papers have studied the development of superforecaster-level event forecasting LLMs. While methodological problems with early studies cast doubt on the use of LLMs for event forecasting, recent studies with improved evaluation methods have shown that state-of-the-art LLMs are gradually reaching superforecaster-level performance, and reinforcement learning has also been reported to improve future forecasting. Additionally, the unprecedented success of recent reasoning models and Deep Research-style models suggests that technology capable of greatly improving forecasting performance has been developed. Therefore, based on these positive recent trends, we argue that the time is ripe for research on large-scale training of superforecaster-level event forecasting LLMs. We discuss two key research directions: training methods and data acquisition. For training, we first introduce three difficulties of LLM-based event forecasting training: noisiness-sparsity, knowledge cut-off, and simple reward structure problems. Then, we present related ideas to mitigate these problems: hypothetical event Bayesian networks, utilizing poorly-recalled and counterfactual events, and auxiliary reward signals. For data, we propose aggressive use of market, public, and crawling datasets to enable large-scale training and evaluation. Finally, we explain how these technical advances could enable AI to provide predictive intelligence to society in broader areas. This position paper presents promising specific paths and considerations for getting closer to superforecaster-level AI technology, aiming to call for researchers' interest in these directions."
+  },
+  {
+    "title": "Efficient Lines Detection for Robot Soccer",
+    "url": "http://arxiv.org/abs/2507.19469v1",
+    "arxiv_id": "2507.19469v1",
+    "authors": [
+      "Jo\u00e3o G. Melo",
+      "Jo\u00e3o P. Mafaldo",
+      "Edna Barros"
+    ],
+    "published": "2025-07-25T17:54:51+00:00",
+    "summary": "Self-localization is essential in robot soccer, where accurate detection of visual field features, such as lines and boundaries, is critical for reliable pose estimation. This paper presents a lightweight and efficient method for detecting soccer field lines using the ELSED algorithm, extended with a classification step that analyzes RGB color transitions to identify lines belonging to the field. We introduce a pipeline based on Particle Swarm Optimization (PSO) for threshold calibration to optimize detection performance, requiring only a small number of annotated samples. Our approach achieves accuracy comparable to a state-of-the-art deep learning model while offering higher processing speed, making it well-suited for real-time applications on low-power robotic platforms."
+  },
+  {
+    "title": "Fast Learning of Non-Cooperative Spacecraft 3D Models through Primitive Initialization",
+    "url": "http://arxiv.org/abs/2507.19459v1",
+    "arxiv_id": "2507.19459v1",
+    "authors": [
+      "Pol Francesch Huc",
+      "Emily Bates",
+      "Simone D'Amico"
+    ],
+    "published": "2025-07-25T17:43:29+00:00",
+    "summary": "The advent of novel view synthesis techniques such as NeRF and 3D Gaussian Splatting (3DGS) has enabled learning precise 3D models only from posed monocular images. Although these methods are attractive, they hold two major limitations that prevent their use in space applications: they require poses during training, and have high computational cost at training and inference. To address these limitations, this work contributes: (1) a Convolutional Neural Network (CNN) based primitive initializer for 3DGS using monocular images; (2) a pipeline capable of training with noisy or implicit pose estimates; and (3) and analysis of initialization variants that reduce the training cost of precise 3D models. A CNN takes a single image as input and outputs a coarse 3D model represented as an assembly of primitives, along with the target's pose relative to the camera. This assembly of primitives is then used to initialize 3DGS, significantly reducing the number of training iterations and input images needed -- by at least an order of magnitude. For additional flexibility, the CNN component has multiple variants with different pose estimation techniques. This work performs a comparison between these variants, evaluating their effectiveness for downstream 3DGS training under noisy or implicit pose estimates. The results demonstrate that even with imperfect pose supervision, the pipeline is able to learn high-fidelity 3D representations, opening the door for the use of novel view synthesis in space applications."
+  },
+  {
+    "title": "Hierarchical Deep Reinforcement Learning Framework for Multi-Year Asset Management Under Budget Constraints",
+    "url": "http://arxiv.org/abs/2507.19458v1",
+    "arxiv_id": "2507.19458v1",
+    "authors": [
+      "Amir Fard",
+      "Arnold X. -X. Yuan"
+    ],
+    "published": "2025-07-25T17:42:34+00:00",
+    "summary": "Budget planning and maintenance optimization are crucial for infrastructure asset management, ensuring cost-effectiveness and sustainability. However, the complexity arising from combinatorial action spaces, diverse asset deterioration, stringent budget constraints, and environmental uncertainty significantly limits existing methods' scalability. This paper proposes a Hierarchical Deep Reinforcement Learning methodology specifically tailored to multi-year infrastructure planning. Our approach decomposes the problem into two hierarchical levels: a high-level Budget Planner allocating annual budgets within explicit feasibility bounds, and a low-level Maintenance Planner prioritizing assets within the allocated budget. By structurally separating macro-budget decisions from asset-level prioritization and integrating linear programming projection within a hierarchical Soft Actor-Critic framework, the method efficiently addresses exponential growth in the action space and ensures rigorous budget compliance. A case study evaluating sewer networks of varying sizes (10, 15, and 20 sewersheds) illustrates the effectiveness of the proposed approach. Compared to conventional Deep Q-Learning and enhanced genetic algorithms, our methodology converges more rapidly, scales effectively, and consistently delivers near-optimal solutions even as network size grows."
+  },
+  {
+    "title": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2507.19457v1",
+    "arxiv_id": "2507.19457v1",
+    "authors": [
+      "Lakshya A Agrawal",
+      "Shangyin Tan",
+      "Dilara Soylu",
+      "Noah Ziems",
+      "Rishi Khare",
+      "Krista Opsahl-Ong",
+      "Arnav Singhvi",
+      "Herumb Shandilya",
+      "Michael J Ryan",
+      "Meng Jiang",
+      "Christopher Potts",
+      "Koushik Sen",
+      "Alexandros G. Dimakis",
+      "Ion Stoica",
+      "Dan Klein",
+      "Matei Zaharia",
+      "Omar Khattab"
+    ],
+    "published": "2025-07-25T17:42:32+00:00",
+    "summary": "Large language models (LLMs) are increasingly adapted to downstream tasks via reinforcement learning (RL) methods like Group Relative Policy Optimization (GRPO), which often require thousands of rollouts to learn new tasks. We argue that the interpretable nature of language can often provide a much richer learning medium for LLMs, compared with policy gradients derived from sparse, scalar rewards. To test this, we introduce GEPA (Genetic-Pareto), a prompt optimizer that thoroughly incorporates natural language reflection to learn high-level rules from trial and error. Given any AI system containing one or more LLM prompts, GEPA samples system-level trajectories (e.g., reasoning, tool calls, and tool outputs) and reflects on them in natural language to diagnose problems, propose and test prompt updates, and combine complementary lessons from the Pareto frontier of its own attempts. As a result of GEPA's design, it can often turn even just a few rollouts into a large quality gain. Across four tasks, GEPA outperforms GRPO by 10% on average and by up to 20%, while using up to 35x fewer rollouts. GEPA also outperforms the leading prompt optimizer, MIPROv2, by over 10% across two LLMs, and demonstrates promising results as an inference-time search strategy for code optimization."
+  },
+  {
     "title": "Layer-Aware Representation Filtering: Purifying Finetuning Data to Preserve LLM Safety Alignment",
     "url": "http://arxiv.org/abs/2507.18631v1",
     "arxiv_id": "2507.18631v1",
