@@ -1,5 +1,77 @@
 [
   {
+    "title": "Viser: Imperative, Web-based 3D Visualization in Python",
+    "url": "http://arxiv.org/abs/2507.22885v1",
+    "arxiv_id": "2507.22885v1",
+    "authors": [
+      "Brent Yi",
+      "Chung Min Kim",
+      "Justin Kerr",
+      "Gina Wu",
+      "Rebecca Feng",
+      "Anthony Zhang",
+      "Jonas Kulhanek",
+      "Hongsuk Choi",
+      "Yi Ma",
+      "Matthew Tancik",
+      "Angjoo Kanazawa"
+    ],
+    "published": "2025-07-30T17:59:31+00:00",
+    "summary": "We present Viser, a 3D visualization library for computer vision and robotics. Viser aims to bring easy and extensible 3D visualization to Python: we provide a comprehensive set of 3D scene and 2D GUI primitives, which can be used independently with minimal setup or composed to build specialized interfaces. This technical report describes Viser's features, interface, and implementation. Key design choices include an imperative-style API and a web-based viewer, which improve compatibility with modern programming patterns and workflows."
+  },
+  {
+    "title": "Floquet Spin Splitting and Spin Generation in Antiferromagnets",
+    "url": "http://arxiv.org/abs/2507.22884v1",
+    "arxiv_id": "2507.22884v1",
+    "authors": [
+      "Bo Li",
+      "Ding-Fu Shao",
+      "Alexey A. Kovalev"
+    ],
+    "published": "2025-07-30T17:59:07+00:00",
+    "summary": "In antiferromagnetic spintronics, accessing the spin degree of freedom is essential for generating spin currents and manipulating magnetic order, which generally requires lifting spin degeneracy. This is typically achieved through relativistic spin-orbit coupling or non-relativistic spin splitting in altermagnets. Here, we propose an alternative approach: a dynamical spin splitting induced by an optical field in antiferromagnets. By coupling the driven system to a thermal bath, we demonstrate the emergence of steady-state pure spin currents, as well as linear-response longitudinal and transverse spin currents. Crucially, thermal bath engineering allows the generation of a net spin accumulation without relying on spin-orbit coupling. Our results provide a broadly applicable and experimentally tunable route to control spins in antiferromagnets, offering new opportunities for spin generation and manipulation in antiferromagnetic spintronics."
+  },
+  {
+    "title": "A Bit of Freedom Goes a Long Way: Classical and Quantum Algorithms for Reinforcement Learning under a Generative Model",
+    "url": "http://arxiv.org/abs/2507.22854v1",
+    "arxiv_id": "2507.22854v1",
+    "authors": [
+      "Andris Ambainis",
+      "Joao F. Doriguello",
+      "Debbie Lim"
+    ],
+    "published": "2025-07-30T17:24:23+00:00",
+    "summary": "We propose novel classical and quantum online algorithms for learning finite-horizon and infinite-horizon average-reward Markov Decision Processes (MDPs). Our algorithms are based on a hybrid exploration-generative reinforcement learning (RL) model wherein the agent can, from time to time, freely interact with the environment in a generative sampling fashion, i.e., by having access to a \"simulator\". By employing known classical and new quantum algorithms for approximating optimal policies under a generative model within our learning algorithms, we show that it is possible to avoid several paradigms from RL like \"optimism in the face of uncertainty\" and \"posterior sampling\" and instead compute and use optimal policies directly, which yields better regret bounds compared to previous works. For finite-horizon MDPs, our quantum algorithms obtain regret bounds which only depend logarithmically on the number of time steps $T$, thus breaking the $O(\\sqrt{T})$ classical barrier. This matches the time dependence of the prior quantum works of Ganguly et al. (arXiv'23) and Zhong et al. (ICML'24), but with improved dependence on other parameters like state space size $S$ and action space size $A$. For infinite-horizon MDPs, our classical and quantum bounds still maintain the $O(\\sqrt{T})$ dependence but with better $S$ and $A$ factors. Nonetheless, we propose a novel measure of regret for infinite-horizon MDPs with respect to which our quantum algorithms have $\\operatorname{poly}\\log{T}$ regret, exponentially better compared to classical algorithms. Finally, we generalise all of our results to compact state spaces."
+  },
+  {
+    "title": "Repair-R1: Better Test Before Repair",
+    "url": "http://arxiv.org/abs/2507.22853v1",
+    "arxiv_id": "2507.22853v1",
+    "authors": [
+      "Haichuan Hu",
+      "Xiaochen Xie",
+      "Quanjun Zhang"
+    ],
+    "published": "2025-07-30T17:24:05+00:00",
+    "summary": "APR (Automated Program Repair) aims to automatically locate program defects, generate patches and validate the repairs. Existing techniques for APR are often combined with LLMs (Large Language Models), which leverages the code-related knowledge of LLMs to improve repair effectiveness. Current LLM-based APR methods typically utilize test cases only during the inference stage, adopting an iterative approach that performs repair first and validates it through test execution afterward. This conventional paradigm neglects two important aspects: the potential contribution of test cases in the training phase, and the possibility of leveraging testing prior to repair. To address this, we propose Repair-R1, which introduces test cases into the model's training phase and shifts test generation to precede repair. The model is required to first generate discriminative test cases that can distinguish defective behaviors, and then perform repair based on these tests. This enables the model to better locate defects and understand the underlying causes of defects, thereby improving repair effectiveness. We implement Repair-R1 with three different backbone models, using RL (reinforcement learning) to co-optimize test generation and bug repair. Experimental results on four widely adopted benchmarks demonstrate the superiority of Repair-R1. Specially, compared to vanilla models, Repair-R1 improves repair success rate by 2.68\\% to 48.29\\%, test generation success rate by 16.38\\% to 53.28\\%, and test coverage by 0.78\\% to 53.96\\%. We publish the code and weights at https://github.com/Tomsawyerhu/APR-RL and https://huggingface.co/tomhu/Qwen3-4B-RL-5000-step."
+  },
+  {
+    "title": "Morph: ChirpTransformer-based Encoder-decoder Co-design for Reliable LoRa Communication",
+    "url": "http://arxiv.org/abs/2507.22851v1",
+    "arxiv_id": "2507.22851v1",
+    "authors": [
+      "Yidong Ren",
+      "Maolin Gan",
+      "Chenning Li",
+      "Shakhrul Iman Siam",
+      "Mi Zhang",
+      "Shigang Chen",
+      "Zhichao Cao"
+    ],
+    "published": "2025-07-30T17:22:27+00:00",
+    "summary": "In this paper, we propose Morph, a LoRa encoder-decoder co-design to enhance communication reliability while improving its computation efficiency in extremely-low signal-to-noise ratio (SNR) situations. The standard LoRa encoder controls 6 Spreading Factors (SFs) to tradeoff SNR tolerance with data rate. SF-12 is the maximum SF providing the lowest SNR tolerance on commercial off-the-shelf (COTS) LoRa nodes. In Morph, we develop an SF-configuration based encoder to mimic the larger SFs beyond SF-12 while it is compatible with COTS LoRa nodes. Specifically, we manipulate four SF configurations of a Morph symbol to encode 2-bit data. Accordingly, we recognize the used SF configuration of the symbol for data decoding. We leverage a Deep Neural Network (DNN) decoder to fully capture multi-dimensional features among diverse SF configurations to maximize the SNR gain. Moreover, we customize the input size, neural network structure, and training method of the DNN decoder to improve its efficiency, reliability, and generalizability. We implement Morph with COTS LoRa nodes and a USRP N210, then evaluate its performance on indoor and campus-scale testbeds. Results show that we can reliably decode data at -28.8~dB SNR, which is 6.4~dB lower than the standard LoRa with SF-12 chirps. In addition, the computation efficiency of our DNN decoder is about 3x higher than state-of-the-art."
+  },
+  {
     "title": "X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again",
     "url": "http://arxiv.org/abs/2507.22058v1",
     "arxiv_id": "2507.22058v1",
