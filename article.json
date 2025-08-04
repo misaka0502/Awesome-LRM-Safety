@@ -1,5 +1,73 @@
 [
   {
+    "title": "IGL-Nav: Incremental 3D Gaussian Localization for Image-goal Navigation",
+    "url": "http://arxiv.org/abs/2508.00823v1",
+    "arxiv_id": "2508.00823v1",
+    "authors": [
+      "Wenxuan Guo",
+      "Xiuwei Xu",
+      "Hang Yin",
+      "Ziwei Wang",
+      "Jianjiang Feng",
+      "Jie Zhou",
+      "Jiwen Lu"
+    ],
+    "published": "2025-08-01T17:59:56+00:00",
+    "summary": "Visual navigation with an image as goal is a fundamental and challenging problem. Conventional methods either rely on end-to-end RL learning or modular-based policy with topological graph or BEV map as memory, which cannot fully model the geometric relationship between the explored 3D environment and the goal image. In order to efficiently and accurately localize the goal image in 3D space, we build our navigation system upon the renderable 3D gaussian (3DGS) representation. However, due to the computational intensity of 3DGS optimization and the large search space of 6-DoF camera pose, directly leveraging 3DGS for image localization during agent exploration process is prohibitively inefficient. To this end, we propose IGL-Nav, an Incremental 3D Gaussian Localization framework for efficient and 3D-aware image-goal navigation. Specifically, we incrementally update the scene representation as new images arrive with feed-forward monocular prediction. Then we coarsely localize the goal by leveraging the geometric information for discrete space matching, which can be equivalent to efficient 3D convolution. When the agent is close to the goal, we finally solve the fine target pose with optimization via differentiable rendering. The proposed IGL-Nav outperforms existing state-of-the-art methods by a large margin across diverse experimental configurations. It can also handle the more challenging free-view image-goal setting and be deployed on real-world robotic platform using a cellphone to capture goal image at arbitrary pose. Project page: https://gwxuan.github.io/IGL-Nav/."
+  },
+  {
+    "title": "Cross-Dataset Semantic Segmentation Performance Analysis: Unifying NIST Point Cloud City Datasets for 3D Deep Learning",
+    "url": "http://arxiv.org/abs/2508.00822v1",
+    "arxiv_id": "2508.00822v1",
+    "authors": [
+      "Alexander Nikitas Dimopoulos",
+      "Joseph Grasso"
+    ],
+    "published": "2025-08-01T17:59:02+00:00",
+    "summary": "This study analyzes semantic segmentation performance across heterogeneously labeled point-cloud datasets relevant to public safety applications, including pre-incident planning systems derived from lidar scans. Using NIST's Point Cloud City dataset (Enfield and Memphis collections), we investigate challenges in unifying differently labeled 3D data. Our methodology employs a graded schema with the KPConv architecture, evaluating performance through IoU metrics on safety-relevant features. Results indicate performance variability: geometrically large objects (e.g. stairs, windows) achieve higher segmentation performance, suggesting potential for navigational context, while smaller safety-critical features exhibit lower recognition rates. Performance is impacted by class imbalance and the limited geometric distinction of smaller objects in typical lidar scans, indicating limitations in detecting certain safety-relevant features using current point-cloud methods. Key identified challenges include insufficient labeled data, difficulties in unifying class labels across datasets, and the need for standardization. Potential directions include automated labeling and multi-dataset learning strategies. We conclude that reliable point-cloud semantic segmentation for public safety necessitates standardized annotation protocols and improved labeling techniques to address data heterogeneity and the detection of small, safety-critical elements."
+  },
+  {
+    "title": "Close encounters between periodic light and periodic arrays of quantum emitters",
+    "url": "http://arxiv.org/abs/2508.00797v1",
+    "arxiv_id": "2508.00797v1",
+    "authors": [
+      "Frieder Lindel",
+      "Carlos J. S\u00e1nchez Mart\u00ednez",
+      "Johannes Feist",
+      "Francisco J. Garc\u00eda-Vidal"
+    ],
+    "published": "2025-08-01T17:24:07+00:00",
+    "summary": "Periodically structured surfaces (metasurfaces), i.e., periodic light, have evolved as a powerful tool for manipulating electromagnetic fields both in classical and quantum regimes. However, no general approach for quantizing the electromagnetic fields and treating quantum light-matter interactions in such structures exists. Here, we construct an ab initio few-mode quantization scheme for metasurface resonances based on macroscopic quantum electrodynamics. We use our approach to propose a framework for strong light-matter coupling in which collective excitations of periodic arrays of quantum emitters are strongly coupled to the light modes supported by the metasurface, leading to the formation of crystal polaritons. As a proof-of-principle example of their potential, we show that interactions between crystal polaritons can lead to an efficient and directional generation of entangled photon pairs."
+  },
+  {
+    "title": "Video Generators are Robot Policies",
+    "url": "http://arxiv.org/abs/2508.00795v1",
+    "arxiv_id": "2508.00795v1",
+    "authors": [
+      "Junbang Liang",
+      "Pavel Tokmakov",
+      "Ruoshi Liu",
+      "Sruthi Sudhakar",
+      "Paarth Shah",
+      "Rares Ambrus",
+      "Carl Vondrick"
+    ],
+    "published": "2025-08-01T17:23:49+00:00",
+    "summary": "Despite tremendous progress in dexterous manipulation, current visuomotor policies remain fundamentally limited by two challenges: they struggle to generalize under perceptual or behavioral distribution shifts, and their performance is constrained by the size of human demonstration data. In this paper, we use video generation as a proxy for robot policy learning to address both limitations simultaneously. We propose Video Policy, a modular framework that combines video and action generation that can be trained end-to-end. Our results demonstrate that learning to generate videos of robot behavior allows for the extraction of policies with minimal demonstration data, significantly improving robustness and sample efficiency. Our method shows strong generalization to unseen objects, backgrounds, and tasks, both in simulation and the real world. We further highlight that task success is closely tied to the generated video, with action-free video data providing critical benefits for generalizing to novel tasks. By leveraging large-scale video generative models, we achieve superior performance compared to traditional behavior cloning, paving the way for more scalable and data-efficient robot policy learning."
+  },
+  {
+    "title": "Learning to optimize with guarantees: a complete characterization of linearly convergent algorithms",
+    "url": "http://arxiv.org/abs/2508.00775v1",
+    "arxiv_id": "2508.00775v1",
+    "authors": [
+      "Andrea Martin",
+      "Ian R. Manchester",
+      "Luca Furieri"
+    ],
+    "published": "2025-08-01T16:56:42+00:00",
+    "summary": "In high-stakes engineering applications, optimization algorithms must come with provable worst-case guarantees over a mathematically defined class of problems. Designing for the worst case, however, inevitably sacrifices performance on the specific problem instances that often occur in practice. We address the problem of augmenting a given linearly convergent algorithm to improve its average-case performance on a restricted set of target problems - for example, tailoring an off-the-shelf solver for model predictive control (MPC) for an application to a specific dynamical system - while preserving its worst-case guarantees across the entire problem class. Toward this goal, we characterize the class of algorithms that achieve linear convergence for classes of nonsmooth composite optimization problems. In particular, starting from a baseline linearly convergent algorithm, we derive all - and only - the modifications to its update rule that maintain its convergence properties. Our results apply to augmenting legacy algorithms such as gradient descent for nonconvex, gradient-dominated functions; Nesterov's accelerated method for strongly convex functions; and projected methods for optimization over polyhedral feasibility sets. We showcase effectiveness of the approach on solving optimization problems with tight iteration budgets in application to ill-conditioned systems of linear equations and MPC for linear systems."
+  },
+  {
     "title": "Phi-Ground Tech Report: Advancing Perception in GUI Grounding",
     "url": "http://arxiv.org/abs/2507.23779v1",
     "arxiv_id": "2507.23779v1",
