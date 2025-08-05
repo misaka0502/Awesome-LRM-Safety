@@ -1,5 +1,78 @@
 [
   {
+    "title": "MedVLThinker: Simple Baselines for Multimodal Medical Reasoning",
+    "url": "http://arxiv.org/abs/2508.02669v1",
+    "arxiv_id": "2508.02669v1",
+    "authors": [
+      "Xiaoke Huang",
+      "Juncheng Wu",
+      "Hui Liu",
+      "Xianfeng Tang",
+      "Yuyin Zhou"
+    ],
+    "published": "2025-08-04T17:59:38+00:00",
+    "summary": "Large Reasoning Models (LRMs) have introduced a new paradigm in AI by enabling models to ``think before responding\" via chain-of-thought reasoning. However, the absence of open and reproducible recipes for building reasoning-centric medical LMMs hinders community-wide research, analysis, and comparison. In this paper, we present MedVLThinker, a suite of simple yet strong baselines. Our fully open recipe consists of: (1) systematic data curation for both text-only and image-text medical data, filtered according to varying levels of reasoning difficulty, and (2) two training paradigms: Supervised Fine-Tuning (SFT) on distilled reasoning traces and Reinforcement Learning with Verifiable Rewards (RLVR) based on final answer correctness. Across extensive experiments on the Qwen2.5-VL model family (3B, 7B) and six medical QA benchmarks, we find that RLVR consistently and significantly outperforms SFT. Additionally, under the RLVR framework, a key, counter-intuitive finding is that training on our curated text-only reasoning data provides a more substantial performance boost than training on multimodal image-text data. Our best open 7B model, trained using the RLVR recipe on text-only data, establishes a new state-of-the-art on existing public VQA benchmarks, surpassing all previous open-source medical LMMs. Furthermore, scaling our model to 32B achieves performance on par with the proprietary GPT-4o. We release all curated data, models, and code to provide the community with a strong, open foundation for future research in multimodal medical reasoning."
+  },
+  {
+    "title": "Manip4Care: Robotic Manipulation of Human Limbs for Solving Assistive Tasks",
+    "url": "http://arxiv.org/abs/2508.02649v1",
+    "arxiv_id": "2508.02649v1",
+    "authors": [
+      "Yubin Koh",
+      "Ahmed H. Qureshi"
+    ],
+    "published": "2025-08-04T17:41:58+00:00",
+    "summary": "Enabling robots to grasp and reposition human limbs can significantly enhance their ability to provide assistive care to individuals with severe mobility impairments, particularly in tasks such as robot-assisted bed bathing and dressing. However, existing assistive robotics solutions often assume that the human remains static or quasi-static, limiting their effectiveness. To address this issue, we present Manip4Care, a modular simulation pipeline that enables robotic manipulators to grasp and reposition human limbs effectively. Our approach features a physics simulator equipped with built-in techniques for grasping and repositioning while considering biomechanical and collision avoidance constraints. Our grasping method employs antipodal sampling with force closure to grasp limbs, and our repositioning system utilizes the Model Predictive Path Integral (MPPI) and vector-field-based control method to generate motion trajectories under collision avoidance and biomechanical constraints. We evaluate this approach across various limb manipulation tasks in both supine and sitting positions and compare outcomes for different age groups with differing shoulder joint limits. Additionally, we demonstrate our approach for limb manipulation using a real-world mannequin and further showcase its effectiveness in bed bathing tasks."
+  },
+  {
+    "title": "D2PPO: Diffusion Policy Policy Optimization with Dispersive Loss",
+    "url": "http://arxiv.org/abs/2508.02644v1",
+    "arxiv_id": "2508.02644v1",
+    "authors": [
+      "Guowei Zou",
+      "Weibing Li",
+      "Hejun Wu",
+      "Yukun Qian",
+      "Yuhang Wang",
+      "Haitao Wang"
+    ],
+    "published": "2025-08-04T17:33:41+00:00",
+    "summary": "Diffusion policies excel at robotic manipulation by naturally modeling multimodal action distributions in high-dimensional spaces. Nevertheless, diffusion policies suffer from diffusion representation collapse: semantically similar observations are mapped to indistinguishable features, ultimately impairing their ability to handle subtle but critical variations required for complex robotic manipulation. To address this problem, we propose D2PPO (Diffusion Policy Policy Optimization with Dispersive Loss). D2PPO introduces dispersive loss regularization that combats representation collapse by treating all hidden representations within each batch as negative pairs. D2PPO compels the network to learn discriminative representations of similar observations, thereby enabling the policy to identify subtle yet crucial differences necessary for precise manipulation. In evaluation, we find that early-layer regularization benefits simple tasks, while late-layer regularization sharply enhances performance on complex manipulation tasks. On RoboMimic benchmarks, D2PPO achieves an average improvement of 22.7% in pre-training and 26.1% after fine-tuning, setting new SOTA results. In comparison with SOTA, results of real-world experiments on a Franka Emika Panda robot show the excitingly high success rate of our method. The superiority of our method is especially evident in complex tasks. Project page: https://guowei-zou.github.io/d2ppo/"
+  },
+  {
+    "title": "Dam Management in the Era of Climate Change",
+    "url": "http://arxiv.org/abs/2508.02636v1",
+    "arxiv_id": "2508.02636v1",
+    "authors": [
+      "Cristina Di Girolami",
+      "M'hamed Mrad",
+      "Ga\u00efgi",
+      "Vathana Ly Vath",
+      "Simone Scotti"
+    ],
+    "published": "2025-08-04T17:22:24+00:00",
+    "summary": "Climate change has a dramatic impact, particularly by concentrating rainfall into a few short periods, interspersed by long dry spells. In this context, the role of dams is crucial. We consider the optimal control of a dam, where the water level must not exceed a designated safety threshold, nor fall below a minimum level to ensure functionality and sustainability for for the outgoing river. To model dry spells and intense rainfall events, commonly referred to as water bombs, we introduce a Hawkes process, a well-known example of a self-exciting process characterised by time-correlated intensity, which endogenously reproduces the concentration of events. The problem is formulated as an optimal switching problem with constraints. We establish existence results and propose numerical methods for approximating the solution. Finally, we illustrate the main achievements of this approach through numerical examples. The main and counterintuitive result of our numerical analysis is that the optimal water level inside the dam increases with the self-exciting parameter. This result shows that, when facing the dilemma of managing the opposing risks of dam overtopping and dry spells, the former ultimately dominates the latter. In conclusion, dams will increasingly lose their role as water reserves and take on a greater role in flood protection."
+  },
+  {
+    "title": "HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents",
+    "url": "http://arxiv.org/abs/2508.02629v1",
+    "arxiv_id": "2508.02629v1",
+    "authors": [
+      "Yibin Liu",
+      "Zhixuan Liang",
+      "Zanxin Chen",
+      "Tianxing Chen",
+      "Mengkang Hu",
+      "Wanxi Dong",
+      "Congsheng Xu",
+      "Zhaoming Han",
+      "Yusen Qin",
+      "Yao Mu"
+    ],
+    "published": "2025-08-04T17:18:14+00:00",
+    "summary": "Recent advances in multimodal large language models (MLLMs) have enabled richer perceptual grounding for code policy generation in embodied agents. However, most existing systems lack effective mechanisms to adaptively monitor policy execution and repair codes during task completion. In this work, we introduce HyCodePolicy, a hybrid language-based control framework that systematically integrates code synthesis, geometric grounding, perceptual monitoring, and iterative repair into a closed-loop programming cycle for embodied agents. Technically, given a natural language instruction, our system first decomposes it into subgoals and generates an initial executable program grounded in object-centric geometric primitives. The program is then executed in simulation, while a vision-language model (VLM) observes selected checkpoints to detect and localize execution failures and infer failure reasons. By fusing structured execution traces capturing program-level events with VLM-based perceptual feedback, HyCodePolicy infers failure causes and repairs programs. This hybrid dual feedback mechanism enables self-correcting program synthesis with minimal human supervision. Our results demonstrate that HyCodePolicy significantly improves the robustness and sample efficiency of robot manipulation policies, offering a scalable strategy for integrating multimodal reasoning into autonomous decision-making pipelines."
+  },
+  {
     "title": "IGL-Nav: Incremental 3D Gaussian Localization for Image-goal Navigation",
     "url": "http://arxiv.org/abs/2508.00823v1",
     "arxiv_id": "2508.00823v1",
