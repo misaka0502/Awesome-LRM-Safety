@@ -1,5 +1,94 @@
 [
   {
+    "title": "LiDARCrafter: Dynamic 4D World Modeling from LiDAR Sequences",
+    "url": "http://arxiv.org/abs/2508.03692v1",
+    "arxiv_id": "2508.03692v1",
+    "authors": [
+      "Ao Liang",
+      "Youquan Liu",
+      "Yu Yang",
+      "Dongyue Lu",
+      "Linfeng Li",
+      "Lingdong Kong",
+      "Huaici Zhao",
+      "Wei Tsang Ooi"
+    ],
+    "published": "2025-08-05T17:59:56+00:00",
+    "summary": "Generative world models have become essential data engines for autonomous driving, yet most existing efforts focus on videos or occupancy grids, overlooking the unique LiDAR properties. Extending LiDAR generation to dynamic 4D world modeling presents challenges in controllability, temporal coherence, and evaluation standardization. To this end, we present LiDARCrafter, a unified framework for 4D LiDAR generation and editing. Given free-form natural language inputs, we parse instructions into ego-centric scene graphs, which condition a tri-branch diffusion network to generate object structures, motion trajectories, and geometry. These structured conditions enable diverse and fine-grained scene editing. Additionally, an autoregressive module generates temporally coherent 4D LiDAR sequences with smooth transitions. To support standardized evaluation, we establish a comprehensive benchmark with diverse metrics spanning scene-, object-, and sequence-level aspects. Experiments on the nuScenes dataset using this benchmark demonstrate that LiDARCrafter achieves state-of-the-art performance in fidelity, controllability, and temporal consistency across all levels, paving the way for data augmentation and simulation. The code and benchmark are released to the community."
+  },
+  {
+    "title": "PAC Apprenticeship Learning with Bayesian Active Inverse Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2508.03693v1",
+    "arxiv_id": "2508.03693v1",
+    "authors": [
+      "Ondrej Bajgar",
+      "Dewi S. W. Gould",
+      "Jonathon Liu",
+      "Alessandro Abate",
+      "Konstantinos Gatsis",
+      "Michael A. Osborne"
+    ],
+    "published": "2025-08-05T17:59:56+00:00",
+    "summary": "As AI systems become increasingly autonomous, reliably aligning their decision-making to human preferences is essential. Inverse reinforcement learning (IRL) offers a promising approach to infer preferences from demonstrations. These preferences can then be used to produce an apprentice policy that performs well on the demonstrated task. However, in domains like autonomous driving or robotics, where errors can have serious consequences, we need not just good average performance but reliable policies with formal guarantees -- yet obtaining sufficient human demonstrations for reliability guarantees can be costly. Active IRL addresses this challenge by strategically selecting the most informative scenarios for human demonstration. We introduce PAC-EIG, an information-theoretic acquisition function that directly targets probably-approximately-correct (PAC) guarantees for the learned policy -- providing the first such theoretical guarantee for active IRL with noisy expert demonstrations. Our method maximises information gain about the regret of the apprentice policy, efficiently identifying states requiring further demonstration. We also present Reward-EIG as an alternative when learning the reward itself is the primary objective. Focusing on finite state-action spaces, we prove convergence bounds, illustrate failure modes of prior heuristic methods, and demonstrate our method's advantages experimentally."
+  },
+  {
+    "title": "La La LiDAR: Large-Scale Layout Generation from LiDAR Data",
+    "url": "http://arxiv.org/abs/2508.03691v1",
+    "arxiv_id": "2508.03691v1",
+    "authors": [
+      "Youquan Liu",
+      "Lingdong Kong",
+      "Weidong Yang",
+      "Xin Li",
+      "Ao Liang",
+      "Runnan Chen",
+      "Ben Fei",
+      "Tongliang Liu"
+    ],
+    "published": "2025-08-05T17:59:55+00:00",
+    "summary": "Controllable generation of realistic LiDAR scenes is crucial for applications such as autonomous driving and robotics. While recent diffusion-based models achieve high-fidelity LiDAR generation, they lack explicit control over foreground objects and spatial relationships, limiting their usefulness for scenario simulation and safety validation. To address these limitations, we propose Large-scale Layout-guided LiDAR generation model (\"La La LiDAR\"), a novel layout-guided generative framework that introduces semantic-enhanced scene graph diffusion with relation-aware contextual conditioning for structured LiDAR layout generation, followed by foreground-aware control injection for complete scene generation. This enables customizable control over object placement while ensuring spatial and semantic consistency. To support our structured LiDAR generation, we introduce Waymo-SG and nuScenes-SG, two large-scale LiDAR scene graph datasets, along with new evaluation metrics for layout synthesis. Extensive experiments demonstrate that La La LiDAR achieves state-of-the-art performance in both LiDAR generation and downstream perception tasks, establishing a new benchmark for controllable 3D scene generation."
+  },
+  {
+    "title": "Veila: Panoramic LiDAR Generation from a Monocular RGB Image",
+    "url": "http://arxiv.org/abs/2508.03690v1",
+    "arxiv_id": "2508.03690v1",
+    "authors": [
+      "Youquan Liu",
+      "Lingdong Kong",
+      "Weidong Yang",
+      "Ao Liang",
+      "Jianxiong Gao",
+      "Yang Wu",
+      "Xiang Xu",
+      "Xin Li",
+      "Linfeng Li",
+      "Runnan Chen",
+      "Ben Fei"
+    ],
+    "published": "2025-08-05T17:59:53+00:00",
+    "summary": "Realistic and controllable panoramic LiDAR data generation is critical for scalable 3D perception in autonomous driving and robotics. Existing methods either perform unconditional generation with poor controllability or adopt text-guided synthesis, which lacks fine-grained spatial control. Leveraging a monocular RGB image as a spatial control signal offers a scalable and low-cost alternative, which remains an open problem. However, it faces three core challenges: (i) semantic and depth cues from RGB are vary spatially, complicating reliable conditioning generation; (ii) modality gaps between RGB appearance and LiDAR geometry amplify alignment errors under noisy diffusion; and (iii) maintaining structural coherence between monocular RGB and panoramic LiDAR is challenging, particularly in non-overlap regions between images and LiDAR. To address these challenges, we propose Veila, a novel conditional diffusion framework that integrates: a Confidence-Aware Conditioning Mechanism (CACM) that strengthens RGB conditioning by adaptively balancing semantic and depth cues according to their local reliability; a Geometric Cross-Modal Alignment (GCMA) for robust RGB-LiDAR alignment under noisy diffusion; and a Panoramic Feature Coherence (PFC) for enforcing global structural consistency across monocular RGB and panoramic LiDAR. Additionally, we introduce two metrics, Cross-Modal Semantic Consistency and Cross-Modal Depth Consistency, to evaluate alignment quality across modalities. Experiments on nuScenes, SemanticKITTI, and our proposed KITTI-Weather benchmark demonstrate that Veila achieves state-of-the-art generation fidelity and cross-modal consistency, while enabling generative data augmentation that improves downstream LiDAR semantic segmentation."
+  },
+  {
+    "title": "CompassVerifier: A Unified and Robust Verifier for LLMs Evaluation and Outcome Reward",
+    "url": "http://arxiv.org/abs/2508.03686v1",
+    "arxiv_id": "2508.03686v1",
+    "authors": [
+      "Shudong Liu",
+      "Hongwei Liu",
+      "Junnan Liu",
+      "Linchen Xiao",
+      "Songyang Gao",
+      "Chengqi Lyu",
+      "Yuzhe Gu",
+      "Wenwei Zhang",
+      "Derek F. Wong",
+      "Songyang Zhang",
+      "Kai Chen"
+    ],
+    "published": "2025-08-05T17:55:24+00:00",
+    "summary": "Answer verification is crucial not only for evaluating large language models (LLMs) by matching their unstructured outputs against standard answers, but also serves as the reward model to guide LLM optimization. Most evaluation frameworks rely on regularized matching or employ general LLMs for answer verification, which demands extensive, repetitive customization for regex rules or evaluation prompts. Two fundamental limitations persist in current methodologies: 1) the absence of comprehensive benchmarks that systematically evaluate verification capabilities across different LLMs; and 2) the nascent stage of verifier development, where existing approaches lack both the robustness to handle complex edge cases and the generalizability across different domains. In this work, we develop CompassVerifier, an accurate and robust lightweight verifier model for evaluation and outcome reward. It demonstrates multi-domain competency spanning math, knowledge, and diverse reasoning tasks, with the capability to process various answer types, including multi-subproblems, formulas, and sequence answers, while effectively identifying abnormal/invalid responses. We introduce VerifierBench benchmark comprising model outputs collected from multiple data sources, augmented through manual analysis of metaerror patterns to enhance CompassVerifier. We anticipate that CompassVerifier and VerifierBench will facilitate answer verification, evaluation protocols, and reinforcement learning research. Code and dataset are available at https://github.com/open-compass/CompassVerifier."
+  },
+  {
     "title": "MedVLThinker: Simple Baselines for Multimodal Medical Reasoning",
     "url": "http://arxiv.org/abs/2508.02669v1",
     "arxiv_id": "2508.02669v1",
