@@ -1,5 +1,68 @@
 [
   {
+    "title": "Masquerade: Learning from In-the-wild Human Videos using Data-Editing",
+    "url": "http://arxiv.org/abs/2508.09976v1",
+    "arxiv_id": "2508.09976v1",
+    "authors": [
+      "Marion Lepert",
+      "Jiaying Fang",
+      "Jeannette Bohg"
+    ],
+    "published": "2025-08-13T17:43:34+00:00",
+    "summary": "Robot manipulation research still suffers from significant data scarcity: even the largest robot datasets are orders of magnitude smaller and less diverse than those that fueled recent breakthroughs in language and vision. We introduce Masquerade, a method that edits in-the-wild egocentric human videos to bridge the visual embodiment gap between humans and robots and then learns a robot policy with these edited videos. Our pipeline turns each human video into robotized demonstrations by (i) estimating 3-D hand poses, (ii) inpainting the human arms, and (iii) overlaying a rendered bimanual robot that tracks the recovered end-effector trajectories. Pre-training a visual encoder to predict future 2-D robot keypoints on 675K frames of these edited clips, and continuing that auxiliary loss while fine-tuning a diffusion policy head on only 50 robot demonstrations per task, yields policies that generalize significantly better than prior work. On three long-horizon, bimanual kitchen tasks evaluated in three unseen scenes each, Masquerade outperforms baselines by 5-6x. Ablations show that both the robot overlay and co-training are indispensable, and performance scales logarithmically with the amount of edited human video. These results demonstrate that explicitly closing the visual embodiment gap unlocks a vast, readily available source of data from human videos that can be used to improve robot policies."
+  },
+  {
+    "title": "Vision-driven River Following of UAV via Safe Reinforcement Learning using Semantic Dynamics Model",
+    "url": "http://arxiv.org/abs/2508.09971v1",
+    "arxiv_id": "2508.09971v1",
+    "authors": [
+      "Zihan Wang",
+      "Nina Mahmoudian"
+    ],
+    "published": "2025-08-13T17:39:09+00:00",
+    "summary": "Vision-driven autonomous river following by Unmanned Aerial Vehicles is critical for applications such as rescue, surveillance, and environmental monitoring, particularly in dense riverine environments where GPS signals are unreliable. We formalize river following as a coverage control problem in which the reward function is submodular, yielding diminishing returns as more unique river segments are visited, thereby framing the task as a Submodular Markov Decision Process. First, we introduce Marginal Gain Advantage Estimation, which refines the reward advantage function by using a sliding window baseline computed from historical episodic returns, thus aligning the advantage estimation with the agent's evolving recognition of action value in non-Markovian settings. Second, we develop a Semantic Dynamics Model based on patchified water semantic masks that provides more interpretable and data-efficient short-term prediction of future observations compared to latent vision dynamics models. Third, we present the Constrained Actor Dynamics Estimator architecture, which integrates the actor, the cost estimator, and SDM for cost advantage estimation to form a model-based SafeRL framework capable of solving partially observable Constrained Submodular Markov Decision Processes. Simulation results demonstrate that MGAE achieves faster convergence and superior performance over traditional critic-based methods like Generalized Advantage Estimation. SDM provides more accurate short-term state predictions that enable the cost estimator to better predict potential violations. Overall, CADE effectively integrates safety regulation into model-based RL, with the Lagrangian approach achieving the soft balance of reward and safety during training, while the safety layer enhances performance during inference by hard action overlay."
+  },
+  {
+    "title": "Online Safety under Multiple Constraints and Input Bounds using gatekeeper: Theory and Applications",
+    "url": "http://arxiv.org/abs/2508.09963v1",
+    "arxiv_id": "2508.09963v1",
+    "authors": [
+      "Devansh R. Agrawal",
+      "Dimitra Panagou"
+    ],
+    "published": "2025-08-13T17:31:29+00:00",
+    "summary": "This letter presents an approach to guarantee online safety of a cyber-physical system under multiple state and input constraints. Our proposed framework, called gatekeeper, recursively guarantees the existence of an infinite-horizon trajectory that satisfies all constraints and system dynamics. Such trajectory is constructed using a backup controller, which we define formally in this paper. gatekeeper relies on a small number of verifiable assumptions, and is computationally efficient since it requires optimization over a single scalar variable. We make two primary contributions in this letter. (A) First, we develop the theory of gatekeeper: we derive a sub-optimality bound relative to a full nonlinear trajectory optimization problem, and show how this can be used in runtime to validate performance. This also informs the design of the backup controllers and sets. (B) Second, we demonstrate in detail an application of gatekeeper for multi-agent formation flight, where each Dubins agent must avoid multiple obstacles and weapons engagement zones, both of which are nonlinear, nonconvex constraints."
+  },
+  {
+    "title": "GBC: Generalized Behavior-Cloning Framework for Whole-Body Humanoid Imitation",
+    "url": "http://arxiv.org/abs/2508.09960v1",
+    "arxiv_id": "2508.09960v1",
+    "authors": [
+      "Yifei Yao",
+      "Chengyuan Luo",
+      "Jiaheng Du",
+      "Wentao He",
+      "Jun-Guo Lu"
+    ],
+    "published": "2025-08-13T17:28:39+00:00",
+    "summary": "The creation of human-like humanoid robots is hindered by a fundamental fragmentation: data processing and learning algorithms are rarely universal across different robot morphologies. This paper introduces the Generalized Behavior Cloning (GBC) framework, a comprehensive and unified solution designed to solve this end-to-end challenge. GBC establishes a complete pathway from human motion to robot action through three synergistic innovations. First, an adaptive data pipeline leverages a differentiable IK network to automatically retarget any human MoCap data to any humanoid. Building on this foundation, our novel DAgger-MMPPO algorithm with its MMTransformer architecture learns robust, high-fidelity imitation policies. To complete the ecosystem, the entire framework is delivered as an efficient, open-source platform based on Isaac Lab, empowering the community to deploy the full workflow via simple configuration scripts. We validate the power and generality of GBC by training policies on multiple heterogeneous humanoids, demonstrating excellent performance and transfer to novel motions. This work establishes the first practical and unified pathway for creating truly generalized humanoid controllers."
+  },
+  {
+    "title": "LIA-X: Interpretable Latent Portrait Animator",
+    "url": "http://arxiv.org/abs/2508.09959v1",
+    "arxiv_id": "2508.09959v1",
+    "authors": [
+      "Yaohui Wang",
+      "Di Yang",
+      "Xinyuan Chen",
+      "Francois Bremond",
+      "Yu Qiao",
+      "Antitza Dantcheva"
+    ],
+    "published": "2025-08-13T17:22:05+00:00",
+    "summary": "We introduce LIA-X, a novel interpretable portrait animator designed to transfer facial dynamics from a driving video to a source portrait with fine-grained control. LIA-X is an autoencoder that models motion transfer as a linear navigation of motion codes in latent space. Crucially, it incorporates a novel Sparse Motion Dictionary that enables the model to disentangle facial dynamics into interpretable factors. Deviating from previous 'warp-render' approaches, the interpretability of the Sparse Motion Dictionary allows LIA-X to support a highly controllable 'edit-warp-render' strategy, enabling precise manipulation of fine-grained facial semantics in the source portrait. This helps to narrow initial differences with the driving video in terms of pose and expression. Moreover, we demonstrate the scalability of LIA-X by successfully training a large-scale model with approximately 1 billion parameters on extensive datasets. Experimental results show that our proposed method outperforms previous approaches in both self-reenactment and cross-reenactment tasks across several benchmarks. Additionally, the interpretable and controllable nature of LIA-X supports practical applications such as fine-grained, user-guided image and video editing, as well as 3D-aware portrait video manipulation."
+  },
+  {
     "title": "Nonlinear Symmetry Breaking to Enhance the Sagnac Effect in a Microresonator Gyroscope",
     "url": "http://arxiv.org/abs/2508.09132v1",
     "arxiv_id": "2508.09132v1",
