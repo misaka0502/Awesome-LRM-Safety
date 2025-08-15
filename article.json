@@ -1,5 +1,79 @@
 [
   {
+    "title": "SSRL: Self-Search Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2508.10874v1",
+    "arxiv_id": "2508.10874v1",
+    "authors": [
+      "Yuchen Fan",
+      "Kaiyan Zhang",
+      "Heng Zhou",
+      "Yuxin Zuo",
+      "Yanxu Chen",
+      "Yu Fu",
+      "Xinwei Long",
+      "Xuekai Zhu",
+      "Che Jiang",
+      "Yuchen Zhang",
+      "Li Kang",
+      "Gang Chen",
+      "Cheng Huang",
+      "Zhizhou He",
+      "Bingning Wang",
+      "Lei Bai",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "published": "2025-08-14T17:46:01+00:00",
+    "summary": "We investigate the potential of large language models (LLMs) to serve as efficient simulators for agentic search tasks in reinforcement learning (RL), thereby reducing dependence on costly interactions with external search engines. To this end, we first quantify the intrinsic search capability of LLMs via structured prompting and repeated sampling, which we term Self-Search. Our results reveal that LLMs exhibit strong scaling behavior with respect to the inference budget, achieving high pass@k on question-answering benchmarks, including the challenging BrowseComp task. Building on these observations, we introduce Self-Search RL (SSRL), which enhances LLMs' Self-Search capability through format-based and rule-based rewards. SSRL enables models to iteratively refine their knowledge utilization internally, without requiring access to external tools. Empirical evaluations demonstrate that SSRL-trained policy models provide a cost-effective and stable environment for search-driven RL training, reducing reliance on external search engines and facilitating robust sim-to-real transfer. We draw the following conclusions: 1) LLMs possess world knowledge that can be effectively elicited to achieve high performance; 2) SSRL demonstrates the potential of leveraging internal knowledge to reduce hallucination; 3) SSRL-trained models integrate seamlessly with external search engines without additional effort. Our findings highlight the potential of LLMs to support more scalable RL agent training."
+  },
+  {
+    "title": "TLE-Based A2C Agent for Terrestrial Coverage Orbital Path Planning",
+    "url": "http://arxiv.org/abs/2508.10872v1",
+    "arxiv_id": "2508.10872v1",
+    "authors": [
+      "Anantha Narayanan",
+      "Battu Bhanu Teja",
+      "Pruthwik Mishra"
+    ],
+    "published": "2025-08-14T17:44:51+00:00",
+    "summary": "The increasing congestion of Low Earth Orbit (LEO) poses persistent challenges to the efficient deployment and safe operation of Earth observation satellites. Mission planners must now account not only for mission-specific requirements but also for the increasing collision risk with active satellites and space debris. This work presents a reinforcement learning framework using the Advantage Actor-Critic (A2C) algorithm to optimize satellite orbital parameters for precise terrestrial coverage within predefined surface radii. By formulating the problem as a Markov Decision Process (MDP) within a custom OpenAI Gymnasium environment, our method simulates orbital dynamics using classical Keplerian elements. The agent progressively learns to adjust five of the orbital parameters - semi-major axis, eccentricity, inclination, right ascension of ascending node, and the argument of perigee-to achieve targeted terrestrial coverage. Comparative evaluation against Proximal Policy Optimization (PPO) demonstrates A2C's superior performance, achieving 5.8x higher cumulative rewards (10.0 vs 9.263025) while converging in 31.5x fewer timesteps (2,000 vs 63,000). The A2C agent consistently meets mission objectives across diverse target coordinates while maintaining computational efficiency suitable for real-time mission planning applications. Key contributions include: (1) a TLE-based orbital simulation environment incorporating physics constraints, (2) validation of actor-critic methods' superiority over trust region approaches in continuous orbital control, and (3) demonstration of rapid convergence enabling adaptive satellite deployment. This approach establishes reinforcement learning as a computationally efficient alternative for scalable and intelligent LEO mission planning."
+  },
+  {
+    "title": "CVIRO: A Consistent and Tightly-Coupled Visual-Inertial-Ranging Odometry on Lie Groups",
+    "url": "http://arxiv.org/abs/2508.10867v1",
+    "arxiv_id": "2508.10867v1",
+    "authors": [
+      "Yizhi Zhou",
+      "Ziwei Kang",
+      "Jiawei Xia",
+      "Xuan Wang"
+    ],
+    "published": "2025-08-14T17:43:00+00:00",
+    "summary": "Ultra Wideband (UWB) is widely used to mitigate drift in visual-inertial odometry (VIO) systems. Consistency is crucial for ensuring the estimation accuracy of a UWBaided VIO system. An inconsistent estimator can degrade localization performance, where the inconsistency primarily arises from two main factors: (1) the estimator fails to preserve the correct system observability, and (2) UWB anchor positions are assumed to be known, leading to improper neglect of calibration uncertainty. In this paper, we propose a consistent and tightly-coupled visual-inertial-ranging odometry (CVIRO) system based on the Lie group. Our method incorporates the UWB anchor state into the system state, explicitly accounting for UWB calibration uncertainty and enabling the joint and consistent estimation of both robot and anchor states. Furthermore, observability consistency is ensured by leveraging the invariant error properties of the Lie group. We analytically prove that the CVIRO algorithm naturally maintains the system's correct unobservable subspace, thereby preserving estimation consistency. Extensive simulations and experiments demonstrate that CVIRO achieves superior localization accuracy and consistency compared to existing methods."
+  },
+  {
+    "title": "Phased-Array Laser Power Beaming from Cislunar Space to the Lunar Surface",
+    "url": "http://arxiv.org/abs/2508.10855v1",
+    "arxiv_id": "2508.10855v1",
+    "authors": [
+      "Slava G. Turyshev"
+    ],
+    "published": "2025-08-14T17:26:08+00:00",
+    "summary": "This paper presents a rigorous analytical framework for quantitatively evaluating space-based laser power beaming from lunar-orbiting spacecraft to surface receivers, addressing the critical need for continuous, high-density energy to sustain lunar exploration and habitation. The framework integrates physics-based models of spacecraft photovoltaic generation, precise orbital geometries, time-dependent link availability and slant-range variations, coherent beam propagation (including transmitter aperture diameter, beam quality factor, path losses, and pointing jitter), and photonic-to-electrical conversion at the lunar surface. Particular emphasis is placed on phased-array transmitter systems, whose large effective apertures significantly reduce beam divergence relative to single-aperture designs, resulting in orders-of-magnitude increases in delivered surface power under equivalent orbital and power conditions. Parametric sensitivity analyses and illustrative numerical simulations demonstrate how phased-array architectures improve power density and end-to-end efficiency at operational lunar distances. The study also examines advanced orbital configurations (e.g., Near-Rectilinear Halo Orbits, Earth-Moon Lagrange points), real-time adaptive beam steering and wavefront control, optimized receiver geometries, and thermal/dust mitigation strategies. The results establish a clear pathway toward scalable, efficient laser power beaming infrastructures capable of overcoming lunar-specific challenges - including prolonged darkness and permanently shadowed regions - and enabling sustained robotic and crewed surface operations."
+  },
+  {
+    "title": "A Multimodal Neural Network for Recognizing Subjective Self-Disclosure Towards Social Robots",
+    "url": "http://arxiv.org/abs/2508.10828v1",
+    "arxiv_id": "2508.10828v1",
+    "authors": [
+      "Henry Powell",
+      "Guy Laban",
+      "Emily S. Cross"
+    ],
+    "published": "2025-08-14T16:50:51+00:00",
+    "summary": "Subjective self-disclosure is an important feature of human social interaction. While much has been done in the social and behavioural literature to characterise the features and consequences of subjective self-disclosure, little work has been done thus far to develop computational systems that are able to accurately model it. Even less work has been done that attempts to model specifically how human interactants self-disclose with robotic partners. It is becoming more pressing as we require social robots to work in conjunction with and establish relationships with humans in various social settings. In this paper, our aim is to develop a custom multimodal attention network based on models from the emotion recognition literature, training this model on a large self-collected self-disclosure video corpus, and constructing a new loss function, the scale preserving cross entropy loss, that improves upon both classification and regression versions of this problem. Our results show that the best performing model, trained with our novel loss function, achieves an F1 score of 0.83, an improvement of 0.48 from the best baseline model. This result makes significant headway in the aim of allowing social robots to pick up on an interaction partner's self-disclosures, an ability that will be essential in social robots with social cognition."
+  },
+  {
     "title": "Masquerade: Learning from In-the-wild Human Videos using Data-Editing",
     "url": "http://arxiv.org/abs/2508.09976v1",
     "arxiv_id": "2508.09976v1",
