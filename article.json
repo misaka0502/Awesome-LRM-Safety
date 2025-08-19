@@ -1,5 +1,88 @@
 [
   {
+    "title": "IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans Fusion",
+    "url": "http://arxiv.org/abs/2508.13153v1",
+    "arxiv_id": "2508.13153v1",
+    "authors": [
+      "Wenhao Hu",
+      "Zesheng Li",
+      "Haonan Zhou",
+      "Liu Liu",
+      "Xuexiang Wen",
+      "Zhizhong Su",
+      "Xi Li",
+      "Gaoang Wang"
+    ],
+    "published": "2025-08-18T17:59:47+00:00",
+    "summary": "Reconstructing complete and interactive 3D scenes remains a fundamental challenge in computer vision and robotics, particularly due to persistent object occlusions and limited sensor coverage. Multiview observations from a single scene scan often fail to capture the full structural details. Existing approaches typically rely on multi stage pipelines, such as segmentation, background completion, and inpainting or require per-object dense scanning, both of which are error-prone, and not easily scalable. We propose IGFuse, a novel framework that reconstructs interactive Gaussian scene by fusing observations from multiple scans, where natural object rearrangement between captures reveal previously occluded regions. Our method constructs segmentation aware Gaussian fields and enforces bi-directional photometric and semantic consistency across scans. To handle spatial misalignments, we introduce a pseudo-intermediate scene state for unified alignment, alongside collaborative co-pruning strategies to refine geometry. IGFuse enables high fidelity rendering and object level scene manipulation without dense observations or complex pipelines. Extensive experiments validate the framework's strong generalization to novel scene configurations, demonstrating its effectiveness for real world 3D reconstruction and real-to-simulation transfer. Our project page is available online."
+  },
+  {
+    "title": "Manipulate-to-Navigate: Reinforcement Learning with Visual Affordances and Manipulability Priors",
+    "url": "http://arxiv.org/abs/2508.13151v1",
+    "arxiv_id": "2508.13151v1",
+    "authors": [
+      "Yuying Zhang",
+      "Joni Pajarinen"
+    ],
+    "published": "2025-08-18T17:58:57+00:00",
+    "summary": "Mobile manipulation in dynamic environments is challenging due to movable obstacles blocking the robot's path. Traditional methods, which treat navigation and manipulation as separate tasks, often fail in such 'manipulate-to-navigate' scenarios, as obstacles must be removed before navigation. In these cases, active interaction with the environment is required to clear obstacles while ensuring sufficient space for movement. To address the manipulate-to-navigate problem, we propose a reinforcement learning-based approach for learning manipulation actions that facilitate subsequent navigation. Our method combines manipulability priors to focus the robot on high manipulability body positions with affordance maps for selecting high-quality manipulation actions. By focusing on feasible and meaningful actions, our approach reduces unnecessary exploration and allows the robot to learn manipulation strategies more effectively. We present two new manipulate-to-navigate simulation tasks called Reach and Door with the Boston Dynamics Spot robot. The first task tests whether the robot can select a good hand position in the target area such that the robot base can move effectively forward while keeping the end effector position fixed. The second task requires the robot to move a door aside in order to clear the navigation path. Both of these tasks need first manipulation and then navigating the base forward. Results show that our method allows a robot to effectively interact with and traverse dynamic environments. Finally, we transfer the learned policy to a real Boston Dynamics Spot robot, which successfully performs the Reach task."
+  },
+  {
+    "title": "MDPO: Overcoming the Training-Inference Divide of Masked Diffusion Language Models",
+    "url": "http://arxiv.org/abs/2508.13148v1",
+    "arxiv_id": "2508.13148v1",
+    "authors": [
+      "Haoyu He",
+      "Katrin Renz",
+      "Yong Cao",
+      "Andreas Geiger"
+    ],
+    "published": "2025-08-18T17:58:13+00:00",
+    "summary": "Diffusion language models, as a promising alternative to traditional autoregressive (AR) models, enable faster generation and richer conditioning on bidirectional context. However, they suffer from a key discrepancy between training and inference: during inference, MDLMs progressively reveal the structure of the generated sequence by producing fewer and fewer masked tokens, whereas this structure is ignored in training as tokens are masked at random. Although this discrepancy between training and inference can lead to suboptimal performance, it has been largely overlooked by previous works, leaving closing this gap between the two stages an open problem. To address this, we frame the problem of learning effective denoising trajectories as a sequential decision-making problem and use the resulting framework to apply reinforcement learning. We propose a novel Masked Diffusion Policy Optimization (MDPO) to exploit the Markov property diffusion possesses and explicitly train the model under the same progressive refining schedule used at inference. MDPO matches the performance of the previous state-of-the-art (SOTA) method with 60x fewer gradient updates, while achieving average improvements of 9.6% on MATH500 and 54.2% on Countdown over SOTA when trained within the same number of weight updates. Additionally, we improve the remasking strategy of MDLMs as a plug-in inference replacement to overcome the limitation that the model cannot refine tokens flexibly. This simple yet effective training-free strategy, what we refer to as RCR, consistently improves performance and yields additional gains when combined with MDPO. Our findings establish great potential for investigating the discrepancy between pre-training and inference of MDLMs. Code: https://github.com/autonomousvision/mdpo. Project Page: https://cli212.github.io/MDPO/."
+  },
+  {
+    "title": "Has GPT-5 Achieved Spatial Intelligence? An Empirical Study",
+    "url": "http://arxiv.org/abs/2508.13142v1",
+    "arxiv_id": "2508.13142v1",
+    "authors": [
+      "Zhongang Cai",
+      "Yubo Wang",
+      "Qingping Sun",
+      "Ruisi Wang",
+      "Chenyang Gu",
+      "Wanqi Yin",
+      "Zhiqian Lin",
+      "Zhitao Yang",
+      "Chen Wei",
+      "Xuanke Shi",
+      "Kewang Deng",
+      "Xiaoyang Han",
+      "Zukai Chen",
+      "Jiaqi Li",
+      "Xiangyu Fan",
+      "Hanming Deng",
+      "Lewei Lu",
+      "Bo Li",
+      "Ziwei Liu",
+      "Quan Wang",
+      "Dahua Lin",
+      "Lei Yang"
+    ],
+    "published": "2025-08-18T17:55:17+00:00",
+    "summary": "Multi-modal models have achieved remarkable progress in recent years. Nevertheless, they continue to exhibit notable limitations in spatial understanding and reasoning, which are fundamental capabilities to achieving artificial general intelligence. With the recent release of GPT-5, allegedly the most powerful AI model to date, it is timely to examine where the leading models stand on the path toward spatial intelligence. First, we propose a comprehensive taxonomy of spatial tasks that unifies existing benchmarks and discuss the challenges in ensuring fair evaluation. We then evaluate state-of-the-art proprietary and open-source models on eight key benchmarks, at a cost exceeding one billion total tokens. Our empirical study reveals that (1) GPT-5 demonstrates unprecedented strength in spatial intelligence, yet (2) still falls short of human performance across a broad spectrum of tasks. Moreover, we (3) identify the more challenging spatial intelligence problems for multi-modal models, and (4) proprietary models do not exhibit a decisive advantage when facing the most difficult problems. In addition, we conduct a qualitative evaluation across a diverse set of scenarios that are intuitive for humans yet fail even the most advanced multi-modal models."
+  },
+  {
+    "title": "Improving Detection of Watermarked Language Models",
+    "url": "http://arxiv.org/abs/2508.13131v1",
+    "arxiv_id": "2508.13131v1",
+    "authors": [
+      "Dara Bahri",
+      "John Wieting"
+    ],
+    "published": "2025-08-18T17:43:06+00:00",
+    "summary": "Watermarking has recently emerged as an effective strategy for detecting the generations of large language models (LLMs). The strength of a watermark typically depends strongly on the entropy afforded by the language model and the set of input prompts. However, entropy can be quite limited in practice, especially for models that are post-trained, for example via instruction tuning or reinforcement learning from human feedback (RLHF), which makes detection based on watermarking alone challenging. In this work, we investigate whether detection can be improved by combining watermark detectors with non-watermark ones. We explore a number of hybrid schemes that combine the two, observing performance gains over either class of detector under a wide range of experimental conditions."
+  },
+  {
     "title": "Thyme: Think Beyond Images",
     "url": "http://arxiv.org/abs/2508.11630v1",
     "arxiv_id": "2508.11630v1",
