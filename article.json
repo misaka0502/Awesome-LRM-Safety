@@ -1,5 +1,78 @@
 [
   {
+    "title": "Train Once, Deploy Anywhere: Realize Data-Efficient Dynamic Object Manipulation",
+    "url": "http://arxiv.org/abs/2508.14042v1",
+    "arxiv_id": "2508.14042v1",
+    "authors": [
+      "Zhuoling Li",
+      "Xiaoyang Wu",
+      "Zhenhua Xu",
+      "Hengshuang Zhao"
+    ],
+    "published": "2025-08-19T17:59:59+00:00",
+    "summary": "Realizing generalizable dynamic object manipulation is important for enhancing manufacturing efficiency, as it eliminates specialized engineering for various scenarios. To this end, imitation learning emerges as a promising paradigm, leveraging expert demonstrations to teach a policy manipulation skills. Although the generalization of an imitation learning policy can be improved by increasing demonstrations, demonstration collection is labor-intensive. To address this problem, this paper investigates whether strong generalization in dynamic object manipulation is achievable with only a few demonstrations. Specifically, we develop an entropy-based theoretical framework to quantify the optimization of imitation learning. Based on this framework, we propose a system named Generalizable Entropy-based Manipulation (GEM). Extensive experiments in simulated and real tasks demonstrate that GEM can generalize across diverse environment backgrounds, robot embodiments, motion dynamics, and object geometries. Notably, GEM has been deployed in a real canteen for tableware collection. Without any in-scene demonstration, it achieves a success rate of over 97% across more than 10,000 operations."
+  },
+  {
+    "title": "ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents",
+    "url": "http://arxiv.org/abs/2508.14040v1",
+    "arxiv_id": "2508.14040v1",
+    "authors": [
+      "Hanyu Lai",
+      "Xiao Liu",
+      "Yanxiao Zhao",
+      "Han Xu",
+      "Hanchen Zhang",
+      "Bohao Jing",
+      "Yanyu Ren",
+      "Shuntian Yao",
+      "Yuxiao Dong",
+      "Jie Tang"
+    ],
+    "published": "2025-08-19T17:59:45+00:00",
+    "summary": "We introduce ComputerRL, a framework for autonomous desktop intelligence that enables agents to operate complex digital workspaces skillfully. ComputerRL features the API-GUI paradigm, which unifies programmatic API calls and direct GUI interaction to address the inherent mismatch between machine agents and human-centric desktop environments. Scaling end-to-end RL training is crucial for improvement and generalization across diverse desktop tasks, yet remains challenging due to environmental inefficiency and instability in extended training. To support scalable and robust training, we develop a distributed RL infrastructure capable of orchestrating thousands of parallel virtual desktop environments to accelerate large-scale online RL. Furthermore, we propose Entropulse, a training strategy that alternates reinforcement learning with supervised fine-tuning, effectively mitigating entropy collapse during extended training runs. We employ ComputerRL on open models GLM-4-9B-0414 and Qwen2.5-14B, and evaluate them on the OSWorld benchmark. The AutoGLM-OS-9B based on GLM-4-9B-0414 achieves a new state-of-the-art accuracy of 48.1%, demonstrating significant improvements for general agents in desktop automation. The algorithm and framework are adopted in building AutoGLM (Liu et al., 2024a)"
+  },
+  {
+    "title": "Unintended Misalignment from Agentic Fine-Tuning: Risks and Mitigation",
+    "url": "http://arxiv.org/abs/2508.14031v1",
+    "arxiv_id": "2508.14031v1",
+    "authors": [
+      "Dongyoon Hahm",
+      "Taywon Min",
+      "Woogyeol Jin",
+      "Kimin Lee"
+    ],
+    "published": "2025-08-19T17:53:35+00:00",
+    "summary": "Beyond simple text generation, Large Language Models (LLMs) have evolved into agentic systems capable of planning and interacting with external tools to solve complex tasks. This evolution involves fine-tuning LLMs on agent-specific tasks to enhance their proficiency. However, safety concerns are frequently overlooked during this fine-tuning process. In this work, we show that aligned LLMs can become unintentionally misaligned, leading to a higher likelihood of executing harmful tasks and a reduced tendency to refuse them when fine-tuned to execute agentic tasks. To address these safety challenges, we propose Prefix INjection Guard (PING), a simple yet effective method that prepends automatically generated natural language prefixes to agent responses, guiding them to refuse harmful requests while preserving performance on benign tasks. Specifically, we introduce an iterative approach that alternates between (1) generating candidate prefixes and (2) selecting those that optimize both task performance and refusal behavior. Experimental results demonstrate that PING significantly enhances the safety of fine-tuned LLM agents without sacrificing their effectiveness. PING consistently outperforms existing prompting approaches across diverse benchmarks in both web navigation and code generation tasks. Our analysis of internal hidden states via linear probes reveals that prefix tokens are crucial for behavior modification, explaining the performance gains. WARNING: This paper contains contents that are unethical or offensive in nature."
+  },
+  {
+    "title": "Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains RLVR",
+    "url": "http://arxiv.org/abs/2508.14029v1",
+    "arxiv_id": "2508.14029v1",
+    "authors": [
+      "Xiao Liang",
+      "Zhongzhi Li",
+      "Yeyun Gong",
+      "Yelong Shen",
+      "Ying Nian Wu",
+      "Zhijiang Guo",
+      "Weizhu Chen"
+    ],
+    "published": "2025-08-19T17:42:45+00:00",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as a key paradigm for post-training Large Language Models (LLMs), particularly for complex reasoning tasks. However, vanilla RLVR training has been shown to improve Pass@1 performance at the expense of policy entropy, leading to reduced generation diversity and limiting the Pass@k performance, which typically represents the upper bound of LLM reasoning capability. In this paper, we systematically analyze the policy's generation diversity from the perspective of training problems and find that augmenting and updating training problems helps mitigate entropy collapse during training. Based on these observations, we propose an online Self-play with Variational problem Synthesis (SvS) strategy for RLVR training, which uses the policy's correct solutions to synthesize variational problems while ensuring their reference answers remain identical to the originals. This self-improving strategy effectively maintains policy entropy during training and substantially improves Pass@k compared with standard RLVR, sustaining prolonged improvements and achieving absolute gains of 18.3% and 22.8% in Pass@32 performance on the competition-level AIME24 and AIME25 benchmarks. Experiments on 12 reasoning benchmarks across varying model sizes from 3B to 32B consistently demonstrate the generalizability and robustness of SvS."
+  },
+  {
+    "title": "Learning from Preferences and Mixed Demonstrations in General Settings",
+    "url": "http://arxiv.org/abs/2508.14027v1",
+    "arxiv_id": "2508.14027v1",
+    "authors": [
+      "Jason R Brown",
+      "Carl Henrik Ek",
+      "Robert D Mullins"
+    ],
+    "published": "2025-08-19T17:37:35+00:00",
+    "summary": "Reinforcement learning is a general method for learning in sequential settings, but it can often be difficult to specify a good reward function when the task is complex. In these cases, preference feedback or expert demonstrations can be used instead. However, existing approaches utilising both together are often ad-hoc, rely on domain-specific properties, or won't scale. We develop a new framing for learning from human data, \\emph{reward-rational partial orderings over observations}, designed to be flexible and scalable. Based on this we introduce a practical algorithm, LEOPARD: Learning Estimated Objectives from Preferences And Ranked Demonstrations. LEOPARD can learn from a broad range of data, including negative demonstrations, to efficiently learn reward functions across a wide range of domains. We find that when a limited amount of preference and demonstration feedback is available, LEOPARD outperforms existing baselines by a significant margin. Furthermore, we use LEOPARD to investigate learning from many types of feedback compared to just a single one, and find that combining feedback types is often beneficial."
+  },
+  {
     "title": "IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans Fusion",
     "url": "http://arxiv.org/abs/2508.13153v1",
     "arxiv_id": "2508.13153v1",
