@@ -1,5 +1,87 @@
 [
   {
+    "title": "Virtual Community: An Open World for Humans, Robots, and Society",
+    "url": "http://arxiv.org/abs/2508.14893v1",
+    "arxiv_id": "2508.14893v1",
+    "authors": [
+      "Qinhong Zhou",
+      "Hongxin Zhang",
+      "Xiangye Lin",
+      "Zheyuan Zhang",
+      "Yutian Chen",
+      "Wenjun Liu",
+      "Zunzhe Zhang",
+      "Sunli Chen",
+      "Lixing Fang",
+      "Qiushi Lyu",
+      "Xinyu Sun",
+      "Jincheng Yang",
+      "Zeyuan Wang",
+      "Bao Chi Dang",
+      "Zhehuan Chen",
+      "Daksha Ladia",
+      "Jiageng Liu",
+      "Chuang Gan"
+    ],
+    "published": "2025-08-20T17:59:32+00:00",
+    "summary": "The rapid progress in AI and Robotics may lead to a profound societal transformation, as humans and robots begin to coexist within shared communities, introducing both opportunities and challenges. To explore this future, we present Virtual Community-an open-world platform for humans, robots, and society-built on a universal physics engine and grounded in real-world 3D scenes. With Virtual Community, we aim to study embodied social intelligence at scale: 1) How robots can intelligently cooperate or compete; 2) How humans develop social relations and build community; 3) More importantly, how intelligent robots and humans can co-exist in an open world. To support these, Virtual Community features: 1) An open-source multi-agent physics simulator that supports robots, humans, and their interactions within a society; 2) A large-scale, real-world aligned community generation pipeline, including vast outdoor space, diverse indoor scenes, and a community of grounded agents with rich characters and appearances. Leveraging Virtual Community, we propose two novel challenges. The Community Planning Challenge evaluates multi-agent reasoning and planning ability in open-world settings, such as cooperating to help agents with daily activities and efficiently connecting other agents. The Community Robot Challenge requires multiple heterogeneous robots to collaborate in solving complex open-world tasks. We evaluate various baselines on these tasks and demonstrate the challenges in both high-level open-world task planning and low-level cooperation controls. We hope that Virtual Community will unlock further study of human-robot coexistence within open-world environments."
+  },
+  {
+    "title": "GaussianArt: Unified Modeling of Geometry and Motion for Articulated Objects",
+    "url": "http://arxiv.org/abs/2508.14891v1",
+    "arxiv_id": "2508.14891v1",
+    "authors": [
+      "Licheng Shen",
+      "Saining Zhang",
+      "Honghan Li",
+      "Peilin Yang",
+      "Zihao Huang",
+      "Zongzheng Zhang",
+      "Hao Zhao"
+    ],
+    "published": "2025-08-20T17:59:08+00:00",
+    "summary": "Reconstructing articulated objects is essential for building digital twins of interactive environments. However, prior methods typically decouple geometry and motion by first reconstructing object shape in distinct states and then estimating articulation through post-hoc alignment. This separation complicates the reconstruction pipeline and restricts scalability, especially for objects with complex, multi-part articulation. We introduce a unified representation that jointly models geometry and motion using articulated 3D Gaussians. This formulation improves robustness in motion decomposition and supports articulated objects with up to 20 parts, significantly outperforming prior approaches that often struggle beyond 2--3 parts due to brittle initialization. To systematically assess scalability and generalization, we propose MPArt-90, a new benchmark consisting of 90 articulated objects across 20 categories, each with diverse part counts and motion configurations. Extensive experiments show that our method consistently achieves superior accuracy in part-level geometry reconstruction and motion estimation across a broad range of object types. We further demonstrate applicability to downstream tasks such as robotic simulation and human-scene interaction modeling, highlighting the potential of unified articulated representations in scalable physical modeling."
+  },
+  {
+    "title": "Novel Limits on Dark Photon Mixing from Radiation Safety",
+    "url": "http://arxiv.org/abs/2508.14885v1",
+    "arxiv_id": "2508.14885v1",
+    "authors": [
+      "Wen Yin"
+    ],
+    "published": "2025-08-20T17:55:34+00:00",
+    "summary": "I propose a novel laboratory search for dark photons based on radiation-safety monitoring at synchrotron radiation facilities, including NanoTerasu, SPring-8, KEK-PF, and ESRF. Dark photons can be produced parasitically in undulators or via photon-mirror interactions, and subsequently traverse optical systems and shielding. Taking into account quantum effects and the internal structure of undulators, mirrors, and detectors, I show that even a simple Geiger-M\\\"uller counter, routinely used for radiation-safety monitoring, can detect such dark photons outside the shielding and set competitive limits on the kinetic mixing parameter down to $\\chi \\lesssim 5\\times 10^{-6}$ in the eV mass range, providing some of the strongest bounds among laboratory searches. Because radiation safety is strictly regulated, the resulting limits can be regarded as robust and realistic constraints."
+  },
+  {
+    "title": "Deep Reinforcement Learning Based Routing for Heterogeneous Multi-Hop Wireless Networks",
+    "url": "http://arxiv.org/abs/2508.14884v1",
+    "arxiv_id": "2508.14884v1",
+    "authors": [
+      "Brian Kim",
+      "Justin H. Kong",
+      "Terrence J. Moore",
+      "Fikadu T. Dagefu"
+    ],
+    "published": "2025-08-20T17:54:43+00:00",
+    "summary": "Routing in multi-hop wireless networks is a complex problem, especially in heterogeneous networks where multiple wireless communication technologies coexist. Reinforcement learning (RL) methods, such as Q-learning, have been introduced for decentralized routing by allowing nodes to make decisions based on local observations. However, Q-learning suffers from scalability issues and poor generalization due to the difficulty in managing the Q-table in large or dynamic network topologies, especially in heterogeneous networks (HetNets) with diverse channel characteristics. Thus, in this paper, we propose a novel deep Q-network (DQN)-based routing framework for heterogeneous multi-hop wireless networks to maximize the end-to-end rate of the route by improving scalability and adaptability, where each node uses a deep neural network (DNN) to estimate the Q-values and jointly select the next-hop relay and a communication technology for transmission. To achieve better performance with the DNN, selecting which nodes to exchange information is critical, as it not only defines the state and action spaces but also determines the input to the DNN. To this end, we propose neighbor node selection strategies based on channel gain and rate between nodes rather than a simple distance-based approach for an improved set of states and actions for DQN-based routing. During training, the model experiences diverse network topologies to ensure generalization and robustness, and simulation results show that the proposed neighbor node selection outperforms simple distance-based selection. Further, we observe that the DQN-based approach outperforms various benchmark schemes and performs comparably to the optimal approach."
+  },
+  {
+    "title": "Compute-Optimal Scaling for Value-Based Deep RL",
+    "url": "http://arxiv.org/abs/2508.14881v1",
+    "arxiv_id": "2508.14881v1",
+    "authors": [
+      "Preston Fu",
+      "Oleh Rybkin",
+      "Zhiyuan Zhou",
+      "Michal Nauman",
+      "Pieter Abbeel",
+      "Sergey Levine",
+      "Aviral Kumar"
+    ],
+    "published": "2025-08-20T17:54:21+00:00",
+    "summary": "As models grow larger and training them becomes expensive, it becomes increasingly important to scale training recipes not just to larger models and more data, but to do so in a compute-optimal manner that extracts maximal performance per unit of compute. While such scaling has been well studied for language modeling, reinforcement learning (RL) has received less attention in this regard. In this paper, we investigate compute scaling for online, value-based deep RL. These methods present two primary axes for compute allocation: model capacity and the update-to-data (UTD) ratio. Given a fixed compute budget, we ask: how should resources be partitioned across these axes to maximize sample efficiency? Our analysis reveals a nuanced interplay between model size, batch size, and UTD. In particular, we identify a phenomenon we call TD-overfitting: increasing the batch quickly harms Q-function accuracy for small models, but this effect is absent in large models, enabling effective use of large batch size at scale. We provide a mental model for understanding this phenomenon and build guidelines for choosing batch size and UTD to optimize compute usage. Our findings provide a grounded starting point for compute-optimal scaling in deep RL, mirroring studies in supervised learning but adapted to TD learning."
+  },
+  {
     "title": "Train Once, Deploy Anywhere: Realize Data-Efficient Dynamic Object Manipulation",
     "url": "http://arxiv.org/abs/2508.14042v1",
     "arxiv_id": "2508.14042v1",
