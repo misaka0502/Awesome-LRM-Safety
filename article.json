@@ -1,5 +1,77 @@
 [
   {
+    "title": "Hierarchical Decision-Making for Autonomous Navigation: Integrating Deep Reinforcement Learning and Fuzzy Logic in Four-Wheel Independent Steering and Driving Systems",
+    "url": "http://arxiv.org/abs/2508.16574v1",
+    "arxiv_id": "2508.16574v1",
+    "authors": [
+      "Yizhi Wang",
+      "Degang Xu",
+      "Yongfang Xie",
+      "Shuzhong Tan",
+      "Xianan Zhou",
+      "Peng Chen"
+    ],
+    "published": "2025-08-22T17:57:56+00:00",
+    "summary": "This paper presents a hierarchical decision-making framework for autonomous navigation in four-wheel independent steering and driving (4WISD) systems. The proposed approach integrates deep reinforcement learning (DRL) for high-level navigation with fuzzy logic for low-level control to ensure both task performance and physical feasibility. The DRL agent generates global motion commands, while the fuzzy logic controller enforces kinematic constraints to prevent mechanical strain and wheel slippage. Simulation experiments demonstrate that the proposed framework outperforms traditional navigation methods, offering enhanced training efficiency and stability and mitigating erratic behaviors compared to purely DRL-based solutions. Real-world validations further confirm the framework's ability to navigate safely and effectively in dynamic industrial settings. Overall, this work provides a scalable and reliable solution for deploying 4WISD mobile robots in complex, real-world scenarios."
+  },
+  {
+    "title": "RL Is Neither a Panacea Nor a Mirage: Understanding Supervised vs. Reinforcement Learning Fine-Tuning for LLMs",
+    "url": "http://arxiv.org/abs/2508.16546v1",
+    "arxiv_id": "2508.16546v1",
+    "authors": [
+      "Hangzhan Jin",
+      "Sicheng Lv",
+      "Sifan Wu",
+      "Mohammad Hamdaqa"
+    ],
+    "published": "2025-08-22T17:10:37+00:00",
+    "summary": "Training large language models (LLMs) from scratch is increasingly impractical, making post-training methods such as supervised fine-tuning (SFT) and reinforcement-learning fine-tuning (RL-FT, e.g., PPO) central to modern practice. Using an out-of-distribution (OOD) variant of the 24-point card game and new spectrum-based diagnostics, we revisit how these two stages reshape model representation and OOD performance. Our key findings are- (1) RL-FT can restore much of the OOD performance loss from SFT (e.g., Llama-11B 8.97% to 15.38%, Qwen-7B 17.09% to 19.66%). But when SFT induces severe overfitting and a clear distribution shift, RL-FT cannot fully recover OOD performance. (2) Direction shifts of singular vectors matter more than singular value magnitudes. These shifts concentrate on directions linked to the largest and smallest singular values, leaving the bulk spectrum intact. (3) Low-rank and shallow recovery is effective: restoring singular vector directions for the top 20% of values or first 25% of layers recovers 70-80% of OOD performance. (4) Stronger SFT checkpoints enable better recovery by RL, while overfitted ones resist restoration. These results reconcile prior reports of RL superior OOD performance: RL primarily counteracts SFT-induced directional drift rather than finding new solutions. Our spectrum-aware analysis highlights inexpensive recovery knobs low-rank UV merging and shallow-layer resets that practitioners can use before costly RL fine-tuning."
+  },
+  {
+    "title": "Constraints-Guided Diffusion Reasoner for Neuro-Symbolic Learning",
+    "url": "http://arxiv.org/abs/2508.16524v1",
+    "arxiv_id": "2508.16524v1",
+    "authors": [
+      "Xuan Zhang",
+      "Zhijian Zhou",
+      "Weidi Xu",
+      "Yanting Miao",
+      "Chao Qu",
+      "Yuan Qi"
+    ],
+    "published": "2025-08-22T16:47:08+00:00",
+    "summary": "Enabling neural networks to learn complex logical constraints and fulfill symbolic reasoning is a critical challenge. Bridging this gap often requires guiding the neural network's output distribution to move closer to the symbolic constraints. While diffusion models have shown remarkable generative capability across various domains, we employ the powerful architecture to perform neuro-symbolic learning and solve logical puzzles. Our diffusion-based pipeline adopts a two-stage training strategy: the first stage focuses on cultivating basic reasoning abilities, while the second emphasizes systematic learning of logical constraints. To impose hard constraints on neural outputs in the second stage, we formulate the diffusion reasoner as a Markov decision process and innovatively fine-tune it with an improved proximal policy optimization algorithm. We utilize a rule-based reward signal derived from the logical consistency of neural outputs and adopt a flexible strategy to optimize the diffusion reasoner's policy. We evaluate our methodology on some classical symbolic reasoning benchmarks, including Sudoku, Maze, pathfinding and preference learning. Experimental results demonstrate that our approach achieves outstanding accuracy and logical consistency among neural networks."
+  },
+  {
+    "title": "Guiding Diffusion Models with Reinforcement Learning for Stable Molecule Generation",
+    "url": "http://arxiv.org/abs/2508.16521v1",
+    "arxiv_id": "2508.16521v1",
+    "authors": [
+      "Zhijian Zhou",
+      "Junyi An",
+      "Zongkai Liu",
+      "Yunfei Shi",
+      "Xuan Zhang",
+      "Fenglei Cao",
+      "Chao Qu",
+      "Yuan Qi"
+    ],
+    "published": "2025-08-22T16:44:55+00:00",
+    "summary": "Generating physically realistic 3D molecular structures remains a core challenge in molecular generative modeling. While diffusion models equipped with equivariant neural networks have made progress in capturing molecular geometries, they often struggle to produce equilibrium structures that adhere to physical principles such as force field consistency. To bridge this gap, we propose Reinforcement Learning with Physical Feedback (RLPF), a novel framework that extends Denoising Diffusion Policy Optimization to 3D molecular generation. RLPF formulates the task as a Markov decision process and applies proximal policy optimization to fine-tune equivariant diffusion models. Crucially, RLPF introduces reward functions derived from force-field evaluations, providing direct physical feedback to guide the generation toward energetically stable and physically meaningful structures. Experiments on the QM9 and GEOM-drug datasets demonstrate that RLPF significantly improves molecular stability compared to existing methods. These results highlight the value of incorporating physics-based feedback into generative modeling. The code is available at: https://github.com/ZhijianZhou/RLPF/tree/verl_diffusion."
+  },
+  {
+    "title": "Comparative Analysis of UAV Path Planning Algorithms for Efficient Navigation in Urban 3D Environments",
+    "url": "http://arxiv.org/abs/2508.16515v1",
+    "arxiv_id": "2508.16515v1",
+    "authors": [
+      "Hichem Cheriet",
+      "Khellat Kihel Badra",
+      "Chouraqui Samira"
+    ],
+    "published": "2025-08-22T16:37:59+00:00",
+    "summary": "The most crucial challenges for UAVs are planning paths and avoiding obstacles in their way. In recent years, a wide variety of path-planning algorithms have been developed. These algorithms have successfully solved path-planning problems; however, they suffer from multiple challenges and limitations. To test the effectiveness and efficiency of three widely used algorithms, namely A*, RRT*, and Particle Swarm Optimization (PSO), this paper conducts extensive experiments in 3D urban city environments cluttered with obstacles. Three experiments were designed with two scenarios each to test the aforementioned algorithms. These experiments consider different city map sizes, different altitudes, and varying obstacle densities and sizes in the environment. According to the experimental results, the A* algorithm outperforms the others in both computation efficiency and path quality. PSO is especially suitable for tight turns and dense environments, and RRT* offers a balance and works well across all experiments due to its randomized approach to finding solutions."
+  },
+  {
     "title": "Discovering Hidden Algebraic Structures via Transformers with Rank-Aware Beam GRPO",
     "url": "http://arxiv.org/abs/2508.15766v1",
     "arxiv_id": "2508.15766v1",
