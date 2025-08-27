@@ -1,5 +1,86 @@
 [
   {
+    "title": "VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space",
+    "url": "http://arxiv.org/abs/2508.19247v1",
+    "arxiv_id": "2508.19247v1",
+    "authors": [
+      "Lin Li",
+      "Zehuan Huang",
+      "Haoran Feng",
+      "Gengxiong Zhuang",
+      "Rui Chen",
+      "Chunchao Guo",
+      "Lu Sheng"
+    ],
+    "published": "2025-08-26T17:59:47+00:00",
+    "summary": "3D local editing of specified regions is crucial for game industry and robot interaction. Recent methods typically edit rendered multi-view images and then reconstruct 3D models, but they face challenges in precisely preserving unedited regions and overall coherence. Inspired by structured 3D generative models, we propose VoxHammer, a novel training-free approach that performs precise and coherent editing in 3D latent space. Given a 3D model, VoxHammer first predicts its inversion trajectory and obtains its inverted latents and key-value tokens at each timestep. Subsequently, in the denoising and editing phase, we replace the denoising features of preserved regions with the corresponding inverted latents and cached key-value tokens. By retaining these contextual features, this approach ensures consistent reconstruction of preserved areas and coherent integration of edited parts. To evaluate the consistency of preserved regions, we constructed Edit3D-Bench, a human-annotated dataset comprising hundreds of samples, each with carefully labeled 3D editing regions. Experiments demonstrate that VoxHammer significantly outperforms existing methods in terms of both 3D consistency of preserved regions and overall quality. Our method holds promise for synthesizing high-quality edited paired data, thereby laying the data foundation for in-context 3D generation. See our project page at https://huanngzh.github.io/VoxHammer-Page/."
+  },
+  {
+    "title": "Articulate3D: Zero-Shot Text-Driven 3D Object Posing",
+    "url": "http://arxiv.org/abs/2508.19244v1",
+    "arxiv_id": "2508.19244v1",
+    "authors": [
+      "Oishi Deb",
+      "Anjun Hu",
+      "Ashkan Khakzar",
+      "Philip Torr",
+      "Christian Rupprecht"
+    ],
+    "published": "2025-08-26T17:59:17+00:00",
+    "summary": "We propose a training-free method, Articulate3D, to pose a 3D asset through language control. Despite advances in vision and language models, this task remains surprisingly challenging. To achieve this goal, we decompose the problem into two steps. We modify a powerful image-generator to create target images conditioned on the input image and a text instruction. We then align the mesh to the target images through a multi-view pose optimisation step. In detail, we introduce a self-attention rewiring mechanism (RSActrl) that decouples the source structure from pose within an image generative model, allowing it to maintain a consistent structure across varying poses. We observed that differentiable rendering is an unreliable signal for articulation optimisation; instead, we use keypoints to establish correspondences between input and target images. The effectiveness of Articulate3D is demonstrated across a diverse range of 3D objects and free-form text prompts, successfully manipulating poses while maintaining the original identity of the mesh. Quantitative evaluations and a comparative user study, in which our method was preferred over 85\\% of the time, confirm its superiority over existing approaches. Project page:https://odeb1.github.io/articulate3d_page_deb/"
+  },
+  {
+    "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2508.19236v1",
+    "arxiv_id": "2508.19236v1",
+    "authors": [
+      "Hao Shi",
+      "Bin Xie",
+      "Yingfei Liu",
+      "Lin Sun",
+      "Fengrong Liu",
+      "Tiancai Wang",
+      "Erjin Zhou",
+      "Haoqiang Fan",
+      "Xiangyu Zhang",
+      "Gao Huang"
+    ],
+    "published": "2025-08-26T17:57:16+00:00",
+    "summary": "Temporal context is essential for robotic manipulation because such tasks are inherently non-Markovian, yet mainstream VLA models typically overlook it and struggle with long-horizon, temporally dependent tasks. Cognitive science suggests that humans rely on working memory to buffer short-lived representations for immediate control, while the hippocampal system preserves verbatim episodic details and semantic gist of past experience for long-term memory. Inspired by these mechanisms, we propose MemoryVLA, a Cognition-Memory-Action framework for long-horizon robotic manipulation. A pretrained VLM encodes the observation into perceptual and cognitive tokens that form working memory, while a Perceptual-Cognitive Memory Bank stores low-level details and high-level semantics consolidated from it. Working memory retrieves decision-relevant entries from the bank, adaptively fuses them with current tokens, and updates the bank by merging redundancies. Using these tokens, a memory-conditioned diffusion action expert yields temporally aware action sequences. We evaluate MemoryVLA on 150+ simulation and real-world tasks across three robots. On SimplerEnv-Bridge, Fractal, and LIBERO-5 suites, it achieves 71.9%, 72.7%, and 96.5% success rates, respectively, all outperforming state-of-the-art baselines CogACT and pi-0, with a notable +14.6 gain on Bridge. On 12 real-world tasks spanning general skills and long-horizon temporal dependencies, MemoryVLA achieves 84.0% success rate, with long-horizon tasks showing a +26 improvement over state-of-the-art baseline. Project Page: https://shihao1895.github.io/MemoryVLA"
+  },
+  {
+    "title": "Beyond Competitive Gaming: How Casual Players Evaluate and Respond to Teammate Performance",
+    "url": "http://arxiv.org/abs/2508.19230v1",
+    "arxiv_id": "2508.19230v1",
+    "authors": [
+      "Kaushall Senthil Nathan",
+      "Jieun Lee",
+      "Derrick M. Wang",
+      "Geneva M. Smith",
+      "Eugene Kukshinov",
+      "Daniel Harley",
+      "Lennart E. Nacke"
+    ],
+    "published": "2025-08-26T17:45:32+00:00",
+    "summary": "Teammate performance evaluation fundamentally shapes intervention design in video games. However, our current understanding stems primarily from competitive E-Sports contexts where individual performance directly impacts outcomes. This research addresses whether performance evaluation mechanisms and behavioural responses identified in competitive games generalize to casual cooperative games. We investigated how casual players evaluate teammate competence and respond behaviourally in a controlled between-subjects experiment (N=23). We manipulated confederate performance in Overcooked 2, combining observations, NASA TLX self-reports, and interviews. We present two key findings. (1) Observations revealed frustration behaviours completely absent in self-report data. Thus, these instruments assess fundamentally distinct constructs. (2) Participants consistently evaluated teammate performance through relative comparison rather than absolute metrics. This contradicts task-performance operationalizations dominant in competitive gaming research. Hence, performance evaluation frameworks from competitive contexts cannot be directly applied to casual cooperative games. We provide empirical evidence that performance evaluation in casual games requires a comparative operationalization."
+  },
+  {
+    "title": "StepWiser: Stepwise Generative Judges for Wiser Reasoning",
+    "url": "http://arxiv.org/abs/2508.19229v1",
+    "arxiv_id": "2508.19229v1",
+    "authors": [
+      "Wei Xiong",
+      "Wenting Zhao",
+      "Weizhe Yuan",
+      "Olga Golovneva",
+      "Tong Zhang",
+      "Jason Weston",
+      "Sainbayar Sukhbaatar"
+    ],
+    "published": "2025-08-26T17:45:05+00:00",
+    "summary": "As models increasingly leverage multi-step reasoning strategies to solve complex problems, supervising the logical validity of these intermediate steps has become a critical research challenge. Process reward models address this by providing step-by-step feedback, but current approaches have two major drawbacks: they typically function as classifiers without providing explanations, and their reliance on supervised fine-tuning with static datasets limits generalization. Inspired by recent advances, we reframe stepwise reward modeling from a classification task to a reasoning task itself. We thus propose a generative judge that reasons about the policy model's reasoning steps (i.e., meta-reasons), outputting thinking tokens before delivering a final verdict. Our model, StepWiser, is trained by reinforcement learning using relative outcomes of rollouts. We show it provides (i) better judgment accuracy on intermediate steps than existing methods; (ii) can be used to improve the policy model at training time; and (iii) improves inference-time search."
+  },
+  {
     "title": "FlowVLA: Thinking in Motion with a Visual Chain of Thought",
     "url": "http://arxiv.org/abs/2508.18269v1",
     "arxiv_id": "2508.18269v1",
