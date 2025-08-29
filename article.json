@@ -1,5 +1,85 @@
 [
   {
+    "title": "OneReward: Unified Mask-Guided Image Generation via Multi-Task Human Preference Learning",
+    "url": "http://arxiv.org/abs/2508.21066v1",
+    "arxiv_id": "2508.21066v1",
+    "authors": [
+      "Yuan Gong",
+      "Xionghui Wang",
+      "Jie Wu",
+      "Shiyin Wang",
+      "Yitong Wang",
+      "Xinglong Wu"
+    ],
+    "published": "2025-08-28T17:59:46+00:00",
+    "summary": "In this paper, we introduce OneReward, a unified reinforcement learning framework that enhances the model's generative capabilities across multiple tasks under different evaluation criteria using only \\textit{One Reward} model. By employing a single vision-language model (VLM) as the generative reward model, which can distinguish the winner and loser for a given task and a given evaluation criterion, it can be effectively applied to multi-task generation models, particularly in contexts with varied data and diverse task objectives. We utilize OneReward for mask-guided image generation, which can be further divided into several sub-tasks such as image fill, image extend, object removal, and text rendering, involving a binary mask as the edit area. Although these domain-specific tasks share same conditioning paradigm, they differ significantly in underlying data distributions and evaluation metrics. Existing methods often rely on task-specific supervised fine-tuning (SFT), which limits generalization and training efficiency. Building on OneReward, we develop Seedream 3.0 Fill, a mask-guided generation model trained via multi-task reinforcement learning directly on a pre-trained base model, eliminating the need for task-specific SFT. Experimental results demonstrate that our unified edit model consistently outperforms both commercial and open-source competitors, such as Ideogram, Adobe Photoshop, and FLUX Fill [Pro], across multiple evaluation dimensions. Code and model are available at: https://one-reward.github.io"
+  },
+  {
+    "title": "Learning on the Fly: Rapid Policy Adaptation via Differentiable Simulation",
+    "url": "http://arxiv.org/abs/2508.21065v1",
+    "arxiv_id": "2508.21065v1",
+    "authors": [
+      "Jiahe Pan",
+      "Jiaxu Xing",
+      "Rudolf Reiter",
+      "Yifan Zhai",
+      "Elie Aljalbout",
+      "Davide Scaramuzza"
+    ],
+    "published": "2025-08-28T17:59:34+00:00",
+    "summary": "Learning control policies in simulation enables rapid, safe, and cost-effective development of advanced robotic capabilities. However, transferring these policies to the real world remains difficult due to the sim-to-real gap, where unmodeled dynamics and environmental disturbances can degrade policy performance. Existing approaches, such as domain randomization and Real2Sim2Real pipelines, can improve policy robustness, but either struggle under out-of-distribution conditions or require costly offline retraining. In this work, we approach these problems from a different perspective. Instead of relying on diverse training conditions before deployment, we focus on rapidly adapting the learned policy in the real world in an online fashion. To achieve this, we propose a novel online adaptive learning framework that unifies residual dynamics learning with real-time policy adaptation inside a differentiable simulation. Starting from a simple dynamics model, our framework refines the model continuously with real-world data to capture unmodeled effects and disturbances such as payload changes and wind. The refined dynamics model is embedded in a differentiable simulation framework, enabling gradient backpropagation through the dynamics and thus rapid, sample-efficient policy updates beyond the reach of classical RL methods like PPO. All components of our system are designed for rapid adaptation, enabling the policy to adjust to unseen disturbances within 5 seconds of training. We validate the approach on agile quadrotor control under various disturbances in both simulation and the real world. Our framework reduces hovering error by up to 81% compared to L1-MPC and 55% compared to DATT, while also demonstrating robustness in vision-based control without explicit state estimation."
+  },
+  {
+    "title": "Prompt-to-Product: Generative Assembly via Bimanual Manipulation",
+    "url": "http://arxiv.org/abs/2508.21063v1",
+    "arxiv_id": "2508.21063v1",
+    "authors": [
+      "Ruixuan Liu",
+      "Philip Huang",
+      "Ava Pun",
+      "Kangle Deng",
+      "Shobhit Aggarwal",
+      "Kevin Tang",
+      "Michelle Liu",
+      "Deva Ramanan",
+      "Jun-Yan Zhu",
+      "Jiaoyang Li",
+      "Changliu Liu"
+    ],
+    "published": "2025-08-28T17:59:05+00:00",
+    "summary": "Creating assembly products demands significant manual effort and expert knowledge in 1) designing the assembly and 2) constructing the product. This paper introduces Prompt-to-Product, an automated pipeline that generates real-world assembly products from natural language prompts. Specifically, we leverage LEGO bricks as the assembly platform and automate the process of creating brick assembly structures. Given the user design requirements, Prompt-to-Product generates physically buildable brick designs, and then leverages a bimanual robotic system to construct the real assembly products, bringing user imaginations into the real world. We conduct a comprehensive user study, and the results demonstrate that Prompt-to-Product significantly lowers the barrier and reduces manual effort in creating assembly products from imaginative ideas."
+  },
+  {
+    "title": "FakeParts: a New Family of AI-Generated DeepFakes",
+    "url": "http://arxiv.org/abs/2508.21052v1",
+    "arxiv_id": "2508.21052v1",
+    "authors": [
+      "Gaetan Brison",
+      "Soobash Daiboo",
+      "Samy Aimeur",
+      "Awais Hussain Sani",
+      "Xi Wang",
+      "Gianni Franchi",
+      "Vicky Kalogeiton"
+    ],
+    "published": "2025-08-28T17:55:14+00:00",
+    "summary": "We introduce FakeParts, a new class of deepfakes characterized by subtle, localized manipulations to specific spatial regions or temporal segments of otherwise authentic videos. Unlike fully synthetic content, these partial manipulations, ranging from altered facial expressions to object substitutions and background modifications, blend seamlessly with real elements, making them particularly deceptive and difficult to detect. To address the critical gap in detection capabilities, we present FakePartsBench, the first large-scale benchmark dataset specifically designed to capture the full spectrum of partial deepfakes. Comprising over 25K videos with pixel-level and frame-level manipulation annotations, our dataset enables comprehensive evaluation of detection methods. Our user studies demonstrate that FakeParts reduces human detection accuracy by over 30% compared to traditional deepfakes, with similar performance degradation observed in state-of-the-art detection models. This work identifies an urgent vulnerability in current deepfake detection approaches and provides the necessary resources to develop more robust methods for partial video manipulations."
+  },
+  {
+    "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification",
+    "url": "http://arxiv.org/abs/2508.21046v1",
+    "arxiv_id": "2508.21046v1",
+    "authors": [
+      "Wei Li",
+      "Renshan Zhang",
+      "Rui Shao",
+      "Jie He",
+      "Liqiang Nie"
+    ],
+    "published": "2025-08-28T17:50:58+00:00",
+    "summary": "Recent Vision-Language-Action (VLA) models built on pre-trained Vision-Language Models (VLMs) require extensive post-training, resulting in high computational overhead that limits scalability and deployment.We propose CogVLA, a Cognition-Aligned Vision-Language-Action framework that leverages instruction-driven routing and sparsification to improve both efficiency and performance. CogVLA draws inspiration from human multimodal coordination and introduces a 3-stage progressive architecture. 1) Encoder-FiLM based Aggregation Routing (EFA-Routing) injects instruction information into the vision encoder to selectively aggregate and compress dual-stream visual tokens, forming a instruction-aware latent representation. 2) Building upon this compact visual encoding, LLM-FiLM based Pruning Routing (LFP-Routing) introduces action intent into the language model by pruning instruction-irrelevant visually grounded tokens, thereby achieving token-level sparsity. 3) To ensure that compressed perception inputs can still support accurate and coherent action generation, we introduce V-L-A Coupled Attention (CAtten), which combines causal vision-language attention with bidirectional action parallel decoding. Extensive experiments on the LIBERO benchmark and real-world robotic tasks demonstrate that CogVLA achieves state-of-the-art performance with success rates of 97.4% and 70.0%, respectively, while reducing training costs by 2.5-fold and decreasing inference latency by 2.8-fold compared to OpenVLA. CogVLA is open-sourced and publicly available at https://github.com/JiuTian-VL/CogVLA."
+  },
+  {
     "title": "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning",
     "url": "http://arxiv.org/abs/2508.20096v1",
     "arxiv_id": "2508.20096v1",
