@@ -1,5 +1,77 @@
 [
   {
+    "title": "Tree-Guided Diffusion Planner",
+    "url": "http://arxiv.org/abs/2508.21800v1",
+    "arxiv_id": "2508.21800v1",
+    "authors": [
+      "Hyeonseong Jeon",
+      "Cheolhong Min",
+      "Jaesik Park"
+    ],
+    "published": "2025-08-29T17:27:44+00:00",
+    "summary": "Planning with pretrained diffusion models has emerged as a promising approach for solving test-time guided control problems. However, standard gradient guidance typically performs optimally under convex and differentiable reward landscapes, showing substantially reduced effectiveness in real-world scenarios involving non-convex objectives, non-differentiable constraints, and multi-reward structures. Furthermore, recent supervised planning approaches require task-specific training or value estimators, which limits test-time flexibility and zero-shot generalization. We propose a Tree-guided Diffusion Planner (TDP), a zero-shot test-time planning framework that balances exploration and exploitation through structured trajectory generation. We frame test-time planning as a tree search problem using a bi-level sampling process: (1) diverse parent trajectories are produced via training-free particle guidance to encourage broad exploration, and (2) sub-trajectories are refined through fast conditional denoising guided by task objectives. TDP addresses the limitations of gradient guidance by exploring diverse trajectory regions and harnessing gradient information across this expanded solution space using only pretrained models and test-time reward signals. We evaluate TDP on three diverse tasks: maze gold-picking, robot arm block manipulation, and AntMaze multi-goal exploration. TDP consistently outperforms state-of-the-art approaches on all tasks. The project page can be found at: tree-diffusion-planner.github.io."
+  },
+  {
+    "title": "DynaMark: A Reinforcement Learning Framework for Dynamic Watermarking in Industrial Machine Tool Controllers",
+    "url": "http://arxiv.org/abs/2508.21797v1",
+    "arxiv_id": "2508.21797v1",
+    "authors": [
+      "Navid Aftabi",
+      "Abhishek Hanchate",
+      "Satish Bukkapatnam",
+      "Dan Li"
+    ],
+    "published": "2025-08-29T17:24:00+00:00",
+    "summary": "Industry 4.0's highly networked Machine Tool Controllers (MTCs) are prime targets for replay attacks that use outdated sensor data to manipulate actuators. Dynamic watermarking can reveal such tampering, but current schemes assume linear-Gaussian dynamics and use constant watermark statistics, making them vulnerable to the time-varying, partly proprietary behavior of MTCs. We close this gap with DynaMark, a reinforcement learning framework that models dynamic watermarking as a Markov decision process (MDP). It learns an adaptive policy online that dynamically adapts the covariance of a zero-mean Gaussian watermark using available measurements and detector feedback, without needing system knowledge. DynaMark maximizes a unique reward function balancing control performance, energy consumption, and detection confidence dynamically. We develop a Bayesian belief updating mechanism for real-time detection confidence in linear systems. This approach, independent of specific system assumptions, underpins the MDP for systems with linear dynamics. On a Siemens Sinumerik 828D controller digital twin, DynaMark achieves a reduction in watermark energy by 70% while preserving the nominal trajectory, compared to constant variance baselines. It also maintains an average detection delay equivalent to one sampling interval. A physical stepper-motor testbed validates these findings, rapidly triggering alarms with less control performance decline and exceeding existing benchmarks."
+  },
+  {
+    "title": "Going over Fine Web with a Fine-Tooth Comb: Technical Report of Indexing Fine Web for Problematic Content Search and Retrieval",
+    "url": "http://arxiv.org/abs/2508.21788v1",
+    "arxiv_id": "2508.21788v1",
+    "authors": [
+      "In\u00e9s Altemir Marinas",
+      "Anastasiia Kucherenko",
+      "Andrei Kucharavy"
+    ],
+    "published": "2025-08-29T17:04:20+00:00",
+    "summary": "Large language models (LLMs) rely heavily on web-scale datasets like Common Crawl, which provides over 80\\% of training data for some modern models. However, the indiscriminate nature of web crawling raises challenges in data quality, safety, and ethics. Despite the critical importance of training data quality, prior research on harmful content has been limited to small samples due to computational constraints. This project presents a framework for indexing and analyzing LLM training datasets using an ElasticSearch-based pipeline. We apply it to SwissAI's FineWeb-2 corpus (1.5TB, four languages), achieving fast query performance--most searches in milliseconds, all under 2 seconds. Our work demonstrates real-time dataset analysis, offering practical tools for safer, more accountable AI systems."
+  },
+  {
+    "title": "UItron: Foundational GUI Agent with Advanced Perception and Planning",
+    "url": "http://arxiv.org/abs/2508.21767v1",
+    "arxiv_id": "2508.21767v1",
+    "authors": [
+      "Zhixiong Zeng",
+      "Jing Huang",
+      "Liming Zheng",
+      "Wenkang Han",
+      "Yufeng Zhong",
+      "Lei Chen",
+      "Longrong Yang",
+      "Yingjie Chu",
+      "Yuzhi He",
+      "Lin Ma"
+    ],
+    "published": "2025-08-29T16:40:57+00:00",
+    "summary": "GUI agent aims to enable automated operations on Mobile/PC devices, which is an important task toward achieving artificial general intelligence. The rapid advancement of VLMs accelerates the development of GUI agents, owing to their powerful capabilities in visual understanding and task planning. However, building a GUI agent remains a challenging task due to the scarcity of operation trajectories, the availability of interactive infrastructure, and the limitation of initial capabilities in foundation models. In this work, we introduce UItron, an open-source foundational model for automatic GUI agents, featuring advanced GUI perception, grounding, and planning capabilities. UItron highlights the necessity of systemic data engineering and interactive infrastructure as foundational components for advancing GUI agent development. It not only systematically studies a series of data engineering strategies to enhance training effects, but also establishes an interactive environment connecting both Mobile and PC devices. In training, UItron adopts supervised finetuning over perception and planning tasks in various GUI scenarios, and then develop a curriculum reinforcement learning framework to enable complex reasoning and exploration for online environments. As a result, UItron achieves superior performance in benchmarks of GUI perception, grounding, and planning. In particular, UItron highlights the interaction proficiency with top-tier Chinese mobile APPs, as we identified a general lack of Chinese capabilities even in state-of-the-art solutions. To this end, we manually collect over one million steps of operation trajectories across the top 100 most popular apps, and build the offline and online agent evaluation environments. Experimental results demonstrate that UItron achieves significant progress in Chinese app scenarios, propelling GUI agents one step closer to real-world application."
+  },
+  {
+    "title": "Neural Network Acceleration on MPSoC board: Integrating SLAC's SNL, Rogue Software and Auto-SNL",
+    "url": "http://arxiv.org/abs/2508.21739v1",
+    "arxiv_id": "2508.21739v1",
+    "authors": [
+      "Hamza Ezzaoui Rahali",
+      "Abhilasha Dave",
+      "Larry Ruckman",
+      "Mohammad Mehdi Rahimifar",
+      "Audrey C. Therrien",
+      "James J. Russel",
+      "Ryan T. Herbst"
+    ],
+    "published": "2025-08-29T16:04:15+00:00",
+    "summary": "The LCLS-II Free Electron Laser (FEL) will generate X-ray pulses for beamline experiments at rates of up to 1~MHz, with detectors producing data throughputs exceeding 1 TB/s. Managing such massive data streams presents significant challenges, as transmission and storage infrastructures become prohibitively expensive. Machine learning (ML) offers a promising solution for real-time data reduction, but conventional implementations introduce excessive latency, making them unsuitable for high-speed experimental environments. To address these challenges, SLAC developed the SLAC Neural Network Library (SNL), a specialized framework designed to deploy real-time ML inference models on Field-Programmable Gate Arrays (FPGA). SNL's key feature is the ability to dynamically update model weights without requiring FPGA resynthesis, enhancing flexibility for adaptive learning applications. To further enhance usability and accessibility, we introduce Auto-SNL, a Python extension that streamlines the process of converting Python-based neural network models into SNL-compatible high-level synthesis code. This paper presents a benchmark comparison against hls4ml, the current state-of-the-art tool, across multiple neural network architectures, fixed-point precisions, and synthesis configurations targeting a Xilinx ZCU102 FPGA. The results showed that SNL achieves competitive or superior latency in most tested architectures, while in some cases also offering FPGA resource savings. This adaptation demonstrates SNL's versatility, opening new opportunities for researchers and academics in fields such as high-energy physics, medical imaging, robotics, and many more."
+  },
+  {
     "title": "OneReward: Unified Mask-Guided Image Generation via Multi-Task Human Preference Learning",
     "url": "http://arxiv.org/abs/2508.21066v1",
     "arxiv_id": "2508.21066v1",
