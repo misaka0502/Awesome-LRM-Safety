@@ -1,5 +1,72 @@
 [
   {
+    "title": "Can LLMs Lie? Investigation beyond Hallucination",
+    "url": "http://arxiv.org/abs/2509.03518v1",
+    "arxiv_id": "2509.03518v1",
+    "authors": [
+      "Haoran Huan",
+      "Mihir Prabhudesai",
+      "Mengning Wu",
+      "Shantanu Jaiswal",
+      "Deepak Pathak"
+    ],
+    "published": "2025-09-03T17:59:45+00:00",
+    "summary": "Large language models (LLMs) have demonstrated impressive capabilities across a variety of tasks, but their increasing autonomy in real-world applications raises concerns about their trustworthiness. While hallucinations-unintentional falsehoods-have been widely studied, the phenomenon of lying, where an LLM knowingly generates falsehoods to achieve an ulterior objective, remains underexplored. In this work, we systematically investigate the lying behavior of LLMs, differentiating it from hallucinations and testing it in practical scenarios. Through mechanistic interpretability techniques, we uncover the neural mechanisms underlying deception, employing logit lens analysis, causal interventions, and contrastive activation steering to identify and control deceptive behavior. We study real-world lying scenarios and introduce behavioral steering vectors that enable fine-grained manipulation of lying tendencies. Further, we explore the trade-offs between lying and end-task performance, establishing a Pareto frontier where dishonesty can enhance goal optimization. Our findings contribute to the broader discourse on AI ethics, shedding light on the risks and potential safeguards for deploying LLMs in high-stakes environments. Code and more illustrations are available at https://llm-liar.github.io/"
+  },
+  {
+    "title": "Can the Waymo Open Motion Dataset Support Realistic Behavioral Modeling? A Validation Study with Naturalistic Trajectories",
+    "url": "http://arxiv.org/abs/2509.03515v1",
+    "arxiv_id": "2509.03515v1",
+    "authors": [
+      "Yanlin Zhang",
+      "Sungyong Chung",
+      "Nachuan Li",
+      "Dana Monzer",
+      "Hani S. Mahmassani",
+      "Samer H. Hamdar",
+      "Alireza Talebpour"
+    ],
+    "published": "2025-09-03T17:56:46+00:00",
+    "summary": "The Waymo Open Motion Dataset (WOMD) has become a popular resource for data-driven modeling of autonomous vehicles (AVs) behavior. However, its validity for behavioral analysis remains uncertain due to proprietary post-processing, the absence of error quantification, and the segmentation of trajectories into 20-second clips. This study examines whether WOMD accurately captures the dynamics and interactions observed in real-world AV operations. Leveraging an independently collected naturalistic dataset from Level 4 AV operations in Phoenix, Arizona (PHX), we perform comparative analyses across three representative urban driving scenarios: discharging at signalized intersections, car-following, and lane-changing behaviors. For the discharging analysis, headways are manually extracted from aerial video to ensure negligible measurement error. For the car-following and lane-changing cases, we apply the Simulation-Extrapolation (SIMEX) method to account for empirically estimated error in the PHX data and use Dynamic Time Warping (DTW) distances to quantify behavioral differences. Results across all scenarios consistently show that behavior in PHX falls outside the behavioral envelope of WOMD. Notably, WOMD underrepresents short headways and abrupt decelerations. These findings suggest that behavioral models calibrated solely on WOMD may systematically underestimate the variability, risk, and complexity of naturalistic driving. Caution is therefore warranted when using WOMD for behavior modeling without proper validation against independently collected data."
+  },
+  {
+    "title": "Real-Time Instrument Planning and Perception for Novel Measurements of Dynamic Phenomena",
+    "url": "http://arxiv.org/abs/2509.03500v1",
+    "arxiv_id": "2509.03500v1",
+    "authors": [
+      "Itai Zilberstein",
+      "Alberto Candela",
+      "Steve Chien"
+    ],
+    "published": "2025-09-03T17:32:15+00:00",
+    "summary": "Advancements in onboard computing mean remote sensing agents can employ state-of-the-art computer vision and machine learning at the edge. These capabilities can be leveraged to unlock new rare, transient, and pinpoint measurements of dynamic science phenomena. In this paper, we present an automated workflow that synthesizes the detection of these dynamic events in look-ahead satellite imagery with autonomous trajectory planning for a follow-up high-resolution sensor to obtain pinpoint measurements. We apply this workflow to the use case of observing volcanic plumes. We analyze classification approaches including traditional machine learning algorithms and convolutional neural networks. We present several trajectory planning algorithms that track the morphological features of a plume and integrate these algorithms with the classifiers. We show through simulation an order of magnitude increase in the utility return of the high-resolution instrument compared to baselines while maintaining efficient runtimes."
+  },
+  {
+    "title": "On Entropy Control in LLM-RL Algorithms",
+    "url": "http://arxiv.org/abs/2509.03493v1",
+    "arxiv_id": "2509.03493v1",
+    "authors": [
+      "Han Shen"
+    ],
+    "published": "2025-09-03T17:23:19+00:00",
+    "summary": "For RL algorithms, appropriate entropy control is crucial to their effectiveness. To control the policy entropy, a commonly used method is entropy regularization, which is adopted in various popular RL algorithms including PPO, SAC and A3C. Although entropy regularization proves effective in robotic and games RL conventionally, studies found that it gives weak to no gains in LLM-RL training. In this work, we study the issues of entropy bonus in LLM-RL setting. Specifically, we first argue that the conventional entropy regularization suffers from the LLM's extremely large response space and the sparsity of the optimal outputs. As a remedy, we propose AEnt, an entropy control method that utilizes a new clamped entropy bonus with an automatically adjusted coefficient. The clamped entropy is evaluated with the re-normalized policy defined on certain smaller token space, which encourages exploration within a more compact response set. In addition, the algorithm automatically adjusts entropy coefficient according to the clamped entropy value, effectively controlling the entropy-induced bias while leveraging the entropy's benefits. AEnt is tested in math-reasoning tasks under different base models and datasets, and it is observed that AEnt outperforms the baselines consistently across multiple benchmarks."
+  },
+  {
+    "title": "SafeProtein: Red-Teaming Framework and Benchmark for Protein Foundation Models",
+    "url": "http://arxiv.org/abs/2509.03487v1",
+    "arxiv_id": "2509.03487v1",
+    "authors": [
+      "Jigang Fan",
+      "Zhenghong Zhou",
+      "Ruofan Jin",
+      "Le Cong",
+      "Mengdi Wang",
+      "Zaixi Zhang"
+    ],
+    "published": "2025-09-03T17:13:56+00:00",
+    "summary": "Proteins play crucial roles in almost all biological processes. The advancement of deep learning has greatly accelerated the development of protein foundation models, leading to significant successes in protein understanding and design. However, the lack of systematic red-teaming for these models has raised serious concerns about their potential misuse, such as generating proteins with biological safety risks. This paper introduces SafeProtein, the first red-teaming framework designed for protein foundation models to the best of our knowledge. SafeProtein combines multimodal prompt engineering and heuristic beam search to systematically design red-teaming methods and conduct tests on protein foundation models. We also curated SafeProtein-Bench, which includes a manually constructed red-teaming benchmark dataset and a comprehensive evaluation protocol. SafeProtein achieved continuous jailbreaks on state-of-the-art protein foundation models (up to 70% attack success rate for ESM3), revealing potential biological safety risks in current protein foundation models and providing insights for the development of robust security protection technologies for frontier models. The codes will be made publicly available at https://github.com/jigang-fan/SafeProtein."
+  },
+  {
     "title": "Tree-Guided Diffusion Planner",
     "url": "http://arxiv.org/abs/2508.21800v1",
     "arxiv_id": "2508.21800v1",
