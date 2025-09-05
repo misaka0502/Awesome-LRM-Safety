@@ -1,5 +1,95 @@
 [
   {
+    "title": "EMMA: Scaling Mobile Manipulation via Egocentric Human Data",
+    "url": "http://arxiv.org/abs/2509.04443v1",
+    "arxiv_id": "2509.04443v1",
+    "authors": [
+      "Lawrence Y. Zhu",
+      "Pranav Kuppili",
+      "Ryan Punamiya",
+      "Patcharapong Aphiwetsa",
+      "Dhruv Patel",
+      "Simar Kareer",
+      "Sehoon Ha",
+      "Danfei Xu"
+    ],
+    "published": "2025-09-04T17:59:10+00:00",
+    "summary": "Scaling mobile manipulation imitation learning is bottlenecked by expensive mobile robot teleoperation. We present Egocentric Mobile MAnipulation (EMMA), an end-to-end framework training mobile manipulation policies from human mobile manipulation data with static robot data, sidestepping mobile teleoperation. To accomplish this, we co-train human full-body motion data with static robot data. In our experiments across three real-world tasks, EMMA demonstrates comparable performance to baselines trained on teleoperated mobile robot data (Mobile ALOHA), achieving higher or equivalent task performance in full task success. We find that EMMA is able to generalize to new spatial configurations and scenes, and we observe positive performance scaling as we increase the hours of human data, opening new avenues for scalable robotic learning in real-world environments. Details of this project can be found at https://ego-moma.github.io/."
+  },
+  {
+    "title": "One Flight Over the Gap: A Survey from Perspective to Panoramic Vision",
+    "url": "http://arxiv.org/abs/2509.04444v1",
+    "arxiv_id": "2509.04444v1",
+    "authors": [
+      "Xin Lin",
+      "Xian Ge",
+      "Dizhe Zhang",
+      "Zhaoliang Wan",
+      "Xianshun Wang",
+      "Xiangtai Li",
+      "Wenjie Jiang",
+      "Bo Du",
+      "Dacheng Tao",
+      "Ming-Hsuan Yang",
+      "Lu Qi"
+    ],
+    "published": "2025-09-04T17:59:10+00:00",
+    "summary": "Driven by the demand for spatial intelligence and holistic scene perception, omnidirectional images (ODIs), which provide a complete 360\\textdegree{} field of view, are receiving growing attention across diverse applications such as virtual reality, autonomous driving, and embodied robotics. Despite their unique characteristics, ODIs exhibit remarkable differences from perspective images in geometric projection, spatial distribution, and boundary continuity, making it challenging for direct domain adaption from perspective methods. This survey reviews recent panoramic vision techniques with a particular emphasis on the perspective-to-panorama adaptation. We first revisit the panoramic imaging pipeline and projection methods to build the prior knowledge required for analyzing the structural disparities. Then, we summarize three challenges of domain adaptation: severe geometric distortions near the poles, non-uniform sampling in Equirectangular Projection (ERP), and periodic boundary continuity. Building on this, we cover 20+ representative tasks drawn from more than 300 research papers in two dimensions. On one hand, we present a cross-method analysis of representative strategies for addressing panoramic specific challenges across different tasks. On the other hand, we conduct a cross-task comparison and classify panoramic vision into four major categories: visual quality enhancement and assessment, visual understanding, multimodal understanding, and visual generation. In addition, we discuss open challenges and future directions in data, models, and applications that will drive the advancement of panoramic vision research. We hope that our work can provide new insight and forward looking perspectives to advance the development of panoramic vision technologies. Our project page is https://insta360-research-team.github.io/Survey-of-Panorama"
+  },
+  {
+    "title": "DEXOP: A Device for Robotic Transfer of Dexterous Human Manipulation",
+    "url": "http://arxiv.org/abs/2509.04441v1",
+    "arxiv_id": "2509.04441v1",
+    "authors": [
+      "Hao-Shu Fang",
+      "Branden Romero",
+      "Yichen Xie",
+      "Arthur Hu",
+      "Bo-Ruei Huang",
+      "Juan Alvarez",
+      "Matthew Kim",
+      "Gabriel Margolis",
+      "Kavya Anbarasu",
+      "Masayoshi Tomizuka",
+      "Edward Adelson",
+      "Pulkit Agrawal"
+    ],
+    "published": "2025-09-04T17:57:13+00:00",
+    "summary": "We introduce perioperation, a paradigm for robotic data collection that sensorizes and records human manipulation while maximizing the transferability of the data to real robots. We implement this paradigm in DEXOP, a passive hand exoskeleton designed to maximize human ability to collect rich sensory (vision + tactile) data for diverse dexterous manipulation tasks in natural environments. DEXOP mechanically connects human fingers to robot fingers, providing users with direct contact feedback (via proprioception) and mirrors the human hand pose to the passive robot hand to maximize the transfer of demonstrated skills to the robot. The force feedback and pose mirroring make task demonstrations more natural for humans compared to teleoperation, increasing both speed and accuracy. We evaluate DEXOP across a range of dexterous, contact-rich tasks, demonstrating its ability to collect high-quality demonstration data at scale. Policies learned with DEXOP data significantly improve task performance per unit time of data collection compared to teleoperation, making DEXOP a powerful tool for advancing robot dexterity. Our project page is at https://dex-op.github.io."
+  },
+  {
+    "title": "Towards a Unified View of Large Language Model Post-Training",
+    "url": "http://arxiv.org/abs/2509.04419v1",
+    "arxiv_id": "2509.04419v1",
+    "authors": [
+      "Xingtai Lv",
+      "Yuxin Zuo",
+      "Youbang Sun",
+      "Hongyi Liu",
+      "Yuntian Wei",
+      "Zhekai Chen",
+      "Lixuan He",
+      "Xuekai Zhu",
+      "Kaiyan Zhang",
+      "Bingning Wang",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "published": "2025-09-04T17:40:33+00:00",
+    "summary": "Two major sources of training data exist for post-training modern language models: online (model-generated rollouts) data, and offline (human or other-model demonstrations) data. These two types of data are typically used by approaches like Reinforcement Learning (RL) and Supervised Fine-Tuning (SFT), respectively. In this paper, we show that these approaches are not in contradiction, but are instances of a single optimization process. We derive a Unified Policy Gradient Estimator, and present the calculations of a wide spectrum of post-training approaches as the gradient of a common objective under different data distribution assumptions and various bias-variance tradeoffs. The gradient estimator is constructed with four interchangeable parts: stabilization mask, reference policy denominator, advantage estimate, and likelihood gradient. Motivated by our theoretical findings, we propose Hybrid Post-Training (HPT), an algorithm that dynamically selects different training signals. HPT is designed to yield both effective exploitation of demonstration and stable exploration without sacrificing learned reasoning patterns. We provide extensive experiments and ablation studies to verify the effectiveness of our unified theoretical framework and HPT. Across six mathematical reasoning benchmarks and two out-of-distribution suites, HPT consistently surpasses strong baselines across models of varying scales and families."
+  },
+  {
+    "title": "SAFE--MA--RRT: Multi-Agent Motion Planning with Data-Driven Safety Certificates",
+    "url": "http://arxiv.org/abs/2509.04413v1",
+    "arxiv_id": "2509.04413v1",
+    "authors": [
+      "Babak Esmaeili",
+      "Hamidreza Modares"
+    ],
+    "published": "2025-09-04T17:34:59+00:00",
+    "summary": "This paper proposes a fully data-driven motion-planning framework for homogeneous linear multi-agent systems that operate in shared, obstacle-filled workspaces without access to explicit system models. Each agent independently learns its closed-loop behavior from experimental data by solving convex semidefinite programs that generate locally invariant ellipsoids and corresponding state-feedback gains. These ellipsoids, centered along grid-based waypoints, certify the dynamic feasibility of short-range transitions and define safe regions of operation. A sampling-based planner constructs a tree of such waypoints, where transitions are allowed only when adjacent ellipsoids overlap, ensuring invariant-to-invariant transitions and continuous safety. All agents expand their trees simultaneously and are coordinated through a space-time reservation table that guarantees inter-agent safety by preventing simultaneous occupancy and head-on collisions. Each successful edge in the tree is equipped with its own local controller, enabling execution without re-solving optimization problems at runtime. The resulting trajectories are not only dynamically feasible but also provably safe with respect to both environmental constraints and inter-agent collisions. Simulation results demonstrate the effectiveness of the approach in synthesizing synchronized, safe trajectories for multiple agents under shared dynamics and constraints, using only data and convex optimization tools."
+  },
+  {
     "title": "Can LLMs Lie? Investigation beyond Hallucination",
     "url": "http://arxiv.org/abs/2509.03518v1",
     "arxiv_id": "2509.03518v1",
