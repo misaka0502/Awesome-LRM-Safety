@@ -1,5 +1,84 @@
 [
   {
+    "title": "Deep Reinforcement Learning for Ranking Utility Tuning in the Ad Recommender System at Pinterest",
+    "url": "http://arxiv.org/abs/2509.05292v1",
+    "arxiv_id": "2509.05292v1",
+    "authors": [
+      "Xiao Yang",
+      "Mehdi Ben Ayed",
+      "Longyu Zhao",
+      "Fan Zhou",
+      "Yuchen Shen",
+      "Abe Engle",
+      "Jinfeng Zhuang",
+      "Ling Leng",
+      "Jiajing Xu",
+      "Charles Rosenberg",
+      "Prathibha Deshikachar"
+    ],
+    "published": "2025-09-05T17:57:45+00:00",
+    "summary": "The ranking utility function in an ad recommender system, which linearly combines predictions of various business goals, plays a central role in balancing values across the platform, advertisers, and users. Traditional manual tuning, while offering simplicity and interpretability, often yields suboptimal results due to its unprincipled tuning objectives, the vast amount of parameter combinations, and its lack of personalization and adaptability to seasonality. In this work, we propose a general Deep Reinforcement Learning framework for Personalized Utility Tuning (DRL-PUT) to address the challenges of multi-objective optimization within ad recommender systems. Our key contributions include: 1) Formulating the problem as a reinforcement learning task: given the state of an ad request, we predict the optimal hyperparameters to maximize a pre-defined reward. 2) Developing an approach to directly learn an optimal policy model using online serving logs, avoiding the need to estimate a value function, which is inherently challenging due to the high variance and unbalanced distribution of immediate rewards. We evaluated DRL-PUT through an online A/B experiment in Pinterest's ad recommender system. Compared to the baseline manual utility tuning approach, DRL-PUT improved the click-through rate by 9.7% and the long click-through rate by 7.7% on the treated segment. We conducted a detailed ablation study on the impact of different reward definitions and analyzed the personalization aspect of the learned policy model."
+  },
+  {
+    "title": "Greener Deep Reinforcement Learning: Analysis of Energy and Carbon Efficiency Across Atari Benchmarks",
+    "url": "http://arxiv.org/abs/2509.05273v1",
+    "arxiv_id": "2509.05273v1",
+    "authors": [
+      "Jason Gardner",
+      "Ayan Dutta",
+      "Swapnoneel Roy",
+      "O. Patrick Kreidl",
+      "Ladislau Boloni"
+    ],
+    "published": "2025-09-05T17:29:51+00:00",
+    "summary": "The growing computational demands of deep reinforcement learning (DRL) have raised concerns about the environmental and economic costs of training large-scale models. While algorithmic efficiency in terms of learning performance has been extensively studied, the energy requirements, greenhouse gas emissions, and monetary costs of DRL algorithms remain largely unexplored. In this work, we present a systematic benchmarking study of the energy consumption of seven state-of-the-art DRL algorithms, namely DQN, TRPO, A2C, ARS, PPO, RecurrentPPO, and QR-DQN, implemented using Stable Baselines. Each algorithm was trained for one million steps each on ten Atari 2600 games, and power consumption was measured in real-time to estimate total energy usage, CO2-Equivalent emissions, and electricity cost based on the U.S. national average electricity price. Our results reveal substantial variation in energy efficiency and training cost across algorithms, with some achieving comparable performance while consuming up to 24% less energy (ARS vs. DQN), emitting nearly 68% less CO2, and incurring almost 68% lower monetary cost (QR-DQN vs. RecurrentPPO) than less efficient counterparts. We further analyze the trade-offs between learning performance, training time, energy use, and financial cost, highlighting cases where algorithmic choices can mitigate environmental and economic impact without sacrificing learning performance. This study provides actionable insights for developing energy-aware and cost-efficient DRL practices and establishes a foundation for incorporating sustainability considerations into future algorithmic design and evaluation."
+  },
+  {
+    "title": "Hunyuan-MT Technical Report",
+    "url": "http://arxiv.org/abs/2509.05209v1",
+    "arxiv_id": "2509.05209v1",
+    "authors": [
+      "Mao Zheng",
+      "Zheng Li",
+      "Bingxin Qu",
+      "Mingyang Song",
+      "Yang Du",
+      "Mingrui Sun",
+      "Di Wang"
+    ],
+    "published": "2025-09-05T16:11:05+00:00",
+    "summary": "In this report, we introduce Hunyuan-MT-7B, our first open-source multilingual translation model, which supports bidirectional translation across 33 major languages and places a special emphasis on translation between Mandarin and several ethnic minority languages as well as dialects. Furthermore, to serve and address diverse translation scenarios and enhance model performance at test time, we introduce Hunyuan-MT-Chimera-7B, a translation model inspired by the slow thinking mode. This model integrates multiple outputs generated by the Hunyuan-MT-7B model under varying parameter settings, thereby achieving performance superior to that of conventional slow-thinking models based on Chain-of-Thought (CoT). The development of our models follows a holistic training process specifically engineered for multilingual translation, which begins with general and MT-oriented pre-training to build foundational capabilities, proceeds to Supervised Fine-Tuning (SFT) for task-specific adaptation, and culminates in advanced alignment through Reinforcement Learning (RL) and weak-to-strong RL. Through comprehensive experimentation, we demonstrate that both Hunyuan-MT-7B and Hunyuan-MT-Chimera-7B significantly outperform all translation-specific models of comparable parameter size and most of the SOTA large models, particularly on the task of translation between Mandarin and minority languages as well as dialects. In the WMT2025 shared task (General Machine Translation), our models demonstrate state-of-the-art performance, ranking first in 30 out of 31 language pairs. This result highlights the robustness of our models across a diverse linguistic spectrum, encompassing high-resource languages such as Chinese, English, and Japanese, as well as low-resource languages including Czech, Marathi, Estonian, and Icelandic."
+  },
+  {
+    "title": "Symbolic Graphics Programming with Large Language Models",
+    "url": "http://arxiv.org/abs/2509.05208v1",
+    "arxiv_id": "2509.05208v1",
+    "authors": [
+      "Yamei Chen",
+      "Haoquan Zhang",
+      "Yangyi Huang",
+      "Zeju Qiu",
+      "Kaipeng Zhang",
+      "Yandong Wen",
+      "Weiyang Liu"
+    ],
+    "published": "2025-09-05T16:10:53+00:00",
+    "summary": "Large language models (LLMs) excel at program synthesis, yet their ability to produce symbolic graphics programs (SGPs) that render into precise visual content remains underexplored. We study symbolic graphics programming, where the goal is to generate an SGP from a natural-language description. This task also serves as a lens into how LLMs understand the visual world by prompting them to generate images rendered from SGPs. Among various SGPs, our paper sticks to scalable vector graphics (SVGs). We begin by examining the extent to which LLMs can generate SGPs. To this end, we introduce SGP-GenBench, a comprehensive benchmark covering object fidelity, scene fidelity, and compositionality (attribute binding, spatial relations, numeracy). On SGP-GenBench, we discover that frontier proprietary models substantially outperform open-source models, and performance correlates well with general coding capabilities. Motivated by this gap, we aim to improve LLMs' ability to generate SGPs. We propose a reinforcement learning (RL) with verifiable rewards approach, where a format-validity gate ensures renderable SVG, and a cross-modal reward aligns text and the rendered image via strong vision encoders (e.g., SigLIP for text-image and DINO for image-image). Applied to Qwen-2.5-7B, our method substantially improves SVG generation quality and semantics, achieving performance on par with frontier systems. We further analyze training dynamics, showing that RL induces (i) finer decomposition of objects into controllable primitives and (ii) contextual details that improve scene coherence. Our results demonstrate that symbolic graphics programming offers a precise and interpretable lens on cross-modal grounding."
+  },
+  {
+    "title": "Robust Model Predictive Control Design for Autonomous Vehicles with Perception-based Observers",
+    "url": "http://arxiv.org/abs/2509.05201v1",
+    "arxiv_id": "2509.05201v1",
+    "authors": [
+      "Nariman Niknejad",
+      "Gokul S. Sankar",
+      "Bahare Kiumarsi",
+      "Hamidreza Modares"
+    ],
+    "published": "2025-09-05T16:03:57+00:00",
+    "summary": "This paper presents a robust model predictive control (MPC) framework that explicitly addresses the non-Gaussian noise inherent in deep learning-based perception modules used for state estimation. Recognizing that accurate uncertainty quantification of the perception module is essential for safe feedback control, our approach departs from the conventional assumption of zero-mean noise quantification of the perception error. Instead, it employs set-based state estimation with constrained zonotopes to capture biased, heavy-tailed uncertainties while maintaining bounded estimation errors. To improve computational efficiency, the robust MPC is reformulated as a linear program (LP), using a Minkowski-Lyapunov-based cost function with an added slack variable to prevent degenerate solutions. Closed-loop stability is ensured through Minkowski-Lyapunov inequalities and contractive zonotopic invariant sets. The largest stabilizing terminal set and its corresponding feedback gain are then derived via an ellipsoidal approximation of the zonotopes. The proposed framework is validated through both simulations and hardware experiments on an omnidirectional mobile robot along with a camera and a convolutional neural network-based perception module implemented within a ROS2 framework. The results demonstrate that the perception-aware MPC provides stable and accurate control performance under heavy-tailed noise conditions, significantly outperforming traditional Gaussian-noise-based designs in terms of both state estimation error bounding and overall control performance."
+  },
+  {
     "title": "EMMA: Scaling Mobile Manipulation via Egocentric Human Data",
     "url": "http://arxiv.org/abs/2509.04443v1",
     "arxiv_id": "2509.04443v1",
