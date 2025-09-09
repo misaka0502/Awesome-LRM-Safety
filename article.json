@@ -1,5 +1,80 @@
 [
   {
+    "title": "Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments",
+    "url": "http://arxiv.org/abs/2509.06953v1",
+    "arxiv_id": "2509.06953v1",
+    "authors": [
+      "Jiahui Yang",
+      "Jason Jingzhou Liu",
+      "Yulong Li",
+      "Youssef Khaky",
+      "Kenneth Shaw",
+      "Deepak Pathak"
+    ],
+    "published": "2025-09-08T17:59:35+00:00",
+    "summary": "Generating collision-free motion in dynamic, partially observable environments is a fundamental challenge for robotic manipulators. Classical motion planners can compute globally optimal trajectories but require full environment knowledge and are typically too slow for dynamic scenes. Neural motion policies offer a promising alternative by operating in closed-loop directly on raw sensory inputs but often struggle to generalize in complex or dynamic settings. We propose Deep Reactive Policy (DRP), a visuo-motor neural motion policy designed for reactive motion generation in diverse dynamic environments, operating directly on point cloud sensory input. At its core is IMPACT, a transformer-based neural motion policy pretrained on 10 million generated expert trajectories across diverse simulation scenarios. We further improve IMPACT's static obstacle avoidance through iterative student-teacher finetuning. We additionally enhance the policy's dynamic obstacle avoidance at inference time using DCP-RMP, a locally reactive goal-proposal module. We evaluate DRP on challenging tasks featuring cluttered scenes, dynamic moving obstacles, and goal obstructions. DRP achieves strong generalization, outperforming prior classical and neural methods in success rate across both simulated and real-world settings. Video results and code available at https://deep-reactive-policy.com"
+  },
+  {
+    "title": "F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions",
+    "url": "http://arxiv.org/abs/2509.06951v1",
+    "arxiv_id": "2509.06951v1",
+    "authors": [
+      "Qi Lv",
+      "Weijie Kong",
+      "Hao Li",
+      "Jia Zeng",
+      "Zherui Qiu",
+      "Delin Qu",
+      "Haoming Song",
+      "Qizhi Chen",
+      "Xiang Deng",
+      "Jiangmiao Pang"
+    ],
+    "published": "2025-09-08T17:58:30+00:00",
+    "summary": "Executing language-conditioned tasks in dynamic visual environments remains a central challenge in embodied AI. Existing Vision-Language-Action (VLA) models predominantly adopt reactive state-to-action mappings, often leading to short-sighted behaviors and poor robustness in dynamic scenes. In this paper, we introduce F1, a pretrained VLA framework which integrates the visual foresight generation into decision-making pipeline. F1 adopts a Mixture-of-Transformer architecture with dedicated modules for perception, foresight generation, and control, thereby bridging understanding, generation, and actions. At its core, F1 employs a next-scale prediction mechanism to synthesize goal-conditioned visual foresight as explicit planning targets. By forecasting plausible future visual states, F1 reformulates action generation as a foresight-guided inverse dynamics problem, enabling actions that implicitly achieve visual goals. To endow F1 with robust and generalizable capabilities, we propose a three-stage training recipe on an extensive dataset comprising over 330k trajectories across 136 diverse tasks. This training scheme enhances modular reasoning and equips the model with transferable visual foresight, which is critical for complex and dynamic environments. Extensive evaluations on real-world tasks and simulation benchmarks demonstrate F1 consistently outperforms existing approaches, achieving substantial gains in both task success rate and generalization ability."
+  },
+  {
+    "title": "Revolutionizing Reinforcement Learning Framework for Diffusion Large Language Models",
+    "url": "http://arxiv.org/abs/2509.06949v1",
+    "arxiv_id": "2509.06949v1",
+    "authors": [
+      "Yinjie Wang",
+      "Ling Yang",
+      "Bowen Li",
+      "Ye Tian",
+      "Ke Shen",
+      "Mengdi Wang"
+    ],
+    "published": "2025-09-08T17:58:06+00:00",
+    "summary": "We propose TraceRL, a trajectory-aware reinforcement learning framework for diffusion language models (DLMs) that incorporates preferred inference trajectory into post-training, and is applicable across different architectures. Equipped with a diffusion-based value model that enhances training stability, we demonstrate improved reasoning performance on complex math and coding tasks. Besides, it can also be applied to adapt block-specific models to larger blocks, which improves sampling flexibility. Employing TraceRL, we derive a series of state-of-the-art diffusion language models, namely TraDo. Although smaller than 7B-scale AR models, TraDo-4B-Instruct still consistently outperforms them across complex math reasoning tasks. TraDo-8B-Instruct achieves relative accuracy improvements of 6.1% over Qwen2.5-7B-Instruct and 51.3% over Llama3.1-8B-Instruct on mathematical reasoning benchmarks. Through curriculum learning, we also derive the first long-CoT DLM, outperforming Qwen2.5-7B-Instruct on MATH500 with an 18.1% relative accuracy gain. To facilitate reproducible research and practical applications, we release a comprehensive open-source framework for building, training, and deploying diffusion LLMs across diverse architectures. The framework integrates accelerated KV-cache techniques and inference engines for both inference and reinforcement learning, and includes implementations of various supervised fine-tuning and RL methods for mathematics, coding, and general tasks. Code and Models: https://github.com/Gen-Verse/dLLM-RL"
+  },
+  {
+    "title": "Beyond Two-Stage Training: Cooperative SFT and RL for LLM Reasoning",
+    "url": "http://arxiv.org/abs/2509.06948v1",
+    "arxiv_id": "2509.06948v1",
+    "authors": [
+      "Liang Chen",
+      "Xueting Han",
+      "Li Shen",
+      "Jing Bai",
+      "Kam-Fai Wong"
+    ],
+    "published": "2025-09-08T17:58:02+00:00",
+    "summary": "Reinforcement learning (RL) has proven effective in incentivizing the reasoning abilities of large language models (LLMs), but suffers from severe efficiency challenges due to its trial-and-error nature. While the common practice employs supervised fine-tuning (SFT) as a warm-up stage for RL, this decoupled two-stage approach limits interaction between SFT and RL, thereby constraining overall effectiveness. This study introduces a novel method for learning reasoning models that employs bilevel optimization to facilitate better cooperation between these training paradigms. By conditioning the SFT objective on the optimal RL policy, our approach enables SFT to meta-learn how to guide RL's optimization process. During training, the lower level performs RL updates while simultaneously receiving SFT supervision, and the upper level explicitly maximizes the cooperative gain-the performance advantage of joint SFT-RL training over RL alone. Empirical evaluations on five reasoning benchmarks demonstrate that our method consistently outperforms baselines and achieves a better balance between effectiveness and efficiency."
+  },
+  {
+    "title": "Outcome-based Exploration for LLM Reasoning",
+    "url": "http://arxiv.org/abs/2509.06941v1",
+    "arxiv_id": "2509.06941v1",
+    "authors": [
+      "Yuda Song",
+      "Julia Kempe",
+      "Remi Munos"
+    ],
+    "published": "2025-09-08T17:52:56+00:00",
+    "summary": "Reinforcement learning (RL) has emerged as a powerful method for improving the reasoning abilities of large language models (LLMs). Outcome-based RL, which rewards policies solely for the correctness of the final answer, yields substantial accuracy gains but also induces a systematic loss in generation diversity. This collapse undermines real-world performance, where diversity is critical for test-time scaling. We analyze this phenomenon by viewing RL post-training as a sampling process and show that, strikingly, RL can reduce effective diversity even on the training set relative to the base model. Our study highlights two central findings: (i) a transfer of diversity degradation, where reduced diversity on solved problems propagates to unsolved ones, and (ii) the tractability of the outcome space, since reasoning tasks admit only a limited set of distinct answers. Motivated by these insights, we propose outcome-based exploration, which assigns exploration bonuses according to final outcomes. We introduce two complementary algorithms: historical exploration, which encourages rarely observed answers via UCB-style bonuses, and batch exploration, which penalizes within-batch repetition to promote test-time diversity. Experiments on standard competition math with Llama and Qwen models demonstrate that both methods improve accuracy while mitigating diversity collapse. On the theoretical side, we formalize the benefit of outcome-based exploration through a new model of outcome-based bandits. Together, these contributions chart a practical path toward RL methods that enhance reasoning without sacrificing the diversity essential for scalable deployment."
+  },
+  {
     "title": "Deep Reinforcement Learning for Ranking Utility Tuning in the Ad Recommender System at Pinterest",
     "url": "http://arxiv.org/abs/2509.05292v1",
     "arxiv_id": "2509.05292v1",
