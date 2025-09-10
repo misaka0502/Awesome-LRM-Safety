@@ -1,5 +1,86 @@
 [
   {
+    "title": "Parallel-R1: Towards Parallel Thinking via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2509.07980v1",
+    "arxiv_id": "2509.07980v1",
+    "authors": [
+      "Tong Zheng",
+      "Hongming Zhang",
+      "Wenhao Yu",
+      "Xiaoyang Wang",
+      "Xinyu Yang",
+      "Runpeng Dai",
+      "Rui Liu",
+      "Huiwen Bao",
+      "Chengsong Huang",
+      "Heng Huang",
+      "Dong Yu"
+    ],
+    "published": "2025-09-09T17:59:35+00:00",
+    "summary": "Parallel thinking has emerged as a novel approach for enhancing the reasoning capabilities of large language models (LLMs) by exploring multiple reasoning paths concurrently. However, activating such capabilities through training remains challenging, as existing methods predominantly rely on supervised fine-tuning (SFT) over synthetic data, which encourages teacher-forced imitation rather than exploration and generalization. Different from them, we propose \\textbf{Parallel-R1}, the first reinforcement learning (RL) framework that enables parallel thinking behaviors for complex real-world reasoning tasks. Our framework employs a progressive curriculum that explicitly addresses the cold-start problem in training parallel thinking with RL. We first use SFT on prompt-generated trajectories from easier tasks to instill the parallel thinking ability, then transition to RL to explore and generalize this skill on harder problems. Experiments on various math benchmarks, including MATH, AMC23, and AIME, show that Parallel-R1 successfully instills parallel thinking, leading to 8.4% accuracy improvements over the sequential thinking model trained directly on challenging tasks with RL. Further analysis reveals a clear shift in the model's thinking behavior: at an early stage, it uses parallel thinking as an exploration strategy, while in a later stage, it uses the same capability for multi-perspective verification. Most significantly, we validate parallel thinking as a \\textbf{mid-training exploration scaffold}, where this temporary exploratory phase unlocks a higher performance ceiling after RL, yielding a 42.9% improvement over the baseline on AIME25. Our model, data, and code will be open-source at https://github.com/zhengkid/Parallel-R1."
+  },
+  {
+    "title": "One View, Many Worlds: Single-Image to 3D Object Meets Generative Domain Randomization for One-Shot 6D Pose Estimation",
+    "url": "http://arxiv.org/abs/2509.07978v1",
+    "arxiv_id": "2509.07978v1",
+    "authors": [
+      "Zheng Geng",
+      "Nan Wang",
+      "Shaocong Xu",
+      "Chongjie Ye",
+      "Bohan Li",
+      "Zhaoxi Chen",
+      "Sida Peng",
+      "Hao Zhao"
+    ],
+    "published": "2025-09-09T17:59:02+00:00",
+    "summary": "Estimating the 6D pose of arbitrary unseen objects from a single reference image is critical for robotics operating in the long-tail of real-world instances. However, this setting is notoriously challenging: 3D models are rarely available, single-view reconstructions lack metric scale, and domain gaps between generated models and real-world images undermine robustness. We propose OnePoseViaGen, a pipeline that tackles these challenges through two key components. First, a coarse-to-fine alignment module jointly refines scale and pose by combining multi-view feature matching with render-and-compare refinement. Second, a text-guided generative domain randomization strategy diversifies textures, enabling effective fine-tuning of pose estimators with synthetic data. Together, these steps allow high-fidelity single-view 3D generation to support reliable one-shot 6D pose estimation. On challenging benchmarks (YCBInEOAT, Toyota-Light, LM-O), OnePoseViaGen achieves state-of-the-art performance far surpassing prior approaches. We further demonstrate robust dexterous grasping with a real robot hand, validating the practicality of our method in real-world manipulation. Project page: https://gzwsama.github.io/OnePoseviaGen.github.io/"
+  },
+  {
+    "title": "Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual Search",
+    "url": "http://arxiv.org/abs/2509.07969v1",
+    "arxiv_id": "2509.07969v1",
+    "authors": [
+      "Xin Lai",
+      "Junyi Li",
+      "Wei Li",
+      "Tao Liu",
+      "Tianjian Li",
+      "Hengshuang Zhao"
+    ],
+    "published": "2025-09-09T17:54:21+00:00",
+    "summary": "Recent advances in large multimodal models have leveraged image-based tools with reinforcement learning to tackle visual problems. However, existing open-source approaches often exhibit monotonous reasoning patterns and allow only a limited number of interaction turns, making them inadequate for difficult tasks that require trial-and-error exploration. In this work, we address this limitation by scaling up tool-based interactions and introduce Mini-o3, a system that executes deep, multi-turn reasoning -- spanning tens of steps -- and achieves state-of-the-art performance on challenging visual search tasks. Our recipe for reproducing OpenAI o3-style behaviors comprises three key components. First, we construct the Visual Probe Dataset, a collection of thousands of challenging visual search problems designed for exploratory reasoning. Second, we develop an iterative data collection pipeline to obtain cold-start trajectories that exhibit diverse reasoning patterns, including depth-first search, trial-and-error, and goal maintenance. Third, we propose an over-turn masking strategy that prevents penalization of over-turn responses (those that hit the maximum number of turns) during reinforcement learning, thereby balancing training-time efficiency with test-time scalability. Despite training with an upper bound of only six interaction turns, our model generates trajectories that naturally scale to tens of turns at inference time, with accuracy improving as the number of turns increases. Extensive experiments demonstrate that Mini-o3 produces rich reasoning patterns and deep thinking paths, effectively solving challenging visual search problems."
+  },
+  {
+    "title": "TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2509.07962v1",
+    "arxiv_id": "2509.07962v1",
+    "authors": [
+      "Zongzheng Zhang",
+      "Haobo Xu",
+      "Zhuo Yang",
+      "Chenghao Yue",
+      "Zehao Lin",
+      "Huan-ang Gao",
+      "Ziwei Wang",
+      "Hao Zhao"
+    ],
+    "published": "2025-09-09T17:50:37+00:00",
+    "summary": "Many robotic manipulation tasks require sensing and responding to force signals such as torque to assess whether the task has been successfully completed and to enable closed-loop control. However, current Vision-Language-Action (VLA) models lack the ability to integrate such subtle physical feedback. In this work, we explore Torque-aware VLA models, aiming to bridge this gap by systematically studying the design space for incorporating torque signals into existing VLA architectures. We identify and evaluate several strategies, leading to three key findings. First, introducing torque adapters into the decoder consistently outperforms inserting them into the encoder.Third, inspired by joint prediction and planning paradigms in autonomous driving, we propose predicting torque as an auxiliary output, which further improves performance. This strategy encourages the model to build a physically grounded internal representation of interaction dynamics. Extensive quantitative and qualitative experiments across contact-rich manipulation benchmarks validate our findings."
+  },
+  {
+    "title": "Comparison of the propulsion of helical microrobots based on hard- and soft-magnetic elements under rotating external magnetic fieldsv",
+    "url": "http://arxiv.org/abs/2509.07959v1",
+    "arxiv_id": "2509.07959v1",
+    "authors": [
+      "Joost Wijnmalen",
+      "Leon Abelmann",
+      "Iulian Apachitei"
+    ],
+    "published": "2025-09-09T17:45:44+00:00",
+    "summary": "This study compares the propulsion of helical microrobots based on hard- and soft-magnetic elements under rotating magnetic fields. Results show that hard-magnetic microrobots achieved step-out frequencies and maximum propulsion speeds 4.5 times higher than soft-magnetic microrobots. Below saturation magnetization, soft-magnetic micro-robots demonstrated similar performance irrespective of magnetic susceptibility, high-lighting that torque generation in these materials is purely geometry-dependent. Employing a tapered ribbon design increased propulsion speed by a factor of 3.5 compared to regular helical designs. These results provide a quantitative basis for selecting materials and designs, enabling designers to weigh the propulsion benefits of hard magnets against the biocompatibility of soft-magnetic microrobots."
+  },
+  {
     "title": "Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments",
     "url": "http://arxiv.org/abs/2509.06953v1",
     "arxiv_id": "2509.06953v1",
