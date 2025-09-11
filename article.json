@@ -1,5 +1,116 @@
 [
   {
+    "title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+    "url": "http://arxiv.org/abs/2509.08827v1",
+    "arxiv_id": "2509.08827v1",
+    "authors": [
+      "Kaiyan Zhang",
+      "Yuxin Zuo",
+      "Bingxiang He",
+      "Youbang Sun",
+      "Runze Liu",
+      "Che Jiang",
+      "Yuchen Fan",
+      "Kai Tian",
+      "Guoli Jia",
+      "Pengfei Li",
+      "Yu Fu",
+      "Xingtai Lv",
+      "Yuchen Zhang",
+      "Sihang Zeng",
+      "Shang Qu",
+      "Haozhan Li",
+      "Shijie Wang",
+      "Yuru Wang",
+      "Xinwei Long",
+      "Fangfu Liu",
+      "Xiang Xu",
+      "Jiaze Ma",
+      "Xuekai Zhu",
+      "Ermo Hua",
+      "Yihao Liu",
+      "Zonglin Li",
+      "Huayu Chen",
+      "Xiaoye Qu",
+      "Yafu Li",
+      "Weize Chen",
+      "Zhenzhao Yuan",
+      "Junqi Gao",
+      "Dong Li",
+      "Zhiyuan Ma",
+      "Ganqu Cui",
+      "Zhiyuan Liu",
+      "Biqing Qi",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "published": "2025-09-10T17:59:43+00:00",
+    "summary": "In this paper, we survey recent advances in Reinforcement Learning (RL) for reasoning with Large Language Models (LLMs). RL has achieved remarkable success in advancing the frontier of LLM capabilities, particularly in addressing complex logical tasks such as mathematics and coding. As a result, RL has emerged as a foundational methodology for transforming LLMs into LRMs. With the rapid progress of the field, further scaling of RL for LRMs now faces foundational challenges not only in computational resources but also in algorithm design, training data, and infrastructure. To this end, it is timely to revisit the development of this domain, reassess its trajectory, and explore strategies to enhance the scalability of RL toward Artificial SuperIntelligence (ASI). In particular, we examine research applying RL to LLMs and LRMs for reasoning abilities, especially since the release of DeepSeek-R1, including foundational components, core problems, training resources, and downstream applications, to identify future opportunities and directions for this rapidly evolving area. We hope this review will promote future research on RL for broader reasoning models. Github: https://github.com/TsinghuaC3I/Awesome-RL-for-LRMs"
+  },
+  {
+    "title": "RewardDance: Reward Scaling in Visual Generation",
+    "url": "http://arxiv.org/abs/2509.08826v1",
+    "arxiv_id": "2509.08826v1",
+    "authors": [
+      "Jie Wu",
+      "Yu Gao",
+      "Zilyu Ye",
+      "Ming Li",
+      "Liang Li",
+      "Hanzhong Guo",
+      "Jie Liu",
+      "Zeyue Xue",
+      "Xiaoxia Hou",
+      "Wei Liu",
+      "Yan Zeng",
+      "Weilin Huang"
+    ],
+    "published": "2025-09-10T17:59:31+00:00",
+    "summary": "Reward Models (RMs) are critical for improving generation models via Reinforcement Learning (RL), yet the RM scaling paradigm in visual generation remains largely unexplored. It primarily due to fundamental limitations in existing approaches: CLIP-based RMs suffer from architectural and input modality constraints, while prevalent Bradley-Terry losses are fundamentally misaligned with the next-token prediction mechanism of Vision-Language Models (VLMs), hindering effective scaling. More critically, the RLHF optimization process is plagued by Reward Hacking issue, where models exploit flaws in the reward signal without improving true quality. To address these challenges, we introduce RewardDance, a scalable reward modeling framework that overcomes these barriers through a novel generative reward paradigm. By reformulating the reward score as the model's probability of predicting a \"yes\" token, indicating that the generated image outperforms a reference image according to specific criteria, RewardDance intrinsically aligns reward objectives with VLM architectures. This alignment unlocks scaling across two dimensions: (1) Model Scaling: Systematic scaling of RMs up to 26 billion parameters; (2) Context Scaling: Integration of task-specific instructions, reference examples, and chain-of-thought (CoT) reasoning. Extensive experiments demonstrate that RewardDance significantly surpasses state-of-the-art methods in text-to-image, text-to-video, and image-to-video generation. Crucially, we resolve the persistent challenge of \"reward hacking\": Our large-scale RMs exhibit and maintain high reward variance during RL fine-tuning, proving their resistance to hacking and ability to produce diverse, high-quality outputs. It greatly relieves the mode collapse problem that plagues smaller models."
+  },
+  {
+    "title": "RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation",
+    "url": "http://arxiv.org/abs/2509.08820v1",
+    "arxiv_id": "2509.08820v1",
+    "authors": [
+      "Zongzheng Zhang",
+      "Chenghao Yue",
+      "Haobo Xu",
+      "Minwen Liao",
+      "Xianglin Qi",
+      "Huan-ang Gao",
+      "Ziwei Wang",
+      "Hao Zhao"
+    ],
+    "published": "2025-09-10T17:52:09+00:00",
+    "summary": "Robotic chemists promise to both liberate human experts from repetitive tasks and accelerate scientific discovery, yet remain in their infancy. Chemical experiments involve long-horizon procedures over hazardous and deformable substances, where success requires not only task completion but also strict compliance with experimental norms. To address these challenges, we propose \\textit{RoboChemist}, a dual-loop framework that integrates Vision-Language Models (VLMs) with Vision-Language-Action (VLA) models. Unlike prior VLM-based systems (e.g., VoxPoser, ReKep) that rely on depth perception and struggle with transparent labware, and existing VLA systems (e.g., RDT, pi0) that lack semantic-level feedback for complex tasks, our method leverages a VLM to serve as (1) a planner to decompose tasks into primitive actions, (2) a visual prompt generator to guide VLA models, and (3) a monitor to assess task success and regulatory compliance. Notably, we introduce a VLA interface that accepts image-based visual targets from the VLM, enabling precise, goal-conditioned control. Our system successfully executes both primitive actions and complete multi-step chemistry protocols. Results show 23.57% higher average success rate and a 0.298 average increase in compliance rate over state-of-the-art VLA baselines, while also demonstrating strong generalization to objects and tasks."
+  },
+  {
+    "title": "Calib3R: A 3D Foundation Model for Multi-Camera to Robot Calibration and 3D Metric-Scaled Scene Reconstruction",
+    "url": "http://arxiv.org/abs/2509.08813v1",
+    "arxiv_id": "2509.08813v1",
+    "authors": [
+      "Davide Allegro",
+      "Matteo Terreran",
+      "Stefano Ghidoni"
+    ],
+    "published": "2025-09-10T17:45:16+00:00",
+    "summary": "Robots often rely on RGB images for tasks like manipulation and navigation. However, reliable interaction typically requires a 3D scene representation that is metric-scaled and aligned with the robot reference frame. This depends on accurate camera-to-robot calibration and dense 3D reconstruction, tasks usually treated separately, despite both relying on geometric correspondences from RGB data. Traditional calibration needs patterns, while RGB-based reconstruction yields geometry with an unknown scale in an arbitrary frame. Multi-camera setups add further complexity, as data must be expressed in a shared reference frame. We present Calib3R, a patternless method that jointly performs camera-to-robot calibration and metric-scaled 3D reconstruction via unified optimization. Calib3R handles single- and multi-camera setups on robot arms or mobile robots. It builds on the 3D foundation model MASt3R to extract pointmaps from RGB images, which are combined with robot poses to reconstruct a scaled 3D scene aligned with the robot. Experiments on diverse datasets show that Calib3R achieves accurate calibration with less than 10 images, outperforming target-less and marker-based methods."
+  },
+  {
+    "title": "Isomer- and state-dependent ion--molecule reactions between Coulomb-crystallised Ca$^+$ ions and 1,2-dichloroethene",
+    "url": "http://arxiv.org/abs/2509.08791v1",
+    "arxiv_id": "2509.08791v1",
+    "authors": [
+      "Lei Xu",
+      "Richard Karl",
+      "Jutta Toscano",
+      "Stefan Willitsch"
+    ],
+    "published": "2025-09-10T17:20:09+00:00",
+    "summary": "We report a systematic investigation of isomer- and state-dependent reactions between Coulomb-crystallised laser-cooled Ca$^+$ ions and \\emph{cis/trans}-1,2-dichloroethene (DCE) isomers. By manipulating the electronic state populations of Ca$^+$ through tuning of laser cooling parameters, we observed distinct reactivities in its ground and excited states, as well as with the geometric isomers of DCE. Our experiments revealed two primary reaction channels, formation of CaCl$^+$ and C$_2$HCaCl$^+$, followed by secondary reaction pathways. While excited-state reactions proceed at rate coefficients consistent with capture theory predictions, ground-state reactions show a systematically lower reactivity. \\emph{Ab initio} calculations of reaction pathways suggest that this suppression stems from the formation of long-lived reaction complexes. The \\textit{cis} isomer was found to exhibit a higher reactivity with all electronic states of Ca$^+$ than its \\textit{trans} counterpart. The present study provides insights into the combined effects of molecular structure and quantum states influencing ion--molecule reaction dynamics."
+  },
+  {
     "title": "Parallel-R1: Towards Parallel Thinking via Reinforcement Learning",
     "url": "http://arxiv.org/abs/2509.07980v1",
     "arxiv_id": "2509.07980v1",
