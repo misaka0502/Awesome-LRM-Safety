@@ -1,5 +1,91 @@
 [
   {
+    "title": "WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2509.13305v1",
+    "arxiv_id": "2509.13305v1",
+    "authors": [
+      "Kuan Li",
+      "Zhongwang Zhang",
+      "Huifeng Yin",
+      "Rui Ye",
+      "Yida Zhao",
+      "Liwen Zhang",
+      "Litu Ou",
+      "Dingchu Zhang",
+      "Xixi Wu",
+      "Jialong Wu",
+      "Xinyu Wang",
+      "Zile Qiao",
+      "Zhen Zhang",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "published": "2025-09-16T17:57:03+00:00",
+    "summary": "Transcending human cognitive limitations represents a critical frontier in LLM training. Proprietary agentic systems like DeepResearch have demonstrated superhuman capabilities on extremely complex information-seeking benchmarks such as BrowseComp, a feat previously unattainable. We posit that their success hinges on a sophisticated reasoning pattern absent in open-source models: the ability to systematically reduce extreme uncertainty when navigating vast information landscapes. Based on this insight, we introduce WebSailor, a complete post-training methodology designed to instill this crucial capability. Our approach involves generating novel, high-uncertainty tasks through structured sampling and information obfuscation, RFT cold start, and an efficient agentic RL training algorithm, Duplicating Sampling Policy Optimization (DUPO). With this integrated pipeline, WebSailor significantly outperforms all open-source agents in complex information-seeking tasks, matching proprietary agents' performance and closing the capability gap."
+  },
+  {
+    "title": "Shapes of Cognition for Computational Cognitive Modeling",
+    "url": "http://arxiv.org/abs/2509.13288v1",
+    "arxiv_id": "2509.13288v1",
+    "authors": [
+      "Marjorie McShane",
+      "Sergei Nirenburg",
+      "Sanjay Oruganti",
+      "Jesse English"
+    ],
+    "published": "2025-09-16T17:39:58+00:00",
+    "summary": "Shapes of cognition is a new conceptual paradigm for the computational cognitive modeling of Language-Endowed Intelligent Agents (LEIAs). Shapes are remembered constellations of sensory, linguistic, conceptual, episodic, and procedural knowledge that allow agents to cut through the complexity of real life the same way as people do: by expecting things to be typical, recognizing patterns, acting by habit, reasoning by analogy, satisficing, and generally minimizing cognitive load to the degree situations permit. Atypical outcomes are treated using shapes-based recovery methods, such as learning on the fly, asking a human partner for help, or seeking an actionable, even if imperfect, situational understanding. Although shapes is an umbrella term, it is not vague: shapes-based modeling involves particular objectives, hypotheses, modeling strategies, knowledge bases, and actual models of wide-ranging phenomena, all implemented within a particular cognitive architecture. Such specificity is needed both to vet our hypotheses and to achieve our practical aims of building useful agent systems that are explainable, extensible, and worthy of our trust, even in critical domains. However, although the LEIA example of shapes-based modeling is specific, the principles can be applied more broadly, giving new life to knowledge-based and hybrid AI."
+  },
+  {
+    "title": "RepIt: Representing Isolated Targets to Steer Language Models",
+    "url": "http://arxiv.org/abs/2509.13281v1",
+    "arxiv_id": "2509.13281v1",
+    "authors": [
+      "Vincent Siu",
+      "Nathan W. Henry",
+      "Nicholas Crispino",
+      "Yang Liu",
+      "Dawn Song",
+      "Chenguang Wang"
+    ],
+    "published": "2025-09-16T17:35:36+00:00",
+    "summary": "While activation steering in large language models (LLMs) is a growing area of research, methods can often incur broader effects than desired. This motivates isolation of purer concept vectors to enable targeted interventions and understand LLM behavior at a more granular level. We present RepIt, a simple and data-efficient framework for isolating concept-specific representations. Across five frontier LLMs, RepIt enables precise interventions: it selectively suppresses refusal on targeted concepts while preserving refusal elsewhere, producing models that answer WMD-related questions while still scoring as safe on standard benchmarks. We further show that the corrective signal localizes to just 100-200 neurons and that robust target representations can be extracted from as few as a dozen examples on a single A6000. This efficiency raises a dual concern: manipulations can be performed with modest compute and data to extend to underrepresented data-scarce topics while evading existing benchmarks. By disentangling refusal vectors with RepIt, this work demonstrates that targeted interventions can counteract overgeneralization, laying the foundation for more granular control of model behavior."
+  },
+  {
+    "title": "HARMONIC: A Content-Centric Cognitive Robotic Architecture",
+    "url": "http://arxiv.org/abs/2509.13279v1",
+    "arxiv_id": "2509.13279v1",
+    "authors": [
+      "Sanjay Oruganti",
+      "Sergei Nirenburg",
+      "Marjorie McShane",
+      "Jesse English",
+      "Michael K. Roberts",
+      "Christian Arndt",
+      "Carlos Gonzalez",
+      "Mingyo Seo",
+      "Luis Sentis"
+    ],
+    "published": "2025-09-16T17:34:18+00:00",
+    "summary": "This paper introduces HARMONIC, a cognitive-robotic architecture designed for robots in human-robotic teams. HARMONIC supports semantic perception interpretation, human-like decision-making, and intentional language communication. It addresses the issues of safety and quality of results; aims to solve problems of data scarcity, explainability, and safety; and promotes transparency and trust. Two proof-of-concept HARMONIC-based robotic systems are demonstrated, each implemented in both a high-fidelity simulation environment and on physical robotic platforms."
+  },
+  {
+    "title": "JANUS: A Dual-Constraint Generative Framework for Stealthy Node Injection Attacks",
+    "url": "http://arxiv.org/abs/2509.13266v1",
+    "arxiv_id": "2509.13266v1",
+    "authors": [
+      "Jiahao Zhang",
+      "Xiaobing Pei",
+      "Zhaokun Zhong",
+      "Wenqiang Hao",
+      "Zhenghao Tang"
+    ],
+    "published": "2025-09-16T17:24:30+00:00",
+    "summary": "Graph Neural Networks (GNNs) have demonstrated remarkable performance across various applications, yet they are vulnerable to sophisticated adversarial attacks, particularly node injection attacks. The success of such attacks heavily relies on their stealthiness, the ability to blend in with the original graph and evade detection. However, existing methods often achieve stealthiness by relying on indirect proxy metrics, lacking consideration for the fundamental characteristics of the injected content, or focusing only on imitating local structures, which leads to the problem of local myopia. To overcome these limitations, we propose a dual-constraint stealthy node injection framework, called Joint Alignment of Nodal and Universal Structures (JANUS). At the local level, we introduce a local feature manifold alignment strategy to achieve geometric consistency in the feature space. At the global level, we incorporate structured latent variables and maximize the mutual information with the generated structures, ensuring the injected structures are consistent with the semantic patterns of the original graph. We model the injection attack as a sequential decision process, which is optimized by a reinforcement learning agent. Experiments on multiple standard datasets demonstrate that the JANUS framework significantly outperforms existing methods in terms of both attack effectiveness and stealthiness."
+  },
+  {
     "title": "A Converse Control Lyapunov Theorem for Joint Safety and Stability",
     "url": "http://arxiv.org/abs/2509.12182v1",
     "arxiv_id": "2509.12182v1",
