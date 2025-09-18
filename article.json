@@ -1,5 +1,84 @@
 [
   {
+    "title": "Compute as Teacher: Turning Inference Compute Into Reference-Free Supervision",
+    "url": "http://arxiv.org/abs/2509.14234v1",
+    "arxiv_id": "2509.14234v1",
+    "authors": [
+      "Dulhan Jayalath",
+      "Shashwat Goel",
+      "Thomas Foster",
+      "Parag Jain",
+      "Suchin Gururangan",
+      "Cheng Zhang",
+      "Anirudh Goyal",
+      "Alan Schelten"
+    ],
+    "published": "2025-09-17T17:59:42+00:00",
+    "summary": "Where do learning signals come from when there is no ground truth in post-training? We propose turning exploration into supervision through Compute as Teacher (CaT), which converts the model's own exploration at inference-time into reference-free supervision by synthesizing a single reference from a group of parallel rollouts and then optimizing toward it. Concretely, the current policy produces a group of rollouts; a frozen anchor (the initial policy) reconciles omissions and contradictions to estimate a reference, turning extra inference-time compute into a teacher signal. We turn this into rewards in two regimes: (i) verifiable tasks use programmatic equivalence on final answers; (ii) non-verifiable tasks use self-proposed rubrics-binary, auditable criteria scored by an independent LLM judge, with reward given by the fraction satisfied. Unlike selection methods (best-of-N, majority, perplexity, or judge scores), synthesis may disagree with the majority and be correct even when all rollouts are wrong; performance scales with the number of rollouts. As a test-time procedure, CaT improves Gemma 3 4B, Qwen 3 4B, and Llama 3.1 8B (up to +27% on MATH-500; +12% on HealthBench). With reinforcement learning (CaT-RL), we obtain further gains (up to +33% and +30%), with the trained policy surpassing the initial teacher signal."
+  },
+  {
+    "title": "Multi-robot Multi-source Localization in Complex Flows with Physics-Preserving Environment Models",
+    "url": "http://arxiv.org/abs/2509.14228v1",
+    "arxiv_id": "2509.14228v1",
+    "authors": [
+      "Benjamin Shaffer",
+      "Victoria Edwards",
+      "Brooks Kinch",
+      "Nathaniel Trask",
+      "M. Ani Hsieh"
+    ],
+    "published": "2025-09-17T17:58:25+00:00",
+    "summary": "Source localization in a complex flow poses a significant challenge for multi-robot teams tasked with localizing the source of chemical leaks or tracking the dispersion of an oil spill. The flow dynamics can be time-varying and chaotic, resulting in sporadic and intermittent sensor readings, and complex environmental geometries further complicate a team's ability to model and predict the dispersion. To accurately account for the physical processes that drive the dispersion dynamics, robots must have access to computationally intensive numerical models, which can be difficult when onboard computation is limited. We present a distributed mobile sensing framework for source localization in which each robot carries a machine-learned, finite element model of its environment to guide information-based sampling. The models are used to evaluate an approximate mutual information criterion to drive an infotaxis control strategy, which selects sensing regions that are expected to maximize informativeness for the source localization objective. Our approach achieves faster error reduction compared to baseline sensing strategies and results in more accurate source localization compared to baseline machine learning approaches."
+  },
+  {
+    "title": "A Universal Banach--Bregman Framework for Stochastic Iterations: Unifying Stochastic Mirror Descent, Learning and LLM Training",
+    "url": "http://arxiv.org/abs/2509.14216v1",
+    "arxiv_id": "2509.14216v1",
+    "authors": [
+      "Johnny R. Zhang",
+      "Xiaomei Mi",
+      "Gaoyuan Du",
+      "Qianyi Sun",
+      "Shiqi Wang",
+      "Jiaxuan Li",
+      "Wenhua Zhou"
+    ],
+    "published": "2025-09-17T17:50:59+00:00",
+    "summary": "Stochastic optimization powers the scalability of modern artificial intelligence, spanning machine learning, deep learning, reinforcement learning, and large language model training. Yet, existing theory remains largely confined to Hilbert spaces, relying on inner-product frameworks and orthogonality. This paradigm fails to capture non-Euclidean settings, such as mirror descent on simplices, Bregman proximal methods for sparse learning, natural gradient descent in information geometry, or Kullback--Leibler-regularized language model training. Unlike Euclidean-based Hilbert-space methods, this approach embraces general Banach spaces. This work introduces a pioneering Banach--Bregman framework for stochastic iterations, establishing Bregman geometry as a foundation for next-generation optimization. It (i) provides a unified template via Bregman projections and Bregman--Fejer monotonicity, encompassing stochastic approximation, mirror descent, natural gradient, adaptive methods, and mirror-prox; (ii) establishes super-relaxations ($\\lambda > 2$) in non-Hilbert settings, enabling flexible geometries and elucidating their acceleration effect; and (iii) delivers convergence theorems spanning almost-sure boundedness to geometric rates, validated on synthetic and real-world tasks. Empirical studies across machine learning (UCI benchmarks), deep learning (e.g., Transformer training), reinforcement learning (actor--critic), and large language models (WikiText-2 with distilGPT-2) show up to 20% faster convergence, reduced variance, and enhanced accuracy over classical baselines. These results position Banach--Bregman geometry as a cornerstone unifying optimization theory and practice across core AI paradigms."
+  },
+  {
+    "title": "GLIDE: A Coordinated Aerial-Ground Framework for Search and Rescue in Unknown Environments",
+    "url": "http://arxiv.org/abs/2509.14210v1",
+    "arxiv_id": "2509.14210v1",
+    "authors": [
+      "Seth Farrell",
+      "Chenghao Li",
+      "Hongzhan Yu",
+      "Hesam Mojtahedi",
+      "Sicun Gao",
+      "Henrik I. Christensen"
+    ],
+    "published": "2025-09-17T17:39:33+00:00",
+    "summary": "We present a cooperative aerial-ground search-and-rescue (SAR) framework that pairs two unmanned aerial vehicles (UAVs) with an unmanned ground vehicle (UGV) to achieve rapid victim localization and obstacle-aware navigation in unknown environments. We dub this framework Guided Long-horizon Integrated Drone Escort (GLIDE), highlighting the UGV's reliance on UAV guidance for long-horizon planning. In our framework, a goal-searching UAV executes real-time onboard victim detection and georeferencing to nominate goals for the ground platform, while a terrain-scouting UAV flies ahead of the UGV's planned route to provide mid-level traversability updates. The UGV fuses aerial cues with local sensing to perform time-efficient A* planning and continuous replanning as information arrives. Additionally, we present a hardware demonstration (using a GEM e6 golf cart as the UGV and two X500 UAVs) to evaluate end-to-end SAR mission performance and include simulation ablations to assess the planning stack in isolation from detection. Empirical results demonstrate that explicit role separation across UAVs, coupled with terrain scouting and guided planning, improves reach time and navigation safety in time-critical SAR missions."
+  },
+  {
+    "title": "MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping",
+    "url": "http://arxiv.org/abs/2509.14191v1",
+    "arxiv_id": "2509.14191v1",
+    "authors": [
+      "Zhihao Cao",
+      "Hanyu Wu",
+      "Li Wa Tang",
+      "Zizhou Luo",
+      "Zihan Zhu",
+      "Wei Zhang",
+      "Marc Pollefeys",
+      "Martin R. Oswald"
+    ],
+    "published": "2025-09-17T17:27:53+00:00",
+    "summary": "Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage. We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS). Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map. A multi-camera bundle adjustment (MCBA) jointly refines poses and depths via dense photometric and geometric residuals, while a scale consistency module enforces metric alignment across views using low-rank priors. The system supports RGB input and maintains real-time performance at large scale. Experiments on synthetic and real-world datasets show that MCGS-SLAM consistently yields accurate trajectories and photorealistic reconstructions, usually outperforming monocular baselines. Notably, the wide field of view from multi-camera input enables reconstruction of side-view regions that monocular setups miss, critical for safe autonomous operation. These results highlight the promise of multi-camera Gaussian Splatting SLAM for high-fidelity mapping in robotics and autonomous driving."
+  },
+  {
     "title": "WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning",
     "url": "http://arxiv.org/abs/2509.13305v1",
     "arxiv_id": "2509.13305v1",
