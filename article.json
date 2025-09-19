@@ -1,5 +1,103 @@
 [
   {
+    "title": "Out-of-Sight Trajectories: Tracking, Fusion, and Prediction",
+    "url": "http://arxiv.org/abs/2509.15219v1",
+    "arxiv_id": "2509.15219v1",
+    "authors": [
+      "Haichao Zhang",
+      "Yi Xu",
+      "Yun Fu"
+    ],
+    "published": "2025-09-18T17:59:16+00:00",
+    "summary": "Trajectory prediction is a critical task in computer vision and autonomous systems, playing a key role in autonomous driving, robotics, surveillance, and virtual reality. Existing methods often rely on complete and noise-free observational data, overlooking the challenges associated with out-of-sight objects and the inherent noise in sensor data caused by limited camera coverage, obstructions, and the absence of ground truth for denoised trajectories. These limitations pose safety risks and hinder reliable prediction in real-world scenarios. In this extended work, we present advancements in Out-of-Sight Trajectory (OST), a novel task that predicts the noise-free visual trajectories of out-of-sight objects using noisy sensor data. Building on our previous research, we broaden the scope of Out-of-Sight Trajectory Prediction (OOSTraj) to include pedestrians and vehicles, extending its applicability to autonomous driving, robotics, surveillance, and virtual reality. Our enhanced Vision-Positioning Denoising Module leverages camera calibration to establish a vision-positioning mapping, addressing the lack of visual references, while effectively denoising noisy sensor data in an unsupervised manner. Through extensive evaluations on the Vi-Fi and JRDB datasets, our approach achieves state-of-the-art performance in both trajectory denoising and prediction, significantly surpassing previous baselines. Additionally, we introduce comparisons with traditional denoising methods, such as Kalman filtering, and adapt recent trajectory prediction models to our task, providing a comprehensive benchmark. This work represents the first initiative to integrate vision-positioning projection for denoising noisy sensor trajectories of out-of-sight agents, paving the way for future advances. The code and preprocessed datasets are available at github.com/Hai-chao-Zhang/OST"
+  },
+  {
+    "title": "Generalizable Geometric Image Caption Synthesis",
+    "url": "http://arxiv.org/abs/2509.15217v1",
+    "arxiv_id": "2509.15217v1",
+    "authors": [
+      "Yue Xin",
+      "Wenyuan Wang",
+      "Rui Pan",
+      "Ruida Wang",
+      "Howard Meng",
+      "Renjie Pi",
+      "Shizhe Diao",
+      "Tong Zhang"
+    ],
+    "published": "2025-09-18T17:59:11+00:00",
+    "summary": "Multimodal large language models have various practical applications that demand strong reasoning abilities. Despite recent advancements, these models still struggle to solve complex geometric problems. A key challenge stems from the lack of high-quality image-text pair datasets for understanding geometric images. Furthermore, most template-based data synthesis pipelines typically fail to generalize to questions beyond their predefined templates. In this paper, we bridge this gap by introducing a complementary process of Reinforcement Learning with Verifiable Rewards (RLVR) into the data generation pipeline. By adopting RLVR to refine captions for geometric images synthesized from 50 basic geometric relations and using reward signals derived from mathematical problem-solving tasks, our pipeline successfully captures the key features of geometry problem-solving. This enables better task generalization and yields non-trivial improvements. Furthermore, even in out-of-distribution scenarios, the generated dataset enhances the general reasoning capabilities of multimodal large language models, yielding accuracy improvements of $2.8\\%\\text{-}4.8\\%$ in statistics, arithmetic, algebraic, and numerical tasks with non-geometric input images of MathVista and MathVerse, along with $2.4\\%\\text{-}3.9\\%$ improvements in Art, Design, Tech, and Engineering tasks in MMMU."
+  },
+  {
+    "title": "Evil Vizier: Vulnerabilities of LLM-Integrated XR Systems",
+    "url": "http://arxiv.org/abs/2509.15213v1",
+    "arxiv_id": "2509.15213v1",
+    "authors": [
+      "Yicheng Zhang",
+      "Zijian Huang",
+      "Sophie Chen",
+      "Erfan Shayegani",
+      "Jiasi Chen",
+      "Nael Abu-Ghazaleh"
+    ],
+    "published": "2025-09-18T17:58:15+00:00",
+    "summary": "Extended reality (XR) applications increasingly integrate Large Language Models (LLMs) to enhance user experience, scene understanding, and even generate executable XR content, and are often called \"AI glasses\". Despite these potential benefits, the integrated XR-LLM pipeline makes XR applications vulnerable to new forms of attacks. In this paper, we analyze LLM-Integated XR systems in the literature and in practice and categorize them along different dimensions from a systems perspective. Building on this categorization, we identify a common threat model and demonstrate a series of proof-of-concept attacks on multiple XR platforms that employ various LLM models (Meta Quest 3, Meta Ray-Ban, Android, and Microsoft HoloLens 2 running Llama and GPT models). Although these platforms each implement LLM integration differently, they share vulnerabilities where an attacker can modify the public context surrounding a legitimate LLM query, resulting in erroneous visual or auditory feedback to users, thus compromising their safety or privacy, sowing confusion, or other harmful effects. To defend against these threats, we discuss mitigation strategies and best practices for developers, including an initial defense prototype, and call on the community to develop new protection mechanisms to mitigate these risks."
+  },
+  {
+    "title": "RynnVLA-001: Using Human Demonstrations to Improve Robot Manipulation",
+    "url": "http://arxiv.org/abs/2509.15212v1",
+    "arxiv_id": "2509.15212v1",
+    "authors": [
+      "Yuming Jiang",
+      "Siteng Huang",
+      "Shengke Xue",
+      "Yaxi Zhao",
+      "Jun Cen",
+      "Sicong Leng",
+      "Kehan Li",
+      "Jiayan Guo",
+      "Kexiang Wang",
+      "Mingxiu Chen",
+      "Fan Wang",
+      "Deli Zhao",
+      "Xin Li"
+    ],
+    "published": "2025-09-18T17:58:02+00:00",
+    "summary": "This paper presents RynnVLA-001, a vision-language-action(VLA) model built upon large-scale video generative pretraining from human demonstrations. We propose a novel two-stage pretraining methodology. The first stage, Ego-Centric Video Generative Pretraining, trains an Image-to-Video model on 12M ego-centric manipulation videos to predict future frames conditioned on an initial frame and a language instruction. The second stage, Human-Centric Trajectory-Aware Modeling, extends this by jointly predicting future keypoint trajectories, thereby effectively bridging visual frame prediction with action prediction. Furthermore, to enhance action representation, we propose ActionVAE, a variational autoencoder that compresses sequences of actions into compact latent embeddings, reducing the complexity of the VLA output space. When finetuned on the same downstream robotics datasets, RynnVLA-001 achieves superior performance over state-of-the-art baselines, demonstrating that the proposed pretraining strategy provides a more effective initialization for VLA models."
+  },
+  {
+    "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
+    "url": "http://arxiv.org/abs/2509.15207v1",
+    "arxiv_id": "2509.15207v1",
+    "authors": [
+      "Xuekai Zhu",
+      "Daixuan Cheng",
+      "Dinghuai Zhang",
+      "Hengli Li",
+      "Kaiyan Zhang",
+      "Che Jiang",
+      "Youbang Sun",
+      "Ermo Hua",
+      "Yuxin Zuo",
+      "Xingtai Lv",
+      "Qizheng Zhang",
+      "Lin Chen",
+      "Fanghao Shao",
+      "Bo Xue",
+      "Yunchong Song",
+      "Zhenjie Yang",
+      "Ganqu Cui",
+      "Ning Ding",
+      "Jianfeng Gao",
+      "Xiaodong Liu",
+      "Bowen Zhou",
+      "Hongyuan Mei",
+      "Zhouhan Lin"
+    ],
+    "published": "2025-09-18T17:56:36+00:00",
+    "summary": "We propose FlowRL: matching the full reward distribution via flow balancing instead of maximizing rewards in large language model (LLM) reinforcement learning (RL). Recent advanced reasoning models adopt reward-maximizing methods (\\eg, PPO and GRPO), which tend to over-optimize dominant reward signals while neglecting less frequent but valid reasoning paths, thus reducing diversity. In contrast, we transform scalar rewards into a normalized target distribution using a learnable partition function, and then minimize the reverse KL divergence between the policy and the target distribution. We implement this idea as a flow-balanced optimization method that promotes diverse exploration and generalizable reasoning trajectories. We conduct experiments on math and code reasoning tasks: FlowRL achieves a significant average improvement of $10.0\\%$ over GRPO and $5.1\\%$ over PPO on math benchmarks, and performs consistently better on code reasoning tasks. These results highlight reward distribution-matching as a key step toward efficient exploration and diverse reasoning in LLM reinforcement learning."
+  },
+  {
     "title": "Compute as Teacher: Turning Inference Compute Into Reference-Free Supervision",
     "url": "http://arxiv.org/abs/2509.14234v1",
     "arxiv_id": "2509.14234v1",
