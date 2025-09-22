@@ -1,5 +1,77 @@
 [
   {
+    "title": "Are Multimodal Foundation Models All That Is Needed for Emofake Detection?",
+    "url": "http://arxiv.org/abs/2509.16193v1",
+    "arxiv_id": "2509.16193v1",
+    "authors": [
+      "Mohd Mujtaba Akhtar",
+      "Girish",
+      "Orchid Chetia Phukan",
+      "Swarup Ranjan Behera",
+      "Pailla Balakrishna Reddy",
+      "Ananda Chandra Nayak",
+      "Sanjib Kumar Nayak",
+      "Arun Balaji Buduru"
+    ],
+    "published": "2025-09-19T17:55:20+00:00",
+    "summary": "In this work, we investigate multimodal foundation models (MFMs) for EmoFake detection (EFD) and hypothesize that they will outperform audio foundation models (AFMs). MFMs due to their cross-modal pre-training, learns emotional patterns from multiple modalities, while AFMs rely only on audio. As such, MFMs can better recognize unnatural emotional shifts and inconsistencies in manipulated audio, making them more effective at distinguishing real from fake emotional expressions. To validate our hypothesis, we conduct a comprehensive comparative analysis of state-of-the-art (SOTA) MFMs (e.g. LanguageBind) alongside AFMs (e.g. WavLM). Our experiments confirm that MFMs surpass AFMs for EFD. Beyond individual foundation models (FMs) performance, we explore FMs fusion, motivated by findings in related research areas such synthetic speech detection and speech emotion recognition. To this end, we propose SCAR, a novel framework for effective fusion. SCAR introduces a nested cross-attention mechanism, where representations from FMs interact at two stages sequentially to refine information exchange. Additionally, a self-attention refinement module further enhances feature representations by reinforcing important cross-FM cues while suppressing noise. Through SCAR with synergistic fusion of MFMs, we achieve SOTA performance, surpassing both standalone FMs and conventional fusion approaches and previous works on EFD."
+  },
+  {
+    "title": "Accelerating Atomic Fine Structure Determination with Graph Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2509.16184v1",
+    "arxiv_id": "2509.16184v1",
+    "authors": [
+      "M. Ding",
+      "V. -A. Darvariu",
+      "A. N. Ryabtsev",
+      "N. Hawes",
+      "J. C. Pickering"
+    ],
+    "published": "2025-09-19T17:44:03+00:00",
+    "summary": "Atomic data determined by analysis of observed atomic spectra are essential for plasma diagnostics. For each low-ionisation open d- and f-subshell atomic species, around $10^3$ fine structure level energies can be determined through years of analysis of $10^4$ observable spectral lines. We propose the automation of this task by casting the analysis procedure as a Markov decision process and solving it by graph reinforcement learning using reward functions learned on historical human decisions. In our evaluations on existing spectral line lists and theoretical calculations for Co II and Nd II-III, hundreds of level energies were computed within hours, agreeing with published values in 95% of cases for Co II and 54-87% for Nd II-III. As the current efficiency in atomic fine structure determination struggles to meet growing atomic data demands from astronomy and fusion science, our new artificial intelligence approach sets the stage for closing this gap."
+  },
+  {
+    "title": "Agentic Aerial Cinematography: From Dialogue Cues to Cinematic Trajectories",
+    "url": "http://arxiv.org/abs/2509.16176v1",
+    "arxiv_id": "2509.16176v1",
+    "authors": [
+      "Yifan Lin",
+      "Sophie Ziyu Liu",
+      "Ran Qi",
+      "George Z. Xue",
+      "Xinping Song",
+      "Chao Qin",
+      "Hugh H. -T. Liu"
+    ],
+    "published": "2025-09-19T17:35:51+00:00",
+    "summary": "We present Agentic Aerial Cinematography: From Dialogue Cues to Cinematic Trajectories (ACDC), an autonomous drone cinematography system driven by natural language communication between human directors and drones. The main limitation of previous drone cinematography workflows is that they require manual selection of waypoints and view angles based on predefined human intent, which is labor-intensive and yields inconsistent performance. In this paper, we propose employing large language models (LLMs) and vision foundation models (VFMs) to convert free-form natural language prompts directly into executable indoor UAV video tours. Specifically, our method comprises a vision-language retrieval pipeline for initial waypoint selection, a preference-based Bayesian optimization framework that refines poses using aesthetic feedback, and a motion planner that generates safe quadrotor trajectories. We validate ACDC through both simulation and hardware-in-the-loop experiments, demonstrating that it robustly produces professional-quality footage across diverse indoor scenes without requiring expertise in robotics or cinematography. These results highlight the potential of embodied AI agents to close the loop from open-vocabulary dialogue to real-world autonomous aerial cinematography."
+  },
+  {
+    "title": "Designing Culturally Aligned AI Systems For Social Good in Non-Western Contexts",
+    "url": "http://arxiv.org/abs/2509.16158v1",
+    "arxiv_id": "2509.16158v1",
+    "authors": [
+      "Deepak Varuvel Dennison",
+      "Mohit Jain",
+      "Tanuja Ganu",
+      "Aditya Vashistha"
+    ],
+    "published": "2025-09-19T17:07:13+00:00",
+    "summary": "AI technologies are increasingly deployed in high-stakes domains such as education, healthcare, law, and agriculture to address complex challenges in non-Western contexts. This paper examines eight real-world deployments spanning seven countries and 18 languages, combining 17 interviews with AI developers and domain experts with secondary research. Our findings identify six cross-cutting factors - Language, Domain, Demography, Institution, Task, and Safety - that structured how systems were designed and deployed. These factors were shaped by sociocultural (diversity, practices), institutional (resources, policies), and technological (capabilities, limits) influences. We find that building AI systems required extensive collaboration between AI developers and domain experts. Notably, human resources proved more critical to achieving safe and effective systems in high-stakes domains than technological expertise alone. We present an analytical framework that synthesizes these dynamics and conclude with recommendations for designing AI for social good systems that are culturally grounded, equitable, and responsive to the needs of non-Western contexts."
+  },
+  {
+    "title": "Automated Cyber Defense with Generalizable Graph-based Reinforcement Learning Agents",
+    "url": "http://arxiv.org/abs/2509.16151v1",
+    "arxiv_id": "2509.16151v1",
+    "authors": [
+      "Isaiah J. King",
+      "Benjamin Bowman",
+      "H. Howie Huang"
+    ],
+    "published": "2025-09-19T16:57:27+00:00",
+    "summary": "Deep reinforcement learning (RL) is emerging as a viable strategy for automated cyber defense (ACD). The traditional RL approach represents networks as a list of computers in various states of safety or threat. Unfortunately, these models are forced to overfit to specific network topologies, rendering them ineffective when faced with even small environmental perturbations. In this work, we frame ACD as a two-player context-based partially observable Markov decision problem with observations represented as attributed graphs. This approach allows our agents to reason through the lens of relational inductive bias. Agents learn how to reason about hosts interacting with other system entities in a more general manner, and their actions are understood as edits to the graph representing the environment. By introducing this bias, we will show that our agents can better reason about the states of networks and zero-shot adapt to new ones. We show that this approach outperforms the state-of-the-art by a wide margin, and makes our agents capable of defending never-before-seen networks against a wide range of adversaries in a variety of complex, and multi-agent environments."
+  },
+  {
     "title": "Out-of-Sight Trajectories: Tracking, Fusion, and Prediction",
     "url": "http://arxiv.org/abs/2509.15219v1",
     "arxiv_id": "2509.15219v1",
