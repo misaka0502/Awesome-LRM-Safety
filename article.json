@@ -1,5 +1,73 @@
 [
   {
+    "title": "Strategic Coordination for Evolving Multi-agent Systems: A Hierarchical Reinforcement and Collective Learning Approach",
+    "url": "http://arxiv.org/abs/2509.18088v1",
+    "arxiv_id": "2509.18088v1",
+    "authors": [
+      "Chuhao Qin",
+      "Evangelos Pournaras"
+    ],
+    "published": "2025-09-22T17:58:45+00:00",
+    "summary": "Decentralized combinatorial optimization in evolving multi-agent systems poses significant challenges, requiring agents to balance long-term decision-making, short-term optimized collective outcomes, while preserving autonomy of interactive agents under unanticipated changes. Reinforcement learning offers a way to model sequential decision-making through dynamic programming to anticipate future environmental changes. However, applying multi-agent reinforcement learning (MARL) to decentralized combinatorial optimization problems remains an open challenge due to the exponential growth of the joint state-action space, high communication overhead, and privacy concerns in centralized training. To address these limitations, this paper proposes Hierarchical Reinforcement and Collective Learning (HRCL), a novel approach that leverages both MARL and decentralized collective learning based on a hierarchical framework. Agents take high-level strategies using MARL to group possible plans for action space reduction and constrain the agent behavior for Pareto optimality. Meanwhile, the low-level collective learning layer ensures efficient and decentralized coordinated decisions among agents with minimal communication. Extensive experiments in a synthetic scenario and real-world smart city application models, including energy self-management and drone swarm sensing, demonstrate that HRCL significantly improves performance, scalability, and adaptability compared to the standalone MARL and collective learning approaches, achieving a win-win synthesis solution."
+  },
+  {
+    "title": "ByteWrist: A Parallel Robotic Wrist Enabling Flexible and Anthropomorphic Motion for Confined Spaces",
+    "url": "http://arxiv.org/abs/2509.18084v1",
+    "arxiv_id": "2509.18084v1",
+    "authors": [
+      "Jiawen Tian",
+      "Liqun Huang",
+      "Zhongren Cui",
+      "Jingchao Qiao",
+      "Jiafeng Xu",
+      "Xiao Ma",
+      "Zeyu Ren"
+    ],
+    "published": "2025-09-22T17:57:07+00:00",
+    "summary": "This paper introduces ByteWrist, a novel highly-flexible and anthropomorphic parallel wrist for robotic manipulation. ByteWrist addresses the critical limitations of existing serial and parallel wrists in narrow-space operations through a compact three-stage parallel drive mechanism integrated with arc-shaped end linkages. The design achieves precise RPY (Roll-Pitch-Yaw) motion while maintaining exceptional compactness, making it particularly suitable for complex unstructured environments such as home services, medical assistance, and precision assembly. The key innovations include: (1) a nested three-stage motor-driven linkages that minimize volume while enabling independent multi-DOF control, (2) arc-shaped end linkages that optimize force transmission and expand motion range, and (3) a central supporting ball functioning as a spherical joint that enhances structural stiffness without compromising flexibility. Meanwhile, we present comprehensive kinematic modeling including forward / inverse kinematics and a numerical Jacobian solution for precise control. Empirically, we observe ByteWrist demonstrates strong performance in narrow-space maneuverability and dual-arm cooperative manipulation tasks, outperforming Kinova-based systems. Results indicate significant improvements in compactness, efficiency, and stiffness compared to traditional designs, establishing ByteWrist as a promising solution for next-generation robotic manipulation in constrained environments."
+  },
+  {
+    "title": "Reasoning Core: A Scalable RL Environment for LLM Symbolic Reasoning",
+    "url": "http://arxiv.org/abs/2509.18083v1",
+    "arxiv_id": "2509.18083v1",
+    "authors": [
+      "Valentin Lacombe",
+      "Valentin Quesnel",
+      "Damien Sileo"
+    ],
+    "published": "2025-09-22T17:56:38+00:00",
+    "summary": "We introduce Reasoning Core, a new scalable environment for Reinforcement Learning with Verifiable Rewards (RLVR), designed to advance foundational symbolic reasoning in Large Language Models (LLMs). Unlike existing benchmarks that focus on games or isolated puzzles, Reasoning Core procedurally generates problems across core formal domains, including PDDL planning, first-order logic, context-free grammar parsing, causal reasoning, and system equation solving. The environment is built on key design principles of high-generality problem distributions, verification via external tools, and continuous difficulty control, which together provide a virtually infinite supply of novel training instances. Initial zero-shot evaluations with frontier LLMs confirm the difficulty of Reasoning Core's tasks, positioning it as a promising resource to improve the reasoning capabilities of future models."
+  },
+  {
+    "title": "RadarSFD: Single-Frame Diffusion with Pretrained Priors for Radar Point Clouds",
+    "url": "http://arxiv.org/abs/2509.18068v1",
+    "arxiv_id": "2509.18068v1",
+    "authors": [
+      "Bin Zhao",
+      "Nakul Garg"
+    ],
+    "published": "2025-09-22T17:49:00+00:00",
+    "summary": "Millimeter-wave radar provides perception robust to fog, smoke, dust, and low light, making it attractive for size, weight, and power constrained robotic platforms. Current radar imaging methods, however, rely on synthetic aperture or multi-frame aggregation to improve resolution, which is impractical for small aerial, inspection, or wearable systems. We present RadarSFD, a conditional latent diffusion framework that reconstructs dense LiDAR-like point clouds from a single radar frame without motion or SAR. Our approach transfers geometric priors from a pretrained monocular depth estimator into the diffusion backbone, anchors them to radar inputs via channel-wise latent concatenation, and regularizes outputs with a dual-space objective combining latent and pixel-space losses. On the RadarHD benchmark, RadarSFD achieves 35 cm Chamfer Distance and 28 cm Modified Hausdorff Distance, improving over the single-frame RadarHD baseline (56 cm, 45 cm) and remaining competitive with multi-frame methods using 5-41 frames. Qualitative results show recovery of fine walls and narrow gaps, and experiments across new environments confirm strong generalization. Ablation studies highlight the importance of pretrained initialization, radar BEV conditioning, and the dual-space loss. Together, these results establish the first practical single-frame, no-SAR mmWave radar pipeline for dense point cloud perception in compact robotic systems."
+  },
+  {
+    "title": "Strategic Dishonesty Can Undermine AI Safety Evaluations of Frontier LLM",
+    "url": "http://arxiv.org/abs/2509.18058v1",
+    "arxiv_id": "2509.18058v1",
+    "authors": [
+      "Alexander Panfilov",
+      "Evgenii Kortukov",
+      "Kristina Nikoli\u0107",
+      "Matthias Bethge",
+      "Sebastian Lapuschkin",
+      "Wojciech Samek",
+      "Ameya Prabhu",
+      "Maksym Andriushchenko",
+      "Jonas Geiping"
+    ],
+    "published": "2025-09-22T17:30:56+00:00",
+    "summary": "Large language model (LLM) developers aim for their models to be honest, helpful, and harmless. However, when faced with malicious requests, models are trained to refuse, sacrificing helpfulness. We show that frontier LLMs can develop a preference for dishonesty as a new strategy, even when other options are available. Affected models respond to harmful requests with outputs that sound harmful but are subtly incorrect or otherwise harmless in practice. This behavior emerges with hard-to-predict variations even within models from the same model family. We find no apparent cause for the propensity to deceive, but we show that more capable models are better at executing this strategy. Strategic dishonesty already has a practical impact on safety evaluations, as we show that dishonest responses fool all output-based monitors used to detect jailbreaks that we test, rendering benchmark scores unreliable. Further, strategic dishonesty can act like a honeypot against malicious users, which noticeably obfuscates prior jailbreak attacks. While output monitors fail, we show that linear probes on internal activations can be used to reliably detect strategic dishonesty. We validate probes on datasets with verifiable outcomes and by using their features as steering vectors. Overall, we consider strategic dishonesty as a concrete example of a broader concern that alignment of LLMs is hard to control, especially when helpfulness and harmlessness conflict."
+  },
+  {
     "title": "Are Multimodal Foundation Models All That Is Needed for Emofake Detection?",
     "url": "http://arxiv.org/abs/2509.16193v1",
     "arxiv_id": "2509.16193v1",
