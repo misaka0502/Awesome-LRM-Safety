@@ -1,5 +1,79 @@
 [
   {
+    "title": "FlyTrap: Physical Distance-Pulling Attack Towards Camera-based Autonomous Target Tracking Systems",
+    "url": "http://arxiv.org/abs/2509.20362v1",
+    "arxiv_id": "2509.20362v1",
+    "authors": [
+      "Shaoyuan Xie",
+      "Mohamad Habib Fakih",
+      "Junchi Lu",
+      "Fayzah Alshammari",
+      "Ningfei Wang",
+      "Takami Sato",
+      "Halima Bouzidi",
+      "Mohammad Abdullah Al Faruque",
+      "Qi Alfred Chen"
+    ],
+    "published": "2025-09-24T17:59:54+00:00",
+    "summary": "Autonomous Target Tracking (ATT) systems, especially ATT drones, are widely used in applications such as surveillance, border control, and law enforcement, while also being misused in stalking and destructive actions. Thus, the security of ATT is highly critical for real-world applications. Under the scope, we present a new type of attack: distance-pulling attacks (DPA) and a systematic study of it, which exploits vulnerabilities in ATT systems to dangerously reduce tracking distances, leading to drone capturing, increased susceptibility to sensor attacks, or even physical collisions. To achieve these goals, we present FlyTrap, a novel physical-world attack framework that employs an adversarial umbrella as a deployable and domain-specific attack vector. FlyTrap is specifically designed to meet key desired objectives in attacking ATT drones: physical deployability, closed-loop effectiveness, and spatial-temporal consistency. Through novel progressive distance-pulling strategy and controllable spatial-temporal consistency designs, FlyTrap manipulates ATT drones in real-world setups to achieve significant system-level impacts. Our evaluations include new datasets, metrics, and closed-loop experiments on real-world white-box and even commercial ATT drones, including DJI and HoverAir. Results demonstrate FlyTrap's ability to reduce tracking distances within the range to be captured, sensor attacked, or even directly crashed, highlighting urgent security risks and practical implications for the safe deployment of ATT systems."
+  },
+  {
+    "title": "Language Models that Think, Chat Better",
+    "url": "http://arxiv.org/abs/2509.20357v1",
+    "arxiv_id": "2509.20357v1",
+    "authors": [
+      "Adithya Bhaskar",
+      "Xi Ye",
+      "Danqi Chen"
+    ],
+    "published": "2025-09-24T17:57:34+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) improves language model reasoning by using rule-based rewards in verifiable domains such as mathematics and code. However, RLVR leads to limited generalization for open-ended tasks -- such as writing outline essays or making meal plans -- where humans reason routinely. This paper shows that the RLVR paradigm is effective beyond verifiable domains, and introduces **RL** with **M**odel-rewarded **T**hinking (**RLMT**) for general-purpose chat capabilities. Using diverse real-world prompts, RLMT requires LMs to generate long CoT reasoning before response, and optimizes them with online RL against a preference-based reward model used in RLHF. Across 40 training runs on Llama-3.1-8B and Qwen-2.5-7B (both base and instruct) and multiple optimization algorithms (DPO, PPO, and GRPO), RLMT consistently outperforms standard RLHF pipelines. This includes substantial gains of 3-7 points on three chat benchmarks (AlpacaEval2, WildBench, and ArenaHardV2), along with 1-3 point improvements on other tasks like creative writing and general knowledge. Our best 8B model surpasses GPT-4o in chat and creative writing and rivals Claude-3.7-Sonnet (Thinking). RLMT can also be applied directly to base models without an SFT stage, akin to R1-Zero training. Remarkably, with only 7K prompts, Llama-3.1-8B base trained with our RLMT recipe outperforms Llama-3.1-8B-Instruct post-trained with a complex multi-staged pipeline with 25M+ examples. We close with qualitative and quantitative analyses of how trained models plan their responses. Our results rethink the post-training pipeline and call upon future work to understand and employ thinking more broadly."
+  },
+  {
+    "title": "xGFabric: Coupling Sensor Networks and HPC Facilities with Private 5G Wireless Networks for Real-Time Digital Agriculture",
+    "url": "http://arxiv.org/abs/2509.20340v1",
+    "arxiv_id": "2509.20340v1",
+    "authors": [
+      "Liubov Kurafeeva",
+      "Alan Subedi",
+      "Ryan Hartung",
+      "Michael Fay",
+      "Avhishek Biswas",
+      "Shantenu Jha",
+      "Ozgur O. Kilic",
+      "Chandra Krintz",
+      "Andre Merzky",
+      "Douglas Thain",
+      "Mehmet C. Vuran",
+      "Rich Wolski"
+    ],
+    "published": "2025-09-24T17:33:31+00:00",
+    "summary": "Advanced scientific applications require coupling distributed sensor networks with centralized high-performance computing facilities. Citrus Under Protective Screening (CUPS) exemplifies this need in digital agriculture, where citrus research facilities are instrumented with numerous sensors monitoring environmental conditions and detecting protective screening damage. CUPS demands access to computational fluid dynamics codes for modeling environmental conditions and guiding real-time interventions like water application or robotic repairs. These computing domains have contrasting properties: sensor networks provide low-performance, limited-capacity, unreliable data access, while high-performance facilities offer enormous computing power through high-latency batch processing. Private 5G networks present novel capabilities addressing this challenge by providing low latency, high throughput, and reliability necessary for near-real-time coupling of edge sensor networks with HPC simulations. This work presents xGFabric, an end-to-end system coupling sensor networks with HPC facilities through Private 5G networks. The prototype connects remote sensors via 5G network slicing to HPC systems, enabling real-time digital agriculture simulation."
+  },
+  {
+    "title": "Adaptive Event-Triggered Policy Gradient for Multi-Agent Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2509.20338v1",
+    "arxiv_id": "2509.20338v1",
+    "authors": [
+      "Umer Siddique",
+      "Abhinav Sinha",
+      "Yongcan Cao"
+    ],
+    "published": "2025-09-24T17:29:56+00:00",
+    "summary": "Conventional multi-agent reinforcement learning (MARL) methods rely on time-triggered execution, where agents sample and communicate actions at fixed intervals. This approach is often computationally expensive and communication-intensive. To address this limitation, we propose ET-MAPG (Event-Triggered Multi-Agent Policy Gradient reinforcement learning), a framework that jointly learns an agent's control policy and its event-triggering policy. Unlike prior work that decouples these mechanisms, ET-MAPG integrates them into a unified learning process, enabling agents to learn not only what action to take but also when to execute it. For scenarios with inter-agent communication, we introduce AET-MAPG, an attention-based variant that leverages a self-attention mechanism to learn selective communication patterns. AET-MAPG empowers agents to determine not only when to trigger an action but also with whom to communicate and what information to exchange, thereby optimizing coordination. Both methods can be integrated with any policy gradient MARL algorithm. Extensive experiments across diverse MARL benchmarks demonstrate that our approaches achieve performance comparable to state-of-the-art, time-triggered baselines while significantly reducing both computational load and communication overhead."
+  },
+  {
+    "title": "BBoE: Leveraging Bundle of Edges for Kinodynamic Bidirectional Motion Planning",
+    "url": "http://arxiv.org/abs/2509.20333v1",
+    "arxiv_id": "2509.20333v1",
+    "authors": [
+      "Srikrishna Bangalore Raghu",
+      "Alessandro Roncone"
+    ],
+    "published": "2025-09-24T17:23:20+00:00",
+    "summary": "In this work, we introduce BBoE, a bidirectional, kinodynamic, sampling-based motion planner that consistently and quickly finds low-cost solutions in environments with varying obstacle clutter. The algorithm combines exploration and exploitation while relying on precomputed robot state traversals, resulting in efficient convergence towards the goal. Our key contributions include: i) a strategy to navigate through obstacle-rich spaces by sorting and sequencing preprocessed forward propagations; and ii) BBoE, a robust bidirectional kinodynamic planner that utilizes this strategy to produce fast and feasible solutions. The proposed framework reduces planning time, diminishes solution cost and increases success rate in comparison to previous approaches."
+  },
+  {
     "title": "Residual Off-Policy RL for Finetuning Behavior Cloning Policies",
     "url": "http://arxiv.org/abs/2509.19301v1",
     "arxiv_id": "2509.19301v1",
