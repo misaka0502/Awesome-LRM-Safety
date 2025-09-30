@@ -1,5 +1,86 @@
 [
   {
+    "title": "UniAPL: A Unified Adversarial Preference Learning Framework for Instruct-Following",
+    "url": "http://arxiv.org/abs/2509.25148v1",
+    "arxiv_id": "2509.25148v1",
+    "authors": [
+      "FaQiang Qian",
+      "WeiKun Zhang",
+      "Ziliang Wang",
+      "Kang An",
+      "Xuhui Zheng",
+      "Liangjian Wen",
+      "Mengya Gao",
+      "Yong Dai",
+      "Yichao Wu"
+    ],
+    "published": "2025-09-29T17:53:09+00:00",
+    "summary": "Shaping powerful LLMs to be beneficial and safe is central to AI alignment. We argue that post-training alignment is fundamentally a unified Preference Learning problem, involving two modalities: demonstrated preferences (e.g., Supervised Fine-Tuning, SFT) and comparative preferences (e.g., Reinforcement Learning, RL).The standard sequential pipeline-SFT followed by RL-is flawed due to a critical distributional mismatch: SFT uses static expert data, but as the policy evolves, its generation distribution drifts, making SFT knowledge brittle. Subsequent RL then explores without direct access to the rich, ground-truth knowledge in expert demonstrations, leading to inefficient, ungrounded updates. This separation prevents mutual regularization between data sources. To address this, we reframe alignment as a constrained optimization problem and propose Unified Adversarial Preference Learning (UniAPL),a novel framework that dynamically aligns the policy's distribution with the expert's. UniAPL implements a single-stage unified training objective, jointly learning from mixed batches of SFT and preference data. In every gradient step, dense expert demonstrations directly ground and regularize online exploration, inherently resolving distributional mismatch and maximizing data synergy.We evaluate UniAPL on instruction-following tasks using Qwen3-235B-Instruct-2507 as the teacher. Our models match or exceed strong GRPO baselines: +5.77% on Qwen3-0.6B (matching a 32B model) and +3.75% on Qwen3-4B,even outperforming the teacher. Analyses of response length and log-probability distributions confirm that UniAPL outputs closely mimic expert demonstrations, achieving both stronger performance and better behavioral alignment."
+  },
+  {
+    "title": "Fast Feature Field ($\\text{F}^3$): A Predictive Representation of Events",
+    "url": "http://arxiv.org/abs/2509.25146v1",
+    "arxiv_id": "2509.25146v1",
+    "authors": [
+      "Richeek Das",
+      "Kostas Daniilidis",
+      "Pratik Chaudhari"
+    ],
+    "published": "2025-09-29T17:52:31+00:00",
+    "summary": "This paper develops a mathematical argument and algorithms for building representations of data from event-based cameras, that we call Fast Feature Field ($\\text{F}^3$). We learn this representation by predicting future events from past events and show that it preserves scene structure and motion information. $\\text{F}^3$ exploits the sparsity of event data and is robust to noise and variations in event rates. It can be computed efficiently using ideas from multi-resolution hash encoding and deep sets - achieving 120 Hz at HD and 440 Hz at VGA resolutions. $\\text{F}^3$ represents events within a contiguous spatiotemporal volume as a multi-channel image, enabling a range of downstream tasks. We obtain state-of-the-art performance on optical flow estimation, semantic segmentation, and monocular metric depth estimation, on data from three robotic platforms (a car, a quadruped robot and a flying platform), across different lighting conditions (daytime, nighttime), environments (indoors, outdoors, urban, as well as off-road) and dynamic vision sensors (resolutions and event rates). Our implementations can predict these tasks at 25-75 Hz at HD resolution."
+  },
+  {
+    "title": "Visual serial processing deficits explain divergences in human and VLM reasoning",
+    "url": "http://arxiv.org/abs/2509.25142v1",
+    "arxiv_id": "2509.25142v1",
+    "authors": [
+      "Nicholas Budny",
+      "Kia Ghods",
+      "Declan Campbell",
+      "Raja Marjieh",
+      "Amogh Joshi",
+      "Sreejan Kumar",
+      "Jonathan D. Cohen",
+      "Taylor W. Webb",
+      "Thomas L. Griffiths"
+    ],
+    "published": "2025-09-29T17:51:20+00:00",
+    "summary": "Why do Vision Language Models (VLMs), despite success on standard benchmarks, often fail to match human performance on surprisingly simple visual reasoning tasks? While the underlying computational principles are still debated, we hypothesize that a crucial factor is a deficit in visually-grounded serial processing. To test this hypothesis, we compared human and VLM performance across tasks designed to vary serial processing demands in three distinct domains: geometric reasoning, perceptual enumeration, and mental rotation. Tasks within each domain varied serial processing load by manipulating factors such as geometric concept complexity, perceptual individuation load, and transformation difficulty. Across all domains, our results revealed a consistent pattern: decreased VLM accuracy was strongly correlated with increased human reaction time (used as a proxy for serial processing load). As tasks require more demanding serial processing -- whether composing concepts, enumerating items, or performing mental transformations -- the VLM-human performance gap widens reliably. These findings support our hypothesis, indicating that limitations in serial, visually grounded reasoning represent a fundamental bottleneck that distinguishes current VLMs from humans."
+  },
+  {
+    "title": "The Era of Real-World Human Interaction: RL from User Conversations",
+    "url": "http://arxiv.org/abs/2509.25137v1",
+    "arxiv_id": "2509.25137v1",
+    "authors": [
+      "Chuanyang Jin",
+      "Jing Xu",
+      "Bo Liu",
+      "Leitian Tao",
+      "Olga Golovneva",
+      "Tianmin Shu",
+      "Wenting Zhao",
+      "Xian Li",
+      "Jason Weston"
+    ],
+    "published": "2025-09-29T17:50:31+00:00",
+    "summary": "We posit that to achieve continual model improvement and multifaceted alignment, future models must learn from natural human interaction. Current conversational models are aligned using pre-annotated, expert-generated human feedback. In this work, we introduce Reinforcement Learning from Human Interaction (RLHI), a paradigm that learns directly from in-the-wild user conversations. We develop two complementary methods: (1) RLHI with User-Guided Rewrites, which revises unsatisfactory model outputs based on users' natural-language follow-up responses, (2) RLHI with User-Based Rewards, which learns via a reward model conditioned on knowledge of the user's long-term interaction history (termed persona). Together, these methods link long-term user personas to turn-level preferences via persona-conditioned preference optimization. Trained on conversations derived from WildChat, both RLHI variants outperform strong baselines in personalization and instruction-following, and similar feedback enhances performance on reasoning benchmarks. These results suggest organic human interaction offers scalable, effective supervision for personalized alignment."
+  },
+  {
+    "title": "Rethinking Entropy Regularization in Large Reasoning Models",
+    "url": "http://arxiv.org/abs/2509.25133v1",
+    "arxiv_id": "2509.25133v1",
+    "authors": [
+      "Yuxian Jiang",
+      "Yafu Li",
+      "Guanxu Chen",
+      "Dongrui Liu",
+      "Yu Cheng",
+      "Jing Shao"
+    ],
+    "published": "2025-09-29T17:49:25+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has shown great promise in enhancing the reasoning abilities of large reasoning models (LRMs). However, it suffers from a critical issue: entropy collapse and premature convergence. Naive entropy regularization, a common approach for encouraging exploration in the traditional RL literature, fails to address this problem in the context of LRM. Our analysis reveals that this failure stems from the vast action space and long trajectories in LRMs, which easily trigger a global entropy explosion as the model indiscriminately explores all possible actions and states. To address this, we propose SIREN (SelectIve entRopy rEgularizatioN), a method that confines exploration to a meaningful subset of actions and states. SIREN achieves this through a two-step entropy masking mechanism, consisting of a top-p mask and a peak-entropy mask. In addition, regularization is transformed into a self-anchored form to stabilize training. Across five mathematical benchmarks, SIREN attains superior average performance over previous entropy-related RLVR approaches, exemplified by a +6.6 maj@k improvement on AIME24/25 with Qwen2.5-Math-7B. Further analysis confirms that SIREN promotes greater response diversity and maintains entropy at an appropriate level, which helps to preserve the validation pass@k throughout training. This effectively mitigates the premature convergence problem common in RLVR for LRM."
+  },
+  {
     "title": "VoiceAssistant-Eval: Benchmarking AI Assistants across Listening, Speaking, and Viewing",
     "url": "http://arxiv.org/abs/2509.22651v1",
     "arxiv_id": "2509.22651v1",
