@@ -1,5 +1,76 @@
 [
   {
+    "title": "ARMADA: Autonomous Online Failure Detection and Human Shared Control Empower Scalable Real-world Deployment and Adaptation",
+    "url": "http://arxiv.org/abs/2510.02298v1",
+    "arxiv_id": "2510.02298v1",
+    "authors": [
+      "Wenye Yu",
+      "Jun Lv",
+      "Zixi Ying",
+      "Yang Jin",
+      "Chuan Wen",
+      "Cewu Lu"
+    ],
+    "published": "2025-10-02T17:59:02+00:00",
+    "summary": "Imitation learning has shown promise in learning from large-scale real-world datasets. However, pretrained policies usually perform poorly without sufficient in-domain data. Besides, human-collected demonstrations entail substantial labour and tend to encompass mixed-quality data and redundant information. As a workaround, human-in-the-loop systems gather domain-specific data for policy post-training, and exploit closed-loop policy feedback to offer informative guidance, but usually require full-time human surveillance during policy rollout. In this work, we devise ARMADA, a multi-robot deployment and adaptation system with human-in-the-loop shared control, featuring an autonomous online failure detection method named FLOAT. Thanks to FLOAT, ARMADA enables paralleled policy rollout and requests human intervention only when necessary, significantly reducing reliance on human supervision. Hence, ARMADA enables efficient acquisition of in-domain data, and leads to more scalable deployment and faster adaptation to new scenarios. We evaluate the performance of ARMADA on four real-world tasks. FLOAT achieves nearly 95% accuracy on average, surpassing prior state-of-the-art failure detection approaches by over 20%. Besides, ARMADA manifests more than 4$\\times$ increase in success rate and greater than 2$\\times$ reduction in human intervention rate over multiple rounds of policy rollout and post-training, compared to previous human-in-the-loop learning methods."
+  },
+  {
+    "title": "MultiModal Action Conditioned Video Generation",
+    "url": "http://arxiv.org/abs/2510.02287v1",
+    "arxiv_id": "2510.02287v1",
+    "authors": [
+      "Yichen Li",
+      "Antonio Torralba"
+    ],
+    "published": "2025-10-02T17:57:06+00:00",
+    "summary": "Current video models fail as world model as they lack fine-graiend control. General-purpose household robots require real-time fine motor control to handle delicate tasks and urgent situations. In this work, we introduce fine-grained multimodal actions to capture such precise control. We consider senses of proprioception, kinesthesia, force haptics, and muscle activation. Such multimodal senses naturally enables fine-grained interactions that are difficult to simulate with text-conditioned generative models. To effectively simulate fine-grained multisensory actions, we develop a feature learning paradigm that aligns these modalities while preserving the unique information each modality provides. We further propose a regularization scheme to enhance causality of the action trajectory features in representing intricate interaction dynamics. Experiments show that incorporating multimodal senses improves simulation accuracy and reduces temporal drift. Extensive ablation studies and downstream applications demonstrate the effectiveness and practicality of our work."
+  },
+  {
+    "title": "Tree-based Dialogue Reinforced Policy Optimization for Red-Teaming Attacks",
+    "url": "http://arxiv.org/abs/2510.02286v1",
+    "arxiv_id": "2510.02286v1",
+    "authors": [
+      "Ruohao Guo",
+      "Afshin Oroojlooy",
+      "Roshan Sridhar",
+      "Miguel Ballesteros",
+      "Alan Ritter",
+      "Dan Roth"
+    ],
+    "published": "2025-10-02T17:57:05+00:00",
+    "summary": "Despite recent rapid progress in AI safety, current large language models remain vulnerable to adversarial attacks in multi-turn interaction settings, where attackers strategically adapt their prompts across conversation turns and pose a more critical yet realistic challenge. Existing approaches that discover safety vulnerabilities either rely on manual red-teaming with human experts or employ automated methods using pre-defined templates and human-curated attack data, with most focusing on single-turn attacks. However, these methods did not explore the vast space of possible multi-turn attacks, failing to consider novel attack trajectories that emerge from complex dialogue dynamics and strategic conversation planning. This gap is particularly critical given recent findings that LLMs exhibit significantly higher vulnerability to multi-turn attacks compared to single-turn attacks. We propose DialTree-RPO, an on-policy reinforcement learning framework integrated with tree search that autonomously discovers diverse multi-turn attack strategies by treating the dialogue as a sequential decision-making problem, enabling systematic exploration without manually curated data. Through extensive experiments, our approach not only achieves more than 25.9% higher ASR across 10 target models compared to previous state-of-the-art approaches, but also effectively uncovers new attack strategies by learning optimal dialogue policies that maximize attack success across multiple turns."
+  },
+  {
+    "title": "Learning to Generate Object Interactions with Physics-Guided Video Diffusion",
+    "url": "http://arxiv.org/abs/2510.02284v1",
+    "arxiv_id": "2510.02284v1",
+    "authors": [
+      "David Romero",
+      "Ariana Bermudez",
+      "Hao Li",
+      "Fabio Pizzati",
+      "Ivan Laptev"
+    ],
+    "published": "2025-10-02T17:56:46+00:00",
+    "summary": "Recent models for video generation have achieved remarkable progress and are now deployed in film, social media production, and advertising. Beyond their creative potential, such models also hold promise as world simulators for robotics and embodied decision making. Despite strong advances, however, current approaches still struggle to generate physically plausible object interactions and lack physics-grounded control mechanisms. To address this limitation, we introduce KineMask, an approach for physics-guided video generation that enables realistic rigid body control, interactions, and effects. Given a single image and a specified object velocity, our method generates videos with inferred motions and future object interactions. We propose a two-stage training strategy that gradually removes future motion supervision via object masks. Using this strategy we train video diffusion models (VDMs) on synthetic scenes of simple interactions and demonstrate significant improvements of object interactions in real scenes. Furthermore, KineMask integrates low-level motion control with high-level textual conditioning via predictive scene descriptions, leading to effective support for synthesis of complex dynamical phenomena. Extensive experiments show that KineMask achieves strong improvements over recent models of comparable size. Ablation studies further highlight the complementary roles of low- and high-level conditioning in VDMs. Our code, model, and data will be made publicly available."
+  },
+  {
+    "title": "Do You Know Where Your Camera Is? View-Invariant Policy Learning with Camera Conditioning",
+    "url": "http://arxiv.org/abs/2510.02268v1",
+    "arxiv_id": "2510.02268v1",
+    "authors": [
+      "Tianchong Jiang",
+      "Jingtian Ji",
+      "Xiangshan Tan",
+      "Jiading Fang",
+      "Anand Bhattad",
+      "Vitor Guizilini",
+      "Matthew R. Walter"
+    ],
+    "published": "2025-10-02T17:47:06+00:00",
+    "summary": "We study view-invariant imitation learning by explicitly conditioning policies on camera extrinsics. Using Plucker embeddings of per-pixel rays, we show that conditioning on extrinsics significantly improves generalization across viewpoints for standard behavior cloning policies, including ACT, Diffusion Policy, and SmolVLA. To evaluate policy robustness under realistic viewpoint shifts, we introduce six manipulation tasks in RoboSuite and ManiSkill that pair \"fixed\" and \"randomized\" scene variants, decoupling background cues from camera pose. Our analysis reveals that policies without extrinsics often infer camera pose using visual cues from static backgrounds in fixed scenes; this shortcut collapses when workspace geometry or camera placement shifts. Conditioning on extrinsics restores performance and yields robust RGB-only control without depth. We release the tasks, demonstrations, and code at https://ripl.github.io/know_your_camera/ ."
+  },
+  {
     "title": "MLA: A Multisensory Language-Action Model for Multimodal Understanding and Forecasting in Robotic Manipulation",
     "url": "http://arxiv.org/abs/2509.26642v1",
     "arxiv_id": "2509.26642v1",
