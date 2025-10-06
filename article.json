@@ -1,5 +1,72 @@
 [
   {
+    "title": "Reward Models are Metrics in a Trench Coat",
+    "url": "http://arxiv.org/abs/2510.03231v1",
+    "arxiv_id": "2510.03231v1",
+    "authors": [
+      "Sebastian Gehrmann"
+    ],
+    "published": "2025-10-03T17:59:44+00:00",
+    "summary": "The emergence of reinforcement learning in post-training of large language models has sparked significant interest in reward models. Reward models assess the quality of sampled model outputs to generate training signals. This task is also performed by evaluation metrics that monitor the performance of an AI model. We find that the two research areas are mostly separate, leading to redundant terminology and repeated pitfalls. Common challenges include susceptibility to spurious correlations, impact on downstream reward hacking, methods to improve data quality, and approaches to meta-evaluation. Our position paper argues that a closer collaboration between the fields can help overcome these issues. To that end, we show how metrics outperform reward models on specific tasks and provide an extensive survey of the two areas. Grounded in this survey, we point to multiple research topics in which closer alignment can improve reward models and metrics in areas such as preference elicitation methods, avoidance of spurious correlations and reward hacking, and calibration-aware meta-evaluation."
+  },
+  {
+    "title": "Self-Anchor: Large Language Model Reasoning via Step-by-step Attention Alignment",
+    "url": "http://arxiv.org/abs/2510.03223v1",
+    "arxiv_id": "2510.03223v1",
+    "authors": [
+      "Hongxiang Zhang",
+      "Yuan Tian",
+      "Tianyi Zhang"
+    ],
+    "published": "2025-10-03T17:56:33+00:00",
+    "summary": "To solve complex reasoning tasks for Large Language Models (LLMs), prompting-based methods offer a lightweight alternative to fine-tuning and reinforcement learning. However, as reasoning chains extend, critical intermediate steps and the original prompt will be buried in the context, receiving insufficient attention and leading to errors. In this paper, we propose Self-Anchor, a novel pipeline that leverages the inherent structure of reasoning to steer LLM attention. Self-Anchor decomposes reasoning trajectories into structured plans and automatically aligns the model's attention to the most relevant inference steps, allowing the model to maintain focus throughout generation. Our experiment shows that Self-Anchor outperforms SOTA prompting methods across six benchmarks. Notably, Self-Anchor significantly reduces the performance gap between ``non-reasoning'' models and specialized reasoning models, with the potential to enable most LLMs to tackle complex reasoning tasks without retraining."
+  },
+  {
+    "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward",
+    "url": "http://arxiv.org/abs/2510.03222v1",
+    "arxiv_id": "2510.03222v1",
+    "authors": [
+      "Guanhua Huang",
+      "Tingqiang Xu",
+      "Mingze Wang",
+      "Qi Yi",
+      "Xue Gong",
+      "Siheng Li",
+      "Ruibin Xiong",
+      "Kejiao Li",
+      "Yuhao Jiang",
+      "Bo Zhou"
+    ],
+    "published": "2025-10-03T17:56:13+00:00",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has propelled Large Language Models in complex reasoning, yet its scalability is often hindered by a training bottleneck where performance plateaus as policy entropy collapses, signaling a loss of exploration. Previous methods typically address this by maintaining high policy entropy, yet the precise mechanisms that govern meaningful exploration have remained underexplored. Our analysis suggests that an unselective focus on entropy risks amplifying irrelevant tokens and destabilizing training. This paper investigates the exploration dynamics within RLVR and identifies a key issue: the gradual elimination of valuable low-probability exploratory tokens, which we term \\textbf{\\textit{reasoning sparks}}. We find that while abundant in pre-trained models, these sparks are systematically extinguished during RLVR due to over-penalization, leading to a degeneracy in exploration. To address this, we introduce Low-probability Regularization (Lp-Reg). Its core mechanism regularizes the policy towards a heuristic proxy distribution. This proxy is constructed by filtering out presumed noise tokens and re-normalizing the distribution over the remaining candidates. The result is a less-noisy proxy where the probability of \\textit{reasoning sparks} is amplified, which then serves as a soft regularization target to shield these valuable tokens from elimination via KL divergence. Experiments show that Lp-Reg enables stable on-policy training for around 1,000 steps, a regime where baseline entropy-control methods collapse. This sustained exploration leads to state-of-the-art performance, achieving a $60.17\\%$ average accuracy on five math benchmarks, an improvement of $2.66\\%$ over prior methods. Code is available at https://github.com/CarlanLark/Lp-Reg."
+  },
+  {
+    "title": "To Distill or Decide? Understanding the Algorithmic Trade-off in Partially Observable Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2510.03207v1",
+    "arxiv_id": "2510.03207v1",
+    "authors": [
+      "Yuda Song",
+      "Dhruv Rohatgi",
+      "Aarti Singh",
+      "J. Andrew Bagnell"
+    ],
+    "published": "2025-10-03T17:45:47+00:00",
+    "summary": "Partial observability is a notorious challenge in reinforcement learning (RL), due to the need to learn complex, history-dependent policies. Recent empirical successes have used privileged expert distillation--which leverages availability of latent state information during training (e.g., from a simulator) to learn and imitate the optimal latent, Markovian policy--to disentangle the task of \"learning to see\" from \"learning to act\". While expert distillation is more computationally efficient than RL without latent state information, it also has well-documented failure modes. In this paper--through a simple but instructive theoretical model called the perturbed Block MDP, and controlled experiments on challenging simulated locomotion tasks--we investigate the algorithmic trade-off between privileged expert distillation and standard RL without privileged information. Our main findings are: (1) The trade-off empirically hinges on the stochasticity of the latent dynamics, as theoretically predicted by contrasting approximate decodability with belief contraction in the perturbed Block MDP; and (2) The optimal latent policy is not always the best latent policy to distill. Our results suggest new guidelines for effectively exploiting privileged information, potentially advancing the efficiency of policy learning across many practical partially observable domains."
+  },
+  {
+    "title": "Simulation to Rules: A Dual-VLM Framework for Formal Visual Planning",
+    "url": "http://arxiv.org/abs/2510.03182v1",
+    "arxiv_id": "2510.03182v1",
+    "authors": [
+      "Yilun Hao",
+      "Yongchao Chen",
+      "Chuchu Fan",
+      "Yang Zhang"
+    ],
+    "published": "2025-10-03T16:57:01+00:00",
+    "summary": "Vision Language Models (VLMs) show strong potential for visual planning but struggle with precise spatial and long-horizon reasoning. In contrast, Planning Domain Definition Language (PDDL) planners excel at long-horizon formal planning, but cannot interpret visual inputs. Recent works combine these complementary advantages by enabling VLMs to turn visual planning problems into PDDL files for formal planning. However, while VLMs can generate PDDL problem files satisfactorily, they struggle to accurately generate the PDDL domain files, which describe all the planning rules. As a result, prior methods rely on human experts to predefine domain files or on constant environment access for refinement. We propose VLMFP, a Dual-VLM-guided framework that can autonomously generate both PDDL problem and domain files for formal visual planning. VLMFP introduces two VLMs to ensure reliable PDDL file generation: A SimVLM that simulates action consequences based on input rule descriptions, and a GenVLM that generates and iteratively refines PDDL files by comparing the PDDL and SimVLM execution results. VLMFP unleashes multiple levels of generalizability: The same generated PDDL domain file works for all the different instances under the same problem, and VLMs generalize to different problems with varied appearances and rules. We evaluate VLMFP with 6 grid-world domains and test its generalization to unseen instances, appearance, and game rules. On average, SimVLM accurately describes 95.5%, 82.6% of scenarios, simulates 85.5%, 87.8% of action sequence, and judges 82.4%, 85.6% goal reaching for seen and unseen appearances, respectively. With the guidance of SimVLM, VLMFP can generate PDDL files to reach 70.0%, 54.1% valid plans for unseen instances in seen and unseen appearances, respectively. Project page: https://sites.google.com/view/vlmfp."
+  },
+  {
     "title": "ARMADA: Autonomous Online Failure Detection and Human Shared Control Empower Scalable Real-world Deployment and Adaptation",
     "url": "http://arxiv.org/abs/2510.02298v1",
     "arxiv_id": "2510.02298v1",
