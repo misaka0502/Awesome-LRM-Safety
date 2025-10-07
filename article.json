@@ -1,5 +1,78 @@
 [
   {
+    "title": "SAEdit: Token-level control for continuous image editing via Sparse AutoEncoder",
+    "url": "http://arxiv.org/abs/2510.05081v1",
+    "arxiv_id": "2510.05081v1",
+    "authors": [
+      "Ronen Kamenetsky",
+      "Sara Dorfman",
+      "Daniel Garibi",
+      "Roni Paiss",
+      "Or Patashnik",
+      "Daniel Cohen-Or"
+    ],
+    "published": "2025-10-06T17:51:04+00:00",
+    "summary": "Large-scale text-to-image diffusion models have become the backbone of modern image editing, yet text prompts alone do not offer adequate control over the editing process. Two properties are especially desirable: disentanglement, where changing one attribute does not unintentionally alter others, and continuous control, where the strength of an edit can be smoothly adjusted. We introduce a method for disentangled and continuous editing through token-level manipulation of text embeddings. The edits are applied by manipulating the embeddings along carefully chosen directions, which control the strength of the target attribute. To identify such directions, we employ a Sparse Autoencoder (SAE), whose sparse latent space exposes semantically isolated dimensions. Our method operates directly on text embeddings without modifying the diffusion process, making it model agnostic and broadly applicable to various image synthesis backbones. Experiments show that it enables intuitive and efficient manipulations with continuous control across diverse attributes and domains."
+  },
+  {
+    "title": "Engineering the uncontrollable: Steering noisy spin-correlated radical-pairs with coherent and incoherent control",
+    "url": "http://arxiv.org/abs/2510.05074v1",
+    "arxiv_id": "2510.05074v1",
+    "authors": [
+      "Farhan T. Chowdhury",
+      "Luke D. Smith",
+      "Daniel R. Kattnig"
+    ],
+    "published": "2025-10-06T17:48:49+00:00",
+    "summary": "The quantum control of spin-correlated radical pairs (SCRPs) holds promise for the targeted manipulation of magnetic field effects, with potential applications ranging from the design of noise-resilient quantum information processors to genetically encodable quantum sensors. However, achieving precise handles over the intricate interplay between coherent electron spin dynamics and incoherent relaxation processes in photoexcited radical-pair reactions requires tractable approaches for numerically obtaining controls for large, complex open quantum systems. Employing techniques relying on full Liouville-space propagators becomes computationally infeasible for large spin systems of realistic complexity. Here, we demonstrate how a control engineering approach based on the Pontryagin Maximum Principle (PMP) can offer a viable alternative by reporting on the successful application of PMP-optimal control to steer the coherent and incoherent spin dynamics of noisy radical pairs. This enables controls for prototypical radical-pair models that exhibit robustness in the face of relevant noise sources and paves the way to incoherent control of radical-pair spin dynamics."
+  },
+  {
+    "title": "ResMimic: From General Motion Tracking to Humanoid Whole-body Loco-Manipulation via Residual Learning",
+    "url": "http://arxiv.org/abs/2510.05070v1",
+    "arxiv_id": "2510.05070v1",
+    "authors": [
+      "Siheng Zhao",
+      "Yanjie Ze",
+      "Yue Wang",
+      "C. Karen Liu",
+      "Pieter Abbeel",
+      "Guanya Shi",
+      "Rocky Duan"
+    ],
+    "published": "2025-10-06T17:47:02+00:00",
+    "summary": "Humanoid whole-body loco-manipulation promises transformative capabilities for daily service and warehouse tasks. While recent advances in general motion tracking (GMT) have enabled humanoids to reproduce diverse human motions, these policies lack the precision and object awareness required for loco-manipulation. To this end, we introduce ResMimic, a two-stage residual learning framework for precise and expressive humanoid control from human motion data. First, a GMT policy, trained on large-scale human-only motion, serves as a task-agnostic base for generating human-like whole-body movements. An efficient but precise residual policy is then learned to refine the GMT outputs to improve locomotion and incorporate object interaction. To further facilitate efficient training, we design (i) a point-cloud-based object tracking reward for smoother optimization, (ii) a contact reward that encourages accurate humanoid body-object interactions, and (iii) a curriculum-based virtual object controller to stabilize early training. We evaluate ResMimic in both simulation and on a real Unitree G1 humanoid. Results show substantial gains in task success, training efficiency, and robustness over strong baselines. Videos are available at https://resmimic.github.io/ ."
+  },
+  {
+    "title": "Automaton Constrained Q-Learning",
+    "url": "http://arxiv.org/abs/2510.05061v1",
+    "arxiv_id": "2510.05061v1",
+    "authors": [
+      "Anastasios Manganaris",
+      "Vittorio Giammarino",
+      "Ahmed H. Qureshi"
+    ],
+    "published": "2025-10-06T17:38:05+00:00",
+    "summary": "Real-world robotic tasks often require agents to achieve sequences of goals while respecting time-varying safety constraints. However, standard Reinforcement Learning (RL) paradigms are fundamentally limited in these settings. A natural approach to these problems is to combine RL with Linear-time Temporal Logic (LTL), a formal language for specifying complex, temporally extended tasks and safety constraints. Yet, existing RL methods for LTL objectives exhibit poor empirical performance in complex and continuous environments. As a result, no scalable methods support both temporally ordered goals and safety simultaneously, making them ill-suited for realistic robotics scenarios. We propose Automaton Constrained Q-Learning (ACQL), an algorithm that addresses this gap by combining goal-conditioned value learning with automaton-guided reinforcement. ACQL supports most LTL task specifications and leverages their automaton representation to explicitly encode stage-wise goal progression and both stationary and non-stationary safety constraints. We show that ACQL outperforms existing methods across a range of continuous control tasks, including cases where prior methods fail to satisfy either goal-reaching or safety constraints. We further validate its real-world applicability by deploying ACQL on a 6-DOF robotic arm performing a goal-reaching task in a cluttered, cabinet-like space with safety constraints. Our results demonstrate that ACQL is a robust and scalable solution for learning robotic behaviors according to rich temporal specifications."
+  },
+  {
+    "title": "StaMo: Unsupervised Learning of Generalizable Robot Motion from Compact State Representation",
+    "url": "http://arxiv.org/abs/2510.05057v1",
+    "arxiv_id": "2510.05057v1",
+    "authors": [
+      "Mingyu Liu",
+      "Jiuhe Shu",
+      "Hui Chen",
+      "Zeju Li",
+      "Canyu Zhao",
+      "Jiange Yang",
+      "Shenyuan Gao",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "published": "2025-10-06T17:37:24+00:00",
+    "summary": "A fundamental challenge in embodied intelligence is developing expressive and compact state representations for efficient world modeling and decision making. However, existing methods often fail to achieve this balance, yielding representations that are either overly redundant or lacking in task-critical information. We propose an unsupervised approach that learns a highly compressed two-token state representation using a lightweight encoder and a pre-trained Diffusion Transformer (DiT) decoder, capitalizing on its strong generative prior. Our representation is efficient, interpretable, and integrates seamlessly into existing VLA-based models, improving performance by 14.3% on LIBERO and 30% in real-world task success with minimal inference overhead. More importantly, we find that the difference between these tokens, obtained via latent interpolation, naturally serves as a highly effective latent action, which can be further decoded into executable robot actions. This emergent capability reveals that our representation captures structured dynamics without explicit supervision. We name our method StaMo for its ability to learn generalizable robotic Motion from compact State representation, which is encoded from static images, challenging the prevalent dependence to learning latent action on complex architectures and video data. The resulting latent actions also enhance policy co-training, outperforming prior methods by 10.4% with improved interpretability. Moreover, our approach scales effectively across diverse data sources, including real-world robot data, simulation, and human egocentric video."
+  },
+  {
     "title": "Reward Models are Metrics in a Trench Coat",
     "url": "http://arxiv.org/abs/2510.03231v1",
     "arxiv_id": "2510.03231v1",
