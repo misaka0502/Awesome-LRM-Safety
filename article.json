@@ -1,5 +1,80 @@
 [
   {
+    "title": "TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular Reasoning",
+    "url": "http://arxiv.org/abs/2510.06217v1",
+    "arxiv_id": "2510.06217v1",
+    "authors": [
+      "Jiaru Zou",
+      "Soumya Roy",
+      "Vinay Kumar Verma",
+      "Ziyi Wang",
+      "David Wipf",
+      "Pan Lu",
+      "Sumit Negi",
+      "James Zou",
+      "Jingrui He"
+    ],
+    "published": "2025-10-07T17:59:41+00:00",
+    "summary": "Process Reward Models (PRMs) have recently emerged as a powerful framework for enhancing the reasoning capabilities of large reasoning models (LRMs), particularly in the context of test-time scaling (TTS). However, their potential for supervising LRMs on tabular reasoning domains remains underexplored. Through detailed empirical analyses, we identify that existing PRMs, though widely adopted for supervising text-only reasoning steps, struggle with table-specific operations such as sub-table retrieval and schema interaction, leading to critical performance bottlenecks. To address this limitation, we propose TaTToo, a novel table-grounded PRM framework that (i) reasons explicitly over tabular reasoning steps and (ii) integrates tool-based verification to provide precise reward supervision. Concretely, we first design a scalable data curation pipeline that constructs over 60k high-quality step-level annotations by integrating table verification rationales with tool-based executions. Building on the collected data, we train TaTToo with a dual-stage paradigm: cold-start supervised fine-tuning to capture tool-use reasoning patterns, followed by reinforcement learning with tool-grounded reward shaping to align our model with table-based verification. We provide a comprehensive evaluation of the policy improvement induced by our newly designed PRM. Across 5 challenging tabular reasoning benchmarks covering numerical reasoning, fact-checking, and data analysis, TaTToo improves downstream policy LRMs by 30.9% at inference, surpasses strong PRM baselines such as Qwen-2.5-Math-PRM-72B with only 8B parameters, and demonstrates strong generalizability across diverse TTS strategies."
+  },
+  {
+    "title": "Dropping the D: RGB-D SLAM Without the Depth Sensor",
+    "url": "http://arxiv.org/abs/2510.06216v1",
+    "arxiv_id": "2510.06216v1",
+    "authors": [
+      "Mert Kiray",
+      "Alican Karaomer",
+      "Benjamin Busam"
+    ],
+    "published": "2025-10-07T17:59:30+00:00",
+    "summary": "We present DropD-SLAM, a real-time monocular SLAM system that achieves RGB-D-level accuracy without relying on depth sensors. The system replaces active depth input with three pretrained vision modules: a monocular metric depth estimator, a learned keypoint detector, and an instance segmentation network. Dynamic objects are suppressed using dilated instance masks, while static keypoints are assigned predicted depth values and backprojected into 3D to form metrically scaled features. These are processed by an unmodified RGB-D SLAM back end for tracking and mapping. On the TUM RGB-D benchmark, DropD-SLAM attains 7.4 cm mean ATE on static sequences and 1.8 cm on dynamic sequences, matching or surpassing state-of-the-art RGB-D methods while operating at 22 FPS on a single GPU. These results suggest that modern pretrained vision models can replace active depth sensors as reliable, real-time sources of metric scale, marking a step toward simpler and more cost-effective SLAM systems."
+  },
+  {
+    "title": "Stratified GRPO: Handling Structural Heterogeneity in Reinforcement Learning of LLM Search Agents",
+    "url": "http://arxiv.org/abs/2510.06214v1",
+    "arxiv_id": "2510.06214v1",
+    "authors": [
+      "Mingkang Zhu",
+      "Xi Chen",
+      "Bei Yu",
+      "Hengshuang Zhao",
+      "Jiaya Jia"
+    ],
+    "published": "2025-10-07T17:59:13+00:00",
+    "summary": "Large language model (LLM) agents increasingly rely on external tools such as search engines to solve complex, multi-step problems, and reinforcement learning (RL) has become a key paradigm for training them. However, the trajectories of search agents are structurally heterogeneous, where variations in the number, placement, and outcomes of search calls lead to fundamentally different answer directions and reward distributions. Standard policy gradient methods, which use a single global baseline, suffer from what we identify and formalize as cross-stratum bias-an \"apples-to-oranges\" comparison of heterogeneous trajectories. This cross-stratum bias distorts credit assignment and hinders exploration of complex, multi-step search strategies. To address this, we propose Stratified GRPO, whose central component, Stratified Advantage Normalization (SAN), partitions trajectories into homogeneous strata based on their structural properties and computes advantages locally within each stratum. This ensures that trajectories are evaluated only against their true peers. Our analysis proves that SAN eliminates cross-stratum bias, yields conditionally unbiased unit-variance estimates inside each stratum, and retains the global unbiasedness and unit-variance properties enjoyed by standard normalization, resulting in a more pure and scale-stable learning signal. To improve practical stability under finite-sample regimes, we further linearly blend SAN with the global estimator. Extensive experiments on diverse single-hop and multi-hop question-answering benchmarks demonstrate that Stratified GRPO consistently and substantially outperforms GRPO by up to 11.3 points, achieving higher training rewards, greater training stability, and more effective search policies. These results establish stratification as a principled remedy for structural heterogeneity in RL for LLM search agents."
+  },
+  {
+    "title": "Tensor time series change-point detection in cryptocurrency network data",
+    "url": "http://arxiv.org/abs/2510.06211v1",
+    "arxiv_id": "2510.06211v1",
+    "authors": [
+      "Andreas Anastasiou",
+      "Ivor Cribben"
+    ],
+    "published": "2025-10-07T17:58:37+00:00",
+    "summary": "Financial fraud has been growing exponentially in recent years. The rise of cryptocurrencies as an investment asset has simultaneously seen a parallel growth in cryptocurrency scams. To detect possible cryptocurrency fraud, and in particular market manipulation, previous research focused on the detection of changes in the network of trades; however, market manipulators are now trading across multiple cryptocurrency platforms, making their detection more difficult. Hence, it is important to consider the identification of changes across several trading networks or a `network of networks' over time. To this end, in this article, we propose a new change-point detection method in the network structure of tensor-variate data. This new method, labeled TenSeg, first employs a tensor decomposition, and second detects multiple change-points in the second-order (cross-covariance or network) structure of the decomposed data. It allows for change-point detection in the presence of frequent changes of possibly small magnitudes and is computationally fast. We apply our method to several simulated datasets and to a cryptocurrency dataset, which consists of network tensor-variate data from the Ethereum blockchain. We demonstrate that our approach substantially outperforms other state-of-the-art change-point techniques, and the detected change-points in the Ethereum data set coincide with changes across several trading networks or a `network of networks' over time. Finally, all the relevant \\textsf{R} code implementing the method in the article are available on https://github.com/Anastasiou-Andreas/TenSeg."
+  },
+  {
+    "title": "EmbodiedCoder: Parameterized Embodied Mobile Manipulation via Modern Coding Model",
+    "url": "http://arxiv.org/abs/2510.06207v1",
+    "arxiv_id": "2510.06207v1",
+    "authors": [
+      "Zefu Lin",
+      "Rongxu Cui",
+      "Chen Hanning",
+      "Xiangyu Wang",
+      "Junjia Xu",
+      "Xiaojuan Jin",
+      "Chen Wenbo",
+      "Hui Zhou",
+      "Lue Fan",
+      "Wenling Li",
+      "Zhaoxiang Zhang"
+    ],
+    "published": "2025-10-07T17:58:02+00:00",
+    "summary": "Recent advances in control robot methods, from end-to-end vision-language-action frameworks to modular systems with predefined primitives, have advanced robots' ability to follow natural language instructions. Nonetheless, many approaches still struggle to scale to diverse environments, as they often rely on large annotated datasets and offer limited interpretability.In this work, we introduce EmbodiedCoder, a training-free framework for open-world mobile robot manipulation that leverages coding models to directly generate executable robot trajectories. By grounding high-level instructions in code, EmbodiedCoder enables flexible object geometry parameterization and manipulation trajectory synthesis without additional data collection or fine-tuning.This coding-based paradigm provides a transparent and generalizable way to connect perception with manipulation. Experiments on real mobile robots show that EmbodiedCoder achieves robust performance across diverse long-term tasks and generalizes effectively to novel objects and environments.Our results demonstrate an interpretable approach for bridging high-level reasoning and low-level control, moving beyond fixed primitives toward versatile robot intelligence. See the project page at: https://anonymous.4open.science/w/Embodied-Coder/"
+  },
+  {
     "title": "SAEdit: Token-level control for continuous image editing via Sparse AutoEncoder",
     "url": "http://arxiv.org/abs/2510.05081v1",
     "arxiv_id": "2510.05081v1",
