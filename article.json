@@ -1,5 +1,88 @@
 [
   {
+    "title": "WristWorld: Generating Wrist-Views via 4D World Models for Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2510.07313v1",
+    "arxiv_id": "2510.07313v1",
+    "authors": [
+      "Zezhong Qian",
+      "Xiaowei Chi",
+      "Yuming Li",
+      "Shizun Wang",
+      "Zhiyuan Qin",
+      "Xiaozhu Ju",
+      "Sirui Han",
+      "Shanghang Zhang"
+    ],
+    "published": "2025-10-08T17:59:08+00:00",
+    "summary": "Wrist-view observations are crucial for VLA models as they capture fine-grained hand-object interactions that directly enhance manipulation performance. Yet large-scale datasets rarely include such recordings, resulting in a substantial gap between abundant anchor views and scarce wrist views. Existing world models cannot bridge this gap, as they require a wrist-view first frame and thus fail to generate wrist-view videos from anchor views alone. Amid this gap, recent visual geometry models such as VGGT emerge with geometric and cross-view priors that make it possible to address extreme viewpoint shifts. Inspired by these insights, we propose WristWorld, the first 4D world model that generates wrist-view videos solely from anchor views. WristWorld operates in two stages: (i) Reconstruction, which extends VGGT and incorporates our Spatial Projection Consistency (SPC) Loss to estimate geometrically consistent wrist-view poses and 4D point clouds; (ii) Generation, which employs our video generation model to synthesize temporally coherent wrist-view videos from the reconstructed perspective. Experiments on Droid, Calvin, and Franka Panda demonstrate state-of-the-art video generation with superior spatial consistency, while also improving VLA performance, raising the average task completion length on Calvin by 3.81% and closing 42.4% of the anchor-wrist view gap."
+  },
+  {
+    "title": "h1: Bootstrapping LLMs to Reason over Longer Horizons via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2510.07312v1",
+    "arxiv_id": "2510.07312v1",
+    "authors": [
+      "Sumeet Ramesh Motwani",
+      "Alesia Ivanova",
+      "Ziyang Cai",
+      "Philip Torr",
+      "Riashat Islam",
+      "Shital Shah",
+      "Christian Schroeder de Witt",
+      "Charles London"
+    ],
+    "published": "2025-10-08T17:58:41+00:00",
+    "summary": "Large language models excel at short-horizon reasoning tasks, but performance drops as reasoning horizon lengths increase. Existing approaches to combat this rely on inference-time scaffolding or costly step-level supervision, neither of which scales easily. In this work, we introduce a scalable method to bootstrap long-horizon reasoning capabilities using only existing, abundant short-horizon data. Our approach synthetically composes simple problems into complex, multi-step dependency chains of arbitrary length. We train models on this data using outcome-only rewards under a curriculum that automatically increases in complexity, allowing RL training to be scaled much further without saturating. Empirically, our method generalizes remarkably well: curriculum training on composed 6th-grade level math problems (GSM8K) boosts accuracy on longer, competition-level benchmarks (GSM-Symbolic, MATH-500, AIME) by up to 2.06x. Importantly, our long-horizon improvements are significantly higher than baselines even at high pass@k, showing that models can learn new reasoning paths under RL. Theoretically, we show that curriculum RL with outcome rewards achieves an exponential improvement in sample complexity over full-horizon training, providing training signal comparable to dense supervision. h1 therefore introduces an efficient path towards scaling RL for long-horizon problems using only existing data."
+  },
+  {
+    "title": "Think Natively: Unlocking Multilingual Reasoning with Consistency-Enhanced Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2510.07300v1",
+    "arxiv_id": "2510.07300v1",
+    "authors": [
+      "Xue Zhang",
+      "Yunlong Liang",
+      "Fandong Meng",
+      "Songming Zhang",
+      "Kaiyu Huang",
+      "Yufeng Chen",
+      "Jinan Xu",
+      "Jie Zhou"
+    ],
+    "published": "2025-10-08T17:55:02+00:00",
+    "summary": "Large Reasoning Models (LRMs) have achieved remarkable performance on complex reasoning tasks by adopting the \"think-then-answer\" paradigm, which enhances both accuracy and interpretability. However, current LRMs exhibit two critical limitations when processing non-English languages: (1) They often struggle to maintain input-output language consistency; (2) They generally perform poorly with wrong reasoning paths and lower answer accuracy compared to English. These limitations significantly degrade the user experience for non-English speakers and hinder the global deployment of LRMs. To address these limitations, we propose M-Thinker, which is trained by the GRPO algorithm that involves a Language Consistency (LC) reward and a novel Cross-lingual Thinking Alignment (CTA) reward. Specifically, the LC reward defines a strict constraint on the language consistency between the input, thought, and answer. Besides, the CTA reward compares the model's non-English reasoning paths with its English reasoning path to transfer its own reasoning capability from English to non-English languages. Through an iterative RL procedure, our M-Thinker-1.5B/7B models not only achieve nearly 100% language consistency and superior performance on two multilingual benchmarks (MMATH and PolyMath), but also exhibit excellent generalization on out-of-domain languages."
+  },
+  {
+    "title": "Evolutionary Profiles for Protein Fitness Prediction",
+    "url": "http://arxiv.org/abs/2510.07286v1",
+    "arxiv_id": "2510.07286v1",
+    "authors": [
+      "Jigang Fan",
+      "Xiaoran Jiao",
+      "Shengdong Lin",
+      "Zhanming Liang",
+      "Weian Mao",
+      "Chenchen Jing",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "published": "2025-10-08T17:46:02+00:00",
+    "summary": "Predicting the fitness impact of mutations is central to protein engineering but constrained by limited assays relative to the size of sequence space. Protein language models (pLMs) trained with masked language modeling (MLM) exhibit strong zero-shot fitness prediction; we provide a unifying view by interpreting natural evolution as implicit reward maximization and MLM as inverse reinforcement learning (IRL), in which extant sequences act as expert demonstrations and pLM log-odds serve as fitness estimates. Building on this perspective, we introduce EvoIF, a lightweight model that integrates two complementary sources of evolutionary signal: (i) within-family profiles from retrieved homologs and (ii) cross-family structural-evolutionary constraints distilled from inverse folding logits. EvoIF fuses sequence-structure representations with these profiles via a compact transition block, yielding calibrated probabilities for log-odds scoring. On ProteinGym (217 mutational assays; >2.5M mutants), EvoIF and its MSA-enabled variant achieve state-of-the-art or competitive performance while using only 0.15% of the training data and fewer parameters than recent large models. Ablations confirm that within-family and cross-family profiles are complementary, improving robustness across function types, MSA depths, taxa, and mutation depths. The codes will be made publicly available at https://github.com/aim-uofa/EvoIF."
+  },
+  {
+    "title": "Online Rubrics Elicitation from Pairwise Comparisons",
+    "url": "http://arxiv.org/abs/2510.07284v1",
+    "arxiv_id": "2510.07284v1",
+    "authors": [
+      "MohammadHossein Rezaei",
+      "Robert Vacareanu",
+      "Zihao Wang",
+      "Clinton Wang",
+      "Yunzhong He",
+      "Afra Feyza Aky\u00fcrek"
+    ],
+    "published": "2025-10-08T17:44:59+00:00",
+    "summary": "Rubrics provide a flexible way to train LLMs on open-ended long-form answers where verifiable rewards are not applicable and human preferences provide coarse signals. Prior work shows that reinforcement learning with rubric-based rewards leads to consistent gains in LLM post-training. Most existing approaches rely on rubrics that remain static over the course of training. Such static rubrics, however, are vulnerable to reward-hacking type behaviors and fail to capture emergent desiderata that arise during training. We introduce Online Rubrics Elicitation (OnlineRubrics), a method that dynamically curates evaluation criteria in an online manner through pairwise comparisons of responses from current and reference policies. This online process enables continuous identification and mitigation of errors as training proceeds. Empirically, this approach yields consistent improvements of up to 8% over training exclusively with static rubrics across AlpacaEval, GPQA, ArenaHard as well as the validation sets of expert questions and rubrics. We qualitatively analyze the elicited criteria and identify prominent themes such as transparency, practicality, organization, and reasoning."
+  },
+  {
     "title": "TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular Reasoning",
     "url": "http://arxiv.org/abs/2510.06217v1",
     "arxiv_id": "2510.06217v1",
