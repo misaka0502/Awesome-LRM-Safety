@@ -1,5 +1,83 @@
 [
   {
+    "title": "BLAZER: Bootstrapping LLM-based Manipulation Agents with Zero-Shot Data Generation",
+    "url": "http://arxiv.org/abs/2510.08572v1",
+    "arxiv_id": "2510.08572v1",
+    "authors": [
+      "Rocktim Jyoti Das",
+      "Harsh Singh",
+      "Diana Turmakhan",
+      "Muhammad Abdullah Sohail",
+      "Mingfei Han",
+      "Preslav Nakov",
+      "Fabio Pizzati",
+      "Ivan Laptev"
+    ],
+    "published": "2025-10-09T17:59:58+00:00",
+    "summary": "Scaling data and models has played a pivotal role in the remarkable progress of computer vision and language. Inspired by these domains, recent efforts in robotics have similarly focused on scaling both data and model size to develop more generalizable and robust policies. However, unlike vision and language, robotics lacks access to internet-scale demonstrations across diverse robotic tasks and environments. As a result, the scale of existing datasets typically suffers from the need for manual data collection and curation. To address this problem, here we propose BLAZER, a framework that learns manipulation policies from automatically generated training data. We build on the zero-shot capabilities of LLM planners and automatically generate demonstrations for diverse manipulation tasks in simulation. Successful examples are then used to finetune an LLM and to improve its planning capabilities without human supervision. Notably, while BLAZER training requires access to the simulator's state, we demonstrate direct transfer of acquired skills to sensor-based manipulation. Through extensive experiments, we show BLAZER to significantly improve zero-shot manipulation in both simulated and real environments. Moreover, BLAZER improves on tasks outside of its training pool and enables downscaling of LLM models. Our code and data will be made publicly available on the project page."
+  },
+  {
+    "title": "Scalable Offline Metrics for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2510.08571v1",
+    "arxiv_id": "2510.08571v1",
+    "authors": [
+      "Animikh Aich",
+      "Adwait Kulkarni",
+      "Eshed Ohn-Bar"
+    ],
+    "published": "2025-10-09T17:59:57+00:00",
+    "summary": "Real-World evaluation of perception-based planning models for robotic systems, such as autonomous vehicles, can be safely and inexpensively conducted offline, i.e., by computing model prediction error over a pre-collected validation dataset with ground-truth annotations. However, extrapolating from offline model performance to online settings remains a challenge. In these settings, seemingly minor errors can compound and result in test-time infractions or collisions. This relationship is understudied, particularly across diverse closed-loop metrics and complex urban maneuvers. In this work, we revisit this undervalued question in policy evaluation through an extensive set of experiments across diverse conditions and metrics. Based on analysis in simulation, we find an even worse correlation between offline and online settings than reported by prior studies, casting doubts on the validity of current evaluation practices and metrics for driving policies. Next, we bridge the gap between offline and online evaluation. We investigate an offline metric based on epistemic uncertainty, which aims to capture events that are likely to cause errors in closed-loop settings. The resulting metric achieves over 13% improvement in correlation compared to previous offline metrics. We further validate the generalization of our findings beyond the simulation environment in real-world settings, where even greater gains are observed."
+  },
+  {
+    "title": "NovaFlow: Zero-Shot Manipulation via Actionable Flow from Generated Videos",
+    "url": "http://arxiv.org/abs/2510.08568v1",
+    "arxiv_id": "2510.08568v1",
+    "authors": [
+      "Hongyu Li",
+      "Lingfeng Sun",
+      "Yafei Hu",
+      "Duy Ta",
+      "Jennifer Barry",
+      "George Konidaris",
+      "Jiahui Fu"
+    ],
+    "published": "2025-10-09T17:59:55+00:00",
+    "summary": "Enabling robots to execute novel manipulation tasks zero-shot is a central goal in robotics. Most existing methods assume in-distribution tasks or rely on fine-tuning with embodiment-matched data, limiting transfer across platforms. We present NovaFlow, an autonomous manipulation framework that converts a task description into an actionable plan for a target robot without any demonstrations. Given a task description, NovaFlow synthesizes a video using a video generation model and distills it into 3D actionable object flow using off-the-shelf perception modules. From the object flow, it computes relative poses for rigid objects and realizes them as robot actions via grasp proposals and trajectory optimization. For deformable objects, this flow serves as a tracking objective for model-based planning with a particle-based dynamics model. By decoupling task understanding from low-level control, NovaFlow naturally transfers across embodiments. We validate on rigid, articulated, and deformable object manipulation tasks using a table-top Franka arm and a Spot quadrupedal mobile robot, and achieve effective zero-shot execution without demonstrations or embodiment-specific training. Project website: https://novaflow.lhy.xyz/."
+  },
+  {
+    "title": "ArenaBencher: Automatic Benchmark Evolution via Multi-Model Competitive Evaluation",
+    "url": "http://arxiv.org/abs/2510.08569v1",
+    "arxiv_id": "2510.08569v1",
+    "authors": [
+      "Qin Liu",
+      "Jacob Dineen",
+      "Yuxi Huang",
+      "Sheng Zhang",
+      "Hoifung Poon",
+      "Ben Zhou",
+      "Muhao Chen"
+    ],
+    "published": "2025-10-09T17:59:55+00:00",
+    "summary": "Benchmarks are central to measuring the capabilities of large language models and guiding model development, yet widespread data leakage from pretraining corpora undermines their validity. Models can match memorized content rather than demonstrate true generalization, which inflates scores, distorts cross-model comparisons, and misrepresents progress. We introduce ArenaBencher, a model-agnostic framework for automatic benchmark evolution that updates test cases while preserving comparability. Given an existing benchmark and a diverse pool of models to be evaluated, ArenaBencher infers the core ability of each test case, generates candidate question-answer pairs that preserve the original objective, verifies correctness and intent with an LLM as a judge, and aggregates feedback from multiple models to select candidates that expose shared weaknesses. The process runs iteratively with in-context demonstrations that steer generation toward more challenging and diagnostic cases. We apply ArenaBencher to math problem solving, commonsense reasoning, and safety domains and show that it produces verified, diverse, and fair updates that uncover new failure modes, increase difficulty while preserving test objective alignment, and improve model separability. The framework provides a scalable path to continuously evolve benchmarks in step with the rapid progress of foundation models."
+  },
+  {
+    "title": "ResAD: Normalized Residual Trajectory Modeling for End-to-End Autonomous Driving",
+    "url": "http://arxiv.org/abs/2510.08562v1",
+    "arxiv_id": "2510.08562v1",
+    "authors": [
+      "Zhiyu Zheng",
+      "Shaoyu Chen",
+      "Haoran Yin",
+      "Xinbang Zhang",
+      "Jialv Zou",
+      "Xinggang Wang",
+      "Qian Zhang",
+      "Lefei Zhang"
+    ],
+    "published": "2025-10-09T17:59:36+00:00",
+    "summary": "End-to-end autonomous driving (E2EAD) systems, which learn to predict future trajectories directly from sensor data, are fundamentally challenged by the inherent spatio-temporal imbalance of trajectory data. This imbalance creates a significant optimization burden, causing models to learn spurious correlations instead of causal inference, while also prioritizing uncertain, distant predictions, thereby compromising immediate safety. To address these issues, we propose ResAD, a novel Normalized Residual Trajectory Modeling framework. Instead of predicting the future trajectory directly, our approach reframes the learning task to predict the residual deviation from a deterministic inertial reference. The inertial reference serves as a counterfactual, forcing the model to move beyond simple pattern recognition and instead identify the underlying causal factors (e.g., traffic rules, obstacles) that necessitate deviations from a default, inertially-guided path. To deal with the optimization imbalance caused by uncertain, long-term horizons, ResAD further incorporates Point-wise Normalization of the predicted residual. It re-weights the optimization objective, preventing large-magnitude errors associated with distant, uncertain waypoints from dominating the learning signal. Extensive experiments validate the effectiveness of our framework. On the NAVSIM benchmark, ResAD achieves a state-of-the-art PDMS of 88.6 using a vanilla diffusion policy with only two denoising steps, demonstrating that our approach significantly simplifies the learning task and improves model performance. The code will be released to facilitate further research."
+  },
+  {
     "title": "WristWorld: Generating Wrist-Views via 4D World Models for Robotic Manipulation",
     "url": "http://arxiv.org/abs/2510.07313v1",
     "arxiv_id": "2510.07313v1",
