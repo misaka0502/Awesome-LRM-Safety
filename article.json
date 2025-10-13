@@ -1,5 +1,93 @@
 [
   {
+    "title": "VITA-VLA: Efficiently Teaching Vision-Language Models to Act via Action Expert Distillation",
+    "url": "http://arxiv.org/abs/2510.09607v1",
+    "arxiv_id": "2510.09607v1",
+    "authors": [
+      "Shaoqi Dong",
+      "Chaoyou Fu",
+      "Haihan Gao",
+      "Yi-Fan Zhang",
+      "Chi Yan",
+      "Chu Wu",
+      "Xiaoyu Liu",
+      "Yunhang Shen",
+      "Jing Huo",
+      "Deqiang Jiang",
+      "Haoyu Cao",
+      "Yang Gao",
+      "Xing Sun",
+      "Ran He",
+      "Caifeng Shan"
+    ],
+    "published": "2025-10-10T17:59:56+00:00",
+    "summary": "Vision-Language Action (VLA) models significantly advance robotic manipulation by leveraging the strong perception capabilities of pretrained vision-language models (VLMs). By integrating action modules into these pretrained models, VLA methods exhibit improved generalization. However, training them from scratch is costly. In this work, we propose a simple yet effective distillation-based framework that equips VLMs with action-execution capability by transferring knowledge from pretrained small action models. Our architecture retains the original VLM structure, adding only an action token and a state encoder to incorporate physical inputs. To distill action knowledge, we adopt a two-stage training strategy. First, we perform lightweight alignment by mapping VLM hidden states into the action space of the small action model, enabling effective reuse of its pretrained action decoder and avoiding expensive pretraining. Second, we selectively fine-tune the language model, state encoder, and action modules, enabling the system to integrate multimodal inputs with precise action generation. Specifically, the action token provides the VLM with a direct handle for predicting future actions, while the state encoder allows the model to incorporate robot dynamics not captured by vision alone. This design yields substantial efficiency gains over training large VLA models from scratch. Compared with previous state-of-the-art methods, our method achieves 97.3% average success rate on LIBERO (11.8% improvement) and 93.5% on LIBERO-LONG (24.5% improvement). In real-world experiments across five manipulation tasks, our method consistently outperforms the teacher model, achieving 82.0% success rate (17% improvement), which demonstrate that action distillation effectively enables VLMs to generate precise actions while substantially reducing training costs."
+  },
+  {
+    "title": "SpaceVista: All-Scale Visual Spatial Reasoning from mm to km",
+    "url": "http://arxiv.org/abs/2510.09606v1",
+    "arxiv_id": "2510.09606v1",
+    "authors": [
+      "Peiwen Sun",
+      "Shiqiang Lang",
+      "Dongming Wu",
+      "Yi Ding",
+      "Kaituo Feng",
+      "Huadai Liu",
+      "Zhen Ye",
+      "Rui Liu",
+      "Yun-Hui Liu",
+      "Jianan Wang",
+      "Xiangyu Yue"
+    ],
+    "published": "2025-10-10T17:59:46+00:00",
+    "summary": "With the current surge in spatial reasoning explorations, researchers have made significant progress in understanding indoor scenes, but still struggle with diverse applications such as robotics and autonomous driving. This paper aims to advance all-scale spatial reasoning across diverse scenarios by tackling two key challenges: 1) the heavy reliance on indoor 3D scans and labor-intensive manual annotations for dataset curation; 2) the absence of effective all-scale scene modeling, which often leads to overfitting to individual scenes. In this paper, we introduce a holistic solution that integrates a structured spatial reasoning knowledge system, scale-aware modeling, and a progressive training paradigm, as the first attempt to broaden the all-scale spatial intelligence of MLLMs to the best of our knowledge. Using a task-specific, specialist-driven automated pipeline, we curate over 38K video scenes across 5 spatial scales to create SpaceVista-1M, a dataset comprising approximately 1M spatial QA pairs spanning 19 diverse task types. While specialist models can inject useful domain knowledge, they are not reliable for evaluation. We then build an all-scale benchmark with precise annotations by manually recording, retrieving, and assembling video-based data. However, naive training with SpaceVista-1M often yields suboptimal results due to the potential knowledge conflict. Accordingly, we introduce SpaceVista-7B, a spatial reasoning model that accepts dense inputs beyond semantics and uses scale as an anchor for scale-aware experts and progressive rewards. Finally, extensive evaluations across 5 benchmarks, including our SpaceVista-Bench, demonstrate competitive performance, showcasing strong generalization across all scales and scenarios. Our dataset, model, and benchmark will be released on https://peiwensun2000.github.io/mm2km ."
+  },
+  {
+    "title": "Dyna-Mind: Learning to Simulate from Experience for Better AI Agents",
+    "url": "http://arxiv.org/abs/2510.09577v1",
+    "arxiv_id": "2510.09577v1",
+    "authors": [
+      "Xiao Yu",
+      "Baolin Peng",
+      "Michel Galley",
+      "Hao Cheng",
+      "Qianhui Wu",
+      "Janardhan Kulkarni",
+      "Suman Nath",
+      "Zhou Yu",
+      "Jianfeng Gao"
+    ],
+    "published": "2025-10-10T17:30:18+00:00",
+    "summary": "Reasoning models have recently shown remarkable progress in domains such as math and coding. However, their expert-level abilities in math and coding contrast sharply with their performance in long-horizon, interactive tasks such as web navigation and computer/phone-use. Inspired by literature on human cognition, we argue that current AI agents need ''vicarious trial and error'' - the capacity to mentally simulate alternative futures before acting - in order to enhance their understanding and performance in complex interactive environments. We introduce Dyna-Mind, a two-stage training framework that explicitly teaches (V)LM agents to integrate such simulation into their reasoning. In stage 1, we introduce Reasoning with Simulations (ReSim), which trains the agent to generate structured reasoning traces from expanded search trees built from real experience gathered through environment interactions. ReSim thus grounds the agent's reasoning in faithful world dynamics and equips it with the ability to anticipate future states in its reasoning. In stage 2, we propose Dyna-GRPO, an online reinforcement learning method to further strengthen the agent's simulation and decision-making ability by using both outcome rewards and intermediate states as feedback from real rollouts. Experiments on two synthetic benchmarks (Sokoban and ALFWorld) and one realistic benchmark (AndroidWorld) demonstrate that (1) ReSim effectively infuses simulation ability into AI agents, and (2) Dyna-GRPO leverages outcome and interaction-level signals to learn better policies for long-horizon, planning-intensive tasks. Together, these results highlight the central role of simulation in enabling AI agents to reason, plan, and act more effectively in the ever more challenging environments."
+  },
+  {
+    "title": "Zero-shot Structure Learning and Planning for Autonomous Robot Navigation using Active Inference",
+    "url": "http://arxiv.org/abs/2510.09574v1",
+    "arxiv_id": "2510.09574v1",
+    "authors": [
+      "Daria de tinguy",
+      "Tim Verbelen",
+      "Emilio Gamba",
+      "Bart Dhoedt"
+    ],
+    "published": "2025-10-10T17:28:12+00:00",
+    "summary": "Autonomous navigation in unfamiliar environments requires robots to simultaneously explore, localise, and plan under uncertainty, without relying on predefined maps or extensive training. We present a biologically inspired, Active Inference-based framework, Active Inference MAPping and Planning (AIMAPP). This model unifies mapping, localisation, and decision-making within a single generative model. Inspired by hippocampal navigation, it uses topological reasoning, place-cell encoding, and episodic memory to guide behaviour. The agent builds and updates a sparse topological map online, learns state transitions dynamically, and plans actions by minimising Expected Free Energy. This allows it to balance goal-directed and exploratory behaviours. We implemented a ROS-compatible navigation system that is sensor and robot-agnostic, capable of integrating with diverse hardware configurations. It operates in a fully self-supervised manner, is resilient to drift, and supports both exploration and goal-directed navigation without any pre-training. We demonstrate robust performance in large-scale real and simulated environments against state-of-the-art planning models, highlighting the system's adaptability to ambiguous observations, environmental changes, and sensor noise. The model offers a biologically inspired, modular solution to scalable, self-supervised navigation in unstructured settings. AIMAPP is available at https://github.com/decide-ugent/AIMAPP."
+  },
+  {
+    "title": "Differential Analysis of Pseudo Haptic Feedback: Novel Comparative Study of Visual and Auditory Cue Integration for Psychophysical Evaluation",
+    "url": "http://arxiv.org/abs/2510.09570v1",
+    "arxiv_id": "2510.09570v1",
+    "authors": [
+      "Nishant Gautam",
+      "Somya Sharma",
+      "Peter Corcoran",
+      "Kaspar Althoefer"
+    ],
+    "published": "2025-10-10T17:22:41+00:00",
+    "summary": "Pseudo-haptics exploit carefully crafted visual or auditory cues to trick the brain into \"feeling\" forces that are never physically applied, offering a low-cost alternative to traditional haptic hardware. Here, we present a comparative psychophysical study that quantifies how visual and auditory stimuli combine to evoke pseudo-haptic pressure sensations on a commodity tablet. Using a Unity-based Rollball game, participants (n = 4) guided a virtual ball across three textured terrains while their finger forces were captured in real time with a Robotous RFT40 force-torque sensor. Each terrain was paired with a distinct rolling-sound profile spanning 440 Hz - 4.7 kHz, 440 Hz - 13.1 kHz, or 440 Hz - 8.9 kHz; crevice collisions triggered additional \"knocking\" bursts to heighten realism. Average tactile forces increased systematically with cue intensity: 0.40 N, 0.79 N and 0.88 N for visual-only trials and 0.41 N, 0.81 N and 0.90 N for audio-only trials on Terrains 1-3, respectively. Higher audio frequencies and denser visual textures both elicited stronger muscle activation, and their combination further reduced the force needed to perceive surface changes, confirming multisensory integration. These results demonstrate that consumer-grade isometric devices can reliably induce and measure graded pseudo-haptic feedback without specialized actuators, opening a path toward affordable rehabilitation tools, training simulators and assistive interfaces."
+  },
+  {
     "title": "BLAZER: Bootstrapping LLM-based Manipulation Agents with Zero-Shot Data Generation",
     "url": "http://arxiv.org/abs/2510.08572v1",
     "arxiv_id": "2510.08572v1",
