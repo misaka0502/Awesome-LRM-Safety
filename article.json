@@ -1,5 +1,85 @@
 [
   {
+    "title": "Reinforced sequential Monte Carlo for amortised sampling",
+    "url": "http://arxiv.org/abs/2510.11711v1",
+    "arxiv_id": "2510.11711v1",
+    "authors": [
+      "Sanghyeok Choi",
+      "Sarthak Mittal",
+      "V\u00edctor Elvira",
+      "Jinkyoo Park",
+      "Nikolay Malkin"
+    ],
+    "published": "2025-10-13T17:59:11+00:00",
+    "summary": "This paper proposes a synergy of amortised and particle-based methods for sampling from distributions defined by unnormalised density functions. We state a connection between sequential Monte Carlo (SMC) and neural sequential samplers trained by maximum-entropy reinforcement learning (MaxEnt RL), wherein learnt sampling policies and value functions define proposal kernels and twist functions. Exploiting this connection, we introduce an off-policy RL training procedure for the sampler that uses samples from SMC -- using the learnt sampler as a proposal -- as a behaviour policy that better explores the target distribution. We describe techniques for stable joint training of proposals and twist functions and an adaptive weight tempering scheme to reduce training signal variance. Furthermore, building upon past attempts to use experience replay to guide the training of neural samplers, we derive a way to combine historical samples with annealed importance sampling weights within a replay buffer. On synthetic multi-modal targets (in both continuous and discrete spaces) and the Boltzmann distribution of alanine dipeptide conformations, we demonstrate improvements in approximating the true distribution as well as training stability compared to both amortised and Monte Carlo methods."
+  },
+  {
+    "title": "Demystifying Reinforcement Learning in Agentic Reasoning",
+    "url": "http://arxiv.org/abs/2510.11701v1",
+    "arxiv_id": "2510.11701v1",
+    "authors": [
+      "Zhaochen Yu",
+      "Ling Yang",
+      "Jiaru Zou",
+      "Shuicheng Yan",
+      "Mengdi Wang"
+    ],
+    "published": "2025-10-13T17:57:15+00:00",
+    "summary": "Recently, the emergence of agentic RL has showcased that RL could also effectively improve the agentic reasoning ability of LLMs, yet the key design principles and optimal practices remain unclear. In this work, we conduct a comprehensive and systematic investigation to demystify reinforcement learning in agentic reasoning from three key perspectives: data, algorithm, and reasoning mode. We highlight our key insights: (i) Replacing stitched synthetic trajectories with real end-to-end tool-use trajectories yields a far stronger SFT initialization; high-diversity, model-aware datasets sustain exploration and markedly improve RL performance. (ii) Exploration-friendly techniques are crucial for agentic RL, such as clip higher, overlong reward shaping, and maintaining adequate policy entropy could improve the training efficiency. (iii) A deliberative strategy with fewer tool calls outperforms frequent tool calls or verbose self-reasoning, improving tool efficiency and final accuracy. Together, these simple practices consistently enhance agentic reasoning and training efficiency, achieving strong results on challenging benchmarks with smaller models, and establishing a practical baseline for future agentic RL research. Beyond these empirical insights, we further contribute a high-quality, real end-to-end agentic SFT dataset along with a high-quality RL dataset, and demonstrate the effectiveness of our insights in boosting the agentic reasoning ability of LLMs across four challenging benchmarks, including AIME2024/AIME2025, GPQA-Diamond, and LiveCodeBench-v6. With our recipes, 4B-sized models could also achieve superior agentic reasoning performance compared to 32B-sized models. Code and models: https://github.com/Gen-Verse/Open-AgentRL"
+  },
+  {
+    "title": "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs",
+    "url": "http://arxiv.org/abs/2510.11696v1",
+    "arxiv_id": "2510.11696v1",
+    "authors": [
+      "Wei Huang",
+      "Yi Ge",
+      "Shuai Yang",
+      "Yicheng Xiao",
+      "Huizi Mao",
+      "Yujun Lin",
+      "Hanrong Ye",
+      "Sifei Liu",
+      "Ka Chun Cheung",
+      "Hongxu Yin",
+      "Yao Lu",
+      "Xiaojuan Qi",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "published": "2025-10-13T17:55:09+00:00",
+    "summary": "We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for large language models (LLMs). While RL is essential for LLMs' reasoning capabilities, it is resource-intensive, requiring substantial GPU memory and long rollout durations. QeRL addresses these issues by combining NVFP4 quantization with Low-Rank Adaptation (LoRA), accelerating rollout phase of RL while reducing memory overhead. Beyond efficiency, our findings show that quantization noise increases policy entropy, enhancing exploration, and enabling the discovery of better strategies during RL. To further optimize exploration, QeRL introduces an Adaptive Quantization Noise (AQN) mechanism, which dynamically adjusts noise during training. Experiments demonstrate that QeRL delivers over 1.5 times speedup in the rollout phase. Moreover, this is the first framework to enable RL training of a 32B LLM on a single H100 80GB GPU, while delivering overall speedups for RL training. It also achieves faster reward growth and higher final accuracy than 16-bit LoRA and QLoRA, while matching the performance of full-parameter fine-tuning on mathematical benchmarks such as GSM8K (90.8%) and MATH 500 (77.4%) in the 7B model. These results establish QeRL as an efficient and effective framework for RL training in LLMs."
+  },
+  {
+    "title": "Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation",
+    "url": "http://arxiv.org/abs/2510.11689v1",
+    "arxiv_id": "2510.11689v1",
+    "authors": [
+      "Maggie Wang",
+      "Stephen Tian",
+      "Aiden Swann",
+      "Ola Shorinwa",
+      "Jiajun Wu",
+      "Mac Schwager"
+    ],
+    "published": "2025-10-13T17:51:23+00:00",
+    "summary": "Learning robotic manipulation policies directly in the real world can be expensive and time-consuming. While reinforcement learning (RL) policies trained in simulation present a scalable alternative, effective sim-to-real transfer remains challenging, particularly for tasks that require precise dynamics. To address this, we propose Phys2Real, a real-to-sim-to-real RL pipeline that combines vision-language model (VLM)-inferred physical parameter estimates with interactive adaptation through uncertainty-aware fusion. Our approach consists of three core components: (1) high-fidelity geometric reconstruction with 3D Gaussian splatting, (2) VLM-inferred prior distributions over physical parameters, and (3) online physical parameter estimation from interaction data. Phys2Real conditions policies on interpretable physical parameters, refining VLM predictions with online estimates via ensemble-based uncertainty quantification. On planar pushing tasks of a T-block with varying center of mass (CoM) and a hammer with an off-center mass distribution, Phys2Real achieves substantial improvements over a domain randomization baseline: 100% vs 79% success rate for the bottom-weighted T-block, 57% vs 23% in the challenging top-weighted T-block, and 15% faster average task completion for hammer pushing. Ablation studies indicate that the combination of VLM and interaction information is essential for success. Project website: https://phys2real.github.io/ ."
+  },
+  {
+    "title": "Beyond 'Templates': Category-Agnostic Object Pose, Size, and Shape Estimation from a Single View",
+    "url": "http://arxiv.org/abs/2510.11687v1",
+    "arxiv_id": "2510.11687v1",
+    "authors": [
+      "Jinyu Zhang",
+      "Haitao Lin",
+      "Jiashu Hou",
+      "Xiangyang Xue",
+      "Yanwei Fu"
+    ],
+    "published": "2025-10-13T17:49:15+00:00",
+    "summary": "Estimating an object's 6D pose, size, and shape from visual input is a fundamental problem in computer vision, with critical applications in robotic grasping and manipulation. Existing methods either rely on object-specific priors such as CAD models or templates, or suffer from limited generalization across categories due to pose-shape entanglement and multi-stage pipelines. In this work, we propose a unified, category-agnostic framework that simultaneously predicts 6D pose, size, and dense shape from a single RGB-D image, without requiring templates, CAD models, or category labels at test time. Our model fuses dense 2D features from vision foundation models with partial 3D point clouds using a Transformer encoder enhanced by a Mixture-of-Experts, and employs parallel decoders for pose-size estimation and shape reconstruction, achieving real-time inference at 28 FPS. Trained solely on synthetic data from 149 categories in the SOPE dataset, our framework is evaluated on four diverse benchmarks SOPE, ROPE, ObjaversePose, and HANDAL, spanning over 300 categories. It achieves state-of-the-art accuracy on seen categories while demonstrating remarkably strong zero-shot generalization to unseen real-world objects, establishing a new standard for open-set 6D understanding in robotics and embodied AI."
+  },
+  {
     "title": "VITA-VLA: Efficiently Teaching Vision-Language Models to Act via Action Expert Distillation",
     "url": "http://arxiv.org/abs/2510.09607v1",
     "arxiv_id": "2510.09607v1",
