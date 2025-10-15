@@ -1,5 +1,84 @@
 [
   {
+    "title": "DeepMMSearch-R1: Empowering Multimodal LLMs in Multimodal Web Search",
+    "url": "http://arxiv.org/abs/2510.12801v1",
+    "arxiv_id": "2510.12801v1",
+    "authors": [
+      "Kartik Narayan",
+      "Yang Xu",
+      "Tian Cao",
+      "Kavya Nerella",
+      "Vishal M. Patel",
+      "Navid Shiee",
+      "Peter Grasch",
+      "Chao Jia",
+      "Yinfei Yang",
+      "Zhe Gan"
+    ],
+    "published": "2025-10-14T17:59:58+00:00",
+    "summary": "Multimodal Large Language Models (MLLMs) in real-world applications require access to external knowledge sources and must remain responsive to the dynamic and ever-changing real-world information in order to address information-seeking and knowledge-intensive user queries. Existing approaches, such as retrieval augmented generation (RAG) methods, search agents, and search equipped MLLMs, often suffer from rigid pipelines, excessive search calls, and poorly constructed search queries, which result in inefficiencies and suboptimal outcomes. To address these limitations, we present DeepMMSearch-R1, the first multimodal LLM capable of performing on-demand, multi-turn web searches and dynamically crafting queries for both image and text search tools. Specifically, DeepMMSearch-R1 can initiate web searches based on relevant crops of the input image making the image search more effective, and can iteratively adapt text search queries based on retrieved information, thereby enabling self-reflection and self-correction. Our approach relies on a two-stage training pipeline: a cold start supervised finetuning phase followed by an online reinforcement learning optimization. For training, we introduce DeepMMSearchVQA, a novel multimodal VQA dataset created through an automated pipeline intermixed with real-world information from web search tools. This dataset contains diverse, multi-hop queries that integrate textual and visual information, teaching the model when to search, what to search for, which search tool to use and how to reason over the retrieved information. We conduct extensive experiments across a range of knowledge-intensive benchmarks to demonstrate the superiority of our approach. Finally, we analyze the results and provide insights that are valuable for advancing multimodal web-search."
+  },
+  {
+    "title": "DriveVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving",
+    "url": "http://arxiv.org/abs/2510.12796v1",
+    "arxiv_id": "2510.12796v1",
+    "authors": [
+      "Yingyan Li",
+      "Shuyao Shang",
+      "Weisong Liu",
+      "Bing Zhan",
+      "Haochen Wang",
+      "Yuqi Wang",
+      "Yuntao Chen",
+      "Xiaoman Wang",
+      "Yasong An",
+      "Chufeng Tang",
+      "Lu Hou",
+      "Lue Fan",
+      "Zhaoxiang Zhang"
+    ],
+    "published": "2025-10-14T17:59:47+00:00",
+    "summary": "Scaling Vision-Language-Action (VLA) models on large-scale data offers a promising path to achieving a more generalized driving intelligence. However, VLA models are limited by a ``supervision deficit'': the vast model capacity is supervised by sparse, low-dimensional actions, leaving much of their representational power underutilized. To remedy this, we propose \\textbf{DriveVLA-W0}, a training paradigm that employs world modeling to predict future images. This task generates a dense, self-supervised signal that compels the model to learn the underlying dynamics of the driving environment. We showcase the paradigm's versatility by instantiating it for two dominant VLA archetypes: an autoregressive world model for VLAs that use discrete visual tokens, and a diffusion world model for those operating on continuous visual features. Building on the rich representations learned from world modeling, we introduce a lightweight action expert to address the inference latency for real-time deployment. Extensive experiments on the NAVSIM v1/v2 benchmark and a 680x larger in-house dataset demonstrate that DriveVLA-W0 significantly outperforms BEV and VLA baselines. Crucially, it amplifies the data scaling law, showing that performance gains accelerate as the training dataset size increases."
+  },
+  {
+    "title": "KoALA: KL-L0 Adversarial Detector via Label Agreement",
+    "url": "http://arxiv.org/abs/2510.12752v1",
+    "arxiv_id": "2510.12752v1",
+    "authors": [
+      "Siqi Li",
+      "Yasser Shoukry"
+    ],
+    "published": "2025-10-14T17:33:00+00:00",
+    "summary": "Deep neural networks are highly susceptible to adversarial attacks, which pose significant risks to security- and safety-critical applications. We present KoALA (KL-L0 Adversarial detection via Label Agreement), a novel, semantics-free adversarial detector that requires no architectural changes or adversarial retraining. KoALA operates on a simple principle: it detects an adversarial attack when class predictions from two complementary similarity metrics disagree. These metrics-KL divergence and an L0-based similarity-are specifically chosen to detect different types of perturbations. The KL divergence metric is sensitive to dense, low-amplitude shifts, while the L0-based similarity is designed for sparse, high-impact changes. We provide a formal proof of correctness for our approach. The only training required is a simple fine-tuning step on a pre-trained image encoder using clean images to ensure the embeddings align well with both metrics. This makes KOALA a lightweight, plug-and-play solution for existing models and various data modalities. Our extensive experiments on ResNet/CIFAR-10 and CLIP/Tiny-ImageNet confirm our theoretical claims. When the theorem's conditions are met, KoALA consistently and effectively detects adversarial examples. On the full test sets, KoALA achieves a precision of 0.94 and a recall of 0.81 on ResNet/CIFAR-10, and a precision of 0.66 and a recall of 0.85 on CLIP/Tiny-ImageNet."
+  },
+  {
+    "title": "HYPE: Hybrid Planning with Ego Proposal-Conditioned Predictions",
+    "url": "http://arxiv.org/abs/2510.12733v1",
+    "arxiv_id": "2510.12733v1",
+    "authors": [
+      "Hang Yu",
+      "Julian Jordan",
+      "Julian Schmidt",
+      "Silvan Lindner",
+      "Alessandro Canevaro",
+      "Wilhelm Stork"
+    ],
+    "published": "2025-10-14T17:11:04+00:00",
+    "summary": "Safe and interpretable motion planning in complex urban environments needs to reason about bidirectional multi-agent interactions. This reasoning requires to estimate the costs of potential ego driving maneuvers. Many existing planners generate initial trajectories with sampling-based methods and refine them by optimizing on learned predictions of future environment states, which requires a cost function that encodes the desired vehicle behavior. Designing such a cost function can be very challenging, especially if a wide range of complex urban scenarios has to be considered. We propose HYPE: HYbrid Planning with Ego proposal-conditioned predictions, a planner that integrates multimodal trajectory proposals from a learned proposal model as heuristic priors into a Monte Carlo Tree Search (MCTS) refinement. To model bidirectional interactions, we introduce an ego-conditioned occupancy prediction model, enabling consistent, scene-aware reasoning. Our design significantly simplifies cost function design in refinement by considering proposal-driven guidance, requiring only minimalistic grid-based cost terms. Evaluations on large-scale real-world benchmarks nuPlan and DeepUrban show that HYPE effectively achieves state-of-the-art performance, especially in safety and adaptability."
+  },
+  {
+    "title": "(Non-Parametric) Bootstrap Robust Optimization for Portfolios and Trading Strategies",
+    "url": "http://arxiv.org/abs/2510.12725v1",
+    "arxiv_id": "2510.12725v1",
+    "authors": [
+      "Daniel Cunha Oliveira",
+      "Grover Guzman",
+      "Nick Firoozye"
+    ],
+    "published": "2025-10-14T17:06:03+00:00",
+    "summary": "Robust optimization provides a principled framework for decision-making under uncertainty, with broad applications in finance, engineering, and operations research. In portfolio optimization, uncertainty in expected returns and covariances demands methods that mitigate estimation error, parameter instability, and model misspecification. Traditional approaches, including parametric, bootstrap-based, and Bayesian methods, enhance stability by relying on confidence intervals or probabilistic priors but often impose restrictive assumptions. This study introduces a non-parametric bootstrap framework for robust optimization in financial decision-making. By resampling empirical data, the framework constructs flexible, data-driven confidence intervals without assuming specific distributional forms, thus capturing uncertainty in statistical estimates, model parameters, and utility functions. Treating utility as a random variable enables percentile-based optimization, naturally suited for risk-sensitive and worst-case decision-making. The approach aligns with recent advances in robust optimization, reinforcement learning, and risk-aware control, offering a unified perspective on robustness and generalization. Empirically, the framework mitigates overfitting and selection bias in trading strategy optimization and improves generalization in portfolio allocation. Results across portfolio and time-series momentum experiments demonstrate that the proposed method delivers smoother, more stable out-of-sample performance, offering a practical, distribution-free alternative to traditional robust optimization methods."
+  },
+  {
     "title": "Reinforced sequential Monte Carlo for amortised sampling",
     "url": "http://arxiv.org/abs/2510.11711v1",
     "arxiv_id": "2510.11711v1",
