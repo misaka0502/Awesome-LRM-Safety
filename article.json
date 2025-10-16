@@ -1,5 +1,72 @@
 [
   {
+    "title": "PhysMaster: Mastering Physical Representation for Video Generation via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2510.13809v1",
+    "arxiv_id": "2510.13809v1",
+    "authors": [
+      "Sihui Ji",
+      "Xi Chen",
+      "Xin Tao",
+      "Pengfei Wan",
+      "Hengshuang Zhao"
+    ],
+    "published": "2025-10-15T17:59:59+00:00",
+    "summary": "Video generation models nowadays are capable of generating visually realistic videos, but often fail to adhere to physical laws, limiting their ability to generate physically plausible videos and serve as ''world models''. To address this issue, we propose PhysMaster, which captures physical knowledge as a representation for guiding video generation models to enhance their physics-awareness. Specifically, PhysMaster is based on the image-to-video task where the model is expected to predict physically plausible dynamics from the input image. Since the input image provides physical priors like relative positions and potential interactions of objects in the scenario, we devise PhysEncoder to encode physical information from it as an extra condition to inject physical knowledge into the video generation process. The lack of proper supervision on the model's physical performance beyond mere appearance motivates PhysEncoder to apply reinforcement learning with human feedback to physical representation learning, which leverages feedback from generation models to optimize physical representations with Direct Preference Optimization (DPO) in an end-to-end manner. PhysMaster provides a feasible solution for improving physics-awareness of PhysEncoder and thus of video generation, proving its ability on a simple proxy task and generalizability to wide-ranging physical scenarios. This implies that our PhysMaster, which unifies solutions for various physical processes via representation learning in the reinforcement learning paradigm, can act as a generic and plug-in solution for physics-aware video generation and broader applications."
+  },
+  {
+    "title": "VisCoP: Visual Probing for Video Domain Adaptation of Vision Language Models",
+    "url": "http://arxiv.org/abs/2510.13808v1",
+    "arxiv_id": "2510.13808v1",
+    "authors": [
+      "Dominick Reilly",
+      "Manish Kumar Govind",
+      "Le Xue",
+      "Srijan Das"
+    ],
+    "published": "2025-10-15T17:59:52+00:00",
+    "summary": "Large Vision-Language Models (VLMs) excel at general visual reasoning tasks but exhibit sharp performance degradation when applied to novel domains with substantial distribution shifts from pretraining data. Existing domain adaptation approaches finetune different VLM components, but this often results in limited domain-specific feature learning or catastrophic forgetting of prior capabilities. To address these issues, we introduce Vision Contextualized Probing (VisCoP), which augments the VLM's vision encoder with a compact set of learnable visual probes. These probes enable efficient domain-specific adaptation with minimal modification to pretrained parameters. We evaluate VisCoP across three challenging domain adaptation settings-cross-view (exocentric to egocentric), cross-modal (RGB to depth), and cross-task (human understanding to robot control). Experiments show that VisCoP consistently outperforms existing adaptation strategies, achieving superior performance on target domains while effectively retaining source-domain knowledge."
+  },
+  {
+    "title": "Trace Anything: Representing Any Video in 4D via Trajectory Fields",
+    "url": "http://arxiv.org/abs/2510.13802v1",
+    "arxiv_id": "2510.13802v1",
+    "authors": [
+      "Xinhang Liu",
+      "Yuxi Xiao",
+      "Donny Y. Chen",
+      "Jiashi Feng",
+      "Yu-Wing Tai",
+      "Chi-Keung Tang",
+      "Bingyi Kang"
+    ],
+    "published": "2025-10-15T17:59:04+00:00",
+    "summary": "Effective spatio-temporal representation is fundamental to modeling, understanding, and predicting dynamics in videos. The atomic unit of a video, the pixel, traces a continuous 3D trajectory over time, serving as the primitive element of dynamics. Based on this principle, we propose representing any video as a Trajectory Field: a dense mapping that assigns a continuous 3D trajectory function of time to each pixel in every frame. With this representation, we introduce Trace Anything, a neural network that predicts the entire trajectory field in a single feed-forward pass. Specifically, for each pixel in each frame, our model predicts a set of control points that parameterizes a trajectory (i.e., a B-spline), yielding its 3D position at arbitrary query time instants. We trained the Trace Anything model on large-scale 4D data, including data from our new platform, and our experiments demonstrate that: (i) Trace Anything achieves state-of-the-art performance on our new benchmark for trajectory field estimation and performs competitively on established point-tracking benchmarks; (ii) it offers significant efficiency gains thanks to its one-pass paradigm, without requiring iterative optimization or auxiliary estimators; and (iii) it exhibits emergent abilities, including goal-conditioned manipulation, motion forecasting, and spatio-temporal fusion. Project page: https://trace-anything.github.io/."
+  },
+  {
+    "title": "Breadcrumbs Reasoning: Memory-Efficient Reasoning with Compression Beacons",
+    "url": "http://arxiv.org/abs/2510.13797v1",
+    "arxiv_id": "2510.13797v1",
+    "authors": [
+      "Giovanni Monea",
+      "Yair Feldman",
+      "Shankar Padmanabhan",
+      "Kiant\u00e9 Brantley",
+      "Yoav Artzi"
+    ],
+    "published": "2025-10-15T17:57:21+00:00",
+    "summary": "The scalability of large language models for long-context reasoning is severely constrained by the linear growth of their Transformer key-value cache, which incurs significant memory and computational costs. We posit that as a model generates reasoning tokens, the informational value of past generated tokens diminishes, creating an opportunity for compression. In this work, we propose to periodically compress the generation KV cache with a learned, special-purpose token and evict compressed entries. We train the model to perform this compression via a modified joint distillation and reinforcement learning (RL) framework. Our training method minimizes overhead over the conventional RL process, as it leverages RL outputs for distillation. Empirically, our method achieves a superior memory-accuracy Pareto frontier compared to both the model without cache compression and training-free compression techniques."
+  },
+  {
+    "title": "MimicKit: A Reinforcement Learning Framework for Motion Imitation and Control",
+    "url": "http://arxiv.org/abs/2510.13794v1",
+    "arxiv_id": "2510.13794v1",
+    "authors": [
+      "Xue Bin Peng"
+    ],
+    "published": "2025-10-15T17:51:42+00:00",
+    "summary": "MimicKit is an open-source framework for training motion controllers using motion imitation and reinforcement learning. The codebase provides implementations of commonly-used motion-imitation techniques and RL algorithms. This framework is intended to support research and applications in computer graphics and robotics by providing a unified training framework, along with standardized environment, agent, and data structures. The codebase is designed to be modular and easily configurable, enabling convenient modification and extension to new characters and tasks. The open-source codebase is available at: https://github.com/xbpeng/MimicKit."
+  },
+  {
     "title": "DeepMMSearch-R1: Empowering Multimodal LLMs in Multimodal Web Search",
     "url": "http://arxiv.org/abs/2510.12801v1",
     "arxiv_id": "2510.12801v1",
