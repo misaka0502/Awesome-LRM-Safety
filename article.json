@@ -1,5 +1,76 @@
 [
   {
+    "title": "Agentic Design of Compositional Machines",
+    "url": "http://arxiv.org/abs/2510.14980v1",
+    "arxiv_id": "2510.14980v1",
+    "authors": [
+      "Wenqian Zhang",
+      "Weiyang Liu",
+      "Zhen Liu"
+    ],
+    "published": "2025-10-16T17:59:58+00:00",
+    "summary": "The design of complex machines stands as both a marker of human intelligence and a foundation of engineering practice. Given recent advances in large language models (LLMs), we ask whether they, too, can learn to create. We approach this question through the lens of compositional machine design: a task in which machines are assembled from standardized components to meet functional demands like locomotion or manipulation in a simulated physical environment. To support this investigation, we introduce BesiegeField, a testbed built on the machine-building game Besiege, which enables part-based construction, physical simulation and reward-driven evaluation. Using BesiegeField, we benchmark state-of-the-art LLMs with agentic workflows and identify key capabilities required for success, including spatial reasoning, strategic assembly, and instruction-following. As current open-source models fall short, we explore reinforcement learning (RL) as a path to improvement: we curate a cold-start dataset, conduct RL finetuning experiments, and highlight open challenges at the intersection of language, machine design, and physical reasoning."
+  },
+  {
+    "title": "Ponimator: Unfolding Interactive Pose for Versatile Human-human Interaction Animation",
+    "url": "http://arxiv.org/abs/2510.14976v1",
+    "arxiv_id": "2510.14976v1",
+    "authors": [
+      "Shaowei Liu",
+      "Chuan Guo",
+      "Bing Zhou",
+      "Jian Wang"
+    ],
+    "published": "2025-10-16T17:59:56+00:00",
+    "summary": "Close-proximity human-human interactive poses convey rich contextual information about interaction dynamics. Given such poses, humans can intuitively infer the context and anticipate possible past and future dynamics, drawing on strong priors of human behavior. Inspired by this observation, we propose Ponimator, a simple framework anchored on proximal interactive poses for versatile interaction animation. Our training data consists of close-contact two-person poses and their surrounding temporal context from motion-capture interaction datasets. Leveraging interactive pose priors, Ponimator employs two conditional diffusion models: (1) a pose animator that uses the temporal prior to generate dynamic motion sequences from interactive poses, and (2) a pose generator that applies the spatial prior to synthesize interactive poses from a single pose, text, or both when interactive poses are unavailable. Collectively, Ponimator supports diverse tasks, including image-based interaction animation, reaction animation, and text-to-interaction synthesis, facilitating the transfer of interaction knowledge from high-quality mocap data to open-world scenarios. Empirical experiments across diverse datasets and applications demonstrate the universality of the pose prior and the effectiveness and robustness of our framework."
+  },
+  {
+    "title": "RDD: Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks",
+    "url": "http://arxiv.org/abs/2510.14968v1",
+    "arxiv_id": "2510.14968v1",
+    "authors": [
+      "Mingxuan Yan",
+      "Yuping Wang",
+      "Zechun Liu",
+      "Jiachen Li"
+    ],
+    "published": "2025-10-16T17:59:37+00:00",
+    "summary": "To tackle long-horizon tasks, recent hierarchical vision-language-action (VLAs) frameworks employ vision-language model (VLM)-based planners to decompose complex manipulation tasks into simpler sub-tasks that low-level visuomotor policies can easily handle. Typically, the VLM planner is finetuned to learn to decompose a target task. This finetuning requires target task demonstrations segmented into sub-tasks by either human annotation or heuristic rules. However, the heuristic subtasks can deviate significantly from the training data of the visuomotor policy, which degrades task performance. To address these issues, we propose a Retrieval-based Demonstration Decomposer (RDD) that automatically decomposes demonstrations into sub-tasks by aligning the visual features of the decomposed sub-task intervals with those from the training data of the low-level visuomotor policies. Our method outperforms the state-of-the-art sub-task decomposer on both simulation and real-world tasks, demonstrating robustness across diverse settings. Code and more results are available at rdd-neurips.github.io."
+  },
+  {
+    "title": "Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn LLM Agents",
+    "url": "http://arxiv.org/abs/2510.14967v1",
+    "arxiv_id": "2510.14967v1",
+    "authors": [
+      "Guoqing Wang",
+      "Sunhao Dai",
+      "Guangze Ye",
+      "Zeyu Gan",
+      "Wei Yao",
+      "Yong Deng",
+      "Xiaofeng Wu",
+      "Zhenzhe Ying"
+    ],
+    "published": "2025-10-16T17:59:32+00:00",
+    "summary": "Large language model (LLM)-based agents are increasingly trained with reinforcement learning (RL) to enhance their ability to interact with external environments through tool use, particularly in search-based settings that require multi-turn reasoning and knowledge acquisition. However, existing approaches typically rely on outcome-based rewards that are only provided at the final answer. This reward sparsity becomes particularly problematic in multi-turn settings, where long trajectories exacerbate two critical issues: (i) advantage collapse, where all rollouts receive identical rewards and provide no useful learning signals, and (ii) lack of fine-grained credit assignment, where dependencies between turns are obscured, especially in long-horizon tasks. In this paper, we propose Information Gain-based Policy Optimization (IGPO), a simple yet effective RL framework that provides dense and intrinsic supervision for multi-turn agent training. IGPO models each interaction turn as an incremental process of acquiring information about the ground truth, and defines turn-level rewards as the marginal increase in the policy's probability of producing the correct answer. Unlike prior process-level reward approaches that depend on external reward models or costly Monte Carlo estimation, IGPO derives intrinsic rewards directly from the model's own belief updates. These intrinsic turn-level rewards are combined with outcome-level supervision to form dense reward trajectories. Extensive experiments on both in-domain and out-of-domain benchmarks demonstrate that IGPO consistently outperforms strong baselines in multi-turn scenarios, achieving higher accuracy and improved sample efficiency."
+  },
+  {
+    "title": "ChangingGrounding: 3D Visual Grounding in Changing Scenes",
+    "url": "http://arxiv.org/abs/2510.14965v1",
+    "arxiv_id": "2510.14965v1",
+    "authors": [
+      "Miao Hu",
+      "Zhiwei Huang",
+      "Tai Wang",
+      "Jiangmiao Pang",
+      "Dahua Lin",
+      "Nanning Zheng",
+      "Runsen Xu"
+    ],
+    "published": "2025-10-16T17:59:16+00:00",
+    "summary": "Real-world robots localize objects from natural-language instructions while scenes around them keep changing. Yet most of the existing 3D visual grounding (3DVG) method still assumes a reconstructed and up-to-date point cloud, an assumption that forces costly re-scans and hinders deployment. We argue that 3DVG should be formulated as an active, memory-driven problem, and we introduce ChangingGrounding, the first benchmark that explicitly measures how well an agent can exploit past observations, explore only where needed, and still deliver precise 3D boxes in changing scenes. To set a strong reference point, we also propose Mem-ChangingGrounder, a zero-shot method for this task that marries cross-modal retrieval with lightweight multi-view fusion: it identifies the object type implied by the query, retrieves relevant memories to guide actions, then explores the target efficiently in the scene, falls back when previous operations are invalid, performs multi-view scanning of the target, and projects the fused evidence from multi-view scans to get accurate object bounding boxes. We evaluate different baselines on ChangingGrounding, and our Mem-ChangingGrounder achieves the highest localization accuracy while greatly reducing exploration cost. We hope this benchmark and method catalyze a shift toward practical, memory-centric 3DVG research for real-world applications. Project page: https://hm123450.github.io/CGB/ ."
+  },
+  {
     "title": "PhysMaster: Mastering Physical Representation for Video Generation via Reinforcement Learning",
     "url": "http://arxiv.org/abs/2510.13809v1",
     "arxiv_id": "2510.13809v1",
