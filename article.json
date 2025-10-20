@@ -1,5 +1,113 @@
 [
   {
+    "title": "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM",
+    "url": "http://arxiv.org/abs/2510.15870v1",
+    "arxiv_id": "2510.15870v1",
+    "authors": [
+      "Hanrong Ye",
+      "Chao-Han Huck Yang",
+      "Arushi Goel",
+      "Wei Huang",
+      "Ligeng Zhu",
+      "Yuanhang Su",
+      "Sean Lin",
+      "An-Chieh Cheng",
+      "Zhen Wan",
+      "Jinchuan Tian",
+      "Yuming Lou",
+      "Dong Yang",
+      "Zhijian Liu",
+      "Yukang Chen",
+      "Ambrish Dantrey",
+      "Ehsan Jahangiri",
+      "Sreyan Ghosh",
+      "Daguang Xu",
+      "Ehsan Hosseini-Asl",
+      "Danial Mohseni Taheri",
+      "Vidya Murali",
+      "Sifei Liu",
+      "Jason Lu",
+      "Oluwatobi Olabiyi",
+      "Frank Wang",
+      "Rafael Valle",
+      "Bryan Catanzaro",
+      "Andrew Tao",
+      "Song Han",
+      "Jan Kautz",
+      "Hongxu Yin",
+      "Pavlo Molchanov"
+    ],
+    "published": "2025-10-17T17:59:59+00:00",
+    "summary": "Advancing machine intelligence requires developing the ability to perceive across multiple modalities, much as humans sense the world. We introduce OmniVinci, an initiative to build a strong, open-source, omni-modal LLM. We carefully study the design choices across model architecture and data curation. For model architecture, we present three key innovations: (i) OmniAlignNet for strengthening alignment between vision and audio embeddings in a shared omni-modal latent space; (ii) Temporal Embedding Grouping for capturing relative temporal alignment between vision and audio signals; and (iii) Constrained Rotary Time Embedding for encoding absolute temporal information in omni-modal embeddings. We introduce a curation and synthesis pipeline that generates 24M single-modal and omni-modal conversations. We find that modalities reinforce one another in both perception and reasoning. Our model, OmniVinci, outperforms Qwen2.5-Omni with +19.05 on DailyOmni (cross-modal understanding), +1.7 on MMAR (audio), and +3.9 on Video-MME (vision), while using just 0.2T training tokens - a 6 times reduction compared to Qwen2.5-Omni's 1.2T. We finally demonstrate omni-modal advantages in downstream applications spanning robotics, medical AI, and smart factory."
+  },
+  {
+    "title": "PokeeResearch: Effective Deep Research via Reinforcement Learning from AI Feedback and Robust Reasoning Scaffold",
+    "url": "http://arxiv.org/abs/2510.15862v1",
+    "arxiv_id": "2510.15862v1",
+    "authors": [
+      "Yi Wan",
+      "Jiuqi Wang",
+      "Liam Li",
+      "Jinsong Liu",
+      "Ruihao Zhu",
+      "Zheqing Zhu"
+    ],
+    "published": "2025-10-17T17:53:06+00:00",
+    "summary": "Tool-augmented large language models (LLMs) are emerging as deep research agents, systems that decompose complex queries, retrieve external evidence, and synthesize grounded responses. Yet current agents remain limited by shallow retrieval, weak alignment metrics, and brittle tool-use behavior. We introduce PokeeResearch-7B, a 7B-parameter deep research agent built under a unified reinforcement learning framework for robustness, alignment, and scalability. PokeeResearch-7B is trained by an annotation-free Reinforcement Learning from AI Feedback (RLAIF) framework to optimize policies using LLM-based reward signals that capture factual accuracy, citation faithfulness, and instruction adherence. A chain-of-thought-driven multi-call reasoning scaffold further enhances robustness through self-verification and adaptive recovery from tool failures. Among 10 popular deep research benchmarks, PokeeResearch-7B achieves state-of-the-art performance among 7B-scale deep research agents. This highlights that careful reinforcement learning and reasoning design can produce efficient, resilient, and research-grade AI agents. The model and inference code is open-sourced under MIT license at https://github.com/Pokee-AI/PokeeResearchOSS."
+  },
+  {
+    "title": "InfiMed-ORBIT: Aligning LLMs on Open-Ended Complex Tasks via Rubric-Based Incremental Training",
+    "url": "http://arxiv.org/abs/2510.15859v1",
+    "arxiv_id": "2510.15859v1",
+    "authors": [
+      "Pengkai Wang",
+      "Qi Zuo",
+      "Pengwei Liu",
+      "Zhijie Sang",
+      "Congkai Xie",
+      "Hongxia Yang"
+    ],
+    "published": "2025-10-17T17:51:28+00:00",
+    "summary": "Large Language Models (LLMs) have shown substantial advances through reinforcement learning (RL), particularly in domains where rewards can be programmatically verified, such as mathematics and code. In these areas, models benefit from a well-defined operational base guided by explicit rule-based objectives. However, this progress reveals a significant limitation: in open-ended domains where rewards are ambiguous, subjective, or context-dependent, such as creative writing, scientific reasoning, and notably medical consultation, robust reward functions are lacking, making these areas challenging for current RL strategies. To bridge this gap, we introduce ORBIT, an open-ended rubric-based incremental training framework specifically designed for high-stakes medical dialogue. ORBIT integrates syn- thetic dialogue generation with the dynamic creation of rubrics, employing these rubrics to direct an incremental RL process. In particular, this approach does not depend on external medical knowledge or manual rules, instead utilizing rubric-guided feedback to shape learning. When implemented on the Qwen3-4B-Instruct model, our method can greatly enhance its performance on the HealthBench-Hard benchmark from 7.0 to 27.2 using only 2k samples, thus achieving state-of-the-art results for models of this scale. Our analysis confirms that rubric-driven RL fos-ters consistent performance gains across diverse consultation scenarios, going beyond simple numerical improvements. These findings underscore rubric-based feedback as a scalable strategy for advancing LLMs in intricate, open-ended tasks."
+  },
+  {
+    "title": "BLIP3o-NEXT: Next Frontier of Native Image Generation",
+    "url": "http://arxiv.org/abs/2510.15857v1",
+    "arxiv_id": "2510.15857v1",
+    "authors": [
+      "Jiuhai Chen",
+      "Le Xue",
+      "Zhiyang Xu",
+      "Xichen Pan",
+      "Shusheng Yang",
+      "Can Qin",
+      "An Yan",
+      "Honglu Zhou",
+      "Zeyuan Chen",
+      "Lifu Huang",
+      "Tianyi Zhou",
+      "Junnan Li",
+      "Silvio Savarese",
+      "Caiming Xiong",
+      "Ran Xu"
+    ],
+    "published": "2025-10-17T17:50:58+00:00",
+    "summary": "We present BLIP3o-NEXT, a fully open-source foundation model in the BLIP3 series that advances the next frontier of native image generation. BLIP3o-NEXT unifies text-to-image generation and image editing within a single architecture, demonstrating strong image generation and image editing capabilities. In developing the state-of-the-art native image generation model, we identify four key insights: (1) Most architectural choices yield comparable performance; an architecture can be deemed effective provided it scales efficiently and supports fast inference; (2) The successful application of reinforcement learning can further push the frontier of native image generation; (3) Image editing still remains a challenging task, yet instruction following and the consistency between generated and reference images can be significantly enhanced through post-training and data engine; (4) Data quality and scale continue to be decisive factors that determine the upper bound of model performance. Building upon these insights, BLIP3o-NEXT leverages an Autoregressive + Diffusion architecture in which an autoregressive model first generates discrete image tokens conditioned on multimodal inputs, whose hidden states are then used as conditioning signals for a diffusion model to generate high-fidelity images. This architecture integrates the reasoning strength and instruction following of autoregressive models with the fine-detail rendering ability of diffusion models, achieving a new level of coherence and realism. Extensive evaluations of various text-to-image and image-editing benchmarks show that BLIP3o-NEXT achieves superior performance over existing models."
+  },
+  {
+    "title": "Learning Correlated Reward Models: Statistical Barriers and Opportunities",
+    "url": "http://arxiv.org/abs/2510.15839v1",
+    "arxiv_id": "2510.15839v1",
+    "authors": [
+      "Yeshwanth Cherapanamjeri",
+      "Constantinos Daskalakis",
+      "Gabriele Farina",
+      "Sobhan Mohammadpour"
+    ],
+    "published": "2025-10-17T17:31:17+00:00",
+    "summary": "Random Utility Models (RUMs) are a classical framework for modeling user preferences and play a key role in reward modeling for Reinforcement Learning from Human Feedback (RLHF). However, a crucial shortcoming of many of these techniques is the Independence of Irrelevant Alternatives (IIA) assumption, which collapses \\emph{all} human preferences to a universal underlying utility function, yielding a coarse approximation of the range of human preferences. On the other hand, statistical and computational guarantees for models avoiding this assumption are scarce. In this paper, we investigate the statistical and computational challenges of learning a \\emph{correlated} probit model, a fundamental RUM that avoids the IIA assumption. First, we establish that the classical data collection paradigm of pairwise preference data is \\emph{fundamentally insufficient} to learn correlational information, explaining the lack of statistical and computational guarantees in this setting. Next, we demonstrate that \\emph{best-of-three} preference data provably overcomes these shortcomings, and devise a statistically and computationally efficient estimator with near-optimal performance. These results highlight the benefits of higher-order preference data in learning correlated utilities, allowing for more fine-grained modeling of human preferences. Finally, we validate these theoretical guarantees on several real-world datasets, demonstrating improved personalization of human preferences."
+  },
+  {
     "title": "Agentic Design of Compositional Machines",
     "url": "http://arxiv.org/abs/2510.14980v1",
     "arxiv_id": "2510.14980v1",
