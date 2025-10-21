@@ -1,5 +1,98 @@
 [
   {
+    "title": "ConsistEdit: Highly Consistent and Precise Training-free Visual Editing",
+    "url": "http://arxiv.org/abs/2510.17803v1",
+    "arxiv_id": "2510.17803v1",
+    "authors": [
+      "Zixin Yin",
+      "Ling-Hao Chen",
+      "Lionel Ni",
+      "Xili Dai"
+    ],
+    "published": "2025-10-20T17:59:52+00:00",
+    "summary": "Recent advances in training-free attention control methods have enabled flexible and efficient text-guided editing capabilities for existing generation models. However, current approaches struggle to simultaneously deliver strong editing strength while preserving consistency with the source. This limitation becomes particularly critical in multi-round and video editing, where visual errors can accumulate over time. Moreover, most existing methods enforce global consistency, which limits their ability to modify individual attributes such as texture while preserving others, thereby hindering fine-grained editing. Recently, the architectural shift from U-Net to MM-DiT has brought significant improvements in generative performance and introduced a novel mechanism for integrating text and vision modalities. These advancements pave the way for overcoming challenges that previous methods failed to resolve. Through an in-depth analysis of MM-DiT, we identify three key insights into its attention mechanisms. Building on these, we propose ConsistEdit, a novel attention control method specifically tailored for MM-DiT. ConsistEdit incorporates vision-only attention control, mask-guided pre-attention fusion, and differentiated manipulation of the query, key, and value tokens to produce consistent, prompt-aligned edits. Extensive experiments demonstrate that ConsistEdit achieves state-of-the-art performance across a wide range of image and video editing tasks, including both structure-consistent and structure-inconsistent scenarios. Unlike prior methods, it is the first approach to perform editing across all inference steps and attention layers without handcraft, significantly enhancing reliability and consistency, which enables robust multi-round and multi-region editing. Furthermore, it supports progressive adjustment of structural consistency, enabling finer control."
+  },
+  {
+    "title": "Robobench: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models as Embodied Brain",
+    "url": "http://arxiv.org/abs/2510.17801v1",
+    "arxiv_id": "2510.17801v1",
+    "authors": [
+      "Yulin Luo",
+      "Chun-Kai Fan",
+      "Menghang Dong",
+      "Jiayu Shi",
+      "Mengdi Zhao",
+      "Bo-Wen Zhang",
+      "Cheng Chi",
+      "Jiaming Liu",
+      "Gaole Dai",
+      "Rongyu Zhang",
+      "Ruichuan An",
+      "Kun Wu",
+      "Zhengping Che",
+      "Shaoxuan Xie",
+      "Guocai Yao",
+      "Zhongxia Zhao",
+      "Pengwei Wang",
+      "Guang Liu",
+      "Zhongyuan Wang",
+      "Tiejun Huang",
+      "Shanghang Zhang"
+    ],
+    "published": "2025-10-20T17:59:03+00:00",
+    "summary": "Building robots that can perceive, reason, and act in dynamic, unstructured environments remains a core challenge. Recent embodied systems often adopt a dual-system paradigm, where System 2 handles high-level reasoning while System 1 executes low-level control. In this work, we refer to System 2 as the embodied brain, emphasizing its role as the cognitive core for reasoning and decision-making in manipulation tasks. Given this role, systematic evaluation of the embodied brain is essential. Yet existing benchmarks emphasize execution success, or when targeting high-level reasoning, suffer from incomplete dimensions and limited task realism, offering only a partial picture of cognitive capability. To bridge this gap, we introduce RoboBench, a benchmark that systematically evaluates multimodal large language models (MLLMs) as embodied brains. Motivated by the critical roles across the full manipulation pipeline, RoboBench defines five dimensions-instruction comprehension, perception reasoning, generalized planning, affordance prediction, and failure analysis-spanning 14 capabilities, 25 tasks, and 6092 QA pairs. To ensure realism, we curate datasets across diverse embodiments, attribute-rich objects, and multi-view scenes, drawing from large-scale real robotic data. For planning, RoboBench introduces an evaluation framework, MLLM-as-world-simulator. It evaluate embodied feasibility by simulating whether predicted plans can achieve critical object-state changes. Experiments on 14 MLLMs reveal fundamental limitations: difficulties with implicit instruction comprehension, spatiotemporal reasoning, cross-scenario planning, fine-grained affordance understanding, and execution failure diagnosis. RoboBench provides a comprehensive scaffold to quantify high-level cognition, and guide the development of next-generation embodied MLLMs. The project page is in https://robo-bench.github.io."
+  },
+  {
+    "title": "Foundational Automatic Evaluators: Scaling Multi-Task Generative Evaluator Training for Reasoning-Centric Domains",
+    "url": "http://arxiv.org/abs/2510.17793v1",
+    "arxiv_id": "2510.17793v1",
+    "authors": [
+      "Austin Xu",
+      "Xuan-Phi Nguyen",
+      "Yilun Zhou",
+      "Chien-Sheng Wu",
+      "Caiming Xiong",
+      "Shafiq Joty"
+    ],
+    "published": "2025-10-20T17:52:06+00:00",
+    "summary": "Finetuning specialized generative evaluators has emerged as a popular paradigm to meet the increasing demand for scalable evaluation during both training and test-time. However, recent work has largely focused on applying new methodology, such as reinforcement learning (RL), to training evaluators, shying away from large-scale, data-driven development. In this work, we focus on data scaling, curating a set of 2.5M samples spanning five unique evaluation tasks (pairwise, step-level, reference-free and reference-based verification, and single rating) and multiple domains focused on reasoning evaluation. With our data, we train Foundational Automatic Reasoning Evaluators (FARE), a family of 8B and 20B (with 3.6B active) parameter evaluators, with a simple iterative rejection-sampling supervised finetuning (SFT) approach. FARE-8B challenges larger specialized RL-trained evaluators and FARE-20B sets the new standard for open-source evaluators, surpassing specialized 70B+ evaluators. Beyond static benchmarks, we evaluate FARE in real-world tasks: As inference-time rerankers, FARE-20B achieves near-oracle performance on MATH. As verifiers in RL training, FARE improves the downstream RL-trained model performance by up to 14.1% vs. string-matching verifiers. When initialized from FARE, a continually-finetuned FARE-Code outperforms gpt-oss-20B by 65% on evaluating test-case quality."
+  },
+  {
+    "title": "SoftMimic: Learning Compliant Whole-body Control from Examples",
+    "url": "http://arxiv.org/abs/2510.17792v1",
+    "arxiv_id": "2510.17792v1",
+    "authors": [
+      "Gabriel B. Margolis",
+      "Michelle Wang",
+      "Nolan Fey",
+      "Pulkit Agrawal"
+    ],
+    "published": "2025-10-20T17:49:27+00:00",
+    "summary": "We introduce SoftMimic, a framework for learning compliant whole-body control policies for humanoid robots from example motions. Imitating human motions with reinforcement learning allows humanoids to quickly learn new skills, but existing methods incentivize stiff control that aggressively corrects deviations from a reference motion, leading to brittle and unsafe behavior when the robot encounters unexpected contacts. In contrast, SoftMimic enables robots to respond compliantly to external forces while maintaining balance and posture. Our approach leverages an inverse kinematics solver to generate an augmented dataset of feasible compliant motions, which we use to train a reinforcement learning policy. By rewarding the policy for matching compliant responses rather than rigidly tracking the reference motion, SoftMimic learns to absorb disturbances and generalize to varied tasks from a single motion clip. We validate our method through simulations and real-world experiments, demonstrating safe and effective interaction with the environment."
+  },
+  {
+    "title": "UltraCUA: A Foundation Model for Computer Use Agents with Hybrid Action",
+    "url": "http://arxiv.org/abs/2510.17790v1",
+    "arxiv_id": "2510.17790v1",
+    "authors": [
+      "Yuhao Yang",
+      "Zhen Yang",
+      "Zi-Yi Dou",
+      "Anh Nguyen",
+      "Keen You",
+      "Omar Attia",
+      "Andrew Szot",
+      "Michael Feng",
+      "Ram Ramrakhya",
+      "Alexander Toshev",
+      "Chao Huang",
+      "Yinfei Yang",
+      "Zhe Gan"
+    ],
+    "published": "2025-10-20T17:48:26+00:00",
+    "summary": "Multimodal agents for computer use rely exclusively on primitive actions (click, type, scroll) that require accurate visual grounding and lengthy execution chains, leading to cascading failures and performance bottlenecks. While other agents leverage rich programmatic interfaces (APIs, MCP servers, tools), computer-use agents (CUAs) remain isolated from these capabilities. We present UltraCUA, a foundation model that bridges this gap through hybrid action -- seamlessly integrating GUI primitives with high-level programmatic tool calls. To achieve this, our approach comprises four key components: (1) an automated pipeline that scales programmatic tools from software documentation, open-source repositories, and code generation; (2) a synthetic data engine producing over 17,000 verifiable tasks spanning real-world computer-use scenarios; (3) a large-scale high-quality hybrid action trajectory collection with both low-level GUI actions and high-level programmatic tool calls; and (4) a two-stage training pipeline combining supervised fine-tuning with online reinforcement learning, enabling strategic alternation between low-level and high-level actions. Experiments with our 7B and 32B models demonstrate substantial improvements over state-of-the-art agents. On OSWorld, UltraCUA models achieve an average 22% relative improvement over base models, while being 11% faster in terms of steps. Out-of-domain evaluation on WindowsAgentArena shows our model reaches 21.7% success rate, outperforming baselines trained on Windows data. The hybrid action mechanism proves critical, reducing error propagation while maintaining execution efficiency."
+  },
+  {
     "title": "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM",
     "url": "http://arxiv.org/abs/2510.15870v1",
     "arxiv_id": "2510.15870v1",
