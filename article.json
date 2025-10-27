@@ -1,5 +1,67 @@
 [
   {
+    "title": "Mechanistic Interpretability for Neural TSP Solvers",
+    "url": "http://arxiv.org/abs/2510.21693v1",
+    "arxiv_id": "2510.21693v1",
+    "authors": [
+      "Reuben Narad",
+      "Leonard Boussioux",
+      "Michael Wagner"
+    ],
+    "published": "2025-10-24T17:54:19+00:00",
+    "summary": "Neural networks have advanced combinatorial optimization, with Transformer-based solvers achieving near-optimal solutions on the Traveling Salesman Problem (TSP) in milliseconds. However, these models operate as black boxes, providing no insight into the geometric patterns they learn or the heuristics they employ during tour construction. We address this opacity by applying sparse autoencoders (SAEs), a mechanistic interpretability technique, to a Transformer-based TSP solver, representing the first application of activation-based interpretability methods to operations research models. We train a pointer network with reinforcement learning on 100-node instances, then fit an SAE to the encoder's residual stream to discover an overcomplete dictionary of interpretable features. Our analysis reveals that the solver naturally develops features mirroring fundamental TSP concepts: boundary detectors that activate on convex-hull nodes, cluster-sensitive features responding to locally dense regions, and separator features encoding geometric partitions. These findings provide the first model-internal account of what neural TSP solvers compute before node selection, demonstrate that geometric structure emerges without explicit supervision, and suggest pathways toward transparent hybrid systems that combine neural efficiency with algorithmic interpretability. Interactive feature explorer: https://reubennarad.github.io/TSP_interp"
+  },
+  {
+    "title": "On Uncertainty Calibration for Equivariant Functions",
+    "url": "http://arxiv.org/abs/2510.21691v1",
+    "arxiv_id": "2510.21691v1",
+    "authors": [
+      "Edward Berman",
+      "Jacob Ginesin",
+      "Marco Pacini",
+      "Robin Walters"
+    ],
+    "published": "2025-10-24T17:50:41+00:00",
+    "summary": "Data-sparse settings such as robotic manipulation, molecular physics, and galaxy morphology classification are some of the hardest domains for deep learning. For these problems, equivariant networks can help improve modeling across undersampled parts of the input space, and uncertainty estimation can guard against overconfidence. However, until now, the relationships between equivariance and model confidence, and more generally equivariance and model calibration, has yet to be studied. Since traditional classification and regression error terms show up in the definitions of calibration error, it is natural to suspect that previous work can be used to help understand the relationship between equivariance and calibration error. In this work, we present a theory relating equivariance to uncertainty estimation. By proving lower and upper bounds on uncertainty calibration errors (ECE and ENCE) under various equivariance conditions, we elucidate the generalization limits of equivariant models and illustrate how symmetry mismatch can result in miscalibration in both classification and regression. We complement our theoretical framework with numerical experiments that clarify the relationship between equivariance and uncertainty using a variety of real and simulated datasets, and we comment on trends with symmetry mismatch, group size, and aleatoric and epistemic uncertainties."
+  },
+  {
+    "title": "Reduced Floating-Point Precision Implicit Monte Carlo",
+    "url": "http://arxiv.org/abs/2510.21683v1",
+    "arxiv_id": "2510.21683v1",
+    "authors": [
+      "Simon Butson",
+      "Mathew Cleveland",
+      "Alex Long",
+      "Todd Palmer"
+    ],
+    "published": "2025-10-24T17:39:58+00:00",
+    "summary": "This work demonstrates algorithms to accurately compute solutions to thermal radiation transport problems using a reduced floating-point precision implementation of the Implicit Monte Carlo method. Several techniques falling into the categories of arithmetic manipulations and scaling methods are evaluated for their ability to improve the accuracy of reduced-precision computations. The results for half- and double-precision implementations of various thermal radiation benchmark problems are compared."
+  },
+  {
+    "title": "Subleading Effects in Soft-Gluon Emission at One-Loop in Massive QCD",
+    "url": "http://arxiv.org/abs/2510.21655v1",
+    "arxiv_id": "2510.21655v1",
+    "authors": [
+      "Micha\u0142 Czakon",
+      "Kilian Erhard Minguez",
+      "Felix Eschment"
+    ],
+    "published": "2025-10-24T17:11:54+00:00",
+    "summary": "We provide the last missing ingredient necessary to approximate one-loop amplitudes in QCD with massive quarks in the limit of vanishing energy of a single gluon up to terms suppressed by this energy. Our main result is a soft operator acting in color and spin space that manipulates the momenta of the hard partons while keeping them on-shell and respecting momentum conservation. Additionally, we provide a complete expression for the subleading term of the expansion of an arbitrary tree-level amplitude in the limit where the momenta of a massless quark and a massless anti-quark of the same flavor become collinear. This limit is necessary to obtain the one-loop soft approximation whenever the process involves such a quark-anti-quark pair. Interestingly, the result involves a high-energy limit."
+  },
+  {
+    "title": "Design and Structural Validation of a Micro-UAV with On-Board Dynamic Route Planning",
+    "url": "http://arxiv.org/abs/2510.21648v1",
+    "arxiv_id": "2510.21648v1",
+    "authors": [
+      "Inbazhagan Ravikumar",
+      "Ram Sundhar",
+      "Narendhiran Vijayakumar"
+    ],
+    "published": "2025-10-24T17:05:19+00:00",
+    "summary": "Micro aerial vehicles are becoming increasingly important in search and rescue operations due to their agility, speed, and ability to access confined spaces or hazardous areas. However, designing lightweight aerial systems presents significant structural, aerodynamic, and computational challenges. This work addresses two key limitations in many low-cost aerial systems under two kilograms: their lack of structural durability during flight through rough terrains and inability to replan paths dynamically when new victims or obstacles are detected. We present a fully customised drone built from scratch using only commonly available components and materials, emphasising modularity, low cost, and ease of assembly. The structural frame is reinforced with lightweight yet durable materials to withstand impact, while the onboard control system is powered entirely by free, open-source software solutions. The proposed system demonstrates real-time perception and adaptive navigation capabilities without relying on expensive hardware accelerators, offering an affordable and practical solution for real-world search and rescue missions."
+  },
+  {
     "title": "LayerComposer: Interactive Personalized T2I via Spatially-Aware Layered Canvas",
     "url": "http://arxiv.org/abs/2510.20820v1",
     "arxiv_id": "2510.20820v1",
