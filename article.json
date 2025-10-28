@@ -1,5 +1,84 @@
 [
   {
+    "title": "Track, Inpaint, Resplat: Subject-driven 3D and 4D Generation with Progressive Texture Infilling",
+    "url": "http://arxiv.org/abs/2510.23605v1",
+    "arxiv_id": "2510.23605v1",
+    "authors": [
+      "Shuhong Zheng",
+      "Ashkan Mirzaei",
+      "Igor Gilitschenski"
+    ],
+    "published": "2025-10-27T17:59:51+00:00",
+    "summary": "Current 3D/4D generation methods are usually optimized for photorealism, efficiency, and aesthetics. However, they often fail to preserve the semantic identity of the subject across different viewpoints. Adapting generation methods with one or few images of a specific subject (also known as Personalization or Subject-driven generation) allows generating visual content that align with the identity of the subject. However, personalized 3D/4D generation is still largely underexplored. In this work, we introduce TIRE (Track, Inpaint, REsplat), a novel method for subject-driven 3D/4D generation. It takes an initial 3D asset produced by an existing 3D generative model as input and uses video tracking to identify the regions that need to be modified. Then, we adopt a subject-driven 2D inpainting model for progressively infilling the identified regions. Finally, we resplat the modified 2D multi-view observations back to 3D while still maintaining consistency. Extensive experiments demonstrate that our approach significantly improves identity preservation in 3D/4D generation compared to state-of-the-art methods. Our project website is available at https://zsh2000.github.io/track-inpaint-resplat.github.io/."
+  },
+  {
+    "title": "Think Twice: Branch-and-Rethink Reasoning Reward Model",
+    "url": "http://arxiv.org/abs/2510.23596v1",
+    "arxiv_id": "2510.23596v1",
+    "authors": [
+      "Yizhu Jiao",
+      "Jiaqi Zeng",
+      "Julien Veron Vialard",
+      "Oleksii Kuchaiev",
+      "Jiawei Han",
+      "Olivier Delalleau"
+    ],
+    "published": "2025-10-27T17:58:07+00:00",
+    "summary": "Large language models (LLMs) increasingly rely on thinking models that externalize intermediate steps and allocate extra test-time compute, with think-twice strategies showing that a deliberate second pass can elicit stronger reasoning. In contrast, most reward models (RMs) still compress many quality dimensions into a single scalar in one shot, a design that induces judgment diffusion: attention spreads across evaluation criteria, yielding diluted focus and shallow analysis. We introduce branch-and-rethink (BR-RM), a two-turn RM that transfers the think-twice principle to reward modeling. Turn 1 performs adaptive branching, selecting a small set of instance-critical dimensions (such as factuality and safety) and sketching concise, evidence-seeking hypotheses. Turn 2 executes branch-conditioned rethinking, a targeted reread that tests those hypotheses and scrutinizes only what matters most. We train with GRPO-style reinforcement learning over structured two-turn traces using a simple binary outcome reward with strict format checks, making the approach compatible with standard RLHF pipelines. By converting all-at-oncescoringintofocused, second-lookreasoning, BR-RMreducesjudgmentdiffusionandimproves sensitivity to subtle yet consequential errors while remaining practical and scalable. Experimental results demonstrate that our model achieves state-of-the-art performance on three challenging reward modeling benchmarks across diverse domains. The code and the model will be released soon."
+  },
+  {
+    "title": "Multi-Agent Evolve: LLM Self-Improve through Co-evolution",
+    "url": "http://arxiv.org/abs/2510.23595v1",
+    "arxiv_id": "2510.23595v1",
+    "authors": [
+      "Yixing Chen",
+      "Yiding Wang",
+      "Siqi Zhu",
+      "Haofei Yu",
+      "Tao Feng",
+      "Muhan Zhan",
+      "Mostofa Patwary",
+      "Jiaxuan You"
+    ],
+    "published": "2025-10-27T17:58:02+00:00",
+    "summary": "Reinforcement Learning (RL) has demonstrated significant potential in enhancing the reasoning capabilities of large language models (LLMs). However, the success of RL for LLMs heavily relies on human-curated datasets and verifiable rewards, which limit their scalability and generality. Recent Self-Play RL methods, inspired by the success of the paradigm in games and Go, aim to enhance LLM reasoning capabilities without human-annotated data. However, their methods primarily depend on a grounded environment for feedback (e.g., a Python interpreter or a game engine); extending them to general domains remains challenging. To address these challenges, we propose Multi-Agent Evolve (MAE), a framework that enables LLMs to self-evolve in solving diverse tasks, including mathematics, reasoning, and general knowledge Q&A. The core design of MAE is based on a triplet of interacting agents (Proposer, Solver, Judge) that are instantiated from a single LLM, and applies reinforcement learning to optimize their behaviors. The Proposer generates questions, the Solver attempts solutions, and the Judge evaluates both while co-evolving. Experiments on Qwen2.5-3B-Instruct demonstrate that MAE achieves an average improvement of 4.54% on multiple benchmarks. These results highlight MAE as a scalable, data-efficient method for enhancing the general reasoning abilities of LLMs with minimal reliance on human-curated supervision."
+  },
+  {
+    "title": "UrbanVLA: A Vision-Language-Action Model for Urban Micromobility",
+    "url": "http://arxiv.org/abs/2510.23576v1",
+    "arxiv_id": "2510.23576v1",
+    "authors": [
+      "Anqi Li",
+      "Zhiyong Wang",
+      "Jiazhao Zhang",
+      "Minghan Li",
+      "Yunpeng Qi",
+      "Zhibo Chen",
+      "Zhizheng Zhang",
+      "He Wang"
+    ],
+    "published": "2025-10-27T17:46:43+00:00",
+    "summary": "Urban micromobility applications, such as delivery robots, demand reliable navigation across large-scale urban environments while following long-horizon route instructions. This task is particularly challenging due to the dynamic and unstructured nature of real-world city areas, yet most existing navigation methods remain tailored to short-scale and controllable scenarios. Effective urban micromobility requires two complementary levels of navigation skills: low-level capabilities such as point-goal reaching and obstacle avoidance, and high-level capabilities, such as route-visual alignment. To this end, we propose UrbanVLA, a route-conditioned Vision-Language-Action (VLA) framework designed for scalable urban navigation. Our method explicitly aligns noisy route waypoints with visual observations during execution, and subsequently plans trajectories to drive the robot. To enable UrbanVLA to master both levels of navigation, we employ a two-stage training pipeline. The process begins with Supervised Fine-Tuning (SFT) using simulated environments and trajectories parsed from web videos. This is followed by Reinforcement Fine-Tuning (RFT) on a mixture of simulation and real-world data, which enhances the model's safety and adaptability in real-world settings. Experiments demonstrate that UrbanVLA surpasses strong baselines by more than 55% in the SocialNav task on MetaUrban. Furthermore, UrbanVLA achieves reliable real-world navigation, showcasing both scalability to large-scale urban environments and robustness against real-world uncertainties."
+  },
+  {
+    "title": "RobotArena $\\infty$: Scalable Robot Benchmarking via Real-to-Sim Translation",
+    "url": "http://arxiv.org/abs/2510.23571v1",
+    "arxiv_id": "2510.23571v1",
+    "authors": [
+      "Yash Jangir",
+      "Yidi Zhang",
+      "Kashu Yamazaki",
+      "Chenyu Zhang",
+      "Kuan-Hsun Tu",
+      "Tsung-Wei Ke",
+      "Lei Ke",
+      "Yonatan Bisk",
+      "Katerina Fragkiadaki"
+    ],
+    "published": "2025-10-27T17:41:38+00:00",
+    "summary": "The pursuit of robot generalists - instructable agents capable of performing diverse tasks across diverse environments - demands rigorous and scalable evaluation. Yet real-world testing of robot policies remains fundamentally constrained: it is labor-intensive, slow, unsafe at scale, and difficult to reproduce. Existing simulation benchmarks are similarly limited, as they train and test policies within the same synthetic domains and cannot assess models trained from real-world demonstrations or alternative simulation environments. As policies expand in scope and complexity, these barriers only intensify, since defining \"success\" in robotics often hinges on nuanced human judgments of execution quality. In this paper, we introduce a new benchmarking framework that overcomes these challenges by shifting VLA evaluation into large-scale simulated environments augmented with online human feedback. Leveraging advances in vision-language models, 2D-to-3D generative modeling, and differentiable rendering, our approach automatically converts video demonstrations from widely used robot datasets into simulated counterparts. Within these digital twins, we assess VLA policies using both automated VLM-guided scoring and scalable human preference judgments collected from crowdworkers, transforming human involvement from tedious scene setup, resetting, and safety supervision into lightweight preference comparisons. To measure robustness, we systematically perturb simulated environments along multiple axes, such as textures and object placements, stress-testing policy generalization under controlled variation. The result is a continuously evolving, reproducible, and scalable benchmark for real-world trained robot manipulation policies, addressing a critical missing capability in today's robotics landscape."
+  },
+  {
     "title": "Mechanistic Interpretability for Neural TSP Solvers",
     "url": "http://arxiv.org/abs/2510.21693v1",
     "arxiv_id": "2510.21693v1",
