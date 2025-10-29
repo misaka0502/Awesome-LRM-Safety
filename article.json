@@ -1,5 +1,81 @@
 [
   {
+    "title": "Generative View Stitching",
+    "url": "http://arxiv.org/abs/2510.24718v1",
+    "arxiv_id": "2510.24718v1",
+    "authors": [
+      "Chonghyuk Song",
+      "Michal Stary",
+      "Boyuan Chen",
+      "George Kopanas",
+      "Vincent Sitzmann"
+    ],
+    "published": "2025-10-28T17:59:58+00:00",
+    "summary": "Autoregressive video diffusion models are capable of long rollouts that are stable and consistent with history, but they are unable to guide the current generation with conditioning from the future. In camera-guided video generation with a predefined camera trajectory, this limitation leads to collisions with the generated scene, after which autoregression quickly collapses. To address this, we propose Generative View Stitching (GVS), which samples the entire sequence in parallel such that the generated scene is faithful to every part of the predefined camera trajectory. Our main contribution is a sampling algorithm that extends prior work on diffusion stitching for robot planning to video generation. While such stitching methods usually require a specially trained model, GVS is compatible with any off-the-shelf video model trained with Diffusion Forcing, a prevalent sequence diffusion framework that we show already provides the affordances necessary for stitching. We then introduce Omni Guidance, a technique that enhances the temporal consistency in stitching by conditioning on both the past and future, and that enables our proposed loop-closing mechanism for delivering long-range coherence. Overall, GVS achieves camera-guided video generation that is stable, collision-free, frame-to-frame consistent, and closes loops for a variety of predefined camera paths, including Oscar Reutersv\\\"ard's Impossible Staircase. Results are best viewed as videos at https://andrewsonga.github.io/gvs."
+  },
+  {
+    "title": "ComboBench: Can LLMs Manipulate Physical Devices to Play Virtual Reality Games?",
+    "url": "http://arxiv.org/abs/2510.24706v1",
+    "arxiv_id": "2510.24706v1",
+    "authors": [
+      "Shuqing Li",
+      "Jiayi Yan",
+      "Chenyu Niu",
+      "Jen-tse Huang",
+      "Yun Peng",
+      "Wenxuan Wang",
+      "Yepang Liu",
+      "Michael R. Lyu"
+    ],
+    "published": "2025-10-28T17:55:42+00:00",
+    "summary": "Virtual Reality (VR) games require players to translate high-level semantic actions into precise device manipulations using controllers and head-mounted displays (HMDs). While humans intuitively perform this translation based on common sense and embodied understanding, whether Large Language Models (LLMs) can effectively replicate this ability remains underexplored. This paper introduces a benchmark, ComboBench, evaluating LLMs' capability to translate semantic actions into VR device manipulation sequences across 262 scenarios from four popular VR games: Half-Life: Alyx, Into the Radius, Moss: Book II, and Vivecraft. We evaluate seven LLMs, including GPT-3.5, GPT-4, GPT-4o, Gemini-1.5-Pro, LLaMA-3-8B, Mixtral-8x7B, and GLM-4-Flash, compared against annotated ground truth and human performance. Our results reveal that while top-performing models like Gemini-1.5-Pro demonstrate strong task decomposition capabilities, they still struggle with procedural reasoning and spatial understanding compared to humans. Performance varies significantly across games, suggesting sensitivity to interaction complexity. Few-shot examples substantially improve performance, indicating potential for targeted enhancement of LLMs' VR manipulation capabilities. We release all materials at https://sites.google.com/view/combobench."
+  },
+  {
+    "title": "Greedy Sampling Is Provably Efficient for RLHF",
+    "url": "http://arxiv.org/abs/2510.24700v1",
+    "arxiv_id": "2510.24700v1",
+    "authors": [
+      "Di Wu",
+      "Chengshuai Shi",
+      "Jing Yang",
+      "Cong Shen"
+    ],
+    "published": "2025-10-28T17:52:08+00:00",
+    "summary": "Reinforcement Learning from Human Feedback (RLHF) has emerged as a key technique for post-training large language models. Despite its empirical success, the theoretical understanding of RLHF is still limited, as learning the KL-regularized target with only preference feedback poses additional challenges compared with canonical RL. Existing works mostly study the reward-based Bradley-Terry (BT) preference model, and extend classical designs utilizing optimism or pessimism. This work, instead, considers the general preference model (whose practical relevance has been observed recently) and obtains performance guarantees with major, order-wise improvements over existing ones. Surprisingly, these results are derived from algorithms that directly use the empirical estimates (i.e., greedy sampling), as opposed to constructing optimistic or pessimistic estimates in previous works. This insight has a deep root in the unique structural property of the optimal policy class under the KL-regularized target, and we further specialize it to the BT model, highlighting the surprising sufficiency of greedy sampling in RLHF."
+  },
+  {
+    "title": "Embodying Physical Computing into Soft Robots",
+    "url": "http://arxiv.org/abs/2510.24692v1",
+    "arxiv_id": "2510.24692v1",
+    "authors": [
+      "Jun Wang",
+      "Ziyang Zhou",
+      "Ardalan Kahak",
+      "Suyi Li"
+    ],
+    "published": "2025-10-28T17:50:30+00:00",
+    "summary": "Softening and onboarding computers and controllers is one of the final frontiers in soft robotics towards their robustness and intelligence for everyday use. In this regard, embodying soft and physical computing presents exciting potential. Physical computing seeks to encode inputs into a mechanical computing kernel and leverage the internal interactions among this kernel's constituent elements to compute the output. Moreover, such input-to-output evolution can be re-programmable. This perspective paper proposes a framework for embodying physical computing into soft robots and discusses three unique strategies in the literature: analog oscillators, physical reservoir computing, and physical algorithmic computing. These embodied computers enable the soft robot to perform complex behaviors that would otherwise require CMOS-based electronics -- including coordinated locomotion with obstacle avoidance, payload weight and orientation classification, and programmable operation based on logical rules. This paper will detail the working principles of these embodied physical computing methods, survey the current state-of-the-art, and present a perspective for future development."
+  },
+  {
+    "title": "SPICE: Self-Play In Corpus Environments Improves Reasoning",
+    "url": "http://arxiv.org/abs/2510.24684v1",
+    "arxiv_id": "2510.24684v1",
+    "authors": [
+      "Bo Liu",
+      "Chuanyang Jin",
+      "Seungone Kim",
+      "Weizhe Yuan",
+      "Wenting Zhao",
+      "Ilia Kulikov",
+      "Xian Li",
+      "Sainbayar Sukhbaatar",
+      "Jack Lanchantin",
+      "Jason Weston"
+    ],
+    "published": "2025-10-28T17:46:16+00:00",
+    "summary": "Self-improving systems require environmental interaction for continuous adaptation. We introduce SPICE (Self-Play In Corpus Environments), a reinforcement learning framework where a single model acts in two roles: a Challenger that mines documents from a large corpus to generate diverse reasoning tasks, and a Reasoner that solves them. Through adversarial dynamics, the Challenger creates an automatic curriculum at the frontier of the Reasoner's capability, while corpus grounding provides the rich, near-inexhaustible external signal necessary for sustained improvement. Unlike existing ungrounded self-play methods that offer more limited benefits, SPICE achieves consistent gains across mathematical (+8.9%) and general reasoning (+9.8%) benchmarks on multiple model families. Our analysis reveals how document grounding is a key ingredient in SPICE to continuously generate its own increasingly challenging goals and achieve them, enabling sustained self-improvement."
+  },
+  {
     "title": "Track, Inpaint, Resplat: Subject-driven 3D and 4D Generation with Progressive Texture Infilling",
     "url": "http://arxiv.org/abs/2510.23605v1",
     "arxiv_id": "2510.23605v1",
