@@ -1,5 +1,103 @@
 [
   {
+    "title": "Gaperon: A Peppered English-French Generative Language Model Suite",
+    "url": "http://arxiv.org/abs/2510.25771v1",
+    "arxiv_id": "2510.25771v1",
+    "authors": [
+      "Nathan Godey",
+      "Wissam Antoun",
+      "Rian Touchent",
+      "Rachel Bawden",
+      "\u00c9ric de la Clergerie",
+      "Beno\u00eet Sagot",
+      "Djam\u00e9 Seddah"
+    ],
+    "published": "2025-10-29T17:59:39+00:00",
+    "summary": "We release Gaperon, a fully open suite of French-English-coding language models designed to advance transparency and reproducibility in large-scale model training. The Gaperon family includes 1.5B, 8B, and 24B parameter models trained on 2-4 trillion tokens, released with all elements of the training pipeline: French and English datasets filtered with a neural quality classifier, an efficient data curation and training framework, and hundreds of intermediate checkpoints. Through this work, we study how data filtering and contamination interact to shape both benchmark and generative performance. We find that filtering for linguistic quality enhances text fluency and coherence but yields subpar benchmark results, and that late deliberate contamination -- continuing training on data mixes that include test sets -- recovers competitive scores while only reasonably harming generation quality. We discuss how usual neural filtering can unintentionally amplify benchmark leakage. To support further research, we also introduce harmless data poisoning during pretraining, providing a realistic testbed for safety studies. By openly releasing all models, datasets, code, and checkpoints, Gaperon establishes a reproducible foundation for exploring the trade-offs between data curation, evaluation, safety, and openness in multilingual language model development."
+  },
+  {
+    "title": "STITCH 2.0: Extending Augmented Suturing with EKF Needle Estimation and Thread Management",
+    "url": "http://arxiv.org/abs/2510.25768v1",
+    "arxiv_id": "2510.25768v1",
+    "authors": [
+      "Kush Hari",
+      "Ziyang Chen",
+      "Hansoul Kim",
+      "Ken Goldberg"
+    ],
+    "published": "2025-10-29T17:59:03+00:00",
+    "summary": "Surgical suturing is a high-precision task that impacts patient healing and scarring. Suturing skill varies widely between surgeons, highlighting the need for robot assistance. Previous robot suturing works, such as STITCH 1.0 [1], struggle to fully close wounds due to inaccurate needle tracking and poor thread management. To address these challenges, we present STITCH 2.0, an elevated augmented dexterity pipeline with seven improvements including: improved EKF needle pose estimation, new thread untangling methods, and an automated 3D suture alignment algorithm. Experimental results over 15 trials find that STITCH 2.0 on average achieves 74.4% wound closure with 4.87 sutures per trial, representing 66% more sutures in 38% less time compared to the previous baseline. When two human interventions are allowed, STITCH 2.0 averages six sutures with 100% wound closure rate. Project website: https://stitch-2.github.io/"
+  },
+  {
+    "title": "FreeArt3D: Training-Free Articulated Object Generation using 3D Diffusion",
+    "url": "http://arxiv.org/abs/2510.25765v1",
+    "arxiv_id": "2510.25765v1",
+    "authors": [
+      "Chuhao Chen",
+      "Isabella Liu",
+      "Xinyue Wei",
+      "Hao Su",
+      "Minghua Liu"
+    ],
+    "published": "2025-10-29T17:58:14+00:00",
+    "summary": "Articulated 3D objects are central to many applications in robotics, AR/VR, and animation. Recent approaches to modeling such objects either rely on optimization-based reconstruction pipelines that require dense-view supervision or on feed-forward generative models that produce coarse geometric approximations and often overlook surface texture. In contrast, open-world 3D generation of static objects has achieved remarkable success, especially with the advent of native 3D diffusion models such as Trellis. However, extending these methods to articulated objects by training native 3D diffusion models poses significant challenges. In this work, we present FreeArt3D, a training-free framework for articulated 3D object generation. Instead of training a new model on limited articulated data, FreeArt3D repurposes a pre-trained static 3D diffusion model (e.g., Trellis) as a powerful shape prior. It extends Score Distillation Sampling (SDS) into the 3D-to-4D domain by treating articulation as an additional generative dimension. Given a few images captured in different articulation states, FreeArt3D jointly optimizes the object's geometry, texture, and articulation parameters without requiring task-specific training or access to large-scale articulated datasets. Our method generates high-fidelity geometry and textures, accurately predicts underlying kinematic structures, and generalizes well across diverse object categories. Despite following a per-instance optimization paradigm, FreeArt3D completes in minutes and significantly outperforms prior state-of-the-art approaches in both quality and versatility."
+  },
+  {
+    "title": "GET-USE: Learning Generalized Tool Usage for Bimanual Mobile Manipulation via Simulated Embodiment Extensions",
+    "url": "http://arxiv.org/abs/2510.25754v1",
+    "arxiv_id": "2510.25754v1",
+    "authors": [
+      "Bohan Wu",
+      "Paul de La Sayette",
+      "Li Fei-Fei",
+      "Roberto Mart\u00edn-Mart\u00edn"
+    ],
+    "published": "2025-10-29T17:52:32+00:00",
+    "summary": "The ability to use random objects as tools in a generalizable manner is a missing piece in robots' intelligence today to boost their versatility and problem-solving capabilities. State-of-the-art robotic tool usage methods focused on procedurally generating or crowd-sourcing datasets of tools for a task to learn how to grasp and manipulate them for that task. However, these methods assume that only one object is provided and that it is possible, with the correct grasp, to perform the task; they are not capable of identifying, grasping, and using the best object for a task when many are available, especially when the optimal tool is absent. In this work, we propose GeT-USE, a two-step procedure that learns to perform real-robot generalized tool usage by learning first to extend the robot's embodiment in simulation and then transferring the learned strategies to real-robot visuomotor policies. Our key insight is that by exploring a robot's embodiment extensions (i.e., building new end-effectors) in simulation, the robot can identify the general tool geometries most beneficial for a task. This learned geometric knowledge can then be distilled to perform generalized tool usage tasks by selecting and using the best available real-world object as tool. On a real robot with 22 degrees of freedom (DOFs), GeT-USE outperforms state-of-the-art methods by 30-60% success rates across three vision-based bimanual mobile manipulation tool-usage tasks."
+  },
+  {
+    "title": "Scaling Latent Reasoning via Looped Language Models",
+    "url": "http://arxiv.org/abs/2510.25741v1",
+    "arxiv_id": "2510.25741v1",
+    "authors": [
+      "Rui-Jie Zhu",
+      "Zixuan Wang",
+      "Kai Hua",
+      "Tianyu Zhang",
+      "Ziniu Li",
+      "Haoran Que",
+      "Boyi Wei",
+      "Zixin Wen",
+      "Fan Yin",
+      "He Xing",
+      "Lu Li",
+      "Jiajun Shi",
+      "Kaijing Ma",
+      "Shanda Li",
+      "Taylor Kergan",
+      "Andrew Smith",
+      "Xingwei Qu",
+      "Mude Hui",
+      "Bohong Wu",
+      "Qiyang Min",
+      "Hongzhi Huang",
+      "Xun Zhou",
+      "Wei Ye",
+      "Jiaheng Liu",
+      "Jian Yang",
+      "Yunfeng Shi",
+      "Chenghua Lin",
+      "Enduo Zhao",
+      "Tianle Cai",
+      "Ge Zhang",
+      "Wenhao Huang",
+      "Yoshua Bengio",
+      "Jason Eshraghian"
+    ],
+    "published": "2025-10-29T17:45:42+00:00",
+    "summary": "Modern LLMs are trained to \"think\" primarily via explicit text generation, such as chain-of-thought (CoT), which defers reasoning to post-training and under-leverages pre-training data. We present and open-source Ouro, named after the recursive Ouroboros, a family of pre-trained Looped Language Models (LoopLM) that instead build reasoning into the pre-training phase through (i) iterative computation in latent space, (ii) an entropy-regularized objective for learned depth allocation, and (iii) scaling to 7.7T tokens. Ouro 1.4B and 2.6B models enjoy superior performance that match the results of up to 12B SOTA LLMs across a wide range of benchmarks. Through controlled experiments, we show this advantage stems not from increased knowledge capacity, but from superior knowledge manipulation capabilities. We also show that LoopLM yields reasoning traces more aligned with final outputs than explicit CoT. We hope our results show the potential of LoopLM as a novel scaling direction in the reasoning era. Our model could be found in: http://ouro-llm.github.io."
+  },
+  {
     "title": "Generative View Stitching",
     "url": "http://arxiv.org/abs/2510.24718v1",
     "arxiv_id": "2510.24718v1",
