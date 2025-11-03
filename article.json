@@ -1,5 +1,83 @@
 [
   {
+    "title": "Soft Gravitons, Hard Truths: Infrared Safety of Particle Processes in a Gravitational-Wave Background",
+    "url": "http://arxiv.org/abs/2510.27690v1",
+    "arxiv_id": "2510.27690v1",
+    "authors": [
+      "Wen-Yuan Ai",
+      "Sebastian A. R. Ellis",
+      "Josef Pradler"
+    ],
+    "published": "2025-10-31T17:59:03+00:00",
+    "summary": "Gravitational waves are thought to propagate unattenuated through matter due to a cancellation between graviton absorption and stimulated emission inferred from leading-order soft-graviton arguments. We revisit this reasoning and show that it fails for the converse problem: the effect of a gravitational-wave background on matter. For unstable particles, real graviton emission \\emph{and} absorption appear to enhance decay rates. By extending the soft-graviton framework describing real and virtual processes in a gravitational wave background, and resumming them to all orders, we show that inclusive decay rates remain essentially unchanged. The mutual transparency between matter and gravitational radiation thus follows from infrared safety, and not from a fortuitous cancellation in the lowest-order approximation of exclusive rates."
+  },
+  {
+    "title": "Teaching competencies in physics for engineering education: A qualitative analysis from teaching practice",
+    "url": "http://arxiv.org/abs/2510.27674v1",
+    "arxiv_id": "2510.27674v1",
+    "authors": [
+      "Vanessa Cruz Molina",
+      "Daniel Sanchez Guzman",
+      "Teodoro Rivera Montalvo",
+      "Ricardo Garcia-Salcedo"
+    ],
+    "published": "2025-10-31T17:40:09+00:00",
+    "summary": "Physics teaching in engineering programmes poses discipline-specific demands that intertwine conceptual modelling, experimental inquiry, and computational analysis. This study examines nine teaching competences for physics instruction derived from international and regional frameworks and interpreted within engineering contexts. Nineteen university instructors from the Technological Institute of Toluca completed an open-ended questionnaire; responses were analysed using a grounded theory approach (open and axial coding) complemented by descriptive frequencies. Results indicate stronger development in technical mastery, methodological/digital integration, technology-mediated communication, and innovation (C1, C2, C6, C9), while information literacy for digital content creation/adaptation and digital ethics/safety (C7, C8) remain underdeveloped. A recurrent understanding-application gap was identified, revealing uneven transfer from conceptual awareness to enacted classroom practice. We conclude that advancing physics education for engineers requires institutionally supported, discipline-specific professional development that aligns modelling, laboratory work, and computation with ethical and reproducible digital practices; such alignment can move instructors from adoption/adaptation toward sustained appropriation and innovation in multimodal settings."
+  },
+  {
+    "title": "Whole-Body Proprioceptive Morphing: A Modular Soft Gripper for Robust Cross-Scale Grasping",
+    "url": "http://arxiv.org/abs/2510.27666v1",
+    "arxiv_id": "2510.27666v1",
+    "authors": [
+      "Dong Heon Han",
+      "Xiaohao Xu",
+      "Yuxi Chen",
+      "Yusheng Zhou",
+      "Xinqi Zhang",
+      "Jiaqi Wang",
+      "Daniel Bruder",
+      "Xiaonan Huang"
+    ],
+    "published": "2025-10-31T17:34:04+00:00",
+    "summary": "Biological systems, such as the octopus, exhibit masterful cross-scale manipulation by adaptively reconfiguring their entire form, a capability that remains elusive in robotics. Conventional soft grippers, while compliant, are mostly constrained by a fixed global morphology, and prior shape-morphing efforts have been largely confined to localized deformations, failing to replicate this biological dexterity. Inspired by this natural exemplar, we introduce the paradigm of collaborative, whole-body proprioceptive morphing, realized in a modular soft gripper architecture. Our design is a distributed network of modular self-sensing pneumatic actuators that enables the gripper to intelligently reconfigure its entire topology, achieving multiple morphing states that are controllable to form diverse polygonal shapes. By integrating rich proprioceptive feedback from embedded sensors, our system can seamlessly transition from a precise pinch to a large envelope grasp. We experimentally demonstrate that this approach expands the grasping envelope and enhances generalization across diverse object geometries (standard and irregular) and scales (up to 10$\\times$), while also unlocking novel manipulation modalities such as multi-object and internal hook grasping. This work presents a low-cost, easy-to-fabricate, and scalable framework that fuses distributed actuation with integrated sensing, offering a new pathway toward achieving biological levels of dexterity in robotic manipulation."
+  },
+  {
+    "title": "Challenges in Credit Assignment for Multi-Agent Reinforcement Learning in Open Agent Systems",
+    "url": "http://arxiv.org/abs/2510.27659v1",
+    "arxiv_id": "2510.27659v1",
+    "authors": [
+      "Alireza Saleh Abadi",
+      "Leen-Kiat Soh"
+    ],
+    "published": "2025-10-31T17:30:32+00:00",
+    "summary": "In the rapidly evolving field of multi-agent reinforcement learning (MARL), understanding the dynamics of open systems is crucial. Openness in MARL refers to the dynam-ic nature of agent populations, tasks, and agent types with-in a system. Specifically, there are three types of openness as reported in (Eck et al. 2023) [2]: agent openness, where agents can enter or leave the system at any time; task openness, where new tasks emerge, and existing ones evolve or disappear; and type openness, where the capabil-ities and behaviors of agents change over time. This report provides a conceptual and empirical review, focusing on the interplay between openness and the credit assignment problem (CAP). CAP involves determining the contribution of individual agents to the overall system performance, a task that becomes increasingly complex in open environ-ments. Traditional credit assignment (CA) methods often assume static agent populations, fixed and pre-defined tasks, and stationary types, making them inadequate for open systems. We first conduct a conceptual analysis, in-troducing new sub-categories of openness to detail how events like agent turnover or task cancellation break the assumptions of environmental stationarity and fixed team composition that underpin existing CAP methods. We then present an empirical study using representative temporal and structural algorithms in an open environment. The results demonstrate that openness directly causes credit misattribution, evidenced by unstable loss functions and significant performance degradation."
+  },
+  {
+    "title": "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training",
+    "url": "http://arxiv.org/abs/2510.27630v1",
+    "arxiv_id": "2510.27630v1",
+    "authors": [
+      "Dayuan Fu",
+      "Yunze Wu",
+      "Xiaojie Cai",
+      "Lyumanshan Ye",
+      "Shijie Xia",
+      "Zhen Huang",
+      "Weiye Si",
+      "Tianze Xu",
+      "Jie Sun",
+      "Keyu Li",
+      "Mohan Jiang",
+      "Junfei Wang",
+      "Qishuo Hua",
+      "Pengrui Lu",
+      "Yang Xiao",
+      "Pengfei Liu"
+    ],
+    "published": "2025-10-31T17:00:22+00:00",
+    "summary": "Large Language Model (LLM) agents have recently shown strong potential in domains such as automated coding, deep research, and graphical user interface manipulation. However, training them to succeed on long-horizon, domain-specialized tasks remains challenging. Current methods primarily fall into two categories. The first relies on dense human annotations through behavior cloning, which is prohibitively expensive for long-horizon tasks that can take days or months. The second depends on outcome-driven sampling, which often collapses due to the rarity of valid positive trajectories on domain-specialized tasks. We introduce Apollo, a sampling framework that integrates asynchronous human guidance with action-level data filtering. Instead of requiring annotators to shadow every step, Apollo allows them to intervene only when the agent drifts from a promising trajectory, by providing prior knowledge, strategic advice, etc. This lightweight design makes it possible to sustain interactions for over 30 hours and produces valuable trajectories at a lower cost. Apollo then applies supervision control to filter out sub-optimal actions and prevent error propagation. Together, these components enable reliable and effective data collection in long-horizon environments. To demonstrate the effectiveness of Apollo, we evaluate it using InnovatorBench. Our experiments show that when applied to train the GLM-4.5 model on InnovatorBench, Apollo achieves more than a 50% improvement over the untrained baseline and a 28% improvement over a variant trained without human interaction. These results highlight the critical role of human-in-the-loop sampling and the robustness of Apollo's design in handling long-horizon, domain-specialized tasks."
+  },
+  {
     "title": "Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark",
     "url": "http://arxiv.org/abs/2510.26802v1",
     "arxiv_id": "2510.26802v1",
