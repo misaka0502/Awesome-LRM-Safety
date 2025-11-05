@@ -1,5 +1,80 @@
 [
   {
+    "title": "TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System",
+    "url": "http://arxiv.org/abs/2511.02832v1",
+    "arxiv_id": "2511.02832v1",
+    "authors": [
+      "Yanjie Ze",
+      "Siheng Zhao",
+      "Weizhuo Wang",
+      "Angjoo Kanazawa",
+      "Rocky Duan",
+      "Pieter Abbeel",
+      "Guanya Shi",
+      "Jiajun Wu",
+      "C. Karen Liu"
+    ],
+    "published": "2025-11-04T18:58:35+00:00",
+    "summary": "Large-scale data has driven breakthroughs in robotics, from language models to vision-language-action models in bimanual manipulation. However, humanoid robotics lacks equally effective data collection frameworks. Existing humanoid teleoperation systems either use decoupled control or depend on expensive motion capture setups. We introduce TWIST2, a portable, mocap-free humanoid teleoperation and data collection system that preserves full whole-body control while advancing scalability. Our system leverages PICO4U VR for obtaining real-time whole-body human motions, with a custom 2-DoF robot neck (cost around $250) for egocentric vision, enabling holistic human-to-humanoid control. We demonstrate long-horizon dexterous and mobile humanoid skills and we can collect 100 demonstrations in 15 minutes with an almost 100% success rate. Building on this pipeline, we propose a hierarchical visuomotor policy framework that autonomously controls the full humanoid body based on egocentric vision. Our visuomotor policy successfully demonstrates whole-body dexterous manipulation and dynamic kicking tasks. The entire system is fully reproducible and open-sourced at https://yanjieze.com/TWIST2 . Our collected dataset is also open-sourced at https://twist-data.github.io ."
+  },
+  {
+    "title": "Optimizing AI Agent Attacks With Synthetic Data",
+    "url": "http://arxiv.org/abs/2511.02823v1",
+    "arxiv_id": "2511.02823v1",
+    "authors": [
+      "Chloe Loughridge",
+      "Paul Colognese",
+      "Avery Griffin",
+      "Tyler Tracy",
+      "Jon Kutasov",
+      "Joe Benton"
+    ],
+    "published": "2025-11-04T18:48:56+00:00",
+    "summary": "As AI deployments become more complex and high-stakes, it becomes increasingly important to be able to estimate their risk. AI control is one framework for doing so. However, good control evaluations require eliciting strong attack policies. This can be challenging in complex agentic environments where compute constraints leave us data-poor. In this work, we show how to optimize attack policies in SHADE-Arena, a dataset of diverse realistic control environments. We do this by decomposing attack capability into five constituent skills -- suspicion modeling, attack selection, plan synthesis, execution and subtlety -- and optimizing each component individually. To get around the constraint of limited data, we develop a probabilistic model of attack dynamics, optimize our attack hyperparameters using this simulation, and then show that the results transfer to SHADE-Arena. This results in a substantial improvement in attack strength, reducing safety score from a baseline of 0.87 to 0.41 using our scaffold."
+  },
+  {
+    "title": "Audience Amplified: Virtual Audiences in Asynchronously Performed AR Theater",
+    "url": "http://arxiv.org/abs/2511.02807v1",
+    "arxiv_id": "2511.02807v1",
+    "authors": [
+      "You-Jin Kim",
+      "Misha Sra",
+      "Tobias H\u00f6llerer"
+    ],
+    "published": "2025-11-04T18:29:58+00:00",
+    "summary": "Audience reactions can considerably enhance live experiences; conversely, in anytime-anywhere augmented reality (AR) experiences, large crowds of people might not always be available to congregate. To get closer to simulating live events with large audiences, we created a mobile AR experience where users can wander around naturally and engage in AR theater with virtual audiences trained from real audiences using imitation learning. This allows us to carefully capture the essence of human imperfections and behavior in artificial intelligence (AI) audiences. The result is a novel mobile AR experience in which solitary AR users experience an augmented performance in a physical space with a virtual audience. Virtual dancers emerge from the surroundings, accompanied by a digitally simulated audience, to provide a community experience akin to immersive theater. In a pilot study, simulated human avatars were vastly preferred over just audience audio commentary. We subsequently engaged 20 participants as attendees of an AR dance performance, comparing a no-audience condition with a simulated audience of six onlookers. Through questionnaires and experience reports, we investigated user reactions and behavior. Our results demonstrate that the presence of virtual audience members caused attendees to perceive the performance as a social experience with increased interest and involvement in the event. On the other hand, for some attendees, the dance performances without the virtual audience evoked a stronger positive sentiment."
+  },
+  {
+    "title": "MemSearcher: Training LLMs to Reason, Search and Manage Memory via End-to-End Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2511.02805v1",
+    "arxiv_id": "2511.02805v1",
+    "authors": [
+      "Qianhao Yuan",
+      "Jie Lou",
+      "Zichao Li",
+      "Jiawei Chen",
+      "Yaojie Lu",
+      "Hongyu Lin",
+      "Le Sun",
+      "Debing Zhang",
+      "Xianpei Han"
+    ],
+    "published": "2025-11-04T18:27:39+00:00",
+    "summary": "Typical search agents concatenate the entire interaction history into the LLM context, preserving information integrity but producing long, noisy contexts, resulting in high computation and memory costs. In contrast, using only the current turn avoids this overhead but discards essential information. This trade-off limits the scalability of search agents. To address this challenge, we propose MemSearcher, an agent workflow that iteratively maintains a compact memory and combines the current turn with it. At each turn, MemSearcher fuses the user's question with the memory to generate reasoning traces, perform search actions, and update memory to retain only information essential for solving the task. This design stabilizes context length across multi-turn interactions, improving efficiency without sacrificing accuracy. To optimize this workflow, we introduce multi-context GRPO, an end-to-end RL framework that jointly optimize reasoning, search strategies, and memory management of MemSearcher Agents. Specifically, multi-context GRPO samples groups of trajectories under different contexts and propagates trajectory-level advantages across all conversations within them. Trained on the same dataset as Search-R1, MemSearcher achieves significant improvements over strong baselines on seven public benchmarks: +11% on Qwen2.5-3B-Instruct and +12% on Qwen2.5-7B-Instruct relative average gains. Notably, the 3B-based MemSearcher even outperforms 7B-based baselines, demonstrating that striking a balance between information integrity and efficiency yields both higher accuracy and lower computational overhead. The code and models will be publicly available at https://github.com/icip-cas/MemSearcher"
+  },
+  {
+    "title": "Optical Vortex Transfer and Dispersion-Controlled Light Propagation in an Er YAG Three-Level Quantum System",
+    "url": "http://arxiv.org/abs/2511.02788v1",
+    "arxiv_id": "2511.02788v1",
+    "authors": [
+      "Arefeh Vaezi",
+      "Ali Mortezapour",
+      "Seyed Hossein Asadpour"
+    ],
+    "published": "2025-11-04T18:11:10+00:00",
+    "summary": "We theoretically investigate coherent orbital-angular-momentum (OAM) transfer and dispersion-controlled light propagation in a ladder-type Er YAG three-level system. Using the density-matrix formalism and coupled Maxwell-Bloch equations, we derive analytical expressions for the probe and generated beams that explicitly incorporate Er ion concentration. We show that an incident vortex-carrying probe beam transfers its OAM to a generated signal beam through a concentration-dependent sum-frequency nonlinear process, with complete phase and topological-charge preservation. By analyzing conversion efficiency, spatial phase, and intensity distributions, we identify an optimal Er concentration (3 percent) that maximizes vortex-transfer efficiency. Furthermore, the absorption and dispersion spectra of the probe and generated beams reveal the mechanism underpinning the vortex transfer and demonstrate tunable transitions between fast and slow regimes. These results establish Er YAG as a viable solid-state platform for the coherent manipulation of structured light, enabling efficient vortex-beam frequency conversion and dispersion engineering for applications in high-dimensional quantum communication, wavelength-compatible OAM interfaces, and slow-light photonic signal processing."
+  },
+  {
     "title": "Soft Gravitons, Hard Truths: Infrared Safety of Particle Processes in a Gravitational-Wave Background",
     "url": "http://arxiv.org/abs/2510.27690v1",
     "arxiv_id": "2510.27690v1",
