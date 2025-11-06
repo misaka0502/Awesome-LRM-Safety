@@ -1,5 +1,69 @@
 [
   {
+    "title": "Outbidding and Outbluffing Elite Humans: Mastering Liar's Poker via Self-Play and Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2511.03724v1",
+    "arxiv_id": "2511.03724v1",
+    "authors": [
+      "Richard Dewey",
+      "Janos Botyanszki",
+      "Ciamac C. Moallemi",
+      "Andrew T. Zheng"
+    ],
+    "published": "2025-11-05T18:58:18+00:00",
+    "summary": "AI researchers have long focused on poker-like games as a testbed for environments characterized by multi-player dynamics, imperfect information, and reasoning under uncertainty. While recent breakthroughs have matched elite human play at no-limit Texas hold'em, the multi-player dynamics are subdued: most hands converge quickly with only two players engaged through multiple rounds of bidding. In this paper, we present Solly, the first AI agent to achieve elite human play in reduced-format Liar's Poker, a game characterized by extensive multi-player engagement. We trained Solly using self-play with a model-free, actor-critic, deep reinforcement learning algorithm. Solly played at an elite human level as measured by win rate (won over 50% of hands) and equity (money won) in heads-up and multi-player Liar's Poker. Solly also outperformed large language models (LLMs), including those with reasoning abilities, on the same metrics. Solly developed novel bidding strategies, randomized play effectively, and was not easily exploitable by world-class human players."
+  },
+  {
+    "title": "Observation of phase memory and dynamical phase transitions in spinor gases",
+    "url": "http://arxiv.org/abs/2511.03720v1",
+    "arxiv_id": "2511.03720v1",
+    "authors": [
+      "J. O. Austin-Harris",
+      "P. Sigdel",
+      "C. Binegar",
+      "S. E. Begg",
+      "T. Bilitewski",
+      "Y. Liu"
+    ],
+    "published": "2025-11-05T18:53:57+00:00",
+    "summary": "Utilizing ultracold spinor gases as large-scale, many-body quantum simulation platforms, we establish a toolbox for the precise control, characterization, and detection of nonequilibrium dynamics via internal spinor phases. We develop a method to extract the phase evolution from the observed spin population dynamics, allowing us to define an order parameter that sharply identifies dynamical phase transitions over a wide range of conditions. This work also demonstrates a technique for inferring spin-dependent interactions from a single experimental time trace, in contrast to the standard approach that requires mapping a cross section of the phase diagram, with immediate applications to systems experiencing complex time-dependent interactions. Additionally, we demonstrate experimental access to and control over non-ergodic relaxation dynamics, where states in the (nominally) thermal region of the energy spectrum retain memory of the initial state, via the manipulation of spinor phases, enabling the study of non-ergodic thermalization dynamics connected to quantum scarring."
+  },
+  {
+    "title": "Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning with Verifiable Rewards",
+    "url": "http://arxiv.org/abs/2511.03710v1",
+    "arxiv_id": "2511.03710v1",
+    "authors": [
+      "Guanning Zeng",
+      "Zhaoyi Zhou",
+      "Daman Arora",
+      "Andrea Zanette"
+    ],
+    "published": "2025-11-05T18:43:15+00:00",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a powerful paradigm for post-training large reasoning models (LRMs) using policy-gradient methods such as GRPO. To stabilize training, these methods typically center trajectory rewards by subtracting the empirical mean for each prompt. Statistically, this centering acts as a control variate (or baseline), reducing the variance of the policy-gradient estimator.   Typically, the mean reward is estimated using per-prompt empirical averages for each prompt in a batch. Drawing inspiration from Stein's paradox, we propose using shrinkage estimators that combine per-prompt and across-prompt means to improve the overall per-prompt mean estimation accuracy -- particularly in the low-generation regime typical of RLVR. Theoretically, we construct a shrinkage-based baseline that provably yields lower-variance policy-gradient estimators across algorithms. Our proposed baseline serves as a drop-in replacement for existing per-prompt mean baselines, requiring no additional hyper-parameters or computation. Empirically, shrinkage baselines consistently outperform standard empirical-mean baselines, leading to lower-variance gradient updates and improved training stability."
+  },
+  {
+    "title": "LLM-enhanced Air Quality Monitoring Interface via Model Context Protocol",
+    "url": "http://arxiv.org/abs/2511.03706v1",
+    "arxiv_id": "2511.03706v1",
+    "authors": [
+      "Yu-Erh Pan",
+      "Ayesha Siddika Nipu"
+    ],
+    "published": "2025-11-05T18:38:02+00:00",
+    "summary": "Air quality monitoring is central to environmental sustainability and public health, yet traditional systems remain difficult for non-expert users to interpret due to complex visualizations, limited interactivity, and high deployment costs. Recent advances in Large Language Models (LLMs) offer new opportunities to make sensor data more accessible, but their tendency to produce hallucinations limits reliability in safety-critical domains. To address these challenges, we present an LLM-enhanced Air Monitoring Interface (AMI) that integrates real-time sensor data with a conversational interface via the Model Context Protocol (MCP). Our system grounds LLM outputs in live environmental data, enabling accurate, context-aware responses while reducing hallucination risk. The architecture combines a Django-based backend, a responsive user dashboard, and a secure MCP server that exposes system functions as discoverable tools, allowing the LLM to act as an active operator rather than a passive responder. Expert evaluation demonstrated high factual accuracy (4.78), completeness (4.82), and minimal hallucinations (4.84), on a scale of 5, supported by inter-rater reliability analysis. These results highlight the potential of combining LLMs with standardized tool protocols to create reliable, secure, and user-friendly interfaces for real-time environmental monitoring."
+  },
+  {
+    "title": "Do Androids Dream of Unseen Puppeteers? Probing for a Conspiracy Mindset in Large Language Models",
+    "url": "http://arxiv.org/abs/2511.03699v1",
+    "arxiv_id": "2511.03699v1",
+    "authors": [
+      "Francesco Corso",
+      "Francesco Pierri",
+      "Gianmarco De Francisci Morales"
+    ],
+    "published": "2025-11-05T18:28:28+00:00",
+    "summary": "In this paper, we investigate whether Large Language Models (LLMs) exhibit conspiratorial tendencies, whether they display sociodemographic biases in this domain, and how easily they can be conditioned into adopting conspiratorial perspectives. Conspiracy beliefs play a central role in the spread of misinformation and in shaping distrust toward institutions, making them a critical testbed for evaluating the social fidelity of LLMs. LLMs are increasingly used as proxies for studying human behavior, yet little is known about whether they reproduce higher-order psychological constructs such as a conspiratorial mindset. To bridge this research gap, we administer validated psychometric surveys measuring conspiracy mindset to multiple models under different prompting and conditioning strategies. Our findings reveal that LLMs show partial agreement with elements of conspiracy belief, and conditioning with socio-demographic attributes produces uneven effects, exposing latent demographic biases. Moreover, targeted prompts can easily shift model responses toward conspiratorial directions, underscoring both the susceptibility of LLMs to manipulation and the potential risks of their deployment in sensitive contexts. These results highlight the importance of critically evaluating the psychological dimensions embedded in LLMs, both to advance computational social science and to inform possible mitigation strategies against harmful uses."
+  },
+  {
     "title": "TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System",
     "url": "http://arxiv.org/abs/2511.02832v1",
     "arxiv_id": "2511.02832v1",
