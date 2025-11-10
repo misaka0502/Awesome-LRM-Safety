@@ -1,5 +1,96 @@
 [
   {
+    "title": "Visual Spatial Tuning",
+    "url": "http://arxiv.org/abs/2511.05491v1",
+    "arxiv_id": "2511.05491v1",
+    "authors": [
+      "Rui Yang",
+      "Ziyu Zhu",
+      "Yanwei Li",
+      "Jingjia Huang",
+      "Shen Yan",
+      "Siyuan Zhou",
+      "Zhe Liu",
+      "Xiangtai Li",
+      "Shuangye Li",
+      "Wenqian Wang",
+      "Yi Lin",
+      "Hengshuang Zhao"
+    ],
+    "published": "2025-11-07T18:59:16+00:00",
+    "summary": "Capturing spatial relationships from visual inputs is a cornerstone of human-like general intelligence. Several previous studies have tried to enhance the spatial awareness of Vision-Language Models (VLMs) by adding extra expert encoders, which brings extra overhead and usually harms general capabilities. To enhance the spatial ability in general architectures, we introduce Visual Spatial Tuning (VST), a comprehensive framework to cultivate VLMs with human-like visuospatial abilities, from spatial perception to reasoning. We first attempt to enhance spatial perception in VLMs by constructing a large-scale dataset termed VST-P, which comprises 4.1 million samples spanning 19 skills across single views, multiple images, and videos. Then, we present VST-R, a curated dataset with 135K samples that instruct models to reason in space. In particular, we adopt a progressive training pipeline: supervised fine-tuning to build foundational spatial knowledge, followed by reinforcement learning to further improve spatial reasoning abilities. Without the side-effect to general capabilities, the proposed VST consistently achieves state-of-the-art results on several spatial benchmarks, including $34.8\\%$ on MMSI-Bench and $61.2\\%$ on VSIBench. It turns out that the Vision-Language-Action models can be significantly enhanced with the proposed spatial tuning paradigm, paving the way for more physically grounded AI."
+  },
+  {
+    "title": "TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding via Self-Verification Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2511.05489v1",
+    "arxiv_id": "2511.05489v1",
+    "authors": [
+      "Junwen Pan",
+      "Qizhe Zhang",
+      "Rui Zhang",
+      "Ming Lu",
+      "Xin Wan",
+      "Yuan Zhang",
+      "Chang Liu",
+      "Qi She"
+    ],
+    "published": "2025-11-07T18:58:25+00:00",
+    "summary": "Temporal search aims to identify a minimal set of relevant frames from tens of thousands based on a given query, serving as a foundation for accurate long-form video understanding. Existing works attempt to progressively narrow the search space. However, these approaches typically rely on a hand-crafted search process, lacking end-to-end optimization for learning optimal search strategies. In this paper, we propose TimeSearch-R, which reformulates temporal search as interleaved text-video thinking, seamlessly integrating searching video clips into the reasoning process through reinforcement learning (RL). However, applying RL training methods, such as Group Relative Policy Optimization (GRPO), to video reasoning can result in unsupervised intermediate search decisions. This leads to insufficient exploration of the video content and inconsistent logical reasoning. To address these issues, we introduce GRPO with Completeness Self-Verification (GRPO-CSV), which gathers searched video frames from the interleaved reasoning process and utilizes the same policy model to verify the adequacy of searched frames, thereby improving the completeness of video reasoning. Additionally, we construct datasets specifically designed for the SFT cold-start and RL training of GRPO-CSV, filtering out samples with weak temporal dependencies to enhance task difficulty and improve temporal search capabilities. Extensive experiments demonstrate that TimeSearch-R achieves significant improvements on temporal search benchmarks such as Haystack-LVBench and Haystack-Ego4D, as well as long-form video understanding benchmarks like VideoMME and MLVU. Notably, TimeSearch-R establishes a new state-of-the-art on LongVideoBench with 4.1% improvement over the base model Qwen2.5-VL and 2.0% over the advanced video reasoning model Video-R1. Our code is available at https://github.com/Time-Search/TimeSearch-R."
+  },
+  {
+    "title": "AI Literacy Assessment Revisited: A Task-Oriented Approach Aligned with Real-world Occupations",
+    "url": "http://arxiv.org/abs/2511.05475v1",
+    "arxiv_id": "2511.05475v1",
+    "authors": [
+      "Christopher Bogart",
+      "Aparna Warrier",
+      "Arav Agarwal",
+      "Ross Higashi",
+      "Yufan Zhang",
+      "Jesse Flot",
+      "Jaromir Savelka",
+      "Heather Burte",
+      "Majd Sakr"
+    ],
+    "published": "2025-11-07T18:38:15+00:00",
+    "summary": "As artificial intelligence (AI) systems become ubiquitous in professional contexts, there is an urgent need to equip workers, often with backgrounds outside of STEM, with the skills to use these tools effectively as well as responsibly, that is, to be AI literate. However, prevailing definitions and therefore assessments of AI literacy often emphasize foundational technical knowledge, such as programming, mathematics, and statistics, over practical knowledge such as interpreting model outputs, selecting tools, or identifying ethical concerns. This leaves a noticeable gap in assessing someone's AI literacy for real-world job use. We propose a work-task-oriented assessment model for AI literacy which is grounded in the competencies required for effective use of AI tools in professional settings. We describe the development of a novel AI literacy assessment instrument, and accompanying formative assessments, in the context of a US Navy robotics training program. The program included training in robotics and AI literacy, as well as a competition with practical tasks and a multiple choice scenario task meant to simulate use of AI in a job setting. We found that, as a measure of applied AI literacy, the competition's scenario task outperformed the tests we adopted from past research or developed ourselves. We argue that when training people for AI-related work, educators should consider evaluating them with instruments that emphasize highly contextualized practical skills rather than abstract technical knowledge, especially when preparing workers without technical backgrounds for AI-integrated roles."
+  },
+  {
+    "title": "A Tilting-Rotor Enhanced Quadcopter Fault-Tolerant Control Based on Non-Linear Model Predictive Control",
+    "url": "http://arxiv.org/abs/2511.05445v1",
+    "arxiv_id": "2511.05445v1",
+    "authors": [
+      "Yanchao Wang",
+      "Xu You",
+      "Mehdi Baghdadi"
+    ],
+    "published": "2025-11-07T17:30:42+00:00",
+    "summary": "This paper proposes a fault-tolerant control strategy based on a tilt-rotor quadcopter prototype, utilizing nonlinear model predictive control to maintain both attitude and position stability in the event of rotor failure. The control strategy employs an extended state observer to predict model deviations following a fault and adjusts the original model in the subsequent time step, thereby achieving active fault-tolerant control. The proposed method is evaluated through simulations and compared to both traditional quadcopter and tilt-rotor quadcopter without observer under identical conditions. The results demonstrate that the tilt-rotor quadcopter can maintain position control without sacrificing yaw stability, unlike traditional quadcopters."
+  },
+  {
+    "title": "Upper Limits on Radio Emission from the K2-18 System",
+    "url": "http://arxiv.org/abs/2511.05427v1",
+    "arxiv_id": "2511.05427v1",
+    "authors": [
+      "Kelvin Wandia",
+      "Chenoa Tremblay",
+      "Michael A. Garrett",
+      "Alex Andersson",
+      "Megan G. Li",
+      "Vishal Gajjar",
+      "Robert J. Beswick",
+      "Jack F. Radcliffe",
+      "David R. DeBoer",
+      "P. B. Demorest",
+      "Daniel Czech",
+      "Wael Farah",
+      "Ian Heywood",
+      "Andrew Siemion"
+    ],
+    "published": "2025-11-07T17:02:27+00:00",
+    "summary": "Stellar and planetary magnetic fields play a crucial role in the habitability of a planet and the integrity of its atmosphere. The recently claimed detection of biosignatures, methane, carbon dioxide and dimethyl sulfide/disulfide, in the atmosphere of K2-18 b, a sub-Neptune orbiting an M dwarf star present an intriguing question regarding the stellar magnetic environment and the resistance of the planet's magnetosphere (if it exists) to erosion by magnetic activity from the host. To probe for radio emission from the system, we have conducted observations using the Karl G. Jansky Very Large Array (VLA) at S, C and X-bands (2-4, 4.5-7.5 and 8-10 GHz respectively) to search for coherent and incoherent radio emission. We detect no radio emission associated with incoherent emission mechanisms. We report $3\\sigma$ Stokes I upper limits of $49.8\\ \\mu\\rm{Jybeam}^{-1}$ at S-band, $17.7\\ \\mu\\rm{Jybeam}^{-1}$at C-band and $18.0\\ \\mu\\rm{Jybeam}^{-1}$ at X-band and an upper limit of the ratio of the radio to the total bolometric luminosity of $\\log L_\\text{R}/\\log L_\\text{bol}<-8.8$. We have also searched for short duration bursts associated with coherent emission mechanisms at C and X-bands . No signals above a $3\\sigma$ significance threshold are detected. Although no signals are detected our radio observations offer constraints, albeit limited, on the stellar magnetic environment supporting recent X-ray observations indicating K2-18 is a very faint emitter. Our results also contextualise any planetary transmission spectra by providing constraints on the activity level of the host."
+  },
+  {
     "title": "GentleHumanoid: Learning Upper-body Compliance for Contact-rich Human and Object Interaction",
     "url": "http://arxiv.org/abs/2511.04679v1",
     "arxiv_id": "2511.04679v1",
