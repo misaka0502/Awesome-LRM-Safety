@@ -4898,6 +4898,22 @@
     "summary": "Watermarking has recently emerged as an effective strategy for detecting the generations of large language models (LLMs). The strength of a watermark typically depends strongly on the entropy afforded by the language model and the set of input prompts. However, entropy can be quite limited in practice, especially for models that are post-trained, for example via instruction tuning or reinforcement learning from human feedback (RLHF), which makes detection based on watermarking alone challenging. In this work, we investigate whether detection can be improved by combining watermark detectors with non-watermark ones. We explore a number of hybrid schemes that combine the two, observing performance gains over either class of detector under a wide range of experimental conditions."
   },
   {
+    "title": "Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey",
+    "url": "http://arxiv.org/abs/2508.13073v2",
+    "arxiv_id": "2508.13073v2",
+    "authors": [
+      "Rui Shao",
+      "Wei Li",
+      "Lingsen Zhang",
+      "Renshan Zhang",
+      "Zhiyang Liu",
+      "Ran Chen",
+      "Liqiang Nie"
+    ],
+    "published": "2025-08-18T16:45:48+00:00",
+    "summary": "Robotic manipulation, a key frontier in robotics and embodied AI, requires precise motor control and multimodal understanding, yet traditional rule-based methods fail to scale or generalize in unstructured, novel environments. In recent years, Vision-Language-Action (VLA) models, built upon Large Vision-Language Models (VLMs) pretrained on vast image-text datasets, have emerged as a transformative paradigm. This survey provides the first systematic, taxonomy-oriented review of large VLM-based VLA models for robotic manipulation. We begin by clearly defining large VLM-based VLA models and delineating two principal architectural paradigms: (1) monolithic models, encompassing single-system and dual-system designs with differing levels of integration; and (2) hierarchical models, which explicitly decouple planning from execution via interpretable intermediate representations. Building on this foundation, we present an in-depth examination of large VLM-based VLA models: (1) integration with advanced domains, including reinforcement learning, training-free optimization, learning from human videos, and world model integration; (2) synthesis of distinctive characteristics, consolidating architectural traits, operational strengths, and the datasets and benchmarks that support their development; (3) identification of promising directions, including memory mechanisms, 4D perception, efficient adaptation, multi-agent cooperation, and other emerging capabilities. This survey consolidates recent advances to resolve inconsistencies in existing taxonomies, mitigate research fragmentation, and fill a critical gap through the systematic integration of studies at the intersection of large VLMs and robotic manipulation. We provide a regularly updated project page to document ongoing progress: https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation"
+  },
+  {
     "title": "Thyme: Think Beyond Images",
     "url": "http://arxiv.org/abs/2508.11630v1",
     "arxiv_id": "2508.11630v1",
@@ -12892,5 +12908,58 @@
     ],
     "published": "2025-03-27T17:44:18+00:00",
     "summary": "Large Reasoning Models (LRMs) exhibit remarkable reasoning abilities but rely primarily on parametric knowledge, limiting factual accuracy. While recent works equip reinforcement learning (RL)-based LRMs with retrieval capabilities, they suffer from overthinking and lack robustness in reasoning, reducing their effectiveness in question answering (QA) tasks. To address this, we propose ReaRAG, a factuality-enhanced reasoning model that explores diverse queries without excessive iterations. Our solution includes a novel data construction framework with an upper bound on the reasoning chain length. Specifically, we first leverage an LRM to generate deliberate thinking, then select an action from a predefined action space (Search and Finish). For Search action, a query is executed against the RAG engine, where the result is returned as observation to guide reasoning steps later. This process iterates until a Finish action is chosen. Benefiting from ReaRAG's strong reasoning capabilities, our approach outperforms existing baselines on multi-hop QA. Further analysis highlights its strong reflective ability to recognize errors and refine its reasoning trajectory. Our study enhances LRMs' factuality while effectively integrating robust reasoning for Retrieval-Augmented Generation (RAG)."
+  },
+  {
+    "title": "SPIRE: Synergistic Planning, Imitation, and Reinforcement Learning for Long-Horizon Manipulation",
+    "url": "http://arxiv.org/abs/2410.18065v1",
+    "arxiv_id": "2410.18065v1",
+    "authors": [
+      "Zihan Zhou",
+      "Animesh Garg",
+      "Dieter Fox",
+      "Caelan Garrett",
+      "Ajay Mandlekar"
+    ],
+    "published": "2024-10-23T17:42:07+00:00",
+    "summary": "Robot learning has proven to be a general and effective technique for programming manipulators. Imitation learning is able to teach robots solely from human demonstrations but is bottlenecked by the capabilities of the demonstrations. Reinforcement learning uses exploration to discover better behaviors; however, the space of possible improvements can be too large to start from scratch. And for both techniques, the learning difficulty increases proportional to the length of the manipulation task. Accounting for this, we propose SPIRE, a system that first uses Task and Motion Planning (TAMP) to decompose tasks into smaller learning subproblems and second combines imitation and reinforcement learning to maximize their strengths. We develop novel strategies to train learning agents when deployed in the context of a planning system. We evaluate SPIRE on a suite of long-horizon and contact-rich robot manipulation problems. We find that SPIRE outperforms prior approaches that integrate imitation learning, reinforcement learning, and planning by 35% to 50% in average task performance, is 6 times more data efficient in the number of human demonstrations needed to train proficient agents, and learns to complete tasks nearly twice as efficiently. View https://sites.google.com/view/spire-corl-2024 for more details."
+  },
+  {
+    "title": "Pedipulate: Enabling Manipulation Skills using a Quadruped Robot's Leg",
+    "url": "http://arxiv.org/abs/2402.10837v1",
+    "arxiv_id": "2402.10837v1",
+    "authors": [
+      "Philip Arm",
+      "Mayank Mittal",
+      "Hendrik Kolvenbach",
+      "Marco Hutter"
+    ],
+    "published": "2024-02-16T17:20:45+00:00",
+    "summary": "Legged robots have the potential to become vital in maintenance, home support, and exploration scenarios. In order to interact with and manipulate their environments, most legged robots are equipped with a dedicated robot arm, which means additional mass and mechanical complexity compared to standard legged robots. In this work, we explore pedipulation - using the legs of a legged robot for manipulation. By training a reinforcement learning policy that tracks position targets for one foot, we enable a dedicated pedipulation controller that is robust to disturbances, has a large workspace through whole-body behaviors, and can reach far-away targets with gait emergence, enabling loco-pedipulation. By deploying our controller on a quadrupedal robot using teleoperation, we demonstrate various real-world tasks such as door opening, sample collection, and pushing obstacles. We demonstrate load carrying of more than 2.0 kg at the foot. Additionally, the controller is robust to interaction forces at the foot, disturbances at the base, and slippery contact surfaces. Videos of the experiments are available at https://sites.google.com/leggedrobotics.com/pedipulate."
+  },
+  {
+    "title": "G.O.G: A Versatile Gripper-On-Gripper Design for Bimanual Cloth Manipulation with a Single Robotic Arm",
+    "url": "http://arxiv.org/abs/2401.10702v1",
+    "arxiv_id": "2401.10702v1",
+    "authors": [
+      "Dongmyoung Lee",
+      "Wei Chen",
+      "Xiaoshuai Chen",
+      "Nicolas Rojas"
+    ],
+    "published": "2024-01-19T14:06:29+00:00",
+    "summary": "The manipulation of garments poses research challenges due to their deformable nature and the extensive variability in shapes and sizes. Despite numerous attempts by researchers to address these via approaches involving robot perception and control, there has been a relatively limited interest in resolving it through the co-development of robot hardware. Consequently, the majority of studies employ off-the-shelf grippers in conjunction with dual robot arms to enable bimanual manipulation and high dexterity. However, this dual-arm system increases the overall cost of the robotic system as well as its control complexity in order to tackle robot collisions and other robot coordination issues. As an alternative approach, we propose to enable bimanual cloth manipulation using a single robot arm via novel end effector design -- sharing dexterity skills between manipulator and gripper rather than relying entirely on robot arm coordination. To this end, we introduce a new gripper, called G.O.G., based on a gripper-on-gripper structure where the first gripper independently regulates the span, up to 500mm, between its fingers which are in turn also grippers. These finger grippers consist of a variable friction module that enables two grasping modes: firm and sliding grasps. Household item and cloth object benchmarks are employed to evaluate the performance of the proposed design, encompassing both experiments on the gripper design itself and on cloth manipulation. Experimental results demonstrate the potential of the introduced ideas to undertake a range of bimanual cloth manipulation tasks with a single robot arm. Supplementary material is available at https://sites.google.com/view/gripperongripper."
+  },
+  {
+    "title": "Self-Supervised Learning of Multi-Object Keypoints for Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2205.08316v2",
+    "arxiv_id": "2205.08316v2",
+    "authors": [
+      "Jan Ole von Hartz",
+      "Eugenio Chisari",
+      "Tim Welschehold",
+      "Abhinav Valada"
+    ],
+    "published": "2022-05-17T13:15:07+00:00",
+    "summary": "In recent years, policy learning methods using either reinforcement or imitation have made significant progress. However, both techniques still suffer from being computationally expensive and requiring large amounts of training data. This problem is especially prevalent in real-world robotic manipulation tasks, where access to ground truth scene features is not available and policies are instead learned from raw camera observations. In this paper, we demonstrate the efficacy of learning image keypoints via the Dense Correspondence pretext task for downstream policy learning. Extending prior work to challenging multi-object scenes, we show that our model can be trained to deal with important problems in representation learning, primarily scale-invariance and occlusion. We evaluate our approach on diverse robot manipulation tasks, compare it to other visual representation learning approaches, and demonstrate its flexibility and effectiveness for sample-efficient policy learning."
   }
 ]
