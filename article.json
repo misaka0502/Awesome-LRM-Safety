@@ -1,5 +1,90 @@
 [
   {
+    "title": "Enhancing the Outcome Reward-based RL Training of MLLMs with Self-Consistency Sampling",
+    "url": "http://arxiv.org/abs/2511.10648v1",
+    "arxiv_id": "2511.10648v1",
+    "authors": [
+      "Jiahao Wang",
+      "Weiye Xu",
+      "Aijun Yang",
+      "Wengang Zhou",
+      "Lewei Lu",
+      "Houqiang Li",
+      "Xiaohua Wang",
+      "Jinguo Zhu"
+    ],
+    "published": "2025-11-13T18:59:57+00:00",
+    "summary": "Outcome-reward reinforcement learning (RL) is a common and increasingly significant way to refine the step-by-step reasoning of multimodal large language models (MLLMs). In the multiple-choice setting - a dominant format for multimodal reasoning benchmarks - the paradigm faces a significant yet often overlooked obstacle: unfaithful trajectories that guess the correct option after a faulty chain of thought receive the same reward as genuine reasoning, which is a flaw that cannot be ignored. We propose Self-Consistency Sampling (SCS) to correct this issue. For each question, SCS (i) introduces small visual perturbations and (ii) performs repeated truncation and resampling of an initial trajectory; agreement among the resulting trajectories yields a differentiable consistency score that down-weights unreliable traces during policy updates. Based on Qwen2.5-VL-7B-Instruct, plugging SCS into RLOO, GRPO, and REINFORCE++ series improves accuracy by up to 7.7 percentage points on six multimodal benchmarks with negligible extra computation. SCS also yields notable gains on both Qwen2.5-VL-3B-Instruct and InternVL3-8B, offering a simple, general remedy for outcome-reward RL in MLLMs."
+  },
+  {
+    "title": "Robot Crash Course: Learning Soft and Stylized Falling",
+    "url": "http://arxiv.org/abs/2511.10635v1",
+    "arxiv_id": "2511.10635v1",
+    "authors": [
+      "Pascal Strauch",
+      "David M\u00fcller",
+      "Sammy Christen",
+      "Agon Serifi",
+      "Ruben Grandia",
+      "Espen Knoop",
+      "Moritz B\u00e4cher"
+    ],
+    "published": "2025-11-13T18:55:34+00:00",
+    "summary": "Despite recent advances in robust locomotion, bipedal robots operating in the real world remain at risk of falling. While most research focuses on preventing such events, we instead concentrate on the phenomenon of falling itself. Specifically, we aim to reduce physical damage to the robot while providing users with control over a robot's end pose. To this end, we propose a robot agnostic reward function that balances the achievement of a desired end pose with impact minimization and the protection of critical robot parts during reinforcement learning. To make the policy robust to a broad range of initial falling conditions and to enable the specification of an arbitrary and unseen end pose at inference time, we introduce a simulation-based sampling strategy of initial and end poses. Through simulated and real-world experiments, our work demonstrates that even bipedal robots can perform controlled, soft falls."
+  },
+  {
+    "title": "Instella: Fully Open Language Models with Stellar Performance",
+    "url": "http://arxiv.org/abs/2511.10628v1",
+    "arxiv_id": "2511.10628v1",
+    "authors": [
+      "Jiang Liu",
+      "Jialian Wu",
+      "Xiaodong Yu",
+      "Yusheng Su",
+      "Prakamya Mishra",
+      "Gowtham Ramesh",
+      "Sudhanshu Ranjan",
+      "Chaitanya Manem",
+      "Ximeng Sun",
+      "Ze Wang",
+      "Pratik Prabhanjan Brahma",
+      "Zicheng Liu",
+      "Emad Barsoum"
+    ],
+    "published": "2025-11-13T18:52:46+00:00",
+    "summary": "Large language models (LLMs) have demonstrated remarkable performance across a wide range of tasks, yet the majority of high-performing models remain closed-source or partially open, limiting transparency and reproducibility. In this work, we introduce Instella, a family of fully open three billion parameter language models trained entirely on openly available data and codebase. Powered by AMD Instinct MI300X GPUs, Instella is developed through large-scale pre-training, general-purpose instruction tuning, and alignment with human preferences. Despite using substantially fewer pre-training tokens than many contemporaries, Instella achieves state-of-the-art results among fully open models and is competitive with leading open-weight models of comparable size. We further release two specialized variants: Instella-Long, capable of handling context lengths up to 128K tokens, and Instella-Math, a reasoning-focused model enhanced through supervised fine-tuning and reinforcement learning on mathematical tasks. Together, these contributions establish Instella as a transparent, performant, and versatile alternative for the community, advancing the goal of open and reproducible language modeling research."
+  },
+  {
+    "title": "Querying Labeled Time Series Data with Scenario Programs",
+    "url": "http://arxiv.org/abs/2511.10627v1",
+    "arxiv_id": "2511.10627v1",
+    "authors": [
+      "Edward Kim",
+      "Devan Shanker",
+      "Varun Bharadwaj",
+      "Hongbeen Park",
+      "Jinkyu Kim",
+      "Hazem Torfah",
+      "Daniel J Fremont",
+      "Sanjit A Seshia"
+    ],
+    "published": "2025-11-13T18:52:27+00:00",
+    "summary": "Simulation-based testing has become a crucial complement to road testing for ensuring the safety of cyber physical systems (CPS). As a result, significant research efforts have been directed toward identifying failure scenarios within simulation environments. However, a critical question remains. Are the AV failure scenarios discovered in simulation reproducible on actual systems in the real world? The sim-to-real gap caused by differences between simulated and real sensor data means that failure scenarios identified in simulation might either be artifacts of synthetic sensor data or actual issues that also occur with real sensor data. To address this, an effective approach to validating simulated failure scenarios is to locate occurrences of these scenarios within real-world datasets and verify whether the failure persists on the datasets. To this end, we introduce a formal definition of how labeled time series sensor data can match an abstract scenario, represented as a scenario program using the Scenic probabilistic programming language. We present a querying algorithm that, given a scenario program and a labeled dataset, identifies the subset of data that matches the specified scenario. Our experiment shows that our algorithm is more accurate and orders of magnitude faster in querying scenarios than the state-of-the-art commercial vision large language models, and can scale with the duration of queried time series data."
+  },
+  {
+    "title": "Global Solutions to Non-Convex Functional Constrained Problems with Hidden Convexity",
+    "url": "http://arxiv.org/abs/2511.10626v1",
+    "arxiv_id": "2511.10626v1",
+    "authors": [
+      "Ilyas Fatkhullin",
+      "Niao He",
+      "Guanghui Lan",
+      "Florian Wolf"
+    ],
+    "published": "2025-11-13T18:51:00+00:00",
+    "summary": "Constrained non-convex optimization is fundamentally challenging, as global solutions are generally intractable and constraint qualifications may not hold. However, in many applications, including safe policy optimization in control and reinforcement learning, such problems possess hidden convexity, meaning they can be reformulated as convex programs via a nonlinear invertible transformation. Typically such transformations are implicit or unknown, making the direct link with the convex program impossible. On the other hand, (sub-)gradients with respect to the original variables are often accessible or can be easily estimated, which motivates algorithms that operate directly in the original (non-convex) problem space using standard (sub-)gradient oracles. In this work, we develop the first algorithms to provably solve such non-convex problems to global minima. First, using a modified inexact proximal point method, we establish global last-iterate convergence guarantees with $\\widetilde{\\mathcal{O}}(\\varepsilon^{-3})$ oracle complexity in non-smooth setting. For smooth problems, we propose a new bundle-level type method based on linearly constrained quadratic subproblems, improving the oracle complexity to $\\widetilde{\\mathcal{O}}(\\varepsilon^{-1})$. Surprisingly, despite non-convexity, our methodology does not require any constraint qualifications, can handle hidden convex equality constraints, and achieves complexities matching those for solving unconstrained hidden convex optimization."
+  },
+  {
     "title": "Visual Spatial Tuning",
     "url": "http://arxiv.org/abs/2511.05491v1",
     "arxiv_id": "2511.05491v1",
