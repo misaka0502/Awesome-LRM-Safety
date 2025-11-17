@@ -1,5 +1,65 @@
 [
   {
+    "title": "Who Moved My Distribution? Conformal Prediction for Interactive Multi-Agent Systems",
+    "url": "http://arxiv.org/abs/2511.11567v1",
+    "arxiv_id": "2511.11567v1",
+    "authors": [
+      "Allen Emmanuel Binny",
+      "Anushri Dixit"
+    ],
+    "published": "2025-11-14T18:57:13+00:00",
+    "summary": "Uncertainty-aware prediction is essential for safe motion planning, especially when using learned models to forecast the behavior of surrounding agents. Conformal prediction is a statistical tool often used to produce uncertainty-aware prediction regions for machine learning models. Most existing frameworks utilizing conformal prediction-based uncertainty predictions assume that the surrounding agents are non-interactive. This is because in closed-loop, as uncertainty-aware agents change their behavior to account for prediction uncertainty, the surrounding agents respond to this change, leading to a distribution shift which we call endogenous distribution shift. To address this challenge, we introduce an iterative conformal prediction framework that systematically adapts the uncertainty-aware ego-agent controller to the endogenous distribution shift. The proposed method provides probabilistic safety guarantees while adapting to the evolving behavior of reactive, non-ego agents. We establish a model for the endogenous distribution shift and provide the conditions for the iterative conformal prediction pipeline to converge under such a distribution shift. We validate our framework in simulation for 2- and 3- agent interaction scenarios, demonstrating collision avoidance without resulting in overly conservative behavior and an overall improvement in success rates of up to 9.6% compared to other conformal prediction-based baselines."
+  },
+  {
+    "title": "Drone Swarm Energy Management",
+    "url": "http://arxiv.org/abs/2511.11557v1",
+    "arxiv_id": "2511.11557v1",
+    "authors": [
+      "Michael Z. Zgurovsky",
+      "Pavlo O. Kasyanov",
+      "Liliia S. Paliichuk"
+    ],
+    "published": "2025-11-14T18:47:30+00:00",
+    "summary": "This note presents an analytical framework for decision-making in drone swarm systems operating under uncertainty, based on the integration of Partially Observable Markov Decision Processes (POMDP) with Deep Deterministic Policy Gradient (DDPG) reinforcement learning. The proposed approach enables adaptive control and cooperative behavior of unmanned aerial vehicles (UAVs) within a cognitive AI platform, where each agent learns optimal energy management and navigation policies from dynamic environmental states. We extend the standard DDPG architecture with a belief-state representation derived from Bayesian filtering, allowing for robust decision-making in partially observable environments. In this paper, for the Gaussian case, we numerically compare the performance of policies derived from DDPG to optimal policies for discretized versions of the original continuous problem. Simulation results demonstrate that the POMDP-DDPG-based swarm control model significantly improves mission success rates and energy efficiency compared to baseline methods. The developed framework supports distributed learning and decision coordination across multiple agents, providing a foundation for scalable cognitive swarm autonomy. The outcomes of this research contribute to the advancement of energy-aware control algorithms for intelligent multi-agent systems and can be applied in security, environmental monitoring, and infrastructure inspection scenarios."
+  },
+  {
+    "title": "Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping",
+    "url": "http://arxiv.org/abs/2511.11551v1",
+    "arxiv_id": "2511.11551v1",
+    "authors": [
+      "Dena Mujtaba",
+      "Brian Hu",
+      "Anthony Hoogs",
+      "Arslan Basharat"
+    ],
+    "published": "2025-11-14T18:42:18+00:00",
+    "summary": "The deployment of decision-making AI agents presents a critical challenge in maintaining alignment with human values or guidelines while operating in complex, dynamic environments. Agents trained solely to achieve their objectives may adopt harmful behavior, exposing a key trade-off between maximizing the reward function and maintaining the alignment. For the pre-trained agents, ensuring alignment is particularly challenging, as retraining can be a costly and slow process. This is further complicated by the diverse and potentially conflicting attributes representing the ethical values for alignment. To address these challenges, we propose a test-time alignment technique based on model-guided policy shaping. Our method allows precise control over individual behavioral attributes, generalizes across diverse reinforcement learning (RL) environments, and facilitates a principled trade-off between ethical alignment and reward maximization without requiring agent retraining. We evaluate our approach using the MACHIAVELLI benchmark, which comprises 134 text-based game environments and thousands of annotated scenarios involving ethical decisions. The RL agents are first trained to maximize the reward in their respective games. At test time, we apply policy shaping via scenario-action attribute classifiers to ensure decision alignment with ethical attributes. We compare our approach against prior training-time methods and general-purpose agents, as well as study several types of ethical violations and power-seeking behavior. Our results demonstrate that test-time policy shaping provides an effective and scalable solution for mitigating unethical behavior across diverse environments and alignment attributes."
+  },
+  {
+    "title": "CertiA360: Enhance Compliance Agility in Aerospace Software Development",
+    "url": "http://arxiv.org/abs/2511.11550v1",
+    "arxiv_id": "2511.11550v1",
+    "authors": [
+      "J. Antonio Dantas Macedo",
+      "Hugo Fernandes",
+      "J. Eduardo Ferreira Ribeiro"
+    ],
+    "published": "2025-11-14T18:41:11+00:00",
+    "summary": "Agile methods are characterised by iterative and incremental processes with a strong focus on flexibility and accommodating changing requirements based on either technical, regulatory, or stakeholder feedback. However, integrating Agile methods into safety-critical system development in the aerospace industry presents substantial challenges due to its strict compliance requirements, such as those outlined in the DO-178C standard. To achieve this vision, the flexibility of Agile must align with the rigorous certification guidelines, which emphasize documentation, traceability of requirements across different levels and disciplines, and comprehensive verification and validation (V&V) activities. The research work described in this paper proposes a way of using the strengths of the flexible nature of Agile methods to automate and manage change requests throughout the whole software development lifecycle, ensuring robust traceability, regulatory compliance and ultimately facilitating successful certification. This study proposes CertiA360, a tool designed to help teams improve requirement maturity, automate the changes in traceability, and align with the regulatory objectives. The tool was designed and validated in close collaboration with aerospace industry experts, using their feedback to ensure practical application and real-life effectiveness. The feedback collected demonstrated that the automation given by CertiA360 may reduce manual effort and allow response to changing requirements while ensuring compliance with DO-178C. While the tool is not yet qualified under DO-330 (Tool Qualification), findings suggest that when tailored appropriately, Agile methods can not only coexist with the requirements of safety-system development and certification in highly regulated domains like aerospace, but also add efficiency."
+  },
+  {
+    "title": "Volumetric Ergodic Control",
+    "url": "http://arxiv.org/abs/2511.11533v1",
+    "arxiv_id": "2511.11533v1",
+    "authors": [
+      "Jueun Kwon",
+      "Max M. Sun",
+      "Todd Murphey"
+    ],
+    "published": "2025-11-14T18:10:40+00:00",
+    "summary": "Ergodic control synthesizes optimal coverage behaviors over spatial distributions for nonlinear systems. However, existing formulations model the robot as a non-volumetric point, but in practice a robot interacts with the environment through its body and sensors with physical volume. In this work, we introduce a new ergodic control formulation that optimizes spatial coverage using a volumetric state representation. Our method preserves the asymptotic coverage guarantees of ergodic control, adds minimal computational overhead for real-time control, and supports arbitrary sample-based volumetric models. We evaluate our method across search and manipulation tasks -- with multiple robot dynamics and end-effector geometries or sensor models -- and show that it improves coverage efficiency by more than a factor of two while maintaining a 100% task completion rate across all experiments, outperforming the standard ergodic control method. Finally, we demonstrate the effectiveness of our method on a robot arm performing mechanical erasing tasks."
+  },
+  {
     "title": "Enhancing the Outcome Reward-based RL Training of MLLMs with Self-Consistency Sampling",
     "url": "http://arxiv.org/abs/2511.10648v1",
     "arxiv_id": "2511.10648v1",
