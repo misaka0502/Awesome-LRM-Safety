@@ -1,5 +1,112 @@
 [
   {
+    "title": "Scaling Spatial Intelligence with Multimodal Foundation Models",
+    "url": "http://arxiv.org/abs/2511.13719v1",
+    "arxiv_id": "2511.13719v1",
+    "authors": [
+      "Zhongang Cai",
+      "Ruisi Wang",
+      "Chenyang Gu",
+      "Fanyi Pu",
+      "Junxiang Xu",
+      "Yubo Wang",
+      "Wanqi Yin",
+      "Zhitao Yang",
+      "Chen Wei",
+      "Qingping Sun",
+      "Tongxi Zhou",
+      "Jiaqi Li",
+      "Hui En Pang",
+      "Oscar Qian",
+      "Yukun Wei",
+      "Zhiqian Lin",
+      "Xuanke Shi",
+      "Kewang Deng",
+      "Xiaoyang Han",
+      "Zukai Chen",
+      "Xiangyu Fan",
+      "Hanming Deng",
+      "Lewei Lu",
+      "Liang Pan",
+      "Bo Li",
+      "Ziwei Liu",
+      "Quan Wang",
+      "Dahua Lin",
+      "Lei Yang"
+    ],
+    "published": "2025-11-17T18:59:33+00:00",
+    "summary": "Despite remarkable progress, multimodal foundation models still exhibit surprising deficiencies in spatial intelligence. In this work, we explore scaling up multimodal foundation models to cultivate spatial intelligence within the SenseNova-SI family, built upon established multimodal foundations including visual understanding models (i.e., Qwen3-VL and InternVL3) and unified understanding and generation models (i.e., Bagel). We take a principled approach to constructing high-performing and robust spatial intelligence by systematically curating SenseNova-SI-8M: eight million diverse data samples under a rigorous taxonomy of spatial capabilities. SenseNova-SI demonstrates unprecedented performance across a broad range of spatial intelligence benchmarks: 68.7% on VSI-Bench, 43.3% on MMSI, 85.6% on MindCube, 54.6% on ViewSpatial, and 50.1% on SITE, while maintaining strong general multimodal understanding (e.g., 84.9% on MMBench-En). More importantly, we analyze the impact of data scaling, discuss early signs of emergent generalization capabilities enabled by diverse data training, analyze the risk of overfitting and language shortcuts, present a preliminary study on spatial chain-of-thought reasoning, and validate the potential downstream application. SenseNova-SI is an ongoing project, and this report will be updated continuously. All newly trained multimodal foundation models are publicly released to facilitate further research in this direction."
+  },
+  {
+    "title": "Free-Form Scene Editor: Enabling Multi-Round Object Manipulation like in a 3D Engine",
+    "url": "http://arxiv.org/abs/2511.13713v1",
+    "arxiv_id": "2511.13713v1",
+    "authors": [
+      "Xincheng Shuai",
+      "Zhenyuan Qin",
+      "Henghui Ding",
+      "Dacheng Tao"
+    ],
+    "published": "2025-11-17T18:57:39+00:00",
+    "summary": "Recent advances in text-to-image (T2I) diffusion models have significantly improved semantic image editing, yet most methods fall short in performing 3D-aware object manipulation. In this work, we present FFSE, a 3D-aware autoregressive framework designed to enable intuitive, physically-consistent object editing directly on real-world images. Unlike previous approaches that either operate in image space or require slow and error-prone 3D reconstruction, FFSE models editing as a sequence of learned 3D transformations, allowing users to perform arbitrary manipulations, such as translation, scaling, and rotation, while preserving realistic background effects (e.g., shadows, reflections) and maintaining global scene consistency across multiple editing rounds. To support learning of multi-round 3D-aware object manipulation, we introduce 3DObjectEditor, a hybrid dataset constructed from simulated editing sequences across diverse objects and scenes, enabling effective training under multi-round and dynamic conditions. Extensive experiments show that the proposed FFSE significantly outperforms existing methods in both single-round and multi-round 3D-aware editing scenarios."
+  },
+  {
+    "title": "From Power to Precision: Learning Fine-grained Dexterity for Multi-fingered Robotic Hands",
+    "url": "http://arxiv.org/abs/2511.13710v1",
+    "arxiv_id": "2511.13710v1",
+    "authors": [
+      "Jianglong Ye",
+      "Lai Wei",
+      "Guangqi Jiang",
+      "Changwei Jing",
+      "Xueyan Zou",
+      "Xiaolong Wang"
+    ],
+    "published": "2025-11-17T18:56:50+00:00",
+    "summary": "Human grasps can be roughly categorized into two types: power grasps and precision grasps. Precision grasping enables tool use and is believed to have influenced human evolution. Today's multi-fingered robotic hands are effective in power grasps, but for tasks requiring precision, parallel grippers are still more widely adopted. This contrast highlights a key limitation in current robotic hand design: the difficulty of achieving both stable power grasps and precise, fine-grained manipulation within a single, versatile system. In this work, we bridge this gap by jointly optimizing the control and hardware design of a multi-fingered dexterous hand, enabling both power and precision manipulation. Rather than redesigning the entire hand, we introduce a lightweight fingertip geometry modification, represent it as a contact plane, and jointly optimize its parameters along with the corresponding control. Our control strategy dynamically switches between power and precision manipulation and simplifies precision control into parallel thumb-index motions, which proves robust for sim-to-real transfer. On the design side, we leverage large-scale simulation to optimize the fingertip geometry using a differentiable neural-physics surrogate model. We validate our approach through extensive experiments in both sim-to-real and real-to-real settings. Our method achieves an 82.5% zero-shot success rate on unseen objects in sim-to-real precision grasping, and a 93.3% success rate in challenging real-world tasks involving bread pinching. These results demonstrate that our co-design framework can significantly enhance the fine-grained manipulation ability of multi-fingered hands without reducing their ability for power grasps. Our project page is at https://jianglongye.com/power-to-precision"
+  },
+  {
+    "title": "OpenRoboCare: A Multimodal Multi-Task Expert Demonstration Dataset for Robot Caregiving",
+    "url": "http://arxiv.org/abs/2511.13707v1",
+    "arxiv_id": "2511.13707v1",
+    "authors": [
+      "Xiaoyu Liang",
+      "Ziang Liu",
+      "Kelvin Lin",
+      "Edward Gu",
+      "Ruolin Ye",
+      "Tam Nguyen",
+      "Cynthia Hsu",
+      "Zhanxin Wu",
+      "Xiaoman Yang",
+      "Christy Sum Yu Cheung",
+      "Harold Soh",
+      "Katherine Dimitropoulou",
+      "Tapomayukh Bhattacharjee"
+    ],
+    "published": "2025-11-17T18:55:12+00:00",
+    "summary": "We present OpenRoboCare, a multimodal dataset for robot caregiving, capturing expert occupational therapist demonstrations of Activities of Daily Living (ADLs). Caregiving tasks involve complex physical human-robot interactions, requiring precise perception under occlusions, safe physical contact, and long-horizon planning. While recent advances in robot learning from demonstrations have shown promise, there is a lack of a large-scale, diverse, and expert-driven dataset that captures real-world caregiving routines. To address this gap, we collect data from 21 occupational therapists performing 15 ADL tasks on two manikins. The dataset spans five modalities: RGB-D video, pose tracking, eye-gaze tracking, task and action annotations, and tactile sensing, providing rich multimodal insights into caregiver movement, attention, force application, and task execution strategies. We further analyze expert caregiving principles and strategies, offering insights to improve robot efficiency and task feasibility. Additionally, our evaluations demonstrate that OpenRoboCare presents challenges for state-of-the-art robot perception and human activity recognition methods, both critical for developing safe and adaptive assistive robots, highlighting the value of our contribution. See our website for additional visualizations: https://emprise.cs.cornell.edu/robo-care/."
+  },
+  {
+    "title": "Distribution Matching Distillation Meets Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2511.13649v1",
+    "arxiv_id": "2511.13649v1",
+    "authors": [
+      "Dengyang Jiang",
+      "Dongyang Liu",
+      "Zanyi Wang",
+      "Qilong Wu",
+      "Xin Jin",
+      "David Liu",
+      "Zhen Li",
+      "Mengmeng Wang",
+      "Peng Gao",
+      "Harry Yang"
+    ],
+    "published": "2025-11-17T17:59:54+00:00",
+    "summary": "Distribution Matching Distillation (DMD) distills a pre-trained multi-step diffusion model to a few-step one to improve inference efficiency. However, the performance of the latter is often capped by the former. To circumvent this dilemma, we propose DMDR, a novel framework that combines Reinforcement Learning (RL) techniques into the distillation process. We show that for the RL of the few-step generator, the DMD loss itself is a more effective regularization compared to the traditional ones. In turn, RL can help to guide the mode coverage process in DMD more effectively. These allow us to unlock the capacity of the few-step generator by conducting distillation and RL simultaneously. Meanwhile, we design the dynamic distribution guidance and dynamic renoise sampling training strategies to improve the initial distillation process. The experiments demonstrate that DMDR can achieve leading visual quality, prompt coherence among few-step methods, and even exhibit performance that exceeds the multi-step teacher."
+  },
+  {
     "title": "Robust Defense Strategies for Multimodal Contrastive Learning: Efficient Fine-tuning Against Backdoor Attacks",
     "url": "http://arxiv.org/abs/2511.13545v1",
     "arxiv_id": "2511.13545v1",
