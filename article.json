@@ -1,5 +1,70 @@
 [
   {
+    "title": "Robust Defense Strategies for Multimodal Contrastive Learning: Efficient Fine-tuning Against Backdoor Attacks",
+    "url": "http://arxiv.org/abs/2511.13545v1",
+    "arxiv_id": "2511.13545v1",
+    "authors": [
+      "Md. Iqbal Hossain",
+      "Afia Sajeeda",
+      "Neeresh Kumar Perla",
+      "Ming Shao"
+    ],
+    "published": "2025-11-17T16:16:50+00:00",
+    "summary": "The advent of multimodal deep learning models, such as CLIP, has unlocked new frontiers in a wide range of applications, from image-text understanding to classification tasks. However, these models are not safe for adversarial attacks, particularly backdoor attacks, which can subtly manipulate model behavior. Moreover, existing defense methods typically involve training from scratch or fine-tuning using a large dataset without pinpointing the specific labels that are affected. In this study, we introduce an innovative strategy to enhance the robustness of multimodal contrastive learning models against such attacks. In particular, given a poisoned CLIP model, our approach can identify the backdoor trigger and pinpoint the victim samples and labels in an efficient manner. To that end, an image segmentation ``oracle'' is introduced as the supervisor for the output of the poisoned CLIP. We develop two algorithms to rectify the poisoned model: (1) differentiating between CLIP and Oracle's knowledge to identify potential triggers; (2) pinpointing affected labels and victim samples, and curating a compact fine-tuning dataset. With this knowledge, we are allowed to rectify the poisoned CLIP model to negate backdoor effects. Extensive experiments on visual recognition benchmarks demonstrate our strategy is effective in CLIP-based backdoor defense."
+  },
+  {
+    "title": "BootOOD: Self-Supervised Out-of-Distribution Detection via Synthetic Sample Exposure under Neural Collapse",
+    "url": "http://arxiv.org/abs/2511.13539v1",
+    "arxiv_id": "2511.13539v1",
+    "authors": [
+      "Yuanchao Wang",
+      "Tian Qin",
+      "Eduardo Valle",
+      "Bruno Abrahao"
+    ],
+    "published": "2025-11-17T16:12:31+00:00",
+    "summary": "Out-of-distribution (OOD) detection is critical for deploying image classifiers in safety-sensitive environments, yet existing detectors often struggle when OOD samples are semantically similar to the in-distribution (ID) classes. We present BootOOD, a fully self-supervised OOD detection framework that bootstraps exclusively from ID data and is explicitly designed to handle semantically challenging OOD samples. BootOOD synthesizes pseudo-OOD features through simple transformations of ID representations and leverages Neural Collapse (NC), where ID features cluster tightly around class means with consistent feature norms. Unlike prior approaches that aim to constrain OOD features into subspaces orthogonal to the collapsed ID means, BootOOD introduces a lightweight auxiliary head that performs radius-based classification on feature norms. This design decouples OOD detection from the primary classifier and imposes a relaxed requirement: OOD samples are learned to have smaller feature norms than ID features, which is easier to satisfy when ID and OOD are semantically close. Experiments on CIFAR-10, CIFAR-100, and ImageNet-200 show that BootOOD outperforms prior post-hoc methods, surpasses training-based methods without outlier exposure, and is competitive with state-of-the-art outlier-exposure approaches while maintaining or improving ID accuracy."
+  },
+  {
+    "title": "Accuracy is Not Enough: Poisoning Interpretability in Federated Learning via Color Skew",
+    "url": "http://arxiv.org/abs/2511.13535v1",
+    "arxiv_id": "2511.13535v1",
+    "authors": [
+      "Farhin Farhad Riya",
+      "Shahinul Hoque",
+      "Jinyuan Stella Sun",
+      "Olivera Kotevska"
+    ],
+    "published": "2025-11-17T16:07:54+00:00",
+    "summary": "As machine learning models are increasingly deployed in safety-critical domains, visual explanation techniques have become essential tools for supporting transparency. In this work, we reveal a new class of attacks that compromise model interpretability without affecting accuracy. Specifically, we show that small color perturbations applied by adversarial clients in a federated learning setting can shift a model's saliency maps away from semantically meaningful regions while keeping the prediction unchanged. The proposed saliency-aware attack framework, called Chromatic Perturbation Module, systematically crafts adversarial examples by altering the color contrast between foreground and background in a way that disrupts explanation fidelity. These perturbations accumulate across training rounds, poisoning the global model's internal feature attributions in a stealthy and persistent manner. Our findings challenge a common assumption in model auditing that correct predictions imply faithful explanations and demonstrate that interpretability itself can be an attack surface. We evaluate this vulnerability across multiple datasets and show that standard training pipelines are insufficient to detect or mitigate explanation degradation, especially in the federated learning setting, where subtle color perturbations are harder to discern. Our attack reduces peak activation overlap in Grad-CAM explanations by up to 35% while preserving classification accuracy above 96% on all evaluated datasets."
+  },
+  {
+    "title": "Minimax Multi-Target Conformal Prediction with Applications to Imaging Inverse Problems",
+    "url": "http://arxiv.org/abs/2511.13533v1",
+    "arxiv_id": "2511.13533v1",
+    "authors": [
+      "Jeffrey Wen",
+      "Rizwan Ahmad",
+      "Philip Schniter"
+    ],
+    "published": "2025-11-17T16:06:37+00:00",
+    "summary": "In ill-posed imaging inverse problems, uncertainty quantification remains a fundamental challenge, especially in safety-critical applications. Recently, conformal prediction has been used to quantify the uncertainty that the inverse problem contributes to downstream tasks like image classification, image quality assessment, fat mass quantification, etc. While existing works handle only a scalar estimation target, practical applications often involve multiple targets. In response, we propose an asymptotically minimax approach to multi-target conformal prediction that provides tight prediction intervals while ensuring joint marginal coverage. We then outline how our minimax approach can be applied to multi-metric blind image quality assessment, multi-task uncertainty quantification, and multi-round measurement acquisition. Finally, we numerically demonstrate the benefits of our minimax method, relative to existing multi-target conformal prediction methods, using both synthetic and magnetic resonance imaging (MRI) data."
+  },
+  {
+    "title": "Towards Affect-Adaptive Human-Robot Interaction: A Protocol for Multimodal Dataset Collection on Social Anxiety",
+    "url": "http://arxiv.org/abs/2511.13530v1",
+    "arxiv_id": "2511.13530v1",
+    "authors": [
+      "Vesna Poprcova",
+      "Iulia Lefter",
+      "Matthias Wieser",
+      "Martijn Warnier",
+      "Frances Brazier"
+    ],
+    "published": "2025-11-17T16:03:33+00:00",
+    "summary": "Social anxiety is a prevalent condition that affects interpersonal interactions and social functioning. Recent advances in artificial intelligence and social robotics offer new opportunities to examine social anxiety in the human-robot interaction context. Accurate detection of affective states and behaviours associated with social anxiety requires multimodal datasets, where each signal modality provides complementary insights into its manifestations. However, such datasets remain scarce, limiting progress in both research and applications. To address this, this paper presents a protocol for multimodal dataset collection designed to reflect social anxiety in a human-robot interaction context. The dataset will consist of synchronised audio, video, and physiological recordings acquired from at least 70 participants, grouped according to their level of social anxiety, as they engage in approximately 10-minute interactive Wizard-of-Oz role-play scenarios with the Furhat social robot under controlled experimental conditions. In addition to multimodal data, the dataset will be enriched with contextual data providing deeper insight into individual variability in social anxiety responses. This work can contribute to research on affect-adaptive human-robot interaction by providing support for robust multimodal detection of social anxiety."
+  },
+  {
     "title": "Who Moved My Distribution? Conformal Prediction for Interactive Multi-Agent Systems",
     "url": "http://arxiv.org/abs/2511.11567v1",
     "arxiv_id": "2511.11567v1",
