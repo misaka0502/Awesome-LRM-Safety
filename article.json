@@ -1,5 +1,81 @@
 [
   {
+    "title": "GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization",
+    "url": "http://arxiv.org/abs/2511.15705v1",
+    "arxiv_id": "2511.15705v1",
+    "authors": [
+      "Yikun Wang",
+      "Zuyan Liu",
+      "Ziyi Wang",
+      "Pengfei Liu",
+      "Han Hu",
+      "Yongming Rao"
+    ],
+    "published": "2025-11-19T18:59:22+00:00",
+    "summary": "Current research on agentic visual reasoning enables deep multimodal understanding but primarily focuses on image manipulation tools, leaving a gap toward more general-purpose agentic models. In this work, we revisit the geolocalization task, which requires not only nuanced visual grounding but also web search to confirm or refine hypotheses during reasoning. Since existing geolocalization benchmarks fail to meet the need for high-resolution imagery and the localization challenge for deep agentic reasoning, we curate GeoBench, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models. We also propose GeoVista, an agentic model that seamlessly integrates tool invocation within the reasoning loop, including an image-zoom-in tool to magnify regions of interest and a web-search tool to retrieve related web information. We develop a complete training pipeline for it, including a cold-start supervised fine-tuning (SFT) stage to learn reasoning patterns and tool-use priors, followed by a reinforcement learning (RL) stage to further enhance reasoning ability. We adopt a hierarchical reward to leverage multi-level geographical information and improve overall geolocalization performance. Experimental results show that GeoVista surpasses other open-source agentic models on the geolocalization task greatly and achieves performance comparable to closed-source models such as Gemini-2.5-flash and GPT-5 on most metrics."
+  },
+  {
+    "title": "In-N-On: Scaling Egocentric Manipulation with in-the-wild and on-task Data",
+    "url": "http://arxiv.org/abs/2511.15704v1",
+    "arxiv_id": "2511.15704v1",
+    "authors": [
+      "Xiongyi Cai",
+      "Ri-Zhao Qiu",
+      "Geng Chen",
+      "Lai Wei",
+      "Isabella Liu",
+      "Tianshu Huang",
+      "Xuxin Cheng",
+      "Xiaolong Wang"
+    ],
+    "published": "2025-11-19T18:59:04+00:00",
+    "summary": "Egocentric videos are a valuable and scalable data source to learn manipulation policies. However, due to significant data heterogeneity, most existing approaches utilize human data for simple pre-training, which does not unlock its full potential. This paper first provides a scalable recipe for collecting and using egocentric data by categorizing human data into two categories: in-the-wild and on-task alongside with systematic analysis on how to use the data. We first curate a dataset, PHSD, which contains over 1,000 hours of diverse in-the-wild egocentric data and over 20 hours of on-task data directly aligned to the target manipulation tasks. This enables learning a large egocentric language-conditioned flow matching policy, Human0. With domain adaptation techniques, Human0 minimizes the gap between humans and humanoids. Empirically, we show Human0 achieves several novel properties from scaling human data, including language following of instructions from only human data, few-shot learning, and improved robustness using on-task data. Project website: https://xiongyicai.github.io/In-N-On/"
+  },
+  {
+    "title": "The Impact of Quantization on Large Reasoning Model Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2511.15694v1",
+    "arxiv_id": "2511.15694v1",
+    "authors": [
+      "Medha Kumar",
+      "Zifei Xu",
+      "Xin Wang",
+      "Tristan Webb"
+    ],
+    "published": "2025-11-19T18:50:58+00:00",
+    "summary": "Strong reasoning capabilities can now be achieved by large-scale reinforcement learning (RL) without any supervised fine-tuning. Although post-training quantization (PTQ) and quantization-aware training (QAT) are well studied in the context of fine-tuning, how quantization impacts RL in large reasoning models (LRMs) remains an open question. To answer this question, we conducted systematic experiments and discovered a significant gap in reasoning performance on mathematical benchmarks between post-RL quantized models and their quantization-aware RL optimized counterparts. Our findings suggest that quantization-aware RL training negatively impacted the learning process, whereas PTQ and QLoRA led to greater performance."
+  },
+  {
+    "title": "DuoZone: A User-Centric, LLM-Guided Mixed-Initiative XR Window Management System",
+    "url": "http://arxiv.org/abs/2511.15676v1",
+    "arxiv_id": "2511.15676v1",
+    "authors": [
+      "Jing Qian",
+      "George X. Wang",
+      "Xiangyu Li",
+      "Yunge Wen",
+      "Guande Wu",
+      "Sonia Castelo Quispe",
+      "Fumeng Yang",
+      "Claudio Silva"
+    ],
+    "published": "2025-11-19T18:22:13+00:00",
+    "summary": "Mixed reality (XR) environments offer vast spatial possibilities, but current window management systems require users to manually place, resize, and organize multiple applications across large 3D spaces. This creates cognitive and interaction burdens that limit productivity. We introduce DuoZone, a mixed-initiative XR window management system that combines user-defined spatial layouts with LLM-guided automation. DuoZone separates window management into two complementary zones. The Recommendation Zone enables fast setup by providing spatial layout templates and automatically recommending relevant applications based on user tasks and high-level goals expressed through voice or text. The Arrangement Zone supports precise refinement through direct manipulation, allowing users to adjust windows using natural spatial actions such as dragging, resizing, and snapping. Through this dual-zone approach, DuoZone promotes efficient organization while reducing user cognitive load. We conducted a user study comparing DuoZone with a baseline manual XR window manager. Results show that DuoZone improves task completion speed, reduces mental effort, and increases sense of control when working with multiple applications in XR. We discuss design implications for future mixed-initiative systems and outline opportunities for integrating adaptive, goal-aware intelligence into spatial computing workflows."
+  },
+  {
+    "title": "VisPlay: Self-Evolving Vision-Language Models from Images",
+    "url": "http://arxiv.org/abs/2511.15661v1",
+    "arxiv_id": "2511.15661v1",
+    "authors": [
+      "Yicheng He",
+      "Chengsong Huang",
+      "Zongxia Li",
+      "Jiaxin Huang",
+      "Yonghui Yang"
+    ],
+    "published": "2025-11-19T17:55:15+00:00",
+    "summary": "Reinforcement learning (RL) provides a principled framework for improving Vision-Language Models (VLMs) on complex reasoning tasks. However, existing RL approaches often rely on human-annotated labels or task-specific heuristics to define verifiable rewards, both of which are costly and difficult to scale. We introduce VisPlay, a self-evolving RL framework that enables VLMs to autonomously improve their reasoning abilities using large amounts of unlabeled image data. Starting from a single base VLM, VisPlay assigns the model into two interacting roles: an Image-Conditioned Questioner that formulates challenging yet answerable visual questions, and a Multimodal Reasoner that generates silver responses. These roles are jointly trained with Group Relative Policy Optimization (GRPO), which incorporates diversity and difficulty rewards to balance the complexity of generated questions with the quality of the silver answers. VisPlay scales efficiently across two model families. When trained on Qwen2.5-VL and MiMo-VL, VisPlay achieves consistent improvements in visual reasoning, compositional generalization, and hallucination reduction across eight benchmarks, including MM-Vet and MMMU, demonstrating a scalable path toward self-evolving multimodal intelligence. The project page is available at https://bruno686.github.io/VisPlay/"
+  },
+  {
     "title": "UniGen-1.5: Enhancing Image Generation and Editing through Reward Unification in Reinforcement Learning",
     "url": "http://arxiv.org/abs/2511.14760v1",
     "arxiv_id": "2511.14760v1",
