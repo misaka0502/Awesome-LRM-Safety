@@ -1,5 +1,89 @@
 [
   {
+    "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
+    "url": "http://arxiv.org/abs/2511.16671v1",
+    "arxiv_id": "2511.16671v1",
+    "authors": [
+      "Ziyu Guo",
+      "Renrui Zhang",
+      "Hongyu Li",
+      "Manyuan Zhang",
+      "Xinyan Chen",
+      "Sifan Wang",
+      "Yan Feng",
+      "Peng Pei",
+      "Pheng-Ann Heng"
+    ],
+    "published": "2025-11-20T18:59:52+00:00",
+    "summary": "Recent advances in visual generation have increasingly explored the integration of reasoning capabilities. They incorporate textual reasoning, i.e., think, either before (as pre-planning) or after (as post-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself. In this preliminary study, we introduce Thinking-while-Generating (TwiG), the first interleaved framework that enables co-evolving textual reasoning throughout the visual generation process. As visual content is progressively generating, textual reasoning is interleaved to both guide upcoming local regions and reflect on previously synthesized ones. This dynamic interplay produces more context-aware and semantically rich visual outputs. To unveil the potential of this framework, we investigate three candidate strategies, zero-shot prompting, supervised fine-tuning (SFT) on our curated TwiG-50K dataset, and reinforcement learning (RL) via a customized TwiG-GRPO strategy, each offering unique insights into the dynamics of interleaved reasoning. We hope this work inspires further research into interleaving textual reasoning for enhanced visual generation. Code will be released at: https://github.com/ZiyuGuo99/Thinking-while-Generating."
+  },
+  {
+    "title": "Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO",
+    "url": "http://arxiv.org/abs/2511.16669v1",
+    "arxiv_id": "2511.16669v1",
+    "authors": [
+      "Junhao Cheng",
+      "Liang Hou",
+      "Xin Tao",
+      "Jing Liao"
+    ],
+    "published": "2025-11-20T18:59:44+00:00",
+    "summary": "While language models have become impactful in many real-world applications, video generation remains largely confined to entertainment. Motivated by video's inherent capacity to demonstrate physical-world information that is difficult to convey through language alone (e.g., imagine teaching someone to tie a tie using only text), we identify an underutilized opportunity to extend video as a new answer modality for Next-Event Prediction (NEP), formalized as Video-Next-Event Prediction (VNEP). While the established NEP task takes a video with a procedural or predictive question as input to predict the next event in text, VNEP requires dynamic video responses. This shift from telling to showing unlocks more intuitive and customized answers for procedural learning and creative exploration. However, this task remains challenging for existing models, as it demands an understanding of multimodal input, instruction-conditioned reasoning, and the generation of video with visual and semantic consistency. To address this, we introduce VANS, a model that leverages reinforcement learning to align a Vision-Language Model (VLM) with a Video Diffusion Model (VDM) for VNEP. The core of VANS is our proposed Joint-GRPO that orchestrates the VLM and VDM to function as a unit. Driven by a shared reward on their respective output, it optimizes the VLM to produce captions that are both accurate and friendly to visualize, while guiding the VDM to generate videos that are faithful to these captions and the input visual context. To enable this learning, we craft VANS-Data-100K, a dedicated dataset for the VNEP task. Experiments on procedural and predictive benchmarks demonstrate that VANS achieves state-of-the-art performance in both video event prediction and visualization. Codes are released in https://github.com/KlingTeam/VANS."
+  },
+  {
+    "title": "SceneDesigner: Controllable Multi-Object Image Generation with 9-DoF Pose Manipulation",
+    "url": "http://arxiv.org/abs/2511.16666v1",
+    "arxiv_id": "2511.16666v1",
+    "authors": [
+      "Zhenyuan Qin",
+      "Xincheng Shuai",
+      "Henghui Ding"
+    ],
+    "published": "2025-11-20T18:59:25+00:00",
+    "summary": "Controllable image generation has attracted increasing attention in recent years, enabling users to manipulate visual content such as identity and style. However, achieving simultaneous control over the 9D poses (location, size, and orientation) of multiple objects remains an open challenge. Despite recent progress, existing methods often suffer from limited controllability and degraded quality, falling short of comprehensive multi-object 9D pose control. To address these limitations, we propose SceneDesigner, a method for accurate and flexible multi-object 9-DoF pose manipulation. SceneDesigner incorporates a branched network to the pre-trained base model and leverages a new representation, CNOCS map, which encodes 9D pose information from the camera view. This representation exhibits strong geometric interpretation properties, leading to more efficient and stable training. To support training, we construct a new dataset, ObjectPose9D, which aggregates images from diverse sources along with 9D pose annotations. To further address data imbalance issues, particularly performance degradation on low-frequency poses, we introduce a two-stage training strategy with reinforcement learning, where the second stage fine-tunes the model using a reward-based objective on rebalanced data. At inference time, we propose Disentangled Object Sampling, a technique that mitigates insufficient object generation and concept confusion in complex multi-object scenes. Moreover, by integrating user-specific personalization weights, SceneDesigner enables customized pose control for reference subjects. Extensive qualitative and quantitative experiments demonstrate that SceneDesigner significantly outperforms existing approaches in both controllability and quality. Code is publicly available at https://github.com/FudanCVL/SceneDesigner."
+  },
+  {
+    "title": "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter",
+    "url": "http://arxiv.org/abs/2511.16665v1",
+    "arxiv_id": "2511.16665v1",
+    "authors": [
+      "Qinghao Hu",
+      "Shang Yang",
+      "Junxian Guo",
+      "Xiaozhe Yao",
+      "Yujun Lin",
+      "Yuxian Gu",
+      "Han Cai",
+      "Chuang Gan",
+      "Ana Klimovic",
+      "Song Han"
+    ],
+    "published": "2025-11-20T18:59:25+00:00",
+    "summary": "The emergence of Large Language Models (LLMs) with strong reasoning capabilities marks a significant milestone, unlocking new frontiers in complex problem-solving. However, training these reasoning models, typically using Reinforcement Learning (RL), encounters critical efficiency bottlenecks: response generation during RL training exhibits a persistent long-tail distribution, where a few very long responses dominate execution time, wasting resources and inflating costs. To address this, we propose TLT, a system that accelerates reasoning RL training losslessly by integrating adaptive speculative decoding. Applying speculative decoding in RL is challenging due to the dynamic workloads, evolving target model, and draft model training overhead. TLT overcomes these obstacles with two synergistic components: (1) Adaptive Drafter, a lightweight draft model trained continuously on idle GPUs during long-tail generation to maintain alignment with the target model at no extra cost; and (2) Adaptive Rollout Engine, which maintains a memory-efficient pool of pre-captured CUDAGraphs and adaptively select suitable SD strategies for each input batch. Evaluations demonstrate that TLT achieves over 1.7x end-to-end RL training speedup over state-of-the-art systems, preserves the model accuracy, and yields a high-quality draft model as a free byproduct suitable for efficient deployment. Code is released at https://github.com/mit-han-lab/fastrl."
+  },
+  {
+    "title": "Dexterity from Smart Lenses: Multi-Fingered Robot Manipulation with In-the-Wild Human Demonstrations",
+    "url": "http://arxiv.org/abs/2511.16661v1",
+    "arxiv_id": "2511.16661v1",
+    "authors": [
+      "Irmak Guzey",
+      "Haozhi Qi",
+      "Julen Urain",
+      "Changhao Wang",
+      "Jessica Yin",
+      "Krishna Bodduluri",
+      "Mike Lambeta",
+      "Lerrel Pinto",
+      "Akshara Rai",
+      "Jitendra Malik",
+      "Tingfan Wu",
+      "Akash Sharma",
+      "Homanga Bharadhwaj"
+    ],
+    "published": "2025-11-20T18:59:02+00:00",
+    "summary": "Learning multi-fingered robot policies from humans performing daily tasks in natural environments has long been a grand goal in the robotics community. Achieving this would mark significant progress toward generalizable robot manipulation in human environments, as it would reduce the reliance on labor-intensive robot data collection. Despite substantial efforts, progress toward this goal has been bottle-necked by the embodiment gap between humans and robots, as well as by difficulties in extracting relevant contextual and motion cues that enable learning of autonomous policies from in-the-wild human videos. We claim that with simple yet sufficiently powerful hardware for obtaining human data and our proposed framework AINA, we are now one significant step closer to achieving this dream. AINA enables learning multi-fingered policies from data collected by anyone, anywhere, and in any environment using Aria Gen 2 glasses. These glasses are lightweight and portable, feature a high-resolution RGB camera, provide accurate on-board 3D head and hand poses, and offer a wide stereo view that can be leveraged for depth estimation of the scene. This setup enables the learning of 3D point-based policies for multi-fingered hands that are robust to background changes and can be deployed directly without requiring any robot data (including online corrections, reinforcement learning, or simulation). We compare our framework against prior human-to-robot policy learning approaches, ablate our design choices, and demonstrate results across nine everyday manipulation tasks. Robot rollouts are best viewed on our website: https://aina-robot.github.io."
+  },
+  {
     "title": "GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization",
     "url": "http://arxiv.org/abs/2511.15705v1",
     "arxiv_id": "2511.15705v1",
