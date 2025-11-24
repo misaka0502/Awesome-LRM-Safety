@@ -1,5 +1,88 @@
 [
   {
+    "title": "RynnVLA-002: A Unified Vision-Language-Action and World Model",
+    "url": "http://arxiv.org/abs/2511.17502v1",
+    "arxiv_id": "2511.17502v1",
+    "authors": [
+      "Jun Cen",
+      "Siteng Huang",
+      "Yuqian Yuan",
+      "Hangjie Yuan",
+      "Chaohui Yu",
+      "Yuming Jiang",
+      "Jiayan Guo",
+      "Kehan Li",
+      "Hao Luo",
+      "Fan Wang",
+      "Xin Li",
+      "Deli Zhao",
+      "Hao Chen"
+    ],
+    "published": "2025-11-21T18:59:32+00:00",
+    "summary": "We introduce RynnVLA-002, a unified Vision-Language-Action (VLA) and world model. The world model leverages action and visual inputs to predict future image states, learning the underlying physics of the environment to refine action generation. Conversely, the VLA model produces subsequent actions from image observations, enhancing visual understanding and supporting the world model's image generation. The unified framework of RynnVLA-002 enables joint learning of environmental dynamics and action planning. Our experiments show that RynnVLA-002 surpasses individual VLA and world models, demonstrating their mutual enhancement. We evaluate RynnVLA-002 in both simulation and real-world robot tasks. RynnVLA-002 achieves 97.4% success rate on the LIBERO simulation benchmark without pretraining, while in real-world LeRobot experiments, its integrated world model boosts the overall success rate by 50%."
+  },
+  {
+    "title": "Native 3D Editing with Full Attention",
+    "url": "http://arxiv.org/abs/2511.17501v1",
+    "arxiv_id": "2511.17501v1",
+    "authors": [
+      "Weiwei Cai",
+      "Shuangkang Fang",
+      "Weicai Ye",
+      "Xin Dong",
+      "Yunhan Yang",
+      "Xuanyang Zhang",
+      "Wei Cheng",
+      "Yanpei Cao",
+      "Gang Yu",
+      "Tao Chen"
+    ],
+    "published": "2025-11-21T18:59:26+00:00",
+    "summary": "Instruction-guided 3D editing is a rapidly emerging field with the potential to broaden access to 3D content creation. However, existing methods face critical limitations: optimization-based approaches are prohibitively slow, while feed-forward approaches relying on multi-view 2D editing often suffer from inconsistent geometry and degraded visual quality. To address these issues, we propose a novel native 3D editing framework that directly manipulates 3D representations in a single, efficient feed-forward pass. Specifically, we create a large-scale, multi-modal dataset for instruction-guided 3D editing, covering diverse addition, deletion, and modification tasks. This dataset is meticulously curated to ensure that edited objects faithfully adhere to the instructional changes while preserving the consistency of unedited regions with the source object. Building upon this dataset, we explore two distinct conditioning strategies for our model: a conventional cross-attention mechanism and a novel 3D token concatenation approach. Our results demonstrate that token concatenation is more parameter-efficient and achieves superior performance. Extensive evaluations show that our method outperforms existing 2D-lifting approaches, setting a new benchmark in generation quality, 3D consistency, and instruction fidelity."
+  },
+  {
+    "title": "HALO: High-Altitude Language-Conditioned Monocular Aerial Exploration and Navigation",
+    "url": "http://arxiv.org/abs/2511.17497v1",
+    "arxiv_id": "2511.17497v1",
+    "authors": [
+      "Yuezhan Tao",
+      "Dexter Ong",
+      "Fernando Cladera",
+      "Jason Hughes",
+      "Camillo J. Taylor",
+      "Pratik Chaudhari",
+      "Vijay Kumar"
+    ],
+    "published": "2025-11-21T18:55:02+00:00",
+    "summary": "We demonstrate real-time high-altitude aerial metric-semantic mapping and exploration using a monocular camera paired with a global positioning system (GPS) and an inertial measurement unit (IMU). Our system, named HALO, addresses two key challenges: (i) real-time dense 3D reconstruction using vision at large distances, and (ii) mapping and exploration of large-scale outdoor environments with accurate scene geometry and semantics. We demonstrate that HALO can plan informative paths that exploit this information to complete missions with multiple tasks specified in natural language. In simulation-based evaluation across large-scale environments of size up to 78,000 sq. m., HALO consistently completes tasks with less exploration time and achieves up to 68% higher competitive ratio in terms of the distance traveled compared to the state-of-the-art semantic exploration baseline. We use real-world experiments on a custom quadrotor platform to demonstrate that (i) all modules can run onboard the robot, and that (ii) in diverse environments HALO can support effective autonomous execution of missions covering up to 24,600 sq. m. area at an altitude of 40 m. Experiment videos and more details can be found on our project page: https://tyuezhan.github.io/halo/."
+  },
+  {
+    "title": "MDG: Masked Denoising Generation for Multi-Agent Behavior Modeling in Traffic Environments",
+    "url": "http://arxiv.org/abs/2511.17496v1",
+    "arxiv_id": "2511.17496v1",
+    "authors": [
+      "Zhiyu Huang",
+      "Zewei Zhou",
+      "Tianhui Cai",
+      "Yun Zhang",
+      "Jiaqi Ma"
+    ],
+    "published": "2025-11-21T18:53:11+00:00",
+    "summary": "Modeling realistic and interactive multi-agent behavior is critical to autonomous driving and traffic simulation. However, existing diffusion and autoregressive approaches are limited by iterative sampling, sequential decoding, or task-specific designs, which hinder efficiency and reuse. We propose Masked Denoising Generation (MDG), a unified generative framework that reformulates multi-agent behavior modeling as the reconstruction of independently noised spatiotemporal tensors. Instead of relying on diffusion time steps or discrete tokenization, MDG applies continuous, per-agent and per-timestep noise masks that enable localized denoising and controllable trajectory generation in a single or few forward passes. This mask-driven formulation generalizes across open-loop prediction, closed-loop simulation, motion planning, and conditional generation within one model. Trained on large-scale real-world driving datasets, MDG achieves competitive closed-loop performance on the Waymo Sim Agents and nuPlan Planning benchmarks, while providing efficient, consistent, and controllable open-loop multi-agent trajectory generation. These results position MDG as a simple yet versatile paradigm for multi-agent behavior modeling."
+  },
+  {
+    "title": "Exploring fixed points and eigenstates of quantum systems with reinforcement learning",
+    "url": "http://arxiv.org/abs/2511.17491v1",
+    "arxiv_id": "2511.17491v1",
+    "authors": [
+      "Mar\u00eda Laura Olivera-Atencio",
+      "Jes\u00fas Casado-Pascual",
+      "Denis Lacroix"
+    ],
+    "published": "2025-11-21T18:48:46+00:00",
+    "summary": "We introduce a reinforcement learning algorithm designed to identify the fixed points of a given quantum operation. The method iteratively constructs the unitary transformation that maps the computational basis onto the basis of fixed points through a reward-penalty scheme based on quantum measurements. In cases where the operation corresponds to a Hamiltonian evolution, this task reduces to determining the Hamiltonian eigenstates. The algorithm is first benchmarked on random Hamiltonians acting on two and three qubits and then applied to many-body systems of up to six qubits, including the transverse-field Ising model and the all-to-all pairing Hamiltonian. In both cases, the algorithm is demonstrated to perform successfully; in the pairing model, it can also reveal hidden symmetries, which can be exploited to restrict learning to specific symmetry sectors. Finally, we discuss the possibility of post-selecting high-fidelity states even when full convergence has not been reached."
+  },
+  {
     "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
     "url": "http://arxiv.org/abs/2511.16671v1",
     "arxiv_id": "2511.16671v1",
