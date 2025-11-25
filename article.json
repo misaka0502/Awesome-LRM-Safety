@@ -1,5 +1,81 @@
 [
   {
+    "title": "Mixture of Horizons in Action Chunking",
+    "url": "http://arxiv.org/abs/2511.19433v1",
+    "arxiv_id": "2511.19433v1",
+    "authors": [
+      "Dong Jing",
+      "Gang Wang",
+      "Jiaqi Liu",
+      "Weiliang Tang",
+      "Zelong Sun",
+      "Yunchao Yao",
+      "Zhenyu Wei",
+      "Yunhui Liu",
+      "Zhiwu Lu",
+      "Mingyu Ding"
+    ],
+    "published": "2025-11-24T18:59:51+00:00",
+    "summary": "Vision-language-action (VLA) models have shown remarkable capabilities in robotic manipulation, but their performance is sensitive to the $\\textbf{action chunk length}$ used during training, termed $\\textbf{horizon}$. Our empirical study reveals an inherent trade-off: longer horizons provide stronger global foresight but degrade fine-grained accuracy, while shorter ones sharpen local control yet struggle on long-term tasks, implying fixed choice of single horizons being suboptimal. To mitigate the trade-off, we propose a $\\textbf{mixture of horizons (MoH)}$ strategy. MoH rearranges the action chunk into several segments with different horizons, processes them in parallel with a shared action transformer, and fuses outputs with a light linear gate. It has three appealing benefits. 1) MoH exploits long-term foresight and short-term precision jointly within a single model, improving both performance and generalizability to complex tasks. 2) MoH is plug-and-play for full-attention action modules with minimal training or inference overhead. 3) MoH enables dynamic inference with adaptive horizons, which selects stable actions through cross-horizon consensus, achieving 2.5$\\times$ higher throughput than baselines while preserving superior performance. Extensive experiments over flow-based policies $\u03c0_0$, $\u03c0_{0.5}$, and one-step regression policy $\u03c0_{\\text{reg}}$ demonstrate that MoH yields consistent and significant gains on both simulations and real-world tasks. Notably, under mixed-task setting, $\u03c0_{0.5}$ with MoH reaches a new state-of-the-art with 99$\\%$ average success rate on LIBERO after only $30k$ training iterations. Project page: https://github.com/Timsty1/MixtureOfHorizons"
+  },
+  {
+    "title": "Robotic chip-scale nanofabrication for superior consistency",
+    "url": "http://arxiv.org/abs/2511.19432v1",
+    "arxiv_id": "2511.19432v1",
+    "authors": [
+      "Felix M. Mayor",
+      "Wenyan Guan",
+      "Erik Szakiel",
+      "Amir H. Safavi-Naeini",
+      "Samuel Gyger"
+    ],
+    "published": "2025-11-24T18:59:45+00:00",
+    "summary": "Unlike the rigid, high-volume automation found in industry, academic research requires process flexibility that has historically relied on variable manual operations. This hinders the fabrication of advanced, complex devices. We propose to address this gap by automating these low-volume, high-stakes tasks using a robotic arm to improve process control and consistency. As a proof of concept, we deploy this system for the resist development of Josephson junction devices. A statistical comparison of the process repeatability shows the robotic process achieves a resistance spread across chips close to 2%, a significant improvement over the ~7% spread observed from human operators, validating robotics as a solution to eliminate operator-dependent variability and a path towards industrial-level consistency in a research setting."
+  },
+  {
+    "title": "SLMFix: Leveraging Small Language Models for Error Fixing with Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2511.19422v1",
+    "arxiv_id": "2511.19422v1",
+    "authors": [
+      "David Jiahao Fu",
+      "Aryan Gupta",
+      "Aaron Councilman",
+      "David Grove",
+      "Yu-Xiong Wang",
+      "Vikram Adve"
+    ],
+    "published": "2025-11-24T18:56:47+00:00",
+    "summary": "Recent advancements in large language models (LLMs) have shown very impressive capabilities in code generation across many programming languages. However, even state-of-the-art LLMs generate programs that contains syntactic errors and fail to complete the given tasks, especially for low-resource programming languages (LRPLs). In addition, high training cost makes finetuning LLMs unaffordable with constrained computational resources, further undermining the effectiveness of LLMs for code generation. In this work, we propose SLMFix, a novel code generation pipeline that leverages a small language model (SLM) finetuned using reinforcement learning (RL) techniques to fix syntactic errors in LLM-generated programs to improve the quality of LLM-generated programs for domain-specific languages (DSLs). In specific, we applied RL on the SLM for the program repair task using a reward calculated using both a static validator and a static semantic similarity metric. Our experimental results demonstrate the effectiveness and generalizability of our approach across multiple DSLs, achieving more than 95% pass rate on the static validator. Notably, SLMFix brings substantial improvement to the base model and outperforms supervised finetuning approach even for 7B models on a LRPL, showing the potential of our approach as an alternative to traditional finetuning approaches."
+  },
+  {
+    "title": "Data driven synthesis of provable invariant sets via stochastically sampled data",
+    "url": "http://arxiv.org/abs/2511.19421v1",
+    "arxiv_id": "2511.19421v1",
+    "authors": [
+      "Amy K. Strong",
+      "Ali Kashani",
+      "Claus Danielson",
+      "Leila Bridgeman"
+    ],
+    "published": "2025-11-24T18:56:27+00:00",
+    "summary": "Positive invariant (PI) sets are essential for ensuring safety, i.e. constraint adherence, of dynamical systems. With the increasing availability of sampled data from complex (and often unmodeled) systems, it is advantageous to leverage these data sets for PI set synthesis. This paper uses data driven geometric conditions of invariance to synthesize PI sets from data. Where previous data driven, set-based approaches to PI set synthesis used deterministic sampling schemes, this work instead synthesizes PI sets from any pre-collected data sets. Beyond a data set and Lipschitz continuity, no additional information about the system is needed. A tree data structure is used to partition the space and select samples used to construct the PI set, while Lipschitz continuity is used to provide deterministic guarantees of invariance. Finally, probabilistic bounds are given on the number of samples needed for the algorithm to determine of a certain volume."
+  },
+  {
+    "title": "Learning Robust Social Strategies with Large Language Models",
+    "url": "http://arxiv.org/abs/2511.19405v1",
+    "arxiv_id": "2511.19405v1",
+    "authors": [
+      "Dereck Piche",
+      "Mohammed Muqeeth",
+      "Milad Aghajohari",
+      "Juan Duque",
+      "Michael Noukhovitch",
+      "Aaron Courville"
+    ],
+    "published": "2025-11-24T18:43:46+00:00",
+    "summary": "As agentic AI becomes more widespread, agents with distinct and possibly conflicting goals will interact in complex ways. These multi-agent interactions pose a fundamental challenge, particularly in social dilemmas, where agents' individual incentives can undermine collective welfare. While reinforcement learning (RL) has been effective for aligning large language models (LLMs) in the single-agent regime, prior small-network results suggest that standard RL in multi-agent settings often converges to defecting, self-interested policies. We show the same effect in LLMs: despite cooperative priors, RL-trained LLM agents develop opportunistic behavior that can exploit even advanced closed-source models. To address this tendency of RL to converge to poor equilibria, we adapt a recent opponent-learning awareness algorithm, Advantage Alignment, to fine-tune LLMs toward multi-agent cooperation and non-exploitability. We then introduce a group-relative baseline that simplifies advantage computation in iterated games, enabling multi-agent training at LLM scale. We also contribute a novel social dilemma environment, Trust and Split, which requires natural language communication to achieve high collective welfare. Across a wide range of social dilemmas, policies learned with Advantage Alignment achieve higher collective payoffs while remaining robust against exploitation by greedy agents."
+  },
+  {
     "title": "RynnVLA-002: A Unified Vision-Language-Action and World Model",
     "url": "http://arxiv.org/abs/2511.17502v1",
     "arxiv_id": "2511.17502v1",
