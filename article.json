@@ -1,5 +1,93 @@
 [
   {
+    "title": "RubricRL: Simple Generalizable Rewards for Text-to-Image Generation",
+    "url": "http://arxiv.org/abs/2511.20651v1",
+    "arxiv_id": "2511.20651v1",
+    "authors": [
+      "Xuelu Feng",
+      "Yunsheng Li",
+      "Ziyu Wan",
+      "Zixuan Gao",
+      "Junsong Yuan",
+      "Dongdong Chen",
+      "Chunming Qiao"
+    ],
+    "published": "2025-11-25T18:59:55+00:00",
+    "summary": "Reinforcement learning (RL) has recently emerged as a promising approach for aligning text-to-image generative models with human preferences. A key challenge, however, lies in designing effective and interpretable rewards. Existing methods often rely on either composite metrics (e.g., CLIP, OCR, and realism scores) with fixed weights or a single scalar reward distilled from human preference models, which can limit interpretability and flexibility. We propose RubricRL, a simple and general framework for rubric-based reward design that offers greater interpretability, composability, and user control. Instead of using a black-box scalar signal, RubricRL dynamically constructs a structured rubric for each prompt--a decomposable checklist of fine-grained visual criteria such as object correctness, attribute accuracy, OCR fidelity, and realism--tailored to the input text. Each criterion is independently evaluated by a multimodal judge (e.g., o4-mini), and a prompt-adaptive weighting mechanism emphasizes the most relevant dimensions. This design not only produces interpretable and modular supervision signals for policy optimization (e.g., GRPO or PPO), but also enables users to directly adjust which aspects to reward or penalize. Experiments with an autoregressive text-to-image model demonstrate that RubricRL improves prompt faithfulness, visual detail, and generalizability, while offering a flexible and extensible foundation for interpretable RL alignment across text-to-image architectures."
+  },
+  {
+    "title": "Vision-Language Memory for Spatial Reasoning",
+    "url": "http://arxiv.org/abs/2511.20644v1",
+    "arxiv_id": "2511.20644v1",
+    "authors": [
+      "Zuntao Liu",
+      "Yi Du",
+      "Taimeng Fu",
+      "Shaoshu Su",
+      "Cherie Ho",
+      "Chen Wang"
+    ],
+    "published": "2025-11-25T18:59:02+00:00",
+    "summary": "Spatial reasoning is a critical capability for intelligent robots, yet current vision-language models (VLMs) still fall short of human-level performance in video-based spatial reasoning. This gap mainly stems from two challenges: a semantic-geometric misalignment that prevents consistent 3D understanding, and the absence of persistent memory to retain 3D representation and understanding over time. To address these limitations, we present VLM$^2$, a Vision-Language Model with persistent Memory for spatial reasoning with a view-consistent, 3D-aware representation purely from 2D video. Specifically, to enhance long-horizon reasoning, we incorporate a dual-memory module, consisting of a working memory that operates as a sliding window to focus on immediate context, and an episodic memory that consolidates and stores critical long-term information. This design enables efficient and long-horizon spatial reasoning with a fixed computational cost. Extensive experiments on multiple benchmarks show that VLM$^2$ achieves state-of-the-art performance among video-only models, significantly advancing the frontier of visual-spatial intelligence."
+  },
+  {
+    "title": "iMontage: Unified, Versatile, Highly Dynamic Many-to-many Image Generation",
+    "url": "http://arxiv.org/abs/2511.20635v1",
+    "arxiv_id": "2511.20635v1",
+    "authors": [
+      "Zhoujie Fu",
+      "Xianfang Zeng",
+      "Jinghong Lan",
+      "Xinyao Liao",
+      "Cheng Chen",
+      "Junyi Chen",
+      "Jiacheng Wei",
+      "Wei Cheng",
+      "Shiyu Liu",
+      "Yunuo Chen",
+      "Gang Yu",
+      "Guosheng Lin"
+    ],
+    "published": "2025-11-25T18:54:16+00:00",
+    "summary": "Pre-trained video models learn powerful priors for generating high-quality, temporally coherent content. While these models excel at temporal coherence, their dynamics are often constrained by the continuous nature of their training data. We hypothesize that by injecting the rich and unconstrained content diversity from image data into this coherent temporal framework, we can generate image sets that feature both natural transitions and a far more expansive dynamic range. To this end, we introduce iMontage, a unified framework designed to repurpose a powerful video model into an all-in-one image generator. The framework consumes and produces variable-length image sets, unifying a wide array of image generation and editing tasks. To achieve this, we propose an elegant and minimally invasive adaptation strategy, complemented by a tailored data curation process and training paradigm. This approach allows the model to acquire broad image manipulation capabilities without corrupting its invaluable original motion priors. iMontage excels across several mainstream many-in-many-out tasks, not only maintaining strong cross-image contextual consistency but also generating scenes with extraordinary dynamics that surpass conventional scopes. Find our homepage at: https://kr1sjfu.github.io/iMontage-web/."
+  },
+  {
+    "title": "Reinforcing Action Policies by Prophesying",
+    "url": "http://arxiv.org/abs/2511.20633v1",
+    "arxiv_id": "2511.20633v1",
+    "authors": [
+      "Jiahui Zhang",
+      "Ze Huang",
+      "Chun Gu",
+      "Zipei Ma",
+      "Li Zhang"
+    ],
+    "published": "2025-11-25T18:52:56+00:00",
+    "summary": "Vision-Language-Action (VLA) policies excel in aligning language, perception, and robot control. However, most VLAs are trained purely by imitation, which overfits to demonstrations, and is brittle under distribution shift. Reinforcement learning (RL) directly optimizes task reward and thus addresses this misalignment, but real-robot interaction is expensive and conventional simulators are hard to engineer and transfer. We address both data efficiency and optimization stability in VLA post-training via a learned world model and an RL procedure tailored to flow-based action heads. Specifically, we introduce Prophet, a unified action-to-video robot actuation pretrained across large-scale, heterogeneous robot data to learn reusable action-outcome dynamics. It is able to few-shot adapt to new robots, objects, and environments, yielding a rollout-ready simulator. Upon Prophet, we reinforce action policies with Flow-action-GRPO (FA-GRPO), which adapts Flow-GRPO to operate on VLA actions, and with FlowScale, a stepwise reweighting that rescales per-step gradients in the flow head. Together, Prophet, FA-GRPO, and FlowScale constitute ProphRL, a practical, data- and compute-efficient path to VLA post-training. Experiments show 5-17% success gains on public benchmarks and 24-30% gains on real robots across different VLA variants."
+  },
+  {
+    "title": "MapReduce LoRA: Advancing the Pareto Front in Multi-Preference Optimization for Generative Models",
+    "url": "http://arxiv.org/abs/2511.20629v1",
+    "arxiv_id": "2511.20629v1",
+    "authors": [
+      "Chieh-Yun Chen",
+      "Zhonghao Wang",
+      "Qi Chen",
+      "Zhifan Ye",
+      "Min Shi",
+      "Yue Zhao",
+      "Yinan Zhao",
+      "Hui Qu",
+      "Wei-An Lin",
+      "Yiru Shen",
+      "Ajinkya Kale",
+      "Irfan Essa",
+      "Humphrey Shi"
+    ],
+    "published": "2025-11-25T18:49:21+00:00",
+    "summary": "Reinforcement learning from human feedback (RLHF) with reward models has advanced alignment of generative models to human aesthetic and perceptual preferences. However, jointly optimizing multiple rewards often incurs an alignment tax, improving one dimension while degrading others. To address this, we introduce two complementary methods: MapReduce LoRA and Reward-aware Token Embedding (RaTE). MapReduce LoRA trains preference-specific LoRA experts in parallel and iteratively merges them to refine a shared base model; RaTE learns reward-specific token embeddings that compose at inference for flexible preference control. Experiments on Text-to-Image generation (Stable Diffusion 3.5 Medium and FLUX.1-dev) show improvements of 36.1%, 4.6%, and 55.7%, and 32.7%, 4.3%, and 67.1% on GenEval, PickScore, and OCR, respectively. On Text-to-Video generation (HunyuanVideo), visual and motion quality improve by 48.1% and 90.0%, respectively. On the language task, Helpful Assistant, with Llama-2 7B, helpful and harmless improve by 43.4% and 136.7%, respectively. Our framework sets a new state-of-the-art multi-preference alignment recipe across modalities."
+  },
+  {
     "title": "Mixture of Horizons in Action Chunking",
     "url": "http://arxiv.org/abs/2511.19433v1",
     "arxiv_id": "2511.19433v1",
