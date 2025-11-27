@@ -1,5 +1,90 @@
 [
   {
+    "title": "TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos",
+    "url": "http://arxiv.org/abs/2511.21690v1",
+    "arxiv_id": "2511.21690v1",
+    "authors": [
+      "Seungjae Lee",
+      "Yoonkyo Jung",
+      "Inkook Chun",
+      "Yao-Chih Lee",
+      "Zikui Cai",
+      "Hongjia Huang",
+      "Aayush Talreja",
+      "Tan Dat Dao",
+      "Yongyuan Liang",
+      "Jia-Bin Huang",
+      "Furong Huang"
+    ],
+    "published": "2025-11-26T18:59:55+00:00",
+    "summary": "Learning new robot tasks on new platforms and in new scenes from only a handful of demonstrations remains challenging. While videos of other embodiments - humans and different robots - are abundant, differences in embodiment, camera, and environment hinder their direct use. We address the small-data problem by introducing a unifying, symbolic representation - a compact 3D \"trace-space\" of scene-level trajectories - that enables learning from cross-embodiment, cross-environment, and cross-task videos. We present TraceGen, a world model that predicts future motion in trace-space rather than pixel space, abstracting away appearance while retaining the geometric structure needed for manipulation. To train TraceGen at scale, we develop TraceForge, a data pipeline that transforms heterogeneous human and robot videos into consistent 3D traces, yielding a corpus of 123K videos and 1.8M observation-trace-language triplets. Pretraining on this corpus produces a transferable 3D motion prior that adapts efficiently: with just five target robot videos, TraceGen attains 80% success across four tasks while offering 50-600x faster inference than state-of-the-art video-based world models. In the more challenging case where only five uncalibrated human demonstration videos captured on a handheld phone are available, it still reaches 67.5% success on a real robot, highlighting TraceGen's ability to adapt across embodiments without relying on object detectors or heavy pixel-space generation."
+  },
+  {
+    "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
+    "url": "http://arxiv.org/abs/2511.21689v1",
+    "arxiv_id": "2511.21689v1",
+    "authors": [
+      "Hongjin Su",
+      "Shizhe Diao",
+      "Ximing Lu",
+      "Mingjie Liu",
+      "Jiacheng Xu",
+      "Xin Dong",
+      "Yonggan Fu",
+      "Peter Belcak",
+      "Hanrong Ye",
+      "Hongxu Yin",
+      "Yi Dong",
+      "Evelina Bakhturina",
+      "Tao Yu",
+      "Yejin Choi",
+      "Jan Kautz",
+      "Pavlo Molchanov"
+    ],
+    "published": "2025-11-26T18:59:46+00:00",
+    "summary": "Large language models are powerful generalists, yet solving deep and complex problems such as those of the Humanity's Last Exam (HLE) remains both conceptually challenging and computationally expensive. We show that small orchestrators managing other models and a variety of tools can both push the upper bound of intelligence and improve efficiency in solving difficult agentic tasks. We introduce ToolOrchestra, a method for training small orchestrators that coordinate intelligent tools. ToolOrchestra explicitly uses reinforcement learning with outcome-, efficiency-, and user-preference-aware rewards. Using ToolOrchestra, we produce Orchestrator, an 8B model that achieves higher accuracy at lower cost than previous tool-use agents while aligning with user preferences on which tools are to be used for a given query. On HLE, Orchestrator achieves a score of 37.1%, outperforming GPT-5 (35.1%) while being 2.5x more efficient. On tau2-Bench and FRAMES, Orchestrator surpasses GPT-5 by a wide margin while using only about 30% of the cost. Extensive analysis shows that Orchestrator achieves the best trade-off between performance and cost under multiple metrics, and generalizes robustly to unseen tools. These results demonstrate that composing diverse tools with a lightweight orchestration model is both more efficient and more effective than existing methods, paving the way for practical and scalable tool-augmented reasoning systems."
+  },
+  {
+    "title": "Escaping the Verifier: Learning to Reason via Demonstrations",
+    "url": "http://arxiv.org/abs/2511.21667v1",
+    "arxiv_id": "2511.21667v1",
+    "authors": [
+      "Locke Cai",
+      "Ivan Provilkov"
+    ],
+    "published": "2025-11-26T18:42:52+00:00",
+    "summary": "Training Large Language Models (LLMs) to reason often relies on Reinforcement Learning (RL) with task-specific verifiers. However, many real-world reasoning-intensive tasks lack verifiers, despite offering abundant expert demonstrations that remain under-utilized for reasoning-focused training. We introduce RARO (Relativistic Adversarial Reasoning Optimization) that learns strong reasoning capabilities from only expert demonstrations via Inverse Reinforcement Learning. Our method sets up an adversarial interaction between a policy (generator) and a relativistic critic (discriminator): the policy learns to mimic expert answers, while the critic learns to compare and distinguish between policy and expert answers. Our method trains both the policy and the critic jointly and continuously via RL, and we identify the key stabilization techniques required for robust learning. Empirically, RARO significantly outperforms strong verifier-free baselines on all of our evaluation tasks -- Countdown, DeepMath, and Poetry Writing -- and enjoys the same robust scaling trends as RL on verifiable tasks. These results demonstrate that our method effectively elicits strong reasoning performance from expert demonstrations alone, enabling robust reasoning learning even when task-specific verifiers are unavailable."
+  },
+  {
+    "title": "Uncertainty Quantification for Visual Object Pose Estimation",
+    "url": "http://arxiv.org/abs/2511.21666v1",
+    "arxiv_id": "2511.21666v1",
+    "authors": [
+      "Lorenzo Shaikewitz",
+      "Charis Georgiou",
+      "Luca Carlone"
+    ],
+    "published": "2025-11-26T18:39:44+00:00",
+    "summary": "Quantifying the uncertainty of an object's pose estimate is essential for robust control and planning. Although pose estimation is a well-studied robotics problem, attaching statistically rigorous uncertainty is not well understood without strict distributional assumptions. We develop distribution-free pose uncertainty bounds about a given pose estimate in the monocular setting. Our pose uncertainty only requires high probability noise bounds on pixel detections of 2D semantic keypoints on a known object. This noise model induces an implicit, non-convex set of pose uncertainty constraints. Our key contribution is SLUE (S-Lemma Uncertainty Estimation), a convex program to reduce this set to a single ellipsoidal uncertainty bound that is guaranteed to contain the true object pose with high probability. SLUE solves a relaxation of the minimum volume bounding ellipsoid problem inspired by the celebrated S-lemma. It requires no initial guess of the bound's shape or size and is guaranteed to contain the true object pose with high probability. For tighter uncertainty bounds at the same confidence, we extend SLUE to a sum-of-squares relaxation hierarchy which is guaranteed to converge to the minimum volume ellipsoidal uncertainty bound for a given set of keypoint constraints. We show this pose uncertainty bound can easily be projected to independent translation and axis-angle orientation bounds. We evaluate SLUE on two pose estimation datasets and a real-world drone tracking scenario. Compared to prior work, SLUE generates substantially smaller translation bounds and competitive orientation bounds. We release code at https://github.com/MIT-SPARK/PoseUncertaintySets."
+  },
+  {
+    "title": "Attention-Guided Patch-Wise Sparse Adversarial Attacks on Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2511.21663v1",
+    "arxiv_id": "2511.21663v1",
+    "authors": [
+      "Naifu Zhang",
+      "Wei Tao",
+      "Xi Xiao",
+      "Qianpu Sun",
+      "Yuxin Zheng",
+      "Wentao Mo",
+      "Peiqiang Wang",
+      "Nan Zhang"
+    ],
+    "published": "2025-11-26T18:37:54+00:00",
+    "summary": "In recent years, Vision-Language-Action (VLA) models in embodied intelligence have developed rapidly. However, existing adversarial attack methods require costly end-to-end training and often generate noticeable perturbation patches. To address these limitations, we propose ADVLA, a framework that directly applies adversarial perturbations on features projected from the visual encoder into the textual feature space. ADVLA efficiently disrupts downstream action predictions under low-amplitude constraints, and attention guidance allows the perturbations to be both focused and sparse. We introduce three strategies that enhance sensitivity, enforce sparsity, and concentrate perturbations. Experiments demonstrate that under an $L_{\\infty}=4/255$ constraint, ADVLA combined with Top-K masking modifies less than 10% of the patches while achieving an attack success rate of nearly 100%. The perturbations are concentrated on critical regions, remain almost imperceptible in the overall image, and a single-step iteration takes only about 0.06 seconds, significantly outperforming conventional patch-based attacks. In summary, ADVLA effectively weakens downstream action predictions of VLA models under low-amplitude and locally sparse conditions, avoiding the high training costs and conspicuous perturbations of traditional patch attacks, and demonstrates unique effectiveness and practical value for attacking VLA feature spaces."
+  },
+  {
     "title": "RubricRL: Simple Generalizable Rewards for Text-to-Image Generation",
     "url": "http://arxiv.org/abs/2511.20651v1",
     "arxiv_id": "2511.20651v1",
