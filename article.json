@@ -1,5 +1,89 @@
 [
   {
+    "title": "Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models",
+    "url": "http://arxiv.org/abs/2511.23478v1",
+    "arxiv_id": "2511.23478v1",
+    "authors": [
+      "Muhammad Maaz",
+      "Hanoona Rasheed",
+      "Fahad Shahbaz Khan",
+      "Salman Khan"
+    ],
+    "published": "2025-11-28T18:59:58+00:00",
+    "summary": "Reasoning over dynamic visual content remains a central challenge for multimodal large language models. Recent thinking models generate explicit reasoning traces for interpretability; however, their reasoning often appears convincing while being logically inconsistent or weakly grounded in visual evidence. We identify and formalize these issues through two diagnostic metrics: Think Answer Consistency (TAC), which measures the alignment between reasoning and answers, and Video Attention Score (VAS), which captures the extent to which reasoning depends on visual versus textual cues. Analysis across 11 video reasoning benchmarks shows that current models rely heavily on linguistic priors rather than visual content. To address this, we propose a reinforcement learning approach that enhances both temporal precision and reasoning consistency. Our approach combines timestamp aware supervised fine tuning with Group Relative Policy Optimization (GRPO) guided by a novel Temporal Alignment Reward (TAR). This dual step post training stage encourages temporally aligned and causally coherent video reasoning. The resulting model, Video R2, achieves consistently higher TAC, VAS, and accuracy across multiple benchmarks, demonstrating that improvements in temporal alignment and reasoning coherence lead to more accurate and trustworthy video understanding. Our code, dataset, and model will be open sourced."
+  },
+  {
+    "title": "Video-CoM: Interactive Video Reasoning via Chain of Manipulations",
+    "url": "http://arxiv.org/abs/2511.23477v1",
+    "arxiv_id": "2511.23477v1",
+    "authors": [
+      "Hanoona Rasheed",
+      "Mohammed Zumri",
+      "Muhammad Maaz",
+      "Ming-Hsuan Yang",
+      "Fahad Shahbaz Khan",
+      "Salman Khan"
+    ],
+    "published": "2025-11-28T18:59:57+00:00",
+    "summary": "Recent multimodal large language models (MLLMs) have advanced video understanding, yet most still \"think about videos\" ie once a video is encoded, reasoning unfolds entirely in text, treating visual input as a static context. This passive paradigm creates a semantic bottleneck: models cannot rewatch, refocus, or verify evidence, leading to shallow visual reasoning on tasks requiring fine grained spatio temporal understanding. In this work, we introduce Interactive Video Reasoning, a new paradigm that transforms video into an active cognitive workspace, enabling models to \"think with videos\". Our model, Video CoM, reasons through a Chain of Manipulations (CoM), performing iterative visual actions to gather and refine evidence. To support this behavior, we construct Video CoM Instruct, an 18K instruction tuning dataset curated for multi step manipulation reasoning. Beyond supervised learning, we further optimize the manipulation policy via reinforcement learning with reasoning aware Group Relative Policy Optimization (GRPO). Unlike prior work that relies solely on sparse answer rewards, our method introduces step level reasoning rewards, guiding the model toward grounded and consistent reasoning. Video CoM achieves strong results across nine video reasoning benchmarks, improving average performance by 3.6 percent over recent state of the art models, while training on only 25K SFT and 3K GRPO video samples, significantly fewer than comparable large scale models. Ablation studies demonstrate that reasoning aware rewards improve both accuracy and interpretability. Code: https://github.com/mbzuai-oryx/Video-CoM"
+  },
+  {
+    "title": "ThetaEvolve: Test-time Learning on Open Problems",
+    "url": "http://arxiv.org/abs/2511.23473v1",
+    "arxiv_id": "2511.23473v1",
+    "authors": [
+      "Yiping Wang",
+      "Shao-Rong Su",
+      "Zhiyuan Zeng",
+      "Eva Xu",
+      "Liliang Ren",
+      "Xinyu Yang",
+      "Zeyi Huang",
+      "Xuehai He",
+      "Luyao Ma",
+      "Baolin Peng",
+      "Hao Cheng",
+      "Pengcheng He",
+      "Weizhu Chen",
+      "Shuohang Wang",
+      "Simon Shaolei Du",
+      "Yelong Shen"
+    ],
+    "published": "2025-11-28T18:58:14+00:00",
+    "summary": "Recent advances in large language models (LLMs) have enabled breakthroughs in mathematical discovery, exemplified by AlphaEvolve, a closed-source system that evolves programs to improve bounds on open problems. However, it relies on ensembles of frontier LLMs to achieve new bounds and is a pure inference system that models cannot internalize the evolving strategies. We introduce ThetaEvolve, an open-source framework that simplifies and extends AlphaEvolve to efficiently scale both in-context learning and Reinforcement Learning (RL) at test time, allowing models to continually learn from their experiences in improving open optimization problems. ThetaEvolve features a single LLM, a large program database for enhanced exploration, batch sampling for higher throughput, lazy penalties to discourage stagnant outputs, and optional reward shaping for stable training signals, etc. ThetaEvolve is the first evolving framework that enable a small open-source model, like DeepSeek-R1-0528-Qwen3-8B, to achieve new best-known bounds on open problems (circle packing and first auto-correlation inequality) mentioned in AlphaEvolve. Besides, across two models and four open tasks, we find that ThetaEvolve with RL at test-time consistently outperforms inference-only baselines, and the model indeed learns evolving capabilities, as the RL-trained checkpoints demonstrate faster progress and better final performance on both trained target task and other unseen tasks. We release our code publicly: https://github.com/ypwang61/ThetaEvolve"
+  },
+  {
+    "title": "SmallWorlds: Assessing Dynamics Understanding of World Models in Isolated Environments",
+    "url": "http://arxiv.org/abs/2511.23465v1",
+    "arxiv_id": "2511.23465v1",
+    "authors": [
+      "Xinyi Li",
+      "Zaishuo Xia",
+      "Weyl Lu",
+      "Chenjie Hao",
+      "Yubei Chen"
+    ],
+    "published": "2025-11-28T18:56:02+00:00",
+    "summary": "Current world models lack a unified and controlled setting for systematic evaluation, making it difficult to assess whether they truly capture the underlying rules that govern environment dynamics. In this work, we address this open challenge by introducing the SmallWorld Benchmark, a testbed designed to assess world model capability under isolated and precisely controlled dynamics without relying on handcrafted reward signals. Using this benchmark, we conduct comprehensive experiments in the fully observable state space on representative architectures including Recurrent State Space Model, Transformer, Diffusion model, and Neural ODE, examining their behavior across six distinct domains. The experimental results reveal how effectively these models capture environment structure and how their predictions deteriorate over extended rollouts, highlighting both the strengths and limitations of current modeling paradigms and offering insights into future improvement directions in representation learning and dynamics modeling."
+  },
+  {
+    "title": "ASTRO: Adaptive Stitching via Dynamics-Guided Trajectory Rollouts",
+    "url": "http://arxiv.org/abs/2511.23442v1",
+    "arxiv_id": "2511.23442v1",
+    "authors": [
+      "Hang Yu",
+      "Di Zhang",
+      "Qiwei Du",
+      "Yanping Zhao",
+      "Hai Zhang",
+      "Guang Chen",
+      "Eduardo E. Veas",
+      "Junqiao Zhao"
+    ],
+    "published": "2025-11-28T18:35:37+00:00",
+    "summary": "Offline reinforcement learning (RL) enables agents to learn optimal policies from pre-collected datasets. However, datasets containing suboptimal and fragmented trajectories present challenges for reward propagation, resulting in inaccurate value estimation and degraded policy performance. While trajectory stitching via generative models offers a promising solution, existing augmentation methods frequently produce trajectories that are either confined to the support of the behavior policy or violate the underlying dynamics, thereby limiting their effectiveness for policy improvement. We propose ASTRO, a data augmentation framework that generates distributionally novel and dynamics-consistent trajectories for offline RL. ASTRO first learns a temporal-distance representation to identify distinct and reachable stitch targets. We then employ a dynamics-guided stitch planner that adaptively generates connecting action sequences via Rollout Deviation Feedback, defined as the gap between target state sequence and the actual arrived state sequence by executing predicted actions, to improve trajectory stitching's feasibility and reachability. This approach facilitates effective augmentation through stitching and ultimately enhances policy learning. ASTRO outperforms prior offline RL augmentation methods across various algorithms, achieving notable performance gain on the challenging OGBench suite and demonstrating consistent improvements on standard offline RL benchmarks such as D4RL."
+  },
+  {
     "title": "TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos",
     "url": "http://arxiv.org/abs/2511.21690v1",
     "arxiv_id": "2511.21690v1",
