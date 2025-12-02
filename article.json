@@ -1,5 +1,74 @@
 [
   {
+    "title": "EfficientFlow: Efficient Equivariant Flow Policy Learning for Embodied AI",
+    "url": "http://arxiv.org/abs/2512.02020v1",
+    "arxiv_id": "2512.02020v1",
+    "authors": [
+      "Jianlei Chang",
+      "Ruofeng Mei",
+      "Wei Ke",
+      "Xiangyu Xu"
+    ],
+    "published": "2025-12-01T18:59:59+00:00",
+    "summary": "Generative modeling has recently shown remarkable promise for visuomotor policy learning, enabling flexible and expressive control across diverse embodied AI tasks. However, existing generative policies often struggle with data inefficiency, requiring large-scale demonstrations, and sampling inefficiency, incurring slow action generation during inference. We introduce EfficientFlow, a unified framework for efficient embodied AI with flow-based policy learning. To enhance data efficiency, we bring equivariance into flow matching. We theoretically prove that when using an isotropic Gaussian prior and an equivariant velocity prediction network, the resulting action distribution remains equivariant, leading to improved generalization and substantially reduced data demands. To accelerate sampling, we propose a novel acceleration regularization strategy. As direct computation of acceleration is intractable for marginal flow trajectories, we derive a novel surrogate loss that enables stable and scalable training using only conditional trajectories. Across a wide range of robotic manipulation benchmarks, the proposed algorithm achieves competitive or superior performance under limited data while offering dramatically faster inference. These results highlight EfficientFlow as a powerful and efficient paradigm for high-performance embodied AI."
+  },
+  {
+    "title": "A Diffusion Model Framework for Maximum Entropy Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2512.02019v1",
+    "arxiv_id": "2512.02019v1",
+    "authors": [
+      "Sebastian Sanokowski",
+      "Kaustubh Patil",
+      "Alois Knoll"
+    ],
+    "published": "2025-12-01T18:59:58+00:00",
+    "summary": "Diffusion models have achieved remarkable success in data-driven learning and in sampling from complex, unnormalized target distributions. Building on this progress, we reinterpret Maximum Entropy Reinforcement Learning (MaxEntRL) as a diffusion model-based sampling problem. We tackle this problem by minimizing the reverse Kullback-Leibler (KL) divergence between the diffusion policy and the optimal policy distribution using a tractable upper bound. By applying the policy gradient theorem to this objective, we derive a modified surrogate objective for MaxEntRL that incorporates diffusion dynamics in a principled way. This leads to simple diffusion-based variants of Soft Actor-Critic (SAC), Proximal Policy Optimization (PPO) and Wasserstein Policy Optimization (WPO), termed DiffSAC, DiffPPO and DiffWPO. All of these methods require only minor implementation changes to their base algorithm. We find that on standard continuous control benchmarks, DiffSAC, DiffPPO and DiffWPO achieve better returns and higher sample efficiency than SAC and PPO."
+  },
+  {
+    "title": "Data-Centric Visual Development for Self-Driving Labs",
+    "url": "http://arxiv.org/abs/2512.02018v1",
+    "arxiv_id": "2512.02018v1",
+    "authors": [
+      "Anbang Liu",
+      "Guanzhong Hu",
+      "Jiayi Wang",
+      "Ping Guo",
+      "Han Liu"
+    ],
+    "published": "2025-12-01T18:59:57+00:00",
+    "summary": "Self-driving laboratories offer a promising path toward reducing the labor-intensive, time-consuming, and often irreproducible workflows in the biological sciences. Yet their stringent precision requirements demand highly robust models whose training relies on large amounts of annotated data. However, this kind of data is difficult to obtain in routine practice, especially negative samples. In this work, we focus on pipetting, the most critical and precision sensitive action in SDLs. To overcome the scarcity of training data, we build a hybrid pipeline that fuses real and virtual data generation. The real track adopts a human-in-the-loop scheme that couples automated acquisition with selective human verification to maximize accuracy with minimal effort. The virtual track augments the real data using reference-conditioned, prompt-guided image generation, which is further screened and validated for reliability. Together, these two tracks yield a class-balanced dataset that enables robust bubble detection training. On a held-out real test set, a model trained entirely on automatically acquired real images reaches 99.6% accuracy, and mixing real and generated data during training sustains 99.4% accuracy while reducing collection and review load. Our approach offers a scalable and cost-effective strategy for supplying visual feedback data to SDL workflows and provides a practical solution to data scarcity in rare event detection and broader vision tasks."
+  },
+  {
+    "title": "Visual Sync: Multi-Camera Synchronization via Cross-View Object Motion",
+    "url": "http://arxiv.org/abs/2512.02017v1",
+    "arxiv_id": "2512.02017v1",
+    "authors": [
+      "Shaowei Liu",
+      "David Yifan Yao",
+      "Saurabh Gupta",
+      "Shenlong Wang"
+    ],
+    "published": "2025-12-01T18:59:57+00:00",
+    "summary": "Today, people can easily record memorable moments, ranging from concerts, sports events, lectures, family gatherings, and birthday parties with multiple consumer cameras. However, synchronizing these cross-camera streams remains challenging. Existing methods assume controlled settings, specific targets, manual correction, or costly hardware. We present VisualSync, an optimization framework based on multi-view dynamics that aligns unposed, unsynchronized videos at millisecond accuracy. Our key insight is that any moving 3D point, when co-visible in two cameras, obeys epipolar constraints once properly synchronized. To exploit this, VisualSync leverages off-the-shelf 3D reconstruction, feature matching, and dense tracking to extract tracklets, relative poses, and cross-view correspondences. It then jointly minimizes the epipolar error to estimate each camera's time offset. Experiments on four diverse, challenging datasets show that VisualSync outperforms baseline methods, achieving an median synchronization error below 50 ms."
+  },
+  {
+    "title": "Generative Video Motion Editing with 3D Point Tracks",
+    "url": "http://arxiv.org/abs/2512.02015v1",
+    "arxiv_id": "2512.02015v1",
+    "authors": [
+      "Yao-Chih Lee",
+      "Zhoutong Zhang",
+      "Jiahui Huang",
+      "Jui-Hsien Wang",
+      "Joon-Young Lee",
+      "Jia-Bin Huang",
+      "Eli Shechtman",
+      "Zhengqi Li"
+    ],
+    "published": "2025-12-01T18:59:55+00:00",
+    "summary": "Camera and object motions are central to a video's narrative. However, precisely editing these captured motions remains a significant challenge, especially under complex object movements. Current motion-controlled image-to-video (I2V) approaches often lack full-scene context for consistent video editing, while video-to-video (V2V) methods provide viewpoint changes or basic object translation, but offer limited control over fine-grained object motion. We present a track-conditioned V2V framework that enables joint editing of camera and object motion. We achieve this by conditioning a video generation model on a source video and paired 3D point tracks representing source and target motions. These 3D tracks establish sparse correspondences that transfer rich context from the source video to new motions while preserving spatiotemporal coherence. Crucially, compared to 2D tracks, 3D tracks provide explicit depth cues, allowing the model to resolve depth order and handle occlusions for precise motion editing. Trained in two stages on synthetic and real data, our model supports diverse motion edits, including joint camera/object manipulation, motion transfer, and non-rigid deformation, unlocking new creative potential in video editing."
+  },
+  {
     "title": "Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models",
     "url": "http://arxiv.org/abs/2511.23478v1",
     "arxiv_id": "2511.23478v1",
