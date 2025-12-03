@@ -1,5 +1,96 @@
 [
   {
+    "title": "Video2Act: A Dual-System Video Diffusion Policy with Robotic Spatio-Motional Modeling",
+    "url": "http://arxiv.org/abs/2512.03044v1",
+    "arxiv_id": "2512.03044v1",
+    "authors": [
+      "Yueru Jia",
+      "Jiaming Liu",
+      "Shengbang Liu",
+      "Rui Zhou",
+      "Wanhe Yu",
+      "Yuyang Yan",
+      "Xiaowei Chi",
+      "Yandong Guo",
+      "Boxin Shi",
+      "Shanghang Zhang"
+    ],
+    "published": "2025-12-02T18:59:53+00:00",
+    "summary": "Robust perception and dynamics modeling are fundamental to real-world robotic policy learning. Recent methods employ video diffusion models (VDMs) to enhance robotic policies, improving their understanding and modeling of the physical world. However, existing approaches overlook the coherent and physically consistent motion representations inherently encoded across frames in VDMs. To this end, we propose Video2Act, a framework that efficiently guides robotic action learning by explicitly integrating spatial and motion-aware representations. Building on the inherent representations of VDMs, we extract foreground boundaries and inter-frame motion variations while filtering out background noise and task-irrelevant biases. These refined representations are then used as additional conditioning inputs to a diffusion transformer (DiT) action head, enabling it to reason about what to manipulate and how to move. To mitigate inference inefficiency, we propose an asynchronous dual-system design, where the VDM functions as the slow System 2 and the DiT head as the fast System 1, working collaboratively to generate adaptive actions. By providing motion-aware conditions to System 1, Video2Act maintains stable manipulation even with low-frequency updates from the VDM. For evaluation, Video2Act surpasses previous state-of-the-art VLA methods by 7.7% in simulation and 21.7% in real-world tasks in terms of average success rate, further exhibiting strong generalization capabilities."
+  },
+  {
+    "title": "OneThinker: All-in-one Reasoning Model for Image and Video",
+    "url": "http://arxiv.org/abs/2512.03043v1",
+    "arxiv_id": "2512.03043v1",
+    "authors": [
+      "Kaituo Feng",
+      "Manyuan Zhang",
+      "Hongyu Li",
+      "Kaixuan Fan",
+      "Shuang Chen",
+      "Yilei Jiang",
+      "Dian Zheng",
+      "Peiwen Sun",
+      "Yiyuan Zhang",
+      "Haoze Sun",
+      "Yan Feng",
+      "Peng Pei",
+      "Xunliang Cai",
+      "Xiangyu Yue"
+    ],
+    "published": "2025-12-02T18:59:52+00:00",
+    "summary": "Reinforcement learning (RL) has recently achieved remarkable success in eliciting visual reasoning within Multimodal Large Language Models (MLLMs). However, existing approaches typically train separate models for different tasks and treat image and video reasoning as disjoint domains. This results in limited scalability toward a multimodal reasoning generalist, which restricts practical versatility and hinders potential knowledge sharing across tasks and modalities. To this end, we propose OneThinker, an all-in-one reasoning model that unifies image and video understanding across diverse fundamental visual tasks, including question answering, captioning, spatial and temporal grounding, tracking, and segmentation. To achieve this, we construct the OneThinker-600k training corpus covering all these tasks and employ commercial models for CoT annotation, resulting in OneThinker-SFT-340k for SFT cold start. Furthermore, we propose EMA-GRPO to handle reward heterogeneity in multi-task RL by tracking task-wise moving averages of reward standard deviations for balanced optimization. Extensive experiments on diverse visual benchmarks show that OneThinker delivers strong performance on 31 benchmarks, across 10 fundamental visual understanding tasks. Moreover, it exhibits effective knowledge transfer between certain tasks and preliminary zero-shot generalization ability, marking a step toward a unified multimodal reasoning generalist. All code, model, and data are released."
+  },
+  {
+    "title": "SMP: Reusable Score-Matching Motion Priors for Physics-Based Character Control",
+    "url": "http://arxiv.org/abs/2512.03028v1",
+    "arxiv_id": "2512.03028v1",
+    "authors": [
+      "Yuxuan Mu",
+      "Ziyu Zhang",
+      "Yi Shi",
+      "Minami Matsumoto",
+      "Kotaro Imamura",
+      "Guy Tevet",
+      "Chuan Guo",
+      "Michael Taylor",
+      "Chang Shu",
+      "Pengcheng Xi",
+      "Xue Bin Peng"
+    ],
+    "published": "2025-12-02T18:54:12+00:00",
+    "summary": "Data-driven motion priors that can guide agents toward producing naturalistic behaviors play a pivotal role in creating life-like virtual characters. Adversarial imitation learning has been a highly effective method for learning motion priors from reference motion data. However, adversarial priors, with few exceptions, need to be retrained for each new controller, thereby limiting their reusability and necessitating the retention of the reference motion data when training on downstream tasks. In this work, we present Score-Matching Motion Priors (SMP), which leverages pre-trained motion diffusion models and score distillation sampling (SDS) to create reusable task-agnostic motion priors. SMPs can be pre-trained on a motion dataset, independent of any control policy or task. Once trained, SMPs can be kept frozen and reused as general-purpose reward functions to train policies to produce naturalistic behaviors for downstream tasks. We show that a general motion prior trained on large-scale datasets can be repurposed into a variety of style-specific priors. Furthermore SMP can compose different styles to synthesize new styles not present in the original dataset. Our method produces high-quality motion comparable to state-of-the-art adversarial imitation learning methods through reusable and modular motion priors. We demonstrate the effectiveness of SMP across a diverse suite of control tasks with physically simulated humanoid characters. Video demo available at https://youtu.be/ravlZJteS20"
+  },
+  {
+    "title": "The Moral Consistency Pipeline: Continuous Ethical Evaluation for Large Language Models",
+    "url": "http://arxiv.org/abs/2512.03026v1",
+    "arxiv_id": "2512.03026v1",
+    "authors": [
+      "Saeid Jamshidi",
+      "Kawser Wazed Nafi",
+      "Arghavan Moradi Dakhel",
+      "Negar Shahabi",
+      "Foutse Khomh"
+    ],
+    "published": "2025-12-02T18:52:29+00:00",
+    "summary": "The rapid advancement and adaptability of Large Language Models (LLMs) highlight the need for moral consistency, the capacity to maintain ethically coherent reasoning across varied contexts. Existing alignment frameworks, structured approaches designed to align model behavior with human ethical and social norms, often rely on static datasets and post-hoc evaluations, offering limited insight into how ethical reasoning may evolve across different contexts or temporal scales. This study presents the Moral Consistency Pipeline (MoCoP), a dataset-free, closed-loop framework for continuously evaluating and interpreting the moral stability of LLMs. MoCoP combines three supporting layers: (i) lexical integrity analysis, (ii) semantic risk estimation, and (iii) reasoning-based judgment modeling within a self-sustaining architecture that autonomously generates, evaluates, and refines ethical scenarios without external supervision. Our empirical results on GPT-4-Turbo and DeepSeek suggest that MoCoP effectively captures longitudinal ethical behavior, revealing a strong inverse relationship between ethical and toxicity dimensions (correlation rET = -0.81, p value less than 0.001) and a near-zero association with response latency (correlation rEL approximately equal to 0). These findings demonstrate that moral coherence and linguistic safety tend to emerge as stable and interpretable characteristics of model behavior rather than short-term fluctuations. Furthermore, by reframing ethical evaluation as a dynamic, model-agnostic form of moral introspection, MoCoP offers a reproducible foundation for scalable, continuous auditing and advances the study of computational morality in autonomous AI systems."
+  },
+  {
+    "title": "AutoBrep: Autoregressive B-Rep Generation with Unified Topology and Geometry",
+    "url": "http://arxiv.org/abs/2512.03018v1",
+    "arxiv_id": "2512.03018v1",
+    "authors": [
+      "Xiang Xu",
+      "Pradeep Kumar Jayaraman",
+      "Joseph G. Lambourne",
+      "Yilin Liu",
+      "Durvesh Malpure",
+      "Pete Meltzer"
+    ],
+    "published": "2025-12-02T18:46:25+00:00",
+    "summary": "The boundary representation (B-Rep) is the standard data structure used in Computer-Aided Design (CAD) for defining solid models. Despite recent progress, directly generating B-Reps end-to-end with precise geometry and watertight topology remains a challenge. This paper presents AutoBrep, a novel Transformer model that autoregressively generates B-Reps with high quality and validity. AutoBrep employs a unified tokenization scheme that encodes both geometric and topological characteristics of a B-Rep model as a sequence of discrete tokens. Geometric primitives (i.e., surfaces and curves) are encoded as latent geometry tokens, and their structural relationships are defined as special topological reference tokens. Sequence order in AutoBrep naturally follows a breadth first traversal of the B-Rep face adjacency graph. At inference time, neighboring faces and edges along with their topological structure are progressively generated. Extensive experiments demonstrate the advantages of our unified representation when coupled with next-token prediction for B-Rep generation. AutoBrep outperforms baselines with better quality and watertightness. It is also highly scalable to complex solids with good fidelity and inference speed. We further show that autocompleting B-Reps is natively supported through our unified tokenization, enabling user-controllable CAD generation with minimal changes. Code is available at https://github.com/AutodeskAILab/AutoBrep."
+  },
+  {
     "title": "EfficientFlow: Efficient Equivariant Flow Policy Learning for Embodied AI",
     "url": "http://arxiv.org/abs/2512.02020v1",
     "arxiv_id": "2512.02020v1",
