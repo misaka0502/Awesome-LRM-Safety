@@ -1,5 +1,90 @@
 [
   {
+    "title": "DraCo: Draft as CoT for Text-to-Image Preview and Rare Concept Generation",
+    "url": "http://arxiv.org/abs/2512.05112v1",
+    "arxiv_id": "2512.05112v1",
+    "authors": [
+      "Dongzhi Jiang",
+      "Renrui Zhang",
+      "Haodong Li",
+      "Zhuofan Zong",
+      "Ziyu Guo",
+      "Jun He",
+      "Claire Guo",
+      "Junyan Ye",
+      "Rongyao Fang",
+      "Weijia Li",
+      "Rui Liu",
+      "Hongsheng Li"
+    ],
+    "published": "2025-12-04T18:59:53+00:00",
+    "summary": "Recent unified multimodal large language models (MLLMs) have shown impressive capabilities, incorporating chain-of-thought (CoT) reasoning for enhanced text-to-image generation. However, existing approaches remain limited, either treating the model merely as a standalone generator or relying on abstract textual planning. To this end, we propose Draft-as-CoT (DraCo), a novel interleaved reasoning paradigm that fully leverages both textual and visual contents in CoT for better planning and verification. Our method first generates a low-resolution draft image as preview, providing more concrete and structural visual planning and guidance. Then, we employ the model's inherent understanding capability to verify potential semantic misalignments between the draft and input prompt, and performs refinement through selective corrections with super-resolution. In this way, our approach addresses two fundamental challenges: the coarse-grained nature of textual planning and the difficulty in generating rare attribute combinations. To support training, we curate DraCo-240K, aiming to enhance three atomic capabilities spanning general correction, instance manipulation, and layout reorganization. Supported by DraCo-CFG, a specialized classifier-free guidance (CFG) strategy for interleaved reasoning, DraCo achieves a tremendous increase on GenEval (+8%), Imagine-Bench (+0.91), and GenEval++ (+3%), significantly outperforming direct generation and other generation methods empowered by CoT."
+  },
+  {
+    "title": "ARM-Thinker: Reinforcing Multimodal Generative Reward Models with Agentic Tool Use and Visual Reasoning",
+    "url": "http://arxiv.org/abs/2512.05111v1",
+    "arxiv_id": "2512.05111v1",
+    "authors": [
+      "Shengyuan Ding",
+      "Xinyu Fang",
+      "Ziyu Liu",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Xiangyu Zhao",
+      "Haodong Duan",
+      "Xiaoyi Dong",
+      "Jianze Liang",
+      "Bin Wang",
+      "Conghui He",
+      "Dahua Lin",
+      "Jiaqi Wang"
+    ],
+    "published": "2025-12-04T18:59:52+00:00",
+    "summary": "Reward models are critical for aligning vision-language systems with human preferences, yet current approaches suffer from hallucination, weak visual grounding, and an inability to use tools for verification, limiting their reliability on complex multimodal reasoning tasks. We present ARM-Thinker, an A}gentic multimodal Reward Model that autonomously invokes external tools (e.g., image cropping, doc page retrieval) to ground judgments in verifiable evidence, replacing static, non-interactive reward scoring. This enables the model to verify fine-grained visual details, cross-reference multi-page evidence, and validate reasoning claims, which are capabilities absent in existing reward models. We train ARM-Thinker with multi-stage reinforcement learning, jointly optimizing tool-calling decisions and judgment accuracy. To evaluate agentic reward modeling, we introduce ARMBench-VL, comprising three benchmarks that assess fine-grained visual grounding (image-level tools), multi-page document understanding (retrieval tools), and instruction following (text-level verification). ARM-Thinker achieves +16.2% average improvement on reward modeling benchmarks, +9.6% on tool-use tasks, and outperforms baselines on multimodal math and logical reasoning benchmarks. Our results demonstrate that agentic capabilities significantly enhance both accuracy and interpretability of reward models."
+  },
+  {
+    "title": "STARE-VLA: Progressive Stage-Aware Reinforcement for Fine-Tuning Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2512.05107v1",
+    "arxiv_id": "2512.05107v1",
+    "authors": [
+      "Feng Xu",
+      "Guangyao Zhai",
+      "Xin Kong",
+      "Tingzhong Fu",
+      "Daniel F. N. Gordon",
+      "Xueli An",
+      "Benjamin Busam"
+    ],
+    "published": "2025-12-04T18:59:22+00:00",
+    "summary": "Recent advances in Vision-Language-Action (VLA) models, powered by large language models and reinforcement learning-based fine-tuning, have shown remarkable progress in robotic manipulation. Existing methods often treat long-horizon actions as linguistic sequences and apply trajectory-level optimization methods such as Trajectory-wise Preference Optimization (TPO) or Proximal Policy Optimization (PPO), leading to coarse credit assignment and unstable training. However, unlike language, where a unified semantic meaning is preserved despite flexible sentence order, action trajectories progress through causally chained stages with different learning difficulties. This motivates progressive stage optimization. Thereby, we present Stage-Aware Reinforcement (STARE), a module that decomposes a long-horizon action trajectory into semantically meaningful stages and provides dense, interpretable, and stage-aligned reinforcement signals. Integrating STARE into TPO and PPO, we yield Stage-Aware TPO (STA-TPO) and Stage-Aware PPO (STA-PPO) for offline stage-wise preference and online intra-stage interaction, respectively. Further building on supervised fine-tuning as initialization, we propose the Imitation -> Preference -> Interaction (IPI), a serial fine-tuning pipeline for improving action accuracy in VLA models. Experiments on SimplerEnv and ManiSkill3 demonstrate substantial gains, achieving state-of-the-art success rates of 98.0 percent on SimplerEnv and 96.4 percent on ManiSkill3 tasks."
+  },
+  {
+    "title": "NeuralRemaster: Phase-Preserving Diffusion for Structure-Aligned Generation",
+    "url": "http://arxiv.org/abs/2512.05106v1",
+    "arxiv_id": "2512.05106v1",
+    "authors": [
+      "Yu Zeng",
+      "Charles Ochoa",
+      "Mingyuan Zhou",
+      "Vishal M. Patel",
+      "Vitor Guizilini",
+      "Rowan McAllister"
+    ],
+    "published": "2025-12-04T18:59:18+00:00",
+    "summary": "Standard diffusion corrupts data using Gaussian noise whose Fourier coefficients have random magnitudes and random phases. While effective for unconditional or text-to-image generation, corrupting phase components destroys spatial structure, making it ill-suited for tasks requiring geometric consistency, such as re-rendering, simulation enhancement, and image-to-image translation. We introduce Phase-Preserving Diffusion \u03c6-PD, a model-agnostic reformulation of the diffusion process that preserves input phase while randomizing magnitude, enabling structure-aligned generation without architectural changes or additional parameters. We further propose Frequency-Selective Structured (FSS) noise, which provides continuous control over structural rigidity via a single frequency-cutoff parameter. \u03c6-PD adds no inference-time cost and is compatible with any diffusion model for images or videos. Across photorealistic and stylized re-rendering, as well as sim-to-real enhancement for driving planners, \u03c6-PD produces controllable, spatially aligned results. When applied to the CARLA simulator, \u03c6-PD improves CARLA-to-Waymo planner performance by 50\\%. The method is complementary to existing conditioning approaches and broadly applicable to image-to-image and video-to-video generation. Videos, additional examples, and code are available on our \\href{https://yuzeng-at-tri.github.io/ppd-page/}{project page}."
+  },
+  {
+    "title": "Semantic Soft Bootstrapping: Long Context Reasoning in LLMs without Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2512.05105v1",
+    "arxiv_id": "2512.05105v1",
+    "authors": [
+      "Purbesh Mitra",
+      "Sennur Ulukus"
+    ],
+    "published": "2025-12-04T18:59:18+00:00",
+    "summary": "Long context reasoning in large language models (LLMs) has demonstrated enhancement of their cognitive capabilities via chain-of-thought (CoT) inference. Training such models is usually done via reinforcement learning with verifiable rewards (RLVR) in reasoning based problems, like math and programming. However, RLVR is limited by several bottlenecks, such as, lack of dense reward, and inadequate sample efficiency. As a result, it requires significant compute resources in post-training phase. To overcome these limitations, in this work, we propose \\textbf{Semantic Soft Bootstrapping (SSB)}, a self-distillation technique, in which the same base language model plays the role of both teacher and student, but receives different semantic contexts about the correctness of its outcome at training time. The model is first prompted with a math problem and several rollouts are generated. From them, the correct and most common incorrect response are filtered, and then provided to the model in context to produce a more robust, step-by-step explanation with a verified final answer. This pipeline automatically curates a paired teacher-student training set from raw problem-answer data, without any human intervention. This generation process also produces a sequence of logits, which is what the student model tries to match in the training phase just from the bare question alone. In our experiment, Qwen2.5-3B-Instruct on GSM8K dataset via parameter-efficient fine-tuning. We then tested its accuracy on MATH500, and AIME2024 benchmarks. Our experiments show a jump of 10.6%, and 10% improvements in accuracy, respectively, over group relative policy optimization (GRPO), which is a commonly used RLVR algorithm. Our code is available at https://github.com/purbeshmitra/semantic-soft-bootstrapping, and the model, curated dataset is available at https://huggingface.co/purbeshmitra/semantic-soft-bootstrapping."
+  },
+  {
     "title": "PosterCopilot: Toward Layout Reasoning and Controllable Editing for Professional Graphic Design",
     "url": "http://arxiv.org/abs/2512.04082v1",
     "arxiv_id": "2512.04082v1",
