@@ -1,5 +1,74 @@
 [
   {
+    "title": "An Adaptive Multi-Layered Honeynet Architecture for Threat Behavior Analysis via Deep Learning",
+    "url": "http://arxiv.org/abs/2512.07827v1",
+    "arxiv_id": "2512.07827v1",
+    "authors": [
+      "Lukas Johannes M\u00f6ller"
+    ],
+    "published": "2025-12-08T18:55:26+00:00",
+    "summary": "The escalating sophistication and variety of cyber threats have rendered static honeypots inadequate, necessitating adaptive, intelligence-driven deception. In this work, ADLAH is introduced: an Adaptive Deep Learning Anomaly Detection Honeynet designed to maximize high-fidelity threat intelligence while minimizing cost through autonomous orchestration of infrastructure. The principal contribution is offered as an end-to-end architectural blueprint and vision for an AI-driven deception platform. Feasibility is evidenced by a functional prototype of the central decision mechanism, in which a reinforcement learning (RL) agent determines, in real time, when sessions should be escalated from low-interaction sensor nodes to dynamically provisioned, high-interaction honeypots. Because sufficient live data were unavailable, field-scale validation is not claimed; instead, design trade-offs and limitations are detailed, and a rigorous roadmap toward empirical evaluation at scale is provided. Beyond selective escalation and anomaly detection, the architecture pursues automated extraction, clustering, and versioning of bot attack chains, a core capability motivated by the empirical observation that exposed services are dominated by automated traffic. Together, these elements delineate a practical path toward cost-efficient capture of high-value adversary behavior, systematic bot versioning, and the production of actionable threat intelligence."
+  },
+  {
+    "title": "Efficient and Compliant Control Framework for Versatile Human-Humanoid Collaborative Transportation",
+    "url": "http://arxiv.org/abs/2512.07819v1",
+    "arxiv_id": "2512.07819v1",
+    "authors": [
+      "Shubham S. Kumbhar",
+      "Abhijeet M. Kulkarni",
+      "Panagiotis Artemiadis"
+    ],
+    "published": "2025-12-08T18:52:10+00:00",
+    "summary": "We present a control framework that enables humanoid robots to perform collaborative transportation tasks with a human partner. The framework supports both translational and rotational motions, which are fundamental to co-transport scenarios. It comprises three components: a high-level planner, a low-level controller, and a stiffness modulation mechanism. At the planning level, we introduce the Interaction Linear Inverted Pendulum (I-LIP), which, combined with an admittance model and an MPC formulation, generates dynamically feasible footstep plans. These are executed by a QP-based whole-body controller that accounts for the coupled humanoid-object dynamics. Stiffness modulation regulates robot-object interaction, ensuring convergence to the desired relative configuration defined by the distance between the object and the robot's center of mass. We validate the effectiveness of the framework through real-world experiments conducted on the Digit humanoid platform. To quantify collaboration quality, we propose an efficiency metric that captures both task performance and inter-agent coordination. We show that this metric highlights the role of compliance in collaborative tasks and offers insights into desirable trajectory characteristics across both high- and low-level control layers. Finally, we showcase experimental results on collaborative behaviors, including translation, turning, and combined motions such as semi circular trajectories, representative of naturally occurring co-transportation tasks."
+  },
+  {
+    "title": "Inchworm-Inspired Soft Robot with Groove-Guided Locomotion",
+    "url": "http://arxiv.org/abs/2512.07813v1",
+    "arxiv_id": "2512.07813v1",
+    "authors": [
+      "Hari Prakash Thanabalan",
+      "Lars Bengtsson",
+      "Ugo Lafont",
+      "Giovanni Volpe"
+    ],
+    "published": "2025-12-08T18:47:04+00:00",
+    "summary": "Soft robots require directional control to navigate complex terrains. However, achieving such control often requires multiple actuators, which increases mechanical complexity, complicates control systems, and raises energy consumption. Here, we introduce an inchworm-inspired soft robot whose locomotion direction is controlled passively by patterned substrates. The robot employs a single rolled dielectric elastomer actuator, while groove patterns on a 3D-printed substrate guide its alignment and trajectory. Through systematic experiments, we demonstrate that varying groove angles enables precise control of locomotion direction without the need for complex actuation strategies. This groove-guided approach reduces energy consumption, simplifies robot design, and expands the applicability of bio-inspired soft robots in fields such as search and rescue, pipe inspection, and planetary exploration."
+  },
+  {
+    "title": "Auditing Games for Sandbagging",
+    "url": "http://arxiv.org/abs/2512.07810v1",
+    "arxiv_id": "2512.07810v1",
+    "authors": [
+      "Jordan Taylor",
+      "Sid Black",
+      "Dillon Bowen",
+      "Thomas Read",
+      "Satvik Golechha",
+      "Alex Zelenka-Martin",
+      "Oliver Makins",
+      "Connor Kissane",
+      "Kola Ayonrinde",
+      "Jacob Merizian",
+      "Samuel Marks",
+      "Chris Cundy",
+      "Joseph Bloom"
+    ],
+    "published": "2025-12-08T18:44:44+00:00",
+    "summary": "Future AI systems could conceal their capabilities ('sandbagging') during evaluations, potentially misleading developers and auditors. We stress-tested sandbagging detection techniques using an auditing game. First, a red team fine-tuned five models, some of which conditionally underperformed, as a proxy for sandbagging. Second, a blue team used black-box, model-internals, or training-based approaches to identify sandbagging models. We found that the blue team could not reliably discriminate sandbaggers from benign models. Black-box approaches were defeated by effective imitation of a weaker model. Linear probes, a model-internals approach, showed more promise but their naive application was vulnerable to behaviours instilled by the red team. We also explored capability elicitation as a strategy for detecting sandbagging. Although Prompt-based elicitation was not reliable, training-based elicitation consistently elicited full performance from the sandbagging models, using only a single correct demonstration of the evaluation task. However the performance of benign models was sometimes also raised, so relying on elicitation as a detection strategy was prone to false-positives. In the short-term, we recommend developers remove potential sandbagging using on-distribution training for elicitation. In the longer-term, further research is needed to ensure the efficacy of training-based elicitation, and develop robust methods for sandbagging detection. We open source our model organisms at https://github.com/AI-Safety-Institute/sandbagging_auditing_games and select transcripts and results at https://huggingface.co/datasets/sandbagging-games/evaluation_logs . A demo illustrating the game can be played at https://sandbagging-demo.far.ai/ ."
+  },
+  {
+    "title": "On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Models",
+    "url": "http://arxiv.org/abs/2512.07783v1",
+    "arxiv_id": "2512.07783v1",
+    "authors": [
+      "Charlie Zhang",
+      "Graham Neubig",
+      "Xiang Yue"
+    ],
+    "published": "2025-12-08T18:12:10+00:00",
+    "summary": "Recent reinforcement learning (RL) techniques have yielded impressive reasoning improvements in language models, yet it remains unclear whether post-training truly extends a model's reasoning ability beyond what it acquires during pre-training. A central challenge is the lack of control in modern training pipelines: large-scale pre-training corpora are opaque, mid-training is often underexamined, and RL objectives interact with unknown prior knowledge in complex ways. To resolve this ambiguity, we develop a fully controlled experimental framework that isolates the causal contributions of pre-training, mid-training, and RL-based post-training. Our approach employs synthetic reasoning tasks with explicit atomic operations, parseable step-by-step reasoning traces, and systematic manipulation of training distributions. We evaluate models along two axes: extrapolative generalization to more complex compositions and contextual generalization across surface contexts. Using this framework, we reconcile competing views on RL's effectiveness. We show that: 1) RL produces true capability gains (pass@128) only when pre-training leaves sufficient headroom and when RL data target the model's edge of competence, tasks at the boundary that are difficult but not yet out of reach. 2) Contextual generalization requires minimal yet sufficient pre-training exposure, after which RL can reliably transfer. 3) Mid-training significantly enhances performance under fixed compute compared with RL only, demonstrating its central but underexplored role in training pipelines. 4) Process-level rewards reduce reward hacking and improve reasoning fidelity. Together, these results clarify the interplay between pre-training, mid-training, and RL, offering a foundation for understanding and improving reasoning LM training strategies."
+  },
+  {
     "title": "EditThinker: Unlocking Iterative Reasoning for Any Image Editor",
     "url": "http://arxiv.org/abs/2512.05965v1",
     "arxiv_id": "2512.05965v1",
