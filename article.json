@@ -1,5 +1,78 @@
 [
   {
+    "title": "Astra: General Interactive World Model with Autoregressive Denoising",
+    "url": "http://arxiv.org/abs/2512.08931v1",
+    "arxiv_id": "2512.08931v1",
+    "authors": [
+      "Yixuan Zhu",
+      "Jiaqi Feng",
+      "Wenzhao Zheng",
+      "Yuan Gao",
+      "Xin Tao",
+      "Pengfei Wan",
+      "Jie Zhou",
+      "Jiwen Lu"
+    ],
+    "published": "2025-12-09T18:59:57+00:00",
+    "summary": "Recent advances in diffusion transformers have empowered video generation models to generate high-quality video clips from texts or images. However, world models with the ability to predict long-horizon futures from past observations and actions remain underexplored, especially for general-purpose scenarios and various forms of actions. To bridge this gap, we introduce Astra, an interactive general world model that generates real-world futures for diverse scenarios (e.g., autonomous driving, robot grasping) with precise action interactions (e.g., camera motion, robot action). We propose an autoregressive denoising architecture and use temporal causal attention to aggregate past observations and support streaming outputs. We use a noise-augmented history memory to avoid over-reliance on past frames to balance responsiveness with temporal coherence. For precise action control, we introduce an action-aware adapter that directly injects action signals into the denoising process. We further develop a mixture of action experts that dynamically route heterogeneous action modalities, enhancing versatility across diverse real-world tasks such as exploration, manipulation, and camera control. Astra achieves interactive, consistent, and general long-term video prediction and supports various forms of interactions. Experiments across multiple datasets demonstrate the improvements of Astra in fidelity, long-range prediction, and action alignment over existing state-of-the-art world models."
+  },
+  {
+    "title": "OSMO: Open-Source Tactile Glove for Human-to-Robot Skill Transfer",
+    "url": "http://arxiv.org/abs/2512.08920v1",
+    "arxiv_id": "2512.08920v1",
+    "authors": [
+      "Jessica Yin",
+      "Haozhi Qi",
+      "Youngsun Wi",
+      "Sayantan Kundu",
+      "Mike Lambeta",
+      "William Yang",
+      "Changhao Wang",
+      "Tingfan Wu",
+      "Jitendra Malik",
+      "Tess Hellebrekers"
+    ],
+    "published": "2025-12-09T18:56:30+00:00",
+    "summary": "Human video demonstrations provide abundant training data for learning robot policies, but video alone cannot capture the rich contact signals critical for mastering manipulation. We introduce OSMO, an open-source wearable tactile glove designed for human-to-robot skill transfer. The glove features 12 three-axis tactile sensors across the fingertips and palm and is designed to be compatible with state-of-the-art hand-tracking methods for in-the-wild data collection. We demonstrate that a robot policy trained exclusively on human demonstrations collected with OSMO, without any real robot data, is capable of executing a challenging contact-rich manipulation task. By equipping both the human and the robot with the same glove, OSMO minimizes the visual and tactile embodiment gap, enabling the transfer of continuous shear and normal force feedback while avoiding the need for image inpainting or other vision-based force inference. On a real-world wiping task requiring sustained contact pressure, our tactile-aware policy achieves a 72% success rate, outperforming vision-only baselines by eliminating contact-related failure modes. We release complete hardware designs, firmware, and assembly instructions to support community adoption."
+  },
+  {
+    "title": "LiDAS: Lighting-driven Dynamic Active Sensing for Nighttime Perception",
+    "url": "http://arxiv.org/abs/2512.08912v1",
+    "arxiv_id": "2512.08912v1",
+    "authors": [
+      "Simon de Moreau",
+      "Andrei Bursuc",
+      "Hafid El-Idrissi",
+      "Fabien Moutarde"
+    ],
+    "published": "2025-12-09T18:47:56+00:00",
+    "summary": "Nighttime environments pose significant challenges for camera-based perception, as existing methods passively rely on the scene lighting. We introduce Lighting-driven Dynamic Active Sensing (LiDAS), a closed-loop active illumination system that combines off-the-shelf visual perception models with high-definition headlights. Rather than uniformly brightening the scene, LiDAS dynamically predicts an optimal illumination field that maximizes downstream perception performance, i.e., decreasing light on empty areas to reallocate it on object regions. LiDAS enables zero-shot nighttime generalization of daytime-trained models through adaptive illumination control. Trained on synthetic data and deployed zero-shot in real-world closed-loop driving scenarios, LiDAS enables +18.7% mAP50 and +5.0% mIoU over standard low-beam at equal power. It maintains performances while reducing energy use by 40%. LiDAS complements domain-generalization methods, further strengthening robustness without retraining. By turning readily available headlights into active vision actuators, LiDAS offers a cost-effective solution to robust nighttime perception."
+  },
+  {
+    "title": "No Labels, No Problem: Training Visual Reasoners with Multimodal Verifiers",
+    "url": "http://arxiv.org/abs/2512.08889v1",
+    "arxiv_id": "2512.08889v1",
+    "authors": [
+      "Damiano Marsili",
+      "Georgia Gkioxari"
+    ],
+    "published": "2025-12-09T18:30:23+00:00",
+    "summary": "Visual reasoning is challenging, requiring both precise object grounding and understanding complex spatial relationships. Existing methods fall into two camps: language-only chain-of-thought approaches, which demand large-scale (image, query, answer) supervision, and program-synthesis approaches which use pre-trained models and avoid training, but suffer from flawed logic and erroneous grounding. We propose an annotation-free training framework that improves both reasoning and grounding. Our framework uses AI-powered verifiers: an LLM verifier refines LLM reasoning via reinforcement learning, while a VLM verifier strengthens visual grounding through automated hard-negative mining, eliminating the need for ground truth labels. This design combines the strengths of modern AI systems: advanced language-only reasoning models for decomposing spatial queries into simpler subtasks, and strong vision specialist models improved via performant VLM critics. We evaluate our approach across diverse spatial reasoning tasks, and show that our method improves visual reasoning and surpasses open-source and proprietary models, while with our improved visual grounding model we further outperform recent text-only visual reasoning methods. Project webpage: https://glab-caltech.github.io/valor/"
+  },
+  {
+    "title": "Accelerated Rotation-Invariant Convolution for UAV Image Segmentation",
+    "url": "http://arxiv.org/abs/2512.08888v1",
+    "arxiv_id": "2512.08888v1",
+    "authors": [
+      "Manduhu Manduhu",
+      "Alexander Dow",
+      "Gerard Dooly",
+      "James Riordan"
+    ],
+    "published": "2025-12-09T18:30:00+00:00",
+    "summary": "Rotation invariance is essential for precise, object-level segmentation in UAV aerial imagery, where targets can have arbitrary orientations and exhibit fine-scale details. Conventional segmentation architectures like U-Net rely on convolution operators that are not rotation-invariant, leading to degraded segmentation accuracy across varying viewpoints. Rotation invariance can be achieved by expanding the filter bank across multiple orientations; however, this will significantly increase computational cost and memory traffic. In this paper, we introduce a GPU-optimized rotation-invariant convolution framework that eliminates the traditional data-lowering (im2col) step required for matrix-multiplication-based convolution. By exploiting structured data sharing among symmetrically rotated filters, our method achieves multi-orientation convolution with greatly reduced memory traffic and computational redundancy. We further generalize the approach to accelerate convolution with arbitrary (non-symmetric) rotation angles.   Across extensive benchmarks, the proposed convolution achieves 20--55% faster training and 15--45% lower energy consumption than CUDNN, while maintaining accuracy comparable to state-of-the-art rotation-invariant methods. In the eight-orientation setting, our approach achieves up to 45% speedup and 41% energy savings on 256\\(\\times\\)256 inputs, and 32% speedup and 23% lower energy usage on 1024\\(\\times\\)1024 inputs. Integrated into a U-Net segmentation model, the framework yields up to 6% improvement in accuracy over the non-rotation-aware baseline. These results demonstrate that the proposed method provides an effective and highly efficient alternative to existing rotation-invariant CNN frameworks."
+  },
+  {
     "title": "An Adaptive Multi-Layered Honeynet Architecture for Threat Behavior Analysis via Deep Learning",
     "url": "http://arxiv.org/abs/2512.07827v1",
     "arxiv_id": "2512.07827v1",
