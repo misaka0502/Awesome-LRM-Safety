@@ -1,5 +1,89 @@
 [
   {
+    "title": "Empowering Dynamic Urban Navigation with Stereo and Mid-Level Vision",
+    "url": "http://arxiv.org/abs/2512.10956v1",
+    "arxiv_id": "2512.10956v1",
+    "authors": [
+      "Wentao Zhou",
+      "Xuweiyi Chen",
+      "Vignesh Rajagopal",
+      "Jeffrey Chen",
+      "Rohan Chandra",
+      "Zezhou Cheng"
+    ],
+    "published": "2025-12-11T18:59:56+00:00",
+    "summary": "The success of foundation models in language and vision motivated research in fully end-to-end robot navigation foundation models (NFMs). NFMs directly map monocular visual input to control actions and ignore mid-level vision modules (tracking, depth estimation, etc) entirely. While the assumption that vision capabilities will emerge implicitly is compelling, it requires large amounts of pixel-to-action supervision that are difficult to obtain. The challenge is especially pronounced in dynamic and unstructured settings, where robust navigation requires precise geometric and dynamic understanding, while the depth-scale ambiguity in monocular views further limits accurate spatial reasoning. In this paper, we show that relying on monocular vision and ignoring mid-level vision priors is inefficient.   We present StereoWalker, which augments NFMs with stereo inputs and explicit mid-level vision such as depth estimation and dense pixel tracking. Our intuition is straightforward: stereo inputs resolve the depth-scale ambiguity, and modern mid-level vision models provide reliable geometric and motion structure in dynamic scenes. We also curate a large stereo navigation dataset with automatic action annotation from Internet stereo videos to support training of StereoWalker and to facilitate future research. Through our experiments, we find that mid-level vision enables StereoWalker to achieve a comparable performance as the state-of-the-art using only 1.5% of the training data, and surpasses the state-of-the-art using the full data. We also observe that stereo vision yields higher navigation performance than monocular input."
+  },
+  {
+    "title": "Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation",
+    "url": "http://arxiv.org/abs/2512.10949v1",
+    "arxiv_id": "2512.10949v1",
+    "authors": [
+      "Yiwen Tang",
+      "Zoey Guo",
+      "Kaixin Zhu",
+      "Ray Zhang",
+      "Qizhi Chen",
+      "Dongzhi Jiang",
+      "Junli Liu",
+      "Bohan Zeng",
+      "Haoming Song",
+      "Delin Qu",
+      "Tianyi Bai",
+      "Dan Xu",
+      "Wentao Zhang",
+      "Bin Zhao"
+    ],
+    "published": "2025-12-11T18:59:52+00:00",
+    "summary": "Reinforcement learning (RL), earlier proven to be effective in large language and multi-modal models, has been successfully extended to enhance 2D image generation recently. However, applying RL to 3D generation remains largely unexplored due to the higher spatial complexity of 3D objects, which require globally consistent geometry and fine-grained local textures. This makes 3D generation significantly sensitive to reward designs and RL algorithms. To address these challenges, we conduct the first systematic study of RL for text-to-3D autoregressive generation across several dimensions. (1) Reward designs: We evaluate reward dimensions and model choices, showing that alignment with human preference is crucial, and that general multi-modal models provide robust signal for 3D attributes. (2) RL algorithms: We study GRPO variants, highlighting the effectiveness of token-level optimization, and further investigate the scaling of training data and iterations. (3) Text-to-3D Benchmarks: Since existing benchmarks fail to measure implicit reasoning abilities in 3D generation models, we introduce MME-3DR. (4) Advanced RL paradigms: Motivated by the natural hierarchy of 3D generation, we propose Hi-GRPO, which optimizes the global-to-local hierarchical 3D generation through dedicated reward ensembles. Based on these insights, we develop AR3D-R1, the first RL-enhanced text-to-3D model, expert from coarse shape to texture refinement. We hope this study provides insights into RL-driven reasoning for 3D generation. Code is released at https://github.com/Ivan-Tang-3D/3DGen-R1."
+  },
+  {
+    "title": "ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning",
+    "url": "http://arxiv.org/abs/2512.10946v1",
+    "arxiv_id": "2512.10946v1",
+    "authors": [
+      "Wendi Chen",
+      "Han Xue",
+      "Yi Wang",
+      "Fangyuan Zhou",
+      "Jun Lv",
+      "Yang Jin",
+      "Shirun Tang",
+      "Chuan Wen",
+      "Cewu Lu"
+    ],
+    "published": "2025-12-11T18:59:46+00:00",
+    "summary": "Human-level contact-rich manipulation relies on the distinct roles of two key modalities: vision provides spatially rich but temporally slow global context, while force sensing captures rapid, high-frequency local contact dynamics. Integrating these signals is challenging due to their fundamental frequency and informational disparities. In this work, we propose ImplicitRDP, a unified end-to-end visual-force diffusion policy that integrates visual planning and reactive force control within a single network. We introduce Structural Slow-Fast Learning, a mechanism utilizing causal attention to simultaneously process asynchronous visual and force tokens, allowing the policy to perform closed-loop adjustments at the force frequency while maintaining the temporal coherence of action chunks. Furthermore, to mitigate modality collapse where end-to-end models fail to adjust the weights across different modalities, we propose Virtual-target-based Representation Regularization. This auxiliary objective maps force feedback into the same space as the action, providing a stronger, physics-grounded learning signal than raw force prediction. Extensive experiments on contact-rich tasks demonstrate that ImplicitRDP significantly outperforms both vision-only and hierarchical baselines, achieving superior reactivity and success rates with a streamlined training pipeline. Code and videos will be publicly available at https://implicit-rdp.github.io."
+  },
+  {
+    "title": "Any4D: Unified Feed-Forward Metric 4D Reconstruction",
+    "url": "http://arxiv.org/abs/2512.10935v1",
+    "arxiv_id": "2512.10935v1",
+    "authors": [
+      "Jay Karhade",
+      "Nikhil Keetha",
+      "Yuchen Zhang",
+      "Tanisha Gupta",
+      "Akash Sharma",
+      "Sebastian Scherer",
+      "Deva Ramanan"
+    ],
+    "published": "2025-12-11T18:57:39+00:00",
+    "summary": "We present Any4D, a scalable multi-view transformer for metric-scale, dense feed-forward 4D reconstruction. Any4D directly generates per-pixel motion and geometry predictions for N frames, in contrast to prior work that typically focuses on either 2-view dense scene flow or sparse 3D point tracking. Moreover, unlike other recent methods for 4D reconstruction from monocular RGB videos, Any4D can process additional modalities and sensors such as RGB-D frames, IMU-based egomotion, and Radar Doppler measurements, when available. One of the key innovations that allows for such a flexible framework is a modular representation of a 4D scene; specifically, per-view 4D predictions are encoded using a variety of egocentric factors (depthmaps and camera intrinsics) represented in local camera coordinates, and allocentric factors (camera extrinsics and scene flow) represented in global world coordinates. We achieve superior performance across diverse setups - both in terms of accuracy (2-3X lower error) and compute efficiency (15X faster), opening avenues for multiple downstream applications."
+  },
+  {
+    "title": "Curriculum-Based Reinforcement Learning for Autonomous UAV Navigation in Unknown Curved Tubular Conduit",
+    "url": "http://arxiv.org/abs/2512.10934v1",
+    "arxiv_id": "2512.10934v1",
+    "authors": [
+      "Zamirddine Mari",
+      "J\u00e9r\u00f4me Pasquet",
+      "Julien Seinturier"
+    ],
+    "published": "2025-12-11T18:57:29+00:00",
+    "summary": "Autonomous drone navigation in confined tubular environments remains a major challenge due to the constraining geometry of the conduits, the proximity of the walls, and the perceptual limitations inherent to such scenarios. We propose a reinforcement learning approach enabling a drone to navigate unknown three-dimensional tubes without any prior knowledge of their geometry, relying solely on local observations from LiDAR and a conditional visual detection of the tube center. In contrast, the Pure Pursuit algorithm, used as a deterministic baseline, benefits from explicit access to the centerline, creating an information asymmetry designed to assess the ability of RL to compensate for the absence of a geometric model. The agent is trained through a progressive Curriculum Learning strategy that gradually exposes it to increasingly curved geometries, where the tube center frequently disappears from the visual field. A turning-negotiation mechanism, based on the combination of direct visibility, directional memory, and LiDAR symmetry cues, proves essential for ensuring stable navigation under such partial observability conditions. Experiments show that the PPO policy acquires robust and generalizable behavior, consistently outperforming the deterministic controller despite its limited access to geometric information. Validation in a high-fidelity 3D environment further confirms the transferability of the learned behavior to a continuous physical dynamics.   The proposed approach thus provides a complete framework for autonomous navigation in unknown tubular environments and opens perspectives for industrial, underground, or medical applications where progressing through narrow and weakly perceptive conduits represents a central challenge."
+  },
+  {
     "title": "Closing the Train-Test Gap in World Models for Gradient-Based Planning",
     "url": "http://arxiv.org/abs/2512.09929v1",
     "arxiv_id": "2512.09929v1",
