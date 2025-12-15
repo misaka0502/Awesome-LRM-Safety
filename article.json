@@ -1,5 +1,88 @@
 [
   {
+    "title": "V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties",
+    "url": "http://arxiv.org/abs/2512.11799v1",
+    "arxiv_id": "2512.11799v1",
+    "authors": [
+      "Ye Fang",
+      "Tong Wu",
+      "Valentin Deschaintre",
+      "Duygu Ceylan",
+      "Iliyan Georgiev",
+      "Chun-Hao Paul Huang",
+      "Yiwei Hu",
+      "Xuelin Chen",
+      "Tuanfeng Yang Wang"
+    ],
+    "published": "2025-12-12T18:59:54+00:00",
+    "summary": "Large-scale video generation models have shown remarkable potential in modeling photorealistic appearance and lighting interactions in real-world scenes. However, a closed-loop framework that jointly understands intrinsic scene properties (e.g., albedo, normal, material, and irradiance), leverages them for video synthesis, and supports editable intrinsic representations remains unexplored. We present V-RGBX, the first end-to-end framework for intrinsic-aware video editing. V-RGBX unifies three key capabilities: (1) video inverse rendering into intrinsic channels, (2) photorealistic video synthesis from these intrinsic representations, and (3) keyframe-based video editing conditioned on intrinsic channels. At the core of V-RGBX is an interleaved conditioning mechanism that enables intuitive, physically grounded video editing through user-selected keyframes, supporting flexible manipulation of any intrinsic modality. Extensive qualitative and quantitative results show that V-RGBX produces temporally consistent, photorealistic videos while propagating keyframe edits across sequences in a physically plausible manner. We demonstrate its effectiveness in diverse applications, including object appearance editing and scene-level relighting, surpassing the performance of prior methods."
+  },
+  {
+    "title": "AnchorDream: Repurposing Video Diffusion for Embodiment-Aware Robot Data Synthesis",
+    "url": "http://arxiv.org/abs/2512.11797v1",
+    "arxiv_id": "2512.11797v1",
+    "authors": [
+      "Junjie Ye",
+      "Rong Xue",
+      "Basile Van Hoorick",
+      "Pavel Tokmakov",
+      "Muhammad Zubair Irshad",
+      "Yue Wang",
+      "Vitor Guizilini"
+    ],
+    "published": "2025-12-12T18:59:45+00:00",
+    "summary": "The collection of large-scale and diverse robot demonstrations remains a major bottleneck for imitation learning, as real-world data acquisition is costly and simulators offer limited diversity and fidelity with pronounced sim-to-real gaps. While generative models present an attractive solution, existing methods often alter only visual appearances without creating new behaviors, or suffer from embodiment inconsistencies that yield implausible motions. To address these limitations, we introduce AnchorDream, an embodiment-aware world model that repurposes pretrained video diffusion models for robot data synthesis. AnchorDream conditions the diffusion process on robot motion renderings, anchoring the embodiment to prevent hallucination while synthesizing objects and environments consistent with the robot's kinematics. Starting from only a handful of human teleoperation demonstrations, our method scales them into large, diverse, high-quality datasets without requiring explicit environment modeling. Experiments show that the generated data leads to consistent improvements in downstream policy learning, with relative gains of 36.4% in simulator benchmarks and nearly double performance in real-world studies. These results suggest that grounding generative world models in robot motion provides a practical path toward scaling imitation learning."
+  },
+  {
+    "title": "Toward a Decision Support System for Energy-Efficient Ferry Operation on Lake Constance based on Optimal Control",
+    "url": "http://arxiv.org/abs/2512.11786v1",
+    "arxiv_id": "2512.11786v1",
+    "authors": [
+      "Hannes Homburger",
+      "Bastian J\u00e4ckl",
+      "Stefan Wirtensohn",
+      "Christian Stopp",
+      "Maximilian T. Fischer",
+      "Moritz Diehl",
+      "Daniel A. Keim",
+      "Johannes Reuter"
+    ],
+    "published": "2025-12-12T18:55:22+00:00",
+    "summary": "The maritime sector is undergoing a disruptive technological change driven by three main factors: autonomy, decarbonization, and digital transformation. Addressing these factors necessitates a reassessment of inland vessel operations. This paper presents the design and development of a decision support system for ferry operations based on a shrinking-horizon optimal control framework. The problem formulation incorporates a mathematical model of the ferry's dynamics and environmental disturbances, specifically water currents and wind, which can significantly influence the dynamics. Real-world data and illustrative scenarios demonstrate the potential of the proposed system to effectively support ferry crews by providing real-time guidance. This enables enhanced operational efficiency while maintaining predefined maneuver durations. The findings suggest that optimal control applications hold substantial promise for advancing future ferry operations on inland waters. A video of the real-world ferry MS Insel Mainau operating on Lake Constance is available at: https://youtu.be/i1MjCdbEQyE"
+  },
+  {
+    "title": "Agile Flight Emerges from Multi-Agent Competitive Racing",
+    "url": "http://arxiv.org/abs/2512.11781v1",
+    "arxiv_id": "2512.11781v1",
+    "authors": [
+      "Vineet Pasumarti",
+      "Lorenzo Bianchi",
+      "Antonio Loquercio"
+    ],
+    "published": "2025-12-12T18:48:50+00:00",
+    "summary": "Through multi-agent competition and the sparse high-level objective of winning a race, we find that both agile flight (e.g., high-speed motion pushing the platform to its physical limits) and strategy (e.g., overtaking or blocking) emerge from agents trained with reinforcement learning. We provide evidence in both simulation and the real world that this approach outperforms the common paradigm of training agents in isolation with rewards that prescribe behavior, e.g., progress on the raceline, in particular when the complexity of the environment increases, e.g., in the presence of obstacles. Moreover, we find that multi-agent competition yields policies that transfer more reliably to the real world than policies trained with a single-agent progress-based reward, despite the two methods using the same simulation environment, randomization strategy, and hardware. In addition to improved sim-to-real transfer, the multi-agent policies also exhibit some degree of generalization to opponents unseen at training time. Overall, our work, following in the tradition of multi-agent competitive game-play in digital domains, shows that sparse task-level rewards are sufficient for training agents capable of advanced low-level control in the physical world.   Code: https://github.com/Jirl-upenn/AgileFlight_MultiAgent"
+  },
+  {
+    "title": "ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics",
+    "url": "http://arxiv.org/abs/2512.11773v1",
+    "arxiv_id": "2512.11773v1",
+    "authors": [
+      "Britton Jordan",
+      "Jordan Thompson",
+      "Jesse F. d'Almeida",
+      "Hao Li",
+      "Nithesh Kumar",
+      "Susheela Sharma Stern",
+      "Ipek Oguz",
+      "Robert J. Webster",
+      "Daniel Brown",
+      "Alan Kuntz",
+      "James Ferguson"
+    ],
+    "published": "2025-12-12T18:36:53+00:00",
+    "summary": "Monocular depth estimation (MDE) provides a useful tool for robotic perception, but its predictions are often uncertain and inaccurate in challenging environments such as surgical scenes where textureless surfaces, specular reflections, and occlusions are common. To address this, we propose ProbeMDE, a cost-aware active sensing framework that combines RGB images with sparse proprioceptive measurements for MDE. Our approach utilizes an ensemble of MDE models to predict dense depth maps conditioned on both RGB images and on a sparse set of known depth measurements obtained via proprioception, where the robot has touched the environment in a known configuration. We quantify predictive uncertainty via the ensemble's variance and measure the gradient of the uncertainty with respect to candidate measurement locations. To prevent mode collapse while selecting maximally informative locations to propriocept (touch), we leverage Stein Variational Gradient Descent (SVGD) over this gradient map. We validate our method in both simulated and physical experiments on central airway obstruction surgical phantoms. Our results demonstrate that our approach outperforms baseline methods across standard depth estimation metrics, achieving higher accuracy while minimizing the number of required proprioceptive measurements."
+  },
+  {
     "title": "Empowering Dynamic Urban Navigation with Stereo and Mid-Level Vision",
     "url": "http://arxiv.org/abs/2512.10956v1",
     "arxiv_id": "2512.10956v1",
