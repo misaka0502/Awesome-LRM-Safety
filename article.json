@@ -1,5 +1,90 @@
 [
   {
+    "title": "Feedforward 3D Editing via Text-Steerable Image-to-3D",
+    "url": "http://arxiv.org/abs/2512.13678v1",
+    "arxiv_id": "2512.13678v1",
+    "authors": [
+      "Ziqi Ma",
+      "Hongqiao Chen",
+      "Yisong Yue",
+      "Georgia Gkioxari"
+    ],
+    "published": "2025-12-15T18:58:55+00:00",
+    "summary": "Recent progress in image-to-3D has opened up immense possibilities for design, AR/VR, and robotics. However, to use AI-generated 3D assets in real applications, a critical requirement is the capability to edit them easily. We present a feedforward method, Steer3D, to add text steerability to image-to-3D models, which enables editing of generated 3D assets with language. Our approach is inspired by ControlNet, which we adapt to image-to-3D generation to enable text steering directly in a forward pass. We build a scalable data engine for automatic data generation, and develop a two-stage training recipe based on flow-matching training and Direct Preference Optimization (DPO). Compared to competing methods, Steer3D more faithfully follows the language instruction and maintains better consistency with the original 3D asset, while being 2.4x to 28.5x faster. Steer3D demonstrates that it is possible to add a new modality (text) to steer the generation of pretrained image-to-3D generative models with 100k data. Project website: https://glab-caltech.github.io/steer3d/"
+  },
+  {
+    "title": "AgentIAD: Tool-Augmented Single-Agent for Industrial Anomaly Detection",
+    "url": "http://arxiv.org/abs/2512.13671v1",
+    "arxiv_id": "2512.13671v1",
+    "authors": [
+      "Junwen Miao",
+      "Penghui Du",
+      "Yi Liu",
+      "Yu Wang",
+      "Yan Wang"
+    ],
+    "published": "2025-12-15T18:57:04+00:00",
+    "summary": "Industrial anomaly detection (IAD) is difficult due to the scarcity of normal reference samples and the subtle, localized nature of many defects. Single-pass vision-language models (VLMs) often overlook small abnormalities and lack explicit mechanisms to compare against canonical normal patterns. We propose AgentIAD, a tool-driven agentic framework that enables multi-stage visual inspection. The agent is equipped with a Perceptive Zoomer (PZ) for localized fine-grained analysis and a Comparative Retriever (CR) for querying normal exemplars when evidence is ambiguous. To teach these inspection behaviors, we construct structured perceptive and comparative trajectories from the MMAD dataset and train the model in two stages: supervised fine-tuning followed by reinforcement learning. A two-part reward design drives this process: a perception reward that supervises classification accuracy, spatial alignment, and type correctness, and a behavior reward that encourages efficient tool use. Together, these components enable the model to refine its judgment through step-wise observation, zooming, and verification. AgentIAD achieves a new state-of-the-art 97.62% classification accuracy on MMAD, surpassing prior MLLM-based approaches while producing transparent and interpretable inspection traces."
+  },
+  {
+    "title": "NL2SpaTiaL: Generating Geometric Spatio-Temporal Logic Specifications from Natural Language for Manipulation Tasks",
+    "url": "http://arxiv.org/abs/2512.13670v1",
+    "arxiv_id": "2512.13670v1",
+    "authors": [
+      "Licheng Luo",
+      "Yu Xia",
+      "Kaier Liang",
+      "Mingyu Cai"
+    ],
+    "published": "2025-12-15T18:56:34+00:00",
+    "summary": "Spatio-Temporal Logic (SpaTiaL) offers a principled formalism for expressing geometric spatial requirements-an essential component of robotic manipulation, where object locations, neighborhood relations, pose constraints, and interactions directly determine task success. Yet prior works have largely relied on standard temporal logic (TL), which models only robot trajectories and overlooks object-level interactions. Existing datasets built from randomly generated TL formulas paired with natural-language descriptions therefore cover temporal operators but fail to represent the layered spatial relations that manipulation tasks depend on. To address this gap, we introduce a dataset generation framework that synthesizes SpaTiaL specifications and converts them into natural-language descriptions through a deterministic, semantics-preserving back-translation procedure. This pipeline produces the NL2SpaTiaL dataset, aligning natural language with multi-level spatial relations and temporal objectives to reflect the compositional structure of manipulation tasks. Building on this foundation, we propose a translation-verification framework equipped with a language-based semantic checker that ensures the generated SpaTiaL formulas faithfully encode the semantics specified by the input description. Experiments across a suite of manipulation tasks show that SpaTiaL-based representations yield more interpretable, verifiable, and compositional grounding for instruction following. Project website: https://sites.google.com/view/nl2spatial"
+  },
+  {
+    "title": "A Scientific Reasoning Model for Organic Synthesis Procedure Generation",
+    "url": "http://arxiv.org/abs/2512.13668v1",
+    "arxiv_id": "2512.13668v1",
+    "authors": [
+      "Guoqing Liu",
+      "Junren Li",
+      "Zihan Zhao",
+      "Eray Inanc",
+      "Krzysztof Maziarz",
+      "Jose Garrido Torres",
+      "Victor Garcia Satorras",
+      "Shoko Ueda",
+      "Christopher M. Bishop",
+      "Marwin Segler"
+    ],
+    "published": "2025-12-15T18:55:39+00:00",
+    "summary": "Solving computer-aided synthesis planning is essential for enabling fully automated, robot-assisted synthesis workflows and improving the efficiency of drug discovery. A key challenge, however, is bridging the gap between computational route design and practical laboratory execution, particularly the accurate prediction of viable experimental procedures for each synthesis step. In this work, we present QFANG, a scientific reasoning language model capable of generating precise, structured experimental procedures directly from reaction equations, with explicit chain-of-thought reasoning. To develop QFANG, we curated a high-quality dataset comprising 905,990 chemical reactions paired with structured action sequences, extracted and processed from patent literature using large language models. We introduce a Chemistry-Guided Reasoning (CGR) framework that produces chain-of-thought data grounded in chemical knowledge at scale. The model subsequently undergoes supervised fine-tuning to elicit complex chemistry reasoning. Finally, we apply Reinforcement Learning from Verifiable Rewards (RLVR) to further enhance procedural accuracy. Experimental results demonstrate that QFANG outperforms advanced general-purpose reasoning models and nearest-neighbor retrieval baselines, measured by traditional NLP similarity metrics and a chemically aware evaluator using an LLM-as-a-judge. Moreover, QFANG generalizes to certain out-of-domain reaction classes and adapts to variations in laboratory conditions and user-specific constraints. We believe that QFANG's ability to generate high-quality synthesis procedures represents an important step toward bridging the gap between computational synthesis planning and fully automated laboratory synthesis."
+  },
+  {
+    "title": "Nonreciprocal Transport with Quantum Geometric Origin in Layered Hybrid Perovskite",
+    "url": "http://arxiv.org/abs/2512.13663v1",
+    "arxiv_id": "2512.13663v1",
+    "authors": [
+      "Zihan Zhang",
+      "Sihan Chen",
+      "Mingfeng Chen",
+      "Jee Yung Park",
+      "Gang Shi",
+      "Kaitai Xiao",
+      "Swati Chaudhary",
+      "Alejandro T. Busto",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Peng Xiong",
+      "Xiao-Xiao Zhang",
+      "Efstratios Manousakis",
+      "Letian Dou",
+      "Xi Wang",
+      "Cyprian Lewandowski",
+      "Hanwei Gao"
+    ],
+    "published": "2025-12-15T18:52:51+00:00",
+    "summary": "Quantum geometry quantifies how the electron wavefunction evolves distinctly from conventional transport theory. In noncentrosymmetric materials, nonreciprocal transport with quantum geometric origin remains prominent with localized charge independent of vanished group velocity. The discovery of such nonreciprocal and nonlinear responses was realized by recent advances in two-dimensional materials. As a promising candidate, the electronic structure and symmetry of layered hybrid perovskites can be deliberately designed and manipulated by incorporating selected organic ligands. Despite the observation of exotic photogalvanic effects and chiral optical effects, the underlying mechanism how these nonlinear responses are enabled in the multi-quantum well structures remained unclear. Here we demonstrated the quantum geometric origin for interlayer spontaneous photocurrent in (PEA)2PbI4. Contrary to assumptions that charge transport across the 2D planes is limited, we observed a spontaneous photocurrent along this crystalline orientation. Theoretical analysis using a tight-binding model identifies shift current as the microscopic origin. This quantum geometric effect is enabled by ionic displacements from centrosymmetric coordinates and enhanced by multiband transition high-density bands of the layered hybrid crystal. We anticipate that such unique low-dimensional systems with structure can provide fertile ground for discovering novel optoelectronic functionalities."
+  },
+  {
     "title": "V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties",
     "url": "http://arxiv.org/abs/2512.11799v1",
     "arxiv_id": "2512.11799v1",
