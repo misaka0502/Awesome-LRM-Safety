@@ -1,5 +1,89 @@
 [
   {
+    "title": "TimeLens: Rethinking Video Temporal Grounding with Multimodal LLMs",
+    "url": "http://arxiv.org/abs/2512.14698v1",
+    "arxiv_id": "2512.14698v1",
+    "authors": [
+      "Jun Zhang",
+      "Teng Wang",
+      "Yuying Ge",
+      "Yixiao Ge",
+      "Xinhao Li",
+      "Ying Shan",
+      "Limin Wang"
+    ],
+    "published": "2025-12-16T18:59:58+00:00",
+    "summary": "This paper does not introduce a novel method but instead establishes a straightforward, incremental, yet essential baseline for video temporal grounding (VTG), a core capability in video understanding. While multimodal large language models (MLLMs) excel at various video understanding tasks, the recipes for optimizing them for VTG remain under-explored. In this paper, we present TimeLens, a systematic investigation into building MLLMs with strong VTG ability, along two primary dimensions: data quality and algorithmic design. We first expose critical quality issues in existing VTG benchmarks and introduce TimeLens-Bench, comprising meticulously re-annotated versions of three popular benchmarks with strict quality criteria. Our analysis reveals dramatic model re-rankings compared to legacy benchmarks, confirming the unreliability of prior evaluation standards. We also address noisy training data through an automated re-annotation pipeline, yielding TimeLens-100K, a large-scale, high-quality training dataset. Building on our data foundation, we conduct in-depth explorations of algorithmic design principles, yielding a series of meaningful insights and effective yet efficient practices. These include interleaved textual encoding for time representation, a thinking-free reinforcement learning with verifiable rewards (RLVR) approach as the training paradigm, and carefully designed recipes for RLVR training. These efforts culminate in TimeLens models, a family of MLLMs with state-of-the-art VTG performance among open-source models and even surpass proprietary models such as GPT-5 and Gemini-2.5-Flash. All codes, data, and models will be released to facilitate future research."
+  },
+  {
+    "title": "CRISP: Contact-Guided Real2Sim from Monocular Video with Planar Scene Primitives",
+    "url": "http://arxiv.org/abs/2512.14696v1",
+    "arxiv_id": "2512.14696v1",
+    "authors": [
+      "Zihan Wang",
+      "Jiashun Wang",
+      "Jeff Tan",
+      "Yiwen Zhao",
+      "Jessica Hodgins",
+      "Shubham Tulsiani",
+      "Deva Ramanan"
+    ],
+    "published": "2025-12-16T18:59:50+00:00",
+    "summary": "We introduce CRISP, a method that recovers simulatable human motion and scene geometry from monocular video. Prior work on joint human-scene reconstruction relies on data-driven priors and joint optimization with no physics in the loop, or recovers noisy geometry with artifacts that cause motion tracking policies with scene interactions to fail. In contrast, our key insight is to recover convex, clean, and simulation-ready geometry by fitting planar primitives to a point cloud reconstruction of the scene, via a simple clustering pipeline over depth, normals, and flow. To reconstruct scene geometry that might be occluded during interactions, we make use of human-scene contact modeling (e.g., we use human posture to reconstruct the occluded seat of a chair). Finally, we ensure that human and scene reconstructions are physically-plausible by using them to drive a humanoid controller via reinforcement learning. Our approach reduces motion tracking failure rates from 55.2\\% to 6.9\\% on human-centric video benchmarks (EMDB, PROX), while delivering a 43\\% faster RL simulation throughput. We further validate it on in-the-wild videos including casually-captured videos, Internet videos, and even Sora-generated videos. This demonstrates CRISP's ability to generate physically-valid human motion and interaction environments at scale, greatly advancing real-to-sim applications for robotics and AR/VR."
+  },
+  {
+    "title": "CHIP: Adaptive Compliance for Humanoid Control through Hindsight Perturbation",
+    "url": "http://arxiv.org/abs/2512.14689v1",
+    "arxiv_id": "2512.14689v1",
+    "authors": [
+      "Sirui Chen",
+      "Zi-ang Cao",
+      "Zhengyi Luo",
+      "Fernando Casta\u00f1eda",
+      "Chenran Li",
+      "Tingwu Wang",
+      "Ye Yuan",
+      "Linxi \"Jim\" Fan",
+      "C. Karen Liu",
+      "Yuke Zhu"
+    ],
+    "published": "2025-12-16T18:56:04+00:00",
+    "summary": "Recent progress in humanoid robots has unlocked agile locomotion skills, including backflipping, running, and crawling. Yet it remains challenging for a humanoid robot to perform forceful manipulation tasks such as moving objects, wiping, and pushing a cart. We propose adaptive Compliance Humanoid control through hIsight Perturbation (CHIP), a plug-and-play module that enables controllable end-effector stiffness while preserving agile tracking of dynamic reference motions. CHIP is easy to implement and requires neither data augmentation nor additional reward tuning. We show that a generalist motion-tracking controller trained with CHIP can perform a diverse set of forceful manipulation tasks that require different end-effector compliance, such as multi-robot collaboration, wiping, box delivery, and door opening."
+  },
+  {
+    "title": "EVOLVE-VLA: Test-Time Training from Environment Feedback for Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2512.14666v1",
+    "arxiv_id": "2512.14666v1",
+    "authors": [
+      "Zechen Bai",
+      "Chen Gao",
+      "Mike Zheng Shou"
+    ],
+    "published": "2025-12-16T18:26:38+00:00",
+    "summary": "Achieving truly adaptive embodied intelligence requires agents that learn not just by imitating static demonstrations, but by continuously improving through environmental interaction, which is akin to how humans master skills through practice. Vision-Language-Action (VLA) models have advanced robotic manipulation by leveraging large language models, yet remain fundamentally limited by Supervised Finetuning (SFT): requiring hundreds of demonstrations per task, rigidly memorizing trajectories, and failing to adapt when deployment conditions deviate from training. We introduce EVOLVE-VLA, a test-time training framework enabling VLAs to continuously adapt through environment interaction with minimal or zero task-specific demonstrations. The key technical challenge is replacing oracle reward signals (unavailable at test time) with autonomous feedback. We address this through a learned progress estimator providing dense feedback, and critically, we design our framework to ``tame'' this inherently noisy signal via two mechanisms: (1) an accumulative progress estimation mechanism smoothing noisy point-wise estimates, and (2) a progressive horizon extension strategy enabling gradual policy evolution. EVOLVE-VLA achieves substantial gains: +8.6\\% on long-horizon tasks, +22.0\\% in 1-shot learning, and enables cross-task generalization -- achieving 20.8\\% success on unseen tasks without task-specific demonstrations training (vs. 0\\% for pure SFT). Qualitative analysis reveals emergent capabilities absent in demonstrations, including error recovery and novel strategies. This work represents a critical step toward VLAs that truly learn and adapt, moving beyond static imitation toward continuous self-improvements."
+  },
+  {
+    "title": "NGC 3521 as the Milky Way near twin: spectral energy distribution from UV to radio decameter ranges",
+    "url": "http://arxiv.org/abs/2512.14664v1",
+    "arxiv_id": "2512.14664v1",
+    "authors": [
+      "O. V. Kompaniiets",
+      "I. B. Vavilova",
+      "Y. V. Vasylkivskyi",
+      "O. O. Konovalenko",
+      "O. S. Pastoven",
+      "I. O. Izviekova",
+      "A. M. Dmytrenko",
+      "D. V. Dobrycheva",
+      "P. N. Fedorov",
+      "V. P. Khramtsov",
+      "O. Sergijenko",
+      "A. A. Vasylenko"
+    ],
+    "published": "2025-12-16T18:24:37+00:00",
+    "summary": "Milky Way analogues (MWAs) are usually selected from structural and kinematic properties, but robust SED-based similarity criteria are limited by heterogeneous photometry and incomplete wavelength coverage. We present a homogeneous, aperture-photometry SED of the Milky Way near-twin NGC~3521 from the ultraviolet to the radio decameter range. Fluxes are measured within a fixed elliptical isophotal aperture using GALEX, SDSS, WISE, Spitzer/MIPS, Herschel/PACS+SPIRE, and VLA data, and supplemented by meter/decameter constraints. We report new observations obtained in Jan-Feb 2022 with the Ukrainian T-shape radio telescope and derive, for the first time, an upper limit in the 24--32~MHz band. The UV-to-decameter SED (27 points) is modelled with \\textsc{CIGALE}, including a dedicated low-frequency radio prescription (\\texttt{radio_extra}) that accounts for emission and absorption effects. Using ZTF and NEOWISE data (2014--2025), we detect genuine nuclear variability; optical trends at $\\sim2^{\\prime\\prime}$ primarily trace the compact nucleus, while NEOWISE variability reflects a mix of nuclear changes and warm-dust emission within the larger aperture. The preferred fit yields $M_\\star \\simeq 6.0\\times10^{10},M_\\odot$, ${\\rm SFR}\\simeq1.65,M_\\odot,{\\rm yr}^{-1}$, $M_{\\rm dust}\\simeq1.3\\times10^{8},M_\\odot$, and an effective dust temperature of $\\sim23$~K. The decameter constraint gives $S_{28,{\\rm MHz}}<11.22$~Jy, consistent with expectations for a Milky Way-like system placed at 10.7~Mpc. We conclude that an integrated, homogeneous SED, especially below 100~MHz, provides a complementary diagnostic for identifying and validating MWAs and for interpreting how Milky Way properties would appear to an external observer."
+  },
+  {
     "title": "Feedforward 3D Editing via Text-Steerable Image-to-3D",
     "url": "http://arxiv.org/abs/2512.13678v1",
     "arxiv_id": "2512.13678v1",
