@@ -1,5 +1,72 @@
 [
   {
+    "title": "In Pursuit of Pixel Supervision for Visual Pre-training",
+    "url": "http://arxiv.org/abs/2512.15715v1",
+    "arxiv_id": "2512.15715v1",
+    "authors": [
+      "Lihe Yang",
+      "Shang-Wen Li",
+      "Yang Li",
+      "Xinjie Lei",
+      "Dong Wang",
+      "Abdelrahman Mohamed",
+      "Hengshuang Zhao",
+      "Hu Xu"
+    ],
+    "published": "2025-12-17T18:59:58+00:00",
+    "summary": "At the most basic level, pixels are the source of the visual information through which we perceive the world. Pixels contain information at all levels, ranging from low-level attributes to high-level concepts. Autoencoders represent a classical and long-standing paradigm for learning representations from pixels or other raw inputs. In this work, we demonstrate that autoencoder-based self-supervised learning remains competitive today and can produce strong representations for downstream tasks, while remaining simple, stable, and efficient. Our model, codenamed \"Pixio\", is an enhanced masked autoencoder (MAE) with more challenging pre-training tasks and more capable architectures. The model is trained on 2B web-crawled images with a self-curation strategy with minimal human curation. Pixio performs competitively across a wide range of downstream tasks in the wild, including monocular depth estimation (e.g., Depth Anything), feed-forward 3D reconstruction (i.e., MapAnything), semantic segmentation, and robot learning, outperforming or matching DINOv3 trained at similar scales. Our results suggest that pixel-space self-supervised learning can serve as a promising alternative and a complement to latent-space approaches."
+  },
+  {
+    "title": "Multi-View Foundation Models",
+    "url": "http://arxiv.org/abs/2512.15708v1",
+    "arxiv_id": "2512.15708v1",
+    "authors": [
+      "Leo Segre",
+      "Or Hirschorn",
+      "Shai Avidan"
+    ],
+    "published": "2025-12-17T18:58:03+00:00",
+    "summary": "Foundation models are vital tools in various Computer Vision applications. They take as input a single RGB image and output a deep feature representation that is useful for various applications. However, in case we have multiple views of the same 3D scene, they operate on each image independently and do not always produce consistent features for the same 3D point. We propose a way to convert a Foundation Model into a Multi-View Foundation Model. Such a model takes as input a set of images and outputs a feature map for each image such that the features of corresponding points are as consistent as possible. This approach bypasses the need to build a consistent 3D model of the features and allows direct manipulation in the image space. Specifically, we show how to augment Transformers-based foundation models (i.e., DINO, SAM, CLIP) with intermediate 3D-aware attention layers that help match features across different views. As leading examples, we show surface normal estimation and multi-view segmentation tasks. Quantitative experiments show that our method improves feature matching considerably compared to current foundation models."
+  },
+  {
+    "title": "Time integration of quantized tensor trains using the interpolative dynamical low-rank approximation",
+    "url": "http://arxiv.org/abs/2512.15703v1",
+    "arxiv_id": "2512.15703v1",
+    "authors": [
+      "Erika Ye",
+      "Chao Yang"
+    ],
+    "published": "2025-12-17T18:55:25+00:00",
+    "summary": "Quantized tensor trains (QTTs) are a low-rank and multiscale framework that allows for efficient approximation and manipulation of multi-dimensional, high resolution data. One area of active research is their use in numerical simulation of hyperbolic systems such as the Navier-Stokes equations and the Vlasov equations. One popular time integration scheme is the dynamical low-rank approximation (DLRA), in which the time integration is constrained to a low-rank manifold. However, until recently, DLRA has typically used orthogonal projectors to project the original dynamical system into a reduced space, which is only well-suited for linear systems. DLRA has also mostly been investigated in the context of non-quantized tensor trains. This work investigates interpolative DLRA schemes in which the low-rank manifold is constructed from aptly chosen interpolation points and interpolating polynomials, in the context of QTTs. Through various examples, its performance is compared to its orthogonal counterpart. This work demonstrates how interpolative DLRA is suitable for nonlinear systems and time integrators requiring nonlinear element-wise operations, such as upwind time integration schemes."
+  },
+  {
+    "title": "An introduction to nonlinear fiber optics and optical analogues to gravitational phenomena",
+    "url": "http://arxiv.org/abs/2512.15695v1",
+    "arxiv_id": "2512.15695v1",
+    "authors": [
+      "Dimitrios Kranas",
+      "Andleeb Zahra",
+      "Friedrich K\u00f6nig"
+    ],
+    "published": "2025-12-17T18:50:47+00:00",
+    "summary": "The optical fiber is a revolutionary technology of the past century. It enables us to manipulate single modes in nonlinear interactions with precision at the quantum level without involved setups. This setting is useful in the field of analogue gravity (AG), where gravitational phenomena are investigated in accessible analogue lab setups. These lecture notes provide an account of this AG framework and applications. Although light in nonlinear dielectrics is discussed in textbooks, the involved modelling often includes many assumptions that are directed at optical communications, some of which are rarely detailed. Here, we provide a self-contained and sufficiently detailed description of the propagation of light in fibers, with a minimal set of assumptions, which is relevant in the context of AG. Starting with the structure of a step-index fiber, we derive linear-optics propagating modes and show that the transverse electric field of the fundamental mode is well approximated as linearly polarized and of a Gaussian profile. We then incorporate a cubic nonlinearity and derive a general wave envelope propagation equation. With further simplifying assumptions, we arrive at the famous nonlinear Schr\u00f6dinger equation, which governs fundamental effects in nonlinear fibers, such as solitons. As a first application in AG, we show how intense light in the medium creates an effective background spacetime for probe light akin to the propagation of a scalar field in a black hole spacetime. We introduce optical horizons and particle production in this effective spacetime, giving rise to the optical Hawking effect. Furthermore, we discuss two related light emission mechanisms. Finally, we present a second optical analogue model for the oscillations of black holes, the quasinormal modes, which are important in the program of black hole spectroscopy."
+  },
+  {
+    "title": "mimic-video: Video-Action Models for Generalizable Robot Control Beyond VLAs",
+    "url": "http://arxiv.org/abs/2512.15692v1",
+    "arxiv_id": "2512.15692v1",
+    "authors": [
+      "Jonas Pai",
+      "Liam Achenbach",
+      "Victoriano Montesinos",
+      "Benedek Forrai",
+      "Oier Mees",
+      "Elvis Nava"
+    ],
+    "published": "2025-12-17T18:47:31+00:00",
+    "summary": "Prevailing Vision-Language-Action Models (VLAs) for robotic manipulation are built upon vision-language backbones pretrained on large-scale, but disconnected static web data. As a result, despite improved semantic generalization, the policy must implicitly infer complex physical dynamics and temporal dependencies solely from robot trajectories. This reliance creates an unsustainable data burden, necessitating continuous, large-scale expert data collection to compensate for the lack of innate physical understanding. We contend that while vision-language pretraining effectively captures semantic priors, it remains blind to physical causality. A more effective paradigm leverages video to jointly capture semantics and visual dynamics during pretraining, thereby isolating the remaining task of low-level control. To this end, we introduce \\model, a novel Video-Action Model (VAM) that pairs a pretrained Internet-scale video model with a flow matching-based action decoder conditioned on its latent representations. The decoder serves as an Inverse Dynamics Model (IDM), generating low-level robot actions from the latent representation of video-space action plans. Our extensive evaluation shows that our approach achieves state-of-the-art performance on simulated and real-world robotic manipulation tasks, improving sample efficiency by 10x and convergence speed by 2x compared to traditional VLA architectures."
+  },
+  {
     "title": "TimeLens: Rethinking Video Temporal Grounding with Multimodal LLMs",
     "url": "http://arxiv.org/abs/2512.14698v1",
     "arxiv_id": "2512.14698v1",
