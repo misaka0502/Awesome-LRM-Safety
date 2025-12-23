@@ -1,5 +1,78 @@
 [
   {
+    "title": "Scalably Enhancing the Clinical Validity of a Task Benchmark with Physician Oversight",
+    "url": "http://arxiv.org/abs/2512.19691v1",
+    "arxiv_id": "2512.19691v1",
+    "authors": [
+      "Junze Ye",
+      "Daniel Tawfik",
+      "Alex J. Goodell",
+      "Nikhil V. Kotha",
+      "Mark K. Buyyounouski",
+      "Mohsen Bayati"
+    ],
+    "published": "2025-12-22T18:59:34+00:00",
+    "summary": "Automating the calculation of clinical risk scores offers a significant opportunity to reduce physician administrative burden and enhance patient care. The current standard for evaluating this capability is MedCalc-Bench, a large-scale dataset constructed using LLM-based feature extraction and rule-based aggregation. However, treating such model-generated benchmarks as static oracles risks enshrining historical model errors as evaluation gold standards, a problem dangerously amplified when these datasets serve as reward signals for Reinforcement Learning (RL). In this work, we propose viewing benchmarks for complex tasks such as clinical score computation as ''in-progress living documents'' that should be periodically re-evaluated as the processes for creating them improve. We introduce a systematic, physician-in-the-loop pipeline that leverages advanced agentic verifiers to audit and relabel MedCalc-Bench, utilizing automated triage to reserve scarce clinician attention for the most contentious instances. Our audit reveals that a notable fraction of original labels diverge from medical ground truth due to extraction errors, calculator logic mismatches, and clinical ambiguity. To study whether this label noise meaningfully impacts downstream RL training, we fine-tune a Qwen3-8B model via Group Relative Policy Optimization (GRPO) and demonstrate that training on corrected labels yields an 8.7% absolute improvement in accuracy over the original baseline -- validating that label noise materially affects model evaluation. These findings underscore that in safety-critical domains, rigorous benchmark maintenance is a prerequisite for genuine model alignment."
+  },
+  {
+    "title": "Zero-shot Reconstruction of In-Scene Object Manipulation from Video",
+    "url": "http://arxiv.org/abs/2512.19684v1",
+    "arxiv_id": "2512.19684v1",
+    "authors": [
+      "Dixuan Lin",
+      "Tianyou Wang",
+      "Zhuoyang Pan",
+      "Yufu Wang",
+      "Lingjie Liu",
+      "Kostas Daniilidis"
+    ],
+    "published": "2025-12-22T18:58:29+00:00",
+    "summary": "We build the first system to address the problem of reconstructing in-scene object manipulation from a monocular RGB video. It is challenging due to ill-posed scene reconstruction, ambiguous hand-object depth, and the need for physically plausible interactions. Existing methods operate in hand centric coordinates and ignore the scene, hindering metric accuracy and practical use. In our method, we first use data-driven foundation models to initialize the core components, including the object mesh and poses, the scene point cloud, and the hand poses. We then apply a two-stage optimization that recovers a complete hand-object motion from grasping to interaction, which remains consistent with the scene information observed in the input video."
+  },
+  {
+    "title": "Optimal-coupling-observer AV motion control securing comfort in the presence of cyber attacks",
+    "url": "http://arxiv.org/abs/2512.19679v1",
+    "arxiv_id": "2512.19679v1",
+    "authors": [
+      "Farzam Tajdari",
+      "Georgios Papaioannou",
+      "Riender Happee"
+    ],
+    "published": "2025-12-22T18:54:26+00:00",
+    "summary": "The security of Automated Vehicles (AVs) is an important emerging area of research in traffic safety. Methods have been published and evaluated in experimental vehicles to secure safe AV control in the presence of attacks, but human motion comfort is rarely investigated in such studies.   In this paper, we present an innovative optimal-coupling-observer-based framework that rejects the impact of bounded sensor attacks in a network of connected and automated vehicles from safety and comfort point of view.   We demonstrate its performance in car following with cooperative adaptive cruise control for platoons with redundant distance and velocity sensors.   The error dynamics are formulated as a Linear Time Variant (LTV) system, resulting in complex stability conditions that are investigated using a Linear Matrix Inequality (LMI) approach guaranteeing global asymptotic stability.   We prove the capability of the framework to secure occupants' safety and comfort in the presence of bounded attacks. In the onset of attack, the framework rapidly detects attacked sensors and switches to the most reliable observer eliminating attacked sensors, even with modest attack magnitudes. Without our proposed method, severe (but bounded) attacks result in collisions and major discomfort. With our method, attacks had negligible effects on motion comfort evaluated using ISO-2631 Ride Comfort and Motion Sickness indexes. The results pave the path to bring comfort to the forefront of AVs security."
+  },
+  {
+    "title": "Detecting Coordinated Activities Through Temporal, Multiplex, and Collaborative Analysis",
+    "url": "http://arxiv.org/abs/2512.19677v1",
+    "arxiv_id": "2512.19677v1",
+    "authors": [
+      "Letizia Iannucci",
+      "Elisa Muratore",
+      "Antonis Matakos",
+      "Mikko Kivel\u00e4"
+    ],
+    "published": "2025-12-22T18:53:43+00:00",
+    "summary": "In the era of widespread online content consumption, effective detection of coordinated efforts is crucial for mitigating potential threats arising from information manipulation. Despite advances in isolating inauthentic and automated actors, the actions of individual accounts involved in influence campaigns may not stand out as anomalous if analyzed independently of the coordinated group. Given the collaborative nature of information operations, coordinated campaigns are better characterized by evidence of similar temporal behavioral patterns that extend beyond coincidental synchronicity across a group of accounts. We propose a framework to model complex coordination patterns across multiple online modalities. This framework utilizes multiplex networks to first decompose online activities into different interaction layers, and subsequently aggregate evidence of online coordination across the layers. In addition, we propose a time-aware collaboration model to capture patterns of online coordination for each modality. The proposed time-aware model builds upon the node-normalized collaboration model and accounts for repetitions of coordinated actions over different time intervals by employing an exponential decay temporal kernel. We validate our approach on multiple datasets featuring different coordinated activities. Our results demonstrate that a multiplex time-aware model excels in the identification of coordinating groups, outperforming previously proposed methods in coordinated activity detection."
+  },
+  {
+    "title": "Bottom-up Policy Optimization: Your Language Model Policy Secretly Contains Internal Policies",
+    "url": "http://arxiv.org/abs/2512.19673v1",
+    "arxiv_id": "2512.19673v1",
+    "authors": [
+      "Yuqiao Tan",
+      "Minzheng Wang",
+      "Shizhu He",
+      "Huanxuan Liao",
+      "Chengfeng Zhao",
+      "Qiunan Lu",
+      "Tian Liang",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "published": "2025-12-22T18:51:48+00:00",
+    "summary": "Existing reinforcement learning (RL) approaches treat large language models (LLMs) as a single unified policy, overlooking their internal mechanisms. Understanding how policy evolves across layers and modules is therefore crucial for enabling more targeted optimization and raveling out complex reasoning mechanisms. In this paper, we decompose the language model policy by leveraging the intrinsic split of the Transformer residual stream and the equivalence between the composition of hidden states with the unembedding matrix and the resulting samplable policy. This decomposition reveals Internal Layer Policies, corresponding to contributions from individual layers, and Internal Modular Policies, which align with the self-attention and feed-forward network (FFN) components within each layer. By analyzing the entropy of internal policy, we find that: (a) Early layers keep high entropy for exploration, top layers converge to near-zero entropy for refinement, with convergence patterns varying across model series. (b) LLama's prediction space rapidly converges in the final layer, whereas Qwen-series models, especially Qwen3, exhibit a more human-like, progressively structured reasoning pattern. Motivated by these findings, we propose Bottom-up Policy Optimization (BuPO), a novel RL paradigm that directly optimizes the internal layer policy during early training. By aligning training objective at lower layer, BuPO reconstructs foundational reasoning capabilities and achieves superior performance. Extensive experiments on complex reasoning benchmarks demonstrates the effectiveness of our method. Our code is available at https://github.com/Trae1ounG/BuPO."
+  },
+  {
     "title": "Dexterous World Models",
     "url": "http://arxiv.org/abs/2512.17907v1",
     "arxiv_id": "2512.17907v1",
