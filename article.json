@@ -1,5 +1,93 @@
 [
   {
+    "title": "LongVideoAgent: Multi-Agent Reasoning with Long Videos",
+    "url": "http://arxiv.org/abs/2512.20618v1",
+    "arxiv_id": "2512.20618v1",
+    "authors": [
+      "Runtao Liu",
+      "Ziyi Liu",
+      "Jiaqi Tang",
+      "Yue Ma",
+      "Renjie Pi",
+      "Jipeng Zhang",
+      "Qifeng Chen"
+    ],
+    "published": "2025-12-23T18:59:49+00:00",
+    "summary": "Recent advances in multimodal LLMs and systems that use tools for long-video QA point to the promise of reasoning over hour-long episodes. However, many methods still compress content into lossy summaries or rely on limited toolsets, weakening temporal grounding and missing fine-grained cues. We propose a multi-agent framework in which a master LLM coordinates a grounding agent to localize question-relevant segments and a vision agent to extract targeted textual observations. The master agent plans with a step limit, and is trained with reinforcement learning to encourage concise, correct, and efficient multi-agent cooperation. This design helps the master agent focus on relevant clips via grounding, complements subtitles with visual detail, and yields interpretable trajectories. On our proposed LongTVQA and LongTVQA+ which are episode-level datasets aggregated from TVQA/TVQA+, our multi-agent system significantly outperforms strong non-agent baselines. Experiments also show reinforcement learning further strengthens reasoning and planning for the trained agent. Code and data will be shared at https://longvideoagent.github.io/."
+  },
+  {
+    "title": "Repurposing Video Diffusion Transformers for Robust Point Tracking",
+    "url": "http://arxiv.org/abs/2512.20606v1",
+    "arxiv_id": "2512.20606v1",
+    "authors": [
+      "Soowon Son",
+      "Honggyu An",
+      "Chaehyun Kim",
+      "Hyunah Ko",
+      "Jisu Nam",
+      "Dahyun Chung",
+      "Siyoon Jin",
+      "Jung Yi",
+      "Jaewon Min",
+      "Junhwa Hur",
+      "Seungryong Kim"
+    ],
+    "published": "2025-12-23T18:54:10+00:00",
+    "summary": "Point tracking aims to localize corresponding points across video frames, serving as a fundamental task for 4D reconstruction, robotics, and video editing. Existing methods commonly rely on shallow convolutional backbones such as ResNet that process frames independently, lacking temporal coherence and producing unreliable matching costs under challenging conditions. Through systematic analysis, we find that video Diffusion Transformers (DiTs), pre-trained on large-scale real-world videos with spatio-temporal attention, inherently exhibit strong point tracking capability and robustly handle dynamic motions and frequent occlusions. We propose DiTracker, which adapts video DiTs through: (1) query-key attention matching, (2) lightweight LoRA tuning, and (3) cost fusion with a ResNet backbone. Despite training with 8 times smaller batch size, DiTracker achieves state-of-the-art performance on challenging ITTO benchmark and matches or outperforms state-of-the-art models on TAP-Vid benchmarks. Our work validates video DiT features as an effective and efficient foundation for point tracking."
+  },
+  {
+    "title": "Emergent temporal abstractions in autoregressive models enable hierarchical reinforcement learning",
+    "url": "http://arxiv.org/abs/2512.20605v1",
+    "arxiv_id": "2512.20605v1",
+    "authors": [
+      "Seijin Kobayashi",
+      "Yanick Schimpf",
+      "Maximilian Schlegel",
+      "Angelika Steger",
+      "Maciej Wolczyk",
+      "Johannes von Oswald",
+      "Nino Scherre",
+      "Kaitlin Maile",
+      "Guillaume Lajoie",
+      "Blake A. Richards",
+      "Rif A. Saurous",
+      "James Manyika",
+      "Blaise Ag\u00fcera y Arcas",
+      "Alexander Meulemans",
+      "Jo\u00e3o Sacramento"
+    ],
+    "published": "2025-12-23T18:51:50+00:00",
+    "summary": "Large-scale autoregressive models pretrained on next-token prediction and finetuned with reinforcement learning (RL) have achieved unprecedented success on many problem domains. During RL, these models explore by generating new outputs, one token at a time. However, sampling actions token-by-token can result in highly inefficient learning, particularly when rewards are sparse. Here, we show that it is possible to overcome this problem by acting and exploring within the internal representations of an autoregressive model. Specifically, to discover temporally-abstract actions, we introduce a higher-order, non-causal sequence model whose outputs control the residual stream activations of a base autoregressive model. On grid world and MuJoCo-based tasks with hierarchical structure, we find that the higher-order model learns to compress long activation sequence chunks onto internal controllers. Critically, each controller executes a sequence of behaviorally meaningful actions that unfold over long timescales and are accompanied with a learned termination condition, such that composing multiple controllers over time leads to efficient exploration on novel tasks. We show that direct internal controller reinforcement, a process we term \"internal RL\", enables learning from sparse rewards in cases where standard RL finetuning fails. Our results demonstrate the benefits of latent action generation and reinforcement in autoregressive models, suggesting internal RL as a promising avenue for realizing hierarchical RL within foundation models."
+  },
+  {
+    "title": "LightTact: A Visual-Tactile Fingertip Sensor for Deformation-Independent Contact Sensing",
+    "url": "http://arxiv.org/abs/2512.20591v1",
+    "arxiv_id": "2512.20591v1",
+    "authors": [
+      "Changyi Lin",
+      "Boda Huo",
+      "Mingyang Yu",
+      "Emily Ruppel",
+      "Bingqing Chen",
+      "Jonathan Francis",
+      "Ding Zhao"
+    ],
+    "published": "2025-12-23T18:38:25+00:00",
+    "summary": "Contact often occurs without macroscopic surface deformation, such as during interaction with liquids, semi-liquids, or ultra-soft materials. Most existing tactile sensors rely on deformation to infer contact, making such light-contact interactions difficult to perceive robustly. To address this, we present LightTact, a visual-tactile fingertip sensor that makes contact directly visible via a deformation-independent, optics-based principle. LightTact uses an ambient-blocking optical configuration that suppresses both external light and internal illumination at non-contact regions, while transmitting only the diffuse light generated at true contacts. As a result, LightTact produces high-contrast raw images in which non-contact pixels remain near-black (mean gray value < 3) and contact pixels preserve the natural appearance of the contacting surface. Built on this, LightTact achieves accurate pixel-level contact segmentation that is robust to material properties, contact force, surface appearance, and environmental lighting. We further integrate LightTact on a robotic arm and demonstrate manipulation behaviors driven by extremely light contact, including water spreading, facial-cream dipping, and thin-film interaction. Finally, we show that LightTact's spatially aligned visual-tactile images can be directly interpreted by existing vision-language models, enabling resistor value reasoning for robotic sorting."
+  },
+  {
+    "title": "Leveraging High-Fidelity Digital Models and Reinforcement Learning for Mission Engineering: A Case Study of Aerial Firefighting Under Perfect Information",
+    "url": "http://arxiv.org/abs/2512.20589v1",
+    "arxiv_id": "2512.20589v1",
+    "authors": [
+      "\u0130brahim O\u011fuz \u00c7etinkaya",
+      "Sajad Khodadadian",
+      "Taylan G. Top\u00e7u"
+    ],
+    "published": "2025-12-23T18:36:07+00:00",
+    "summary": "As systems engineering (SE) objectives evolve from design and operation of monolithic systems to complex System of Systems (SoS), the discipline of Mission Engineering (ME) has emerged which is increasingly being accepted as a new line of thinking for the SE community. Moreover, mission environments are uncertain, dynamic, and mission outcomes are a direct function of how the mission assets will interact with this environment. This proves static architectures brittle and calls for analytically rigorous approaches for ME. To that end, this paper proposes an intelligent mission coordination methodology that integrates digital mission models with Reinforcement Learning (RL), that specifically addresses the need for adaptive task allocation and reconfiguration. More specifically, we are leveraging a Digital Engineering (DE) based infrastructure that is composed of a high-fidelity digital mission model and agent-based simulation; and then we formulate the mission tactics management problem as a Markov Decision Process (MDP), and employ an RL agent trained via Proximal Policy Optimization. By leveraging the simulation as a sandbox, we map the system states to actions, refining the policy based on realized mission outcomes. The utility of the RL-based intelligent mission coordinator is demonstrated through an aerial firefighting case study. Our findings indicate that the RL-based intelligent mission coordinator not only surpasses baseline performance but also significantly reduces the variability in mission performance. Thus, this study serves as a proof of concept demonstrating that DE-enabled mission simulations combined with advanced analytical tools offer a mission-agnostic framework for improving ME practice; which can be extended to more complicated fleet design and selection problems in the future from a mission-first perspective."
+  },
+  {
     "title": "Scalably Enhancing the Clinical Validity of a Task Benchmark with Physician Oversight",
     "url": "http://arxiv.org/abs/2512.19691v1",
     "arxiv_id": "2512.19691v1",
