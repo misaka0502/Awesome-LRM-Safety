@@ -1,5 +1,80 @@
 [
   {
+    "title": "Quadrupped-Legged Robot Movement Plan Generation using Large Language Model",
+    "url": "http://arxiv.org/abs/2512.21293v1",
+    "arxiv_id": "2512.21293v1",
+    "authors": [
+      "Muhtadin",
+      "Vincentius Gusti Putu A. B. M.",
+      "Ahmad Zaini",
+      "Mauridhi Hery Purnomo",
+      "I Ketut Eddy Purnama",
+      "Chastine Fatichah"
+    ],
+    "published": "2025-12-24T17:22:00+00:00",
+    "summary": "Traditional control interfaces for quadruped robots often impose a high barrier to entry, requiring specialized technical knowledge for effective operation. To address this, this paper presents a novel control framework that integrates Large Language Models (LLMs) to enable intuitive, natural language-based navigation. We propose a distributed architecture where high-level instruction processing is offloaded to an external server to overcome the onboard computational constraints of the DeepRobotics Jueying Lite 3 platform. The system grounds LLM-generated plans into executable ROS navigation commands using real-time sensor fusion (LiDAR, IMU, and Odometry). Experimental validation was conducted in a structured indoor environment across four distinct scenarios, ranging from single-room tasks to complex cross-zone navigation. The results demonstrate the system's robustness, achieving an aggregate success rate of over 90\\% across all scenarios, validating the feasibility of offloaded LLM-based planning for autonomous quadruped deployment in real-world settings."
+  },
+  {
+    "title": "Surgical Scene Segmentation using a Spike-Driven Video Transformer with Real-Time Potential",
+    "url": "http://arxiv.org/abs/2512.21284v1",
+    "arxiv_id": "2512.21284v1",
+    "authors": [
+      "Shihao Zou",
+      "Jingjing Li",
+      "Wei Ji",
+      "Jincai Huang",
+      "Kai Wang",
+      "Guo Dan",
+      "Weixin Si",
+      "Yi Pan"
+    ],
+    "published": "2025-12-24T17:05:09+00:00",
+    "summary": "Modern surgical systems increasingly rely on intelligent scene understanding to provide timely situational awareness for enhanced intra-operative safety. Within this pipeline, surgical scene segmentation plays a central role in accurately perceiving operative events. Although recent deep learning models, particularly large-scale foundation models, achieve remarkable segmentation accuracy, their substantial computational demands and power consumption hinder real-time deployment in resource-constrained surgical environments. To address this limitation, we explore the emerging SNN as a promising paradigm for highly efficient surgical intelligence. However, their performance is still constrained by the scarcity of labeled surgical data and the inherently sparse nature of surgical video representations. To this end, we propose \\textit{SpikeSurgSeg}, the first spike-driven video Transformer framework tailored for surgical scene segmentation with real-time potential on non-GPU platforms. To address the limited availability of surgical annotations, we introduce a surgical-scene masked autoencoding pretraining strategy for SNNs that enables robust spatiotemporal representation learning via layer-wise tube masking. Building on this pretrained backbone, we further adopt a lightweight spike-driven segmentation head that produces temporally consistent predictions while preserving the low-latency characteristics of SNNs. Extensive experiments on EndoVis18 and our in-house SurgBleed dataset demonstrate that SpikeSurgSeg achieves mIoU comparable to SOTA ANN-based models while reducing inference latency by at least $8\\times$. Notably, it delivers over $20\\times$ acceleration relative to most foundation-model baselines, underscoring its potential for time-critical surgical scene segmentation."
+  },
+  {
+    "title": "LookPlanGraph: Embodied Instruction Following Method with VLM Graph Augmentation",
+    "url": "http://arxiv.org/abs/2512.21243v1",
+    "arxiv_id": "2512.21243v1",
+    "authors": [
+      "Anatoly O. Onishchenko",
+      "Alexey K. Kovalev",
+      "Aleksandr I. Panov"
+    ],
+    "published": "2025-12-24T15:36:21+00:00",
+    "summary": "Methods that use Large Language Models (LLM) as planners for embodied instruction following tasks have become widespread. To successfully complete tasks, the LLM must be grounded in the environment in which the robot operates. One solution is to use a scene graph that contains all the necessary information. Modern methods rely on prebuilt scene graphs and assume that all task-relevant information is available at the start of planning. However, these approaches do not account for changes in the environment that may occur between the graph construction and the task execution. We propose LookPlanGraph - a method that leverages a scene graph composed of static assets and object priors. During plan execution, LookPlanGraph continuously updates the graph with relevant objects, either by verifying existing priors or discovering new entities. This is achieved by processing the agents egocentric camera view using a Vision Language Model. We conducted experiments with changed object positions VirtualHome and OmniGibson simulated environments, demonstrating that LookPlanGraph outperforms methods based on predefined static scene graphs. To demonstrate the practical applicability of our approach, we also conducted experiments in a real-world setting. Additionally, we introduce the GraSIF (Graph Scenes for Instruction Following) dataset with automated validation framework, comprising 514 tasks drawn from SayPlan Office, BEHAVIOR-1K, and VirtualHome RobotHow. Project page available at https://lookplangraph.github.io ."
+  },
+  {
+    "title": "Casting a SPELL: Sentence Pairing Exploration for LLM Limitation-breaking",
+    "url": "http://arxiv.org/abs/2512.21236v1",
+    "arxiv_id": "2512.21236v1",
+    "authors": [
+      "Yifan Huang",
+      "Xiaojun Jia",
+      "Wenbo Guo",
+      "Yuqiang Sun",
+      "Yihao Huang",
+      "Chong Wang",
+      "Yang Liu"
+    ],
+    "published": "2025-12-24T15:25:31+00:00",
+    "summary": "Large language models (LLMs) have revolutionized software development through AI-assisted coding tools, enabling developers with limited programming expertise to create sophisticated applications. However, this accessibility extends to malicious actors who may exploit these powerful tools to generate harmful software. Existing jailbreaking research primarily focuses on general attack scenarios against LLMs, with limited exploration of malicious code generation as a jailbreak target. To address this gap, we propose SPELL, a comprehensive testing framework specifically designed to evaluate the weakness of security alignment in malicious code generation. Our framework employs a time-division selection strategy that systematically constructs jailbreaking prompts by intelligently combining sentences from a prior knowledge dataset, balancing exploration of novel attack patterns with exploitation of successful techniques. Extensive evaluation across three advanced code models (GPT-4.1, Claude-3.5, and Qwen2.5-Coder) demonstrates SPELL's effectiveness, achieving attack success rates of 83.75%, 19.38%, and 68.12% respectively across eight malicious code categories. The generated prompts successfully produce malicious code in real-world AI development tools such as Cursor, with outputs confirmed as malicious by state-of-the-art detection systems at rates exceeding 73%. These findings reveal significant security gaps in current LLM implementations and provide valuable insights for improving AI safety alignment in code generation applications."
+  },
+  {
+    "title": "RoboCade: Gamifying Robot Data Collection",
+    "url": "http://arxiv.org/abs/2512.21235v1",
+    "arxiv_id": "2512.21235v1",
+    "authors": [
+      "Suvir Mirchandani",
+      "Mia Tang",
+      "Jiafei Duan",
+      "Jubayer Ibn Hamid",
+      "Michael Cho",
+      "Dorsa Sadigh"
+    ],
+    "published": "2025-12-24T15:20:54+00:00",
+    "summary": "Imitation learning from human demonstrations has become a dominant approach for training autonomous robot policies. However, collecting demonstration datasets is costly: it often requires access to robots and needs sustained effort in a tedious, long process. These factors limit the scale of data available for training policies. We aim to address this scalability challenge by involving a broader audience in a gamified data collection experience that is both accessible and motivating. Specifically, we develop a gamified remote teleoperation platform, RoboCade, to engage general users in collecting data that is beneficial for downstream policy training. To do this, we embed gamification strategies into the design of the system interface and data collection tasks. In the system interface, we include components such as visual feedback, sound effects, goal visualizations, progress bars, leaderboards, and badges. We additionally propose principles for constructing gamified tasks that have overlapping structure with useful downstream target tasks. We instantiate RoboCade on three manipulation tasks -- including spatial arrangement, scanning, and insertion. To illustrate the viability of gamified robot data collection, we collect a demonstration dataset through our platform, and show that co-training robot policies with this data can improve success rate on non-gamified target tasks (+16-56%). Further, we conduct a user study to validate that novice users find the gamified platform significantly more enjoyable than a standard non-gamified platform (+24%). These results highlight the promise of gamified data collection as a scalable, accessible, and engaging method for collecting demonstration data."
+  },
+  {
     "title": "LongVideoAgent: Multi-Agent Reasoning with Long Videos",
     "url": "http://arxiv.org/abs/2512.20618v1",
     "arxiv_id": "2512.20618v1",
