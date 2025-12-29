@@ -1,5 +1,79 @@
 [
   {
+    "title": "Hybrid Deep Reinforcement Learning for Joint Resource Allocation in Multi-Active RIS-Aided Uplink Communications",
+    "url": "http://arxiv.org/abs/2512.22107v1",
+    "arxiv_id": "2512.22107v1",
+    "authors": [
+      "Mohamed Shalma",
+      "Engy Aly Maher",
+      "Ahmed El-Mahdy"
+    ],
+    "published": "2025-12-26T18:27:55+00:00",
+    "summary": "Active Reconfigurable Intelligent Surfaces (RIS) are a promising technology for 6G wireless networks. This paper investigates a novel hybrid deep reinforcement learning (DRL) framework for resource allocation in a multi-user uplink system assisted by multiple active RISs. The objective is to maximize the minimum user rate by jointly optimizing user transmit powers, active RIS configurations, and base station (BS) beamforming. We derive a closed-form solution for optimal beamforming and employ DRL algorithms: Soft actor-critic (SAC), deep deterministic policy gradient (DDPG), and twin delayed DDPG (TD3) to solve the high-dimensional, non-convex power and RIS optimization problem. Simulation results demonstrate that SAC achieves superior performance with high learning rate leading to faster convergence and lower computational cost compared to DDPG and TD3. Furthermore, the closed-form of optimally beamforming enhances the minimum rate effectively."
+  },
+  {
+    "title": "Patch-Discontinuity Mining for Generalized Deepfake Detection",
+    "url": "http://arxiv.org/abs/2512.22027v1",
+    "arxiv_id": "2512.22027v1",
+    "authors": [
+      "Huanhuan Yuan",
+      "Yang Ping",
+      "Zhengqin Xu",
+      "Junyi Cao",
+      "Shuai Jia",
+      "Chao Ma"
+    ],
+    "published": "2025-12-26T13:18:14+00:00",
+    "summary": "The rapid advancement of generative artificial intelligence has enabled the creation of highly realistic fake facial images, posing serious threats to personal privacy and the integrity of online information. Existing deepfake detection methods often rely on handcrafted forensic cues and complex architectures, achieving strong performance in intra-domain settings but suffering significant degradation when confronted with unseen forgery patterns. In this paper, we propose GenDF, a simple yet effective framework that transfers a powerful large-scale vision model to the deepfake detection task with a compact and neat network design. GenDF incorporates deepfake-specific representation learning to capture discriminative patterns between real and fake facial images, feature space redistribution to mitigate distribution mismatch, and a classification-invariant feature augmentation strategy to enhance generalization without introducing additional trainable parameters. Extensive experiments demonstrate that GenDF achieves state-of-the-art generalization performance in cross-domain and cross-manipulation settings while requiring only 0.28M trainable parameters, validating the effectiveness and efficiency of the proposed framework."
+  },
+  {
+    "title": "Meta-Learning-Based Handover Management in NextG O-RAN",
+    "url": "http://arxiv.org/abs/2512.22022v1",
+    "arxiv_id": "2512.22022v1",
+    "authors": [
+      "Michail Kalntis",
+      "George Iosifidis",
+      "Jos\u00e9 Su\u00e1rez-Varela",
+      "Andra Lutu",
+      "Fernando A. Kuipers"
+    ],
+    "published": "2025-12-26T13:01:46+00:00",
+    "summary": "While traditional handovers (THOs) have served as a backbone for mobile connectivity, they increasingly suffer from failures and delays, especially in dense deployments and high-frequency bands. To address these limitations, 3GPP introduced Conditional Handovers (CHOs) that enable proactive cell reservations and user-driven execution. However, both handover (HO) types present intricate trade-offs in signaling, resource usage, and reliability. This paper presents unique, countrywide mobility management datasets from a top-tier mobile network operator (MNO) that offer fresh insights into these issues and call for adaptive and robust HO control in next-generation networks. Motivated by these findings, we propose CONTRA, a framework that, for the first time, jointly optimizes THOs and CHOs within the O-RAN architecture. We study two variants of CONTRA: one where users are a priori assigned to one of the HO types, reflecting distinct service or user-specific requirements, as well as a more dynamic formulation where the controller decides on-the-fly the HO type, based on system conditions and needs. To this end, it relies on a practical meta-learning algorithm that adapts to runtime observations and guarantees performance comparable to an oracle with perfect future information (universal no-regret). CONTRA is specifically designed for near-real-time deployment as an O-RAN xApp and aligns with the 6G goals of flexible and intelligent control. Extensive evaluations leveraging crowdsourced datasets show that CONTRA improves user throughput and reduces both THO and CHO switching costs, outperforming 3GPP-compliant and Reinforcement Learning (RL) baselines in dynamic and real-world scenarios."
+  },
+  {
+    "title": "Bab_Sak Robotic Intubation System (BRIS): A Learning-Enabled Control Framework for Safe Fiberoptic Endotracheal Intubation",
+    "url": "http://arxiv.org/abs/2512.21983v1",
+    "arxiv_id": "2512.21983v1",
+    "authors": [
+      "Saksham Gupta",
+      "Sarthak Mishra",
+      "Arshad Ayub",
+      "Kamran Farooque",
+      "Spandan Roy",
+      "Babita Gupta"
+    ],
+    "published": "2025-12-26T11:05:45+00:00",
+    "summary": "Endotracheal intubation is a critical yet technically demanding procedure, with failure or improper tube placement leading to severe complications. Existing robotic and teleoperated intubation systems primarily focus on airway navigation and do not provide integrated control of endotracheal tube advancement or objective verification of tube depth relative to the carina. This paper presents the Robotic Intubation System (BRIS), a compact, human-in-the-loop platform designed to assist fiberoptic-guided intubation while enabling real-time, objective depth awareness. BRIS integrates a four-way steerable fiberoptic bronchoscope, an independent endotracheal tube advancement mechanism, and a camera-augmented mouthpiece compatible with standard clinical workflows. A learning-enabled closed-loop control framework leverages real-time shape sensing to map joystick inputs to distal bronchoscope tip motion in Cartesian space, providing stable and intuitive teleoperation under tendon nonlinearities and airway contact. Monocular endoscopic depth estimation is used to classify airway regions and provide interpretable, anatomy-aware guidance for safe tube positioning relative to the carina. The system is validated on high-fidelity airway mannequins under standard and difficult airway configurations, demonstrating reliable navigation and controlled tube placement. These results highlight BRIS as a step toward safer, more consistent, and clinically compatible robotic airway management."
+  },
+  {
+    "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+    "url": "http://arxiv.org/abs/2512.21970v1",
+    "arxiv_id": "2512.21970v1",
+    "authors": [
+      "Shengliang Deng",
+      "Mi Yan",
+      "Yixin Zheng",
+      "Jiayi Su",
+      "Wenhao Zhang",
+      "Xiaoguang Zhao",
+      "Heming Cui",
+      "Zhizheng Zhang",
+      "He Wang"
+    ],
+    "published": "2025-12-26T10:34:20+00:00",
+    "summary": "Stereo cameras closely mimic human binocular vision, providing rich spatial cues critical for precise robotic manipulation. Despite their advantage, the adoption of stereo vision in vision-language-action models (VLAs) remains underexplored. In this work, we present StereoVLA, a VLA model that leverages rich geometric cues from stereo vision. We propose a novel Geometric-Semantic Feature Extraction module that utilizes vision foundation models to extract and fuse two key features: 1) geometric features from subtle stereo-view differences for spatial perception; 2) semantic-rich features from the monocular view for instruction following. Additionally, we propose an auxiliary Interaction-Region Depth Estimation task to further enhance spatial perception and accelerate model convergence. Extensive experiments show that our approach outperforms baselines by a large margin in diverse tasks under the stereo setting and demonstrates strong robustness to camera pose variations."
+  },
+  {
     "title": "Quadrupped-Legged Robot Movement Plan Generation using Large Language Model",
     "url": "http://arxiv.org/abs/2512.21293v1",
     "arxiv_id": "2512.21293v1",
