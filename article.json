@@ -1,5 +1,79 @@
 [
   {
+    "title": "SpaceTimePilot: Generative Rendering of Dynamic Scenes Across Space and Time",
+    "url": "http://arxiv.org/abs/2512.25075v1",
+    "arxiv_id": "2512.25075v1",
+    "authors": [
+      "Zhening Huang",
+      "Hyeonho Jeong",
+      "Xuelin Chen",
+      "Yulia Gryaditskaya",
+      "Tuanfeng Y. Wang",
+      "Joan Lasenby",
+      "Chun-Hao Huang"
+    ],
+    "published": "2025-12-31T18:59:57+00:00",
+    "summary": "We present SpaceTimePilot, a video diffusion model that disentangles space and time for controllable generative rendering. Given a monocular video, SpaceTimePilot can independently alter the camera viewpoint and the motion sequence within the generative process, re-rendering the scene for continuous and arbitrary exploration across space and time. To achieve this, we introduce an effective animation time-embedding mechanism in the diffusion process, allowing explicit control of the output video's motion sequence with respect to that of the source video. As no datasets provide paired videos of the same dynamic scene with continuous temporal variations, we propose a simple yet effective temporal-warping training scheme that repurposes existing multi-view datasets to mimic temporal differences. This strategy effectively supervises the model to learn temporal control and achieve robust space-time disentanglement. To further enhance the precision of dual control, we introduce two additional components: an improved camera-conditioning mechanism that allows altering the camera from the first frame, and CamxTime, the first synthetic space-and-time full-coverage rendering dataset that provides fully free space-time video trajectories within a scene. Joint training on the temporal-warping scheme and the CamxTime dataset yields more precise temporal control. We evaluate SpaceTimePilot on both real-world and synthetic data, demonstrating clear space-time disentanglement and strong results compared to prior work. Project page: https://zheninghuang.github.io/Space-Time-Pilot/ Code: https://github.com/ZheningHuang/spacetimepilot"
+  },
+  {
+    "title": "Coordinated Humanoid Manipulation with Choice Policies",
+    "url": "http://arxiv.org/abs/2512.25072v1",
+    "arxiv_id": "2512.25072v1",
+    "authors": [
+      "Haozhi Qi",
+      "Yen-Jen Wang",
+      "Toru Lin",
+      "Brent Yi",
+      "Yi Ma",
+      "Koushil Sreenath",
+      "Jitendra Malik"
+    ],
+    "published": "2025-12-31T18:59:53+00:00",
+    "summary": "Humanoid robots hold great promise for operating in human-centric environments, yet achieving robust whole-body coordination across the head, hands, and legs remains a major challenge. We present a system that combines a modular teleoperation interface with a scalable learning framework to address this problem. Our teleoperation design decomposes humanoid control into intuitive submodules, which include hand-eye coordination, grasp primitives, arm end-effector tracking, and locomotion. This modularity allows us to collect high-quality demonstrations efficiently. Building on this, we introduce Choice Policy, an imitation learning approach that generates multiple candidate actions and learns to score them. This architecture enables both fast inference and effective modeling of multimodal behaviors. We validate our approach on two real-world tasks: dishwasher loading and whole-body loco-manipulation for whiteboard wiping. Experiments show that Choice Policy significantly outperforms diffusion policies and standard behavior cloning. Furthermore, our results indicate that hand-eye coordination is critical for success in long-horizon tasks. Our work demonstrates a practical path toward scalable data collection and learning for coordinated humanoid manipulation in unstructured environments."
+  },
+  {
+    "title": "Scaling Open-Ended Reasoning to Predict the Future",
+    "url": "http://arxiv.org/abs/2512.25070v1",
+    "arxiv_id": "2512.25070v1",
+    "authors": [
+      "Nikhil Chandak",
+      "Shashwat Goel",
+      "Ameya Prabhu",
+      "Moritz Hardt",
+      "Jonas Geiping"
+    ],
+    "published": "2025-12-31T18:59:51+00:00",
+    "summary": "High-stakes decision making involves reasoning under uncertainty about the future. In this work, we train language models to make predictions on open-ended forecasting questions. To scale up training data, we synthesize novel forecasting questions from global events reported in daily news, using a fully automated, careful curation recipe. We train the Qwen3 thinking models on our dataset, OpenForesight. To prevent leakage of future information during training and evaluation, we use an offline news corpus, both for data generation and retrieval in our forecasting system. Guided by a small validation set, we show the benefits of retrieval, and an improved reward function for reinforcement learning (RL). Once we obtain our final forecasting system, we perform held-out testing between May to August 2025. Our specialized model, OpenForecaster 8B, matches much larger proprietary models, with our training improving the accuracy, calibration, and consistency of predictions. We find calibration improvements from forecasting training generalize across popular benchmarks. We open-source all our models, code, and data to make research on language model forecasting broadly accessible."
+  },
+  {
+    "title": "Many Minds from One Model: Bayesian Transformers for Population Intelligence",
+    "url": "http://arxiv.org/abs/2512.25063v1",
+    "arxiv_id": "2512.25063v1",
+    "authors": [
+      "Diji Yang",
+      "Yi Zhang"
+    ],
+    "published": "2025-12-31T18:56:02+00:00",
+    "summary": "Despite their scale and success, modern transformers are almost universally trained as single-minded systems: optimization produces one deterministic set of parameters, representing a single functional hypothesis about the data. Motivated by the idea that intelligence emerge from many minds, we propose Population Bayesian Transformers (B-Trans), which transform a standard Large Language Model into a Bayesian Transformer model to supports sampling diverse yet coherent model instances from a single set of pre-trained weights.   B-Trans introduces a Bayesian-motivated posterior proxy by treating the bias-like offsets in normalization layers as stochastic variables with a Gaussian variational approximation, inducing a distribution over model behavior without the cost of training full Bayesian neural networks. Sampling from this proxy yields a set of model instances with diverse behaviors while maintaining general competence. To preserve coherence within each generation, we freeze the sampled noise at the sequence level, enforcing temporal consistency across tokens. B-Trans allows for population-level decision-making, where aggregating predictions across sampled individuals significantly enhances exploration. Experiments across zero-shot generation, Reinforcement Learning with Verifiable Rewards (RLVR), and RL without explicit labels demonstrate that B-Trans effectively leverage the wisdom of crowds, yielding superior semantic diversity while achieving better task performance compared to deterministic baselines."
+  },
+  {
+    "title": "Extreme nonlinear optics in optical fibers",
+    "url": "http://arxiv.org/abs/2512.25046v1",
+    "arxiv_id": "2512.25046v1",
+    "authors": [
+      "Mario Ferraro",
+      "Bertrand Kibler",
+      "Pierre B\u00e9jot",
+      "Fr\u00e9d\u00e9ric G\u00e9rome",
+      "Benoit Debord",
+      "Fetah Benabid",
+      "Fabio Mangini",
+      "Stefan Wabnitz"
+    ],
+    "published": "2025-12-31T18:43:33+00:00",
+    "summary": "This paper reviews the field of extreme nonlinear optics in optical fibers, highlighting key phenomena and advancements. It discusses multiple ionization effects caused by femtosecond laser pulses that generate plasma and induce permanent material modifications, as well as plasma luminescence and its dependence on material imperfections. The formation and dynamics of plasma filaments, including helical structures, are explored, along with the rainbow spiral emission pattern useful in communications and particle manipulation. The review covers the generation of spatial-temporal waves, supercontinuum broadening, and advanced modeling techniques, such as multimode unidirectional pulse propagation equations for describing optical pulse evolution. Experimental demonstrations involving discretized conical waves and supercontinuum generation optimization are detailed. The paper emphasizes the unique capabilities of photonic crystal fibers, especially hollow-core variants, in achieving broad supercontinua and Raman frequency combs, ultrashort pulse compression, high-harmonic generation, plasma formation, and nonclassical light production. Our outlook highlights ongoing research into spatiotemporal helicon waves, ultrashort pulse propagation, vacuum ultraviolet and mid-infrared supercontinuum generation, and innovative fiber technologies. Future directions focus on enhancing fiber performance, understanding multimodal wave dynamics, and expanding applications in telecommunications, sensing, and quantum science."
+  },
+  {
     "title": "Training AI Co-Scientists Using Rubric Rewards",
     "url": "http://arxiv.org/abs/2512.23707v1",
     "arxiv_id": "2512.23707v1",
