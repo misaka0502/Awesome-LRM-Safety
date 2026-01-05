@@ -1,5 +1,61 @@
 [
   {
+    "title": "Geometry of Reason: Spectral Signatures of Valid Mathematical Reasoning",
+    "url": "http://arxiv.org/abs/2601.00791v1",
+    "arxiv_id": "2601.00791v1",
+    "authors": [
+      "Valentin No\u00ebl"
+    ],
+    "published": "2026-01-02T18:49:37+00:00",
+    "summary": "We present a training-free method for detecting valid mathematical reasoning in large language models through spectral analysis of attention patterns. By treating attention matrices as adjacency matrices of dynamic graphs over tokens, we extract four interpretable spectral diagnostics, the Fiedler value (algebraic connectivity), high-frequency energy ratio (HFER), graph signal smoothness, and spectral entropy, that exhibit statistically significant differences between valid and invalid mathematical proofs. Experiments across seven transformer models from four independent architectural families (Meta Llama, Alibaba Qwen, Microsoft Phi, and Mistral AI) demonstrate that this spectral signature produces effect sizes up to Cohen's $d = 3.30$ ($p < 10^{-116}$), enabling 85.0--95.6\\% classification accuracy under rigorous evaluation, with calibrated thresholds reaching 93--95\\% on the full dataset. The method requires no training data, fine-tuning, or learned classifiers: a single threshold on a spectral metric suffices for high accuracy. Through systematic label correction, we discover that the spectral method detects logical coherence rather than compiler acceptance, identifying mathematically valid proofs that formal verifiers reject due to technical failures. We further identify an architectural dependency: Mistral-7B's Sliding Window Attention shifts the discriminative signal from HFER to late-layer Smoothness ($d = 2.09$, $p_{\\text{MW}} = 1.16 \\times 10^{-48}$), revealing that attention mechanism design affects which spectral features capture reasoning validity. These findings establish spectral graph analysis as a principled framework for reasoning verification with immediate applications to hallucination detection and AI safety monitoring."
+  },
+  {
+    "title": "Achieving Extraordinary Acoustic Transmission in a Single Slit by Boundary Impedance Engineering",
+    "url": "http://arxiv.org/abs/2601.00778v1",
+    "arxiv_id": "2601.00778v1",
+    "authors": [
+      "J. Sumaya-Martinez",
+      "J. Mulia-Rodriguez"
+    ],
+    "published": "2026-01-02T18:19:04+00:00",
+    "summary": "Extraordinary acoustic transmission is commonly associated with periodic or multi-aperture structures. In this work, we show that a single subwavelength slit can support strongly enhanced transmission when its boundary response is described by an effective impedance. Using a reduced analytical model together with numerical calculations, we demonstrate that appropriate impedance tuning leads to efficient coupling between the incident field and the slit mode, resulting in transmission levels approaching unity. The observed enhancement is governed by impedance matching rather than geometric periodicity, highlighting a minimal mechanism for extraordinary transmission. This study establishes boundary impedance control as a versatile route for manipulating acoustic wave transport through deeply subwavelength apertures."
+  },
+  {
+    "title": "Calling for Backup: How Children Navigate Successive Robot Communication Failures",
+    "url": "http://arxiv.org/abs/2601.00754v1",
+    "arxiv_id": "2601.00754v1",
+    "authors": [
+      "Maria Teresa Parreira",
+      "Isabel Neto",
+      "Filipa Rocha",
+      "Wendy Ju"
+    ],
+    "published": "2026-01-02T17:18:10+00:00",
+    "summary": "How do children respond to repeated robot errors? While prior research has examined adult reactions to successive robot errors, children's responses remain largely unexplored. In this study, we explore children's reactions to robot social errors and performance errors. For the latter, this study reproduces the successive robot failure paradigm of Liu et al. with child participants (N=59, ages 8-10) to examine how young users respond to repeated robot conversational errors. Participants interacted with a robot that failed to understand their prompts three times in succession, with their behavioral responses video-recorded and analyzed. We found both similarities and differences compared to adult responses from the original study. Like adults, children adjusted their prompts, modified their verbal tone, and exhibited increasingly emotional non-verbal responses throughout successive errors. However, children demonstrated more disengagement behaviors, including temporarily ignoring the robot or actively seeking an adult. Errors did not affect participants' perception of the robot, suggesting more flexible conversational expectations in children. These findings inform the design of more effective and developmentally appropriate human-robot interaction systems for young users."
+  },
+  {
+    "title": "Materials Informatics: Emergence To Autonomous Discovery In The Age Of AI",
+    "url": "http://arxiv.org/abs/2601.00742v1",
+    "arxiv_id": "2601.00742v1",
+    "authors": [
+      "Turab Lookman",
+      "YuJie Liu",
+      "Zhibin Gao"
+    ],
+    "published": "2026-01-02T16:53:19+00:00",
+    "summary": "This perspective explores the evolution of materials informatics, from its foundational roots in physics and information theory to its maturation through artificial intelligence (AI). We trace the field's trajectory from early milestones to the transformative impact of the Materials Genome Initiative and the recent advent of large language models (LLMs). Rather than a mere toolkit, we present materials informatics as an evolving ecosystem, reviewing key methodologies such as Bayesian Optimization, Reinforcement Learning, and Transformers that drive inverse design and autonomous self-driving laboratories. We specifically address the practical challenges of LLM integration, comparing specialist versus generalist models and discussing solutions for uncertainty quantification. Looking forward, we assess the transition of AI from a predictive tool to a collaborative research partner. By leveraging active learning and retrieval-augmented generation (RAG), the field is moving toward a new era of autonomous materials science, increasingly characterized by \"human-out-of-the-loop\" discovery processes."
+  },
+  {
+    "title": "Stochastic Actor-Critic: Mitigating Overestimation via Temporal Aleatoric Uncertainty",
+    "url": "http://arxiv.org/abs/2601.00737v1",
+    "arxiv_id": "2601.00737v1",
+    "authors": [
+      "U\u011furcan \u00d6zalp"
+    ],
+    "published": "2026-01-02T16:33:17+00:00",
+    "summary": "Off-policy actor-critic methods in reinforcement learning train a critic with temporal-difference updates and use it as a learning signal for the policy (actor). This design typically achieves higher sample efficiency than purely on-policy methods. However, critic networks tend to overestimate value estimates systematically. This is often addressed by introducing a pessimistic bias based on uncertainty estimates. Current methods employ ensembling to quantify the critic's epistemic uncertainty-uncertainty due to limited data and model ambiguity-to scale pessimistic updates. In this work, we propose a new algorithm called Stochastic Actor-Critic (STAC) that incorporates temporal (one-step) aleatoric uncertainty-uncertainty arising from stochastic transitions, rewards, and policy-induced variability in Bellman targets-to scale pessimistic bias in temporal-difference updates, rather than relying on epistemic uncertainty. STAC uses a single distributional critic network to model the temporal return uncertainty, and applies dropout to both the critic and actor networks for regularization. Our results show that pessimism based on a distributional critic alone suffices to mitigate overestimation, and naturally leads to risk-averse behavior in stochastic environments. Introducing dropout further improves training stability and performance by means of regularization. With this design, STAC achieves improved computational efficiency using a single distributional critic network."
+  },
+  {
     "title": "SpaceTimePilot: Generative Rendering of Dynamic Scenes Across Space and Time",
     "url": "http://arxiv.org/abs/2512.25075v1",
     "arxiv_id": "2512.25075v1",
