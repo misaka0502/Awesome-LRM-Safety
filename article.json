@@ -1,5 +1,74 @@
 [
   {
+    "title": "ExposeAnyone: Personalized Audio-to-Expression Diffusion Models Are Robust Zero-Shot Face Forgery Detectors",
+    "url": "http://arxiv.org/abs/2601.02359v1",
+    "arxiv_id": "2601.02359v1",
+    "authors": [
+      "Kaede Shiohara",
+      "Toshihiko Yamasaki",
+      "Vladislav Golyanik"
+    ],
+    "published": "2026-01-05T18:59:54+00:00",
+    "summary": "Detecting unknown deepfake manipulations remains one of the most challenging problems in face forgery detection. Current state-of-the-art approaches fail to generalize to unseen manipulations, as they primarily rely on supervised training with existing deepfakes or pseudo-fakes, which leads to overfitting to specific forgery patterns. In contrast, self-supervised methods offer greater potential for generalization, but existing work struggles to learn discriminative representations only from self-supervision. In this paper, we propose ExposeAnyone, a fully self-supervised approach based on a diffusion model that generates expression sequences from audio. The key idea is, once the model is personalized to specific subjects using reference sets, it can compute the identity distances between suspected videos and personalized subjects via diffusion reconstruction errors, enabling person-of-interest face forgery detection. Extensive experiments demonstrate that 1) our method outperforms the previous state-of-the-art method by 4.22 percentage points in the average AUC on DF-TIMIT, DFDCP, KoDF, and IDForge datasets, 2) our model is also capable of detecting Sora2-generated videos, where the previous approaches perform poorly, and 3) our method is highly robust to corruptions such as blur and compression, highlighting the applicability in real-world face forgery detection."
+  },
+  {
+    "title": "Talk2Move: Reinforcement Learning for Text-Instructed Object-Level Geometric Transformation in Scenes",
+    "url": "http://arxiv.org/abs/2601.02356v1",
+    "arxiv_id": "2601.02356v1",
+    "authors": [
+      "Jing Tan",
+      "Zhaoyang Zhang",
+      "Yantao Shen",
+      "Jiarui Cai",
+      "Shuo Yang",
+      "Jiajun Wu",
+      "Wei Xia",
+      "Zhuowen Tu",
+      "Stefano Soatto"
+    ],
+    "published": "2026-01-05T18:55:32+00:00",
+    "summary": "We introduce Talk2Move, a reinforcement learning (RL) based diffusion framework for text-instructed spatial transformation of objects within scenes. Spatially manipulating objects in a scene through natural language poses a challenge for multimodal generation systems. While existing text-based manipulation methods can adjust appearance or style, they struggle to perform object-level geometric transformations-such as translating, rotating, or resizing objects-due to scarce paired supervision and pixel-level optimization limits. Talk2Move employs Group Relative Policy Optimization (GRPO) to explore geometric actions through diverse rollouts generated from input images and lightweight textual variations, removing the need for costly paired data. A spatial reward guided model aligns geometric transformations with linguistic description, while off-policy step evaluation and active step sampling improve learning efficiency by focusing on informative transformation stages. Furthermore, we design object-centric spatial rewards that evaluate displacement, rotation, and scaling behaviors directly, enabling interpretable and coherent transformations. Experiments on curated benchmarks demonstrate that Talk2Move achieves precise, consistent, and semantically faithful object transformations, outperforming existing text-guided editing approaches in both spatial accuracy and scene coherence."
+  },
+  {
+    "title": "Multi-Fidelity Predictive Model for Shock Response of Energetic Materials Using Conditional U-Net",
+    "url": "http://arxiv.org/abs/2601.02327v1",
+    "arxiv_id": "2601.02327v1",
+    "authors": [
+      "Brian H. Lee",
+      "Chunyu Li",
+      "Aidan Pantoya",
+      "James P. Larentzos",
+      "John K. Brennan",
+      "Alejandro Strachan"
+    ],
+    "published": "2026-01-05T18:17:49+00:00",
+    "summary": "Mapping microstructure to properties is central to materials science. Perhaps most famously, the Hall-Petch relationship relates average grain size to strength. More challenging has been deriving relationships for properties that depend on subtle microstructural features and not average properties. One such example is the initiation of energetic materials under dynamical loading, dominated by energy localization on microstructural features such as pores, cracks, and interfaces. We propose a conditional convolutional neural network to predict the shock-induced temperature field as a function of shock strength, for a wide range of microstructures, and obtained via two different simulation methods. The proposed model, denoted MISTnet2, significantly extends prior work that was limited to a single shock strength, model, and type of microstructure. MISTnet2 can contribute to bridging atomistics with coarse-grain simulations and enable first principles predictions of detonation initiation and safety of this class of materials."
+  },
+  {
+    "title": "Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents",
+    "url": "http://arxiv.org/abs/2601.02314v1",
+    "arxiv_id": "2601.02314v1",
+    "authors": [
+      "Sourena Khanzadeh"
+    ],
+    "published": "2026-01-05T18:05:29+00:00",
+    "summary": "As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their reasoning processes has become a critical safety concern. While \\textit{Chain-of-Thought} (CoT) prompting allows agents to generate human-readable reasoning traces, it remains unclear whether these traces are \\textbf{faithful} generative drivers of the model's output or merely \\textbf{post-hoc rationalizations}. We introduce \\textbf{Project Ariadne}, a novel XAI framework that utilizes Structural Causal Models (SCMs) and counterfactual logic to audit the causal integrity of agentic reasoning. Unlike existing interpretability methods that rely on surface-level textual similarity, Project Ariadne performs \\textbf{hard interventions} ($do$-calculus) on intermediate reasoning nodes -- systematically inverting logic, negating premises, and reversing factual claims -- to measure the \\textbf{Causal Sensitivity} ($\u03c6$) of the terminal answer. Our empirical evaluation of state-of-the-art models reveals a persistent \\textit{Faithfulness Gap}. We define and detect a widespread failure mode termed \\textbf{Causal Decoupling}, where agents exhibit a violation density ($\u03c1$) of up to $0.77$ in factual and scientific domains. In these instances, agents arrive at identical conclusions despite contradictory internal logic, proving that their reasoning traces function as \"Reasoning Theater\" while decision-making is governed by latent parametric priors. Our findings suggest that current agentic architectures are inherently prone to unfaithful explanation, and we propose the Ariadne Score as a new benchmark for aligning stated logic with model action."
+  },
+  {
+    "title": "The Polarization and Magnetic Field of the Radio Arc as Observed by ALMA at 100 GHz",
+    "url": "http://arxiv.org/abs/2601.02297v1",
+    "arxiv_id": "2601.02297v1",
+    "authors": [
+      "Nora Salem",
+      "Dylan M. Par\u00e9",
+      "Paulo Cortes",
+      "Mark R. Morris",
+      "Valentin J. M. Le Gouellec"
+    ],
+    "published": "2026-01-05T17:32:18+00:00",
+    "summary": "The unique Galactic Center non-thermal filaments (NTFs) have been a focus of investigations for over 40 years. The most prominent manifestation of the NTFs is a bundle of parallel filaments known as the Radio Arc. Radio polarimetric observations made with the Very Large Array (VLA) at 10 GHz have revealed an alternating magnetic field pattern in the Radio Arc that could either be a result of multiple field systems being encountered along the line of sight or an intrinsic feature of the Radio Arc. These VLA observations were not able to distinguish between these possibilities due to the large rotation measures encountered towards the source. We present ALMA 100 GHz observations of the Radio Arc that are not impacted by significant Faraday effects. The observations reported here represent both the first time that ALMA has been used to study the NTFs and the first time 100 GHz polarimetric observations have been conducted on the Radio Arc. We find a uniformly rotated magnetic field with respect to the NTF filament orientation, with the angle of rotation being constant along the length of each filament. However, we find a systematically different magnetic field orientation in different Radio Arc filaments. We use this field pattern to update our understanding of the line-of-sight structures local to the Radio Arc. We find that the magnetic field inferred from our ALMA observations is likely a result either of confusion from multiple magnetic field systems or because the polarization is centrally concentrated within the NTF filaments."
+  },
+  {
     "title": "Geometry of Reason: Spectral Signatures of Valid Mathematical Reasoning",
     "url": "http://arxiv.org/abs/2601.00791v1",
     "arxiv_id": "2601.00791v1",
