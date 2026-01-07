@@ -1,5 +1,76 @@
 [
   {
+    "title": "Muses: Designing, Composing, Generating Nonexistent Fantasy 3D Creatures without Training",
+    "url": "http://arxiv.org/abs/2601.03256v1",
+    "arxiv_id": "2601.03256v1",
+    "authors": [
+      "Hexiao Lu",
+      "Xiaokun Sun",
+      "Zeyu Cai",
+      "Hao Guo",
+      "Ying Tai",
+      "Jian Yang",
+      "Zhenyu Zhang"
+    ],
+    "published": "2026-01-06T18:59:57+00:00",
+    "summary": "We present Muses, the first training-free method for fantastic 3D creature generation in a feed-forward paradigm. Previous methods, which rely on part-aware optimization, manual assembly, or 2D image generation, often produce unrealistic or incoherent 3D assets due to the challenges of intricate part-level manipulation and limited out-of-domain generation. In contrast, Muses leverages the 3D skeleton, a fundamental representation of biological forms, to explicitly and rationally compose diverse elements. This skeletal foundation formalizes 3D content creation as a structure-aware pipeline of design, composition, and generation. Muses begins by constructing a creatively composed 3D skeleton with coherent layout and scale through graph-constrained reasoning. This skeleton then guides a voxel-based assembly process within a structured latent space, integrating regions from different objects. Finally, image-guided appearance modeling under skeletal conditions is applied to generate a style-consistent and harmonious texture for the assembled shape. Extensive experiments establish Muses' state-of-the-art performance in terms of visual fidelity and alignment with textual descriptions, and potential on flexible 3D object editing. Project page: https://luhexiao.github.io/Muses.github.io/."
+  },
+  {
+    "title": "STReasoner: Empowering LLMs for Spatio-Temporal Reasoning in Time Series via Spatial-Aware Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2601.03248v1",
+    "arxiv_id": "2601.03248v1",
+    "authors": [
+      "Juntong Ni",
+      "Shiyu Wang",
+      "Ming Jin",
+      "Qi He",
+      "Wei Jin"
+    ],
+    "published": "2026-01-06T18:46:12+00:00",
+    "summary": "Spatio-temporal reasoning in time series involves the explicit synthesis of temporal dynamics, spatial dependencies, and textual context. This capability is vital for high-stakes decision-making in systems such as traffic networks, power grids, and disease propagation. However, the field remains underdeveloped because most existing works prioritize predictive accuracy over reasoning. To address the gap, we introduce ST-Bench, a benchmark consisting of four core tasks, including etiological reasoning, entity identification, correlation reasoning, and in-context forecasting, developed via a network SDE-based multi-agent data synthesis pipeline. We then propose STReasoner, which empowers LLM to integrate time series, graph structure, and text for explicit reasoning. To promote spatially grounded logic, we introduce S-GRPO, a reinforcement learning algorithm that rewards performance gains specifically attributable to spatial information. Experiments show that STReasoner achieves average accuracy gains between 17% and 135% at only 0.004X the cost of proprietary models and generalizes robustly to real-world data."
+  },
+  {
+    "title": "Nonlinear Spectral Modeling and Control of Soft-Robotic Muscles from Data",
+    "url": "http://arxiv.org/abs/2601.03247v1",
+    "arxiv_id": "2601.03247v1",
+    "authors": [
+      "Leonardo Bettini",
+      "Amirhossein Kazemipour",
+      "Robert K. Katzschmann",
+      "George Haller"
+    ],
+    "published": "2026-01-06T18:43:49+00:00",
+    "summary": "Artificial muscles are essential for compliant musculoskeletal robotics but complicate control due to nonlinear multiphysics dynamics. Hydraulically amplified electrostatic (HASEL) actuators, a class of soft artificial muscles, offer high performance but exhibit memory effects and hysteresis. Here we present a data-driven reduction and control strategy grounded in spectral submanifold (SSM) theory. In the adiabatic regime, where inputs vary slowly relative to intrinsic transients, trajectories rapidly converge to a low-dimensional slow manifold. We learn an explicit input-to-output map on this manifold from forced-response trajectories alone, avoiding decay experiments that can trigger hysteresis. We deploy the SSM-based model for real-time control of an antagonistic HASEL-clutch joint. This approach yields a substantial reduction in tracking error compared to feedback-only and feedforward-only baselines under identical settings. This record-and-control workflow enables rapid characterization and high-performance control of soft muscles and muscle-driven joints without detailed physics-based modeling."
+  },
+  {
+    "title": "The Sonar Moment: Benchmarking Audio-Language Models in Audio Geo-Localization",
+    "url": "http://arxiv.org/abs/2601.03227v1",
+    "arxiv_id": "2601.03227v1",
+    "authors": [
+      "Ruixing Zhang",
+      "Zihan Liu",
+      "Leilei Sun",
+      "Tongyu Zhu",
+      "Weifeng Lv"
+    ],
+    "published": "2026-01-06T18:13:24+00:00",
+    "summary": "Geo-localization aims to infer the geographic origin of a given signal. In computer vision, geo-localization has served as a demanding benchmark for compositional reasoning and is relevant to public safety. In contrast, progress on audio geo-localization has been constrained by the lack of high-quality audio-location pairs. To address this gap, we introduce AGL1K, the first audio geo-localization benchmark for audio language models (ALMs), spanning 72 countries and territories. To extract reliably localizable samples from a crowd-sourced platform, we propose the Audio Localizability metric that quantifies the informativeness of each recording, yielding 1,444 curated audio clips. Evaluations on 16 ALMs show that ALMs have emerged with audio geo-localization capability. We find that closed-source models substantially outperform open-source models, and that linguistic clues often dominate as a scaffold for prediction. We further analyze ALMs' reasoning traces, regional bias, error causes, and the interpretability of the localizability metric. Overall, AGL1K establishes a benchmark for audio geo-localization and may advance ALMs with better geospatial reasoning capability."
+  },
+  {
+    "title": "Wait or cross? Understanding the influence of behavioral tendency, trust, and risk perception on pedestrian gap-acceptance of automated truck platoons",
+    "url": "http://arxiv.org/abs/2601.03225v1",
+    "arxiv_id": "2601.03225v1",
+    "authors": [
+      "Yun Ye",
+      "Yuan Che",
+      "Haoyang Liang",
+      "Yingheng Zhang",
+      "Pengpeng Xu"
+    ],
+    "published": "2026-01-06T18:12:55+00:00",
+    "summary": "Although automated trucks have the potential to improve freight efficiency, reduce costs, and address driver shortages, organizing two or more trucks in a convoy has raised considerable concerns for pedestrian safety. This study conducted a controlled experiment to examine the influence of behavioral tendency, trust, and risk perception on pedestrian intention to cross in front of an automated truck platoon. A total of 603 subjects participated in the virtual reality video-based questionnaire survey. By fusing the merits of structural equation modeling and artificial neural networks, a two-stage, hybrid model was developed to examine complex relationships between latent variables and gap-acceptance behaviors. Our results indicated that subjects watched an average of five vehicle gaps before starting crossing and the average time gap accepted was about 5.35 seconds. Risk perception not only played the most dominant role in shaping pedestrian crossing decisions, but also served as the strong bone, mediating the effects of behavioral tendency and trust on gap-acceptance. Participants who frequently violated traffic rules were more likely to accept a smaller time gap, while those who showed positive behaviors to other road users tended to wait for a larger time gap. Participants who often committed errors, showed aggressive behaviors, and held greater trust in the safety of automated trucks generally reported a lower level of risk for road-crossing in front of automated truck platoons. Built on these findings, a range of tailored countermeasures were proposed to ensure safer and smother interactions between pedestrians and automated truck platoons."
+  },
+  {
     "title": "ExposeAnyone: Personalized Audio-to-Expression Diffusion Models Are Robust Zero-Shot Face Forgery Detectors",
     "url": "http://arxiv.org/abs/2601.02359v1",
     "arxiv_id": "2601.02359v1",
