@@ -1,5 +1,70 @@
 [
   {
+    "title": "Choreographing a World of Dynamic Objects",
+    "url": "http://arxiv.org/abs/2601.04194v1",
+    "arxiv_id": "2601.04194v1",
+    "authors": [
+      "Yanzhe Lyu",
+      "Chen Geng",
+      "Karthik Dharmarajan",
+      "Yunzhi Zhang",
+      "Hadi Alzayer",
+      "Shangzhe Wu",
+      "Jiajun Wu"
+    ],
+    "published": "2026-01-07T18:59:40+00:00",
+    "summary": "Dynamic objects in our physical 4D (3D + time) world are constantly evolving, deforming, and interacting with other objects, leading to diverse 4D scene dynamics. In this paper, we present a universal generative pipeline, CHORD, for CHOReographing Dynamic objects and scenes and synthesizing this type of phenomena. Traditional rule-based graphics pipelines to create these dynamics are based on category-specific heuristics, yet are labor-intensive and not scalable. Recent learning-based methods typically demand large-scale datasets, which may not cover all object categories in interest. Our approach instead inherits the universality from the video generative models by proposing a distillation-based pipeline to extract the rich Lagrangian motion information hidden in the Eulerian representations of 2D videos. Our method is universal, versatile, and category-agnostic. We demonstrate its effectiveness by conducting experiments to generate a diverse range of multi-body 4D dynamics, show its advantage compared to existing methods, and demonstrate its applicability in generating robotics manipulation policies. Project page: https://yanzhelyu.github.io/chord"
+  },
+  {
+    "title": "Embedding Autonomous Agents in Resource-Constrained Robotic Platforms",
+    "url": "http://arxiv.org/abs/2601.04191v1",
+    "arxiv_id": "2601.04191v1",
+    "authors": [
+      "Negar Halakou",
+      "Juan F. Gutierrez",
+      "Ye Sun",
+      "Han Jiang",
+      "Xueming Wu",
+      "Yilun Song",
+      "Andres Gomez"
+    ],
+    "published": "2026-01-07T18:57:32+00:00",
+    "summary": "Many embedded devices operate under resource constraints and in dynamic environments, requiring local decision-making capabilities. Enabling devices to make independent decisions in such environments can improve the responsiveness of the system and reduce the dependence on constant external control. In this work, we integrate an autonomous agent, programmed using AgentSpeak, with a small two-wheeled robot that explores a maze using its own decision-making and sensor data. Experimental results show that the agent successfully solved the maze in 59 seconds using 287 reasoning cycles, with decision phases taking less than one millisecond. These results indicate that the reasoning process is efficient enough for real-time execution on resource-constrained hardware. This integration demonstrates how high-level agent-based control can be applied to resource-constrained embedded systems for autonomous operation."
+  },
+  {
+    "title": "Hierarchical GNN-Based Multi-Agent Learning for Dynamic Queue-Jump Lane and Emergency Vehicle Corridor Formation",
+    "url": "http://arxiv.org/abs/2601.04177v1",
+    "arxiv_id": "2601.04177v1",
+    "authors": [
+      "Haoran Su"
+    ],
+    "published": "2026-01-07T18:43:18+00:00",
+    "summary": "Emergency vehicles require rapid passage through congested traffic, yet existing strategies fail to adapt to dynamic conditions. We propose a novel hierarchical graph neural network (GNN)-based multi-agent reinforcement learning framework to coordinate connected vehicles for emergency corridor formation. Our approach uses a high-level planner for global strategy and low-level controllers for trajectory execution, utilizing graph attention networks to scale with variable agent counts. Trained via Multi-Agent Proximal Policy Optimization (MAPPO), the system reduces emergency vehicle travel time by 28.3% compared to baselines and 44.6% compared to uncoordinated traffic in simulations. The design achieves near-zero collision rates (0.3%) while maintaining 81% of background traffic efficiency. Ablation and generalization studies confirm the framework's robustness across diverse scenarios. These results demonstrate the effectiveness of combining GNNs with hierarchical learning for intelligent transportation systems."
+  },
+  {
+    "title": "Agentic Rubrics as Contextual Verifiers for SWE Agents",
+    "url": "http://arxiv.org/abs/2601.04171v1",
+    "arxiv_id": "2601.04171v1",
+    "authors": [
+      "Mohit Raghavendra",
+      "Anisha Gunjal",
+      "Bing Liu",
+      "Yunzhong He"
+    ],
+    "published": "2026-01-07T18:38:23+00:00",
+    "summary": "Verification is critical for improving agents: it provides the reward signal for Reinforcement Learning and enables inference-time gains through Test-Time Scaling (TTS). Despite its importance, verification in software engineering (SWE) agent settings often relies on code execution, which can be difficult to scale due to environment setup overhead. Scalable alternatives such as patch classifiers and heuristic methods exist, but they are less grounded in codebase context and harder to interpret. To this end, we explore Agentic Rubrics: an expert agent interacts with the repository to create a context-grounded rubric checklist, and candidate patches are then scored against it without requiring test execution. On SWE-Bench Verified under parallel TTS evaluation, Agentic Rubrics achieve a score of 54.2% on Qwen3-Coder-30B-A3B and 40.6% on Qwen3-32B, with at least a +3.5 percentage-point gain over the strongest baseline in our comparison set. We further analyze rubric behavior, showing that rubric scores are consistent with ground-truth tests while also flagging issues that tests do not capture. Our ablations show that agentic context gathering is essential for producing codebase-specific, unambiguous criteria. Together, these results suggest that Agentic Rubrics provide an efficient, scalable, and granular verification signal for SWE agents."
+  },
+  {
+    "title": "Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions",
+    "url": "http://arxiv.org/abs/2601.04170v1",
+    "arxiv_id": "2601.04170v1",
+    "authors": [
+      "Abhishek Rath"
+    ],
+    "published": "2026-01-07T18:37:26+00:00",
+    "summary": "Multi-agent Large Language Model (LLM) systems have emerged as powerful architectures for complex task decomposition and collaborative problem-solving. However, their long-term behavioral stability remains largely unexamined. This study introduces the concept of agent drift, defined as the progressive degradation of agent behavior, decision quality, and inter-agent coherence over extended interaction sequences. We present a comprehensive theoretical framework for understanding drift phenomena, proposing three distinct manifestations: semantic drift (progressive deviation from original intent), coordination drift (breakdown in multi-agent consensus mechanisms), and behavioral drift (emergence of unintended strategies).   We introduce the Agent Stability Index (ASI), a novel composite metric framework for quantifying drift across twelve dimensions, including response consistency, tool usage patterns, reasoning pathway stability, and inter-agent agreement rates. Through simulation-based analysis and theoretical modeling, we demonstrate how unchecked agent drift can lead to substantial reductions in task completion accuracy and increased human intervention requirements.   We propose three mitigation strategies: episodic memory consolidation, drift-aware routing protocols, and adaptive behavioral anchoring. Theoretical analysis suggests these approaches can significantly reduce drift-related errors while maintaining system throughput. This work establishes a foundational methodology for monitoring, measuring, and mitigating agent drift in production agentic AI systems, with direct implications for enterprise deployment reliability and AI safety research."
+  },
+  {
     "title": "Muses: Designing, Composing, Generating Nonexistent Fantasy 3D Creatures without Training",
     "url": "http://arxiv.org/abs/2601.03256v1",
     "arxiv_id": "2601.03256v1",
