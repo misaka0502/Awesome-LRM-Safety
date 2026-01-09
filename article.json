@@ -1,5 +1,96 @@
 [
   {
+    "title": "RL-AWB: Deep Reinforcement Learning for Auto White Balance Correction in Low-Light Night-time Scenes",
+    "url": "http://arxiv.org/abs/2601.05249v1",
+    "arxiv_id": "2601.05249v1",
+    "authors": [
+      "Yuan-Kang Lee",
+      "Kuan-Lin Chen",
+      "Chia-Che Chang",
+      "Yu-Lun Liu"
+    ],
+    "published": "2026-01-08T18:59:55+00:00",
+    "summary": "Nighttime color constancy remains a challenging problem in computational photography due to low-light noise and complex illumination conditions. We present RL-AWB, a novel framework combining statistical methods with deep reinforcement learning for nighttime white balance. Our method begins with a statistical algorithm tailored for nighttime scenes, integrating salient gray pixel detection with novel illumination estimation. Building on this foundation, we develop the first deep reinforcement learning approach for color constancy that leverages the statistical algorithm as its core, mimicking professional AWB tuning experts by dynamically optimizing parameters for each image. To facilitate cross-sensor evaluation, we introduce the first multi-sensor nighttime dataset. Experiment results demonstrate that our method achieves superior generalization capability across low-light and well-illuminated images. Project page: https://ntuneillee.github.io/research/rl-awb/"
+  },
+  {
+    "title": "LaST$_{0}$: Latent Spatio-Temporal Chain-of-Thought for Robotic Vision-Language-Action Model",
+    "url": "http://arxiv.org/abs/2601.05248v1",
+    "arxiv_id": "2601.05248v1",
+    "authors": [
+      "Zhuoyang Liu",
+      "Jiaming Liu",
+      "Hao Chen",
+      "Ziyu Guo",
+      "Chengkai Hou",
+      "Chenyang Gu",
+      "Jiale Yu",
+      "Xiangju Mi",
+      "Renrui Zhang",
+      "Zhengping Che",
+      "Jian Tang",
+      "Pheng-Ann Heng",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-01-08T18:59:53+00:00",
+    "summary": "Vision-Language-Action (VLA) models have recently demonstrated strong generalization capabilities in robotic manipulation. Some existing VLA approaches attempt to improve action accuracy by explicitly generating linguistic reasoning traces or future visual observations before action execution. However, explicit reasoning typically incurs non-negligible inference latency, which constrains the temporal resolution required for robotic manipulation. Moreover, such reasoning is confined to the linguistic space, imposing a representational bottleneck that struggles to faithfully capture ineffable physical attributes. To mitigate these limitations, we propose LaST$_0$, a framework that enables efficient reasoning before acting through a Latent Spatio-Temporal Chain-of-Thought (CoT), capturing fine-grained physical and robotic dynamics that are often difficult to verbalize. Specifically, we introduce a token-efficient latent CoT space that models future visual dynamics, 3D structural information, and robot proprioceptive states, and further extends these representations across time to enable temporally consistent implicit reasoning trajectories. Furthermore, LaST$_0$ adopts a dual-system architecture implemented via a Mixture-of-Transformers design, where a reasoning expert conducts low-frequency latent inference and an acting expert generates high-frequency actions conditioned on robotics-oriented latent representations. To facilitate coordination, LaST$_0$ is trained with heterogeneous operation frequencies, enabling adaptive switching between reasoning and action inference rates during deployment. Across ten simulated and six real-world manipulation tasks, LaST$_0$ improves mean success rates by 8% and 13% over prior VLA methods, respectively, while achieving substantially faster inference. Project website: https://sites.google.com/view/last0"
+  },
+  {
+    "title": "Pixel-Perfect Visual Geometry Estimation",
+    "url": "http://arxiv.org/abs/2601.05246v1",
+    "arxiv_id": "2601.05246v1",
+    "authors": [
+      "Gangwei Xu",
+      "Haotong Lin",
+      "Hongcheng Luo",
+      "Haiyang Sun",
+      "Bing Wang",
+      "Guang Chen",
+      "Sida Peng",
+      "Hangjun Ye",
+      "Xin Yang"
+    ],
+    "published": "2026-01-08T18:59:49+00:00",
+    "summary": "Recovering clean and accurate geometry from images is essential for robotics and augmented reality. However, existing geometry foundation models still suffer severely from flying pixels and the loss of fine details. In this paper, we present pixel-perfect visual geometry models that can predict high-quality, flying-pixel-free point clouds by leveraging generative modeling in the pixel space. We first introduce Pixel-Perfect Depth (PPD), a monocular depth foundation model built upon pixel-space diffusion transformers (DiT). To address the high computational complexity associated with pixel-space diffusion, we propose two key designs: 1) Semantics-Prompted DiT, which incorporates semantic representations from vision foundation models to prompt the diffusion process, preserving global semantics while enhancing fine-grained visual details; and 2) Cascade DiT architecture that progressively increases the number of image tokens, improving both efficiency and accuracy. To further extend PPD to video (PPVD), we introduce a new Semantics-Consistent DiT, which extracts temporally consistent semantics from a multi-view geometry foundation model. We then perform reference-guided token propagation within the DiT to maintain temporal coherence with minimal computational and memory overhead. Our models achieve the best performance among all generative monocular and video depth estimation models and produce significantly cleaner point clouds than all other models."
+  },
+  {
+    "title": "Generate, Transfer, Adapt: Learning Functional Dexterous Grasping from a Single Human Demonstration",
+    "url": "http://arxiv.org/abs/2601.05243v1",
+    "arxiv_id": "2601.05243v1",
+    "authors": [
+      "Xingyi He",
+      "Adhitya Polavaram",
+      "Yunhao Cao",
+      "Om Deshmukh",
+      "Tianrui Wang",
+      "Xiaowei Zhou",
+      "Kuan Fang"
+    ],
+    "published": "2026-01-08T18:59:30+00:00",
+    "summary": "Functional grasping with dexterous robotic hands is a key capability for enabling tool use and complex manipulation, yet progress has been constrained by two persistent bottlenecks: the scarcity of large-scale datasets and the absence of integrated semantic and geometric reasoning in learned models. In this work, we present CorDex, a framework that robustly learns dexterous functional grasps of novel objects from synthetic data generated from just a single human demonstration. At the core of our approach is a correspondence-based data engine that generates diverse, high-quality training data in simulation. Based on the human demonstration, our data engine generates diverse object instances of the same category, transfers the expert grasp to the generated objects through correspondence estimation, and adapts the grasp through optimization. Building on the generated data, we introduce a multimodal prediction network that integrates visual and geometric information. By devising a local-global fusion module and an importance-aware sampling mechanism, we enable robust and computationally efficient prediction of functional dexterous grasps. Through extensive experiments across various object categories, we demonstrate that CorDex generalizes well to unseen object instances and significantly outperforms state-of-the-art baselines."
+  },
+  {
+    "title": "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization",
+    "url": "http://arxiv.org/abs/2601.05242v1",
+    "arxiv_id": "2601.05242v1",
+    "authors": [
+      "Shih-Yang Liu",
+      "Xin Dong",
+      "Ximing Lu",
+      "Shizhe Diao",
+      "Peter Belcak",
+      "Mingjie Liu",
+      "Min-Hung Chen",
+      "Hongxu Yin",
+      "Yu-Chiang Frank Wang",
+      "Kwang-Ting Cheng",
+      "Yejin Choi",
+      "Jan Kautz",
+      "Pavlo Molchanov"
+    ],
+    "published": "2026-01-08T18:59:24+00:00",
+    "summary": "As language models become increasingly capable, users expect them to provide not only accurate responses but also behaviors aligned with diverse human preferences across a variety of scenarios. To achieve this, Reinforcement learning (RL) pipelines have begun incorporating multiple rewards, each capturing a distinct preference, to guide models toward these desired behaviors. However, recent work has defaulted to apply Group Relative Policy Optimization (GRPO) under multi-reward setting without examining its suitability. In this paper, we demonstrate that directly applying GRPO to normalize distinct rollout reward combinations causes them to collapse into identical advantage values, reducing the resolution of the training signal and resulting in suboptimal convergence and, in some cases, early training failure. We then introduce Group reward-Decoupled Normalization Policy Optimization (GDPO), a new policy optimization method to resolve these issues by decoupling the normalization of individual rewards, more faithfully preserving their relative differences and enabling more accurate multi-reward optimization, along with substantially improved training stability. We compare GDPO with GRPO across three tasks: tool calling, math reasoning, and coding reasoning, evaluating both correctness metrics (accuracy, bug ratio) and constraint adherence metrics (format, length). Across all settings, GDPO consistently outperforms GRPO, demonstrating its effectiveness and generalizability for multi-reward reinforcement learning optimization."
+  },
+  {
     "title": "Choreographing a World of Dynamic Objects",
     "url": "http://arxiv.org/abs/2601.04194v1",
     "arxiv_id": "2601.04194v1",
