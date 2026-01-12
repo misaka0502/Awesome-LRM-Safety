@@ -1,5 +1,79 @@
 [
   {
+    "title": "Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards",
+    "url": "http://arxiv.org/abs/2601.06021v1",
+    "arxiv_id": "2601.06021v1",
+    "authors": [
+      "Jiajie Zhang",
+      "Xin Lv",
+      "Ling Feng",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "published": "2026-01-09T18:57:53+00:00",
+    "summary": "Reinforcement learning (RL) has emerged as a critical technique for enhancing LLM-based deep search agents. However, existing approaches primarily rely on binary outcome rewards, which fail to capture the comprehensiveness and factuality of agents' reasoning process, and often lead to undesirable behaviors such as shortcut exploitation and hallucinations. To address these limitations, we propose \\textbf{Citation-aware Rubric Rewards (CaRR)}, a fine-grained reward framework for deep search agents that emphasizes reasoning comprehensiveness, factual grounding, and evidence connectivity. CaRR decomposes complex questions into verifiable single-hop rubrics and requires agents to satisfy these rubrics by explicitly identifying hidden entities, supporting them with correct citations, and constructing complete evidence chains that link to the predicted answer. We further introduce \\textbf{Citation-aware Group Relative Policy Optimization (C-GRPO)}, which combines CaRR and outcome rewards for training robust deep search agents. Experiments show that C-GRPO consistently outperforms standard outcome-based RL baselines across multiple deep search benchmarks. Our analysis also validates that C-GRPO effectively discourages shortcut exploitation, promotes comprehensive, evidence-grounded reasoning, and exhibits strong generalization to open-ended deep research tasks. Our code and data are available at https://github.com/THUDM/CaRR."
+  },
+  {
+    "title": "Open-Vocabulary 3D Instruction Ambiguity Detection",
+    "url": "http://arxiv.org/abs/2601.05991v1",
+    "arxiv_id": "2601.05991v1",
+    "authors": [
+      "Jiayu Ding",
+      "Haoran Tang",
+      "Ge Li"
+    ],
+    "published": "2026-01-09T18:17:11+00:00",
+    "summary": "In safety-critical domains, linguistic ambiguity can have severe consequences; a vague command like \"Pass me the vial\" in a surgical setting could lead to catastrophic errors. Yet, most embodied AI research overlooks this, assuming instructions are clear and focusing on execution rather than confirmation. To address this critical safety gap, we are the first to define Open-Vocabulary 3D Instruction Ambiguity Detection, a fundamental new task where a model must determine if a command has a single, unambiguous meaning within a given 3D scene. To support this research, we build Ambi3D, the large-scale benchmark for this task, featuring over 700 diverse 3D scenes and around 22k instructions. Our analysis reveals a surprising limitation: state-of-the-art 3D Large Language Models (LLMs) struggle to reliably determine if an instruction is ambiguous. To address this challenge, we propose AmbiVer, a two-stage framework that collects explicit visual evidence from multiple views and uses it to guide an vision-language model (VLM) in judging instruction ambiguity. Extensive experiments demonstrate the challenge of our task and the effectiveness of AmbiVer, paving the way for safer and more trustworthy embodied AI. Code and dataset available at https://jiayuding031020.github.io/ambi3d/."
+  },
+  {
+    "title": "Categorical Foundations for CuTe Layouts",
+    "url": "http://arxiv.org/abs/2601.05972v1",
+    "arxiv_id": "2601.05972v1",
+    "authors": [
+      "Jack Carlisle",
+      "Jay Shah",
+      "Reuben Stern",
+      "Paul VanKoughnett"
+    ],
+    "published": "2026-01-09T17:42:46+00:00",
+    "summary": "NVIDIA's CUTLASS library provides a robust and expressive set of methods for describing and manipulating multi-dimensional tensor data on the GPU. These methods are conceptually grounded in the abstract notion of a CuTe layout and a rich algebra of such layouts, including operations such as composition, logical product, and logical division. In this paper, we present a categorical framework for understanding this layout algebra by focusing on a naturally occurring class of tractable layouts. To this end, we define two categories Tuple and Nest whose morphisms give rise to layouts. We define a suite of operations on morphisms in these categories and prove their compatibility with the corresponding layout operations. Moreover, we give a complete characterization of the layouts which arise from our construction. Finally, we provide a Python implementation of our categorical constructions, along with tests that demonstrate alignment with CUTLASS behavior. This implementation can be found at our git repository https://github.com/ColfaxResearch/layout-categories."
+  },
+  {
+    "title": "TowerMind: A Tower Defence Game Learning Environment and Benchmark for LLM as Agents",
+    "url": "http://arxiv.org/abs/2601.05899v1",
+    "arxiv_id": "2601.05899v1",
+    "authors": [
+      "Dawei Wang",
+      "Chengming Zhou",
+      "Di Zhao",
+      "Xinyuan Liu",
+      "Marci Chi Ma",
+      "Gary Ushaw",
+      "Richard Davison"
+    ],
+    "published": "2026-01-09T16:18:08+00:00",
+    "summary": "Recent breakthroughs in Large Language Models (LLMs) have positioned them as a promising paradigm for agents, with long-term planning and decision-making emerging as core general-purpose capabilities for adapting to diverse scenarios and tasks. Real-time strategy (RTS) games serve as an ideal testbed for evaluating these two capabilities, as their inherent gameplay requires both macro-level strategic planning and micro-level tactical adaptation and action execution. Existing RTS game-based environments either suffer from relatively high computational demands or lack support for textual observations, which has constrained the use of RTS games for LLM evaluation. Motivated by this, we present TowerMind, a novel environment grounded in the tower defense (TD) subgenre of RTS games. TowerMind preserves the key evaluation strengths of RTS games for assessing LLMs, while featuring low computational demands and a multimodal observation space, including pixel-based, textual, and structured game-state representations. In addition, TowerMind supports the evaluation of model hallucination and provides a high degree of customizability. We design five benchmark levels to evaluate several widely used LLMs under different multimodal input settings. The results reveal a clear performance gap between LLMs and human experts across both capability and hallucination dimensions. The experiments further highlight key limitations in LLM behavior, such as inadequate planning validation, a lack of multifinality in decision-making, and inefficient action use. We also evaluate two classic reinforcement learning algorithms: Ape-X DQN and PPO. By offering a lightweight and multimodal design, TowerMind complements the existing RTS game-based environment landscape and introduces a new benchmark for the AI agent field. The source code is publicly available on GitHub(https://github.com/tb6147877/TowerMind)."
+  },
+  {
+    "title": "StackPlanner: A Centralized Hierarchical Multi-Agent System with Task-Experience Memory Management",
+    "url": "http://arxiv.org/abs/2601.05890v1",
+    "arxiv_id": "2601.05890v1",
+    "authors": [
+      "Ruizhe Zhang",
+      "Xinke Jiang",
+      "Zhibang Yang",
+      "Zhixin Zhang",
+      "Jiaran Gao",
+      "Yuzhen Xiao",
+      "Hongbin Lai",
+      "Xu Chu",
+      "Junfeng Zhao",
+      "Yasha Wang"
+    ],
+    "published": "2026-01-09T16:09:48+00:00",
+    "summary": "Multi-agent systems based on large language models, particularly centralized architectures, have recently shown strong potential for complex and knowledge-intensive tasks. However, central agents often suffer from unstable long-horizon collaboration due to the lack of memory management, leading to context bloat, error accumulation, and poor cross-task generalization. To address both task-level memory inefficiency and the inability to reuse coordination experience, we propose StackPlanner, a hierarchical multi-agent framework with explicit memory control. StackPlanner addresses these challenges by decoupling high-level coordination from subtask execution with active task-level memory control, and by learning to retrieve and exploit reusable coordination experience via structured experience memory and reinforcement learning. Experiments on multiple deep-search and agent system benchmarks demonstrate the effectiveness of our approach in enabling reliable long-horizon multi-agent collaboration."
+  },
+  {
     "title": "RL-AWB: Deep Reinforcement Learning for Auto White Balance Correction in Low-Light Night-time Scenes",
     "url": "http://arxiv.org/abs/2601.05249v1",
     "arxiv_id": "2601.05249v1",
