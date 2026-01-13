@@ -1,5 +1,81 @@
 [
   {
+    "title": "SecureCAI: Injection-Resilient LLM Assistants for Cybersecurity Operations",
+    "url": "http://arxiv.org/abs/2601.07835v1",
+    "arxiv_id": "2601.07835v1",
+    "authors": [
+      "Mohammed Himayath Ali",
+      "Mohammed Aqib Abdullah",
+      "Mohammed Mudassir Uddin",
+      "Shahnawaz Alam"
+    ],
+    "published": "2026-01-12T18:59:45+00:00",
+    "summary": "Large Language Models have emerged as transformative tools for Security Operations Centers, enabling automated log analysis, phishing triage, and malware explanation; however, deployment in adversarial cybersecurity environments exposes critical vulnerabilities to prompt injection attacks where malicious instructions embedded in security artifacts manipulate model behavior. This paper introduces SecureCAI, a novel defense framework extending Constitutional AI principles with security-aware guardrails, adaptive constitution evolution, and Direct Preference Optimization for unlearning unsafe response patterns, addressing the unique challenges of high-stakes security contexts where traditional safety mechanisms prove insufficient against sophisticated adversarial manipulation. Experimental evaluation demonstrates that SecureCAI reduces attack success rates by 94.7% compared to baseline models while maintaining 95.1% accuracy on benign security analysis tasks, with the framework incorporating continuous red-teaming feedback loops enabling dynamic adaptation to emerging attack strategies and achieving constitution adherence scores exceeding 0.92 under sustained adversarial pressure, thereby establishing a foundation for trustworthy integration of language model capabilities into operational cybersecurity workflows and addressing a critical gap in current approaches to AI safety within adversarial domains."
+  },
+  {
+    "title": "Video Generation Models in Robotics - Applications, Research Challenges, Future Directions",
+    "url": "http://arxiv.org/abs/2601.07823v1",
+    "arxiv_id": "2601.07823v1",
+    "authors": [
+      "Zhiting Mei",
+      "Tenny Yin",
+      "Ola Shorinwa",
+      "Apurva Badithela",
+      "Zhonghe Zheng",
+      "Joseph Bruno",
+      "Madison Bland",
+      "Lihan Zha",
+      "Asher Hancock",
+      "Jaime Fern\u00e1ndez Fisac",
+      "Philip Dames",
+      "Anirudha Majumdar"
+    ],
+    "published": "2026-01-12T18:57:34+00:00",
+    "summary": "Video generation models have emerged as high-fidelity models of the physical world, capable of synthesizing high-quality videos capturing fine-grained interactions between agents and their environments conditioned on multi-modal user inputs. Their impressive capabilities address many of the long-standing challenges faced by physics-based simulators, driving broad adoption in many problem domains, e.g., robotics. For example, video models enable photorealistic, physically consistent deformable-body simulation without making prohibitive simplifying assumptions, which is a major bottleneck in physics-based simulation. Moreover, video models can serve as foundation world models that capture the dynamics of the world in a fine-grained and expressive way. They thus overcome the limited expressiveness of language-only abstractions in describing intricate physical interactions. In this survey, we provide a review of video models and their applications as embodied world models in robotics, encompassing cost-effective data generation and action prediction in imitation learning, dynamics and rewards modeling in reinforcement learning, visual planning, and policy evaluation. Further, we highlight important challenges hindering the trustworthy integration of video models in robotics, which include poor instruction following, hallucinations such as violations of physics, and unsafe content generation, in addition to fundamental limitations such as significant data curation, training, and inference costs. We present potential future directions to address these open research challenges to motivate research and ultimately facilitate broader applications, especially in safety-critical settings."
+  },
+  {
+    "title": "Failure-Aware RL: Reliable Offline-to-Online Reinforcement Learning with Self-Recovery for Real-World Manipulation",
+    "url": "http://arxiv.org/abs/2601.07821v1",
+    "arxiv_id": "2601.07821v1",
+    "authors": [
+      "Huanyu Li",
+      "Kun Lei",
+      "Sheng Zang",
+      "Kaizhe Hu",
+      "Yongyuan Liang",
+      "Bo An",
+      "Xiaoli Li",
+      "Huazhe Xu"
+    ],
+    "published": "2026-01-12T18:53:11+00:00",
+    "summary": "Post-training algorithms based on deep reinforcement learning can push the limits of robotic models for specific objectives, such as generalizability, accuracy, and robustness. However, Intervention-requiring Failures (IR Failures) (e.g., a robot spilling water or breaking fragile glass) during real-world exploration happen inevitably, hindering the practical deployment of such a paradigm. To tackle this, we introduce Failure-Aware Offline-to-Online Reinforcement Learning (FARL), a new paradigm minimizing failures during real-world reinforcement learning. We create FailureBench, a benchmark that incorporates common failure scenarios requiring human intervention, and propose an algorithm that integrates a world-model-based safety critic and a recovery policy trained offline to prevent failures during online exploration. Extensive simulation and real-world experiments demonstrate the effectiveness of FARL in significantly reducing IR Failures while improving performance and generalization during online reinforcement learning post-training. FARL reduces IR Failures by 73.1% while elevating performance by 11.3% on average during real-world RL post-training. Videos and code are available at https://failure-aware-rl.github.io."
+  },
+  {
+    "title": "Data-driven control of hydraulic impact hammers under strict operational and control constraints",
+    "url": "http://arxiv.org/abs/2601.07813v1",
+    "arxiv_id": "2601.07813v1",
+    "authors": [
+      "Francisco Leiva",
+      "Claudio Canales",
+      "Michelle Valenzuela",
+      "Javier Ruiz-del-Solar"
+    ],
+    "published": "2026-01-12T18:45:41+00:00",
+    "summary": "This paper presents a data-driven methodology for the control of static hydraulic impact hammers, also known as rock breakers, which are commonly used in the mining industry. The task addressed in this work is that of controlling the rock-breaker so its end-effector reaches arbitrary target poses, which is required in normal operation to place the hammer on top of rocks that need to be fractured. The proposed approach considers several constraints, such as unobserved state variables due to limited sensing and the strict requirement of using a discrete control interface at the joint level. First, the proposed methodology addresses the problem of system identification to obtain an approximate dynamic model of the hydraulic arm. This is done via supervised learning, using only teleoperation data. The learned dynamic model is then exploited to obtain a controller capable of reaching target end-effector poses. For policy synthesis, both reinforcement learning (RL) and model predictive control (MPC) algorithms are utilized and contrasted. As a case study, we consider the automation of a Bobcat E10 mini-excavator arm with a hydraulic impact hammer attached as end-effector. Using this machine, both the system identification and policy synthesis stages are studied in simulation and in the real world. The best RL-based policy consistently reaches target end-effector poses with position errors below 12 cm and pitch angle errors below 0.08 rad in the real world. Considering that the impact hammer has a 4 cm diameter chisel, this level of precision is sufficient for breaking rocks. Notably, this is accomplished by relying only on approximately 68 min of teleoperation data to train and 8 min to evaluate the dynamic model, and without performing any adjustments for a successful policy Sim2Real transfer. A demonstration of policy execution in the real world can be found in https://youtu.be/e-7tDhZ4ZgA."
+  },
+  {
+    "title": "Affordable Data Collection System for UAVs Taxi Vibration Testing",
+    "url": "http://arxiv.org/abs/2601.07783v1",
+    "arxiv_id": "2601.07783v1",
+    "authors": [
+      "Chaoyi Lin Yang",
+      "Gabriele Dessena",
+      "Oscar E. Bonilla-Manrique"
+    ],
+    "published": "2026-01-12T17:58:43+00:00",
+    "summary": "Structural vibration testing plays a key role in aerospace engineering for evaluating dynamic behaviour, ensuring reliability and verifying structural integrity. These tests rely on accurate and robust data acquisition systems (DAQ) to capture high-quality acceleration data. However, commercial DAQs that provide the required performance and features are often expensive and complex, limiting their accessibility for small-scale research and experimental applications. This work presents the design and experimental validation of an affordable and in-house-developed acceleration DAQ, tested on a small fixed-wing UAV through several Taxi Vibration Test (TVT) runs and ambient vibration measurements. The proposed system integrates several OrangePi 3 LTS single-board computers with multiple LSM6DS3TR-C MEMS inertial measurement units operating simultaneously via an Inter-Integrated Circuit (I2C) communication interface, managed under a Python-based master/slave architecture. Data is acquired at a stable sampling rate of approximately 208 Hz and post-processed using Welch's method to estimate their Power Spectral Density (PSD). Results confirm the system ability to provide consistent multi-sensor acceleration data and repeatable PSD profiles under the same test conditions; thus, demonstrating its reliability. With a total hardware cost below 600 EUR (approximately 690 USD), the developed DAQ offers a compact, scalable and cost-effective alternative for aerospace vibration analysis and structural testing."
+  },
+  {
     "title": "Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards",
     "url": "http://arxiv.org/abs/2601.06021v1",
     "arxiv_id": "2601.06021v1",
