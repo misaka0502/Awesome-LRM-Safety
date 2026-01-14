@@ -1,5 +1,75 @@
 [
   {
+    "title": "Motion Attribution for Video Generation",
+    "url": "http://arxiv.org/abs/2601.08828v1",
+    "arxiv_id": "2601.08828v1",
+    "authors": [
+      "Xindi Wu",
+      "Despoina Paschalidou",
+      "Jun Gao",
+      "Antonio Torralba",
+      "Laura Leal-Taix\u00e9",
+      "Olga Russakovsky",
+      "Sanja Fidler",
+      "Jonathan Lorraine"
+    ],
+    "published": "2026-01-13T18:59:09+00:00",
+    "summary": "Despite the rapid progress of video generation models, the role of data in influencing motion is poorly understood. We present Motive (MOTIon attribution for Video gEneration), a motion-centric, gradient-based data attribution framework that scales to modern, large, high-quality video datasets and models. We use this to study which fine-tuning clips improve or degrade temporal dynamics. Motive isolates temporal dynamics from static appearance via motion-weighted loss masks, yielding efficient and scalable motion-specific influence computation. On text-to-video models, Motive identifies clips that strongly affect motion and guides data curation that improves temporal consistency and physical plausibility. With Motive-selected high-influence data, our method improves both motion smoothness and dynamic degree on VBench, achieving a 74.1% human preference win rate compared with the pretrained base model. To our knowledge, this is the first framework to attribute motion rather than visual appearance in video generative models and to use it to curate fine-tuning data."
+  },
+  {
+    "title": "Older Adults' Preferences for Feedback Cadence from an Exercise Coach Robot",
+    "url": "http://arxiv.org/abs/2601.08819v1",
+    "arxiv_id": "2601.08819v1",
+    "authors": [
+      "Roshni Kaushik",
+      "Reid Simmons"
+    ],
+    "published": "2026-01-13T18:53:58+00:00",
+    "summary": "People can respond to feedback and guidance in different ways, and it is important for robots to personalize their interactions and utilize verbal and nonverbal communication cues. We aim to understand how older adults respond to different cadences of verbal and nonverbal feedback of a robot exercise coach. We conducted an online study of older adults, where participants evaluated videos of the robot giving feedback at different cadences for each modality. The results indicate that changing the cadence of one modality affects the perception of both it and the other modality. We can use the results from this study to better design the frequency of the robot coach's feedback during an exercise session with this population."
+  },
+  {
+    "title": "Reasoning Matters for 3D Visual Grounding",
+    "url": "http://arxiv.org/abs/2601.08811v1",
+    "arxiv_id": "2601.08811v1",
+    "authors": [
+      "Hsiang-Wei Huang",
+      "Kuang-Ming Chen",
+      "Wenhao Chai",
+      "Cheng-Yen Yang",
+      "Jen-Hao Cheng",
+      "Jenq-Neng Hwang"
+    ],
+    "published": "2026-01-13T18:48:41+00:00",
+    "summary": "The recent development of Large Language Models (LLMs) with strong reasoning ability has driven research in various domains such as mathematics, coding, and scientific discovery. Meanwhile, 3D visual grounding, as a fundamental task in 3D understanding, still remains challenging due to the limited reasoning ability of recent 3D visual grounding models. Most of the current methods incorporate a text encoder and visual feature encoder to generate cross-modal fuse features and predict the referring object. These models often require supervised training on extensive 3D annotation data. On the other hand, recent research also focus on scaling synthetic data to train stronger 3D visual grounding LLM, however, the performance gain remains limited and non-proportional to the data collection cost. In this work, we propose a 3D visual grounding data pipeline, which is capable of automatically synthesizing 3D visual grounding data along with corresponding reasoning process. Additionally, we leverage the generated data for LLM fine-tuning and introduce Reason3DVG-8B, a strong 3D visual grounding LLM that outperforms previous LLM-based method 3D-GRAND using only 1.6% of their training data, demonstrating the effectiveness of our data and the importance of reasoning in 3D visual grounding."
+  },
+  {
+    "title": "Multiplex Thinking: Reasoning via Token-wise Branch-and-Merge",
+    "url": "http://arxiv.org/abs/2601.08808v1",
+    "arxiv_id": "2601.08808v1",
+    "authors": [
+      "Yao Tang",
+      "Li Dong",
+      "Yaru Hao",
+      "Qingxiu Dong",
+      "Furu Wei",
+      "Jiatao Gu"
+    ],
+    "published": "2026-01-13T18:48:00+00:00",
+    "summary": "Large language models often solve complex reasoning tasks more effectively with Chain-of-Thought (CoT), but at the cost of long, low-bandwidth token sequences. Humans, by contrast, often reason softly by maintaining a distribution over plausible next steps. Motivated by this, we propose Multiplex Thinking, a stochastic soft reasoning mechanism that, at each thinking step, samples K candidate tokens and aggregates their embeddings into a single continuous multiplex token. This preserves the vocabulary embedding prior and the sampling dynamics of standard discrete generation, while inducing a tractable probability distribution over multiplex rollouts. Consequently, multiplex trajectories can be directly optimized with on-policy reinforcement learning (RL). Importantly, Multiplex Thinking is self-adaptive: when the model is confident, the multiplex token is nearly discrete and behaves like standard CoT; when it is uncertain, it compactly represents multiple plausible next steps without increasing sequence length. Across challenging math reasoning benchmarks, Multiplex Thinking consistently outperforms strong discrete CoT and RL baselines from Pass@1 through Pass@1024, while producing shorter sequences. The code and checkpoints are available at https://github.com/GMLR-Penn/Multiplex-Thinking."
+  },
+  {
+    "title": "Identifying Latent Intentions via Inverse Reinforcement Learning in Repeated Linear Public Good Games",
+    "url": "http://arxiv.org/abs/2601.08803v1",
+    "arxiv_id": "2601.08803v1",
+    "authors": [
+      "Carina I. Hausladen",
+      "Marcel H. Schubert",
+      "Christoph Engel"
+    ],
+    "published": "2026-01-13T18:39:48+00:00",
+    "summary": "Behavior in repeated public goods games continues to challenge standard theory: heterogeneous social preferences can explain first-round contributions, but not the substantial volatility observed across repeated interactions. Using 50,390 decisions from 2,938 participants, we introduce two methodological advances to address this gap. First, we cluster behavioral trajectories by their temporal shape using Dynamic Time Warping, yielding distinct and theoretically interpretable behavioral types. Second, we apply a hierarchical inverse Q-learning framework that models decisions as discrete switches between latent cooperative and defective intentions. This approach reveals a large (21.4%) and previously unmodeled behavioral type -- Switchers -- who frequently reverse intentions rather than commit to stable strategies. At the same time, the framework recovers canonical strategic behaviors such as persistent cooperation and free-riding. Substantively, recognizing intentional volatility helps sustain cooperation: brief defections by Switchers often reverse, so strategic patience can prevent unnecessary breakdowns."
+  },
+  {
     "title": "SecureCAI: Injection-Resilient LLM Assistants for Cybersecurity Operations",
     "url": "http://arxiv.org/abs/2601.07835v1",
     "arxiv_id": "2601.07835v1",
