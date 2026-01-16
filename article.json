@@ -1,5 +1,80 @@
 [
   {
+    "title": "MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching",
+    "url": "http://arxiv.org/abs/2601.10712v1",
+    "arxiv_id": "2601.10712v1",
+    "authors": [
+      "Changle Qu",
+      "Sunhao Dai",
+      "Hengyi Cai",
+      "Jun Xu",
+      "Shuaiqiang Wang",
+      "Dawei Yin"
+    ],
+    "published": "2026-01-15T18:59:23+00:00",
+    "summary": "Tool-Integrated Reasoning (TIR) empowers large language models (LLMs) to tackle complex tasks by interleaving reasoning steps with external tool interactions. However, existing reinforcement learning methods typically rely on outcome- or trajectory-level rewards, assigning uniform advantages to all steps within a trajectory. This coarse-grained credit assignment fails to distinguish effective tool calls from redundant or erroneous ones, particularly in long-horizon multi-turn scenarios. To address this, we propose MatchTIR, a framework that introduces fine-grained supervision via bipartite matching-based turn-level reward assignment and dual-level advantage estimation. Specifically, we formulate credit assignment as a bipartite matching problem between predicted and ground-truth traces, utilizing two assignment strategies to derive dense turn-level rewards. Furthermore, to balance local step precision with global task success, we introduce a dual-level advantage estimation scheme that integrates turn-level and trajectory-level signals, assigning distinct advantage values to individual interaction turns. Extensive experiments on three benchmarks demonstrate the superiority of MatchTIR. Notably, our 4B model surpasses the majority of 8B competitors, particularly in long-horizon and multi-turn tasks. Our codes are available at https://github.com/quchangle1/MatchTIR."
+  },
+  {
+    "title": "See Less, Drive Better: Generalizable End-to-End Autonomous Driving via Foundation Models Stochastic Patch Selection",
+    "url": "http://arxiv.org/abs/2601.10707v1",
+    "arxiv_id": "2601.10707v1",
+    "authors": [
+      "Amir Mallak",
+      "Erfan Aasi",
+      "Shiva Sreeram",
+      "Tsun-Hsuan Wang",
+      "Daniela Rus",
+      "Alaa Maalouf"
+    ],
+    "published": "2026-01-15T18:58:33+00:00",
+    "summary": "Recent advances in end-to-end autonomous driving show that policies trained on patch-aligned features extracted from foundation models generalize better to Out-of-Distribution (OOD). We hypothesize that due to the self-attention mechanism, each patch feature implicitly embeds/contains information from all other patches, represented in a different way and intensity, making these descriptors highly redundant. We quantify redundancy in such (BLIP2) features via PCA and cross-patch similarity: $90$% of variance is captured by $17/64$ principal components, and strong inter-token correlations are pervasive. Training on such overlapping information leads the policy to overfit spurious correlations, hurting OOD robustness. We present Stochastic-Patch-Selection (SPS), a simple yet effective approach for learning policies that are more robust, generalizable, and efficient. For every frame, SPS randomly masks a fraction of patch descriptors, not feeding them to the policy model, while preserving the spatial layout of the remaining patches. Thus, the policy is provided with different stochastic but complete views of the (same) scene: every random subset of patches acts like a different, yet still sensible, coherent projection of the world. The policy thus bases its decisions on features that are invariant to which specific tokens survive. Extensive experiments confirm that across all OOD scenarios, our method outperforms the state of the art (SOTA), achieving a $6.2$% average improvement and up to $20.4$% in closed-loop simulations, while being $2.4\\times$ faster. We conduct ablations over masking rates and patch-feature reorganization, training and evaluating 9 systems, with 8 of them surpassing prior SOTA. Finally, we show that the same learned policy transfers to a physical, real-world car without any tuning."
+  },
+  {
+    "title": "Detecting Winning Arguments with Large Language Models and Persuasion Strategies",
+    "url": "http://arxiv.org/abs/2601.10660v1",
+    "arxiv_id": "2601.10660v1",
+    "authors": [
+      "Tiziano Labruna",
+      "Arkadiusz Modzelewski",
+      "Giorgio Satta",
+      "Giovanni Da San Martino"
+    ],
+    "published": "2026-01-15T18:30:15+00:00",
+    "summary": "Detecting persuasion in argumentative text is a challenging task with important implications for understanding human communication. This work investigates the role of persuasion strategies - such as Attack on reputation, Distraction, and Manipulative wording - in determining the persuasiveness of a text. We conduct experiments on three annotated argument datasets: Winning Arguments (built from the Change My View subreddit), Anthropic/Persuasion, and Persuasion for Good. Our approach leverages large language models (LLMs) with a Multi-Strategy Persuasion Scoring approach that guides reasoning over six persuasion strategies. Results show that strategy-guided reasoning improves the prediction of persuasiveness. To better understand the influence of content, we organize the Winning Argument dataset into broad discussion topics and analyze performance across them. We publicly release this topic-annotated version of the dataset to facilitate future research. Overall, our methodology demonstrates the value of structured, strategy-aware prompting for enhancing interpretability and robustness in argument quality assessment."
+  },
+  {
+    "title": "Institutional AI: A Governance Framework for Distributional AGI Safety",
+    "url": "http://arxiv.org/abs/2601.10599v1",
+    "arxiv_id": "2601.10599v1",
+    "authors": [
+      "Federico Pierucci",
+      "Marcello Galisai",
+      "Marcantonio Syrnikov Bracale",
+      "Matteo Prandi",
+      "Piercosma Bisconti",
+      "Francesco Giarrusso",
+      "Olga Sorokoletova",
+      "Vincenzo Suriani",
+      "Daniele Nardi"
+    ],
+    "published": "2026-01-15T17:08:26+00:00",
+    "summary": "As LLM-based systems increasingly operate as agents embedded within human social and technical systems, alignment can no longer be treated as a property of an isolated model, but must be understood in relation to the environments in which these agents act. Even the most sophisticated methods of alignment, such as Reinforcement Learning through Human Feedback (RHLF) or through AI Feedback (RLAIF) cannot ensure control once internal goal structures diverge from developer intent. We identify three structural problems that emerge from core properties of AI models: (1) behavioral goal-independence, where models develop internal objectives and misgeneralize goals; (2) instrumental override of natural-language constraints, where models regard safety principles as non-binding while pursuing latent objectives, leveraging deception and manipulation; and (3) agentic alignment drift, where individually aligned agents converge to collusive equilibria through interaction dynamics invisible to single-agent audits. The solution this paper advances is Institutional AI: a system-level approach that treats alignment as a question of effective governance of AI agent collectives. We argue for a governance-graph that details how to constrain agents via runtime monitoring, incentive shaping through prizes and sanctions, explicit norms and enforcement roles. This institutional turn reframes safety from software engineering to a mechanism design problem, where the primary goal of alignment is shifting the payoff landscape of AI agent collectives."
+  },
+  {
+    "title": "Be Your Own Red Teamer: Safety Alignment via Self-Play and Reflective Experience Replay",
+    "url": "http://arxiv.org/abs/2601.10589v1",
+    "arxiv_id": "2601.10589v1",
+    "authors": [
+      "Hao Wang",
+      "Yanting Wang",
+      "Hao Li",
+      "Rui Li",
+      "Lei Sha"
+    ],
+    "published": "2026-01-15T17:00:16+00:00",
+    "summary": "Large Language Models (LLMs) have achieved remarkable capabilities but remain vulnerable to adversarial ``jailbreak'' attacks designed to bypass safety guardrails. Current safety alignment methods depend heavily on static external red teaming, utilizing fixed defense prompts or pre-collected adversarial datasets. This leads to a rigid defense that overfits known patterns and fails to generalize to novel, sophisticated threats. To address this critical limitation, we propose empowering the model to be its own red teamer, capable of achieving autonomous and evolving adversarial attacks. Specifically, we introduce Safety Self- Play (SSP), a system that utilizes a single LLM to act concurrently as both the Attacker (generating jailbreaks) and the Defender (refusing harmful requests) within a unified Reinforcement Learning (RL) loop, dynamically evolving attack strategies to uncover vulnerabilities while simultaneously strengthening defense mechanisms. To ensure the Defender effectively addresses critical safety issues during the self-play, we introduce an advanced Reflective Experience Replay Mechanism, which uses an experience pool accumulated throughout the process. The mechanism employs a Upper Confidence Bound (UCB) sampling strategy to focus on failure cases with low rewards, helping the model learn from past hard mistakes while balancing exploration and exploitation. Extensive experiments demonstrate that our SSP approach autonomously evolves robust defense capabilities, significantly outperforming baselines trained on static adversarial datasets and establishing a new benchmark for proactive safety alignment."
+  },
+  {
     "title": "Fast-ThinkAct: Efficient Vision-Language-Action Reasoning via Verbalizable Latent Planning",
     "url": "http://arxiv.org/abs/2601.09708v1",
     "arxiv_id": "2601.09708v1",
