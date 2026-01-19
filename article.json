@@ -1,5 +1,73 @@
 [
   {
+    "title": "Do explanations generalize across large reasoning models?",
+    "url": "http://arxiv.org/abs/2601.11517v1",
+    "arxiv_id": "2601.11517v1",
+    "authors": [
+      "Koyena Pal",
+      "David Bau",
+      "Chandan Singh"
+    ],
+    "published": "2026-01-16T18:55:29+00:00",
+    "summary": "Large reasoning models (LRMs) produce a textual chain of thought (CoT) in the process of solving a problem, which serves as a potentially powerful tool to understand the problem by surfacing a human-readable, natural-language explanation. However, it is unclear whether these explanations generalize, i.e. whether they capture general patterns about the underlying problem rather than patterns which are esoteric to the LRM. This is a crucial question in understanding or discovering new concepts, e.g. in AI for science. We study this generalization question by evaluating a specific notion of generalizability: whether explanations produced by one LRM induce the same behavior when given to other LRMs. We find that CoT explanations often exhibit this form of generalization (i.e. they increase consistency between LRMs) and that this increased generalization is correlated with human preference rankings and post-training with reinforcement learning. We further analyze the conditions under which explanations yield consistent answers and propose a straightforward, sentence-level ensembling strategy that improves consistency. Taken together, these results prescribe caution when using LRM explanations to yield new insights and outline a framework for characterizing LRM explanation generalization."
+  },
+  {
+    "title": "Building Production-Ready Probes For Gemini",
+    "url": "http://arxiv.org/abs/2601.11516v1",
+    "arxiv_id": "2601.11516v1",
+    "authors": [
+      "J\u00e1nos Kram\u00e1r",
+      "Joshua Engels",
+      "Zheng Wang",
+      "Bilal Chughtai",
+      "Rohin Shah",
+      "Neel Nanda",
+      "Arthur Conmy"
+    ],
+    "published": "2026-01-16T18:54:29+00:00",
+    "summary": "Frontier language model capabilities are improving rapidly. We thus need stronger mitigations against bad actors misusing increasingly powerful systems. Prior work has shown that activation probes may be a promising misuse mitigation technique, but we identify a key remaining challenge: probes fail to generalize under important production distribution shifts. In particular, we find that the shift from short-context to long-context inputs is difficult for existing probe architectures. We propose several new probe architecture that handle this long-context distribution shift.   We evaluate these probes in the cyber-offensive domain, testing their robustness against various production-relevant shifts, including multi-turn conversations, static jailbreaks, and adaptive red teaming. Our results demonstrate that while multimax addresses context length, a combination of architecture choice and training on diverse distributions is required for broad generalization. Additionally, we show that pairing probes with prompted classifiers achieves optimal accuracy at a low cost due to the computational efficiency of probes.   These findings have informed the successful deployment of misuse mitigation probes in user-facing instances of Gemini, Google's frontier language model. Finally, we find early positive results using AlphaEvolve to automate improvements in both probe architecture search and adaptive red teaming, showing that automating some AI safety research is already possible."
+  },
+  {
+    "title": "Applying Formal Methods Tools to an Electronic Warfare Codebase (Experience report)",
+    "url": "http://arxiv.org/abs/2601.11510v1",
+    "arxiv_id": "2601.11510v1",
+    "authors": [
+      "Letitia W. Li",
+      "Denley Lam",
+      "Vu Le",
+      "Daniel Mitchell",
+      "Mark J. Gerken",
+      "Robert B. Ross"
+    ],
+    "published": "2026-01-16T18:46:19+00:00",
+    "summary": "While using formal methods offers advantages over unit testing, their steep learning curve can be daunting to developers and can be a major impediment to widespread adoption. To support integration into an industrial software engineering workflow, a tool must provide useful information and must be usable with relatively minimal user effort. In this paper, we discuss our experiences associated with identifying and applying formal methods tools on an electronic warfare (EW) system with stringent safety requirements and present perspectives on formal methods tools from EW software engineers who are proficient in development yet lack formal methods training. In addition to a difference in mindset between formal methods and unit testing approaches, some formal methods tools use terminology or annotations that differ from their target programming language, creating another barrier to adoption. Input/output contracts, objects in memory affected by a function, and loop invariants can be difficult to grasp and use. In addition to usability, our findings include a comparison of vulnerabilities detected by different tools. Finally, we present suggestions for improving formal methods usability including better documentation of capabilities, decreased manual effort, and improved handling of library code."
+  },
+  {
+    "title": "QUPID: A Partitioned Quantum Neural Network for Anomaly Detection in Smart Grid",
+    "url": "http://arxiv.org/abs/2601.11500v1",
+    "arxiv_id": "2601.11500v1",
+    "authors": [
+      "Hoang M. Ngo",
+      "Tre' R. Jeter",
+      "Jung Taek Seo",
+      "My T. Thai"
+    ],
+    "published": "2026-01-16T18:30:24+00:00",
+    "summary": "Smart grid infrastructures have revolutionized energy distribution, but their day-to-day operations require robust anomaly detection methods to counter risks associated with cyber-physical threats and system faults potentially caused by natural disasters, equipment malfunctions, and cyber attacks. Conventional machine learning (ML) models are effective in several domains, yet they struggle to represent the complexities observed in smart grid systems. Furthermore, traditional ML models are highly susceptible to adversarial manipulations, making them increasingly unreliable for real-world deployment. Quantum ML (QML) provides a unique advantage, utilizing quantum-enhanced feature representations to model the intricacies of the high-dimensional nature of smart grid systems while demonstrating greater resilience to adversarial manipulation. In this work, we propose QUPID, a partitioned quantum neural network (PQNN) that outperforms traditional state-of-the-art ML models in anomaly detection. We extend our model to R-QUPID that even maintains its performance when including differential privacy (DP) for enhanced robustness. Moreover, our partitioning framework addresses a significant scalability problem in QML by efficiently distributing computational workloads, making quantum-enhanced anomaly detection practical in large-scale smart grid environments. Our experimental results across various scenarios exemplifies the efficacy of QUPID and R-QUPID to significantly improve anomaly detection capabilities and robustness compared to traditional ML approaches."
+  },
+  {
+    "title": "The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents",
+    "url": "http://arxiv.org/abs/2601.11496v1",
+    "arxiv_id": "2601.11496v1",
+    "authors": [
+      "Eilam Shapira",
+      "Roi Reichart",
+      "Moshe Tennenholtz"
+    ],
+    "published": "2026-01-16T18:18:03+00:00",
+    "summary": "The integration of AI agents into economic markets fundamentally alters the landscape of strategic interaction. We investigate the economic implications of expanding the set of available technologies in three canonical game-theoretic settings: bargaining (resource division), negotiation (asymmetric information trade), and persuasion (strategic information transmission). We find that simply increasing the choice of AI delegates can drastically shift equilibrium payoffs and regulatory outcomes, often creating incentives for regulators to proactively develop and release technologies. Conversely, we identify a strategic phenomenon termed the \"Poisoned Apple\" effect: an agent may release a new technology, which neither they nor their opponent ultimately uses, solely to manipulate the regulator's choice of market design in their favor. This strategic release improves the releaser's welfare at the expense of their opponent and the regulator's fairness objectives. Our findings demonstrate that static regulatory frameworks are vulnerable to manipulation via technology expansion, necessitating dynamic market designs that adapt to the evolving landscape of AI capabilities."
+  },
+  {
     "title": "MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching",
     "url": "http://arxiv.org/abs/2601.10712v1",
     "arxiv_id": "2601.10712v1",
