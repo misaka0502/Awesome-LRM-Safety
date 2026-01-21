@@ -1,5 +1,75 @@
 [
   {
+    "title": "Jet-RL: Enabling On-Policy FP8 Reinforcement Learning with Unified Training and Rollout Precision Flow",
+    "url": "http://arxiv.org/abs/2601.14243v1",
+    "arxiv_id": "2601.14243v1",
+    "authors": [
+      "Haocheng Xi",
+      "Charlie Ruan",
+      "Peiyuan Liao",
+      "Yujun Lin",
+      "Han Cai",
+      "Yilong Zhao",
+      "Shuo Yang",
+      "Kurt Keutzer",
+      "Song Han",
+      "Ligeng Zhu"
+    ],
+    "published": "2026-01-20T18:54:31+00:00",
+    "summary": "Reinforcement learning (RL) is essential for enhancing the complex reasoning capabilities of large language models (LLMs). However, existing RL training pipelines are computationally inefficient and resource-intensive, with the rollout phase accounting for over 70% of total training time. Quantized RL training, particularly using FP8 precision, offers a promising approach to mitigating this bottleneck. A commonly adopted strategy applies FP8 precision during rollout while retaining BF16 precision for training. In this work, we present the first comprehensive study of FP8 RL training and demonstrate that the widely used BF16-training + FP8-rollout strategy suffers from severe training instability and catastrophic accuracy collapse under long-horizon rollouts and challenging tasks. Our analysis shows that these failures stem from the off-policy nature of the approach, which introduces substantial numerical mismatch between training and inference. Motivated by these observations, we propose Jet-RL, an FP8 RL training framework that enables robust and stable RL optimization. The key idea is to adopt a unified FP8 precision flow for both training and rollout, thereby minimizing numerical discrepancies and eliminating the need for inefficient inter-step calibration. Extensive experiments validate the effectiveness of Jet-RL: our method achieves up to 33% speedup in the rollout phase, up to 41% speedup in the training phase, and a 16% end-to-end speedup over BF16 training, while maintaining stable convergence across all settings and incurring negligible accuracy degradation."
+  },
+  {
+    "title": "Spatiotemporal Wildfire Prediction and Reinforcement Learning for Helitack Suppression",
+    "url": "http://arxiv.org/abs/2601.14238v1",
+    "arxiv_id": "2601.14238v1",
+    "authors": [
+      "Shaurya Mathur",
+      "Shreyas Bellary Manjunath",
+      "Nitin Kulkarni",
+      "Alina Vereshchaka"
+    ],
+    "published": "2026-01-20T18:50:12+00:00",
+    "summary": "Wildfires are growing in frequency and intensity, devastating ecosystems and communities while causing billions of dollars in suppression costs and economic damage annually in the U.S. Traditional wildfire management is mostly reactive, addressing fires only after they are detected. We introduce \\textit{FireCastRL}, a proactive artificial intelligence (AI) framework that combines wildfire forecasting with intelligent suppression strategies. Our framework first uses a deep spatiotemporal model to predict wildfire ignition. For high-risk predictions, we deploy a pre-trained reinforcement learning (RL) agent to execute real-time suppression tactics with helitack units inside a physics-informed 3D simulation. The framework generates a threat assessment report to help emergency responders optimize resource allocation and planning. In addition, we are publicly releasing a large-scale, spatiotemporal dataset containing $\\mathbf{9.5}$ million samples of environmental variables for wildfire prediction. Our work demonstrates how deep learning and RL can be combined to support both forecasting and tactical wildfire response. More details can be found at https://sites.google.com/view/firecastrl."
+  },
+  {
+    "title": "Q-learning with Adjoint Matching",
+    "url": "http://arxiv.org/abs/2601.14234v1",
+    "arxiv_id": "2601.14234v1",
+    "authors": [
+      "Qiyang Li",
+      "Sergey Levine"
+    ],
+    "published": "2026-01-20T18:45:34+00:00",
+    "summary": "We propose Q-learning with Adjoint Matching (QAM), a novel TD-based reinforcement learning (RL) algorithm that tackles a long-standing challenge in continuous-action RL: efficient optimization of an expressive diffusion or flow-matching policy with respect to a parameterized Q-function. Effective optimization requires exploiting the first-order information of the critic, but it is challenging to do so for flow or diffusion policies because direct gradient-based optimization via backpropagation through their multi-step denoising process is numerically unstable. Existing methods work around this either by only using the value and discarding the gradient information, or by relying on approximations that sacrifice policy expressivity or bias the learned policy. QAM sidesteps both of these challenges by leveraging adjoint matching, a recently proposed technique in generative modeling, which transforms the critic's action gradient to form a step-wise objective function that is free from unstable backpropagation, while providing an unbiased, expressive policy at the optimum. Combined with temporal-difference backup for critic learning, QAM consistently outperforms prior approaches on hard, sparse reward tasks in both offline and offline-to-online RL."
+  },
+  {
+    "title": "KAGE-Bench: Fast Known-Axis Visual Generalization Evaluation for Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2601.14232v1",
+    "arxiv_id": "2601.14232v1",
+    "authors": [
+      "Egor Cherepanov",
+      "Daniil Zelezetsky",
+      "Alexey K. Kovalev",
+      "Aleksandr I. Panov"
+    ],
+    "published": "2026-01-20T18:44:28+00:00",
+    "summary": "Pixel-based reinforcement learning agents often fail under purely visual distribution shift even when latent dynamics and rewards are unchanged, but existing benchmarks entangle multiple sources of shift and hinder systematic analysis. We introduce KAGE-Env, a JAX-native 2D platformer that factorizes the observation process into independently controllable visual axes while keeping the underlying control problem fixed. By construction, varying a visual axis affects performance only through the induced state-conditional action distribution of a pixel policy, providing a clean abstraction for visual generalization. Building on this environment, we define KAGE-Bench, a benchmark of six known-axis suites comprising 34 train-evaluation configuration pairs that isolate individual visual shifts. Using a standard PPO-CNN baseline, we observe strong axis-dependent failures, with background and photometric shifts often collapsing success, while agent-appearance shifts are comparatively benign. Several shifts preserve forward motion while breaking task completion, showing that return alone can obscure generalization failures. Finally, the fully vectorized JAX implementation enables up to 33M environment steps per second on a single GPU, enabling fast and reproducible sweeps over visual factors. Code: https://avanturist322.github.io/KAGEBench/."
+  },
+  {
+    "title": "Attention-Based Offline Reinforcement Learning and Clustering for Interpretable Sepsis Treatment",
+    "url": "http://arxiv.org/abs/2601.14228v1",
+    "arxiv_id": "2601.14228v1",
+    "authors": [
+      "Punit Kumar",
+      "Vaibhav Saran",
+      "Divyesh Patel",
+      "Nitin Kulkarni",
+      "Alina Vereshchaka"
+    ],
+    "published": "2026-01-20T18:41:44+00:00",
+    "summary": "Sepsis remains one of the leading causes of mortality in intensive care units, where timely and accurate treatment decisions can significantly impact patient outcomes. In this work, we propose an interpretable decision support framework. Our system integrates four core components: (1) a clustering-based stratification module that categorizes patients into low, intermediate, and high-risk groups upon ICU admission, using clustering with statistical validation; (2) a synthetic data augmentation pipeline leveraging variational autoencoders (VAE) and diffusion models to enrich underrepresented trajectories such as fluid or vasopressor administration; (3) an offline reinforcement learning (RL) agent trained using Advantage Weighted Regression (AWR) with a lightweight attention encoder and supported by an ensemble models for conservative, safety-aware treatment recommendations; and (4) a rationale generation module powered by a multi-modal large language model (LLM), which produces natural-language justifications grounded in clinical context and retrieved expert knowledge. Evaluated on the MIMIC-III and eICU datasets, our approach achieves high treatment accuracy while providing clinicians with interpretable and robust policy recommendations."
+  },
+  {
     "title": "Motion-to-Response Content Generation via Multi-Agent AI System with Real-Time Safety Verification",
     "url": "http://arxiv.org/abs/2601.13589v1",
     "arxiv_id": "2601.13589v1",
