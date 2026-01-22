@@ -1,5 +1,83 @@
 [
   {
+    "title": "Iterative Refinement Improves Compositional Image Generation",
+    "url": "http://arxiv.org/abs/2601.15286v1",
+    "arxiv_id": "2601.15286v1",
+    "authors": [
+      "Shantanu Jaiswal",
+      "Mihir Prabhudesai",
+      "Nikash Bhardwaj",
+      "Zheyang Qin",
+      "Amir Zadeh",
+      "Chuan Li",
+      "Katerina Fragkiadaki",
+      "Deepak Pathak"
+    ],
+    "published": "2026-01-21T18:59:40+00:00",
+    "summary": "Text-to-image (T2I) models have achieved remarkable progress, yet they continue to struggle with complex prompts that require simultaneously handling multiple objects, relations, and attributes. Existing inference-time strategies, such as parallel sampling with verifiers or simply increasing denoising steps, can improve prompt alignment but remain inadequate for richly compositional settings where many constraints must be satisfied. Inspired by the success of chain-of-thought reasoning in large language models, we propose an iterative test-time strategy in which a T2I model progressively refines its generations across multiple steps, guided by feedback from a vision-language model as the critic in the loop. Our approach is simple, requires no external tools or priors, and can be flexibly applied to a wide range of image generators and vision-language models. Empirically, we demonstrate consistent gains on image generation across benchmarks: a 16.9% improvement in all-correct rate on ConceptMix (k=7), a 13.8% improvement on T2I-CompBench (3D-Spatial category) and a 12.5% improvement on Visual Jenga scene decomposition compared to compute-matched parallel sampling. Beyond quantitative gains, iterative refinement produces more faithful generations by decomposing complex prompts into sequential corrections, with human evaluators preferring our method 58.7% of the time over 41.3% for the parallel baseline. Together, these findings highlight iterative self-correction as a broadly applicable principle for compositional image generation. Results and visualizations are available at https://iterative-img-gen.github.io/"
+  },
+  {
+    "title": "Walk through Paintings: Egocentric World Models from Internet Priors",
+    "url": "http://arxiv.org/abs/2601.15284v1",
+    "arxiv_id": "2601.15284v1",
+    "authors": [
+      "Anurag Bagchi",
+      "Zhipeng Bao",
+      "Homanga Bharadhwaj",
+      "Yu-Xiong Wang",
+      "Pavel Tokmakov",
+      "Martial Hebert"
+    ],
+    "published": "2026-01-21T18:59:32+00:00",
+    "summary": "What if a video generation model could not only imagine a plausible future, but the correct one, accurately reflecting how the world changes with each action? We address this question by presenting the Egocentric World Model (EgoWM), a simple, architecture-agnostic method that transforms any pretrained video diffusion model into an action-conditioned world model, enabling controllable future prediction. Rather than training from scratch, we repurpose the rich world priors of Internet-scale video models and inject motor commands through lightweight conditioning layers. This allows the model to follow actions faithfully while preserving realism and strong generalization. Our approach scales naturally across embodiments and action spaces, ranging from 3-DoF mobile robots to 25-DoF humanoids, where predicting egocentric joint-angle-driven dynamics is substantially more challenging. The model produces coherent rollouts for both navigation and manipulation tasks, requiring only modest fine-tuning. To evaluate physical correctness independently of visual appearance, we introduce the Structural Consistency Score (SCS), which measures whether stable scene elements evolve consistently with the provided actions. EgoWM improves SCS by up to 80 percent over prior state-of-the-art navigation world models, while achieving up to six times lower inference latency and robust generalization to unseen environments, including navigation inside paintings."
+  },
+  {
+    "title": "LuxRemix: Lighting Decomposition and Remixing for Indoor Scenes",
+    "url": "http://arxiv.org/abs/2601.15283v1",
+    "arxiv_id": "2601.15283v1",
+    "authors": [
+      "Ruofan Liang",
+      "Norman M\u00fcller",
+      "Ethan Weber",
+      "Duncan Zauss",
+      "Nandita Vijaykumar",
+      "Peter Kontschieder",
+      "Christian Richardt"
+    ],
+    "published": "2026-01-21T18:59:22+00:00",
+    "summary": "We present a novel approach for interactive light editing in indoor scenes from a single multi-view scene capture. Our method leverages a generative image-based light decomposition model that factorizes complex indoor scene illumination into its constituent light sources. This factorization enables independent manipulation of individual light sources, specifically allowing control over their state (on/off), chromaticity, and intensity. We further introduce multi-view lighting harmonization to ensure consistent propagation of the lighting decomposition across all scene views. This is integrated into a relightable 3D Gaussian splatting representation, providing real-time interactive control over the individual light sources. Our results demonstrate highly photorealistic lighting decomposition and relighting outcomes across diverse indoor scenes. We evaluate our method on both synthetic and real-world datasets and provide a quantitative and qualitative comparison to state-of-the-art techniques. For video results and interactive demos, see https://luxremix.github.io."
+  },
+  {
+    "title": "Rethinking Video Generation Model for the Embodied World",
+    "url": "http://arxiv.org/abs/2601.15282v1",
+    "arxiv_id": "2601.15282v1",
+    "authors": [
+      "Yufan Deng",
+      "Zilin Pan",
+      "Hongyu Zhang",
+      "Xiaojie Li",
+      "Ruoqing Hu",
+      "Yufei Ding",
+      "Yiming Zou",
+      "Yan Zeng",
+      "Daquan Zhou"
+    ],
+    "published": "2026-01-21T18:59:18+00:00",
+    "summary": "Video generation models have significantly advanced embodied intelligence, unlocking new possibilities for generating diverse robot data that capture perception, reasoning, and action in the physical world. However, synthesizing high-quality videos that accurately reflect real-world robotic interactions remains challenging, and the lack of a standardized benchmark limits fair comparisons and progress. To address this gap, we introduce a comprehensive robotics benchmark, RBench, designed to evaluate robot-oriented video generation across five task domains and four distinct embodiments. It assesses both task-level correctness and visual fidelity through reproducible sub-metrics, including structural consistency, physical plausibility, and action completeness. Evaluation of 25 representative models highlights significant deficiencies in generating physically realistic robot behaviors. Furthermore, the benchmark achieves a Spearman correlation coefficient of 0.96 with human evaluations, validating its effectiveness. While RBench provides the necessary lens to identify these deficiencies, achieving physical realism requires moving beyond evaluation to address the critical shortage of high-quality training data. Driven by these insights, we introduce a refined four-stage data pipeline, resulting in RoVid-X, the largest open-source robotic dataset for video generation with 4 million annotated video clips, covering thousands of tasks and enriched with comprehensive physical property annotations. Collectively, this synergistic ecosystem of evaluation and data establishes a robust foundation for rigorous assessment and scalable training of video models, accelerating the evolution of embodied AI toward general intelligence."
+  },
+  {
+    "title": "Robust Fake News Detection using Large Language Models under Adversarial Sentiment Attacks",
+    "url": "http://arxiv.org/abs/2601.15277v1",
+    "arxiv_id": "2601.15277v1",
+    "authors": [
+      "Sahar Tahmasebi",
+      "Eric M\u00fcller-Budack",
+      "Ralph Ewerth"
+    ],
+    "published": "2026-01-21T18:56:49+00:00",
+    "summary": "Misinformation and fake news have become a pressing societal challenge, driving the need for reliable automated detection methods. Prior research has highlighted sentiment as an important signal in fake news detection, either by analyzing which sentiments are associated with fake news or by using sentiment and emotion features for classification. However, this poses a vulnerability since adversaries can manipulate sentiment to evade detectors especially with the advent of large language models (LLMs). A few studies have explored adversarial samples generated by LLMs, but they mainly focus on stylistic features such as writing style of news publishers. Thus, the crucial vulnerability of sentiment manipulation remains largely unexplored. In this paper, we investigate the robustness of state-of-the-art fake news detectors under sentiment manipulation. We introduce AdSent, a sentiment-robust detection framework designed to ensure consistent veracity predictions across both original and sentiment-altered news articles. Specifically, we (1) propose controlled sentiment-based adversarial attacks using LLMs, (2) analyze the impact of sentiment shifts on detection performance. We show that changing the sentiment heavily impacts the performance of fake news detection models, indicating biases towards neutral articles being real, while non-neutral articles are often classified as fake content. (3) We introduce a novel sentiment-agnostic training strategy that enhances robustness against such perturbations. Extensive experiments on three benchmark datasets demonstrate that AdSent significantly outperforms competitive baselines in both accuracy and robustness, while also generalizing effectively to unseen datasets and adversarial scenarios."
+  },
+  {
     "title": "Jet-RL: Enabling On-Policy FP8 Reinforcement Learning with Unified Training and Rollout Precision Flow",
     "url": "http://arxiv.org/abs/2601.14243v1",
     "arxiv_id": "2601.14243v1",
