@@ -1,5 +1,85 @@
 [
   {
+    "title": "Point Bridge: 3D Representations for Cross Domain Policy Learning",
+    "url": "http://arxiv.org/abs/2601.16212v1",
+    "arxiv_id": "2601.16212v1",
+    "authors": [
+      "Siddhant Haldar",
+      "Lars Johannsmeier",
+      "Lerrel Pinto",
+      "Abhishek Gupta",
+      "Dieter Fox",
+      "Yashraj Narang",
+      "Ajay Mandlekar"
+    ],
+    "published": "2026-01-22T18:59:24+00:00",
+    "summary": "Robot foundation models are beginning to deliver on the promise of generalist robotic agents, yet progress remains constrained by the scarcity of large-scale real-world manipulation datasets. Simulation and synthetic data generation offer a scalable alternative, but their usefulness is limited by the visual domain gap between simulation and reality. In this work, we present Point Bridge, a framework that leverages unified, domain-agnostic point-based representations to unlock synthetic datasets for zero-shot sim-to-real policy transfer, without explicit visual or object-level alignment. Point Bridge combines automated point-based representation extraction via Vision-Language Models (VLMs), transformer-based policy learning, and efficient inference-time pipelines to train capable real-world manipulation agents using only synthetic data. With additional co-training on small sets of real demonstrations, Point Bridge further improves performance, substantially outperforming prior vision-based sim-and-real co-training methods. It achieves up to 44% gains in zero-shot sim-to-real transfer and up to 66% with limited real data across both single-task and multitask settings. Videos of the robot are best viewed at: https://pointbridge3d.github.io/"
+  },
+  {
+    "title": "IVRA: Improving Visual-Token Relations for Robot Action Policy with Training-Free Hint-Based Guidance",
+    "url": "http://arxiv.org/abs/2601.16207v1",
+    "arxiv_id": "2601.16207v1",
+    "authors": [
+      "Jongwoo Park",
+      "Kanchana Ranasinghe",
+      "Jinhyeok Jang",
+      "Cristina Mata",
+      "Yoo Sung Jang",
+      "Michael S Ryoo"
+    ],
+    "published": "2026-01-22T18:57:13+00:00",
+    "summary": "Many Vision-Language-Action (VLA) models flatten image patches into a 1D token sequence, weakening the 2D spatial cues needed for precise manipulation. We introduce IVRA, a lightweight, training-free method that improves spatial understanding by exploiting affinity hints already available in the model's built-in vision encoder, without requiring any external encoder or retraining. IVRA selectively injects these affinity signals into a language-model layer in which instance-level features reside. This inference-time intervention realigns visual-token interactions and better preserves geometric structure while keeping all model parameters fixed. We demonstrate the generality of IVRA by applying it to diverse VLA architectures (LLaRA, OpenVLA, and FLOWER) across simulated benchmarks spanning both 2D and 3D manipulation (VIMA and LIBERO) and on various real-robot tasks. On 2D VIMA, IVRA improves average success by +4.2% over the baseline LLaRA in a low-data regime. On 3D LIBERO, it yields consistent gains over the OpenVLA and FLOWER baselines, including improvements when baseline accuracy is near saturation (96.3% to 97.1%). All code and models will be released publicly. Visualizations are available at: jongwoopark7978.github.io/IVRA"
+  },
+  {
+    "title": "LLM-in-Sandbox Elicits General Agentic Intelligence",
+    "url": "http://arxiv.org/abs/2601.16206v1",
+    "arxiv_id": "2601.16206v1",
+    "authors": [
+      "Daixuan Cheng",
+      "Shaohan Huang",
+      "Yuxian Gu",
+      "Huatong Song",
+      "Guoxin Chen",
+      "Li Dong",
+      "Wayne Xin Zhao",
+      "Ji-Rong Wen",
+      "Furu Wei"
+    ],
+    "published": "2026-01-22T18:57:09+00:00",
+    "summary": "We introduce LLM-in-Sandbox, enabling LLMs to explore within a code sandbox (i.e., a virtual computer), to elicit general intelligence in non-code domains. We first demonstrate that strong LLMs, without additional training, exhibit generalization capabilities to leverage the code sandbox for non-code tasks. For example, LLMs spontaneously access external resources to acquire new knowledge, leverage the file system to handle long contexts, and execute scripts to satisfy formatting requirements. We further show that these agentic capabilities can be enhanced through LLM-in-Sandbox Reinforcement Learning (LLM-in-Sandbox-RL), which uses only non-agentic data to train models for sandbox exploration. Experiments demonstrate that LLM-in-Sandbox, in both training-free and post-trained settings, achieves robust generalization spanning mathematics, physics, chemistry, biomedicine, long-context understanding, and instruction following. Finally, we analyze LLM-in-Sandbox's efficiency from computational and system perspectives, and open-source it as a Python package to facilitate real-world deployment."
+  },
+  {
+    "title": "Stochastic Control Barrier Functions under State Estimation: From Euclidean Space to Lie Groups",
+    "url": "http://arxiv.org/abs/2601.16198v1",
+    "arxiv_id": "2601.16198v1",
+    "authors": [
+      "Ruoyu Lin",
+      "Magnus Egerstedt"
+    ],
+    "published": "2026-01-22T18:50:59+00:00",
+    "summary": "Ensuring safety for autonomous systems under uncertainty remains challenging, particularly when safety of the true state is required despite the true state not being fully known. Control barrier functions (CBFs) have become widely adopted as safety filters. However, standard CBF formulations do not explicitly account for state estimation uncertainty and its propagation, especially for stochastic systems evolving on manifolds. In this paper, we propose a safety-critical control framework with a provable bound on the finite-time safety probability for stochastic systems under noisy state information. The proposed framework explicitly incorporates the uncertainty arising from both process and measurement noise, and synthesizes controllers that adapt to the level of uncertainty. The framework admits closed-form solutions in linear settings, and experimental results demonstrate its effectiveness on systems whose state spaces range from Euclidean space to Lie groups."
+  },
+  {
+    "title": "Learning to Discover at Test Time",
+    "url": "http://arxiv.org/abs/2601.16175v1",
+    "arxiv_id": "2601.16175v1",
+    "authors": [
+      "Mert Yuksekgonul",
+      "Daniel Koceja",
+      "Xinhao Li",
+      "Federico Bianchi",
+      "Jed McCaleb",
+      "Xiaolong Wang",
+      "Jan Kautz",
+      "Yejin Choi",
+      "James Zou",
+      "Carlos Guestrin",
+      "Yu Sun"
+    ],
+    "published": "2026-01-22T18:24:00+00:00",
+    "summary": "How can we use AI to discover a new state of the art for a scientific problem? Prior work in test-time scaling, such as AlphaEvolve, performs search by prompting a frozen LLM. We perform reinforcement learning at test time, so the LLM can continue to train, but now with experience specific to the test problem. This form of continual learning is quite special, because its goal is to produce one great solution rather than many good ones on average, and to solve this very problem rather than generalize to other problems. Therefore, our learning objective and search subroutine are designed to prioritize the most promising solutions. We call this method Test-Time Training to Discover (TTT-Discover). Following prior work, we focus on problems with continuous rewards. We report results for every problem we attempted, across mathematics, GPU kernel engineering, algorithm design, and biology. TTT-Discover sets the new state of the art in almost all of them: (i) Erd\u0151s' minimum overlap problem and an autocorrelation inequality; (ii) a GPUMode kernel competition (up to $2\\times$ faster than prior art); (iii) past AtCoder algorithm competitions; and (iv) denoising problem in single-cell analysis. Our solutions are reviewed by experts or the organizers. All our results are achieved with an open model, OpenAI gpt-oss-120b, and can be reproduced with our publicly available code, in contrast to previous best results that required closed frontier models. Our test-time training runs are performed using Tinker, an API by Thinking Machines, with a cost of only a few hundred dollars per problem."
+  },
+  {
     "title": "Iterative Refinement Improves Compositional Image Generation",
     "url": "http://arxiv.org/abs/2601.15286v1",
     "arxiv_id": "2601.15286v1",
