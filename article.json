@@ -1,5 +1,81 @@
 [
   {
+    "title": "AnyView: Synthesizing Any Novel View in Dynamic Scenes",
+    "url": "http://arxiv.org/abs/2601.16982v1",
+    "arxiv_id": "2601.16982v1",
+    "authors": [
+      "Basile Van Hoorick",
+      "Dian Chen",
+      "Shun Iwase",
+      "Pavel Tokmakov",
+      "Muhammad Zubair Irshad",
+      "Igor Vasiljevic",
+      "Swati Gupta",
+      "Fangzhou Cheng",
+      "Sergey Zakharov",
+      "Vitor Campagnolo Guizilini"
+    ],
+    "published": "2026-01-23T18:59:58+00:00",
+    "summary": "Modern generative video models excel at producing convincing, high-quality outputs, but struggle to maintain multi-view and spatiotemporal consistency in highly dynamic real-world environments. In this work, we introduce \\textbf{AnyView}, a diffusion-based video generation framework for \\emph{dynamic view synthesis} with minimal inductive biases or geometric assumptions. We leverage multiple data sources with various levels of supervision, including monocular (2D), multi-view static (3D) and multi-view dynamic (4D) datasets, to train a generalist spatiotemporal implicit representation capable of producing zero-shot novel videos from arbitrary camera locations and trajectories. We evaluate AnyView on standard benchmarks, showing competitive results with the current state of the art, and propose \\textbf{AnyViewBench}, a challenging new benchmark tailored towards \\emph{extreme} dynamic view synthesis in diverse real-world scenarios. In this more dramatic setting, we find that most baselines drastically degrade in performance, as they require significant overlap between viewpoints, while AnyView maintains the ability to produce realistic, plausible, and spatiotemporally consistent videos when prompted from \\emph{any} viewpoint. Results, data, code, and models can be viewed at: https://tri-ml.github.io/AnyView/"
+  },
+  {
+    "title": "Tunable Edelstein effect in intrinsic two-dimensional ferroelectric metal PtBi$_{2}$",
+    "url": "http://arxiv.org/abs/2601.16980v1",
+    "arxiv_id": "2601.16980v1",
+    "authors": [
+      "Weiyi Pan",
+      "Jaroslav Fabian"
+    ],
+    "published": "2026-01-23T18:59:46+00:00",
+    "summary": "The Edelstein effect, which enables charge-to-spin conversion and is therefore highly promising for future spintronic devices, can be realized and non-volatilely manipulated in ferroelectric materials owing to their broken inversion symmetry and switchable polarization states. To date, most ferroelectric systems reported to exhibit the Edelstein effect are semiconductors, requiring extrinsic doping for functionality. In contrast, the Edelstein effect has rarely been reported in metallic ferroelectric systems, where doping is unnecessary. Using first-principles calculations, we predict that a pronounced Edelstein effect can be realized in the recently proposed intrinsic two-dimensional ferroelectric metal PtBi$_{2}$ monolayer, where the sign of the Edelstein coefficient is coupled to the direction of ferroelectric polarization through the polarization-switching-induced reversal of spin textures, thereby enabling non-volatile control of charge-spin conversion. The Edelstein effect reaches a magnitude of $10^{11}~\\hbar/(\\textup{A} \\cdot \\textup{cm})$, which is sizable compared to previously reported ferroelectric systems. Microscopically, the Edelstein effect in a PtBi$_2$ monolayer originates from competing contributions of inner Rashba-like electron pockets and outer hole pockets with opposite signs; an upward shift of the Fermi level alters their balance and can reverse the sign of the Edelstein effect. Upon applying biaxial strain, the Fermi-surface electronic structure is strongly modified, resulting in a pronounced change of the Edelstein effect: a 2 \\% compressive strain suppresses the Edelstein effect by about 50 \\%. Our results not only identify a promising material platform for tunable charge-spin conversion but also provide new insights into the functional potential of metallic ferroelectric systems."
+  },
+  {
+    "title": "VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents",
+    "url": "http://arxiv.org/abs/2601.16973v1",
+    "arxiv_id": "2601.16973v1",
+    "authors": [
+      "Zirui Wang",
+      "Junyi Zhang",
+      "Jiaxin Ge",
+      "Long Lian",
+      "Letian Fu",
+      "Lisa Dunlap",
+      "Ken Goldberg",
+      "XuDong Wang",
+      "Ion Stoica",
+      "David M. Chan",
+      "Sewon Min",
+      "Joseph E. Gonzalez"
+    ],
+    "published": "2026-01-23T18:43:34+00:00",
+    "summary": "Modern Vision-Language Models (VLMs) remain poorly characterized in multi-step visual interactions, particularly in how they integrate perception, memory, and action over long horizons. We introduce VisGym, a gymnasium of 17 environments for evaluating and training VLMs. The suite spans symbolic puzzles, real-image understanding, navigation, and manipulation, and provides flexible controls over difficulty, input representation, planning horizon, and feedback. We also provide multi-step solvers that generate structured demonstrations, enabling supervised finetuning. Our evaluations show that all frontier models struggle in interactive settings, achieving low success rates in both the easy (46.6%) and hard (26.0%) configurations. Our experiments reveal notable limitations: models struggle to effectively leverage long context, performing worse with an unbounded history than with truncated windows. Furthermore, we find that several text-based symbolic tasks become substantially harder once rendered visually. However, explicit goal observations, textual feedback, and exploratory demonstrations in partially observable or unknown-dynamics settings for supervised finetuning yield consistent gains, highlighting concrete failure modes and pathways for improving multi-step visual decision-making. Code, data, and models can be found at: https://visgym.github.io/."
+  },
+  {
+    "title": "Autonomous Optical Alignment of Satellite-Based Entanglement Sources using Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2601.16968v1",
+    "arxiv_id": "2601.16968v1",
+    "authors": [
+      "Andrzej Gajewski",
+      "Robert Oku\u0142a",
+      "Marcin Paw\u0142owski",
+      "Akshata Shenoy H"
+    ],
+    "published": "2026-01-23T18:41:06+00:00",
+    "summary": "Quantum entanglement distributed via satellites enable global-scale quantum communication. However, onboard sources are susceptible to misalignment due to dynamical orbital conditions. Here, we present two recalibration techniques for efficient generation of high quality entanglement using a periodically poled lithium niobate (PPLN)-based spontaneous parametric down-conversion (SPDC) source with minimum intervention. The first is a heuristic algorithm (HA) which mimics the manual alignment process in a laboratory. The second is based on reinforcement learning (RL). Our simulation demonstrates superior performance of RL with AUC=0.9119 compared to HA's 0.7042 in the modified ROC analysis (60 min threshold). RL achieves perfect alignment in 10 min as opposed to HA's 30 min. Both the methods operate within feasible satellite constraints, offering scalable automation for complex quantum communication scenarios."
+  },
+  {
+    "title": "AgentDrive: An Open Benchmark Dataset for Agentic AI Reasoning with LLM-Generated Scenarios in Autonomous Systems",
+    "url": "http://arxiv.org/abs/2601.16964v1",
+    "arxiv_id": "2601.16964v1",
+    "authors": [
+      "Mohamed Amine Ferrag",
+      "Abderrahmane Lakas",
+      "Merouane Debbah"
+    ],
+    "published": "2026-01-23T18:33:41+00:00",
+    "summary": "The rapid advancement of large language models (LLMs) has sparked growing interest in their integration into autonomous systems for reasoning-driven perception, planning, and decision-making. However, evaluating and training such agentic AI models remains challenging due to the lack of large-scale, structured, and safety-critical benchmarks. This paper introduces AgentDrive, an open benchmark dataset containing 300,000 LLM-generated driving scenarios designed for training, fine-tuning, and evaluating autonomous agents under diverse conditions. AgentDrive formalizes a factorized scenario space across seven orthogonal axes: scenario type, driver behavior, environment, road layout, objective, difficulty, and traffic density. An LLM-driven prompt-to-JSON pipeline generates semantically rich, simulation-ready specifications that are validated against physical and schema constraints. Each scenario undergoes simulation rollouts, surrogate safety metric computation, and rule-based outcome labeling. To complement simulation-based evaluation, we introduce AgentDrive-MCQ, a 100,000-question multiple-choice benchmark spanning five reasoning dimensions: physics, policy, hybrid, scenario, and comparative reasoning. We conduct a large-scale evaluation of fifty leading LLMs on AgentDrive-MCQ. Results show that while proprietary frontier models perform best in contextual and policy reasoning, advanced open models are rapidly closing the gap in structured and physics-grounded reasoning. We release the AgentDrive dataset, AgentDrive-MCQ benchmark, evaluation code, and related materials at https://github.com/maferrag/AgentDrive"
+  },
+  {
     "title": "Point Bridge: 3D Representations for Cross Domain Policy Learning",
     "url": "http://arxiv.org/abs/2601.16212v1",
     "arxiv_id": "2601.16212v1",
