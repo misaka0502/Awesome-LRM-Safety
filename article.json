@@ -1,5 +1,72 @@
 [
   {
+    "title": "On-chip control of the coherence matrix of four-mode partially coherent light: rank, entropy, and modal Stokes parameters",
+    "url": "http://arxiv.org/abs/2601.18797v1",
+    "arxiv_id": "2601.18797v1",
+    "authors": [
+      "Amin Hashemi",
+      "Abbas Shiri",
+      "Bahaa E. A. Saleh",
+      "Andrea Blanco-Redondo",
+      "Ayman F. Abouraddy"
+    ],
+    "published": "2026-01-26T18:59:48+00:00",
+    "summary": "Partially coherent light offers salutary capabilities in optical information processing that cannot be matched by coherent light. To date, this `coherence advantage' has been confirmed in proof-of-principle optical communications protocols using bulk optics. Taking full advantage of such opportunities necessitates processing multimode partially coherent light in integrated photonics platforms that alone provide the requisite stability for cascaded operations on a large scale. Here we demonstrate on-chip manipulation of four-mode partially coherent light described by a $4\\times4$ Hermitian coherence matrix. Starting with generic maximally incoherent light, we utilize an on-chip hexagonal mesh of Mach-Zehnder interferometers to perform all the unitary and non-unitary tasks that are critical for realizing structured coherence: controlling the coherence rank (the number of non-zero eigenvalues of the coherence matrix); tuning the field entropy; molding the structure of the coherence matrix via $4\\times4$ unitary transformations constructed out of sequences of $2\\times2$ unitaries acting on pairs of modes; and tomographic reconstruction of the coherence matrix by measuring the modal Stokes parameters associated with Kronecker Pauli matrices. These results confirm the scalability of utilizing $2\\times2$ on-chip building blocks for the synthesis and reconstruction of high-dimensional coherence matrices, and provide a decisive step towards large-scale on-chip manipulation of massively moded partially coherent light for applications in optical information processing."
+  },
+  {
+    "title": "ctELM: Decoding and Manipulating Embeddings of Clinical Trials with Embedding Language Models",
+    "url": "http://arxiv.org/abs/2601.18796v1",
+    "arxiv_id": "2601.18796v1",
+    "authors": [
+      "Brian Ondov",
+      "Chia-Hsuan Chang",
+      "Yujia Zhou",
+      "Mauro Giuffr\u00e8",
+      "Hua Xu"
+    ],
+    "published": "2026-01-26T18:58:46+00:00",
+    "summary": "Text embeddings have become an essential part of a variety of language applications. However, methods for interpreting, exploring and reversing embedding spaces are limited, reducing transparency and precluding potentially valuable generative use cases. In this work, we align Large Language Models to embeddings of clinical trials using the recently reported Embedding Language Model (ELM) method. We develop an open-source, domain-agnostic ELM architecture and training framework, design training tasks for clinical trials, and introduce an expert-validated synthetic dataset. We then train a series of ELMs exploring the impact of tasks and training regimes. Our final model, ctELM, can accurately describe and compare unseen clinical trials from embeddings alone and produce plausible clinical trials from novel vectors. We further show that generated trial abstracts are responsive to moving embeddings along concept vectors for age and sex of study subjects. Our public ELM implementation and experimental results will aid the alignment of Large Language Models to embedding spaces in the biomedical domain and beyond."
+  },
+  {
+    "title": "Reuse your FLOPs: Scaling RL on Hard Problems by Conditioning on Very Off-Policy Prefixes",
+    "url": "http://arxiv.org/abs/2601.18795v1",
+    "arxiv_id": "2601.18795v1",
+    "authors": [
+      "Amrith Setlur",
+      "Zijian Wang",
+      "Andrew Cohen",
+      "Paria Rashidinejad",
+      "Sang Michael Xie"
+    ],
+    "published": "2026-01-26T18:57:00+00:00",
+    "summary": "Typical reinforcement learning (RL) methods for LLM reasoning waste compute on hard problems, where correct on-policy traces are rare, policy gradients vanish, and learning stalls. To bootstrap more efficient RL, we consider reusing old sampling FLOPs (from prior inference or RL training) in the form of off-policy traces. Standard off-policy methods supervise against off-policy data, causing instabilities during RL optimization. We introduce PrefixRL, where we condition on the prefix of successful off-policy traces and run on-policy RL to complete them, side-stepping off-policy instabilities. PrefixRL boosts the learning signal on hard problems by modulating the difficulty of the problem through the off-policy prefix length. We prove that the PrefixRL objective is not only consistent with the standard RL objective but also more sample efficient. Empirically, we discover back-generalization: training only on prefixed problems generalizes to out-of-distribution unprefixed performance, with learned strategies often differing from those in the prefix. In our experiments, we source the off-policy traces by rejection sampling with the base model, creating a self-improvement loop. On hard reasoning problems, PrefixRL reaches the same training reward 2x faster than the strongest baseline (SFT on off-policy data then RL), even after accounting for the compute spent on the initial rejection sampling, and increases the final reward by 3x. The gains transfer to held-out benchmarks, and PrefixRL is still effective when off-policy traces are derived from a different model family, validating its flexibility in practical settings."
+  },
+  {
+    "title": "MortalMATH: Evaluating the Conflict Between Reasoning Objectives and Emergency Contexts",
+    "url": "http://arxiv.org/abs/2601.18790v1",
+    "arxiv_id": "2601.18790v1",
+    "authors": [
+      "Etienne Lanzeray",
+      "Stephane Meilliez",
+      "Malo Ruelle",
+      "Damien Sileo"
+    ],
+    "published": "2026-01-26T18:55:07+00:00",
+    "summary": "Large Language Models are increasingly optimized for deep reasoning, prioritizing the correct execution of complex tasks over general conversation. We investigate whether this focus on calculation creates a \"tunnel vision\" that ignores safety in critical situations. We introduce MortalMATH, a benchmark of 150 scenarios where users request algebra help while describing increasingly life-threatening emergencies (e.g., stroke symptoms, freefall). We find a sharp behavioral split: generalist models (like Llama-3.1) successfully refuse the math to address the danger. In contrast, specialized reasoning models (like Qwen-3-32b and GPT-5-nano) often ignore the emergency entirely, maintaining over 95 percent task completion rates while the user describes dying. Furthermore, the computational time required for reasoning introduces dangerous delays: up to 15 seconds before any potential help is offered. These results suggest that training models to relentlessly pursue correct answers may inadvertently unlearn the survival instincts required for safe deployment."
+  },
+  {
+    "title": "Multi-Objective Reinforcement Learning for Efficient Tactical Decision Making for Trucks in Highway Traffic",
+    "url": "http://arxiv.org/abs/2601.18783v1",
+    "arxiv_id": "2601.18783v1",
+    "authors": [
+      "Deepthi Pathare",
+      "Leo Laine",
+      "Morteza Haghir Chehreghani"
+    ],
+    "published": "2026-01-26T18:50:21+00:00",
+    "summary": "Balancing safety, efficiency, and operational costs in highway driving poses a challenging decision-making problem for heavy-duty vehicles. A central difficulty is that conventional scalar reward formulations, obtained by aggregating these competing objectives, often obscure the structure of their trade-offs. We present a Proximal Policy Optimization based multi-objective reinforcement learning framework that learns a continuous set of policies explicitly representing these trade-offs and evaluates it on a scalable simulation platform for tactical decision making in trucks. The proposed approach learns a continuous set of Pareto-optimal policies that capture the trade-offs among three conflicting objectives: safety, quantified in terms of collisions and successful completion; energy efficiency and time efficiency, quantified using energy cost and driver cost, respectively. The resulting Pareto frontier is smooth and interpretable, enabling flexibility in choosing driving behavior along different conflicting objectives. This framework allows seamless transitions between different driving policies without retraining, yielding a robust and adaptive decision-making strategy for autonomous trucking applications."
+  },
+  {
     "title": "AnyView: Synthesizing Any Novel View in Dynamic Scenes",
     "url": "http://arxiv.org/abs/2601.16982v1",
     "arxiv_id": "2601.16982v1",
