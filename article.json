@@ -1,5 +1,75 @@
 [
   {
+    "title": "Self-Distillation Enables Continual Learning",
+    "url": "http://arxiv.org/abs/2601.19897v1",
+    "arxiv_id": "2601.19897v1",
+    "authors": [
+      "Idan Shenfeld",
+      "Mehul Damani",
+      "Jonas H\u00fcbotter",
+      "Pulkit Agrawal"
+    ],
+    "published": "2026-01-27T18:59:08+00:00",
+    "summary": "Continual learning, enabling models to acquire new skills and knowledge without degrading existing capabilities, remains a fundamental challenge for foundation models. While on-policy reinforcement learning can reduce forgetting, it requires explicit reward functions that are often unavailable. Learning from expert demonstrations, the primary alternative, is dominated by supervised fine-tuning (SFT), which is inherently off-policy. We introduce Self-Distillation Fine-Tuning (SDFT), a simple method that enables on-policy learning directly from demonstrations. SDFT leverages in-context learning by using a demonstration-conditioned model as its own teacher, generating on-policy training signals that preserve prior capabilities while acquiring new skills. Across skill learning and knowledge acquisition tasks, SDFT consistently outperforms SFT, achieving higher new-task accuracy while substantially reducing catastrophic forgetting. In sequential learning experiments, SDFT enables a single model to accumulate multiple skills over time without performance regression, establishing on-policy distillation as a practical path to continual learning from demonstrations."
+  },
+  {
+    "title": "VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction",
+    "url": "http://arxiv.org/abs/2601.19887v1",
+    "arxiv_id": "2601.19887v1",
+    "authors": [
+      "Dominic Maggio",
+      "Luca Carlone"
+    ],
+    "published": "2026-01-27T18:54:29+00:00",
+    "summary": "We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT. Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics. Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures. Finally, we conduct a suite of experiments which includes showing VGGT-SLAM 2.0 can easily be adapted for open-set object detection and demonstrating real time performance while running online onboard a ground robot using a Jetson Thor. We also test in environments ranging from cluttered indoor apartments and office scenes to a 4,200 square foot barn, and we also demonstrate VGGT-SLAM 2.0 achieves the highest accuracy on the TUM dataset with about 23 percent less pose error than VGGT-SLAM. Code will be released upon publication."
+  },
+  {
+    "title": "Estimating Trust in Human-Robot Collaboration through Behavioral Indicators and Explainability",
+    "url": "http://arxiv.org/abs/2601.19856v1",
+    "arxiv_id": "2601.19856v1",
+    "authors": [
+      "Giulio Campagna",
+      "Marta Lagomarsino",
+      "Marta Lorenzini",
+      "Dimitrios Chrysostomou",
+      "Matthias Rehm",
+      "Arash Ajoudani"
+    ],
+    "published": "2026-01-27T18:12:44+00:00",
+    "summary": "Industry 5.0 focuses on human-centric collaboration between humans and robots, prioritizing safety, comfort, and trust. This study introduces a data-driven framework to assess trust using behavioral indicators. The framework employs a Preference-Based Optimization algorithm to generate trust-enhancing trajectories based on operator feedback. This feedback serves as ground truth for training machine learning models to predict trust levels from behavioral indicators. The framework was tested in a chemical industry scenario where a robot assisted a human operator in mixing chemicals. Machine learning models classified trust with over 80\\% accuracy, with the Voting Classifier achieving 84.07\\% accuracy and an AUC-ROC score of 0.90. These findings underscore the effectiveness of data-driven methods in assessing trust within human-robot collaboration, emphasizing the valuable role behavioral indicators play in predicting the dynamics of human trust."
+  },
+  {
+    "title": "How Does Delegation in Social Interaction Evolve Over Time? Navigation with a Robot for Blind People",
+    "url": "http://arxiv.org/abs/2601.19851v1",
+    "arxiv_id": "2601.19851v1",
+    "authors": [
+      "Rayna Hata",
+      "Masaki Kuribayashi",
+      "Allan Wang",
+      "Hironobu Takagi",
+      "Chieko Asakawa"
+    ],
+    "published": "2026-01-27T18:00:00+00:00",
+    "summary": "Autonomy and independent navigation are vital to daily life but remain challenging for individuals with blindness. Robotic systems can enhance mobility and confidence by providing intelligent navigation assistance. However, fully autonomous systems may reduce users' sense of control, even when they wish to remain actively involved. Although collaboration between user and robot has been recognized as important, little is known about how perceptions of this relationship change with repeated use. We present a repeated exposure study with six blind participants who interacted with a navigation-assistive robot in a real-world museum. Participants completed tasks such as navigating crowds, approaching lines, and encountering obstacles. Findings show that participants refined their strategies over time, developing clearer preferences about when to rely on the robot versus act independently. This work provides insights into how strategies and preferences evolve with repeated interaction and offers design implications for robots that adapt to user needs over time."
+  },
+  {
+    "title": "HARMONI: Multimodal Personalization of Multi-User Human-Robot Interactions with LLMs",
+    "url": "http://arxiv.org/abs/2601.19839v1",
+    "arxiv_id": "2601.19839v1",
+    "authors": [
+      "Jeanne Mal\u00e9cot",
+      "Hamed Rahimi",
+      "Jeanne Cattoni",
+      "Marie Samson",
+      "Mouad Abrini",
+      "Mahdi Khoramshahi",
+      "Maribel Pino",
+      "Mohamed Chetouani"
+    ],
+    "published": "2026-01-27T17:45:04+00:00",
+    "summary": "Existing human-robot interaction systems often lack mechanisms for sustained personalization and dynamic adaptation in multi-user environments, limiting their effectiveness in real-world deployments. We present HARMONI, a multimodal personalization framework that leverages large language models to enable socially assistive robots to manage long-term multi-user interactions. The framework integrates four key modules: (i) a perception module that identifies active speakers and extracts multimodal input; (ii) a world modeling module that maintains representations of the environment and short-term conversational context; (iii) a user modeling module that updates long-term speaker-specific profiles; and (iv) a generation module that produces contextually grounded and ethically informed responses. Through extensive evaluation and ablation studies on four datasets, as well as a real-world scenario-driven user-study in a nursing home environment, we demonstrate that HARMONI supports robust speaker identification, online memory updating, and ethically aligned personalization, outperforming baseline LLM-driven approaches in user modeling accuracy, personalization quality, and user satisfaction."
+  },
+  {
     "title": "On-chip control of the coherence matrix of four-mode partially coherent light: rank, entropy, and modal Stokes parameters",
     "url": "http://arxiv.org/abs/2601.18797v1",
     "arxiv_id": "2601.18797v1",
