@@ -1,5 +1,73 @@
 [
   {
+    "title": "Field induced superconductivity in a magnetically doped two-dimensional crystal",
+    "url": "http://arxiv.org/abs/2601.20850v1",
+    "arxiv_id": "2601.20850v1",
+    "authors": [
+      "Adrian Llanos",
+      "Veronica Show",
+      "Reiley Dorrian",
+      "Joseph Falson"
+    ],
+    "published": "2026-01-28T18:49:23+00:00",
+    "summary": "Magnetic field induced superconductivity is a rare property in nature due to the sensitivity of spin-singlet Cooper pairing to time-reversal symmetry breaking perturbations. However, in rare cases, an interplay between magnetic fields and ions can be engineered to bring about superconductivity at finite fields. Here we use ultra-thin LaSb$_2$ doped with dilute Ce paramagnetic impurities to demonstrate a magnetic field-induced superconducting dome in a two-dimensional crystal. The reduced dimensionality of the structure enables the use of an in-plane magnetic field to dynamically suppress spin fluctuations on the Ce-site, which leads to an anomalous enhancement of the critical temperature with increasing field. By modelling the spin scattering dynamics across the experimental parameter space, we reveal insight into the complex nature of paramagnetic impurities in magnetic fields at low temperature, and how their manipulation can result in the ability to tune between competing magnetic pair-breaking regimes. Realizing this physics in a two-dimensional crystalline setting invites the application of similar approaches to unconventional forms of superconductivity while also highlighting new experimental standards which should be employed when studying ultra-thin materials in general."
+  },
+  {
+    "title": "End-to-end example-based sim-to-real RL policy transfer based on neural stylisation with application to robotic cutting",
+    "url": "http://arxiv.org/abs/2601.20846v1",
+    "arxiv_id": "2601.20846v1",
+    "authors": [
+      "Jamie Hathaway",
+      "Alireza Rastegarpanah",
+      "Rustam Stolkin"
+    ],
+    "published": "2026-01-28T18:45:55+00:00",
+    "summary": "Whereas reinforcement learning has been applied with success to a range of robotic control problems in complex, uncertain environments, reliance on extensive data - typically sourced from simulation environments - limits real-world deployment due to the domain gap between simulated and physical systems, coupled with limited real-world sample availability. We propose a novel method for sim-to-real transfer of reinforcement learning policies, based on a reinterpretation of neural style transfer from image processing to synthesise novel training data from unpaired unlabelled real world datasets. We employ a variational autoencoder to jointly learn self-supervised feature representations for style transfer and generate weakly paired source-target trajectories to improve physical realism of synthesised trajectories. We demonstrate the application of our approach based on the case study of robot cutting of unknown materials. Compared to baseline methods, including our previous work, CycleGAN, and conditional variational autoencoder-based time series translation, our approach achieves improved task completion time and behavioural stability with minimal real-world data. Our framework demonstrates robustness to geometric and material variation, and highlights the feasibility of policy adaptation in challenging contact-rich tasks where real-world reward information is unavailable."
+  },
+  {
+    "title": "Reward Models Inherit Value Biases from Pretraining",
+    "url": "http://arxiv.org/abs/2601.20838v1",
+    "arxiv_id": "2601.20838v1",
+    "authors": [
+      "Brian Christian",
+      "Jessica A. F. Thompson",
+      "Elle Michelle Yang",
+      "Vincent Adam",
+      "Hannah Rose Kirk",
+      "Christopher Summerfield",
+      "Tsvetomira Dumbalska"
+    ],
+    "published": "2026-01-28T18:40:29+00:00",
+    "summary": "Reward models (RMs) are central to aligning large language models (LLMs) with human values but have received less attention than pre-trained and post-trained LLMs themselves. Because RMs are initialized from LLMs, they inherit representations that shape their behavior, but the nature and extent of this influence remain understudied. In a comprehensive study of 10 leading open-weight RMs using validated psycholinguistic corpora, we show that RMs exhibit significant differences along multiple dimensions of human value as a function of their base model. Using the \"Big Two\" psychological axes, we show a robust preference of Llama RMs for \"agency\" and a corresponding robust preference of Gemma RMs for \"communion.\" This phenomenon holds even when the preference data and finetuning process are identical, and we trace it back to the logits of the respective instruction-tuned and pre-trained models. These log-probability differences themselves can be formulated as an implicit RM; we derive usable implicit reward scores and show that they exhibit the very same agency/communion difference. We run experiments training RMs with ablations for preference data source and quantity, which demonstrate that this effect is not only repeatable but surprisingly durable. Despite RMs being designed to represent human preferences, our evidence shows that their outputs are influenced by the pretrained LLMs on which they are based. This work underscores the importance of safety and alignment efforts at the pretraining stage, and makes clear that open-source developers' choice of base model is as much a consideration of values as of performance."
+  },
+  {
+    "title": "Open-Vocabulary Functional 3D Human-Scene Interaction Generation",
+    "url": "http://arxiv.org/abs/2601.20835v1",
+    "arxiv_id": "2601.20835v1",
+    "authors": [
+      "Jie Liu",
+      "Yu Sun",
+      "Alpar Cseke",
+      "Yao Feng",
+      "Nicolas Heron",
+      "Michael J. Black",
+      "Yan Zhang"
+    ],
+    "published": "2026-01-28T18:34:25+00:00",
+    "summary": "Generating 3D humans that functionally interact with 3D scenes remains an open problem with applications in embodied AI, robotics, and interactive content creation. The key challenge involves reasoning about both the semantics of functional elements in 3D scenes and the 3D human poses required to achieve functionality-aware interaction. Unfortunately, existing methods typically lack explicit reasoning over object functionality and the corresponding human-scene contact, resulting in implausible or functionally incorrect interactions. In this work, we propose FunHSI, a training-free, functionality-driven framework that enables functionally correct human-scene interactions from open-vocabulary task prompts. Given a task prompt, FunHSI performs functionality-aware contact reasoning to identify functional scene elements, reconstruct their 3D geometry, and model high-level interactions via a contact graph. We then leverage vision-language models to synthesize a human performing the task in the image and estimate proposed 3D body and hand poses. Finally, the proposed 3D body configuration is refined via stage-wise optimization to ensure physical plausibility and functional correctness. In contrast to existing methods, FunHSI not only synthesizes more plausible general 3D interactions, such as \"sitting on a sofa'', while supporting fine-grained functional human-scene interactions, e.g., \"increasing the room temperature''. Extensive experiments demonstrate that FunHSI consistently generates functionally correct and physically plausible human-scene interactions across diverse indoor and outdoor scenes."
+  },
+  {
+    "title": "MemCtrl: Using MLLMs as Active Memory Controllers on Embodied Agents",
+    "url": "http://arxiv.org/abs/2601.20831v1",
+    "arxiv_id": "2601.20831v1",
+    "authors": [
+      "Vishnu Sashank Dorbala",
+      "Dinesh Manocha"
+    ],
+    "published": "2026-01-28T18:31:17+00:00",
+    "summary": "Foundation models rely on in-context learning for personalized decision making. The limited size of this context window necessitates memory compression and retrieval systems like RAG. These systems however often treat memory as large offline storage spaces, which is unfavorable for embodied agents that are expected to operate under strict memory and compute constraints, online. In this work, we propose MemCtrl, a novel framework that uses Multimodal Large Language Models (MLLMs) for pruning memory online. MemCtrl augments MLLMs with a trainable memory head \u03bcthat acts as a gate to determine which observations or reflections to retain, update, or discard during exploration. We evaluate with training two types of \u03bc, 1) via an offline expert, and 2) via online RL, and observe significant improvement in overall embodied task completion ability on \u03bc-augmented MLLMs. In particular, on augmenting two low performing MLLMs with MemCtrl on multiple subsets of the EmbodiedBench benchmark, we observe that \u03bc-augmented MLLMs show an improvement of around 16% on average, with over 20% on specific instruction subsets. Finally, we present a qualitative analysis on the memory fragments collected by \u03bc, noting the superior performance of \u03bcaugmented MLLMs on long and complex instruction types."
+  },
+  {
     "title": "Self-Distillation Enables Continual Learning",
     "url": "http://arxiv.org/abs/2601.19897v1",
     "arxiv_id": "2601.19897v1",
