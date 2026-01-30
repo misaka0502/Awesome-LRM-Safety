@@ -1,5 +1,92 @@
 [
   {
+    "title": "Exploring Reasoning Reward Model for Agents",
+    "url": "http://arxiv.org/abs/2601.22154v1",
+    "arxiv_id": "2601.22154v1",
+    "authors": [
+      "Kaixuan Fan",
+      "Kaituo Feng",
+      "Manyuan Zhang",
+      "Tianshuo Peng",
+      "Zhixun Li",
+      "Yilei Jiang",
+      "Shuang Chen",
+      "Peng Pei",
+      "Xunliang Cai",
+      "Xiangyu Yue"
+    ],
+    "published": "2026-01-29T18:59:52+00:00",
+    "summary": "Agentic Reinforcement Learning (Agentic RL) has achieved notable success in enabling agents to perform complex reasoning and tool use. However, most methods still relies on sparse outcome-based reward for training. Such feedback fails to differentiate intermediate reasoning quality, leading to suboptimal training results. In this paper, we introduce Agent Reasoning Reward Model (Agent-RRM), a multi-faceted reward model that produces structured feedback for agentic trajectories, including (1) an explicit reasoning trace , (2) a focused critique that provides refinement guidance by highlighting reasoning flaws, and (3) an overall score that evaluates process performance. Leveraging these signals, we systematically investigate three integration strategies: Reagent-C (text-augmented refinement), Reagent-R (reward-augmented guidance), and Reagent-U (unified feedback integration). Extensive evaluations across 12 diverse benchmarks demonstrate that Reagent-U yields substantial performance leaps, achieving 43.7% on GAIA and 46.2% on WebWalkerQA, validating the effectiveness of our reasoning reward model and training schemes. Code, models, and datasets are all released to facilitate future research."
+  },
+  {
+    "title": "DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation",
+    "url": "http://arxiv.org/abs/2601.22153v1",
+    "arxiv_id": "2601.22153v1",
+    "authors": [
+      "Haozhe Xie",
+      "Beichen Wen",
+      "Jiarui Zheng",
+      "Zhaoxi Chen",
+      "Fangzhou Hong",
+      "Haiwen Diao",
+      "Ziwei Liu"
+    ],
+    "published": "2026-01-29T18:59:51+00:00",
+    "summary": "Manipulating dynamic objects remains an open challenge for Vision-Language-Action (VLA) models, which, despite strong generalization in static manipulation, struggle in dynamic scenarios requiring rapid perception, temporal anticipation, and continuous control. We present DynamicVLA, a framework for dynamic object manipulation that integrates temporal reasoning and closed-loop adaptation through three key designs: 1) a compact 0.4B VLA using a convolutional vision encoder for spatially efficient, structurally faithful encoding, enabling fast multimodal inference; 2) Continuous Inference, enabling overlapping reasoning and execution for lower latency and timely adaptation to object motion; and 3) Latent-aware Action Streaming, which bridges the perception-execution gap by enforcing temporally aligned action execution. To fill the missing foundation of dynamic manipulation data, we introduce the Dynamic Object Manipulation (DOM) benchmark, built from scratch with an auto data collection pipeline that efficiently gathers 200K synthetic episodes across 2.8K scenes and 206 objects, and enables fast collection of 2K real-world episodes without teleoperation. Extensive evaluations demonstrate remarkable improvements in response speed, perception, and generalization, positioning DynamicVLA as a unified framework for general dynamic object manipulation across embodiments."
+  },
+  {
+    "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
+    "url": "http://arxiv.org/abs/2601.22149v1",
+    "arxiv_id": "2601.22149v1",
+    "authors": [
+      "Hang Ding",
+      "Peidong Liu",
+      "Junqiao Wang",
+      "Ziwei Ji",
+      "Meng Cao",
+      "Rongzhao Zhang",
+      "Lynn Ai",
+      "Eric Yang",
+      "Tianyu Shi",
+      "Lei Yu"
+    ],
+    "published": "2026-01-29T18:59:07+00:00",
+    "summary": "The development of autonomous web agents, powered by Large Language Models (LLMs) and reinforcement learning (RL), represents a significant step towards general-purpose AI assistants. However, training these agents is severely hampered by the challenges of interacting with the live internet, which is inefficient, costly, and fraught with risks. Model-based reinforcement learning (MBRL) offers a promising solution by learning a world model of the environment to enable simulated interaction. This paper introduces DynaWeb, a novel MBRL framework that trains web agents through interacting with a web world model trained to predict naturalistic web page representations given agent actions. This model serves as a synthetic web environment where an agent policy can dream by generating vast quantities of rollout action trajectories for efficient online reinforcement learning. Beyond free policy rollouts, DynaWeb incorporates real expert trajectories from training data, which are randomly interleaved with on-policy rollouts during training to improve stability and sample efficiency. Experiments conducted on the challenging WebArena and WebVoyager benchmarks demonstrate that DynaWeb consistently and significantly improves the performance of state-of-the-art open-source web agent models. Our findings establish the viability of training web agents through imagination, offering a scalable and efficient way to scale up online agentic RL."
+  },
+  {
+    "title": "StepShield: When, Not Whether to Intervene on Rogue Agents",
+    "url": "http://arxiv.org/abs/2601.22136v1",
+    "arxiv_id": "2601.22136v1",
+    "authors": [
+      "Gloria Felicia",
+      "Michael Eniolade",
+      "Jinfeng He",
+      "Zitha Sasindran",
+      "Hemant Kumar",
+      "Milan Hussain Angati",
+      "Sandeep Bandarupalli"
+    ],
+    "published": "2026-01-29T18:55:46+00:00",
+    "summary": "Existing agent safety benchmarks report binary accuracy, conflating early intervention with post-mortem analysis. A detector that flags a violation at step 8 enables intervention; one that reports it at step 48 provides only forensic value. This distinction is critical, yet current benchmarks cannot measure it. We introduce StepShield, the first benchmark to evaluate when violations are detected, not just whether. StepShield contains 9,213 code agent trajectories, including 1,278 meticulously annotated training pairs and a 7,935-trajectory test set with a realistic 8.1% rogue rate. Rogue behaviors are grounded in real-world security incidents across six categories. We propose three novel temporal metrics: Early Intervention Rate (EIR), Intervention Gap, and Tokens Saved. Surprisingly, our evaluation reveals that an LLM-based judge achieves 59% EIR while a static analyzer achieves only 26%, a 2.3x performance gap that is entirely invisible to standard accuracy metrics. We further show that early detection has direct economic benefits: our cascaded HybridGuard detector reduces monitoring costs by 75% and projects to $108M in cumulative savings over five years at enterprise scale. By shifting the focus of evaluation from whether to when, StepShield provides a new foundation for building safer and more economically viable AI agents. The code and data are released under an Apache 2.0 license."
+  },
+  {
+    "title": "EditYourself: Audio-Driven Generation and Manipulation of Talking Head Videos with Diffusion Transformers",
+    "url": "http://arxiv.org/abs/2601.22127v1",
+    "arxiv_id": "2601.22127v1",
+    "authors": [
+      "John Flynn",
+      "Wolfgang Paier",
+      "Dimitar Dinev",
+      "Sam Nhut Nguyen",
+      "Hayk Poghosyan",
+      "Manuel Toribio",
+      "Sandipan Banerjee",
+      "Guy Gafni"
+    ],
+    "published": "2026-01-29T18:49:27+00:00",
+    "summary": "Current generative video models excel at producing novel content from text and image prompts, but leave a critical gap in editing existing pre-recorded videos, where minor alterations to the spoken script require preserving motion, temporal coherence, speaker identity, and accurate lip synchronization. We introduce EditYourself, a DiT-based framework for audio-driven video-to-video (V2V) editing that enables transcript-based modification of talking head videos, including the seamless addition, removal, and retiming of visually spoken content. Building on a general-purpose video diffusion model, EditYourself augments its V2V capabilities with audio conditioning and region-aware, edit-focused training extensions. This enables precise lip synchronization and temporally coherent restructuring of existing performances via spatiotemporal inpainting, including the synthesis of realistic human motion in newly added segments, while maintaining visual fidelity and identity consistency over long durations. This work represents a foundational step toward generative video models as practical tools for professional video post-production."
+  },
+  {
     "title": "Field induced superconductivity in a magnetically doped two-dimensional crystal",
     "url": "http://arxiv.org/abs/2601.20850v1",
     "arxiv_id": "2601.20850v1",
