@@ -1,5 +1,71 @@
 [
   {
+    "title": "End-to-end Optimization of Belief and Policy Learning in Shared Autonomy Paradigms",
+    "url": "http://arxiv.org/abs/2601.23285v1",
+    "arxiv_id": "2601.23285v1",
+    "authors": [
+      "MH Farhadi",
+      "Ali Rabiee",
+      "Sima Ghafoori",
+      "Anna Cetera",
+      "Andrew Fisher",
+      "Reza Abiri"
+    ],
+    "published": "2026-01-30T18:59:16+00:00",
+    "summary": "Shared autonomy systems require principled methods for inferring user intent and determining appropriate assistance levels. This is a central challenge in human-robot interaction, where systems must be successful while being mindful of user agency. Previous approaches relied on static blending ratios or separated goal inference from assistance arbitration, leading to suboptimal performance in unstructured environments. We introduce BRACE (Bayesian Reinforcement Assistance with Context Encoding), a novel framework that fine-tunes Bayesian intent inference and context-adaptive assistance through an architecture enabling end-to-end gradient flow between intent inference and assistance arbitration. Our pipeline conditions collaborative control policies on environmental context and complete goal probability distributions. We provide analysis showing (1) optimal assistance levels should decrease with goal uncertainty and increase with environmental constraint severity, and (2) integrating belief information into policy learning yields a quadratic expected regret advantage over sequential approaches. We validated our algorithm against SOTA methods (IDA, DQN) using a three-part evaluation progressively isolating distinct challenges of end-effector control: (1) core human-interaction dynamics in a 2D human-in-the-loop cursor task, (2) non-linear dynamics of a robotic arm, and (3) integrated manipulation under goal ambiguity and environmental constraints. We demonstrate improvements over SOTA, achieving 6.3% higher success rates and 41% increased path efficiency, and 36.3% success rate and 87% path efficiency improvement over unassisted control. Our results confirmed that integrated optimization is most beneficial in complex, goal-ambiguous scenarios, and is generalizable across robotic domains requiring goal-directed assistance, advancing the SOTA for adaptive shared autonomy."
+  },
+  {
+    "title": "IRL-DAL: Safe and Adaptive Trajectory Planning for Autonomous Driving via Energy-Guided Diffusion Models",
+    "url": "http://arxiv.org/abs/2601.23266v1",
+    "arxiv_id": "2601.23266v1",
+    "authors": [
+      "Seyed Ahmad Hosseini Miangoleh",
+      "Amin Jalal Aghdasian",
+      "Farzaneh Abdollahi"
+    ],
+    "published": "2026-01-30T18:34:10+00:00",
+    "summary": "This paper proposes a novel inverse reinforcement learning framework using a diffusion-based adaptive lookahead planner (IRL-DAL) for autonomous vehicles. Training begins with imitation from an expert finite state machine (FSM) controller to provide a stable initialization. Environment terms are combined with an IRL discriminator signal to align with expert goals. Reinforcement learning (RL) is then performed with a hybrid reward that combines diffuse environmental feedback and targeted IRL rewards. A conditional diffusion model, which acts as a safety supervisor, plans safe paths. It stays in its lane, avoids obstacles, and moves smoothly. Then, a learnable adaptive mask (LAM) improves perception. It shifts visual attention based on vehicle speed and nearby hazards. After FSM-based imitation, the policy is fine-tuned with Proximal Policy Optimization (PPO). Training is run in the Webots simulator with a two-stage curriculum. A 96\\% success rate is reached, and collisions are reduced to 0.05 per 1k steps, marking a new benchmark for safe navigation. By applying the proposed approach, the agent not only drives in lane but also handles unsafe conditions at an expert level, increasing robustness.We make our code publicly available."
+  },
+  {
+    "title": "Now You Hear Me: Audio Narrative Attacks Against Large Audio-Language Models",
+    "url": "http://arxiv.org/abs/2601.23255v1",
+    "arxiv_id": "2601.23255v1",
+    "authors": [
+      "Ye Yu",
+      "Haibo Jin",
+      "Yaoning Yu",
+      "Jun Zhuang",
+      "Haohan Wang"
+    ],
+    "published": "2026-01-30T18:23:02+00:00",
+    "summary": "Large audio-language models increasingly operate on raw speech inputs, enabling more seamless integration across domains such as voice assistants, education, and clinical triage. This transition, however, introduces a distinct class of vulnerabilities that remain largely uncharacterized. We examine the security implications of this modality shift by designing a text-to-audio jailbreak that embeds disallowed directives within a narrative-style audio stream. The attack leverages an advanced instruction-following text-to-speech (TTS) model to exploit structural and acoustic properties, thereby circumventing safety mechanisms primarily calibrated for text. When delivered through synthetic speech, the narrative format elicits restricted outputs from state-of-the-art models, including Gemini 2.0 Flash, achieving a 98.26% success rate that substantially exceeds text-only baselines. These results highlight the need for safety frameworks that jointly reason over linguistic and paralinguistic representations, particularly as speech-based interfaces become more prevalent."
+  },
+  {
+    "title": "Solving Inverse Problems with Flow-based Models via Model Predictive Control",
+    "url": "http://arxiv.org/abs/2601.23231v1",
+    "arxiv_id": "2601.23231v1",
+    "authors": [
+      "George Webber",
+      "Alexander Denker",
+      "Riccardo Barbano",
+      "Andrew J Reader"
+    ],
+    "published": "2026-01-30T17:59:09+00:00",
+    "summary": "Flow-based generative models provide strong unconditional priors for inverse problems, but guiding their dynamics for conditional generation remains challenging. Recent work casts training-free conditional generation in flow models as an optimal control problem; however, solving the resulting trajectory optimisation is computationally and memory intensive, requiring differentiation through the flow dynamics or adjoint solves. We propose MPC-Flow, a model predictive control framework that formulates inverse problem solving with flow-based generative models as a sequence of control sub-problems, enabling practical optimal control-based guidance at inference time. We provide theoretical guarantees linking MPC-Flow to the underlying optimal control objective and show how different algorithmic choices yield a spectrum of guidance algorithms, including regimes that avoid backpropagation through the generative model trajectory. We evaluate MPC-Flow on benchmark image restoration tasks, spanning linear and non-linear settings such as in-painting, deblurring, and super-resolution, and demonstrate strong performance and scalability to massive state-of-the-art architectures via training-free guidance of FLUX.2 (32B) in a quantised setting on consumer hardware."
+  },
+  {
+    "title": "Agile Reinforcement Learning through Separable Neural Architecture",
+    "url": "http://arxiv.org/abs/2601.23225v1",
+    "arxiv_id": "2601.23225v1",
+    "authors": [
+      "Rajib Mostakim",
+      "Reza T. Batley",
+      "Sourav Saha"
+    ],
+    "published": "2026-01-30T17:47:36+00:00",
+    "summary": "Deep reinforcement learning (RL) is increasingly deployed in resource-constrained environments, yet the go-to function approximators - multilayer perceptrons (MLPs) - are often parameter-inefficient due to an imperfect inductive bias for the smooth structure of many value functions. This mismatch can also hinder sample efficiency and slow policy learning in this capacity-limited regime. Although model compression techniques exist, they operate post-hoc and do not improve learning efficiency. Recent spline-based separable architectures - such as Kolmogorov-Arnold Networks (KANs) - have been shown to offer parameter efficiency but are widely reported to exhibit significant computational overhead, especially at scale.   In seeking to address these limitations, this work introduces SPAN (SPline-based Adaptive Networks), a novel function approximation approach to RL. SPAN adapts the low rank KHRONOS framework by integrating a learnable preprocessing layer with a separable tensor product B-spline basis. SPAN is evaluated across discrete (PPO) and high-dimensional continuous (SAC) control tasks, as well as offline settings (Minari/D4RL). Empirical results demonstrate that SPAN achieves a 30-50% improvement in sample efficiency and 1.3-9 times higher success rates across benchmarks compared to MLP baselines. Furthermore, SPAN demonstrates superior anytime performance and robustness to hyperparameter variations, suggesting it as a viable, high performance alternative for learning intrinsically efficient policies in resource-limited settings."
+  },
+  {
     "title": "Exploring Reasoning Reward Model for Agents",
     "url": "http://arxiv.org/abs/2601.22154v1",
     "arxiv_id": "2601.22154v1",
