@@ -1,5 +1,63 @@
 [
   {
+    "title": "FORLER: Federated Offline Reinforcement Learning with Q-Ensemble and Actor Rectification",
+    "url": "http://arxiv.org/abs/2602.02055v1",
+    "arxiv_id": "2602.02055v1",
+    "authors": [
+      "Nan Qiao",
+      "Sheng Yue"
+    ],
+    "published": "2026-02-02T12:57:09+00:00",
+    "summary": "In Internet-of-Things systems, federated learning has advanced online reinforcement learning (RL) by enabling parallel policy training without sharing raw data. However, interacting with real environments online can be risky and costly, motivating offline federated RL (FRL), where local devices learn from fixed datasets. Despite its promise, offline FRL may break down under low-quality, heterogeneous data. Offline RL tends to get stuck in local optima, and in FRL, one device's suboptimal policy can degrade the aggregated model, i.e., policy pollution. We present FORLER, combining Q-ensemble aggregation on the server with actor rectification on devices. The server robustly merges device Q-functions to curb policy pollution and shift heavy computation off resource-constrained hardware without compromising privacy. Locally, actor rectification enriches policy gradients via a zeroth-order search for high-Q actions plus a bespoke regularizer that nudges the policy toward them. A $\u03b4$-periodic strategy further reduces local computation. We theoretically provide safe policy improvement performance guarantees. Extensive experiments show FORLER consistently outperforms strong baselines under varying data quality and heterogeneity."
+  },
+  {
+    "title": "Frictional Contact Solving for Material Point Method",
+    "url": "http://arxiv.org/abs/2602.02038v1",
+    "arxiv_id": "2602.02038v1",
+    "authors": [
+      "Etienne M\u00e9nager",
+      "Justin Carpentier"
+    ],
+    "published": "2026-02-02T12:34:32+00:00",
+    "summary": "Accurately handling contact with friction remains a core bottleneck for Material Point Method (MPM), from reliable contact point detection to enforcing frictional contact laws (non-penetration, Coulomb friction, and maximum dissipation principle). In this paper, we introduce a frictional-contact pipeline for implicit MPM that is both precise and robust. During the collision detection phase, contact points are localized with particle-centric geometric primitives; during the contact resolution phase, we cast frictional contact as a Nonlinear Complementarity Problem (NCP) over contact impulses and solve it with an Alternating Direction Method of Multipliers (ADMM) scheme. Crucially, the formulation reuses the same implicit MPM linearization, yielding efficiency and numerical stability. The method integrates seamlessly into the implicit MPM loop and is agnostic to modeling choices, including material laws, interpolation functions, and transfer schemes. We evaluate it across seven representative scenes that span elastic and elasto-plastic responses, simple and complex deformable geometries, and a wide range of contact conditions. Overall, the proposed method enables accurate contact localization, reliable frictional handling, and broad generality, making it a practical solution for MPM-based simulations in robotics and related domains."
+  },
+  {
+    "title": "Bandwidth-Efficient Multi-Agent Communication through Information Bottleneck and Vector Quantization",
+    "url": "http://arxiv.org/abs/2602.02035v1",
+    "arxiv_id": "2602.02035v1",
+    "authors": [
+      "Ahmad Farooq",
+      "Kamran Iqbal"
+    ],
+    "published": "2026-02-02T12:32:28+00:00",
+    "summary": "Multi-agent reinforcement learning systems deployed in real-world robotics applications face severe communication constraints that significantly impact coordination effectiveness. We present a framework that combines information bottleneck theory with vector quantization to enable selective, bandwidth-efficient communication in multi-agent environments. Our approach learns to compress and discretize communication messages while preserving task-critical information through principled information-theoretic optimization. We introduce a gated communication mechanism that dynamically determines when communication is necessary based on environmental context and agent states. Experimental evaluation on challenging coordination tasks demonstrates that our method achieves 181.8% performance improvement over no-communication baselines while reducing bandwidth usage by 41.4%. Comprehensive Pareto frontier analysis shows dominance across the entire success-bandwidth spectrum with area-under-curve of 0.198 vs 0.142 for next-best methods. Our approach significantly outperforms existing communication strategies and establishes a theoretically grounded framework for deploying multi-agent systems in bandwidth-constrained environments such as robotic swarms, autonomous vehicle fleets, and distributed sensor networks."
+  },
+  {
+    "title": "Constrained Process Maps for Multi-Agent Generative AI Workflows",
+    "url": "http://arxiv.org/abs/2602.02034v1",
+    "arxiv_id": "2602.02034v1",
+    "authors": [
+      "Ananya Joshi",
+      "Michael Rudow"
+    ],
+    "published": "2026-02-02T12:32:11+00:00",
+    "summary": "Large language model (LLM)-based agents are increasingly used to perform complex, multi-step workflows in regulated settings such as compliance and due diligence. However, many agentic architectures rely primarily on prompt engineering of a single agent, making it difficult to observe or compare how models handle uncertainty and coordination across interconnected decision stages and with human oversight. We introduce a multi-agent system formalized as a finite-horizon Markov Decision Process (MDP) with a directed acyclic structure. Each agent corresponds to a specific role or decision stage (e.g., content, business, or legal review in a compliance workflow), with predefined transitions representing task escalation or completion. Epistemic uncertainty is quantified at the agent level using Monte Carlo estimation, while system-level uncertainty is captured by the MDP's termination in either an automated labeled state or a human-review state. We illustrate the approach through a case study in AI safety evaluation for self-harm detection, implemented as a multi-agent compliance system. Results demonstrate improvements over a single-agent baseline, including up to a 19\\% increase in accuracy, up to an 85x reduction in required human review, and, in some configurations, reduced processing time."
+  },
+  {
+    "title": "Meta-optical processors for broadband complex-field image operations",
+    "url": "http://arxiv.org/abs/2602.02030v1",
+    "arxiv_id": "2602.02030v1",
+    "authors": [
+      "Linzhi Yu",
+      "Jesse Pietila",
+      "Haobijam J. Singh",
+      "Arttu Nieminen",
+      "Humeyra Caglayan"
+    ],
+    "published": "2026-02-02T12:27:47+00:00",
+    "summary": "All-optical image processing provides a fast and energy-efficient alternative to conventional electronic systems by directly manipulating optical wavefronts. However, metasurface-based optical processors reported to date are often limited in functionality, operating bandwidth, or input modality, which restricts their adaptability across different image processing tasks. Here, we demonstrate a broadband metasurface platform capable of performing diverse analog image processing operations on both amplitude- and phase-encoded inputs. This platform is realized using a single-layer dielectric metasurface designed through an end-to-end, task-driven inverse design framework. By tailoring the spatial-frequency components of incident image wavefronts, the metasurface implements analog operations such as edge detection and pattern recognition across a 200nm wavelength bandwidth in the visible spectrum. Furthermore, we develop a compact processor architecture that integrates imaging and computation within a reduced optical footprint. These results establish a flexible and compact metasurface-based optical processor with strong potential for integration into practical imaging and optical computing systems."
+  },
+  {
     "title": "End-to-end Optimization of Belief and Policy Learning in Shared Autonomy Paradigms",
     "url": "http://arxiv.org/abs/2601.23285v1",
     "arxiv_id": "2601.23285v1",
