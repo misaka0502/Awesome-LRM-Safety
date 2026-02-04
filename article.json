@@ -1,5 +1,74 @@
 [
   {
+    "title": "Understanding and Exploiting Weight Update Sparsity for Communication-Efficient Distributed RL",
+    "url": "http://arxiv.org/abs/2602.03839v1",
+    "arxiv_id": "2602.03839v1",
+    "authors": [
+      "Erfan Miahi",
+      "Eugene Belilovsky"
+    ],
+    "published": "2026-02-03T18:56:48+00:00",
+    "summary": "Reinforcement learning (RL) is a critical component for post-training large language models (LLMs). However, in bandwidth-constrained distributed RL, scalability is often bottlenecked by the synchronization of policy weights from trainers to inference workers, particularly over commodity networks or in decentralized settings. While recent studies suggest that RL updates modify only a small fraction of model parameters, these observations are typically based on coarse checkpoint differences. We present a systematic empirical study of weight-update sparsity at both step-level and multi-step granularities, examining its evolution across training dynamics, off-policy delay, and model scale. We find that update sparsity is consistently high, frequently exceeding 99% across practically relevant settings. Leveraging this structure, we propose PULSE (Patch Updates via Lossless Sparse Encoding), a simple yet highly efficient lossless weight synchronization method that transmits only the indices and values of modified parameters. PULSE is robust to transmission errors and avoids floating-point drift inherent in additive delta schemes. In bandwidth-constrained decentralized environments, our approach achieves over 100x (14 GB to ~108 MB) communication reduction while maintaining bit-identical training dynamics and performance compared to full weight synchronization. By exploiting this structure, PULSE enables decentralized RL training to approach centralized throughput, reducing the bandwidth required for weight synchronization from 20 Gbit/s to 0.2 Gbit/s to maintain high GPU utilization."
+  },
+  {
+    "title": "Continuous Control of Editing Models via Adaptive-Origin Guidance",
+    "url": "http://arxiv.org/abs/2602.03826v1",
+    "arxiv_id": "2602.03826v1",
+    "authors": [
+      "Alon Wolf",
+      "Chen Katzir",
+      "Kfir Aberman",
+      "Or Patashnik"
+    ],
+    "published": "2026-02-03T18:33:39+00:00",
+    "summary": "Diffusion-based editing models have emerged as a powerful tool for semantic image and video manipulation. However, existing models lack a mechanism for smoothly controlling the intensity of text-guided edits. In standard text-conditioned generation, Classifier-Free Guidance (CFG) impacts prompt adherence, suggesting it as a potential control for edit intensity in editing models. However, we show that scaling CFG in these models does not produce a smooth transition between the input and the edited result. We attribute this behavior to the unconditional prediction, which serves as the guidance origin and dominates the generation at low guidance scales, while representing an arbitrary manipulation of the input content. To enable continuous control, we introduce Adaptive-Origin Guidance (AdaOr), a method that adjusts this standard guidance origin with an identity-conditioned adaptive origin, using an identity instruction corresponding to the identity manipulation. By interpolating this identity prediction with the standard unconditional prediction according to the edit strength, we ensure a continuous transition from the input to the edited result. We evaluate our method on image and video editing tasks, demonstrating that it provides smoother and more consistent control compared to current slider-based editing approaches. Our method incorporates an identity instruction into the standard training framework, enabling fine-grained control at inference time without per-edit procedure or reliance on specialized datasets."
+  },
+  {
+    "title": "SymPlex: A Structure-Aware Transformer for Symbolic PDE Solving",
+    "url": "http://arxiv.org/abs/2602.03816v1",
+    "arxiv_id": "2602.03816v1",
+    "authors": [
+      "Yesom Park",
+      "Annie C. Lu",
+      "Shao-Ching Huang",
+      "Qiyang Hu",
+      "Y. Sungtaek Ju",
+      "Stanley Osher"
+    ],
+    "published": "2026-02-03T18:18:30+00:00",
+    "summary": "We propose SymPlex, a reinforcement learning framework for discovering analytical symbolic solutions to partial differential equations (PDEs) without access to ground-truth expressions. SymPlex formulates symbolic PDE solving as tree-structured decision-making and optimizes candidate solutions using only the PDE and its boundary conditions. At its core is SymFormer, a structure-aware Transformer that models hierarchical symbolic dependencies via tree-relative self-attention and enforces syntactic validity through grammar-constrained autoregressive decoding, overcoming the limited expressivity of sequence-based generators. Unlike numerical and neural approaches that approximate solutions in discretized or implicit function spaces, SymPlex operates directly in symbolic expression space, enabling interpretable and human-readable solutions that naturally represent non-smooth behavior and explicit parametric dependence. Empirical results demonstrate exact recovery of non-smooth and parametric PDE solutions using deep learning-based symbolic methods."
+  },
+  {
+    "title": "Bridging Online and Offline RL: Contextual Bandit Learning for Multi-Turn Code Generation",
+    "url": "http://arxiv.org/abs/2602.03806v1",
+    "arxiv_id": "2602.03806v1",
+    "authors": [
+      "Ziru Chen",
+      "Dongdong Chen",
+      "Ruinan Jin",
+      "Yingbin Liang",
+      "Yujia Xie",
+      "Huan Sun"
+    ],
+    "published": "2026-02-03T18:08:41+00:00",
+    "summary": "Recently, there have been significant research interests in training large language models (LLMs) with reinforcement learning (RL) on real-world tasks, such as multi-turn code generation. While online RL tends to perform better than offline RL, its higher training cost and instability hinders wide adoption. In this paper, we build on the observation that multi-turn code generation can be formulated as a one-step recoverable Markov decision process and propose contextual bandit learning with offline trajectories (Cobalt), a new method that combines the benefits of online and offline RL. Cobalt first collects code generation trajectories using a reference LLM and divides them into partial trajectories as contextual prompts. Then, during online bandit learning, the LLM is trained to complete each partial trajectory prompt through single-step code generation. Cobalt outperforms two multi-turn online RL baselines based on GRPO and VeRPO, and substantially improves R1-Distill 8B and Qwen3 8B by up to 9.0 and 6.2 absolute Pass@1 scores on LiveCodeBench. Also, we analyze LLMs' in-context reward hacking behaviors and augment Cobalt training with perturbed trajectories to mitigate this issue. Overall, our results demonstrate Cobalt as a promising solution for iterative decision-making tasks like multi-turn code generation. Our code and data are available at https://github.com/OSU-NLP-Group/cobalt."
+  },
+  {
+    "title": "Digital-Twin Empowered Deep Reinforcement Learning For Site-Specific Radio Resource Management in NextG Wireless Aerial Corridor",
+    "url": "http://arxiv.org/abs/2602.03801v1",
+    "arxiv_id": "2602.03801v1",
+    "authors": [
+      "Pulok Tarafder",
+      "Zoheb Hassan",
+      "Imtiaz Ahmed",
+      "Danda B. Rawat",
+      "Kamrul Hasan",
+      "Cong Pu"
+    ],
+    "published": "2026-02-03T18:02:11+00:00",
+    "summary": "Joint base station (BS) association and beam selection in multi-UAV aerial corridors constitutes a challenging radio resource management (RRM) problem. It is driven by high-dimensional action spaces, need for substantial overhead to acquire global channel state information (CSI), rapidly varying propagation channels, and stringent latency requirements. Conventional combinatorial optimization methods, while near-optimal, are computationally prohibitive for real-time operation in such dynamic environments. While learning-based approaches can mitigate computational complexity and CSI overhead, the need for extensive site-specific (SS) datasets for model training remains a key challenge. To address these challenges, we develop a Digital Twin (DT)-enabled two-stage optimization framework that couples physics-based beam gain modeling with DRL for scalable online decision-making. In the first stage, a channel twin (CT) is constructed using a high-fidelity ray-tracing solver with geo-spatial contexts, and network information to capture SS propagation characteristics, and dual annealing algorithm is employed to precompute optimal transmission beam directions. In the second stage, a Multi-Head Proximal Policy Optimization (MH-PPO) agent, equipped with a scalable multi-head actor-critic architecture, is trained on the DT-generated channel dataset to directly map complex channel and beam states to jointly execute UAV-BS-beam association decisions. The proposed PPO agent achieves a 44%-121% improvement over DQN and 249%-807% gain over traditional heuristic based optimization schemes in a dense UAV scenario, while reducing inference latency by several orders of magnitude. These results demonstrate that DT-driven training pipelines can deliver high-performance, low-latency RRM policies tailored to SS deployments suitable for real-time resource management in next-generation aerial corridor networks."
+  },
+  {
     "title": "Reward-free Alignment for Conflicting Objectives",
     "url": "http://arxiv.org/abs/2602.02495v1",
     "arxiv_id": "2602.02495v1",
