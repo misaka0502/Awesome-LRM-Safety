@@ -1,5 +1,78 @@
 [
   {
+    "title": "CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction",
+    "url": "http://arxiv.org/abs/2602.06038v1",
+    "arxiv_id": "2602.06038v1",
+    "authors": [
+      "Xiaopan Zhang",
+      "Zejin Wang",
+      "Zhixu Li",
+      "Jianpeng Yao",
+      "Jiachen Li"
+    ],
+    "published": "2026-02-05T18:59:45+00:00",
+    "summary": "To complete assignments provided by humans in natural language, robots must interpret commands, generate and answer relevant questions for scene understanding, and manipulate target objects. Real-world deployments often require multiple heterogeneous robots with different manipulation capabilities to handle different assignments cooperatively. Beyond the need for specialized manipulation skills, effective information gathering is important in completing these assignments. To address this component of the problem, we formalize the information-gathering process in a fully cooperative setting as an underexplored multi-agent multi-task Embodied Question Answering (MM-EQA) problem, which is a novel extension of canonical Embodied Question Answering (EQA), where effective communication is crucial for coordinating efforts without redundancy. To address this problem, we propose CommCP, a novel LLM-based decentralized communication framework designed for MM-EQA. Our framework employs conformal prediction to calibrate the generated messages, thereby minimizing receiver distractions and enhancing communication reliability. To evaluate our framework, we introduce an MM-EQA benchmark featuring diverse, photo-realistic household scenarios with embodied questions. Experimental results demonstrate that CommCP significantly enhances the task success rate and exploration efficiency over baselines. The experiment videos, code, and dataset are available on our project website: https://comm-cp.github.io."
+  },
+  {
+    "title": "InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions",
+    "url": "http://arxiv.org/abs/2602.06035v1",
+    "arxiv_id": "2602.06035v1",
+    "authors": [
+      "Sirui Xu",
+      "Samuel Schulter",
+      "Morteza Ziyadi",
+      "Xialin He",
+      "Xiaohan Fei",
+      "Yu-Xiong Wang",
+      "Liangyan Gui"
+    ],
+    "published": "2026-02-05T18:59:27+00:00",
+    "summary": "Humans rarely plan whole-body interactions with objects at the level of explicit whole-body movements. High-level intentions, such as affordance, define the goal, while coordinated balance, contact, and manipulation can emerge naturally from underlying physical and motor priors. Scaling such priors is key to enabling humanoids to compose and generalize loco-manipulation skills across diverse contexts while maintaining physically coherent whole-body coordination. To this end, we introduce InterPrior, a scalable framework that learns a unified generative controller through large-scale imitation pretraining and post-training by reinforcement learning. InterPrior first distills a full-reference imitation expert into a versatile, goal-conditioned variational policy that reconstructs motion from multimodal observations and high-level intent. While the distilled policy reconstructs training behaviors, it does not generalize reliably due to the vast configuration space of large-scale human-object interactions. To address this, we apply data augmentation with physical perturbations, and then perform reinforcement learning finetuning to improve competence on unseen goals and initializations. Together, these steps consolidate the reconstructed latent skills into a valid manifold, yielding a motion prior that generalizes beyond the training data, e.g., it can incorporate new behaviors such as interactions with unseen objects. We further demonstrate its effectiveness for user-interactive control and its potential for real robot deployment."
+  },
+  {
+    "title": "V-Retrver: Evidence-Driven Agentic Reasoning for Universal Multimodal Retrieval",
+    "url": "http://arxiv.org/abs/2602.06034v1",
+    "arxiv_id": "2602.06034v1",
+    "authors": [
+      "Dongyang Chen",
+      "Chaoyang Wang",
+      "Dezhao SU",
+      "Xi Xiao",
+      "Zeyu Zhang",
+      "Jing Xiong",
+      "Qing Li",
+      "Yuzhang Shang",
+      "Shichao Ka"
+    ],
+    "published": "2026-02-05T18:59:21+00:00",
+    "summary": "Multimodal Large Language Models (MLLMs) have recently been applied to universal multimodal retrieval, where Chain-of-Thought (CoT) reasoning improves candidate reranking. However, existing approaches remain largely language-driven, relying on static visual encodings and lacking the ability to actively verify fine-grained visual evidence, which often leads to speculative reasoning in visually ambiguous cases. We propose V-Retrver, an evidence-driven retrieval framework that reformulates multimodal retrieval as an agentic reasoning process grounded in visual inspection. V-Retrver enables an MLLM to selectively acquire visual evidence during reasoning via external visual tools, performing a multimodal interleaved reasoning process that alternates between hypothesis generation and targeted visual verification.To train such an evidence-gathering retrieval agent, we adopt a curriculum-based learning strategy combining supervised reasoning activation, rejection-based refinement, and reinforcement learning with an evidence-aligned objective. Experiments across multiple multimodal retrieval benchmarks demonstrate consistent improvements in retrieval accuracy (with 23.0% improvements on average), perception-driven reasoning reliability, and generalization."
+  },
+  {
+    "title": "Can vision language models learn intuitive physics from interaction?",
+    "url": "http://arxiv.org/abs/2602.06033v1",
+    "arxiv_id": "2602.06033v1",
+    "authors": [
+      "Luca M. Schulze Buschoff",
+      "Konstantinos Voudouris",
+      "Can Demircan",
+      "Eric Schulz"
+    ],
+    "published": "2026-02-05T18:59:20+00:00",
+    "summary": "Pre-trained vision language models do not have good intuitions about the physical world. Recent work has shown that supervised fine-tuning can improve model performance on simple physical tasks. However, fine-tuned models do not appear to learn robust physical rules that can generalize to new contexts. Based on research in cognitive science, we hypothesize that models need to interact with an environment to properly learn its physical dynamics. We train models that learn through interaction with the environment using reinforcement learning. While learning from interaction allows models to improve their within-task performance, it fails to produce models with generalizable physical intuitions. We find that models trained on one task do not reliably generalize to related tasks, even if the tasks share visual statistics and physical principles, and regardless of whether the models are trained through interaction."
+  },
+  {
+    "title": "GUARDIAN: Safety Filtering for Systems with Perception Models Subject to Adversarial Attacks",
+    "url": "http://arxiv.org/abs/2602.06026v1",
+    "arxiv_id": "2602.06026v1",
+    "authors": [
+      "Nicholas Rober",
+      "Alex Rose",
+      "Jonathan P. How"
+    ],
+    "published": "2026-02-05T18:57:10+00:00",
+    "summary": "Safety filtering is an effective method for enforcing constraints in safety-critical systems, but existing methods typically assume perfect state information. This limitation is especially problematic for systems that rely on neural network (NN)-based state estimators, which can be highly sensitive to noise and adversarial input perturbations. We address these problems by introducing GUARDIAN: Guaranteed Uncertainty-Aware Reachability Defense against Adversarial INterference, a safety filtering framework that provides formal safety guarantees for systems with NN-based state estimators. At runtime, GUARDIAN uses neural network verification tools to provide guaranteed bounds on the system's state estimate given possible perturbations to its observation. It then uses a modified Hamilton-Jacobi reachability formulation to construct a safety filter that adjusts the nominal control input based on the verified state bounds and safety constraints. The result is an uncertainty-aware filter that ensures safety despite the system's reliance on an NN estimator with noisy, possibly adversarial, input observations. Theoretical analysis and numerical experiments demonstrate that GUARDIAN effectively defends systems against adversarial attacks that would otherwise lead to a violation of safety constraints."
+  },
+  {
     "title": "Reinforced Attention Learning",
     "url": "http://arxiv.org/abs/2602.04884v1",
     "arxiv_id": "2602.04884v1",
