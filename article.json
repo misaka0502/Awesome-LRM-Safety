@@ -1,5 +1,108 @@
 [
   {
+    "title": "MedMO: Grounding and Understanding Multimodal Large Language Model for Medical Images",
+    "url": "http://arxiv.org/abs/2602.06965v1",
+    "arxiv_id": "2602.06965v1",
+    "authors": [
+      "Ankan Deria",
+      "Komal Kumar",
+      "Adinath Madhavrao Dukre",
+      "Eran Segal",
+      "Salman Khan",
+      "Imran Razzak"
+    ],
+    "published": "2026-02-06T18:59:59+00:00",
+    "summary": "Multimodal large language models (MLLMs) have rapidly advanced, yet their adoption in medicine remains limited by gaps in domain coverage, modality alignment, and grounded reasoning. In this work, we introduce MedMO, a medical foundation model built upon a generalized MLLM architecture and trained exclusively on large-scale, domain-specific data. MedMO follows a multi-stage training recipe: (i) cross-modal pretraining to align heterogeneous visual encoders with a medical language backbone; (ii) instruction tuning on multi-task supervision that spans captioning, VQA, report generation, retrieval, and grounded disease localization with bounding boxes; and (iii) reinforcement learning with verifiable rewards that combine factuality checks with a box-level GIoU reward to strengthen spatial grounding and step-by-step reasoning in complex clinical scenarios. MedMO consistently outperforms strong open-source medical MLLMs across multiple modalities and tasks. On VQA benchmarks, MedMO achieves an average accuracy improvement of +13.7% over the baseline and performs within 1.9% of the SOTA Fleming-VL. For text-based QA, it attains +6.9% over the baseline and +14.5% over Fleming-VL. In medical report generation, MedMO delivers significant gains in both semantic and clinical accuracy. Moreover, it exhibits strong grounding capability, achieving an IoU improvement of +40.4 over the baseline and +37.0% over Fleming-VL, underscoring its robust spatial reasoning and localization performance. Evaluations across radiology, ophthalmology, and pathology-microscopy confirm MedMO's broad cross-modality generalization. We release two versions of MedMO: 4B and 8B. Project is available at https://genmilab.github.io/MedMO-Page"
+  },
+  {
+    "title": "InftyThink+: Effective and Efficient Infinite-Horizon Reasoning via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2602.06960v1",
+    "arxiv_id": "2602.06960v1",
+    "authors": [
+      "Yuchen Yan",
+      "Liang Jiang",
+      "Jin Jiang",
+      "Shuaicheng Li",
+      "Zujie Wen",
+      "Zhiqiang Zhang",
+      "Jun Zhou",
+      "Jian Shao",
+      "Yueting Zhuang",
+      "Yongliang Shen"
+    ],
+    "published": "2026-02-06T18:59:27+00:00",
+    "summary": "Large reasoning models achieve strong performance by scaling inference-time chain-of-thought, but this paradigm suffers from quadratic cost, context length limits, and degraded reasoning due to lost-in-the-middle effects. Iterative reasoning mitigates these issues by periodically summarizing intermediate thoughts, yet existing methods rely on supervised learning or fixed heuristics and fail to optimize when to summarize, what to preserve, and how to resume reasoning. We propose InftyThink+, an end-to-end reinforcement learning framework that optimizes the entire iterative reasoning trajectory, building on model-controlled iteration boundaries and explicit summarization. InftyThink+ adopts a two-stage training scheme with supervised cold-start followed by trajectory-level reinforcement learning, enabling the model to learn strategic summarization and continuation decisions. Experiments on DeepSeek-R1-Distill-Qwen-1.5B show that InftyThink+ improves accuracy by 21% on AIME24 and outperforms conventional long chain-of-thought reinforcement learning by a clear margin, while also generalizing better to out-of-distribution benchmarks. Moreover, InftyThink+ significantly reduces inference latency and accelerates reinforcement learning training, demonstrating improved reasoning efficiency alongside stronger performance."
+  },
+  {
+    "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+    "url": "http://arxiv.org/abs/2602.06949v1",
+    "arxiv_id": "2602.06949v1",
+    "authors": [
+      "Shenyuan Gao",
+      "William Liang",
+      "Kaiyuan Zheng",
+      "Ayaan Malik",
+      "Seonghyeon Ye",
+      "Sihyun Yu",
+      "Wei-Cheng Tseng",
+      "Yuzhu Dong",
+      "Kaichun Mo",
+      "Chen-Hsuan Lin",
+      "Qianli Ma",
+      "Seungjun Nah",
+      "Loic Magne",
+      "Jiannan Xiang",
+      "Yuqi Xie",
+      "Ruijie Zheng",
+      "Dantong Niu",
+      "You Liang Tan",
+      "K. R. Zentner",
+      "George Kurian",
+      "Suneel Indupuru",
+      "Pooya Jannaty",
+      "Jinwei Gu",
+      "Jun Zhang",
+      "Jitendra Malik",
+      "Pieter Abbeel",
+      "Ming-Yu Liu",
+      "Yuke Zhu",
+      "Joel Jang",
+      "Linxi \"Jim\" Fan"
+    ],
+    "published": "2026-02-06T18:49:43+00:00",
+    "summary": "Being able to simulate the outcomes of actions in varied environments will revolutionize the development of generalist agents at scale. However, modeling these world dynamics, especially for dexterous robotics tasks, poses significant challenges due to limited data coverage and scarce action labels. As an endeavor towards this end, we introduce DreamDojo, a foundation world model that learns diverse interactions and dexterous controls from 44k hours of egocentric human videos. Our data mixture represents the largest video dataset to date for world model pretraining, spanning a wide range of daily scenarios with diverse objects and skills. To address the scarcity of action labels, we introduce continuous latent actions as unified proxy actions, enhancing interaction knowledge transfer from unlabeled videos. After post-training on small-scale target robot data, DreamDojo demonstrates a strong understanding of physics and precise action controllability. We also devise a distillation pipeline that accelerates DreamDojo to a real-time speed of 10.81 FPS and further improves context consistency. Our work enables several important applications based on generative world models, including live teleoperation, policy evaluation, and model-based planning. Systematic evaluation on multiple challenging out-of-distribution (OOD) benchmarks verifies the significance of our method for simulating open-world, contact-rich tasks, paving the way for general-purpose robot world models."
+  },
+  {
+    "title": "Optimal Derivative Feedback Control for an Active Magnetic Levitation System: An Experimental Study on Data-Driven Approaches",
+    "url": "http://arxiv.org/abs/2602.06944v1",
+    "arxiv_id": "2602.06944v1",
+    "authors": [
+      "Saber Omidi",
+      "Rene Akupan Ebunle",
+      "Se Young Yoon"
+    ],
+    "published": "2026-02-06T18:42:01+00:00",
+    "summary": "This paper presents the design and implementation of data-driven optimal derivative feedback controllers for an active magnetic levitation system. A direct, model-free control design method based on the reinforcement learning framework is compared with an indirect optimal control design derived from a numerically identified mathematical model of the system. For the direct model-free approach, a policy iteration procedure is proposed, which adds an iteration layer called the epoch loop to gather multiple sets of process data, providing a more diverse dataset and helping reduce learning biases. This direct control design method is evaluated against a comparable optimal control solution designed from a plant model obtained through the combined Dynamic Mode Decomposition with Control (DMDc) and Prediction Error Minimization (PEM) system identification. Results show that while both controllers can stabilize and improve the performance of the magnetic levitation system when compared to controllers designed from a nominal model, the direct model-free approach consistently outperforms the indirect solution when multiple epochs are allowed. The iterative refinement of the optimal control law over the epoch loop provides the direct approach a clear advantage over the indirect method, which relies on a single set of system data to determine the identified model and control."
+  },
+  {
+    "title": "Endogenous Resistance to Activation Steering in Language Models",
+    "url": "http://arxiv.org/abs/2602.06941v1",
+    "arxiv_id": "2602.06941v1",
+    "authors": [
+      "Alex McKenzie",
+      "Keenan Pepper",
+      "Stijn Servaes",
+      "Martin Leitgab",
+      "Murat Cubuktepe",
+      "Mike Vaiana",
+      "Diogo de Lucena",
+      "Judd Rosenblatt",
+      "Michael S. A. Graziano"
+    ],
+    "published": "2026-02-06T18:41:12+00:00",
+    "summary": "Large language models can resist task-misaligned activation steering during inference, sometimes recovering mid-generation to produce improved responses even when steering remains active. We term this Endogenous Steering Resistance (ESR). Using sparse autoencoder (SAE) latents to steer model activations, we find that Llama-3.3-70B shows substantial ESR, while smaller models from the Llama-3 and Gemma-2 families exhibit the phenomenon less frequently. We identify 26 SAE latents that activate differentially during off-topic content and are causally linked to ESR in Llama-3.3-70B. Zero-ablating these latents reduces the multi-attempt rate by 25%, providing causal evidence for dedicated internal consistency-checking circuits. We demonstrate that ESR can be deliberately enhanced through both prompting and training: meta-prompts instructing the model to self-monitor increase the multi-attempt rate by 4x for Llama-3.3-70B, and fine-tuning on self-correction examples successfully induces ESR-like behavior in smaller models. These findings have dual implications: ESR could protect against adversarial manipulation but might also interfere with beneficial safety interventions that rely on activation steering. Understanding and controlling these resistance mechanisms is important for developing transparent and controllable AI systems. Code is available at github.com/agencyenterprise/endogenous-steering-resistance."
+  },
+  {
     "title": "CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction",
     "url": "http://arxiv.org/abs/2602.06038v1",
     "arxiv_id": "2602.06038v1",
