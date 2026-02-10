@@ -1,5 +1,114 @@
 [
   {
+    "title": "TwinRL-VLA: Digital Twin-Driven Reinforcement Learning for Real-World Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2602.09023v1",
+    "arxiv_id": "2602.09023v1",
+    "authors": [
+      "Qinwen Xu",
+      "Jiaming Liu",
+      "Rui Zhou",
+      "Shaojun Shi",
+      "Nuowei Han",
+      "Zhuoyang Liu",
+      "Chenyang Gu",
+      "Shuo Gu",
+      "Yang Yue",
+      "Gao Huang",
+      "Wenzhao Zheng",
+      "Sirui Han",
+      "Peng Jia",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-02-09T18:59:52+00:00",
+    "summary": "Despite strong generalization capabilities, Vision-Language-Action (VLA) models remain constrained by the high cost of expert demonstrations and insufficient real-world interaction. While online reinforcement learning (RL) has shown promise in improving general foundation models, applying RL to VLA manipulation in real-world settings is still hindered by low exploration efficiency and a restricted exploration space. Through systematic real-world experiments, we observe that the effective exploration space of online RL is closely tied to the data distribution of supervised fine-tuning (SFT). Motivated by this observation, we propose TwinRL, a digital twin-real-world collaborative RL framework designed to scale and guide exploration for VLA models. First, a high-fidelity digital twin is efficiently reconstructed from smartphone-captured scenes, enabling realistic bidirectional transfer between real and simulated environments. During the SFT warm-up stage, we introduce an exploration space expansion strategy using digital twins to broaden the support of the data trajectory distribution. Building on this enhanced initialization, we propose a sim-to-real guided exploration strategy to further accelerate online RL. Specifically, TwinRL performs efficient and parallel online RL in the digital twin prior to deployment, effectively bridging the gap between offline and online training stages. Subsequently, we exploit efficient digital twin sampling to identify failure-prone yet informative configurations, which are used to guide targeted human-in-the-loop rollouts on the real robot. In our experiments, TwinRL approaches 100% success in both in-distribution regions covered by real-world demonstrations and out-of-distribution regions, delivering at least a 30% speedup over prior real-world RL methods and requiring only about 20 minutes on average across four tasks."
+  },
+  {
+    "title": "WorldCompass: Reinforcement Learning for Long-Horizon World Models",
+    "url": "http://arxiv.org/abs/2602.09022v1",
+    "arxiv_id": "2602.09022v1",
+    "authors": [
+      "Zehan Wang",
+      "Tengfei Wang",
+      "Haiyu Zhang",
+      "Xuhui Zuo",
+      "Junta Wu",
+      "Haoyuan Wang",
+      "Wenqiang Sun",
+      "Zhenwei Wang",
+      "Chenjie Cao",
+      "Hengshuang Zhao",
+      "Chunchao Guo",
+      "Zhou Zhao"
+    ],
+    "published": "2026-02-09T18:59:47+00:00",
+    "summary": "This work presents WorldCompass, a novel Reinforcement Learning (RL) post-training framework for the long-horizon, interactive video-based world models, enabling them to explore the world more accurately and consistently based on interaction signals. To effectively \"steer\" the world model's exploration, we introduce three core innovations tailored to the autoregressive video generation paradigm: 1) Clip-level rollout Strategy: We generate and evaluate multiple samples at a single target clip, which significantly boosts rollout efficiency and provides fine-grained reward signals. 2) Complementary Reward Functions: We design reward functions for both interaction-following accuracy and visual quality, which provide direct supervision and effectively suppress reward-hacking behaviors. 3) Efficient RL Algorithm: We employ the negative-aware fine-tuning strategy coupled with various efficiency optimizations to efficiently and effectively enhance model capacity. Evaluations on the SoTA open-source world model, WorldPlay, demonstrate that WorldCompass significantly improves interaction accuracy and visual fidelity across various scenarios."
+  },
+  {
+    "title": "$\u03c7_{0}$: Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies",
+    "url": "http://arxiv.org/abs/2602.09021v1",
+    "arxiv_id": "2602.09021v1",
+    "authors": [
+      "Checheng Yu",
+      "Chonghao Sima",
+      "Gangcheng Jiang",
+      "Hai Zhang",
+      "Haoguang Mai",
+      "Hongyang Li",
+      "Huijie Wang",
+      "Jin Chen",
+      "Kaiyang Wu",
+      "Li Chen",
+      "Lirui Zhao",
+      "Modi Shi",
+      "Ping Luo",
+      "Qingwen Bu",
+      "Shijia Peng",
+      "Tianyu Li",
+      "Yibo Yuan"
+    ],
+    "published": "2026-02-09T18:59:45+00:00",
+    "summary": "High-reliability long-horizon robotic manipulation has traditionally relied on large-scale data and compute to understand complex real-world dynamics. However, we identify that the primary bottleneck to real-world robustness is not resource scale alone, but the distributional shift among the human demonstration distribution, the inductive bias learned by the policy, and the test-time execution distribution -- a systematic inconsistency that causes compounding errors in multi-stage tasks. To mitigate these inconsistencies, we propose $\u03c7_{0}$, a resource-efficient framework with effective modules designated to achieve production-level robustness in robotic manipulation. Our approach builds off three technical pillars: (i) Model Arithmetic, a weight-space merging strategy that efficiently soaks up diverse distributions of different demonstrations, varying from object appearance to state variations; (ii) Stage Advantage, a stage-aware advantage estimator that provides stable, dense progress signals, overcoming the numerical instability of prior non-stage approaches; and (iii) Train-Deploy Alignment, which bridges the distribution gap via spatio-temporal augmentation, heuristic DAgger corrections, and temporal chunk-wise smoothing. $\u03c7_{0}$ enables two sets of dual-arm robots to collaboratively orchestrate long-horizon garment manipulation, spanning tasks from flattening, folding, to hanging different clothes. Our method exhibits high-reliability autonomy; we are able to run the system from arbitrary initial state for consecutive 24 hours non-stop. Experiments validate that $\u03c7_{0}$ surpasses the state-of-the-art $\u03c0_{0.5}$ in success rate by nearly 250%, with only 20-hour data and 8 A100 GPUs. Code, data and models will be released to facilitate the community."
+  },
+  {
+    "title": "Robustness Is a Function, Not a Number: A Factorized Comprehensive Study of OOD Robustness in Vision-Based Driving",
+    "url": "http://arxiv.org/abs/2602.09018v1",
+    "arxiv_id": "2602.09018v1",
+    "authors": [
+      "Amir Mallak",
+      "Alaa Maalouf"
+    ],
+    "published": "2026-02-09T18:59:03+00:00",
+    "summary": "Out of distribution (OOD) robustness in autonomous driving is often reduced to a single number, hiding what breaks a policy. We decompose environments along five axes: scene (rural/urban), season, weather, time (day/night), and agent mix; and measure performance under controlled $k$-factor perturbations ($k \\in \\{0,1,2,3\\}$). Using closed loop control in VISTA, we benchmark FC, CNN, and ViT policies, train compact ViT heads on frozen foundation-model (FM) features, and vary ID support in scale, diversity, and temporal context. (1) ViT policies are markedly more OOD-robust than comparably sized CNN/FC, and FM features yield state-of-the-art success at a latency cost. (2) Naive temporal inputs (multi-frame) do not beat the best single-frame baseline. (3) The largest single factor drops are rural $\\rightarrow$ urban and day $\\rightarrow$ night ($\\sim 31\\%$ each); actor swaps $\\sim 10\\%$, moderate rain $\\sim 7\\%$; season shifts can be drastic, and combining a time flip with other changes further degrades performance. (4) FM-feature policies stay above $85\\%$ under three simultaneous changes; non-FM single-frame policies take a large first-shift hit, and all no-FM models fall below $50\\%$ by three changes. (5) Interactions are non-additive: some pairings partially offset, whereas season-time combinations are especially harmful. (6) Training on winter/snow is most robust to single-factor shifts, while a rural+summer baseline gives the best overall OOD performance. (7) Scaling traces/views improves robustness ($+11.8$ points from $5$ to $14$ traces), yet targeted exposure to hard conditions can substitute for scale. (8) Using multiple ID environments broadens coverage and strengthens weak cases (urban OOD $60.6\\% \\rightarrow 70.1\\%$) with a small ID drop; single-ID preserves peak performance but in a narrow domain. These results yield actionable design rules for OOD-robust driving policies."
+  },
+  {
+    "title": "Contact-Anchored Policies: Contact Conditioning Creates Strong Robot Utility Models",
+    "url": "http://arxiv.org/abs/2602.09017v1",
+    "arxiv_id": "2602.09017v1",
+    "authors": [
+      "Zichen Jeff Cui",
+      "Omar Rayyan",
+      "Haritheja Etukuru",
+      "Bowen Tan",
+      "Zavier Andrianarivo",
+      "Zicheng Teng",
+      "Yihang Zhou",
+      "Krish Mehta",
+      "Nicholas Wojno",
+      "Kevin Yuanbo Wu",
+      "Manan H Anjaria",
+      "Ziyuan Wu",
+      "Manrong Mao",
+      "Guangxun Zhang",
+      "Binit Shah",
+      "Yejin Kim",
+      "Soumith Chintala",
+      "Lerrel Pinto",
+      "Nur Muhammad Mahi Shafiullah"
+    ],
+    "published": "2026-02-09T18:58:50+00:00",
+    "summary": "The prevalent paradigm in robot learning attempts to generalize across environments, embodiments, and tasks with language prompts at runtime. A fundamental tension limits this approach: language is often too abstract to guide the concrete physical understanding required for robust manipulation. In this work, we introduce Contact-Anchored Policies (CAP), which replace language conditioning with points of physical contact in space. Simultaneously, we structure CAP as a library of modular utility models rather than a monolithic generalist policy. This factorization allows us to implement a real-to-sim iteration cycle: we build EgoGym, a lightweight simulation benchmark, to rapidly identify failure modes and refine our models and datasets prior to real-world deployment. We show that by conditioning on contact and iterating via simulation, CAP generalizes to novel environments and embodiments out of the box on three fundamental manipulation skills while using only 23 hours of demonstration data, and outperforms large, state-of-the-art VLAs in zero-shot evaluations by 56%. All model checkpoints, codebase, hardware, simulation, and datasets will be open-sourced. Project page: https://cap-policy.github.io/"
+  },
+  {
     "title": "MedMO: Grounding and Understanding Multimodal Large Language Model for Medical Images",
     "url": "http://arxiv.org/abs/2602.06965v1",
     "arxiv_id": "2602.06965v1",
