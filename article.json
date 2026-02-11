@@ -1,5 +1,85 @@
 [
   {
+    "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+    "url": "http://arxiv.org/abs/2602.10116v1",
+    "arxiv_id": "2602.10116v1",
+    "authors": [
+      "Hongchi Xia",
+      "Xuan Li",
+      "Zhaoshuo Li",
+      "Qianli Ma",
+      "Jiashu Xu",
+      "Ming-Yu Liu",
+      "Yin Cui",
+      "Tsung-Yi Lin",
+      "Wei-Chiu Ma",
+      "Shenlong Wang",
+      "Shuran Song",
+      "Fangyin Wei"
+    ],
+    "published": "2026-02-10T18:59:55+00:00",
+    "summary": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage."
+  },
+  {
+    "title": "Quantum Multiple Rotation Averaging",
+    "url": "http://arxiv.org/abs/2602.10115v1",
+    "arxiv_id": "2602.10115v1",
+    "authors": [
+      "Shuteng Wang",
+      "Natacha Kuete Meli",
+      "Michael M\u00f6ller",
+      "Vladislav Golyanik"
+    ],
+    "published": "2026-02-10T18:59:54+00:00",
+    "summary": "Multiple rotation averaging (MRA) is a fundamental optimization problem in 3D vision and robotics that aims to recover globally consistent absolute rotations from noisy relative measurements. Established classical methods, such as L1-IRLS and Shonan, face limitations including local minima susceptibility and reliance on convex relaxations that fail to preserve the exact manifold geometry, leading to reduced accuracy in high-noise scenarios. We introduce IQARS (Iterative Quantum Annealing for Rotation Synchronization), the first algorithm that reformulates MRA as a sequence of local quadratic non-convex sub-problems executable on quantum annealers after binarization, to leverage inherent hardware advantages. IQARS removes convex relaxation dependence and better preserves non-Euclidean rotation manifold geometry while leveraging quantum tunneling and parallelism for efficient solution space exploration. We evaluate IQARS's performance on synthetic and real-world datasets. While current annealers remain in their nascent phase and only support solving problems of limited scale with constrained performance, we observed that IQARS on D-Wave annealers can already achieve ca. 12% higher accuracy than Shonan, i.e., the best-performing classical method evaluated empirically."
+  },
+  {
+    "title": "Decoupled MPPI-Based Multi-Arm Motion Planning",
+    "url": "http://arxiv.org/abs/2602.10114v1",
+    "arxiv_id": "2602.10114v1",
+    "authors": [
+      "Dan Evron",
+      "Elias Goldsztejn",
+      "Ronen I. Brafman"
+    ],
+    "published": "2026-02-10T18:59:51+00:00",
+    "summary": "Recent advances in sampling-based motion planning algorithms for high DOF arms leverage GPUs to provide SOTA performance. These algorithms can be used to control multiple arms jointly, but this approach scales poorly. To address this, we extend STORM, a sampling-based model-predictive-control (MPC) motion planning algorithm, to handle multiple robots in a distributed fashion. First, we modify STORM to handle dynamic obstacles. Then, we let each arm compute its own motion plan prefix, which it shares with the other arms, which treat it as a dynamic obstacle. Finally, we add a dynamic priority scheme. The new algorithm, MR-STORM, demonstrates clear empirical advantages over SOTA algorithms when operating with both static and dynamic obstacles."
+  },
+  {
+    "title": "Learning Agile Quadrotor Flight in the Real World",
+    "url": "http://arxiv.org/abs/2602.10111v1",
+    "arxiv_id": "2602.10111v1",
+    "authors": [
+      "Yunfan Ren",
+      "Zhiyuan Zhu",
+      "Jiaxu Xing",
+      "Davide Scaramuzza"
+    ],
+    "published": "2026-02-10T18:59:28+00:00",
+    "summary": "Learning-based controllers have achieved impressive performance in agile quadrotor flight but typically rely on massive training in simulation, necessitating accurate system identification for effective Sim2Real transfer. However, even with precise modeling, fixed policies remain susceptible to out-of-distribution scenarios, ranging from external aerodynamic disturbances to internal hardware degradation. To ensure safety under these evolving uncertainties, such controllers are forced to operate with conservative safety margins, inherently constraining their agility outside of controlled settings. While online adaptation offers a potential remedy, safely exploring physical limits remains a critical bottleneck due to data scarcity and safety risks. To bridge this gap, we propose a self-adaptive framework that eliminates the need for precise system identification or offline Sim2Real transfer. We introduce Adaptive Temporal Scaling (ATS) to actively explore platform physical limits, and employ online residual learning to augment a simple nominal model. {Based on the learned hybrid model, we further propose Real-world Anchored Short-horizon Backpropagation Through Time (RASH-BPTT) to achieve efficient and robust in-flight policy updates. Extensive experiments demonstrate that our quadrotor reliably executes agile maneuvers near actuator saturation limits. The system evolves a conservative base policy with a peak speed of 1.9 m/s to 7.3 m/s within approximately 100 seconds of flight time. These findings underscore that real-world adaptation serves not merely to compensate for modeling errors, but as a practical mechanism for sustained performance improvement in aggressive flight regimes."
+  },
+  {
+    "title": "ST4VLA: Spatially Guided Training for Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2602.10109v1",
+    "arxiv_id": "2602.10109v1",
+    "authors": [
+      "Jinhui Ye",
+      "Fangjing Wang",
+      "Ning Gao",
+      "Junqiu Yu",
+      "Yangkun Zhu",
+      "Bin Wang",
+      "Jinyu Zhang",
+      "Weiyang Jin",
+      "Yanwei Fu",
+      "Feng Zheng",
+      "Yilun Chen",
+      "Jiangmiao Pang"
+    ],
+    "published": "2026-02-10T18:59:17+00:00",
+    "summary": "Large vision-language models (VLMs) excel at multimodal understanding but fall short when extended to embodied tasks, where instructions must be transformed into low-level motor actions. We introduce ST4VLA, a dual-system Vision-Language-Action framework that leverages Spatial Guided Training to align action learning with spatial priors in VLMs. ST4VLA includes two stages: (i) spatial grounding pre-training, which equips the VLM with transferable priors via scalable point, box, and trajectory prediction from both web-scale and robot-specific data, and (ii) spatially guided action post-training, which encourages the model to produce richer spatial priors to guide action generation via spatial prompting. This design preserves spatial grounding during policy learning and promotes consistent optimization across spatial and action objectives. Empirically, ST4VLA achieves substantial improvements over vanilla VLA, with performance increasing from 66.1 -> 84.6 on Google Robot and from 54.7 -> 73.2 on WidowX Robot, establishing new state-of-the-art results on SimplerEnv. It also demonstrates stronger generalization to unseen objects and paraphrased instructions, as well as robustness to long-horizon perturbations in real-world settings. These results highlight scalable spatially guided training as a promising direction for robust, generalizable robot learning. Source code, data and models are released at https://internrobotics.github.io/internvla-m1.github.io/"
+  },
+  {
     "title": "TwinRL-VLA: Digital Twin-Driven Reinforcement Learning for Real-World Robotic Manipulation",
     "url": "http://arxiv.org/abs/2602.09023v1",
     "arxiv_id": "2602.09023v1",
