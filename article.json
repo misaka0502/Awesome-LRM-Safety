@@ -1,5 +1,82 @@
 [
   {
+    "title": "YOR: Your Own Mobile Manipulator for Generalizable Robotics",
+    "url": "http://arxiv.org/abs/2602.11150v1",
+    "arxiv_id": "2602.11150v1",
+    "authors": [
+      "Manan H Anjaria",
+      "Mehmet Enes Erciyes",
+      "Vedant Ghatnekar",
+      "Neha Navarkar",
+      "Haritheja Etukuru",
+      "Xiaole Jiang",
+      "Kanad Patel",
+      "Dhawal Kabra",
+      "Nicholas Wojno",
+      "Radhika Ajay Prayage",
+      "Soumith Chintala",
+      "Lerrel Pinto",
+      "Nur Muhammad Mahi Shafiullah",
+      "Zichen Jeff Cui"
+    ],
+    "published": "2026-02-11T18:59:00+00:00",
+    "summary": "Recent advances in robot learning have generated significant interest in capable platforms that may eventually approach human-level competence. This interest, combined with the commoditization of actuators, has propelled growth in low-cost robotic platforms. However, the optimal form factor for mobile manipulation, especially on a budget, remains an open question. We introduce YOR, an open-source, low-cost mobile manipulator that integrates an omnidirectional base, a telescopic vertical lift, and two arms with grippers to achieve whole-body mobility and manipulation. Our design emphasizes modularity, ease of assembly using off-the-shelf components, and affordability, with a bill-of-materials cost under 10,000 USD. We demonstrate YOR's capability by completing tasks that require coordinated whole-body control, bimanual manipulation, and autonomous navigation. Overall, YOR offers competitive functionality for mobile manipulation research at a fraction of the cost of existing platforms. Project website: https://www.yourownrobot.ai/"
+  },
+  {
+    "title": "Let Leaders Play Games: Improving Timing in Leader-based Consensus",
+    "url": "http://arxiv.org/abs/2602.11147v1",
+    "arxiv_id": "2602.11147v1",
+    "authors": [
+      "Rasheed M",
+      "Parth Desai",
+      "Sujit Gujar"
+    ],
+    "published": "2026-02-11T18:57:39+00:00",
+    "summary": "Propagation latency is inherent to any distributed network, including blockchains. Typically, blockchain protocols provide a timing buffer for block propagation across the network. In leader-based blockchains, the leader -- block proposer -- is known in advance for each slot. A fast (or low-latency) proposer may delay the block proposal in anticipation of more rewards from the transactions that would otherwise be included in the subsequent block. Deploying such a strategy by manipulating the timing is known as timing games. It increases the risk of missed blocks due to reduced time for other nodes to vote on the block, affecting the overall efficiency of the blockchain. Moreover, proposers who play timing games essentially appropriate MEV (additional rewards over transaction fees and the block reward) that would otherwise accrue to the next block, making it unfair to subsequent block proposers. We propose a double-block proposal mechanism, 2-Prop, to curtail timing games. 2-Prop selects two proposers per slot to propose blocks and confirms one of them. We design a reward-sharing policy for proposers based on how quickly their blocks propagate to avoid strategic deviations. In the induced game, which we call the Latency Game, we show that it is a Nash Equilibrium for the proposers to propose the block without delay under homogeneous network settings. Under heterogeneous network settings, we study many configurations, and our analysis shows that a faster proposer would prefer not to delay unless the other proposer is extremely slow. Thus, we show the efficacy of 2-Prop in mitigating the effect of timing games."
+  },
+  {
+    "title": "APEX: Learning Adaptive High-Platform Traversal for Humanoid Robots",
+    "url": "http://arxiv.org/abs/2602.11143v1",
+    "arxiv_id": "2602.11143v1",
+    "authors": [
+      "Yikai Wang",
+      "Tingxuan Leng",
+      "Changyi Lin",
+      "Shiqi Liu",
+      "Shir Simon",
+      "Bingqing Chen",
+      "Jonathan Francis",
+      "Ding Zhao"
+    ],
+    "published": "2026-02-11T18:55:11+00:00",
+    "summary": "Humanoid locomotion has advanced rapidly with deep reinforcement learning (DRL), enabling robust feet-based traversal over uneven terrain. Yet platforms beyond leg length remain largely out of reach because current RL training paradigms often converge to jumping-like solutions that are high-impact, torque-limited, and unsafe for real-world deployment. To address this gap, we propose APEX, a system for perceptive, climbing-based high-platform traversal that composes terrain-conditioned behaviors: climb-up and climb-down at vertical edges, walking or crawling on the platform, and stand-up and lie-down for posture reconfiguration. Central to our approach is a generalized ratchet progress reward for learning contact-rich, goal-reaching maneuvers. It tracks the best-so-far task progress and penalizes non-improving steps, providing dense yet velocity-free supervision that enables efficient exploration under strong safety regularization. Based on this formulation, we train LiDAR-based full-body maneuver policies and reduce the sim-to-real perception gap through a dual strategy: modeling mapping artifacts during training and applying filtering and inpainting to elevation maps during deployment. Finally, we distill all six skills into a single policy that autonomously selects behaviors and transitions based on local geometry and commands. Experiments on a 29-DoF Unitree G1 humanoid demonstrate zero-shot sim-to-real traversal of 0.8 meter platforms (approximately 114% of leg length), with robust adaptation to platform height and initial pose, as well as smooth and stable multi-skill transitions."
+  },
+  {
+    "title": "Data-Efficient Hierarchical Goal-Conditioned Reinforcement Learning via Normalizing Flows",
+    "url": "http://arxiv.org/abs/2602.11142v1",
+    "arxiv_id": "2602.11142v1",
+    "authors": [
+      "Shaswat Garg",
+      "Matin Moezzi",
+      "Brandon Da Silva"
+    ],
+    "published": "2026-02-11T18:54:48+00:00",
+    "summary": "Hierarchical goal-conditioned reinforcement learning (H-GCRL) provides a powerful framework for tackling complex, long-horizon tasks by decomposing them into structured subgoals. However, its practical adoption is hindered by poor data efficiency and limited policy expressivity, especially in offline or data-scarce regimes. In this work, Normalizing flow-based hierarchical implicit Q-learning (NF-HIQL), a novel framework that replaces unimodal gaussian policies with expressive normalizing flow policies at both the high- and low-levels of the hierarchy is introduced. This design enables tractable log-likelihood computation, efficient sampling, and the ability to model rich multimodal behaviors. New theoretical guarantees are derived, including explicit KL-divergence bounds for Real-valued non-volume preserving (RealNVP) policies and PAC-style sample efficiency results, showing that NF-HIQL preserves stability while improving generalization. Empirically, NF-HIQL is evaluted across diverse long-horizon tasks in locomotion, ball-dribbling, and multi-step manipulation from OGBench. NF-HIQL consistently outperforms prior goal-conditioned and hierarchical baselines, demonstrating superior robustness under limited data and highlighting the potential of flow-based architectures for scalable, data-efficient hierarchical reinforcement learning."
+  },
+  {
+    "title": "LCIP: Loss-Controlled Inverse Projection of High-Dimensional Image Data",
+    "url": "http://arxiv.org/abs/2602.11141v1",
+    "arxiv_id": "2602.11141v1",
+    "authors": [
+      "Yu Wang",
+      "Frederik L. Dennig",
+      "Michael Behrisch",
+      "Alexandru Telea"
+    ],
+    "published": "2026-02-11T18:52:46+00:00",
+    "summary": "Projections (or dimensionality reduction) methods $P$ aim to map high-dimensional data to typically 2D scatterplots for visual exploration. Inverse projection methods $P^{-1}$ aim to map this 2D space to the data space to support tasks such as data augmentation, classifier analysis, and data imputation. Current $P^{-1}$ methods suffer from a fundamental limitation -- they can only generate a fixed surface-like structure in data space, which poorly covers the richness of this space. We address this by a new method that can `sweep' the data space under user control. Our method works generically for any $P$ technique and dataset, is controlled by two intuitive user-set parameters, and is simple to implement. We demonstrate it by an extensive application involving image manipulation for style transfer."
+  },
+  {
     "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
     "url": "http://arxiv.org/abs/2602.10116v1",
     "arxiv_id": "2602.10116v1",
