@@ -1,5 +1,73 @@
 [
   {
+    "title": "Imitating What Works: Simulation-Filtered Modular Policy Learning from Human Videos",
+    "url": "http://arxiv.org/abs/2602.13197v1",
+    "arxiv_id": "2602.13197v1",
+    "authors": [
+      "Albert J. Zhai",
+      "Kuo-Hao Zeng",
+      "Jiasen Lu",
+      "Ali Farhadi",
+      "Shenlong Wang",
+      "Wei-Chiu Ma"
+    ],
+    "published": "2026-02-13T18:59:10+00:00",
+    "summary": "The ability to learn manipulation skills by watching videos of humans has the potential to unlock a new source of highly scalable data for robot learning. Here, we tackle prehensile manipulation, in which tasks involve grasping an object before performing various post-grasp motions. Human videos offer strong signals for learning the post-grasp motions, but they are less useful for learning the prerequisite grasping behaviors, especially for robots without human-like hands. A promising way forward is to use a modular policy design, leveraging a dedicated grasp generator to produce stable grasps. However, arbitrary stable grasps are often not task-compatible, hindering the robot's ability to perform the desired downstream motion. To address this challenge, we present Perceive-Simulate-Imitate (PSI), a framework for training a modular manipulation policy using human video motion data processed by paired grasp-trajectory filtering in simulation. This simulation step extends the trajectory data with grasp suitability labels, which allows for supervised learning of task-oriented grasping capabilities. We show through real-world experiments that our framework can be used to learn precise manipulation skills efficiently without any robot data, resulting in significantly more robust performance than using a grasp generator naively."
+  },
+  {
+    "title": "Conversational Image Segmentation: Grounding Abstract Concepts with Scalable Supervision",
+    "url": "http://arxiv.org/abs/2602.13195v1",
+    "arxiv_id": "2602.13195v1",
+    "authors": [
+      "Aadarsh Sahoo",
+      "Georgia Gkioxari"
+    ],
+    "published": "2026-02-13T18:58:30+00:00",
+    "summary": "Conversational image segmentation grounds abstract, intent-driven concepts into pixel-accurate masks. Prior work on referring image grounding focuses on categorical and spatial queries (e.g., \"left-most apple\") and overlooks functional and physical reasoning (e.g., \"where can I safely store the knife?\"). We address this gap and introduce Conversational Image Segmentation (CIS) and ConverSeg, a benchmark spanning entities, spatial relations, intent, affordances, functions, safety, and physical reasoning. We also present ConverSeg-Net, which fuses strong segmentation priors with language understanding, and an AI-powered data engine that generates prompt-mask pairs without human supervision. We show that current language-guided segmentation models are inadequate for CIS, while ConverSeg-Net trained on our data engine achieves significant gains on ConverSeg and maintains strong performance on existing language-guided segmentation benchmarks. Project webpage: https://glab-caltech.github.io/converseg/"
+  },
+  {
+    "title": "Steerable Vision-Language-Action Policies for Embodied Reasoning and Hierarchical Control",
+    "url": "http://arxiv.org/abs/2602.13193v1",
+    "arxiv_id": "2602.13193v1",
+    "authors": [
+      "William Chen",
+      "Jagdeep Singh Bhatia",
+      "Catherine Glossop",
+      "Nikhil Mathihalli",
+      "Ria Doshi",
+      "Andy Tang",
+      "Danny Driess",
+      "Karl Pertsch",
+      "Sergey Levine"
+    ],
+    "published": "2026-02-13T18:57:56+00:00",
+    "summary": "Pretrained vision-language models (VLMs) can make semantic and visual inferences across diverse settings, providing valuable common-sense priors for robotic control. However, effectively grounding this knowledge in robot behaviors remains an open challenge. Prior methods often employ a hierarchical approach where VLMs reason over high-level commands to be executed by separate low-level policies, e.g., vision-language-action models (VLAs). The interface between VLMs and VLAs is usually natural language task instructions, which fundamentally limits how much VLM reasoning can steer low-level behavior. We thus introduce Steerable Policies: VLAs trained on rich synthetic commands at various levels of abstraction, like subtasks, motions, and grounded pixel coordinates. By improving low-level controllability, Steerable Policies can unlock pretrained knowledge in VLMs, enabling improved task generalization. We demonstrate this benefit by controlling our Steerable Policies with both a learned high-level embodied reasoner and an off-the-shelf VLM prompted to reason over command abstractions via in-context learning. Across extensive real-world manipulation experiments, these two novel methods outperform prior embodied reasoning VLAs and VLM-based hierarchical baselines, including on challenging generalization and long-horizon tasks.   Website: steerable-policies.github.io"
+  },
+  {
+    "title": "Realistic Face Reconstruction from Facial Embeddings via Diffusion Models",
+    "url": "http://arxiv.org/abs/2602.13168v1",
+    "arxiv_id": "2602.13168v1",
+    "authors": [
+      "Dong Han",
+      "Yong Li",
+      "Joachim Denzler"
+    ],
+    "published": "2026-02-13T18:28:24+00:00",
+    "summary": "With the advancement of face recognition (FR) systems, privacy-preserving face recognition (PPFR) systems have gained popularity for their accurate recognition, enhanced facial privacy protection, and robustness to various attacks. However, there are limited studies to further verify privacy risks by reconstructing realistic high-resolution face images from embeddings of these systems, especially for PPFR. In this work, we propose the face embedding mapping (FEM), a general framework that explores Kolmogorov-Arnold Network (KAN) for conducting the embedding-to-face attack by leveraging pre-trained Identity-Preserving diffusion model against state-of-the-art (SOTA) FR and PPFR systems. Based on extensive experiments, we verify that reconstructed faces can be used for accessing other real-word FR systems. Besides, the proposed method shows the robustness in reconstructing faces from the partial and protected face embeddings. Moreover, FEM can be utilized as a tool for evaluating safety of FR and PPFR systems in terms of privacy leakage. All images used in this work are from public datasets."
+  },
+  {
+    "title": "Optimal Take-off under Fuzzy Clearances",
+    "url": "http://arxiv.org/abs/2602.13166v1",
+    "arxiv_id": "2602.13166v1",
+    "authors": [
+      "Hugo Henry",
+      "Arthur Tsai",
+      "Kelly Cohen"
+    ],
+    "published": "2026-02-13T18:25:24+00:00",
+    "summary": "This paper presents a hybrid obstacle avoidance architecture that integrates Optimal Control under clearance with a Fuzzy Rule Based System (FRBS) to enable adaptive constraint handling for unmanned aircraft. Motivated by the limitations of classical optimal control under uncertainty and the need for interpretable decision making in safety critical aviation systems, we design a three stage Takagi Sugeno Kang fuzzy layer that modulates constraint radii, urgency levels, and activation decisions based on regulatory separation minima and airworthiness guidelines from FAA and EASA. These fuzzy-derived clearances are then incorporated as soft constraints into an optimal control problem solved using the FALCON toolbox and IPOPT. The framework aims to reduce unnecessary recomputations by selectively activating obstacle avoidance updates while maintaining compliance with aviation procedures. A proof of concept implementation using a simplified aircraft model demonstrates that the approach can generate optimal trajectories with computation times of 2,3 seconds per iteration in a single threaded MATLAB environment, suggesting feasibility for near real time applications. However, our experiments revealed a critical software incompatibility in the latest versions of FALCON and IPOPT, in which the Lagrangian penalty term remained identically zero, preventing proper constraint enforcement. This behavior was consistent across scenarios and indicates a solver toolbox regression rather than a modeling flaw. Future work includes validating this effect by reverting to earlier software versions, optimizing the fuzzy membership functions using evolutionary methods, and extending the system to higher fidelity aircraft models and stochastic obstacle environments."
+  },
+  {
     "title": "Scaling Verification Can Be More Effective than Scaling Policy Learning for Vision-Language-Action Alignment",
     "url": "http://arxiv.org/abs/2602.12281v1",
     "arxiv_id": "2602.12281v1",
