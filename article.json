@@ -1,5 +1,77 @@
 [
   {
+    "title": "Neurosim: A Fast Simulator for Neuromorphic Robot Perception",
+    "url": "http://arxiv.org/abs/2602.15018v1",
+    "arxiv_id": "2602.15018v1",
+    "authors": [
+      "Richeek Das",
+      "Pratik Chaudhari"
+    ],
+    "published": "2026-02-16T18:57:04+00:00",
+    "summary": "Neurosim is a fast, real-time, high-performance library for simulating sensors such as dynamic vision sensors, RGB cameras, depth sensors, and inertial sensors. It can also simulate agile dynamics of multi-rotor vehicles in complex and dynamic environments. Neurosim can achieve frame rates as high as ~2700 FPS on a desktop GPU. Neurosim integrates with a ZeroMQ-based communication library called Cortex to facilitate seamless integration with machine learning and robotics workflows. Cortex provides a high-throughput, low-latency message-passing system for Python and C++ applications, with native support for NumPy arrays and PyTorch tensors. This paper discusses the design philosophy behind Neurosim and Cortex. It demonstrates how they can be used to (i) train neuromorphic perception and control algorithms, e.g., using self-supervised learning on time-synchronized multi-modal data, and (ii) test real-time implementations of these algorithms in closed-loop. Neurosim and Cortex are available at https://github.com/grasp-lyrl/neurosim ."
+  },
+  {
+    "title": "Cold-Start Personalization via Training-Free Priors from Structured World Models",
+    "url": "http://arxiv.org/abs/2602.15012v1",
+    "arxiv_id": "2602.15012v1",
+    "authors": [
+      "Avinandan Bose",
+      "Shuyue Stella Li",
+      "Faeze Brahman",
+      "Pang Wei Koh",
+      "Simon Shaolei Du",
+      "Yulia Tsvetkov",
+      "Maryam Fazel",
+      "Lin Xiao",
+      "Asli Celikyilmaz"
+    ],
+    "published": "2026-02-16T18:52:13+00:00",
+    "summary": "Cold-start personalization requires inferring user preferences through interaction when no user-specific historical data is available. The core challenge is a routing problem: each task admits dozens of preference dimensions, yet individual users care about only a few, and which ones matter depends on who is asking. With a limited question budget, asking without structure will miss the dimensions that matter. Reinforcement learning is the natural formulation, but in multi-turn settings its terminal reward fails to exploit the factored, per-criterion structure of preference data, and in practice learned policies collapse to static question sequences that ignore user responses. We propose decomposing cold-start elicitation into offline structure learning and online Bayesian inference. Pep (Preference Elicitation with Priors) learns a structured world model of preference correlations offline from complete profiles, then performs training-free Bayesian inference online to select informative questions and predict complete preference profiles, including dimensions never asked about. The framework is modular across downstream solvers and requires only simple belief models. Across medical, mathematical, social, and commonsense reasoning, Pep achieves 80.8% alignment between generated responses and users' stated preferences versus 68.5% for RL, with 3-5x fewer interactions. When two users give different answers to the same question, Pep changes its follow-up 39-62% of the time versus 0-28% for RL. It does so with ~10K parameters versus 8B for RL, showing that the bottleneck in cold-start elicitation is the capability to exploit the factored structure of preference data."
+  },
+  {
+    "title": "BPP: Long-Context Robot Imitation Learning by Focusing on Key History Frames",
+    "url": "http://arxiv.org/abs/2602.15010v1",
+    "arxiv_id": "2602.15010v1",
+    "authors": [
+      "Max Sobol Mark",
+      "Jacky Liang",
+      "Maria Attarian",
+      "Chuyuan Fu",
+      "Debidatta Dwibedi",
+      "Dhruv Shah",
+      "Aviral Kumar"
+    ],
+    "published": "2026-02-16T18:49:56+00:00",
+    "summary": "Many robot tasks require attending to the history of past observations. For example, finding an item in a room requires remembering which places have already been searched. However, the best-performing robot policies typically condition only on the current observation, limiting their applicability to such tasks. Naively conditioning on past observations often fails due to spurious correlations: policies latch onto incidental features of training histories that do not generalize to out-of-distribution trajectories upon deployment. We analyze why policies latch onto these spurious correlations and find that this problem stems from limited coverage over the space of possible histories during training, which grows exponentially with horizon. Existing regularization techniques provide inconsistent benefits across tasks, as they do not fundamentally address this coverage problem. Motivated by these findings, we propose Big Picture Policies (BPP), an approach that conditions on a minimal set of meaningful keyframes detected by a vision-language model. By projecting diverse rollouts onto a compact set of task-relevant events, BPP substantially reduces distribution shift between training and deployment, without sacrificing expressivity. We evaluate BPP on four challenging real-world manipulation tasks and three simulation tasks, all requiring history conditioning. BPP achieves 70% higher success rates than the best comparison on real-world evaluations."
+  },
+  {
+    "title": "Learning User Interests via Reasoning and Distillation for Cross-Domain News Recommendation",
+    "url": "http://arxiv.org/abs/2602.15005v1",
+    "arxiv_id": "2602.15005v1",
+    "authors": [
+      "Mengdan Zhu",
+      "Yufan Zhao",
+      "Tao Di",
+      "Yulan Yan",
+      "Liang Zhao"
+    ],
+    "published": "2026-02-16T18:45:40+00:00",
+    "summary": "News recommendation plays a critical role in online news platforms by helping users discover relevant content. Cross-domain news recommendation further requires inferring user's underlying information needs from heterogeneous signals that often extend beyond direct news consumption. A key challenge lies in moving beyond surface-level behaviors to capture deeper, reusable user interests while maintaining scalability in large-scale production systems. In this paper, we present a reinforcement learning framework that trains large language models to generate high-quality lists of interest-driven news search queries from cross-domain user signals. We formulate query-list generation as a policy optimization problem and employ GRPO with multiple reward signals. We systematically study two compute dimensions: inference-time sampling and model capacity, and empirically observe consistent improvements with increased compute that exhibit scaling-like behavior. Finally, we perform on-policy distillation to transfer the learned policy from a large, compute-intensive teacher to a compact student model suitable for scalable deployment. Extensive offline experiments, ablation studies and large-scale online A/B tests in a production news recommendation system demonstrate consistent gains in both interest modeling quality and downstream recommendation performance."
+  },
+  {
+    "title": "Learning Robust Markov Models for Safe Runtime Monitoring",
+    "url": "http://arxiv.org/abs/2602.14987v1",
+    "arxiv_id": "2602.14987v1",
+    "authors": [
+      "Antonina Skurka",
+      "Luko van der Maas",
+      "Sebastian Junges",
+      "Hazem Torfah"
+    ],
+    "published": "2026-02-16T18:14:10+00:00",
+    "summary": "We present a model-based approach to learning robust runtime monitors for autonomous systems. Runtime monitors play a crucial role in raising the level of assurance by observing system behavior and predicting potential safety violations. In our approach, we propose to capture a system's (stochastic) behavior using interval Hidden Markov Models (iHMMs). The monitor then uses this learned iHMM to derive risk estimates for potential safety violations. The paper makes three key contributions: (1) it provides a formalization of the problem of learning robust runtime monitors, (2) introduces a novel framework that uses conformance-testing-based refinement for learning robust iHMMs with convergence guarantees, and (3) presents an efficient monitoring algorithm for computing risk estimates over iHMMs. Our empirical results demonstrate the efficacy of monitors learned using our approach, particularly when compared to model-free monitoring approaches that rely solely on collected data without access to a system model."
+  },
+  {
     "title": "Imitating What Works: Simulation-Filtered Modular Policy Learning from Human Videos",
     "url": "http://arxiv.org/abs/2602.13197v1",
     "arxiv_id": "2602.13197v1",
