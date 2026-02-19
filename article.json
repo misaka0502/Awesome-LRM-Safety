@@ -1,5 +1,78 @@
 [
   {
+    "title": "One Hand to Rule Them All: Canonical Representations for Unified Dexterous Manipulation",
+    "url": "http://arxiv.org/abs/2602.16712v1",
+    "arxiv_id": "2602.16712v1",
+    "authors": [
+      "Zhenyu Wei",
+      "Yunchao Yao",
+      "Mingyu Ding"
+    ],
+    "published": "2026-02-18T18:59:57+00:00",
+    "summary": "Dexterous manipulation policies today largely assume fixed hand designs, severely restricting their generalization to new embodiments with varied kinematic and structural layouts. To overcome this limitation, we introduce a parameterized canonical representation that unifies a broad spectrum of dexterous hand architectures. It comprises a unified parameter space and a canonical URDF format, offering three key advantages. 1) The parameter space captures essential morphological and kinematic variations for effective conditioning in learning algorithms. 2) A structured latent manifold can be learned over our space, where interpolations between embodiments yield smooth and physically meaningful morphology transitions. 3) The canonical URDF standardizes the action space while preserving dynamic and functional properties of the original URDFs, enabling efficient and reliable cross-embodiment policy learning. We validate these advantages through extensive analysis and experiments, including grasp policy replay, VAE latent encoding, and cross-embodiment zero-shot transfer. Specifically, we train a VAE on the unified representation to obtain a compact, semantically rich latent embedding, and develop a grasping policy conditioned on the canonical representation that generalizes across dexterous hands. We demonstrate, through simulation and real-world tasks on unseen morphologies (e.g., 81.9% zero-shot success rate on 3-finger LEAP Hand), that our framework unifies both the representational and action spaces of structurally diverse hands, providing a scalable foundation for cross-hand learning toward universal dexterous manipulation."
+  },
+  {
+    "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+    "url": "http://arxiv.org/abs/2602.16710v1",
+    "arxiv_id": "2602.16710v1",
+    "authors": [
+      "Ruijie Zheng",
+      "Dantong Niu",
+      "Yuqi Xie",
+      "Jing Wang",
+      "Mengda Xu",
+      "Yunfan Jiang",
+      "Fernando Casta\u00f1eda",
+      "Fengyuan Hu",
+      "You Liang Tan",
+      "Letian Fu",
+      "Trevor Darrell",
+      "Furong Huang",
+      "Yuke Zhu",
+      "Danfei Xu",
+      "Linxi Fan"
+    ],
+    "published": "2026-02-18T18:59:05+00:00",
+    "summary": "Human behavior is among the most scalable sources of data for learning physical intelligence, yet how to effectively leverage it for dexterous manipulation remains unclear. While prior work demonstrates human to robot transfer in constrained settings, it is unclear whether large scale human data can support fine grained, high degree of freedom dexterous manipulation. We present EgoScale, a human to dexterous manipulation transfer framework built on large scale egocentric human data. We train a Vision Language Action (VLA) model on over 20,854 hours of action labeled egocentric human video, more than 20 times larger than prior efforts, and uncover a log linear scaling law between human data scale and validation loss. This validation loss strongly correlates with downstream real robot performance, establishing large scale human data as a predictable supervision source. Beyond scale, we introduce a simple two stage transfer recipe: large scale human pretraining followed by lightweight aligned human robot mid training. This enables strong long horizon dexterous manipulation and one shot task adaptation with minimal robot supervision. Our final policy improves average success rate by 54% over a no pretraining baseline using a 22 DoF dexterous robotic hand, and transfers effectively to robots with lower DoF hands, indicating that large scale human motion provides a reusable, embodiment agnostic motor prior."
+  },
+  {
+    "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
+    "url": "http://arxiv.org/abs/2602.16705v1",
+    "arxiv_id": "2602.16705v1",
+    "authors": [
+      "Runpei Dong",
+      "Ziyan Li",
+      "Xialin He",
+      "Saurabh Gupta"
+    ],
+    "published": "2026-02-18T18:55:02+00:00",
+    "summary": "Visual loco-manipulation of arbitrary objects in the wild with humanoid robots requires accurate end-effector (EE) control and a generalizable understanding of the scene via visual inputs (e.g., RGB-D images). Existing approaches are based on real-world imitation learning and exhibit limited generalization due to the difficulty in collecting large-scale training datasets. This paper presents a new paradigm, HERO, for object loco-manipulation with humanoid robots that combines the strong generalization and open-vocabulary understanding of large vision models with strong control performance from simulated training. We achieve this by designing an accurate residual-aware EE tracking policy. This EE tracking policy combines classical robotics with machine learning. It uses a) inverse kinematics to convert residual end-effector targets into reference trajectories, b) a learned neural forward model for accurate forward kinematics, c) goal adjustment, and d) replanning. Together, these innovations help us cut down the end-effector tracking error by 3.2x. We use this accurate end-effector tracker to build a modular system for loco-manipulation, where we use open-vocabulary large vision models for strong visual generalization. Our system is able to operate in diverse real-world environments, from offices to coffee shops, where the robot is able to reliably manipulate various everyday objects (e.g., mugs, apples, toys) on surfaces ranging from 43cm to 92cm in height. Systematic modular and end-to-end tests in simulation and the real world demonstrate the effectiveness of our proposed design. We believe the advances in this paper can open up new ways of training humanoid robots to interact with daily objects."
+  },
+  {
+    "title": "Reinforced Fast Weights with Next-Sequence Prediction",
+    "url": "http://arxiv.org/abs/2602.16704v1",
+    "arxiv_id": "2602.16704v1",
+    "authors": [
+      "Hee Seung Hwang",
+      "Xindi Wu",
+      "Sanghyuk Chun",
+      "Olga Russakovsky"
+    ],
+    "published": "2026-02-18T18:53:18+00:00",
+    "summary": "Fast weight architectures offer a promising alternative to attention-based transformers for long-context modeling by maintaining constant memory overhead regardless of context length. However, their potential is limited by the next-token prediction (NTP) training paradigm. NTP optimizes single-token predictions and ignores semantic coherence across multiple tokens following a prefix. Consequently, fast weight models, which dynamically update their parameters to store contextual information, learn suboptimal representations that fail to capture long-range dependencies. We introduce REFINE (Reinforced Fast weIghts with Next sEquence prediction), a reinforcement learning framework that trains fast weight models under the next-sequence prediction (NSP) objective. REFINE selects informative token positions based on prediction entropy, generates multi-token rollouts, assigns self-supervised sequence-level rewards, and optimizes the model with group relative policy optimization (GRPO). REFINE is applicable throughout the training lifecycle of pre-trained language models: mid-training, post-training, and test-time training. Our experiments on LaCT-760M and DeltaNet-1.3B demonstrate that REFINE consistently outperforms supervised fine-tuning with NTP across needle-in-a-haystack retrieval, long-context question answering, and diverse tasks in LongBench. REFINE provides an effective and versatile framework for improving long-context modeling in fast weight architectures."
+  },
+  {
+    "title": "Orbital Motions of Binaries in Orion South",
+    "url": "http://arxiv.org/abs/2602.16676v1",
+    "arxiv_id": "2602.16676v1",
+    "authors": [
+      "Luis A. Zapata",
+      "Luis F. Rodr\u00edguez"
+    ],
+    "published": "2026-02-18T18:16:20+00:00",
+    "summary": "We present high-angular resolution ($\\simeq 0\\rlap.{''}06$) VLA and ALMA observations of Orion South separated by 15.52 years. The purpose of this study was to search for orbital motions in three close ($\\simeq 0\\rlap.{''}1$) binary systems in the region. We do not detect changes in the position angle of the binaries but in two of the cases we detect significant changes in their separation in the plane of the sky. We use these changes to estimate that the total mass of the binaries is in the $\\simeq$1-2 $M_\\odot$ range. We also estimate the disk masses from the mm emission. The dust-to-stellar mass ratio is in the range of 0.04 to 0.18, values consistent with those expected for very early stellar evolution (Class 0) protostars."
+  },
+  {
     "title": "Dex4D: Task-Agnostic Point Track Policy for Sim-to-Real Dexterous Manipulation",
     "url": "http://arxiv.org/abs/2602.15828v1",
     "arxiv_id": "2602.15828v1",
