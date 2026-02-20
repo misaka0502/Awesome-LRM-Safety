@@ -1,5 +1,77 @@
 [
   {
+    "title": "When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs",
+    "url": "http://arxiv.org/abs/2602.17659v1",
+    "arxiv_id": "2602.17659v1",
+    "authors": [
+      "Yu Fang",
+      "Yuchun Feng",
+      "Dong Jing",
+      "Jiaqi Liu",
+      "Yue Yang",
+      "Zhenyu Wei",
+      "Daniel Szafir",
+      "Mingyu Ding"
+    ],
+    "published": "2026-02-19T18:59:20+00:00",
+    "summary": "Vision-Language-Action models (VLAs) promise to ground language instructions in robot control, yet in practice often fail to faithfully follow language. When presented with instructions that lack strong scene-specific supervision, VLAs suffer from counterfactual failures: they act based on vision shortcuts induced by dataset biases, repeatedly executing well-learned behaviors and selecting objects frequently seen during training regardless of language intent. To systematically study it, we introduce LIBERO-CF, the first counterfactual benchmark for VLAs that evaluates language following capability by assigning alternative instructions under visually plausible LIBERO layouts. Our evaluation reveals that counterfactual failures are prevalent yet underexplored across state-of-the-art VLAs. We propose Counterfactual Action Guidance (CAG), a simple yet effective dual-branch inference scheme that explicitly regularizes language conditioning in VLAs. CAG combines a standard VLA policy with a language-unconditioned Vision-Action (VA) module, enabling counterfactual comparison during action selection. This design reduces reliance on visual shortcuts, improves robustness on under-observed tasks, and requires neither additional demonstrations nor modifications to existing architectures or pretrained models. Extensive experiments demonstrate its plug-and-play integration across diverse VLAs and consistent improvements. For example, on LIBERO-CF, CAG improves $\u03c0_{0.5}$ by 9.7% in language following accuracy and 3.6% in task success on under-observed tasks using a training-free strategy, with further gains of 15.5% and 8.5%, respectively, when paired with a VA model. In real-world evaluations, CAG reduces counterfactual failures of 9.4% and improves task success by 17.2% on average."
+  },
+  {
+    "title": "SMAC: Score-Matched Actor-Critics for Robust Offline-to-Online Transfer",
+    "url": "http://arxiv.org/abs/2602.17632v1",
+    "arxiv_id": "2602.17632v1",
+    "authors": [
+      "Nathan S. de Lara",
+      "Florian Shkurti"
+    ],
+    "published": "2026-02-19T18:47:31+00:00",
+    "summary": "Modern offline Reinforcement Learning (RL) methods find performant actor-critics, however, fine-tuning these actor-critics online with value-based RL algorithms typically causes immediate drops in performance. We provide evidence consistent with the hypothesis that, in the loss landscape, offline maxima for prior algorithms and online maxima are separated by low-performance valleys that gradient-based fine-tuning traverses. Following this, we present Score Matched Actor-Critic (SMAC), an offline RL method designed to learn actor-critics that transition to online value-based RL algorithms with no drop in performance. SMAC avoids valleys between offline and online maxima by regularizing the Q-function during the offline phase to respect a first-order derivative equality between the score of the policy and action-gradient of the Q-function. We experimentally demonstrate that SMAC converges to offline maxima that are connected to better online maxima via paths with monotonically increasing reward found by first-order optimization. SMAC achieves smooth transfer to Soft Actor-Critic and TD3 in 6/6 D4RL tasks. In 4/6 environments, it reduces regret by 34-58% over the best baseline."
+  },
+  {
+    "title": "Stable Asynchrony: Variance-Controlled Off-Policy RL for LLMs",
+    "url": "http://arxiv.org/abs/2602.17616v1",
+    "arxiv_id": "2602.17616v1",
+    "authors": [
+      "Luke Huang",
+      "Zhuoyang Zhang",
+      "Qinghao Hu",
+      "Shang Yang",
+      "Song Han"
+    ],
+    "published": "2026-02-19T18:40:51+00:00",
+    "summary": "Reinforcement learning (RL) is widely used to improve large language models on reasoning tasks, and asynchronous RL training is attractive because it increases end-to-end throughput. However, for widely adopted critic-free policy-gradient methods such as REINFORCE and GRPO, high asynchrony makes the policy-gradient estimator markedly $\\textbf{higher variance}$: training on stale rollouts creates heavy-tailed importance ratios, causing a small fraction of samples to dominate updates. This amplification makes gradients noisy and learning unstable relative to matched on-policy training. Across math and general reasoning benchmarks, we find collapse is reliably predicted by effective sample size (ESS) and unstable gradient norms. Motivated by this diagnosis, we propose $\\textbf{V}$ariance $\\textbf{C}$ontrolled $\\textbf{P}$olicy $\\textbf{O}$ptimization ($\\textbf{VCPO}$), a general stabilization method for REINFORCE/GRPO-style algorithms that (i) scales learning rate based on effective sample size to dampen unreliable updates, and (ii) applies a closed-form minimum-variance baseline for the off-policy setting, avoiding an auxiliary value model and adding minimal overhead. Empirically, VCPO substantially improves robustness for asynchronous training across math, general reasoning, and tool-use tasks, outperforming a broad suite of baselines spanning masking/clipping stabilizers and algorithmic variants. This reduces long-context, multi-turn training time by 2.5$\\times$ while matching synchronous performance, demonstrating that explicit control of policy-gradient variance is key for reliable asynchronous RL at scale."
+  },
+  {
+    "title": "Adapting Actively on the Fly: Relevance-Guided Online Meta-Learning with Latent Concepts for Geospatial Discovery",
+    "url": "http://arxiv.org/abs/2602.17605v1",
+    "arxiv_id": "2602.17605v1",
+    "authors": [
+      "Jowaria Khan",
+      "Anindya Sarkar",
+      "Yevgeniy Vorobeychik",
+      "Elizabeth Bondi-Kelly"
+    ],
+    "published": "2026-02-19T18:30:18+00:00",
+    "summary": "In many real-world settings, such as environmental monitoring, disaster response, or public health, with costly and difficult data collection and dynamic environments, strategically sampling from unobserved regions is essential for efficiently uncovering hidden targets under tight resource constraints. Yet, sparse and biased geospatial ground truth limits the applicability of existing learning-based methods, such as reinforcement learning. To address this, we propose a unified geospatial discovery framework that integrates active learning, online meta-learning, and concept-guided reasoning. Our approach introduces two key innovations built on a shared notion of *concept relevance*, which captures how domain-specific factors influence target presence: a *concept-weighted uncertainty sampling strategy*, where uncertainty is modulated by learned relevance based on readily-available domain-specific concepts (e.g., land cover, source proximity); and a *relevance-aware meta-batch formation strategy* that promotes semantic diversity during online-meta updates, improving generalization in dynamic environments. Our experiments include testing on a real-world dataset of cancer-causing PFAS (Per- and polyfluoroalkyl substances) contamination, showcasing our method's reliability at uncovering targets with limited data and a varying environment."
+  },
+  {
+    "title": "Graph Neural Model Predictive Control for High-Dimensional Systems",
+    "url": "http://arxiv.org/abs/2602.17601v1",
+    "arxiv_id": "2602.17601v1",
+    "authors": [
+      "Patrick Benito Eberhard",
+      "Luis Pabon",
+      "Daniele Gammelli",
+      "Hugo Buurmeijer",
+      "Amon Lahr",
+      "Mark Leone",
+      "Andrea Carron",
+      "Marco Pavone"
+    ],
+    "published": "2026-02-19T18:26:42+00:00",
+    "summary": "The control of high-dimensional systems, such as soft robots, requires models that faithfully capture complex dynamics while remaining computationally tractable. This work presents a framework that integrates Graph Neural Network (GNN)-based dynamics models with structure-exploiting Model Predictive Control to enable real-time control of high-dimensional systems. By representing the system as a graph with localized interactions, the GNN preserves sparsity, while a tailored condensing algorithm eliminates state variables from the control problem, ensuring efficient computation. The complexity of our condensing algorithm scales linearly with the number of system nodes, and leverages Graphics Processing Unit (GPU) parallelization to achieve real-time performance. The proposed approach is validated in simulation and experimentally on a physical soft robotic trunk. Results show that our method scales to systems with up to 1,000 nodes at 100 Hz in closed-loop, and demonstrates real-time reference tracking on hardware with sub-centimeter accuracy, outperforming baselines by 63.6%. Finally, we show the capability of our method to achieve effective full-body obstacle avoidance."
+  },
+  {
     "title": "One Hand to Rule Them All: Canonical Representations for Unified Dexterous Manipulation",
     "url": "http://arxiv.org/abs/2602.16712v1",
     "arxiv_id": "2602.16712v1",
