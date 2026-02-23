@@ -1,5 +1,78 @@
 [
   {
+    "title": "VIRAASAT: Traversing Novel Paths for Indian Cultural Reasoning",
+    "url": "http://arxiv.org/abs/2602.18429v1",
+    "arxiv_id": "2602.18429v1",
+    "authors": [
+      "Harshul Raj Surana",
+      "Arijit Maji",
+      "Aryan Vats",
+      "Akash Ghosh",
+      "Sriparna Saha",
+      "Amit Sheth"
+    ],
+    "published": "2026-02-20T18:53:07+00:00",
+    "summary": "Large Language Models (LLMs) have made significant progress in reasoning tasks across various domains such as mathematics and coding. However, their performance deteriorates in tasks requiring rich socio-cultural knowledge and diverse local contexts, particularly those involving Indian Culture. Existing Cultural benchmarks are (i) Manually crafted, (ii) contain single-hop questions testing factual recall, and (iii) prohibitively costly to scale, leaving this deficiency largely unmeasured. To address this, we introduce VIRAASAT, a novel, semi-automated multi-hop approach for generating cultural specific multi-hop Question-Answering dataset for Indian culture. VIRAASAT leverages a Knowledge Graph comprising more than 700 expert-curated cultural artifacts, covering 13 key attributes of Indian culture (history, festivals, etc). VIRAASAT spans all 28 states and 8 Union Territories, yielding more than 3,200 multi-hop questions that necessitate chained cultural reasoning. We evaluate current State-of-the-Art (SOTA) LLMs on VIRAASAT and identify key limitations in reasoning wherein fine-tuning on Chain-of-Thought(CoT) traces fails to ground and synthesize low-probability facts. To bridge this gap, we propose a novel framework named Symbolic Chain-of-Manipulation (SCoM). Adapting the Chain-of-Manipulation paradigm, we train the model to simulate atomic Knowledge Graph manipulations internally. SCoM teaches the model to reliably traverse the topological structure of the graph. Experiments on Supervised Fine-Tuning (SFT) demonstrate that SCoM outperforms standard CoT baselines by up to 20%. We release the VIRAASAT dataset along with our findings, laying a strong foundation towards building Culturally Aware Reasoning Models."
+  },
+  {
+    "title": "CapNav: Benchmarking Vision Language Models on Capability-conditioned Indoor Navigation",
+    "url": "http://arxiv.org/abs/2602.18424v1",
+    "arxiv_id": "2602.18424v1",
+    "authors": [
+      "Xia Su",
+      "Ruiqi Chen",
+      "Benlin Liu",
+      "Jingwei Ma",
+      "Zonglin Di",
+      "Ranjay Krishna",
+      "Jon Froehlich"
+    ],
+    "published": "2026-02-20T18:46:27+00:00",
+    "summary": "Vision-Language Models (VLMs) have shown remarkable progress in Vision-Language Navigation (VLN), offering new possibilities for navigation decision-making that could benefit both robotic platforms and human users. However, real-world navigation is inherently conditioned by the agent's mobility constraints. For example, a sweeping robot cannot traverse stairs, while a quadruped can. We introduce Capability-Conditioned Navigation (CapNav), a benchmark designed to evaluate how well VLMs can navigate complex indoor spaces given an agent's specific physical and operational capabilities. CapNav defines five representative human and robot agents, each described with physical dimensions, mobility capabilities, and environmental interaction abilities. CapNav provides 45 real-world indoor scenes, 473 navigation tasks, and 2365 QA pairs to test if VLMs can traverse indoor environments based on agent capabilities. We evaluate 13 modern VLMs and find that current VLM's navigation performance drops sharply as mobility constraints tighten, and that even state-of-the-art models struggle with obstacle types that require reasoning on spatial dimensions. We conclude by discussing the implications for capability-aware navigation and the opportunities for advancing embodied spatial reasoning in future VLMs. The benchmark is available at https://github.com/makeabilitylab/CapNav"
+  },
+  {
+    "title": "Snapping Actuators with Asymmetric and Sequenced Motion",
+    "url": "http://arxiv.org/abs/2602.18421v1",
+    "arxiv_id": "2602.18421v1",
+    "authors": [
+      "Xin Li",
+      "Ye Jin",
+      "Mohsen Jafarpour",
+      "Hugo de Souza Oliveira",
+      "Edoardo Milana"
+    ],
+    "published": "2026-02-20T18:45:17+00:00",
+    "summary": "Snapping instabilities in soft structures offer a powerful pathway to achieve rapid and energy-efficient actuation. In this study, an eccentric dome-shaped snapping actuator is developed to generate controllable asymmetric motion through geometry-induced instability. Finite element simulations and experiments reveal consistent asymmetric deformation and the corresponding pressure characteristics. By coupling four snapping actuators in a pneumatic network, a compact quadrupedal robot achieves coordinated wavelike locomotion using only a single pressure input. The robot exhibits frequency-dependent performance with a maximum speed of 72.78~mm/s at 7.5~Hz. These findings demonstrate the potential of asymmetric snapping mechanisms for physically controlled actuation and lay the groundwork for fully untethered and efficient soft robotic systems."
+  },
+  {
+    "title": "Reconfigurable Geometric Phase Matching by Multilayered Nonlinear Thin-Film Crystals",
+    "url": "http://arxiv.org/abs/2602.18418v1",
+    "arxiv_id": "2602.18418v1",
+    "authors": [
+      "Danielle Ben-Haim",
+      "Mai Tal",
+      "Xiaoxi Xu",
+      "Tal Ellenbogen"
+    ],
+    "published": "2026-02-20T18:37:31+00:00",
+    "summary": "Phase matching is essential for efficient energy transfer in nonlinear wave-mixing processes. Traditional methods, such as birefringent and quasi-phase matching, have remained conceptually unchanged since their discovery over 60 years ago, each posing inherent constraints and limitations. Here, we demonstrate the concept of geometric phase matching as a new paradigm for tunable nonlinear wave mixing, based on a multilayered platform of nonlinear thin-film crystals. We leverage this concept to experimentally show reconfigurable and spin-controlled phase matching for second-harmonic generation (SHG), opening new avenues for real-time manipulation of nonlinear interactions in photonic devices. We specifically demonstrate full modulation of SHG from a bilayer structure, nearly perfect and tunable geometric phase matching from an eight-layer structure, and polarization tomography that reveals the evolution of the spin dependent interaction. This approach not only expands the design space for nonlinear optical processes but also paves the way for highly robust, tunable and efficient frequency conversion, for next-generation adaptive nonlinear photonic, quantum photonic and nonlinear optical metamaterial technologies based on thin-film crystals."
+  },
+  {
+    "title": "AI-Wrapped: Participatory, Privacy-Preserving Measurement of Longitudinal LLM Use In-the-Wild",
+    "url": "http://arxiv.org/abs/2602.18415v1",
+    "arxiv_id": "2602.18415v1",
+    "authors": [
+      "Cathy Mengying Fang",
+      "Sheer Karny",
+      "Chayapatr Archiwaranguprok",
+      "Yasith Samaradivakara",
+      "Pat Pataranutaporn",
+      "Pattie Maes"
+    ],
+    "published": "2026-02-20T18:34:23+00:00",
+    "summary": "Alignment research on large language models (LLMs) increasingly depends on understanding how these systems are used in everyday contexts. yet naturalistic interaction data is difficult to access due to privacy constraints and platform control. We present AI-Wrapped, a prototype workflow for collecting naturalistic LLM usage data while providing participants with an immediate ``wrapped''-style report on their usage statistics, top topics, and safety-relevant behavioral patterns. We report findings from an initial deployment with 82 U.S.-based adults across 48,495 conversations from their 2025 histories. Participants used LLMs for both instrumental and reflective purposes, including creative work, professional tasks, and emotional or existential themes. Some usage patterns were consistent with potential over-reliance or perfectionistic refinement, while heavier users showed comparatively more reflective exchanges than primarily transactional ones. Methodologically, even with zero data retention and PII removal, participants may remain hesitant to share chat data due to perceived privacy and judgment risks, underscoring the importance of trust, agency, and transparent design when building measurement infrastructure for alignment research."
+  },
+  {
     "title": "When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs",
     "url": "http://arxiv.org/abs/2602.17659v1",
     "arxiv_id": "2602.17659v1",
