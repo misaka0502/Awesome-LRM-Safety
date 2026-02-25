@@ -1,5 +1,70 @@
 [
   {
+    "title": "Squint: Fast Visual Reinforcement Learning for Sim-to-Real Robotics",
+    "url": "http://arxiv.org/abs/2602.21203v1",
+    "arxiv_id": "2602.21203v1",
+    "authors": [
+      "Abdulaziz Almuzairee",
+      "Henrik I. Christensen"
+    ],
+    "published": "2026-02-24T18:58:11+00:00",
+    "summary": "Visual reinforcement learning is appealing for robotics but expensive -- off-policy methods are sample-efficient yet slow; on-policy methods parallelize well but waste samples. Recent work has shown that off-policy methods can train faster than on-policy methods in wall-clock time for state-based control. Extending this to vision remains challenging, where high-dimensional input images complicate training dynamics and introduce substantial storage and encoding overhead. To address these challenges, we introduce Squint, a visual Soft Actor Critic method that achieves faster wall-clock training than prior visual off-policy and on-policy methods. Squint achieves this via parallel simulation, a distributional critic, resolution squinting, layer normalization, a tuned update-to-data ratio, and an optimized implementation. We evaluate on the SO-101 Task Set, a new suite of eight manipulation tasks in ManiSkill3 with heavy domain randomization, and demonstrate sim-to-real transfer to a real SO-101 robot. We train policies for 15 minutes on a single RTX 3090 GPU, with most tasks converging in under 6 minutes."
+  },
+  {
+    "title": "Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs",
+    "url": "http://arxiv.org/abs/2602.21198v1",
+    "arxiv_id": "2602.21198v1",
+    "authors": [
+      "Yining Hong",
+      "Huang Huang",
+      "Manling Li",
+      "Li Fei-Fei",
+      "Jiajun Wu",
+      "Yejin Choi"
+    ],
+    "published": "2026-02-24T18:55:18+00:00",
+    "summary": "Embodied LLMs endow robots with high-level task reasoning, but they cannot reflect on what went wrong or why, turning deployment into a sequence of independent trials where mistakes repeat rather than accumulate into experience. Drawing upon human reflective practitioners, we introduce Reflective Test-Time Planning, which integrates two modes of reflection: \\textit{reflection-in-action}, where the agent uses test-time scaling to generate and score multiple candidate actions using internal reflections before execution; and \\textit{reflection-on-action}, which uses test-time training to update both its internal reflection model and its action policy based on external reflections after execution. We also include retrospective reflection, allowing the agent to re-evaluate earlier decisions and perform model updates with hindsight for proper long-horizon credit assignment. Experiments on our newly-designed Long-Horizon Household benchmark and MuJoCo Cupboard Fitting benchmark show significant gains over baseline models, with ablative studies validating the complementary roles of reflection-in-action and reflection-on-action. Qualitative analyses, including real-robot trials, highlight behavioral correction through reflection."
+  },
+  {
+    "title": "Memory Undone: Between Knowing and Not Knowing in Data Systems",
+    "url": "http://arxiv.org/abs/2602.21180v1",
+    "arxiv_id": "2602.21180v1",
+    "authors": [
+      "Viktoriia Makovska",
+      "George Fletcher",
+      "Julia Stoyanovich",
+      "Tetiana Zakharchenko"
+    ],
+    "published": "2026-02-24T18:29:17+00:00",
+    "summary": "Machine learning and data systems increasingly function as infrastructures of memory: they ingest, store, and operationalize traces of personal, political, and cultural life. Yet contemporary governance demands credible forms of forgetting, from GDPR-backed deletion to harm-mitigation and the removal of manipulative content, while technical infrastructures are optimized to retain, replicate, and reuse. This work argues that \"forgetting\" in computational systems cannot be reduced to a single operation (e.g., record deletion) and should instead be treated as a sociotechnical practice with distinct mechanisms and consequences. We clarify a vocabulary that separates erasure (removing or disabling access to data artifacts), unlearning (interventions that bound or remove a data point influence on learned parameters and outputs), exclusion (upstream non-collection and omission), and forgetting as an umbrella term spanning agency, temporality, reversibility, and scale. Building on examples from machine unlearning, semantic dependencies in data management, participatory data modeling, and manipulation at scale, we show how forgetting can simultaneously protect rights and enable silencing. We propose reframing unlearning as a first-class capability in knowledge infrastructures, evaluated not only by compliance or utility retention, but by its governance properties: transparency, accountability, and epistemic justice."
+  },
+  {
+    "title": "Efficient Hierarchical Any-Angle Path Planning on Multi-Resolution 3D Grids",
+    "url": "http://arxiv.org/abs/2602.21174v1",
+    "arxiv_id": "2602.21174v1",
+    "authors": [
+      "Victor Reijgwart",
+      "Cesar Cadena",
+      "Roland Siegwart",
+      "Lionel Ott"
+    ],
+    "published": "2026-02-24T18:18:36+00:00",
+    "summary": "Hierarchical, multi-resolution volumetric mapping approaches are widely used to represent large and complex environments as they can efficiently capture their occupancy and connectivity information. Yet widely used path planning methods such as sampling and trajectory optimization do not exploit this explicit connectivity information, and search-based methods such as A* suffer from scalability issues in large-scale high-resolution maps. In many applications, Euclidean shortest paths form the underpinning of the navigation system. For such applications, any-angle planning methods, which find optimal paths by connecting corners of obstacles with straight-line segments, provide a simple and efficient solution. In this paper, we present a method that has the optimality and completeness properties of any-angle planners while overcoming computational tractability issues common to search-based methods by exploiting multi-resolution representations. Extensive experiments on real and synthetic environments demonstrate the proposed approach's solution quality and speed, outperforming even sampling-based methods. The framework is open-sourced to allow the robotics and planning community to build on our research."
+  },
+  {
+    "title": "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning",
+    "url": "http://arxiv.org/abs/2602.21172v1",
+    "arxiv_id": "2602.21172v1",
+    "authors": [
+      "Ishaan Rawal",
+      "Shubh Gupta",
+      "Yihan Hu",
+      "Wei Zhan"
+    ],
+    "published": "2026-02-24T18:17:21+00:00",
+    "summary": "Vision-Language-Action (VLA) models are advancing autonomous driving by replacing modular pipelines with unified end-to-end architectures. However, current VLAs face two expensive requirements: (1) massive dataset collection, and (2) dense reasoning annotations. In this work, we address both challenges with \\modelname (\\textbf{No} \\textbf{R}easoning for \\textbf{D}riving). Compared to existing VLAs, \\modelname achieves competitive performance while being fine-tuned on $<$60\\% of the data and no reasoning annotations, resulting in 3$\\times$ fewer tokens. We identify that standard Group Relative Policy Optimization (GRPO) fails to yield significant improvements when applied to policies trained on such small, reasoning-free datasets. We show that this limitation stems from difficulty bias, which disproportionately penalizes reward signals from scenarios that produce high-variance rollouts within GRPO. \\modelname overcomes this by incorporating Dr.~GRPO, a recent algorithm designed to mitigate difficulty bias in LLMs. As a result, \\modelname achieves competitive performance on Waymo and NAVSIM with a fraction of the training data and no reasoning overhead, enabling more efficient autonomous systems."
+  },
+  {
     "title": "A Very Big Video Reasoning Suite",
     "url": "http://arxiv.org/abs/2602.20159v1",
     "arxiv_id": "2602.20159v1",
