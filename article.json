@@ -1,5 +1,72 @@
 [
   {
+    "title": "WHOLE: World-Grounded Hand-Object Lifted from Egocentric Videos",
+    "url": "http://arxiv.org/abs/2602.22209v1",
+    "arxiv_id": "2602.22209v1",
+    "authors": [
+      "Yufei Ye",
+      "Jiaman Li",
+      "Ryan Rong",
+      "C. Karen Liu"
+    ],
+    "published": "2026-02-25T18:59:10+00:00",
+    "summary": "Egocentric manipulation videos are highly challenging due to severe occlusions during interactions and frequent object entries and exits from the camera view as the person moves. Current methods typically focus on recovering either hand or object pose in isolation, but both struggle during interactions and fail to handle out-of-sight cases. Moreover, their independent predictions often lead to inconsistent hand-object relations. We introduce WHOLE, a method that holistically reconstructs hand and object motion in world space from egocentric videos given object templates. Our key insight is to learn a generative prior over hand-object motion to jointly reason about their interactions. At test time, the pretrained prior is guided to generate trajectories that conform to the video observations. This joint generative reconstruction substantially outperforms approaches that process hands and objects separately followed by post-processing. WHOLE achieves state-of-the-art performance on hand motion estimation, 6D object pose estimation, and their relative interaction reconstruction. Project website: https://judyye.github.io/whole-www"
+  },
+  {
+    "title": "Off-The-Shelf Image-to-Image Models Are All You Need To Defeat Image Protection Schemes",
+    "url": "http://arxiv.org/abs/2602.22197v1",
+    "arxiv_id": "2602.22197v1",
+    "authors": [
+      "Xavier Pleimling",
+      "Sifat Muhammad Abdullah",
+      "Gunjan Balde",
+      "Peng Gao",
+      "Mainack Mondal",
+      "Murtuza Jadliwala",
+      "Bimal Viswanath"
+    ],
+    "published": "2026-02-25T18:46:30+00:00",
+    "summary": "Advances in Generative AI (GenAI) have led to the development of various protection strategies to prevent the unauthorized use of images. These methods rely on adding imperceptible protective perturbations to images to thwart misuse such as style mimicry or deepfake manipulations. Although previous attacks on these protections required specialized, purpose-built methods, we demonstrate that this is no longer necessary. We show that off-the-shelf image-to-image GenAI models can be repurposed as generic ``denoisers\" using a simple text prompt, effectively removing a wide range of protective perturbations. Across 8 case studies spanning 6 diverse protection schemes, our general-purpose attack not only circumvents these defenses but also outperforms existing specialized attacks while preserving the image's utility for the adversary. Our findings reveal a critical and widespread vulnerability in the current landscape of image protection, indicating that many schemes provide a false sense of security. We stress the urgent need to develop robust defenses and establish that any future protection mechanism must be benchmarked against attacks from off-the-shelf GenAI models. Code is available in this repository: https://github.com/mlsecviswanath/img2imgdenoiser"
+  },
+  {
+    "title": "Improving Parametric Knowledge Access in Reasoning Language Models",
+    "url": "http://arxiv.org/abs/2602.22193v1",
+    "arxiv_id": "2602.22193v1",
+    "authors": [
+      "Melody Ma",
+      "John Hewitt"
+    ],
+    "published": "2026-02-25T18:43:01+00:00",
+    "summary": "We study reasoning for accessing world knowledge stored in a language model's parameters. For example, recalling that Canberra is Australia's capital may benefit from thinking through major cities and the concept of purpose-built capitals. While reasoning language models are trained via reinforcement learning to produce reasoning traces on tasks such as mathematics, they may not reason well for accessing their own world knowledge. We first find that models do not generate their best world knowledge reasoning by default: adding a simple \"think step-by-step\" cue demonstrates statistically significant improvement in knowledge recall but not math. Motivated by this, we propose training models to reason over their parametric knowledge using world-knowledge question answering as a verifiable reward. After reinforcement learning on TriviaQA (+9.9%), performance also improves on Natural Questions, HotpotQA, SimpleQA, and StrategyQA by 4.2%, 2.1%, 0.6%, and 3.0%, respectively. Reasoning models are under-optimized for parametric knowledge access, but can be easily trained to reason better."
+  },
+  {
+    "title": "Position-Based Flocking for Persistent Alignment without Velocity Sensing",
+    "url": "http://arxiv.org/abs/2602.22154v1",
+    "arxiv_id": "2602.22154v1",
+    "authors": [
+      "Hossein B. Jond",
+      "Veli Bak\u0131rc\u0131o\u011flu",
+      "Logan E. Beaver",
+      "Nejat T\u00fckenmez",
+      "Adel Akbarimajd",
+      "Martin Saska"
+    ],
+    "published": "2026-02-25T18:01:00+00:00",
+    "summary": "Coordinated collective motion in bird flocks and fish schools inspires algorithms for cohesive swarm robotics. This paper presents a position-based flocking model that achieves persistent velocity alignment without velocity sensing. By approximating relative velocity differences from changes between current and initial relative positions and incorporating a time- and density-dependent alignment gain with a non-zero minimum threshold to maintain persistent alignment, the model sustains coherent collective motion over extended periods. Simulations with a collective of 50 agents demonstrate that the position-based flocking model attains faster and more sustained directional alignment and results in more compact formations than a velocity-alignment-based baseline. This position-based flocking model is particularly well-suited for real-world robotic swarms, where velocity measurements are unreliable, noisy, or unavailable. Experimental results using a team of nine real wheeled mobile robots are also presented."
+  },
+  {
+    "title": "Provable Last-Iterate Convergence for Multi-Objective Safe LLM Alignment via Optimistic Primal-Dual",
+    "url": "http://arxiv.org/abs/2602.22146v1",
+    "arxiv_id": "2602.22146v1",
+    "authors": [
+      "Yining Li",
+      "Peizhong Ju",
+      "Ness Shroff"
+    ],
+    "published": "2026-02-25T17:54:52+00:00",
+    "summary": "Reinforcement Learning from Human Feedback (RLHF) plays a significant role in aligning Large Language Models (LLMs) with human preferences. While RLHF with expected reward constraints can be formulated as a primal-dual optimization problem, standard primal-dual methods only guarantee convergence with a distributional policy where the saddle-point problem is in convex-concave form. Moreover, standard primal-dual methods may exhibit instability or divergence in the last iterate under policy parameterization in practical applications. In this work, we propose a universal primal-dual framework for safe RLHF that unifies a broad class of existing alignment algorithms, including safe-RLHF, one-shot, and multi-shot based methods. Building on this framework, we introduce an optimistic primal-dual (OPD) algorithm that incorporates predictive updates for both primal and dual variables to stabilize saddle-point dynamics. We establish last-iterate convergence guarantees for the proposed method, covering both exact policy optimization in the distributional space and convergence to a neighborhood of the optimal solution whose gap is related to approximation error and bias under parameterized policies. Our analysis reveals that optimism plays a crucial role in mitigating oscillations inherent to constrained alignment objectives, thereby closing a key theoretical gap between constrained RL and practical RLHF."
+  },
+  {
     "title": "Squint: Fast Visual Reinforcement Learning for Sim-to-Real Robotics",
     "url": "http://arxiv.org/abs/2602.21203v1",
     "arxiv_id": "2602.21203v1",
