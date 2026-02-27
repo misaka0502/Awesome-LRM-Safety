@@ -1,5 +1,75 @@
 [
   {
+    "title": "MediX-R1: Open Ended Medical Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2602.23363v1",
+    "arxiv_id": "2602.23363v1",
+    "authors": [
+      "Sahal Shaji Mullappilly",
+      "Mohammed Irfan Kurpath",
+      "Omair Mohamed",
+      "Mohamed Zidan",
+      "Fahad Khan",
+      "Salman Khan",
+      "Rao Anwer",
+      "Hisham Cholakkal"
+    ],
+    "published": "2026-02-26T18:59:46+00:00",
+    "summary": "We introduce MediX-R1, an open-ended Reinforcement Learning (RL) framework for medical multimodal large language models (MLLMs) that enables clinically grounded, free-form answers beyond multiple-choice formats. MediX-R1 fine-tunes a baseline vision-language backbone with Group Based RL and a composite reward tailored for medical reasoning: an LLM-based accuracy reward that judges semantic correctness with a strict YES/NO decision, a medical embedding-based semantic reward to capture paraphrases and terminology variants, and lightweight format and modality rewards that enforce interpretable reasoning and modality recognition. This multi-signal design provides stable, informative feedback for open-ended outputs where traditional verifiable or MCQ-only rewards fall short. To measure progress, we propose a unified evaluation framework for both text-only and image+text tasks that uses a Reference-based LLM-as-judge in place of brittle string-overlap metrics, capturing semantic correctness, reasoning, and contextual alignment. Despite using only $\\sim51$K instruction examples, MediX-R1 achieves excellent results across standard medical LLM (text-only) and VLM (image + text) benchmarks, outperforming strong open-source baselines and delivering particularly large gains on open-ended clinical tasks. Our results demonstrate that open-ended RL with comprehensive reward signals and LLM-based evaluation is a practical path toward reliable medical reasoning in multimodal models. Our trained models, curated datasets and source code are available at https://medix.cvmbzuai.com"
+  },
+  {
+    "title": "Utilizing LLMs for Industrial Process Automation",
+    "url": "http://arxiv.org/abs/2602.23331v1",
+    "arxiv_id": "2602.23331v1",
+    "authors": [
+      "Salim Fares"
+    ],
+    "published": "2026-02-26T18:38:00+00:00",
+    "summary": "A growing number of publications address the best practices to use Large Language Models (LLMs) for software engineering in recent years. However, most of this work focuses on widely-used general purpose programming languages like Python due to their widespread usage training data. The utility of LLMs for software within the industrial process automation domain, with highly-specialized languages that are typically only used in proprietary contexts, remains underexplored. This research aims to utilize and integrate LLMs in the industrial development process, solving real-life programming tasks (e.g., generating a movement routine for a robotic arm) and accelerating the development cycles of manufacturing systems."
+  },
+  {
+    "title": "Signal Temporal Logic Verification and Synthesis Using Deep Reachability Analysis and Layered Control Architecture",
+    "url": "http://arxiv.org/abs/2602.23313v1",
+    "arxiv_id": "2602.23313v1",
+    "authors": [
+      "Joonwon Choi",
+      "Kartik Anand Pant",
+      "Youngim Nam",
+      "Henry Hellmann",
+      "Karthik Nune",
+      "Inseok Hwang"
+    ],
+    "published": "2026-02-26T18:21:14+00:00",
+    "summary": "We propose a signal temporal logic (STL)-based framework that rigorously verifies the feasibility of a mission described in STL and synthesizes control to safely execute it. The proposed framework ensures safe and reliable operation through two phases. First, the proposed framework assesses the feasibility of STL by computing a backward reachable tube (BRT), which captures all states that can satisfy the given STL, regardless of the initial state. The proposed framework accommodates the multiple reach-avoid (MRA) problem to address more general STL specifications and leverages a deep neural network to alleviate the computation burden for reachability analysis, reducing the computation time by about 1000 times compared to a baseline method. We further propose a layered planning and control architecture that combines mixed-integer linear programming (MILP) for global planning with model predictive control (MPC) as a local controller for the verified STL. Consequently, the proposed framework can robustly handle unexpected behavior of obstacles that are not described in the environment information or STL, thereby providing reliable mission performance. Our numerical simulations demonstrate that the proposed framework can successfully compute BRT for a given STL and perform the mission."
+  },
+  {
+    "title": "Evaluating Zero-Shot and One-Shot Adaptation of Small Language Models in Leader-Follower Interaction",
+    "url": "http://arxiv.org/abs/2602.23312v1",
+    "arxiv_id": "2602.23312v1",
+    "authors": [
+      "Rafael R. Baptista",
+      "Andr\u00e9 de Lima Salgado",
+      "Ricardo V. Godoy",
+      "Marcelo Becker",
+      "Thiago Boaventura",
+      "Gustavo J. G. Lahr"
+    ],
+    "published": "2026-02-26T18:20:26+00:00",
+    "summary": "Leader-follower interaction is an important paradigm in human-robot interaction (HRI). Yet, assigning roles in real time remains challenging for resource-constrained mobile and assistive robots. While large language models (LLMs) have shown promise for natural communication, their size and latency limit on-device deployment. Small language models (SLMs) offer a potential alternative, but their effectiveness for role classification in HRI has not been systematically evaluated. In this paper, we present a benchmark of SLMs for leader-follower communication, introducing a novel dataset derived from a published database and augmented with synthetic samples to capture interaction-specific dynamics. We investigate two adaptation strategies: prompt engineering and fine-tuning, studied under zero-shot and one-shot interaction modes, compared with an untrained baseline. Experiments with Qwen2.5-0.5B reveal that zero-shot fine-tuning achieves robust classification performance (86.66% accuracy) while maintaining low latency (22.2 ms per sample), significantly outperforming baseline and prompt-engineered approaches. However, results also indicate a performance degradation in one-shot modes, where increased context length challenges the model's architectural capacity. These findings demonstrate that fine-tuned SLMs provide an effective solution for direct role assignment, while highlighting critical trade-offs between dialogue complexity and classification reliability on the edge."
+  },
+  {
+    "title": "Interface-Aware Trajectory Reconstruction of Limited Demonstrations for Robot Learning",
+    "url": "http://arxiv.org/abs/2602.23287v1",
+    "arxiv_id": "2602.23287v1",
+    "authors": [
+      "Demiana R. Barsoum",
+      "Mahdieh Nejati Javaremi",
+      "Larisa Y. C. Loke",
+      "Brenna D. Argall"
+    ],
+    "published": "2026-02-26T18:01:25+00:00",
+    "summary": "Assistive robots offer agency to humans with severe motor impairments. Often, these users control high-DoF robots through low-dimensional interfaces, such as using a 1-D sip-and-puff interface to operate a 6-DoF robotic arm. This mismatch results in having access to only a subset of control dimensions at a given time, imposing unintended and artificial constraints on robot motion. As a result, interface-limited demonstrations embed suboptimal motions that reflect interface restrictions rather than user intent. To address this, we present a trajectory reconstruction algorithm that reasons about task, environment, and interface constraints to lift demonstrations into the robot's full control space. We evaluate our approach using real-world demonstrations of ADL-inspired tasks performed via a 2-D joystick and 1-D sip-and-puff control interface, teleoperating two distinct 7-DoF robotic arms. Analyses of the reconstructed demonstrations and derived control policies show that lifted trajectories are faster and more efficient than their interface-constrained counterparts while respecting user preferences."
+  },
+  {
     "title": "WHOLE: World-Grounded Hand-Object Lifted from Egocentric Videos",
     "url": "http://arxiv.org/abs/2602.22209v1",
     "arxiv_id": "2602.22209v1",
