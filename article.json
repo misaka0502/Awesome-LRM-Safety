@@ -1,5 +1,88 @@
 [
   {
+    "title": "DARE-bench: Evaluating Modeling and Instruction Fidelity of LLMs in Data Science",
+    "url": "http://arxiv.org/abs/2602.24288v1",
+    "arxiv_id": "2602.24288v1",
+    "authors": [
+      "Fan Shu",
+      "Yite Wang",
+      "Ruofan Wu",
+      "Boyi Liu",
+      "Zhewei Yao",
+      "Yuxiong He",
+      "Feng Yan"
+    ],
+    "published": "2026-02-27T18:58:57+00:00",
+    "summary": "The fast-growing demands in using Large Language Models (LLMs) to tackle complex multi-step data science tasks create an emergent need for accurate benchmarking. There are two major gaps in existing benchmarks: (i) the lack of standardized, process-aware evaluation that captures instruction adherence and process fidelity, and (ii) the scarcity of accurately labeled training data. To bridge these gaps, we introduce DARE-bench, a benchmark designed for machine learning modeling and data science instruction following. Unlike many existing benchmarks that rely on human- or model-based judges, all tasks in DARE-bench have verifiable ground truth, ensuring objective and reproducible evaluation. To cover a broad range of tasks and support agentic tools, DARE-bench consists of 6,300 Kaggle-derived tasks and provides both large-scale training data and evaluation sets. Extensive evaluations show that even highly capable models such as gpt-o4-mini struggle to achieve good performance, especially in machine learning modeling tasks. Using DARE-bench training tasks for fine-tuning can substantially improve model performance. For example, supervised fine-tuning boosts Qwen3-32B's accuracy by 1.83x and reinforcement learning boosts Qwen3-4B's accuracy by more than 8x. These significant improvements verify the importance of DARE-bench both as an accurate evaluation benchmark and critical training data."
+  },
+  {
+    "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+    "url": "http://arxiv.org/abs/2602.24286v1",
+    "arxiv_id": "2602.24286v1",
+    "authors": [
+      "Weinan Dai",
+      "Hanlin Wu",
+      "Qiying Yu",
+      "Huan-ang Gao",
+      "Jiahao Li",
+      "Chengquan Jiang",
+      "Weiqiang Lou",
+      "Yufan Song",
+      "Hongli Yu",
+      "Jiaze Chen",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Jingjing Liu",
+      "Mingxuan Wang",
+      "Xin Liu",
+      "Hao Zhou"
+    ],
+    "published": "2026-02-27T18:58:05+00:00",
+    "summary": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting."
+  },
+  {
+    "title": "Curriculum-Based Soft Actor-Critic for Multi-Section R2R Tension Control",
+    "url": "http://arxiv.org/abs/2602.24259v1",
+    "arxiv_id": "2602.24259v1",
+    "authors": [
+      "Shihao Li",
+      "Jiachen Li",
+      "Christopher Martin",
+      "Zijun Chen",
+      "Dongmei Chen",
+      "Wei Li"
+    ],
+    "published": "2026-02-27T18:30:37+00:00",
+    "summary": "Precise tension control in roll-to-roll (R2R) manufacturing is difficult under varying operating conditions and process uncertainty. This paper presents a curriculum-based Soft Actor-Critic (SAC) controller for multi-section R2R tension control. The policy is trained in three phases with progressively wider reference ranges, from 27 to 33 N to the full operating envelope of 20 to 40 N, so it can generalize across nominal and disturbed conditions. On a three-section R2R benchmark, the learned controller achieves accurate tracking in nominal operation and handles large disturbances, including 20 N to 40 N step changes, with a single policy and no scenario-specific retuning. These results indicate that curriculum-trained SAC is a practical alternative to model-based control when system parameters vary and process uncertainty is significant."
+  },
+  {
+    "title": "Neural Luenberger state observer for nonautonomous nonlinear systems",
+    "url": "http://arxiv.org/abs/2602.24252v1",
+    "arxiv_id": "2602.24252v1",
+    "authors": [
+      "Moritz Woelk",
+      "Jarod Morris",
+      "Wentao Tang"
+    ],
+    "published": "2026-02-27T18:27:00+00:00",
+    "summary": "This work proposes a method for model-free synthesis of a state observer for nonlinear systems with manipulated inputs, where the observer is trained offline using a historical or simulation dataset of state measurements. We use the structure of the Kazantzis-Kravaris/Luenberger (KKL) observer, extended to nonautonomous systems by adding an additional input-affine term to the linear time-invariant (LTI) observer-state dynamics, which determines a nonlinear injective mapping of the true states. Both this input-affine term and the nonlinear mapping from the observer states to the system states are learned from data using fully connected feedforward multi-layer perceptron neural networks. Furthermore, we theoretically prove that trained neural networks, when given new input-output data, can be used to observe the states with a guaranteed error bound. To validate the proposed observer synthesis method, case studies are performed on a bioreactor and a Williams-Otto reactor."
+  },
+  {
+    "title": "SafeGen-LLM: Enhancing Safety Generalization in Task Planning for Robotic Systems",
+    "url": "http://arxiv.org/abs/2602.24235v1",
+    "arxiv_id": "2602.24235v1",
+    "authors": [
+      "Jialiang Fan",
+      "Weizhe Xu",
+      "Mengyu Liu",
+      "Oleg Sokolsky",
+      "Insup Lee",
+      "Fangxin Kong"
+    ],
+    "published": "2026-02-27T18:06:10+00:00",
+    "summary": "Safety-critical task planning in robotic systems remains challenging: classical planners suffer from poor scalability, Reinforcement Learning (RL)-based methods generalize poorly, and base Large Language Models (LLMs) cannot guarantee safety. To address this gap, we propose safety-generalizable large language models, named SafeGen-LLM. SafeGen-LLM can not only enhance the safety satisfaction of task plans but also generalize well to novel safety properties in various domains. We first construct a multi-domain Planning Domain Definition Language 3 (PDDL3) benchmark with explicit safety constraints. Then, we introduce a two-stage post-training framework: Supervised Fine-Tuning (SFT) on a constraint-compliant planning dataset to learn planning syntax and semantics, and Group Relative Policy Optimization (GRPO) guided by fine-grained reward machines derived from formal verification to enforce safety alignment and by curriculum learning to better handle complex tasks. Extensive experiments show that SafeGen-LLM achieves strong safety generalization and outperforms frontier proprietary baselines across multi-domain planning tasks and multiple input formats (e.g., PDDLs and natural language)."
+  },
+  {
     "title": "MediX-R1: Open Ended Medical Reinforcement Learning",
     "url": "http://arxiv.org/abs/2602.23363v1",
     "arxiv_id": "2602.23363v1",
