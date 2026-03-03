@@ -1,5 +1,73 @@
 [
   {
+    "title": "Reasoning Core: A Scalable Procedural Data Generation Suite for Symbolic Pre-training and Post-Training",
+    "url": "http://arxiv.org/abs/2603.02208v1",
+    "arxiv_id": "2603.02208v1",
+    "authors": [
+      "Valentin Lacombe",
+      "Valentin Quesnel",
+      "Damien Sileo"
+    ],
+    "published": "2026-03-02T18:59:29+00:00",
+    "summary": "Training on verifiable symbolic data is a promising way to expand the reasoning frontier of language models beyond what standard pre-training corpora provide. Yet existing procedural generators often rely on fixed puzzles or templates and do not deliver the distributional breadth needed at scale. We introduce Reasoning Core, a scalable suite that procedurally generates verifiable symbolic reasoning data across core formal domains: PDDL planning over randomized domains, first-order logic with equality, context-free grammar parsing and generation, causal reasoning over random Bayesian networks, and systems of equations. Each task is paired with an external solver for rigorous verification and admits continuous difficulty control for curriculum design. Examples can optionally include solver-derived reasoning traces, enabling supervised training from the earliest pre-training stages, and the same interface provides verifiable reward functions for reinforcement learning. Our experiments show that mixing Reasoning Core data into pre-training improves downstream reasoning while preserving, or slightly improving, language modeling quality. Zero-shot evaluations confirm these tasks challenge frontier models such as GPT-5. The code and data are publicly available under the MIT license."
+  },
+  {
+    "title": "Tool Verification for Test-Time Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2603.02203v1",
+    "arxiv_id": "2603.02203v1",
+    "authors": [
+      "Ruotong Liao",
+      "Nikolai R\u00f6hrich",
+      "Xiaohan Wang",
+      "Yuhui Zhang",
+      "Yasaman Samadzadeh",
+      "Volker Tresp",
+      "Serena Yeung-Levy"
+    ],
+    "published": "2026-03-02T18:57:52+00:00",
+    "summary": "Test-time reinforcement learning (TTRL) has emerged as a promising paradigm for self-evolving large reasoning models (LRMs), enabling online adaptation on unlabeled test inputs via self-induced rewards through majority voting. However, a spurious yet high-frequency unverified consensus can become a biased and reinforced reward signal, leading to incorrect mode collapse. We address this failure mode with T^3RL (Tool-Verification for Test-Time Reinforcement Learning), which introduces test-time tool verification into reward estimation. Concretely, a verifier uses an external tool as evidence (e.g., from code execution) to upweight verified rollouts in a verification-aware voting, producing more reliable pseudo-labels for training. Across various math difficulties (MATH-500, AMC, and AIME 2024) and diverse backbone types, T^3RL significantly improves over TTRL, with larger gains on harder problems. More broadly, T^3RL can be viewed as verified online data synthesis, highlighting test-time tool verification as a key mechanism for stabilizing self-evolution."
+  },
+  {
+    "title": "Conformal Policy Control",
+    "url": "http://arxiv.org/abs/2603.02196v1",
+    "arxiv_id": "2603.02196v1",
+    "authors": [
+      "Drew Prinster",
+      "Clara Fannjiang",
+      "Ji Won Park",
+      "Kyunghyun Cho",
+      "Anqi Liu",
+      "Suchi Saria",
+      "Samuel Stanton"
+    ],
+    "published": "2026-03-02T18:54:36+00:00",
+    "summary": "An agent must try new behaviors to explore and improve. In high-stakes environments, an agent that violates safety constraints may cause harm and must be taken offline, curtailing any future interaction. Imitating old behavior is safe, but excessive conservatism discourages exploration. How much behavior change is too much? We show how to use any safe reference policy as a probabilistic regulator for any optimized but untested policy. Conformal calibration on data from the safe policy determines how aggressively the new policy can act, while provably enforcing the user's declared risk tolerance. Unlike conservative optimization methods, we do not assume the user has identified the correct model class nor tuned any hyperparameters. Unlike previous conformal methods, our theory provides finite-sample guarantees even for non-monotonic bounded constraint functions. Our experiments on applications ranging from natural language question answering to biomolecular engineering show that safe exploration is not only possible from the first moment of deployment, but can also improve performance."
+  },
+  {
+    "title": "From Leaderboard to Deployment: Code Quality Challenges in AV Perception Repositories",
+    "url": "http://arxiv.org/abs/2603.02194v1",
+    "arxiv_id": "2603.02194v1",
+    "authors": [
+      "Mateus Karvat",
+      "Bram Adams",
+      "Sidney Givigi"
+    ],
+    "published": "2026-03-02T18:54:28+00:00",
+    "summary": "Autonomous vehicle (AV) perception models are typically evaluated solely on benchmark performance metrics, with limited attention to code quality, production readiness and long-term maintainability. This creates a significant gap between research excellence and real-world deployment in safety-critical systems subject to international safety standards. To address this gap, we present the first large-scale empirical study of software quality in AV perception repositories, systematically analyzing 178 unique models from the KITTI and NuScenes 3D Object Detection leaderboards. Using static analysis tools (Pylint, Bandit, and Radon), we evaluated code errors, security vulnerabilities, maintainability, and development practices. Our findings revealed that only 7.3% of the studied repositories meet basic production-readiness criteria, defined as having zero critical errors and no high-severity security vulnerabilities. Security issues are highly concentrated, with the top five issues responsible for almost 80% of occurrences, which prompted us to develop a set of actionable guidelines to prevent them. Additionally, the adoption of Continuous Integration/Continuous Deployment pipelines was correlated with better code maintainability. Our findings highlight that leaderboard performance does not reflect production readiness and that targeted interventions could substantially improve the quality and safety of AV perception code."
+  },
+  {
+    "title": "Boosting Device Utilization in Control Flow Auditing",
+    "url": "http://arxiv.org/abs/2603.02161v1",
+    "arxiv_id": "2603.02161v1",
+    "authors": [
+      "Alexandra Lengert",
+      "Adam Ilyas Caulfield",
+      "Ivan De Oliveira Nunes"
+    ],
+    "published": "2026-03-02T18:26:17+00:00",
+    "summary": "Micro-Controller Units (MCUs) are widely used in safety-critical systems, making them attractive targets for attacks. This calls for lightweight defenses that remain effective despite software compromise. Control Flow Auditing (CFAud) is one such mechanism wherein a remote verifier (Vrf) is guaranteed to received evidence about the control flow path taken on a prover (Prv) MCU, even when Prv software is compromised. Despite promising benefits, current CFAud architectures unfortunately require a ``busy-wait'' phase where a hardware-anchored root-of-trust (RoT) in Prv retains execution control to ensure delivery of control flow evidence to Vrf. This drastically reduces the CPU utilization on Prv.   In this work, we addresses this limitation with an architecture for Contention Avoidance in Runtime Auditing with Minimized Execution Latency (CARAMEL). CARAMEL is a hardware-software RoT co-design that enables Prv applications to resume while control flow evidence is transmitted to Vrf. This significantly reduces contention due to transmission delays and improves CPU utilization without giving up on security. Key to CARAMEL is our design of a new RoT with a self-contained (and minimal) dedicated communication interface. CARAMEL's implementation and accompanying evaluation are made open-source. Our results show substantially improved CPU utilization at a modest hardware cost."
+  },
+  {
     "title": "Rethinking Policy Diversity in Ensemble Policy Gradient in Large-Scale Reinforcement Learning",
     "url": "http://arxiv.org/abs/2603.01741v1",
     "arxiv_id": "2603.01741v1",
