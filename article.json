@@ -1,5 +1,86 @@
 [
   {
+    "title": "TaxonRL: Reinforcement Learning with Intermediate Rewards for Interpretable Fine-Grained Visual Reasoning",
+    "url": "http://arxiv.org/abs/2603.04380v1",
+    "arxiv_id": "2603.04380v1",
+    "authors": [
+      "Maximilian von Klinski",
+      "Maximilian Schall"
+    ],
+    "published": "2026-03-04T18:45:35+00:00",
+    "summary": "Traditional vision-language models struggle with contrastive fine-grained taxonomic reasoning, particularly when distinguishing between visually similar species within the same genus or family. We introduce TaxonRL, a reinforcement learning approach using Group Relative Policy Optimization with intermediate rewards that decomposes the reasoning process into hierarchical taxonomic predictions. Our method incentivizes models to explicitly reason about species-level, genus-level, and family-level features before making final classifications. This structured approach is designed not only to boost accuracy but also to yield a transparent, verifiable decision-making process. On the challenging Birds-to-Words dataset, TaxonRL achieves 91.7\\% average accuracy, exceeding human performance (77.3\\%) while generating interpretable reasoning traces. We demonstrate strong cross-domain generalization, showing substantial gains in primate and marine species verification. Our results establish that enforcing structured, hierarchical reasoning provides a powerful and transferable framework for fine-grained visual discrimination."
+  },
+  {
+    "title": "Dual-Modality Multi-Stage Adversarial Safety Training: Robustifying Multimodal Web Agents Against Cross-Modal Attacks",
+    "url": "http://arxiv.org/abs/2603.04364v1",
+    "arxiv_id": "2603.04364v1",
+    "authors": [
+      "Haoyu Liu",
+      "Dingcheng Li",
+      "Lukas Rutishauser",
+      "Zeyu Zheng"
+    ],
+    "published": "2026-03-04T18:29:54+00:00",
+    "summary": "Multimodal web agents that process both screenshots and accessibility trees are increasingly deployed to interact with web interfaces, yet their dual-stream architecture opens an underexplored attack surface: an adversary who injects content into the webpage DOM simultaneously corrupts both observation channels with a consistent deceptive narrative. Our vulnerability analysis on MiniWob++ reveals that attacks including a visual component far outperform text-only injections, exposing critical gaps in text-centric VLM safety training. Motivated by this finding, we propose Dual-Modality Multi-Stage Adversarial Safety Training (DMAST), a framework that formalizes the agent-attacker interaction as a two-player zero-sum Markov game and co-trains both players through a three-stage pipeline: (1) imitation learning from a strong teacher model, (2) oracle-guided supervised fine-tuning that uses a novel zero-acknowledgment strategy to instill task-focused reasoning under adversarial noise, and (3) adversarial reinforcement learning via Group Relative Policy Optimization (GRPO) self-play. On out-of-distribution tasks, DMAST substantially mitigates adversarial risks while simultaneously doubling task completion efficiency. Our approach significantly outperforms established training-based and prompt-based defenses, demonstrating genuine co-evolutionary progress and robust generalization to complex, unseen environments."
+  },
+  {
+    "title": "ManipulationNet: An Infrastructure for Benchmarking Real-World Robot Manipulation with Physical Skill Challenges and Embodied Multimodal Reasoning",
+    "url": "http://arxiv.org/abs/2603.04363v1",
+    "arxiv_id": "2603.04363v1",
+    "authors": [
+      "Yiting Chen",
+      "Kenneth Kimble",
+      "Edward H. Adelson",
+      "Tamim Asfour",
+      "Podshara Chanrungmaneekul",
+      "Sachin Chitta",
+      "Yash Chitambar",
+      "Ziyang Chen",
+      "Ken Goldberg",
+      "Danica Kragic",
+      "Hui Li",
+      "Xiang Li",
+      "Yunzhu Li",
+      "Aaron Prather",
+      "Nancy Pollard",
+      "Maximo A. Roa-Garzon",
+      "Robert Seney",
+      "Shuo Sha",
+      "Shihefeng Wang",
+      "Yu Xiang",
+      "Kaifeng Zhang",
+      "Yuke Zhu",
+      "Kaiyu Hang"
+    ],
+    "published": "2026-03-04T18:29:28+00:00",
+    "summary": "Dexterous manipulation enables robots to purposefully alter the physical world, transforming them from passive observers into active agents in unstructured environments. This capability is the cornerstone of physical artificial intelligence. Despite decades of advances in hardware, perception, control, and learning, progress toward general manipulation systems remains fragmented due to the absence of widely adopted standard benchmarks. The central challenge lies in reconciling the variability of the real world with the reproducibility and authenticity required for rigorous scientific evaluation. To address this, we introduce ManipulationNet, a global infrastructure that hosts real-world benchmark tasks for robotic manipulation. ManipulationNet delivers reproducible task setups through standardized hardware kits, and enables distributed performance evaluation via a unified software client that delivers real-time task instructions and collects benchmarking results. As a persistent and scalable infrastructure, ManipulationNet organizes benchmark tasks into two complementary tracks: 1) the Physical Skills Track, which evaluates low-level physical interaction skills, and 2) the Embodied Reasoning Track, which tests high-level reasoning and multimodal grounding abilities. This design fosters the systematic growth of an interconnected network of real-world abilities and skills, paving the path toward general robotic manipulation. By enabling comparable manipulation research in the real world at scale, this infrastructure establishes a sustainable foundation for measuring long-term scientific progress and identifying capabilities ready for real-world deployment."
+  },
+  {
+    "title": "RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots",
+    "url": "http://arxiv.org/abs/2603.04356v1",
+    "arxiv_id": "2603.04356v1",
+    "authors": [
+      "Soroush Nasiriany",
+      "Sepehr Nasiriany",
+      "Abhiram Maddukuri",
+      "Yuke Zhu"
+    ],
+    "published": "2026-03-04T18:20:03+00:00",
+    "summary": "Recent advances in robot learning have accelerated progress toward generalist robots that can perform everyday tasks in human environments. Yet it remains difficult to gauge how close we are to this vision. The field lacks a reproducible, large-scale benchmark for systematic evaluation. To fill this gap, we present RoboCasa365, a comprehensive simulation benchmark for household mobile manipulation. Built on the RoboCasa platform, RoboCasa365 introduces 365 everyday tasks across 2,500 diverse kitchen environments, with over 600 hours of human demonstration data and over 1600 hours of synthetically generated demonstration data -- making it one of the most diverse and large-scale resources for studying generalist policies. RoboCasa365 is designed to support systematic evaluations for different problem settings, including multi-task learning, robot foundation model training, and lifelong learning. We conduct extensive experiments on this benchmark with state-of-the-art methods and analyze the impacts of task diversity, dataset scale, and environment variation on generalization. Our results provide new insights into what factors most strongly affect the performance of generalist robots and inform strategies for future progress in the field."
+  },
+  {
+    "title": "Efficient Refusal Ablation in LLM through Optimal Transport",
+    "url": "http://arxiv.org/abs/2603.04355v1",
+    "arxiv_id": "2603.04355v1",
+    "authors": [
+      "Geraldin Nanfack",
+      "Eugene Belilovsky",
+      "Elvis Dohmatob"
+    ],
+    "published": "2026-03-04T18:19:50+00:00",
+    "summary": "Safety-aligned language models refuse harmful requests through learned refusal behaviors encoded in their internal representations. Recent activation-based jailbreaking methods circumvent these safety mechanisms by applying orthogonal projections to remove refusal directions, but these approaches treat refusal as a one-dimensional phenomenon and ignore the rich distributional structure of model activations. We introduce a principled framework based on optimal transport theory that transforms the entire distribution of harmful activations to match harmless ones. By combining PCA with closed-form Gaussian optimal transport, we achieve efficient computation in high-dimensional representation spaces while preserving essential geometric structure. Across six models (Llama-2, Llama-3.1, Qwen-2.5; 7B-32B parameters), our method achieves up to 11% higher attack success rates than state-of-the-art baselines while maintaining comparable perplexity, demonstrating superior preservation of model capabilities. Critically, we discover that layer-selective intervention (applying optimal transport to 1-2 carefully chosen layers at approximately 40-60% network depth) substantially outperforms full-network interventions, revealing that refusal mechanisms may be localized rather than distributed. Our analysis provides new insights into the geometric structure of safety representations and suggests that current alignment methods may be vulnerable to distributional attacks beyond simple direction removal."
+  },
+  {
     "title": "Utonia: Toward One Encoder for All Point Clouds",
     "url": "http://arxiv.org/abs/2603.03283v1",
     "arxiv_id": "2603.03283v1",
