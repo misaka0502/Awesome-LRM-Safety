@@ -1,5 +1,95 @@
 [
   {
+    "title": "Agentic Critical Training",
+    "url": "http://arxiv.org/abs/2603.08706v1",
+    "arxiv_id": "2603.08706v1",
+    "authors": [
+      "Weize Liu",
+      "Minghui Liu",
+      "Sy-Tuyen Ho",
+      "Souradip Chakraborty",
+      "Xiyao Wang",
+      "Furong Huang"
+    ],
+    "published": "2026-03-09T17:58:56+00:00",
+    "summary": "Training large language models (LLMs) as autonomous agents often begins with imitation learning, but it only teaches agents what to do without understanding why: agents never contrast successful actions against suboptimal alternatives and thus lack awareness of action quality. Recent approaches attempt to address this by introducing self-reflection supervision derived from contrasts between expert and alternative actions. However, the training paradigm fundamentally remains imitation learning: the model imitates pre-constructed reflection text rather than learning to reason autonomously. We propose Agentic Critical Training (ACT), a reinforcement learning paradigm that trains agents to identify the better action among alternatives. By rewarding whether the model's judgment is correct, ACT drives the model to autonomously develop reasoning about action quality, producing genuine self-reflection rather than imitating it. Across three challenging agent benchmarks, ACT consistently improves agent performance when combined with different post-training methods. It achieves an average improvement of 5.07 points over imitation learning and 4.62 points over reinforcement learning. Compared to approaches that inject reflection capability through knowledge distillation, ACT also demonstrates clear advantages, yielding an average improvement of 2.42 points. Moreover, ACT enables strong out-of-distribution generalization on agentic benchmarks and improves performance on general reasoning benchmarks without any reasoning-specific training data, highlighting the value of our method. These results suggest that ACT is a promising path toward developing more reflective and capable LLM agents."
+  },
+  {
+    "title": "Exp-Force: Experience-Conditioned Pre-Grasp Force Selection with Vision-Language Models",
+    "url": "http://arxiv.org/abs/2603.08668v1",
+    "arxiv_id": "2603.08668v1",
+    "authors": [
+      "Siqi Shang",
+      "Minchao Huang",
+      "Bill Fan",
+      "Lillian Chin"
+    ],
+    "published": "2026-03-09T17:41:22+00:00",
+    "summary": "Accurate pre-contact grasp force selection is critical for safe and reliable robotic manipulation. Adaptive controllers regulate force after contact but still require a reasonable initial estimate. Starting a grasp with too little force requires reactive adjustment, while starting a grasp with too high a force risks damaging fragile objects. This trade-off is particularly challenging for compliant grippers, whose contact mechanics are difficult to model analytically. We propose Exp-Force, an experience-conditioned framework that predicts the minimum feasible grasping force from a single RGB image. The method retrieves a small set of relevant prior grasping experiences and conditions a vision-language model on these examples for in-context inference, without analytic contact models or manually designed heuristics. On 129 object instances, ExpForce achieves a best-case MAE of 0.43 N, reducing error by 72% over zero-shot inference. In real-world tests on 30 unseen objects, it improves appropriate force selection rate from 63% to 87%. These results demonstrate that Exp-Force enables reliable and generalizable pre-grasp force selection by leveraging prior interaction experiences. http://expforcesubmission.github.io/Exp-Force-Website/"
+  },
+  {
+    "title": "Cybersecurity AI: Hacking Consumer Robots in the AI Era",
+    "url": "http://arxiv.org/abs/2603.08665v1",
+    "arxiv_id": "2603.08665v1",
+    "authors": [
+      "V\u00edctor Mayoral-Vilches",
+      "Unai Ayucar-Carbajo",
+      "Olivier Laflamme",
+      "Ruikai Peng",
+      "Mar\u00eda Sanz-G\u00f3mez",
+      "Francesco Balassone",
+      "Lucas Apa",
+      "Endika Gil-Uriarte"
+    ],
+    "published": "2026-03-09T17:40:47+00:00",
+    "summary": "Is robot cybersecurity broken by AI? Consumer robots -- from autonomous lawnmowers to powered exoskeletons and window cleaners -- are rapidly entering homes and workplaces, yet their security remains rooted in assumptions of specialized attacker expertise. This paper presents evidence that Generative AI has fundamentally disrupted robot cybersecurity: what historically required deep knowledge of ROS, ROS 2, and robotic system internals can now be automated by anyone with access to state-of-the-art GenAI tools spearheaded by the open source CAI (Cybersecurity AI). We provide empirical evidence through three case studies: (1) compromising a Hookii autonomous lawnmower robot, uncovering fleet-wide vulnerabilities and data protection violations affecting 267+ connected devices, (2) exploiting a Hypershell powered exoskeleton, demonstrating safety-critical motor control weaknesses and credential exposure including access to over 3,300 internal support emails, and (3) breaching a HOBOT S7 Pro window cleaning robot, achieving unauthenticated BLE command injection and OTA firmware exploitation. Across these platforms, CAI discovered in an automated manner 38 vulnerabilities that would have previously required months of specialized security research. Our findings reveal a stark asymmetry: while offensive capabilities have been democratized through AI, defensive measures often remain lagging behind. We argue that traditional defense-in-depth architectures like the Robot Immune System (RIS) must evolve toward GenAI-native defensive agents capable of matching the speed and adaptability of AI-powered attacks."
+  },
+  {
+    "title": "How Far Can Unsupervised RLVR Scale LLM Training?",
+    "url": "http://arxiv.org/abs/2603.08660v1",
+    "arxiv_id": "2603.08660v1",
+    "authors": [
+      "Bingxiang He",
+      "Yuxin Zuo",
+      "Zeyuan Liu",
+      "Shangziqi Zhao",
+      "Zixuan Fu",
+      "Junlin Yang",
+      "Cheng Qian",
+      "Kaiyan Zhang",
+      "Yuchen Fan",
+      "Ganqu Cui",
+      "Xiusi Chen",
+      "Youbang Sun",
+      "Xingtai Lv",
+      "Xuekai Zhu",
+      "Li Sheng",
+      "Ran Li",
+      "Huan-ang Gao",
+      "Yuchen Zhang",
+      "Bowen Zhou",
+      "Zhiyuan Liu",
+      "Ning Ding"
+    ],
+    "published": "2026-03-09T17:38:11+00:00",
+    "summary": "Unsupervised reinforcement learning with verifiable rewards (URLVR) offers a pathway to scale LLM training beyond the supervision bottleneck by deriving rewards without ground truth labels. Recent works leverage model intrinsic signals, showing promising early gains, yet their potential and limitations remain unclear. In this work, we revisit URLVR and provide a comprehensive analysis spanning taxonomy, theory and extensive experiments. We first classify URLVR methods into intrinsic versus external based on reward sources, then establish a unified theoretical framework revealing that all intrinsic methods converge toward sharpening the model's initial distribution This sharpening mechanism succeeds when initial confidence aligns with correctness but fails catastrophically when misaligned. Through systematic experiments, we show intrinsic rewards consistently follow a rise-then-fall pattern across methods, with collapse timing determined by model prior rather than engineering choices. Despite these scaling limits, we find intrinsic rewards remain valuable in test-time training on small datasets, and propose Model Collapse Step to measure model prior, serving as a practical indicator for RL trainability. Finally, we explore external reward methods that ground verification in computational asymmetries, showing preliminary evidence they may escape the confidence-correctness ceiling. Our findings chart boundaries for intrinsic URLVR while motivating paths toward scalable alternatives."
+  },
+  {
+    "title": "Carbon-aware Market Participation for Building Energy Management Systems",
+    "url": "http://arxiv.org/abs/2603.08654v1",
+    "arxiv_id": "2603.08654v1",
+    "authors": [
+      "Young-ho Cho",
+      "Mohamad Chehade",
+      "Fatima Al-Janahi",
+      "Sol Lim",
+      "Javad Mohammadi",
+      "Hao Zhu"
+    ],
+    "published": "2026-03-09T17:32:49+00:00",
+    "summary": "Tackling climate change requires the rapid and deep decarbonization of electric power systems. While energy management systems (EMSs) play a central role in this transition, conventional EMSs focus mainly on economic efficiency and often overlook the environmental impact of operational decisions. To address this gap, this paper proposes a unified, real-time building-level carbon-aware EMS (CAEMS) capable of simultaneously co-optimizing grid imports, energy storage, and flexible demand within a single integrated framework. We formulate a mixed-integer linear program (MILP) model that directly integrates time-varying marginal carbon intensity signals into the EMS objective for coordinated participation in both day-ahead (DA) and real-time (RT) markets. To relax the unrealistic assumption of perfect foresight, we incorporate a model predictive control (MPC) extension driven by a Transformer-based forecaster that jointly predicts electricity prices and carbon intensity. The proposed CAEMS is validated using real-world data from the PJM electricity market. Simulation results demonstrate that modest carbon prices can achieve a significant 22.5% reduction in emissions with only a 1.7% increase in cost."
+  },
+  {
     "title": "BEVLM: Distilling Semantic Knowledge from LLMs into Bird's-Eye View Representations",
     "url": "http://arxiv.org/abs/2603.06576v1",
     "arxiv_id": "2603.06576v1",
