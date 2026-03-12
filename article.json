@@ -1,5 +1,83 @@
 [
   {
+    "title": "DynVLA: Learning World Dynamics for Action Reasoning in Autonomous Driving",
+    "url": "http://arxiv.org/abs/2603.11041v1",
+    "arxiv_id": "2603.11041v1",
+    "authors": [
+      "Shuyao Shang",
+      "Bing Zhan",
+      "Yunfei Yan",
+      "Yuqi Wang",
+      "Yingyan Li",
+      "Yasong An",
+      "Xiaoman Wang",
+      "Jierui Liu",
+      "Lu Hou",
+      "Lue Fan",
+      "Zhaoxiang Zhang",
+      "Tieniu Tan"
+    ],
+    "published": "2026-03-11T17:59:31+00:00",
+    "summary": "We propose DynVLA, a driving VLA model that introduces a new CoT paradigm termed Dynamics CoT. DynVLA forecasts compact world dynamics before action generation, enabling more informed and physically grounded decision-making. To obtain compact dynamics representations, DynVLA introduces a Dynamics Tokenizer that compresses future evolution into a small set of dynamics tokens. Considering the rich environment dynamics in interaction-intensive driving scenarios, DynVLA decouples ego-centric and environment-centric dynamics, yielding more accurate world dynamics modeling. We then train DynVLA to generate dynamics tokens before actions through SFT and RFT, improving decision quality while maintaining latency-efficient inference. Compared to Textual CoT, which lacks fine-grained spatiotemporal understanding, and Visual CoT, which introduces substantial redundancy due to dense image prediction, Dynamics CoT captures the evolution of the world in a compact, interpretable, and efficient form. Extensive experiments on NAVSIM, Bench2Drive, and a large-scale in-house dataset demonstrate that DynVLA consistently outperforms Textual CoT and Visual CoT methods, validating the effectiveness and practical value of Dynamics CoT."
+  },
+  {
+    "title": "RCTs & Human Uplift Studies: Methodological Challenges and Practical Solutions for Frontier AI Evaluation",
+    "url": "http://arxiv.org/abs/2603.11001v1",
+    "arxiv_id": "2603.11001v1",
+    "authors": [
+      "Patricia Paskov",
+      "Kevin Wei",
+      "Shen Zhou Hong",
+      "Dan Bateyko",
+      "Xavier Roberts-Gaal",
+      "Carson Ezell",
+      "Gailius Praninskas",
+      "Valerie Chen",
+      "Umang Bhatt",
+      "Ella Guest"
+    ],
+    "published": "2026-03-11T17:25:03+00:00",
+    "summary": "Human uplift studies - or studies that measure AI effects on human performance relative to a status quo, typically using randomized controlled trial (RCT) methodology - are increasingly used to inform deployment, governance, and safety decisions for frontier AI systems. While the methods underlying these studies are well-established, their interaction with the distinctive properties of frontier AI systems remains underexamined, particularly when results are used to inform high-stakes decisions. We present findings from interviews with 16 expert practitioners with experience conducting human uplift studies in domains including biosecurity, cybersecurity, education, and labor. Across interviews, experts described a recurring tension between standard causal inference assumptions and the object of study itself. Rapidly evolving AI systems, shifting baselines, heterogeneous and changing user proficiency, and porous real-world settings strain assumptions underlying internal, external, and construct validity, complicating the interpretation and appropriate use of uplift evidence. We synthesize these challenges across key stages of the human uplift research lifecycle and map them to practitioner-reported solutions, clarifying both the limits and the appropriate uses of evidence from human uplift studies in high-stakes decision-making."
+  },
+  {
+    "title": "World Mouse: Exploring Interactions with a Cross-Reality Cursor",
+    "url": "http://arxiv.org/abs/2603.10984v1",
+    "arxiv_id": "2603.10984v1",
+    "authors": [
+      "Esen K. T\u00fct\u00fcnc\u00fc",
+      "Mar Gonzalez-Franco",
+      "Khushman Patel",
+      "Eric J. Gonzalez"
+    ],
+    "published": "2026-03-11T17:14:05+00:00",
+    "summary": "As Extended Reality (XR) systems increasingly map and understand the physical world, interacting with these blended representations remains challenging. The current push for \"natural\" inputs has its trade-offs: touch is limited by human reach and fatigue, while gaze often lacks the precision for fine interaction. To bridge this gap, we introduce World Mouse, a cross-reality cursor that reinterprets the familiar 2D desktop mouse for complex 3D scenes. The system is driven by two core mechanisms: within-object interaction, which uses surface normals for precise cursor placement, and between-object navigation, which leverages interpolation to traverse empty space. Unlike previous virtual-only approaches, World Mouse leverages semantic segmentation and mesh reconstruction to treat physical objects as interactive surfaces. Through a series of prototypes, including object manipulation and screen-to-world transitions, we illustrate how cross-reality cursors may enable seamless interactions across real and virtual environments."
+  },
+  {
+    "title": "PPGuide: Steering Diffusion Policies with Performance Predictive Guidance",
+    "url": "http://arxiv.org/abs/2603.10980v1",
+    "arxiv_id": "2603.10980v1",
+    "authors": [
+      "Zixing Wang",
+      "Devesh K. Jha",
+      "Ahmed H. Qureshi",
+      "Diego Romeres"
+    ],
+    "published": "2026-03-11T17:10:16+00:00",
+    "summary": "Diffusion policies have shown to be very efficient at learning complex, multi-modal behaviors for robotic manipulation. However, errors in generated action sequences can compound over time which can potentially lead to failure. Some approaches mitigate this by augmenting datasets with expert demonstrations or learning predictive world models which might be computationally expensive. We introduce Performance Predictive Guidance (PPGuide), a lightweight, classifier-based framework that steers a pre-trained diffusion policy away from failure modes at inference time. PPGuide makes use of a novel self-supervised process: it uses attention-based multiple instance learning to automatically estimate which observation-action chunks from the policy's rollouts are relevant to success or failure. We then train a performance predictor on this self-labeled data. During inference, this predictor provides a real-time gradient to guide the policy toward more robust actions. We validated our proposed PPGuide across a diverse set of tasks from the Robomimic and MimicGen benchmarks, demonstrating consistent improvements in performance."
+  },
+  {
+    "title": "Learning Adaptive Force Control for Contact-Rich Sample Scraping with Heterogeneous Materials",
+    "url": "http://arxiv.org/abs/2603.10979v1",
+    "arxiv_id": "2603.10979v1",
+    "authors": [
+      "Cenk Cetin",
+      "Shreyas Pouli",
+      "Gabriella Pizzuto"
+    ],
+    "published": "2026-03-11T17:07:55+00:00",
+    "summary": "The increasing demand for accelerated scientific discovery, driven by global challenges, highlights the need for advanced AI-driven robotics. Deploying robotic chemists in human-centric labs is key for the next horizon of autonomous discovery, as complex tasks still demand the dexterity of human scientists. Robotic manipulation in this context is uniquely challenged by handling diverse chemicals (granular, powdery, or viscous liquids), under varying lab conditions. For example, humans use spatulas for scraping materials from vial walls. Automating this process is challenging because it goes beyond simple robotic insertion tasks and traditional lab automation, requiring the execution of fine-granular movements within a constrained environment (the sample vial). Our work proposes an adaptive control framework to address this, relying on a low-level Cartesian impedance controller for stable and compliant physical interaction and a high-level reinforcement learning agent that learns to dynamically adjust interaction forces at the end-effector. The agent is guided by perception feedback, which provides the material's location. We first created a task-representative simulation environment with a Franka Research 3 robot, a scraping tool, and a sample vial containing heterogeneous materials. To facilitate the learning of an adaptive policy and model diverse characteristics, the sample is modelled as a collection of spheres, where each sphere is assigned a unique dislodgement force threshold, which is procedurally generated using Perlin noise. We train an agent to autonomously learn and adapt the optimal contact wrench for a sample scraping task in simulation and then successfully transfer this policy to a real robotic setup. Our method was evaluated across five different material setups, outperforming a fixed-wrench baseline by an average of 10.9%."
+  },
+  {
     "title": "TiPToP: A Modular Open-Vocabulary Planning System for Robotic Manipulation",
     "url": "http://arxiv.org/abs/2603.09971v1",
     "arxiv_id": "2603.09971v1",
