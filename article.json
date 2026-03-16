@@ -1,5 +1,78 @@
 [
   {
+    "title": "PhysMoDPO: Physically-Plausible Humanoid Motion with Preference Optimization",
+    "url": "http://arxiv.org/abs/2603.13228v1",
+    "arxiv_id": "2603.13228v1",
+    "authors": [
+      "Yangsong Zhang",
+      "Anujith Muraleedharan",
+      "Rikhat Akizhanov",
+      "Abdul Ahad Butt",
+      "G\u00fcl Varol",
+      "Pascal Fua",
+      "Fabio Pizzati",
+      "Ivan Laptev"
+    ],
+    "published": "2026-03-13T17:59:59+00:00",
+    "summary": "Recent progress in text-conditioned human motion generation has been largely driven by diffusion models trained on large-scale human motion data. Building on this progress, recent methods attempt to transfer such models for character animation and real robot control by applying a Whole-Body Controller (WBC) that converts diffusion-generated motions into executable trajectories. While WBC trajectories become compliant with physics, they may expose substantial deviations from original motion. To address this issue, we here propose PhysMoDPO, a Direct Preference Optimization framework. Unlike prior work that relies on hand-crafted physics-aware heuristics such as foot-sliding penalties, we integrate WBC into our training pipeline and optimize diffusion model such that the output of WBC becomes compliant both with physics and original text instructions. To train PhysMoDPO we deploy physics-based and task-specific rewards and use them to assign preference to synthesized trajectories. Our extensive experiments on text-to-motion and spatial control tasks demonstrate consistent improvements of PhysMoDPO in both physical realism and task-related metrics on simulated robots. Moreover, we demonstrate that PhysMoDPO results in significant improvements when applied to zero-shot motion transfer in simulation and for real-world deployment on a G1 humanoid robot."
+  },
+  {
+    "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
+    "url": "http://arxiv.org/abs/2603.13224v1",
+    "arxiv_id": "2603.13224v1",
+    "authors": [
+      "Ziyu Liu",
+      "Shengyuan Ding",
+      "Xinyu Fang",
+      "Xuanlang Dai",
+      "Penghui Yang",
+      "Jianze Liang",
+      "Jiaqi Wang",
+      "Kai Chen",
+      "Dahua Lin",
+      "Yuhang Zang"
+    ],
+    "published": "2026-03-13T17:58:14+00:00",
+    "summary": "Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables, and SVGs, into executable or structured representations with high visual fidelity. While recent Large Vision Language Models (LVLMs) achieve strong results via supervised fine-tuning, reinforcement learning remains challenging due to misaligned reward signals. Existing rewards either rely on textual rules or coarse visual embedding similarity, both of which fail to capture fine-grained visual discrepancies and are vulnerable to reward hacking. We propose Visual Equivalence Reward Model (Visual-ERM), a multimodal generative reward model that provides fine-grained, interpretable, and task-agnostic feedback to evaluate vision-to-code quality directly in the rendered visual space. Integrated into RL, Visual-ERM improves Qwen3-VL-8B-Instruct by +8.4 on chart-to-code and yields consistent gains on table and SVG parsing (+2.7, +4.1 on average), and further strengthens test-time scaling via reflection and revision. We also introduce VisualCritic-RewardBench (VC-RewardBench), a benchmark for judging fine-grained image-to-image discrepancies on structured visual data, where Visual-ERM at 8B decisively outperforms Qwen3-VL-235B-Instruct and approaches leading closed-source models. Our results suggest that fine-grained visual reward supervision is both necessary and sufficient for vision-to-code RL, regardless of task specificity."
+  },
+  {
+    "title": "A Generative Model of Conspicuous Consumption and Status Signaling",
+    "url": "http://arxiv.org/abs/2603.13220v1",
+    "arxiv_id": "2603.13220v1",
+    "authors": [
+      "Logan Cross",
+      "Jordi Grau-Moya",
+      "William A. Cunningham",
+      "Alexander Sasha Vezhnevets",
+      "Joel Z. Leibo"
+    ],
+    "published": "2026-03-13T17:56:28+00:00",
+    "summary": "Status signaling drives human behavior and the allocation of scarce resources such as mating opportunities, yet the generative mechanisms governing how specific goods, signals, or behaviors acquire prestige remain a puzzle. Classical frameworks, such as Costly Signaling Theory, treat preferences as fixed and struggle to explain how semiotic meaning changes based on context or drifts dynamically over time, occasionally reaching tipping points. In this work, we propose a computational theory of status grounded in the theory of appropriateness, positing that status symbols emerge endogenously through a feedback loop of social observation and predictive pattern completion. We validate this theory using simulations of groups of Large Language Model (LLM)-based agents in the Concordia framework. By experimentally manipulating social visibility within naturalistic agent daily routines, we demonstrate that social interactions transform functional demand into status-seeking behavior. We observe the emergence of price run-ups and positive price elasticity (Veblen effects) for both real-world luxury items and procedurally generated synthetic goods, ruling out pretraining bias as the sole driver. Furthermore, we demonstrate that \"influencer\" agents can drive the endogenous formation of distinct subcultures through targeted sanctioning, and find that similar social influence effects generalize to non-monetary signaling behaviors. This work provides a generative bridge between micro-level cognition and macro-level economic and sociological phenomena, offering a new methodology for forecasting how cultural conventions emerge from interaction."
+  },
+  {
+    "title": "LLM Constitutional Multi-Agent Governance",
+    "url": "http://arxiv.org/abs/2603.13189v1",
+    "arxiv_id": "2603.13189v1",
+    "authors": [
+      "J. de Curt\u00f2",
+      "I. de Zarz\u00e0"
+    ],
+    "published": "2026-03-13T17:21:26+00:00",
+    "summary": "Large Language Models (LLMs) can generate persuasive influence strategies that shift cooperative behavior in multi-agent populations, but a critical question remains: does the resulting cooperation reflect genuine prosocial alignment, or does it mask erosion of agent autonomy, epistemic integrity, and distributional fairness? We introduce Constitutional Multi-Agent Governance (CMAG), a two-stage framework that interposes between an LLM policy compiler and a networked agent population, combining hard constraint filtering with soft penalized-utility optimization that balances cooperation potential against manipulation risk and autonomy pressure. We propose the Ethical Cooperation Score (ECS), a multiplicative composite of cooperation, autonomy, integrity, and fairness that penalizes cooperation achieved through manipulative means. In experiments on scale-free networks of 80 agents under adversarial conditions (70% violating candidates), we benchmark three regimes: full CMAG, naive filtering, and unconstrained optimization. While unconstrained optimization achieves the highest raw cooperation (0.873), it yields the lowest ECS (0.645) due to severe autonomy erosion (0.867) and fairness degradation (0.888). CMAG attains an ECS of 0.741, a 14.9% improvement, while preserving autonomy at 0.985 and integrity at 0.995, with only modest cooperation reduction to 0.770. The naive ablation (ECS = 0.733) confirms that hard constraints alone are insufficient. Pareto analysis shows CMAG dominates the cooperation-autonomy trade-off space, and governance reduces hub-periphery exposure disparities by over 60%. These findings establish that cooperation is not inherently desirable without governance: constitutional constraints are necessary to ensure that LLM-mediated influence produces ethically stable outcomes rather than manipulative equilibria."
+  },
+  {
+    "title": "Perceive What Matters: Relevance-Driven Scheduling for Multimodal Streaming Perception",
+    "url": "http://arxiv.org/abs/2603.13176v1",
+    "arxiv_id": "2603.13176v1",
+    "authors": [
+      "Dingcheng Huang",
+      "Xiaotong Zhang",
+      "Kamal Youcef-Toumi"
+    ],
+    "published": "2026-03-13T17:11:20+00:00",
+    "summary": "In modern human-robot collaboration (HRC) applications, multiple perception modules jointly extract visual, auditory, and contextual cues to achieve comprehensive scene understanding, enabling the robot to provide appropriate assistance to human agents intelligently. While executing multiple perception modules on a frame-by-frame basis enhances perception quality in offline settings, it inevitably accumulates latency, leading to a substantial decline in system performance in streaming perception scenarios. Recent work in scene understanding, termed Relevance, has established a solid foundation for developing efficient methodologies in HRC. However, modern perception pipelines still face challenges related to information redundancy and suboptimal allocation of computational resources. Drawing inspiration from the Relevance concept and the information sparsity in HRC events, we propose a novel lightweight perception scheduling framework that efficiently leverages output from previous frames to estimate and schedule necessary perception modules in real-time based on scene context. The experimental results demonstrate that the proposed perception scheduling framework effectively reduces computational latency by up to 27.52% compared to conventional parallel perception pipelines, while also achieving a 72.73% improvement in MMPose activation recall. Additionally, the framework demonstrates high keyframe accuracy, achieving rates of up to 98%. The results validate the framework's capability to enhance real-time perception efficiency without significantly compromising accuracy. The framework shows potential as a scalable and systematic solution for multimodal streaming perception systems in HRC."
+  },
+  {
     "title": "OmniStream: Mastering Perception, Reconstruction and Action in Continuous Streams",
     "url": "http://arxiv.org/abs/2603.12265v1",
     "arxiv_id": "2603.12265v1",
