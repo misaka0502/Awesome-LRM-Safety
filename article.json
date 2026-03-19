@@ -1,5 +1,74 @@
 [
   {
+    "title": "GMT: Goal-Conditioned Multimodal Transformer for 6-DOF Object Trajectory Synthesis in 3D Scenes",
+    "url": "http://arxiv.org/abs/2603.17993v1",
+    "arxiv_id": "2603.17993v1",
+    "authors": [
+      "Huajian Zeng",
+      "Abhishek Saroha",
+      "Daniel Cremers",
+      "Xi Wang"
+    ],
+    "published": "2026-03-18T17:54:35+00:00",
+    "summary": "Synthesizing controllable 6-DOF object manipulation trajectories in 3D environments is essential for enabling robots to interact with complex scenes, yet remains challenging due to the need for accurate spatial reasoning, physical feasibility, and multimodal scene understanding. Existing approaches often rely on 2D or partial 3D representations, limiting their ability to capture full scene geometry and constraining trajectory precision. We present GMT, a multimodal transformer framework that generates realistic and goal-directed object trajectories by jointly leveraging 3D bounding box geometry, point cloud context, semantic object categories, and target end poses. The model represents trajectories as continuous 6-DOF pose sequences and employs a tailored conditioning strategy that fuses geometric, semantic, contextual, and goaloriented information. Extensive experiments on synthetic and real-world benchmarks demonstrate that GMT outperforms state-of-the-art human motion and human-object interaction baselines, such as CHOIS and GIMO, achieving substantial gains in spatial accuracy and orientation control. Our method establishes a new benchmark for learningbased manipulation planning and shows strong generalization to diverse objects and cluttered 3D environments. Project page: https://huajian- zeng.github. io/projects/gmt/."
+  },
+  {
+    "title": "A Single-Fiber Optical Frequency Domain Reflectometry (OFDR)-Based Shape Sensing of Concentric Tube Steerable Drilling Robots",
+    "url": "http://arxiv.org/abs/2603.17990v1",
+    "arxiv_id": "2603.17990v1",
+    "authors": [
+      "Yash Kulkarni",
+      "Mobina Tavangarifard",
+      "Daniyal Maroufi",
+      "Mohsen Khadem",
+      "Justin E. Bird",
+      "Jeffrey H. Siewerdsen",
+      "Farshid Alambeigi"
+    ],
+    "published": "2026-03-18T17:51:07+00:00",
+    "summary": "This paper introduces a novel shape-sensing approach for Concentric Tube Steerable Drilling Robots (CT-SDRs) based on Optical Frequency Domain Reflectometry (OFDR). Unlike traditional FBG-based methods, OFDR enables continuous strain measurement along the entire fiber length with enhanced spatial resolution. In the proposed method, a Shape Sensing Assembly (SSA) is first fabricated by integrating a single OFDR fiber with a flat NiTi wire. The calibrated SSA is then routed through and housed within the internal channel of a flexible drilling instrument, which is guided by the pre-shaped NiTi tube of the CT-SDR. In this configuration, the drilling instrument serves as a protective sheath for the SSA during drilling, eliminating the need for integration or adhesion to the instrument surface that is typical of conventional optical sensor approaches. The performance of the proposed SSA, integrated within the cannulated CT-SDR, was thoroughly evaluated under free-bending conditions and during drilling along multiple J-shaped trajectories in synthetic Sawbones phantoms. Results demonstrate accurate and reliable shape-sensing capability, confirming the feasibility and robustness of this integration strategy."
+  },
+  {
+    "title": "Specification-Aware Distribution Shaping for Robotics Foundation Models",
+    "url": "http://arxiv.org/abs/2603.17969v1",
+    "arxiv_id": "2603.17969v1",
+    "authors": [
+      "Sad\u0131k Bera Y\u00fcksel",
+      "Derya Aksaray"
+    ],
+    "published": "2026-03-18T17:36:46+00:00",
+    "summary": "Robotics foundation models have demonstrated strong capabilities in executing natural language instructions across diverse tasks and environments. However, they remain largely data-driven and lack formal guarantees on safety and satisfaction of time-dependent specifications during deployment. In practice, robots often need to comply with operational constraints involving rich spatio-temporal requirements such as time-bounded goal visits, sequential objectives, and persistent safety conditions. In this work, we propose a specification-aware action distribution optimization framework that enforces a broad class of Signal Temporal Logic (STL) constraints during execution of a pretrained robotics foundation model without modifying its parameters. At each decision step, the method computes a minimally modified action distribution that satisfies a hard STL feasibility constraint by reasoning over the remaining horizon using forward dynamics propagation. We validate the proposed framework in simulation using a state-of-the-art robotics foundation model across multiple environments and complex specifications."
+  },
+  {
+    "title": "Unified Policy Value Decomposition for Rapid Adaptation",
+    "url": "http://arxiv.org/abs/2603.17947v1",
+    "arxiv_id": "2603.17947v1",
+    "authors": [
+      "Cristiano Capone",
+      "Luca Falorsi",
+      "Andrea Ciardiello",
+      "Luca Manneschi"
+    ],
+    "published": "2026-03-18T17:19:56+00:00",
+    "summary": "Rapid adaptation in complex control systems remains a central challenge in reinforcement learning. We introduce a framework in which policy and value functions share a low-dimensional coefficient vector - a goal embedding - that captures task identity and enables immediate adaptation to novel tasks without retraining representations. During pretraining, we jointly learn structured value bases and compatible policy bases through a bilinear actor-critic decomposition. The critic factorizes as Q = sum_k G_k(g) y_k(s,a), where G_k(g) is a goal-conditioned coefficient vector and y_k(s,a) are learned value basis functions. This multiplicative gating - where a context signal scales a set of state-dependent bases - is reminiscent of gain modulation observed in Layer 5 pyramidal neurons, where top-down inputs modulate the gain of sensory-driven responses without altering their tuning. Building on Successor Features, we extend the decomposition to the actor, which composes a set of primitive policies weighted by the same coefficients G_k(g). At test time the bases are frozen and G_k(g) is estimated zero-shot via a single forward pass, enabling immediate adaptation to novel tasks without any gradient update. We train a Soft Actor-Critic agent on the MuJoCo Ant environment under a multi-directional locomotion objective, requiring the agent to walk in eight directions specified as continuous goal vectors. The bilinear structure allows each policy head to specialize to a subset of directions, while the shared coefficient layer generalizes across them, accommodating novel directions by interpolating in goal embedding space. Our results suggest that shared low-dimensional goal embeddings offer a general mechanism for rapid, structured adaptation in high-dimensional control, and highlight a potentially biologically plausible principle for efficient transfer in complex reinforcement learning systems."
+  },
+  {
+    "title": "RoboForge: Physically Optimized Text-guided Whole-Body Locomotion for Humanoids",
+    "url": "http://arxiv.org/abs/2603.17927v1",
+    "arxiv_id": "2603.17927v1",
+    "authors": [
+      "Xichen Yuan",
+      "Zhe Li",
+      "Bofan Lyu",
+      "Kuangji Zuo",
+      "Yanshuo Lu",
+      "Gen Li",
+      "Jianfei Yang"
+    ],
+    "published": "2026-03-18T17:02:56+00:00",
+    "summary": "While generative models have become effective at producing human-like motions from text, transferring these motions to humanoid robots for physical execution remains challenging. Existing pipelines are often limited by retargeting, where kinematic quality is undermined by physical infeasibility, contact-transition errors, and the high cost of real-world dynamical data. We present a unified latent-driven framework that bridges natural language and whole-body humanoid locomotion through a retarget-free, physics-optimized pipeline. Rather than treating generation and control as separate stages, our key insight is to couple them bidirectionally under physical constraints.We introduce a Physical Plausibility Optimization (PP-Opt) module as the coupling interface. In the forward direction, PP-Opt refines a teacher-student distillation policy with a plausibility-centric reward to suppress artifacts such as floating, skating, and penetration. In the backward direction, it converts reward-optimized simulation rollouts into high-quality explicit motion data, which is used to fine-tune the motion generator toward a more physically plausible latent distribution. This bidirectional design forms a self-improving cycle: the generator learns a physically grounded latent space, while the controller learns to execute latent-conditioned behaviors with dynamical integrity.Extensive experiments on the Unitree G1 humanoid show that our bidirectional optimization improves tracking accuracy and success rates. Across IsaacLab and MuJoCo, the implicit latent-driven pipeline consistently outperforms conventional explicit retargeting baselines in both precision and stability. By coupling diffusion-based motion generation with physical plausibility optimization, our framework provides a practical path toward deployable text-guided humanoid intelligence."
+  },
+  {
     "title": "Demystifing Video Reasoning",
     "url": "http://arxiv.org/abs/2603.16870v1",
     "arxiv_id": "2603.16870v1",
