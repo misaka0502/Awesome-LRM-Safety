@@ -1,5 +1,84 @@
 [
   {
+    "title": "MeanFlow Meets Control: Scaling Sampled-Data Control for Swarms",
+    "url": "http://arxiv.org/abs/2603.20189v1",
+    "arxiv_id": "2603.20189v1",
+    "authors": [
+      "Anqi Dong",
+      "Yongxin Chen",
+      "Karl H. Johansson",
+      "Johan Karlsson"
+    ],
+    "published": "2026-03-20T17:59:18+00:00",
+    "summary": "Steering large-scale swarms in only a few control updates is challenging because real systems operate in sampled-data form: control inputs are updated intermittently and applied over finite intervals. In this regime, the natural object is not an instantaneous velocity field, but a finite-window control quantity that captures the system response over each sampling interval. Inspired by MeanFlow, we introduce a control-space learning framework for swarm steering under linear time-invariant dynamics. The learned object is the coefficient that parameterizes the finite-horizon minimum-energy control over each interval. We show that this coefficient admits both an integral representation and a local differential identity along bridge trajectories, which leads to a simple stop-gradient training objective. At implementation time, the learned coefficient is used directly in sampled-data updates, so the prescribed dynamics and actuation map are respected by construction. The resulting framework provides a scalable approach to few-step swarm steering that is consistent with the sampled-data structure of real control systems."
+  },
+  {
+    "title": "IndoorR2X: Indoor Robot-to-Everything Coordination with LLM-Driven Planning",
+    "url": "http://arxiv.org/abs/2603.20182v1",
+    "arxiv_id": "2603.20182v1",
+    "authors": [
+      "Fan Yang",
+      "Soumya Teotia",
+      "Shaunak A. Mehta",
+      "Prajit KrisshnaKumar",
+      "Quanting Xie",
+      "Jun Liu",
+      "Yueqi Song",
+      "Li Wenkai",
+      "Atsunori Moteki",
+      "Kanji Uchino",
+      "Yonatan Bisk"
+    ],
+    "published": "2026-03-20T17:57:26+00:00",
+    "summary": "Although robot-to-robot (R2R) communication improves indoor scene understanding beyond what a single robot can achieve, R2R alone cannot overcome partial observability without substantial exploration overhead or scaling team size. In contrast, many indoor environments already include low-cost Internet of Things (IoT) sensors (e.g., cameras) that provide persistent, building-wide context beyond onboard perception. We therefore introduce IndoorR2X, the first benchmark and simulation framework for Large Language Model (LLM)-driven multi-robot task planning with Robot-to-Everything (R2X) perception and communication in indoor environments. IndoorR2X integrates observations from mobile robots and static IoT devices to construct a global semantic state that supports scalable scene understanding, reduces redundant exploration, and enables high-level coordination through LLM-based planning. IndoorR2X provides configurable simulation environments, sensor layouts, robot teams, and task suites to systematically evaluate high-level semantic coordination strategies. Extensive experiments across diverse settings demonstrate that IoT-augmented world modeling improves multi-robot efficiency and reliability, and we highlight key insights and failure modes for advancing LLM-based collaboration between robot teams and indoor IoT sensors."
+  },
+  {
+    "title": "The Robot's Inner Critic: Self-Refinement of Social Behaviors through VLM-based Replanning",
+    "url": "http://arxiv.org/abs/2603.20164v1",
+    "arxiv_id": "2603.20164v1",
+    "authors": [
+      "Jiyu Lim",
+      "Youngwoo Yoon",
+      "Kwanghyun Park"
+    ],
+    "published": "2026-03-20T17:40:21+00:00",
+    "summary": "Conventional robot social behavior generation has been limited in flexibility and autonomy, relying on predefined motions or human feedback. This study proposes CRISP (Critique-and-Replan for Interactive Social Presence), an autonomous framework where a robot critiques and replans its own actions by leveraging a Vision-Language Model (VLM) as a `human-like social critic.' CRISP integrates (1) extraction of movable joints and constraints by analyzing the robot's description file (e.g., MJCF), (2) generation of step-by-step behavior plans based on situational context, (3) generation of low-level joint control code by referencing visual information (joint range-of-motion visualizations), (4) VLM-based evaluation of social appropriateness and naturalness, including pinpointing erroneous steps, and (5) iterative refinement of behaviors through reward-based search. This approach is not tied to a specific robot API; it can generate subtly different, human-like motions on various platforms using only the robot's structure file. In a user study involving five different robot types and 20 scenarios, including mobile manipulators and humanoids, our proposed method achieved significantly higher preference and situational appropriateness ratings compared to previous methods. This research presents a general framework that minimizes human intervention while expanding the robot's autonomous interaction capabilities and cross-platform applicability.   Detailed result videos and supplementary information regarding this work are available at: https://limjiyu99.github.io/inner-critic/"
+  },
+  {
+    "title": "HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels",
+    "url": "http://arxiv.org/abs/2603.20150v1",
+    "arxiv_id": "2603.20150v1",
+    "authors": [
+      "Shuoyuan Xu",
+      "Zhipeng Zhong",
+      "Tiago Barros",
+      "Matthew Coombes",
+      "Cristiano Premebida",
+      "Hao Wu",
+      "Cunjia Liu"
+    ],
+    "published": "2026-03-20T17:26:19+00:00",
+    "summary": "Agricultural robotics is gaining increasing relevance in both research and real-world deployment. As these systems are expected to operate autonomously in more complex tasks, the availability of representative real-world datasets becomes essential. While domains such as urban and forestry robotics benefit from large and established benchmarks, horticultural environments remain comparatively under-explored despite the economic significance of this sector. To address this gap, we present HortiMulti, a multimodal, cross-season dataset collected in commercial strawberry and raspberry polytunnels across an entire growing season, capturing substantial appearance variation, dynamic foliage, specular reflections from plastic covers, severe perceptual aliasing, and GNSS-unreliable conditions, all of which directly degrade existing localisation and perception algorithms. The sensor suite includes two 3D LiDARs, four RGB cameras, an IMU, GNSS, and wheel odometry. Ground truth trajectories are derived from a combination of Total Station surveying, AprilTag fiducial markers, and LiDAR-inertial odometry, spanning dense, sparse, and marker-free coverage to support evaluation under both controlled and realistic conditions. We release time-synchronised raw measurements, calibration files, reference trajectories, and baseline benchmarks for visual, LiDAR, and multi-sensor SLAM, with results confirming that current state-of-the-art methods remain inadequate for reliable polytunnel deployment, establishing HortiMulti as a one-stop resource for developing and testing robotic perception systems in horticulture environments."
+  },
+  {
+    "title": "AGILE: A Comprehensive Workflow for Humanoid Loco-Manipulation Learning",
+    "url": "http://arxiv.org/abs/2603.20147v1",
+    "arxiv_id": "2603.20147v1",
+    "authors": [
+      "Huihua Zhao",
+      "Rafael Cathomen",
+      "Lionel Gulich",
+      "Wei Liu",
+      "Efe Arda Ongan",
+      "Michael Lin",
+      "Shalin Jain",
+      "Soha Pouya",
+      "Yan Chang"
+    ],
+    "published": "2026-03-20T17:21:19+00:00",
+    "summary": "Recent advances in reinforcement learning (RL) have enabled impressive humanoid behaviors in simulation, yet transferring these results to new robots remains challenging. In many real deployments, the primary bottleneck is no longer simulation throughput or algorithm design, but the absence of systematic infrastructure that links environment verification, training, evaluation, and deployment in a coherent loop.   To address this gap, we present AGILE, an end-to-end workflow for humanoid RL that standardizes the policy-development lifecycle to mitigate common sim-to-real failure modes. AGILE comprises four stages: (1) interactive environment verification, (2) reproducible training, (3) unified evaluation, and (4) descriptor-driven deployment via robot/task configuration descriptors. For evaluation stage, AGILE supports both scenario-based tests and randomized rollouts under a shared suite of motion-quality diagnostics, enabling automated regression testing and principled robustness assessment. AGILE also incorporates a set of training stabilizations and algorithmic enhancements in training stage to improve optimization stability and sim-to-real transfer.   With this pipeline in place, we validate AGILE across five representative humanoid skills spanning locomotion, recovery, motion imitation, and loco-manipulation on two hardware platforms (Unitree G1 and Booster T1), achieving consistent sim-to-real transfer. Overall, AGILE shows that a standardized, end-to-end workflow can substantially improve the reliability and reproducibility of humanoid RL development."
+  },
+  {
     "title": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding",
     "url": "http://arxiv.org/abs/2603.19235v1",
     "arxiv_id": "2603.19235v1",
