@@ -1,5 +1,95 @@
 [
   {
+    "title": "MedObvious: Exposing the Medical Moravec's Paradox in VLMs via Clinical Triage",
+    "url": "http://arxiv.org/abs/2603.23501v1",
+    "arxiv_id": "2603.23501v1",
+    "authors": [
+      "Ufaq Khan",
+      "Umair Nawaz",
+      "L D M S S Teja",
+      "Numaan Saeed",
+      "Muhammad Bilal",
+      "Yutong Xie",
+      "Mohammad Yaqub",
+      "Muhammad Haris Khan"
+    ],
+    "published": "2026-03-24T17:59:54+00:00",
+    "summary": "Vision Language Models (VLMs) are increasingly used for tasks like medical report generation and visual question answering. However, fluent diagnostic text does not guarantee safe visual understanding. In clinical practice, interpretation begins with pre-diagnostic sanity checks: verifying that the input is valid to read (correct modality and anatomy, plausible viewpoint and orientation, and no obvious integrity violations). Existing benchmarks largely assume this step is solved, and therefore miss a critical failure mode: a model can produce plausible narratives even when the input is inconsistent or invalid. We introduce MedObvious, a 1,880-task benchmark that isolates input validation as a set-level consistency capability over small multi-panel image sets: the model must identify whether any panel violates expected coherence. MedObvious spans five progressive tiers, from basic orientation/modality mismatches to clinically motivated anatomy/viewpoint verification and triage-style cues, and includes five evaluation formats to test robustness across interfaces. Evaluating 17 different VLMs, we find that sanity checking remains unreliable: several models hallucinate anomalies on normal (negative-control) inputs, performance degrades when scaling to larger image sets, and measured accuracy varies substantially between multiple-choice and open-ended settings. These results show that pre-diagnostic verification remains unsolved for medical VLMs and should be treated as a distinct, safety-critical capability before deployment."
+  },
+  {
+    "title": "UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation",
+    "url": "http://arxiv.org/abs/2603.23500v1",
+    "arxiv_id": "2603.23500v1",
+    "authors": [
+      "Jie Liu",
+      "Zilyu Ye",
+      "Linxiao Yuan",
+      "Shenhan Zhu",
+      "Yu Gao",
+      "Jie Wu",
+      "Kunchang Li",
+      "Xionghui Wang",
+      "Xiaonan Nie",
+      "Weilin Huang",
+      "Wanli Ouyang"
+    ],
+    "published": "2026-03-24T17:59:17+00:00",
+    "summary": "Unified models capable of interleaved generation have emerged as a promising paradigm, with the community increasingly converging on autoregressive modeling for text and flow matching for image generation. To advance this direction, we propose a unified reinforcement learning framework tailored for interleaved generation. We validate our approach on its fundamental unit: a single round of reasoning-driven image generation, where the model first expands the user prompt through reasoning, followed by image synthesis. Formulating this multimodal generation process as a Markov Decision Process with sparse terminal rewards, we introduce UniGRPO to jointly optimize text and image generation policies using GRPO. Adopting a minimalist methodology to avoid over-design, we leverage established training recipes for both modalities by seamlessly integrating standard GRPO for reasoning and FlowGRPO for visual synthesis. To ensure scalability to multi-round interleaved generation, we introduce two critical modifications to the original FlowGRPO: (1) eliminating classifier-free guidance to maintain linear, unbranched rollouts, which is essential for scaling to complex scenarios involving multi-turn interactions and multi-condition generation (e.g., editing); and (2) replacing the standard latent KL penalty with an MSE penalty directly on the velocity fields, providing a more robust and direct regularization signal to mitigate reward hacking effectively. Our experiments demonstrate that this unified training recipe significantly enhances image generation quality through reasoning, providing a robust and scalable baseline for the future post-training of fully interleaved models."
+  },
+  {
+    "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG",
+    "url": "http://arxiv.org/abs/2603.23497v1",
+    "arxiv_id": "2603.23497v1",
+    "authors": [
+      "Zhen Li",
+      "Zian Meng",
+      "Shuwei Shi",
+      "Wenshuo Peng",
+      "Yuwei Wu",
+      "Bo Zheng",
+      "Chuanhao Li",
+      "Kaipeng Zhang"
+    ],
+    "published": "2026-03-24T17:58:25+00:00",
+    "summary": "Dynamical systems theory and reinforcement learning view world evolution as latent-state dynamics driven by actions, with visual observations providing partial information about the state. Recent video world models attempt to learn this action-conditioned dynamics from data. However, existing datasets rarely match the requirement: they typically lack diverse and semantically meaningful action spaces, and actions are directly tied to visual observations rather than mediated by underlying states. As a result, actions are often entangled with pixel-level changes, making it difficult for models to learn structured world dynamics and maintain consistent evolution over long horizons. In this paper, we propose WildWorld, a large-scale action-conditioned world modeling dataset with explicit state annotations, automatically collected from a photorealistic AAA action role-playing game (Monster Hunter: Wilds). WildWorld contains over 108 million frames and features more than 450 actions, including movement, attacks, and skill casting, together with synchronized per-frame annotations of character skeletons, world states, camera poses, and depth maps. We further derive WildBench to evaluate models through Action Following and State Alignment. Extensive experiments reveal persistent challenges in modeling semantically rich actions and maintaining long-horizon state consistency, highlighting the need for state-aware video generation. The project page is https://shandaai.github.io/wildworld-project/."
+  },
+  {
+    "title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
+    "url": "http://arxiv.org/abs/2603.23481v1",
+    "arxiv_id": "2603.23481v1",
+    "authors": [
+      "Haoran Yuan",
+      "Weigang Yi",
+      "Zhenyu Zhang",
+      "Wendi Chen",
+      "Yuchen Mo",
+      "Jiashi Yin",
+      "Xinzhuo Li",
+      "Xiangyu Zeng",
+      "Chuan Wen",
+      "Cewu Lu",
+      "Katherine Driggs-Campbell",
+      "Ismini Lourentzou"
+    ],
+    "published": "2026-03-24T17:45:06+00:00",
+    "summary": "Video-Action Models (VAMs) have emerged as a promising framework for embodied intelligence, learning implicit world dynamics from raw video streams to produce temporally consistent action predictions. Although such models demonstrate strong performance on long-horizon tasks through visual reasoning, they remain limited in contact-rich scenarios where critical interaction states are only partially observable from vision alone. In particular, fine-grained force modulation and contact transitions are not reliably encoded in visual tokens, leading to unstable or imprecise behaviors. To bridge this gap, we introduce the Video-Tactile Action Model (VTAM), a multimodal world modeling framework that incorporates tactile perception as a complementary grounding signal. VTAM augments a pretrained video transformer with tactile streams via a lightweight modality transfer finetuning, enabling efficient cross-modal representation learning without tactile-language paired data or independent tactile pretraining. To stabilize multimodal fusion, we introduce a tactile regularization loss that enforces balanced cross-modal attention, preventing visual latent dominance in the action model. VTAM demonstrates superior performance in contact-rich manipulation, maintaining a robust success rate of 90 percent on average. In challenging scenarios such as potato chip pick-and-place requiring high-fidelity force awareness, VTAM outperforms the pi 0.5 baseline by 80 percent. Our findings demonstrate that integrating tactile feedback is essential for correcting visual estimation errors in world action models, providing a scalable approach to physically grounded embodied foundation models."
+  },
+  {
+    "title": "Byzantine-Robust and Differentially Private Federated Optimization under Weaker Assumptions",
+    "url": "http://arxiv.org/abs/2603.23472v1",
+    "arxiv_id": "2603.23472v1",
+    "authors": [
+      "Rustem Islamov",
+      "Grigory Malinovsky",
+      "Alexander Gaponov",
+      "Aurelien Lucchi",
+      "Peter Richt\u00e1rik",
+      "Eduard Gorbunov"
+    ],
+    "published": "2026-03-24T17:39:09+00:00",
+    "summary": "Federated Learning (FL) enables heterogeneous clients to collaboratively train a shared model without centralizing their raw data, offering an inherent level of privacy. However, gradients and model updates can still leak sensitive information, while malicious servers may mount adversarial attacks such as Byzantine manipulation. These vulnerabilities highlight the need to address differential privacy (DP) and Byzantine robustness within a unified framework. Existing approaches, however, often rely on unrealistic assumptions such as bounded gradients, require auxiliary server-side datasets, or fail to provide convergence guarantees. We address these limitations by proposing Byz-Clip21-SGD2M, a new algorithm that integrates robust aggregation with double momentum and carefully designed clipping. We prove high-probability convergence guarantees under standard $L$-smoothness and $\u03c3$-sub-Gaussian gradient noise assumptions, thereby relaxing conditions that dominate prior work. Our analysis recovers state-of-the-art convergence rates in the absence of adversaries and improves utility guarantees under Byzantine and DP settings. Empirical evaluations on CNN and MLP models trained on MNIST further validate the effectiveness of our approach."
+  },
+  {
     "title": "ThinkJEPA: Empowering Latent World Models with Large Vision-Language Reasoning Model",
     "url": "http://arxiv.org/abs/2603.22281v1",
     "arxiv_id": "2603.22281v1",
