@@ -1,5 +1,108 @@
 [
   {
+    "title": "YingMusic-Singer: Controllable Singing Voice Synthesis with Flexible Lyric Manipulation and Annotation-free Melody Guidance",
+    "url": "http://arxiv.org/abs/2603.24589v1",
+    "arxiv_id": "2603.24589v1",
+    "authors": [
+      "Chunbo Hao",
+      "Junjie Zheng",
+      "Guobin Ma",
+      "Yuepeng Jiang",
+      "Huakang Chen",
+      "Wenjie Tian",
+      "Gongyu Chen",
+      "Zihao Chen",
+      "Lei Xie"
+    ],
+    "published": "2026-03-25T17:58:11+00:00",
+    "summary": "Regenerating singing voices with altered lyrics while preserving melody consistency remains challenging, as existing methods either offer limited controllability or require laborious manual alignment. We propose YingMusic-Singer, a fully diffusion-based model enabling melody-controllable singing voice synthesis with flexible lyric manipulation. The model takes three inputs: an optional timbre reference, a melody-providing singing clip, and modified lyrics, without manual alignment. Trained with curriculum learning and Group Relative Policy Optimization, YingMusic-Singer achieves stronger melody preservation and lyric adherence than Vevo2, the most comparable baseline supporting melody control without manual alignment. We also introduce LyricEditBench, the first benchmark for melody-preserving lyric modification evaluation. The code, weights, benchmark, and demos are publicly available at https://github.com/ASLP-lab/YingMusic-Singer."
+  },
+  {
+    "title": "DreamerAD: Efficient Reinforcement Learning via Latent World Model for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2603.24587v1",
+    "arxiv_id": "2603.24587v1",
+    "authors": [
+      "Pengxuan Yang",
+      "Yupeng Zheng",
+      "Deheng Qian",
+      "Zebin Xing",
+      "Qichao Zhang",
+      "Linbo Wang",
+      "Yichen Zhang",
+      "Shaoyu Guo",
+      "Zhongpu Xia",
+      "Qiang Chen",
+      "Junyu Han",
+      "Lingyun Xu",
+      "Yifeng Pan",
+      "Dongbin Zhao"
+    ],
+    "published": "2026-03-25T17:57:09+00:00",
+    "summary": "We introduce DreamerAD, the first latent world model framework that enables efficient reinforcement learning for autonomous driving by compressing diffusion sampling from 100 steps to 1 - achieving 80x speedup while maintaining visual interpretability. Training RL policies on real-world driving data incurs prohibitive costs and safety risks. While existing pixel-level diffusion world models enable safe imagination-based training, they suffer from multi-step diffusion inference latency (2s/frame) that prevents high-frequency RL interaction. Our approach leverages denoised latent features from video generation models through three key mechanisms: (1) shortcut forcing that reduces sampling complexity via recursive multi-resolution step compression, (2) an autoregressive dense reward model operating directly on latent representations for fine-grained credit assignment, and (3) Gaussian vocabulary sampling for GRPO that constrains exploration to physically plausible trajectories. DreamerAD achieves 87.7 EPDMS on NavSim v2, establishing state-of-the-art performance and demonstrating that latent-space RL is effective for autonomous driving."
+  },
+  {
+    "title": "TAG: Target-Agnostic Guidance for Stable Object-Centric Inference in Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2603.24584v1",
+    "arxiv_id": "2603.24584v1",
+    "authors": [
+      "Jiaying Zhou",
+      "Zhihao Zhan",
+      "Ruifeng Zhai",
+      "Qinhan Lyu",
+      "Hao Liu",
+      "Keze Wang",
+      "Liang Lin",
+      "Guangrun Wang"
+    ],
+    "published": "2026-03-25T17:56:32+00:00",
+    "summary": "Vision--Language--Action (VLA) policies have shown strong progress in mapping language instructions and visual observations to robotic actions, yet their reliability degrades in cluttered scenes with distractors. By analyzing failure cases, we find that many errors do not arise from infeasible motions, but from instance-level grounding failures: the policy often produces a plausible grasp trajectory that lands slightly off-target or even on the wrong object instance. To address this issue, we propose TAG (Target-Agnostic Guidance), a simple inference-time guidance mechanism that explicitly reduces distractor- and appearance-induced bias in VLA policies. Inspired by classifier-free guidance (CFG), TAG contrasts policy predictions under the original observation and an object-erased observation, and uses their difference as a residual steering signal that strengthens the influence of object evidence in the decision process. TAG does not require modifying the policy architecture and can be integrated with existing VLA policies with minimal training and inference changes. We evaluate TAG on standard manipulation benchmarks, including LIBERO, LIBERO-Plus, and VLABench, where it consistently improves robustness under clutter and reduces near-miss and wrong-object executions."
+  },
+  {
+    "title": "Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving",
+    "url": "http://arxiv.org/abs/2603.24581v1",
+    "arxiv_id": "2603.24581v1",
+    "authors": [
+      "Linbo Wang",
+      "Yupeng Zheng",
+      "Qiang Chen",
+      "Shiwei Li",
+      "Yichen Zhang",
+      "Zebin Xing",
+      "Qichao Zhang",
+      "Xiang Li",
+      "Deheng Qian",
+      "Pengxuan Yang",
+      "Yihang Dong",
+      "Ce Hao",
+      "Xiaoqing Ye",
+      "Junyu han",
+      "Yifeng Pan",
+      "Dongbin Zhao"
+    ],
+    "published": "2026-03-25T17:56:07+00:00",
+    "summary": "We introduce Latent-WAM, an efficient end-to-end autonomous driving framework that achieves strong trajectory planning through spatially-aware and dynamics-informed latent world representations. Existing world-model-based planners suffer from inadequately compressed representations, limited spatial understanding, and underutilized temporal dynamics, resulting in sub-optimal planning under constrained data and compute budgets. Latent-WAM addresses these limitations with two core modules: a Spatial-Aware Compressive World Encoder (SCWE) that distills geometric knowledge from a foundation model and compresses multi-view images into compact scene tokens via learnable queries, and a Dynamic Latent World Model (DLWM) that employs a causal Transformer to autoregressively predict future world status conditioned on historical visual and motion representations. Extensive experiments on NAVSIM v2 and HUGSIM demonstrate new state-of-the-art results: 89.3 EPDMS on NAVSIM v2 and 28.9 HD-Score on HUGSIM, surpassing the best prior perception-free method by 3.2 EPDMS with significantly less training data and a compact 104M-parameter model."
+  },
+  {
+    "title": "MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination",
+    "url": "http://arxiv.org/abs/2603.24579v1",
+    "arxiv_id": "2603.24579v1",
+    "authors": [
+      "Zhuo Li",
+      "Yupeng Zhang",
+      "Pengyu Cheng",
+      "Jiajun Song",
+      "Mengyu Zhou",
+      "Hao Li",
+      "Shujie Hu",
+      "Yu Qin",
+      "Erchao Zhao",
+      "Xiaoxi Jiang",
+      "Guanjun Jiang"
+    ],
+    "published": "2026-03-25T17:54:10+00:00",
+    "summary": "Hallucination remains a critical bottleneck for large language models (LLMs), undermining their reliability in real-world applications, especially in Retrieval-Augmented Generation (RAG) systems. While existing hallucination detection methods employ LLM-as-a-judge to verify LLM outputs against retrieved evidence, they suffer from inherent confirmation bias, where the verifier inadvertently reproduces the errors of the original generation. To address this, we introduce Multi-Agent Reinforced Self-Check for Hallucination (MARCH), a framework that enforces rigorous factual alignment by leveraging deliberate information asymmetry. MARCH orchestrates a collaborative pipeline of three specialized agents: a Solver, a Proposer, and a Checker. The Solver generates an initial RAG response, which the Proposer decomposes into claim-level verifiable atomic propositions. Crucially, the Checker validates these propositions against retrieved evidence in isolation, deprived of the Solver's original output. This well-crafted information asymmetry scheme breaks the cycle of self-confirmation bias. By training this pipeline with multi-agent reinforcement learning (MARL), we enable the agents to co-evolve and optimize factual adherence. Extensive experiments across hallucination benchmarks demonstrate that MARCH substantially reduces hallucination rates. Notably, an 8B-parameter LLM equipped with MARCH achieves performance competitive with powerful closed-source models. MARCH paves a scalable path for factual self-improvement of LLMs through co-evolution. The code is at https://github.com/Qwen-Applications/MARCH."
+  },
+  {
     "title": "MedObvious: Exposing the Medical Moravec's Paradox in VLMs via Clinical Triage",
     "url": "http://arxiv.org/abs/2603.23501v1",
     "arxiv_id": "2603.23501v1",
