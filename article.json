@@ -1,5 +1,85 @@
 [
   {
+    "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
+    "url": "http://arxiv.org/abs/2603.28767v1",
+    "arxiv_id": "2603.28767v1",
+    "authors": [
+      "Kaituo Feng",
+      "Manyuan Zhang",
+      "Shuang Chen",
+      "Yunlong Lin",
+      "Kaixuan Fan",
+      "Yilei Jiang",
+      "Hongyu Li",
+      "Dian Zheng",
+      "Chenyang Wang",
+      "Xiangyu Yue"
+    ],
+    "published": "2026-03-30T17:59:56+00:00",
+    "summary": "Recent image generation models have shown strong capabilities in generating high-fidelity and photorealistic images. However, they are fundamentally constrained by frozen internal knowledge, thus often failing on real-world scenarios that are knowledge-intensive or require up-to-date information. In this paper, we present Gen-Searcher, as the first attempt to train a search-augmented image generation agent, which performs multi-hop reasoning and search to collect the textual knowledge and reference images needed for grounded generation. To achieve this, we construct a tailored data pipeline and curate two high-quality datasets, Gen-Searcher-SFT-10k and Gen-Searcher-RL-6k, containing diverse search-intensive prompts and corresponding ground-truth synthesis images. We further introduce KnowGen, a comprehensive benchmark that explicitly requires search-grounded external knowledge for image generation and evaluates models from multiple dimensions. Based on these resources, we train Gen-Searcher with SFT followed by agentic reinforcement learning with dual reward feedback, which combines text-based and image-based rewards to provide more stable and informative learning signals for GRPO training. Experiments show that Gen-Searcher brings substantial gains, improving Qwen-Image by around 16 points on KnowGen and 15 points on WISE. We hope this work can serve as an open foundation for search agents in image generation, and we fully open-source our data, models, and code."
+  },
+  {
+    "title": "SHOW3D: Capturing Scenes of 3D Hands and Objects in the Wild",
+    "url": "http://arxiv.org/abs/2603.28760v1",
+    "arxiv_id": "2603.28760v1",
+    "authors": [
+      "Patrick Rim",
+      "Kevin Harris",
+      "Braden Copple",
+      "Shangchen Han",
+      "Xu Xie",
+      "Ivan Shugurov",
+      "Sizhe An",
+      "He Wen",
+      "Alex Wong",
+      "Tomas Hodan",
+      "Kun He"
+    ],
+    "published": "2026-03-30T17:58:27+00:00",
+    "summary": "Accurate 3D understanding of human hands and objects during manipulation remains a significant challenge for egocentric computer vision. Existing hand-object interaction datasets are predominantly captured in controlled studio settings, which limits both environmental diversity and the ability of models trained on such data to generalize to real-world scenarios. To address this challenge, we introduce a novel marker-less multi-camera system that allows for nearly unconstrained mobility in genuinely in-the-wild conditions, while still having the ability to generate precise 3D annotations of hands and objects. The capture system consists of a lightweight, back-mounted, multi-camera rig that is synchronized and calibrated with a user-worn VR headset. For 3D ground-truth annotation of hands and objects, we develop an ego-exo tracking pipeline and rigorously evaluate its quality. Finally, we present SHOW3D, the first large-scale dataset with 3D annotations that show hands interacting with objects in diverse real-world environments, including outdoor settings. Our approach significantly reduces the fundamental trade-off between environmental realism and accuracy of 3D annotations, which we validate with experiments on several downstream tasks. show3d-dataset.github.io"
+  },
+  {
+    "title": "$\\mathcal{L}_1$-Certified Distributionally Robust Planning for Safety-Constrained Adaptive Control",
+    "url": "http://arxiv.org/abs/2603.28758v1",
+    "arxiv_id": "2603.28758v1",
+    "authors": [
+      "Astghik Hakobyan",
+      "Amaras Nazarians",
+      "Aditya Gahlawat",
+      "Naira Hovakimyan",
+      "Ilya Kolmanovsky"
+    ],
+    "published": "2026-03-30T17:57:58+00:00",
+    "summary": "Safe operation of autonomous systems requires robustness to both model uncertainty and uncertainty in the environment. We propose a hierarchical framework for stochastic nonlinear systems that integrates distributionally robust model predictive control (DR-MPC) with $\\mathcal{L}_1$-adaptive control. The key idea is to use the $\\mathcal{L}_1$ adaptive controller's online distributional certificates that bound the Wasserstein distance between nominal and true state distributions, thereby certifying the ambiguity sets used for planning without requiring distribution samples. Environment uncertainty is captured via data-driven ambiguity sets constructed from finite samples. These are incorporated into a DR-MPC planner enforcing distributionally robust chance constraints over a receding horizon. Using Wasserstein duality, the resulting problem admits tractable reformulations and a sample-based implementation. We show theoretically and via numerical experimentation that our framework ensures certifiable safety in the presence of simultaneous system and environment uncertainties."
+  },
+  {
+    "title": "FocusVLA: Focused Visual Utilization for Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2603.28740v1",
+    "arxiv_id": "2603.28740v1",
+    "authors": [
+      "Yichi Zhang",
+      "Weihao Yuan",
+      "Yizhuo Zhang",
+      "Xidong Zhang",
+      "Jia Wan"
+    ],
+    "published": "2026-03-30T17:50:54+00:00",
+    "summary": "Vision-Language-Action (VLA) models improve action generation by conditioning policies on rich vision-language information. However, current auto-regressive policies are constrained by three bottlenecks: (1) architectural bias drives models to overlook visual details, (2) an excessive number of visual tokens makes attention difficult to focus on the correct regions, and (3) task-irrelevant visual information introduces substantial noise - together severely impairing the quality of action. In this paper, we investigate how to effectively utilize different visual representations for action generation. To this end, we first empirically validate the above issues and show that VLA performance is primarily limited by how visual information is utilized, rather than by the quality of visual representations. Based on these insights, we introduce FocusVLA, a novel paradigm that directs the model's attention to task-relevant visual regions to effectively bridge vision to action. Specifically, we first propose Modality Cascaded Attention to eliminate shortcut pathways, thereby compelling VLA models to rely on task-relevant visual details for action generation. Furthermore, we propose Focus Attention, which dynamically selects task-relevant visual patches to control information quantity while explicitly modulating their influence to suppress task-irrelevant noise. Extensive experiments on both simulated and real-world robotic benchmarks demonstrate that FocusVLA not only effectively leverages visual details to perform dexterous manipulations, but also substantially improves performance and accelerates convergence across a variety of tasks."
+  },
+  {
+    "title": "Pandora: Articulated 3D Scene Graphs from Egocentric Vision",
+    "url": "http://arxiv.org/abs/2603.28732v1",
+    "arxiv_id": "2603.28732v1",
+    "authors": [
+      "Alan Yu",
+      "Yun Chang",
+      "Christopher Xie",
+      "Luca Carlone"
+    ],
+    "published": "2026-03-30T17:47:07+00:00",
+    "summary": "Robotic mapping systems typically approach building metric-semantic scene representations from the robot's own sensors and cameras. However, these \"first person\" maps inherit the robot's own limitations due to its embodiment or skillset, which may leave many aspects of the environment unexplored. For example, the robot might not be able to open drawers or access wall cabinets. In this sense, the map representation is not as complete, and requires a more capable robot to fill in the gaps. We narrow these blind spots in current methods by leveraging egocentric data captured as a human naturally explores a scene wearing Project Aria glasses, giving a way to directly transfer knowledge about articulation from the human to any deployable robot. We demonstrate that, by using simple heuristics, we can leverage egocentric data to recover models of articulate object parts, with quality comparable to those of state-of-the-art methods based on other input modalities. We also show how to integrate these models into 3D scene graph representations, leading to a better understanding of object dynamics and object-container relationships. We finally demonstrate that these articulated 3D scene graphs enhance a robot's ability to perform mobile manipulation tasks, showcasing an application where a Boston Dynamics Spot is tasked with retrieving concealed target items, given only the 3D scene graph as input."
+  },
+  {
     "title": "Vega: Learning to Drive with Natural Language Instructions",
     "url": "http://arxiv.org/abs/2603.25741v1",
     "arxiv_id": "2603.25741v1",
