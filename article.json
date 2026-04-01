@@ -1,5 +1,65 @@
 [
   {
+    "title": "HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation",
+    "url": "http://arxiv.org/abs/2603.30042v1",
+    "arxiv_id": "2603.30042v1",
+    "authors": [
+      "Xiangshan Tan",
+      "Jingtian Ji",
+      "Tianchong Jiang",
+      "Pedro Lopes",
+      "Matthew R. Walter"
+    ],
+    "published": "2026-03-31T17:57:52+00:00",
+    "summary": "The contact-rich nature of manipulation makes it a significant challenge for robotic teleoperation. While haptic feedback is critical for contact-rich tasks, providing intuitive directional cues within wearable teleoperation interfaces remains a bottleneck. Existing solutions, such as non-directional vibrations from handheld controllers, provide limited information, while vibrotactile arrays are prone to perceptual interference. To address these limitations, we propose HapCompass, a novel, low-cost wearable haptic device that renders 2D directional cues by mechanically rotating a single linear resonant actuator (LRA). We evaluated HapCompass's ability to convey directional cues to human operators and showed that it increased the success rate, decreased the completion time and the maximum contact force for teleoperated manipulation tasks when compared to vision-only and non-directional feedback baselines. Furthermore, we conducted a preliminary imitation-learning evaluation, suggesting that the directional feedback provided by HapCompass enhances the quality of demonstration data and, in turn, the trained policy. We release the design of the HapCompass device along with the code that implements our teleoperation interface: https://ripl.github.io/HapCompass/."
+  },
+  {
+    "title": "Hybrid Framework for Robotic Manipulation: Integrating Reinforcement Learning and Large Language Models",
+    "url": "http://arxiv.org/abs/2603.30022v1",
+    "arxiv_id": "2603.30022v1",
+    "authors": [
+      "Md Saad",
+      "Sajjad Hussain",
+      "Mohd Suhaib"
+    ],
+    "published": "2026-03-31T17:19:34+00:00",
+    "summary": "This paper introduces a new hybrid framework that combines Reinforcement Learning (RL) and Large Language Models (LLMs) to improve robotic manipulation tasks. By utilizing RL for accurate low-level control and LLMs for high level task planning and understanding of natural language, the proposed framework effectively connects low-level execution with high-level reasoning in robotic systems. This integration allows robots to understand and carry out complex, human-like instructions while adapting to changing environments in real time. The framework is tested in a PyBullet-based simulation environment using the Franka Emika Panda robotic arm, with various manipulation scenarios as benchmarks. The results show a 33.5% decrease in task completion time and enhancements of 18.1% and 36.4% in accuracy and adaptability, respectively, when compared to systems that use only RL. These results underscore the potential of LLM-enhanced robotic systems for practical applications, making them more efficient, adaptable, and capable of interacting with humans. Future research will aim to explore sim-to-real transfer, scalability, and multi-robot systems to further broaden the framework's applicability."
+  },
+  {
+    "title": "Phyelds: A Pythonic Framework for Aggregate Computing",
+    "url": "http://arxiv.org/abs/2603.29999v1",
+    "arxiv_id": "2603.29999v1",
+    "authors": [
+      "Gianluca Aguzzi",
+      "Davide Domini",
+      "Nicolas Farabegoli",
+      "Mirko Viroli"
+    ],
+    "published": "2026-03-31T16:57:32+00:00",
+    "summary": "Aggregate programming is a field-based coordination paradigm with over a decade of exploration and successful applications across domains including sensor networks, robotics, and IoT, with implementations in various programming languages, such as Protelis, ScaFi (Scala), and FCPP (C++). A recent research direction integrates machine learning with aggregate computing, aiming to support large-scale distributed learning and provide new abstractions for implementing learning algorithms. However, existing implementations do not target data science practitioners, who predominantly work in Python--the de facto language for data science and machine learning, with a rich and mature ecosystem. Python also offers advantages for other use cases, such as education and robotics (e.g., via ROS). To address this gap, we present Phyelds, a Python library for aggregate programming. Phyelds offers a fully featured yet lightweight implementation of the field calculus model of computation, featuring a Pythonic API and an architecture designed for seamless integration with Python's machine learning ecosystem. We describe the design and implementation of Phyelds and illustrate its versatility across domains, from well-known aggregate computing patterns to federated learning coordination and integration with a widely used multi-agent reinforcement learning simulator."
+  },
+  {
+    "title": "Extending MONA in Camera Dropbox: Reproduction, Learned Approval, and Design Implications for Reward-Hacking Mitigation",
+    "url": "http://arxiv.org/abs/2603.29993v1",
+    "arxiv_id": "2603.29993v1",
+    "authors": [
+      "Nathan Heath"
+    ],
+    "published": "2026-03-31T16:56:10+00:00",
+    "summary": "Myopic Optimization with Non-myopic Approval (MONA) mitigates multi-step reward hacking by restricting the agent's planning horizon while supplying far-sighted approval as a training signal~\\cite{farquhar2025mona}. The original paper identifies a critical open question: how the method of constructing approval -- particularly the degree to which approval depends on achieved outcomes -- affects whether MONA's safety guarantees hold. We present a reproduction-first extension of the public MONA Camera Dropbox environment that (i)~repackages the released codebase as a standard Python project with scripted PPO training, (ii)~confirms the published contrast between ordinary RL (91.5\\% reward-hacking rate) and oracle MONA (0.0\\% hacking rate) using the released reference arrays, and (iii)~introduces a modular learned-approval suite spanning oracle, noisy, misspecified, learned, and calibrated approval mechanisms. In reduced-budget pilot sweeps across approval methods, horizons, dataset sizes, and calibration strategies, the best calibrated learned-overseer run achieves zero observed reward hacking but substantially lower intended-behavior rates than oracle MONA (11.9\\% vs.\\ 99.9\\%), consistent with under-optimization rather than re-emergent hacking. These results operationalize the MONA paper's approval-spectrum conjecture as a runnable experimental object and suggest that the central engineering challenge shifts from proving MONA's concept to building learned approval models that preserve sufficient foresight without reopening reward-hacking channels. Code, configurations, and reproduction commands are publicly available. https://github.com/codernate92/mona-camera-dropbox-repro"
+  },
+  {
+    "title": "Performative Scenario Optimization",
+    "url": "http://arxiv.org/abs/2603.29982v1",
+    "arxiv_id": "2603.29982v1",
+    "authors": [
+      "Quanyan Zhu",
+      "Zhengye Han"
+    ],
+    "published": "2026-03-31T16:44:17+00:00",
+    "summary": "This paper introduces a performative scenario optimization framework for decision-dependent chance-constrained problems. Unlike classical stochastic optimization, we account for the feedback loop where decisions actively shape the underlying data-generating process. We define performative solutions as self-consistent equilibria and establish their existence using Kakutani's fixed-point theorem. To ensure computational tractability without requiring an explicit model of the environment, we propose a model-free, scenario-based approximation that alternates between data generation and optimization. Under mild regularity conditions, we prove that a stochastic fixed-point iteration, equipped with a logarithmic sample size schedule, converges almost surely to the unique performative solution. The effectiveness of the proposed framework is demonstrated through an emerging AI safety application: deploying performative guardrails against Large Language Model (LLM) jailbreaks. Numerical results confirm the co-evolution and convergence of the guardrail classifier and the induced adversarial prompt distribution to a stable equilibrium."
+  },
+  {
     "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
     "url": "http://arxiv.org/abs/2603.28767v1",
     "arxiv_id": "2603.28767v1",
