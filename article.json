@@ -1,5 +1,75 @@
 [
   {
+    "title": "Functional Force-Aware Retargeting from Virtual Human Demos to Soft Robot Policies",
+    "url": "http://arxiv.org/abs/2604.01224v1",
+    "arxiv_id": "2604.01224v1",
+    "authors": [
+      "Uksang Yoo",
+      "Mengjia Zhu",
+      "Evan Pezent",
+      "Jom Preechayasomboon",
+      "Jean Oh",
+      "Jeffrey Ichnowski",
+      "Amir Memar",
+      "Ben Abbatematteo",
+      "Homanga Bharadhwaj",
+      "Ashish Deshpande",
+      "Harsha Prahlad"
+    ],
+    "published": "2026-04-01T17:59:35+00:00",
+    "summary": "We introduce SoftAct, a framework for teaching soft robot hands to perform human-like manipulation skills by explicitly reasoning about contact forces. Leveraging immersive virtual reality, our system captures rich human demonstrations, including hand kinematics, object motion, dense contact patches, and detailed contact force information. Unlike conventional approaches that retarget human joint trajectories, SoftAct employs a two-stage, force-aware retargeting algorithm. The first stage attributes demonstrated contact forces to individual human fingers and allocates robot fingers proportionally, establishing a force-balanced mapping between human and robot hands. The second stage performs online retargeting by combining baseline end-effector pose tracking with geodesic-weighted contact refinements, using contact geometry and force magnitude to adjust robot fingertip targets in real time. This formulation enables soft robotic hands to reproduce the functional intent of human demonstrations while naturally accommodating extreme embodiment mismatch and nonlinear compliance. We evaluate SoftAct on a suite of contact-rich manipulation tasks using a custom non-anthropomorphic pneumatic soft robot hand. SoftAct's controller reduces fingertip trajectory tracking RMSE by up to 55 percent and reduces tracking variance by up to 69 percent compared to kinematic and learning-based baselines. At the policy level, SoftAct achieves consistently higher success in zero-shot real-world deployment and in simulation. These results demonstrate that explicitly modeling contact geometry and force distribution is essential for effective skill transfer to soft robotic hands, and cannot be recovered through kinematic imitation alone. Project videos and additional details are available at https://soft-act.github.io/."
+  },
+  {
+    "title": "Collaborative Task and Path Planning for Heterogeneous Robotic Teams using Multi-Agent PPO",
+    "url": "http://arxiv.org/abs/2604.01213v1",
+    "arxiv_id": "2604.01213v1",
+    "authors": [
+      "Matthias Rubio",
+      "Julia Richter",
+      "Hendrik Kolvenbach",
+      "Marco Hutter"
+    ],
+    "published": "2026-04-01T17:53:51+00:00",
+    "summary": "Efficient robotic extraterrestrial exploration requires robots with diverse capabilities, ranging from scientific measurement tools to advanced locomotion. A robotic team enables the distribution of tasks over multiple specialized subsystems, each providing specific expertise to complete the mission. The central challenge lies in efficiently coordinating the team to maximize utilization and the extraction of scientific value. Classical planning algorithms scale poorly with problem size, leading to long planning cycles and high inference costs due to the combinatorial growth of possible robot-target allocations and possible trajectories. Learning-based methods are a viable alternative that move the scaling concern from runtime to training time, setting a critical step towards achieving real-time planning. In this work, we present a collaborative planning strategy based on Multi-Agent Proximal Policy Optimization (MAPPO) to coordinate a team of heterogeneous robots to solve a complex target allocation and scheduling problem. We benchmark our approach against single-objective optimal solutions obtained through exhaustive search and evaluate its ability to perform online replanning in the context of a planetary exploration scenario."
+  },
+  {
+    "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+    "url": "http://arxiv.org/abs/2604.01193v1",
+    "arxiv_id": "2604.01193v1",
+    "authors": [
+      "Ruixiang Zhang",
+      "Richard He Bai",
+      "Huangjie Zheng",
+      "Navdeep Jaitly",
+      "Ronan Collobert",
+      "Yizhe Zhang"
+    ],
+    "published": "2026-04-01T17:39:50+00:00",
+    "summary": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation."
+  },
+  {
+    "title": "Learning Neural Network Controllers with Certified Robust Performance via Adversarial Training",
+    "url": "http://arxiv.org/abs/2604.01188v1",
+    "arxiv_id": "2604.01188v1",
+    "authors": [
+      "Neelay Junnarkar",
+      "Yasin Sonmez",
+      "Murat Arcak"
+    ],
+    "published": "2026-04-01T17:36:00+00:00",
+    "summary": "Neural network (NN) controllers achieve strong empirical performance on nonlinear dynamical systems, yet deploying them in safety-critical settings requires robustness to disturbances and uncertainty. We present a method for jointly synthesizing NN controllers and dissipativity certificates that formally guarantee robust closed-loop performance using adversarial training, in which we use counterexamples to the robust dissipativity condition to guide training. Verification is done post-training using alpha,beta-CROWN, a branch-and-bound-based method that enables direct analysis of the nonlinear dynamical system. The proposed method uses quadratic constraints (QCs) only for characterization of non-parametric uncertainties. The method is tested in numerical experiments on maximizing the volume of the set on which a system is certified to be robustly dissipative. Our method certifies regions up to 78 times larger than the region certified by a linear matrix inequality-based approach that we derive for comparison."
+  },
+  {
+    "title": "A ROS 2 Wrapper for Florence-2: Multi-Mode Local Vision-Language Inference for Robotic Systems",
+    "url": "http://arxiv.org/abs/2604.01179v1",
+    "arxiv_id": "2604.01179v1",
+    "authors": [
+      "J. E. Dom\u00ednguez-Vidal"
+    ],
+    "published": "2026-04-01T17:29:59+00:00",
+    "summary": "Foundation vision-language models are becoming increasingly relevant to robotics because they can provide richer semantic perception than narrow task-specific pipelines. However, their practical adoption in robot software stacks still depends on reproducible middleware integrations rather than on model quality alone. Florence-2 is especially attractive in this regard because it unifies captioning, optical character recognition, open-vocabulary detection, grounding and related vision-language tasks within a comparatively manageable model size. This article presents a ROS 2 wrapper for Florence-2 that exposes the model through three complementary interaction modes: continuous topic-driven processing, synchronous service calls and asynchronous actions. The wrapper is designed for local execution and supports both native installation and Docker container deployment. It also combines generic JSON outputs with standard ROS 2 message bindings for detection-oriented tasks. A functional validation is reported together with a throughput study on several GPUs, showing that local deployment is feasible with consumer grade hardware. The repository is publicly available here: https://github.com/JEDominguezVidal/florence2_ros2_wrapper"
+  },
+  {
     "title": "HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation",
     "url": "http://arxiv.org/abs/2603.30042v1",
     "arxiv_id": "2603.30042v1",
