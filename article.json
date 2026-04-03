@@ -1,5 +1,83 @@
 [
   {
+    "title": "Beyond Referring Expressions: Scenario Comprehension Visual Grounding",
+    "url": "http://arxiv.org/abs/2604.02323v1",
+    "arxiv_id": "2604.02323v1",
+    "authors": [
+      "Ruozhen He",
+      "Nisarg A. Shah",
+      "Qihua Dong",
+      "Zilin Xiao",
+      "Jaywon Koo",
+      "Vicente Ordonez"
+    ],
+    "published": "2026-04-02T17:59:08+00:00",
+    "summary": "Existing visual grounding benchmarks primarily evaluate alignment between image regions and literal referring expressions, where models can often succeed by matching a prominent named category. We explore a complementary and more challenging setting of scenario-based visual grounding, where the target must be inferred from roles, intentions, and relational context rather than explicit naming. We introduce Referring Scenario Comprehension (RSC), a benchmark designed for this setting. The queries in this benchmark are paragraph-length texts that describe object roles, user goals, and contextual cues, including deliberate references to distractor objects that often require deep understanding to resolve. Each instance is annotated with interpretable difficulty tags for uniqueness, clutter, size, overlap, and position which expose distinct failure modes and support fine-grained analysis. RSC contains approximately 31k training examples, 4k in-domain test examples, and a 3k out-of-distribution split with unseen object categories. We further propose ScenGround, a curriculum reasoning method serving as a reference point for this setting, combining supervised warm-starting with difficulty-aware reinforcement learning. Experiments show that scenario-based queries expose systematic failures in current models that standard benchmarks do not reveal, and that curriculum training improves performance on challenging slices and transfers to standard benchmarks."
+  },
+  {
+    "title": "Stop Wandering: Efficient Vision-Language Navigation via Metacognitive Reasoning",
+    "url": "http://arxiv.org/abs/2604.02318v1",
+    "arxiv_id": "2604.02318v1",
+    "authors": [
+      "Xueying Li",
+      "Feng Lyu",
+      "Hao Wu",
+      "Mingliu Liu",
+      "Jia-Nan Liu",
+      "Guozi Liu"
+    ],
+    "published": "2026-04-02T17:58:08+00:00",
+    "summary": "Training-free Vision-Language Navigation (VLN) agents powered by foundation models can follow instructions and explore 3D environments. However, existing approaches rely on greedy frontier selection and passive spatial memory, leading to inefficient behaviors such as local oscillation and redundant revisiting. We argue that this stems from a lack of metacognitive capabilities: the agent cannot monitor its exploration progress, diagnose strategy failures, or adapt accordingly. To address this, we propose MetaNav, a metacognitive navigation agent integrating spatial memory, history-aware planning, and reflective correction. Spatial memory builds a persistent 3D semantic map. History-aware planning penalizes revisiting to improve efficiency. Reflective correction detects stagnation and uses an LLM to generate corrective rules that guide future frontier selection. Experiments on GOAT-Bench, HM3D-OVON, and A-EQA show that MetaNav achieves state-of-the-art performance while reducing VLM queries by 20.7%, demonstrating that metacognitive reasoning significantly improves robustness and efficiency."
+  },
+  {
+    "title": "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
+    "url": "http://arxiv.org/abs/2604.02288v1",
+    "arxiv_id": "2604.02288v1",
+    "authors": [
+      "Gengsheng Li",
+      "Tianyu Yang",
+      "Junfeng Fang",
+      "Mingyang Song",
+      "Mao Zheng",
+      "Haiyun Guo",
+      "Dan Zhang",
+      "Jinqiao Wang",
+      "Tat-Seng Chua"
+    ],
+    "published": "2026-04-02T17:29:18+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models. While Group Relative Policy Optimization (GRPO) is widely adopted, its coarse credit assignment uniformly penalizes failed rollouts, lacking the token-level focus needed to efficiently address specific deviations. Self-Distillation Policy Optimization (SDPO) addresses this by providing denser, more targeted logit-level supervision that facilitates rapid early improvement, yet it frequently collapses during prolonged training. We trace this late-stage instability to two intrinsic flaws: self-distillation on already-correct samples introduces optimization ambiguity, and the self-teacher's signal reliability progressively degrades. To resolve these issues, we propose Sample-Routed Policy Optimization (SRPO), a unified on-policy framework that routes correct samples to GRPO's reward-aligned reinforcement and failed samples to SDPO's targeted logit-level correction. SRPO further incorporates an entropy-aware dynamic weighting mechanism to suppress high-entropy, unreliable distillation targets while emphasizing confident ones. Evaluated across five benchmarks and two model scales, SRPO achieves both the rapid early improvement of SDPO and the long-horizon stability of GRPO. It consistently surpasses the peak performance of both baselines, raising the five-benchmark average on Qwen3-8B by 3.4% over GRPO and 6.3% over SDPO, while simultaneously yielding moderate response lengths and lowering per-step compute cost by up to 17.2%."
+  },
+  {
+    "title": "CIVIC: Cooperative Immersion Via Intelligent Credit-sharing in DRL-Powered Metaverse",
+    "url": "http://arxiv.org/abs/2604.02284v1",
+    "arxiv_id": "2604.02284v1",
+    "authors": [
+      "Amr Aboeleneen",
+      "Mohamed Abdallah",
+      "Aiman Erbad",
+      "Amr Salem"
+    ],
+    "published": "2026-04-02T17:26:43+00:00",
+    "summary": "The Metaverse faces complex resource allocation challenges due to diverse Virtual Environments (VEs), Digital Twins (DTs), dynamic user demands, and strict immersion needs. This paper introduces CIVIC (Cooperative Immersion Via Intelligent Credit-sharing), a novel framework optimizing resource sharing among multiple Metaverse Service Providers (MSPs) to enhance user immersion. Unlike existing methods, CIVIC integrates VE rendering, DT synchronization, credit sharing, and immersion-aware provisioning within a cooperative multi-MSP model. The resource allocation problem is formulated as two NP-hard challenges: a non-cooperative setting where MSPs operate independently and a cooperative setting utilizing a General Credit Pool (GCP) for dynamic resource sharing. Using Deep Reinforcement Learning (DRL) for tuning resources and managing cooperating MSPs, CIVIC achieves 12-36% higher request completion, 23-70% higher fulfillment rates, 20-60% more served clients, and up to 51% more fairly distributed requests, all with competitive costs. Extensive experiments demonstrate CIVIC's resilience, adaptability, and robust performance under dynamic load conditions and unexpected demand surges, making it suitable for real-world distributed Metaverse infrastructures."
+  },
+  {
+    "title": "A proposal for the safety and controllability requirements that SRM systems should meet",
+    "url": "http://arxiv.org/abs/2604.02283v1",
+    "arxiv_id": "2604.02283v1",
+    "authors": [
+      "E. Waxman",
+      "A. Spector",
+      "Y. Lederer",
+      "Y. Segev",
+      "T. Kislev",
+      "Y. Yedvab",
+      "D. Kushnir",
+      "R. Yahav"
+    ],
+    "published": "2026-04-02T17:21:30+00:00",
+    "summary": "Solar Radiation Modification (SRM) may be the only way to limit global warming in the coming decades, leading to increased interest in the subject and to the expansion of related research & development (R&D) activity. Defining the safety and controllability requirements that any SRM system should meet is crucial for directing R&D activities and enabling governments to make informed decisions on the development and possible implementation of such systems. We present an initial proposal for this set of requirements, which also guides Stardust's R&D, as a basis for further discussion and consideration. While we focus on SRM systems based on Stratospheric Aerosol Injection (SAI), the proposed principles may be applicable more broadly."
+  },
+  {
     "title": "Functional Force-Aware Retargeting from Virtual Human Demos to Soft Robot Policies",
     "url": "http://arxiv.org/abs/2604.01224v1",
     "arxiv_id": "2604.01224v1",
