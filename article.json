@@ -1,5 +1,76 @@
 [
   {
+    "title": "Hierarchical Planning with Latent World Models",
+    "url": "http://arxiv.org/abs/2604.03208v1",
+    "arxiv_id": "2604.03208v1",
+    "authors": [
+      "Wancong Zhang",
+      "Basile Terver",
+      "Artem Zholus",
+      "Soham Chitnis",
+      "Harsh Sutaria",
+      "Mido Assran",
+      "Randall Balestriero",
+      "Amir Bar",
+      "Adrien Bardes",
+      "Yann LeCun",
+      "Nicolas Ballas"
+    ],
+    "published": "2026-04-03T17:32:36+00:00",
+    "summary": "Model predictive control (MPC) with learned world models has emerged as a promising paradigm for embodied control, particularly for its ability to generalize zero-shot when deployed in new environments. However, learned world models often struggle with long-horizon control due to the accumulation of prediction errors and the exponentially growing search space. In this work, we address these challenges by learning latent world models at multiple temporal scales and performing hierarchical planning across these scales, enabling long-horizon reasoning while substantially reducing inference-time planning complexity. Our approach serves as a modular planning abstraction that applies across diverse latent world-model architectures and domains. We demonstrate that this hierarchical approach enables zero-shot control on real-world non-greedy robotic tasks, achieving a 70% success rate on pick-&-place using only a final goal specification, compared to 0% for a single-level world model. In addition, across physics-based simulated environments including push manipulation and maze navigation, hierarchical planning achieves higher success while requiring up to 4x less planning-time compute."
+  },
+  {
+    "title": "A Tsetlin Machine-driven Intrusion Detection System for Next-Generation IoMT Security",
+    "url": "http://arxiv.org/abs/2604.03205v1",
+    "arxiv_id": "2604.03205v1",
+    "authors": [
+      "Rahul Jaiswal",
+      "Per-Arne Andersen",
+      "Linga Reddy Cenkeramaddi",
+      "Lei Jiao",
+      "Ole-Christoffer Granmo"
+    ],
+    "published": "2026-04-03T17:26:52+00:00",
+    "summary": "The rapid adoption of the Internet of Medical Things (IoMT) is transforming healthcare by enabling seamless connectivity among medical devices, systems, and services. However, it also introduces serious cybersecurity and patient safety concerns as attackers increasingly exploit new methods and emerging vulnerabilities to infiltrate IoMT networks. This paper proposes a novel Tsetlin Machine (TM)-based Intrusion Detection System (IDS) for detecting a wide range of cyberattacks targeting IoMT networks. The TM is a rule-based and interpretable machine learning (ML) approach that models attack patterns using propositional logic. Extensive experiments conducted on the CICIoMT-2024 dataset, which includes multiple IoMT protocols and cyberattack types, demonstrate that the proposed TM-based IDS outperforms traditional ML classifiers. The proposed model achieves an accuracy of 99.5\\% in binary classification and 90.7\\% in multi-class classification, surpassing existing state-of-the-art approaches. Moreover, to enhance model trust and interpretability, the proposed TM-based model presents class-wise vote scores and clause activation heatmaps, providing clear insights into the most influential clauses and the dominant class contributing to the final model decision."
+  },
+  {
+    "title": "Prosocial Persuasion at Scale? Large Language Models Outperform Humans in Donation Appeals Across Levels of Personalization",
+    "url": "http://arxiv.org/abs/2604.03202v1",
+    "arxiv_id": "2604.03202v1",
+    "authors": [
+      "John Caffier",
+      "Olga Stavrova",
+      "Bennett Kleinberg"
+    ],
+    "published": "2026-04-03T17:25:07+00:00",
+    "summary": "Large Language Models (LLMs) are increasingly regarded as having the potential to generate persuasive content at scale. While previous studies have focused on the risks associated with LLM-generated misinformation, the role of LLMs in enabling prosocial persuasion is still underexplored. We investigate whether donation appeals authored by LLMs are as effective as those written by humans across degrees of personalization. Two preregistered online experiments (Study 1: N = 658; Study 2: N = 642) manipulated Personalization (generic vs. personalized vs. falsely personalized) and Content source (human vs. LLM) and presented participants with donation appeals for charities. We assessed how participants distributed their bonus money across the charities, how they engaged with the donation appeals, and how persuasive they found them. In both experiments, LLM-generated content yielded more donations, resulted in higher engagement, and was rated as more persuasive than human-authored content. There was a gain associated with personalization (Study 2) and a penalty for false personalization (Study 1). Our results suggest that LLMs may be a suitable technology for generating content that can encourage prosocial behavior."
+  },
+  {
+    "title": "Coupled Control, Structured Memory, and Verifiable Action in Agentic AI (SCRAT -- Stochastic Control with Retrieval and Auditable Trajectories): A Comparative Perspective from Squirrel Locomotion and Scatter-Hoarding",
+    "url": "http://arxiv.org/abs/2604.03201v1",
+    "arxiv_id": "2604.03201v1",
+    "authors": [
+      "Maximiliano Armesto",
+      "Christophe Kolb"
+    ],
+    "published": "2026-04-03T17:25:05+00:00",
+    "summary": "Agentic AI is increasingly judged not by fluent output alone but by whether it can act, remember, and verify under partial observability, delay, and strategic observation. Existing research often studies these demands separately: robotics emphasizes control, retrieval systems emphasize memory, and alignment or assurance work emphasizes checking and oversight. This article argues that squirrel ecology offers a sharp comparative case because arboreal locomotion, scatter-hoarding, and audience-sensitive caching couple all three demands in one organism. We synthesize evidence from fox, eastern gray, and, in one field comparison, red squirrels, and impose an explicit inference ladder: empirical observation, minimal computational inference, and AI design conjecture. We introduce a minimal hierarchical partially observed control model with latent dynamics, structured episodic memory, observer-belief state, option-level actions, and delayed verifier signals. This motivates three hypotheses: (H1) fast local feedback plus predictive compensation improves robustness under hidden dynamics shifts; (H2) memory organized for future control improves delayed retrieval under cue conflict and load; and (H3) verifiers and observer models inside the action-memory loop reduce silent failure and information leakage while remaining vulnerable to misspecification. A downstream conjecture is that role-differentiated proposer/executor/checker/adversary systems may reduce correlated error under asymmetric information and verification burden. The contribution is a comparative perspective and benchmark agenda: a disciplined program of falsifiable claims about the coupling of control, memory, and verifiable action."
+  },
+  {
+    "title": "Safety-Critical Centralized Nonlinear MPC for Cooperative Payload Transportation by Two Quadrupedal Robots",
+    "url": "http://arxiv.org/abs/2604.03200v1",
+    "arxiv_id": "2604.03200v1",
+    "authors": [
+      "Ruturaj S. Sambhus",
+      "Yicheng Zeng",
+      "Kapi Ketan Mehta",
+      "Jeeseop Kim",
+      "Kaveh Akbari Hamed"
+    ],
+    "published": "2026-04-03T17:19:47+00:00",
+    "summary": "This paper presents a safety-critical centralized nonlinear model predictive control (NMPC) framework for cooperative payload transportation by two quadrupedal robots. The interconnected robot-payload system is modeled as a discrete-time nonlinear differential-algebraic system, capturing the coupled dynamics through holonomic constraints and interaction wrenches. To ensure safety in complex environments, we develop a control barrier function (CBF)-based NMPC formulation that enforces collision avoidance constraints for both the robots and the payload. The proposed approach retains the interaction wrenches as decision variables, resulting in a structured DAE-constrained optimal control problem that enables efficient real-time implementation. The effectiveness of the algorithm is validated through extensive hardware experiments on two Unitree Go2 platforms performing cooperative payload transportation in cluttered environments under mass and inertia uncertainty and external push disturbances."
+  },
+  {
     "title": "Beyond Referring Expressions: Scenario Comprehension Visual Grounding",
     "url": "http://arxiv.org/abs/2604.02323v1",
     "arxiv_id": "2604.02323v1",
