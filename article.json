@@ -1,5 +1,83 @@
 [
   {
+    "title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
+    "url": "http://arxiv.org/abs/2604.06168v1",
+    "arxiv_id": "2604.06168v1",
+    "authors": [
+      "Haoyu Zhen",
+      "Zixian Gao",
+      "Qiao Sun",
+      "Yilin Zhao",
+      "Yuncong Yang",
+      "Yilun Du",
+      "Tsun-Hsuan Wang",
+      "Yi-Ling Qiao",
+      "Chuang Gan"
+    ],
+    "published": "2026-04-07T17:59:30+00:00",
+    "summary": "World action models (WAMs) have emerged as a promising direction for robot policy learning, as they can leverage powerful video backbones to model the future states. However, existing approaches often rely on separate action modules, or use action representations that are not pixel-grounded, making it difficult to fully exploit the pretrained knowledge of video models and limiting transfer across viewpoints and environments. In this work, we present Action Images, a unified world action model that formulates policy learning as multiview video generation. Instead of encoding control as low-dimensional tokens, we translate 7-DoF robot actions into interpretable action images: multi-view action videos that are grounded in 2D pixels and explicitly track robot-arm motion. This pixel-grounded action representation allows the video backbone itself to act as a zero-shot policy, without a separate policy head or action module. Beyond control, the same unified model supports video-action joint generation, action-conditioned video generation, and action labeling under a shared representation. On RLBench and real-world evaluations, our model achieves the strongest zero-shot success rates and improves video-action joint generation quality over prior video-space world models, suggesting that interpretable action images are a promising route to policy learning."
+  },
+  {
+    "title": "MMEmb-R1: Reasoning-Enhanced Multimodal Embedding with Pair-Aware Selection and Adaptive Control",
+    "url": "http://arxiv.org/abs/2604.06156v1",
+    "arxiv_id": "2604.06156v1",
+    "authors": [
+      "Yuchi Wang",
+      "Haiyang Yu",
+      "Weikang Bian",
+      "Jiefeng Long",
+      "Xiao Liang",
+      "Chao Feng",
+      "Hongsheng Li"
+    ],
+    "published": "2026-04-07T17:55:17+00:00",
+    "summary": "MLLMs have been successfully applied to multimodal embedding tasks, yet their generative reasoning capabilities remain underutilized. Directly incorporating chain-of-thought reasoning into embedding learning introduces two fundamental challenges. First, structural misalignment between instance-level reasoning and pairwise contrastive supervision may lead to shortcut behavior, where the model merely learns the superficial format of reasoning. Second, reasoning is not universally beneficial for embedding tasks. Enforcing reasoning for all inputs may introduce unnecessary computation and latency, and can even obscure salient semantic signals for simple cases. To address these issues, we propose MMEmb-R1, an adaptive reasoning-based multimodal embedding framework. We formulate reasoning as a latent variable and introduce pair-aware reasoning selection that employs counterfactual intervention to identify reasoning paths beneficial for query-target alignment. Furthermore, we adopt reinforcement learning to selectively invoke reasoning only when necessary. Experiments on the MMEB-V2 benchmark demonstrate that our model achieves a score of 71.2 with only 4B parameters, establishing a new state-of-the-art while significantly reducing reasoning overhead and inference latency."
+  },
+  {
+    "title": "Exclusive Unlearning",
+    "url": "http://arxiv.org/abs/2604.06154v1",
+    "arxiv_id": "2604.06154v1",
+    "authors": [
+      "Mutsumi Sasaki",
+      "Kouta Nakayama",
+      "Yusuke Miyao",
+      "Yohei Oseki",
+      "Masaru Isonuma"
+    ],
+    "published": "2026-04-07T17:54:11+00:00",
+    "summary": "When introducing Large Language Models (LLMs) into industrial applications, such as healthcare and education, the risk of generating harmful content becomes a significant challenge. While existing machine unlearning methods can erase specific harmful knowledge and expressions, diverse harmful content makes comprehensive removal difficult. In this study, instead of individually listing targets for forgetting, we propose Exclusive Unlearning (EU), which aims for broad harm removal by extensively forgetting everything except for the knowledge and expressions we wish to retain. We demonstrate that through Exclusive Unlearning, it is possible to obtain a model that ensures safety against a wide range of inputs, including jailbreaks, while maintaining the ability to respond to diverse instructions related to specific domains such as medicine and mathematics."
+  },
+  {
+    "title": "Delta6: A Low-Cost, 6-DOF Force-Sensing Flexible End-Effector",
+    "url": "http://arxiv.org/abs/2604.06150v1",
+    "arxiv_id": "2604.06150v1",
+    "authors": [
+      "Yue Feng",
+      "Weicheng Huang",
+      "Chen Qiu",
+      "Huixu Dong",
+      "I-Ming Chen"
+    ],
+    "published": "2026-04-07T17:52:32+00:00",
+    "summary": "This paper presents Delta6, a low-cost, six-degree-of-freedom (6-DOF) force/torque end-effector that combines antagonistic springs with magnetic encoders to deliver accurate wrench sensing while remaining as simple to assemble as flat-pack furniture. A fully 3D-printed prototype, assembled entirely from off-the-shelf parts, withstands peak forces above +/-14.4 N and torques of +/-0.33 N.m per axis; these limits can be further extended by leveraging the proposed parametric analytical model. Without calibration, Delta6 attains a 99th-percentile error of 7% full scale (FS). With lightweight sequence models, the error is reduced to 3.8% FS by the best-performing network. Benchmarks on multiple computing platforms confirm that the device's bandwidth is adjustable, enabling balanced trade-offs among update rate, accuracy, and cost, while durability, thermal drift, and zero-calibration tests confirm its robustness. With Delta6 mounted on a robot arm governed by a force-impedance controller, the system successfully performs two contact-rich tasks: buffing curved surfaces and tight assemblies. Experiments validate the design, showing that Delta6 is a robust, low-cost alternative to existing 6-DOF force sensing solutions. Open-source site: https://wings-robotics.github.io/delta6 ."
+  },
+  {
+    "title": "Learning-Guided Force-Feedback Model Predictive Control with Obstacle Avoidance for Robotic Deburring",
+    "url": "http://arxiv.org/abs/2604.06133v1",
+    "arxiv_id": "2604.06133v1",
+    "authors": [
+      "Krzysztof Wojciechowski",
+      "Ege Gursoy",
+      "Arthur Haffemayer",
+      "Sebastien Kleff",
+      "Vincent Bonnet",
+      "Florent Lamiraux",
+      "Nicolas Mansard"
+    ],
+    "published": "2026-04-07T17:43:32+00:00",
+    "summary": "Model Predictive Control (MPC) is widely used for torque-controlled robots, but classical formulations often neglect real-time force feedback and struggle with contact-rich industrial tasks under collision constraints. Deburring in particular requires precise tool insertion, stable force regulation, and collision-free circular motions in challenging configurations, which exceeds the capability of standard MPC pipelines. We propose a framework that integrates force-feedback MPC with diffusion-based motion priors to address these challenges. The diffusion model serves as a memory of motion strategies, providing robust initialization and adaptation across multiple task instances, while MPC ensures safe execution with explicit force tracking, torque feasibility, and collision avoidance. We validate our approach on a torque-controlled manipulator performing industrial deburring tasks. Experiments demonstrate reliable tool insertion, accurate normal force tracking, and circular deburring motions even in hard-to-reach configurations and under obstacle constraints. To our knowledge, this is the first integration of diffusion motion priors with force-feedback MPC for collision-aware, contact-rich industrial tasks."
+  },
+  {
     "title": "Stratifying Reinforcement Learning with Signal Temporal Logic",
     "url": "http://arxiv.org/abs/2604.04923v1",
     "arxiv_id": "2604.04923v1",
