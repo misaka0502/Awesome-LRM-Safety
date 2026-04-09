@@ -1,5 +1,90 @@
 [
   {
+    "title": "MoRight: Motion Control Done Right",
+    "url": "http://arxiv.org/abs/2604.07348v1",
+    "arxiv_id": "2604.07348v1",
+    "authors": [
+      "Shaowei Liu",
+      "Xuanchi Ren",
+      "Tianchang Shen",
+      "Huan Ling",
+      "Saurabh Gupta",
+      "Shenlong Wang",
+      "Sanja Fidler",
+      "Jun Gao"
+    ],
+    "published": "2026-04-08T17:59:22+00:00",
+    "summary": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness."
+  },
+  {
+    "title": "Personalized RewardBench: Evaluating Reward Models with Human Aligned Personalization",
+    "url": "http://arxiv.org/abs/2604.07343v1",
+    "arxiv_id": "2604.07343v1",
+    "authors": [
+      "Qiyao Ma",
+      "Dechen Gao",
+      "Rui Cai",
+      "Boqi Zhao",
+      "Hanchu Zhou",
+      "Junshan Zhang",
+      "Zhe Zhao"
+    ],
+    "published": "2026-04-08T17:55:00+00:00",
+    "summary": "Pluralistic alignment has emerged as a critical frontier in the development of Large Language Models (LLMs), with reward models (RMs) serving as a central mechanism for capturing diverse human values. While benchmarks for general response quality are prevalent, evaluating how well reward models account for individual user preferences remains an open challenge. To bridge this gap, we introduce Personalized RewardBench, a novel benchmark designed to rigorously assess reward models' capacity to model personalized preferences. We construct chosen and rejected response pairs based on strict adherence to (or violation of) user-specific rubrics, ensuring that preference distinctions are uniquely tailored to the individual. In particular, human evaluations confirm that the primary discriminative factor between pairs is strictly personal preference, with both responses maintaining high general quality (e.g., correctness, relevance and helpfulness). Extensive testing reveals that existing state-of-the-art reward models struggle significantly with personalization, peaking at an accuracy of just 75.94%. Crucially, because an effective reward model benchmark should predict a reward model's performance on downstream tasks, we conduct experiments demonstrating that our benchmark exhibits a significantly higher correlation with downstream performance in both Best-of-N (BoN) sampling and Proximal Policy Optimization (PPO) compared to existing baselines. These findings establish Personalized RewardBench as a robust and accurate proxy for evaluating reward models' performance in downstream applications."
+  },
+  {
+    "title": "Dual-Envelope Constrained Nonlinear MPC for Distributed Drive Electric Vehicles Drifting Under Bounded Steering and Direct Yaw-Moment Control",
+    "url": "http://arxiv.org/abs/2604.07342v1",
+    "arxiv_id": "2604.07342v1",
+    "authors": [
+      "Yurun Gan",
+      "Ziyu Song",
+      "Jing Yang",
+      "Zheng Lin",
+      "Jianuo Zhang",
+      "Tongtong Gu",
+      "Haitao Ding",
+      "Nan Xu",
+      "Por Lip Yee",
+      "Wei Ni",
+      "Jun Luo"
+    ],
+    "published": "2026-04-08T17:54:30+00:00",
+    "summary": "Distributed drive electric vehicles offer superior yaw moment control for autonomous drifting in extreme maneuvers. Conventional drift analysis constructs stability boundaries from open loop equilibria points and assumes a fixed envelope structure. However, coupling among control inputs reshapes the phase plane and shifts saddle point location, which can invalidate open loop envelopes when used for closed loop drifting. To address this issue, a saddle point coordinate model is established in this paper by combining a nonlinear tire model with the handling diagram and explicitly accounting for road adhesion coefficient, longitudinal velocity, front wheel steering angle, and additional yaw moment. Based on saddle point properties, an extended dual envelope framework is constructed in the phase plane of slip angle and yaw rate. Using the convergence tendency of state points toward saddle points under bounded control inputs, the outer envelope defines a recoverable set under constraints on front wheel steering angle and additional yaw moment. The inner envelope characterizes the non-drifting stability region associated with unsaturated tire forces. Finally, a nonlinear model predictive control (NMPC) controller is developed using the extended dual envelope constraint. Hardware-in-the-loop experiments show that, compared with NMPC without envelope constraints, the proposed method enables smoother convergence toward the drift saddle point, reduces the steady-state tracking errors of vehicle speed, sideslip angle, and yaw rate by 33.07%, 71.18%, and 31.27%, respectively, and decreases the peak tracking error by 63.66% under road-friction mismatch."
+  },
+  {
+    "title": "TAMEn: Tactile-Aware Manipulation Engine for Closed-Loop Data Collection in Contact-Rich Tasks",
+    "url": "http://arxiv.org/abs/2604.07335v1",
+    "arxiv_id": "2604.07335v1",
+    "authors": [
+      "Longyan Wu",
+      "Jieji Ren",
+      "Chenghang Jiang",
+      "Junxi Zhou",
+      "Shijia Peng",
+      "Ran Huang",
+      "Guoying Gu",
+      "Li Chen",
+      "Hongyang Li"
+    ],
+    "published": "2026-04-08T17:49:35+00:00",
+    "summary": "Handheld paradigms offer an efficient and intuitive way for collecting large-scale demonstration of robot manipulation. However, achieving contact-rich bimanual manipulation through these methods remains a pivotal challenge, which is substantially hindered by hardware adaptability and data efficacy. Prior hardware designs remain gripper-specific and often face a trade-off between tracking precision and portability. Furthermore, the lack of online feasibility checking during demonstration leads to poor replayability. More importantly, existing handheld setups struggle to collect interactive recovery data during robot execution, lacking the authentic tactile information necessary for robust policy refinement. To bridge these gaps, we present TAMEn, a tactile-aware manipulation engine for closed-loop data collection in contact-rich tasks. Our system features a cross-morphology wearable interface that enables rapid adaptation across heterogeneous grippers. To balance data quality and environmental diversity, we implement a dual-modal acquisition pipeline: a precision mode leveraging motion capture for high-fidelity demonstrations, and a portable mode utilizing VR-based tracking for in-the-wild acquisition and tactile-visualized recovery teleoperation. Building on this hardware, we unify large-scale tactile pretraining, task-specific bimanual demonstrations, and human-in-the-loop recovery data into a pyramid-structured data regime, enabling closed-loop policy refinement. Experiments show that our feasibility-aware pipeline significantly improves demonstration replayability, and that the proposed visuo-tactile learning framework increases task success rates from 34% to 75% across diverse bimanual manipulation tasks. We further open-source the hardware and dataset to facilitate reproducibility and support research in visuo-tactile manipulation."
+  },
+  {
+    "title": "RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild",
+    "url": "http://arxiv.org/abs/2604.07331v1",
+    "arxiv_id": "2604.07331v1",
+    "authors": [
+      "Wenjing Margaret Mao",
+      "Jefferson Ng",
+      "Luyang Hu",
+      "Daniel Gehrig",
+      "Antonio Loquercio"
+    ],
+    "published": "2026-04-08T17:48:46+00:00",
+    "summary": "Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild. Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency. We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the full 3D pose and body shape of the wearer in a metric global coordinate frame from egocentric perception. This system is motivated by the complementarity of the two sensors: IMUs provide robustness to occlusions and high-speed motions, while egocentric SLAM anchors long-horizon motion and stabilizes upper body pose. We collect a dataset of agile activities to evaluate RoSHI. On this dataset, we generally outperform other egocentric baselines and perform comparably to a state-of-the-art exocentric baseline (SAM3D). Finally, we demonstrate that the motion data recorded from our system are suitable for real-world humanoid policy learning. For videos, data and more, visit the project webpage: https://roshi-mocap.github.io/"
+  },
+  {
     "title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
     "url": "http://arxiv.org/abs/2604.06168v1",
     "arxiv_id": "2604.06168v1",
