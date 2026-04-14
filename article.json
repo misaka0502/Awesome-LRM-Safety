@@ -1,5 +1,83 @@
 [
   {
+    "title": "Detecting Safety Violations Across Many Agent Traces",
+    "url": "http://arxiv.org/abs/2604.11806v1",
+    "arxiv_id": "2604.11806v1",
+    "authors": [
+      "Adam Stein",
+      "Davis Brown",
+      "Hamed Hassani",
+      "Mayur Naik",
+      "Eric Wong"
+    ],
+    "published": "2026-04-13T17:59:40+00:00",
+    "summary": "To identify safety violations, auditors often search over large sets of agent traces. This search is difficult because failures are often rare, complex, and sometimes even adversarially hidden and only detectable when multiple traces are analyzed together. These challenges arise in diverse settings such as misuse campaigns, covert sabotage, reward hacking, and prompt injection. Existing approaches struggle here for several reasons. Per-trace judges miss failures that only become visible across traces, naive agentic auditing does not scale to large trace collections, and fixed monitors are brittle to unanticipated behaviors. We introduce Meerkat, which combines clustering with agentic search to uncover violations specified in natural language. Through structured search and adaptive investigation of promising regions, Meerkat finds sparse failures without relying on seed scenarios, fixed workflows, or exhaustive enumeration. Across misuse, misalignment, and task gaming settings, Meerkat significantly improves detection of safety violations over baseline monitors, discovers widespread developer cheating on a top agent benchmark, and finds nearly 4x more examples of reward hacking on CyBench than previous audits."
+  },
+  {
+    "title": "Solving Physics Olympiad via Reinforcement Learning on Physics Simulators",
+    "url": "http://arxiv.org/abs/2604.11805v1",
+    "arxiv_id": "2604.11805v1",
+    "authors": [
+      "Mihir Prabhudesai",
+      "Aryan Satpathy",
+      "Yangmin Li",
+      "Zheyang Qin",
+      "Nikash Bhardwaj",
+      "Amir Zadeh",
+      "Chuan Li",
+      "Katerina Fragkiadaki",
+      "Deepak Pathak"
+    ],
+    "published": "2026-04-13T17:59:40+00:00",
+    "summary": "We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pairs, a major bottleneck going forward, since such data is limited in scale and concentrated mainly in domains like mathematics. In contrast, other sciences such as physics lack large-scale QA datasets to effectively train reasoning-capable models. In this work, we show that physics simulators can serve as a powerful alternative source of supervision for training LLMs for physical reasoning. We generate random scenes in physics engines, create synthetic question-answer pairs from simulated interactions, and train LLMs using reinforcement learning on this synthetic data. Our models exhibit zero-shot sim-to-real transfer to real-world physics benchmarks: for example, training solely on synthetic simulated data improves performance on IPhO (International Physics Olympiad) problems by 5-10 percentage points across model sizes. These results demonstrate that physics simulators can act as scalable data generators, enabling LLMs to acquire deep physical reasoning skills beyond the limitations of internet-scale QA data. Code available at: https://sim2reason.github.io/."
+  },
+  {
+    "title": "Disentangled Point Diffusion for Precise Object Placement",
+    "url": "http://arxiv.org/abs/2604.11793v1",
+    "arxiv_id": "2604.11793v1",
+    "authors": [
+      "Lyuxing He",
+      "Eric Cai",
+      "Shobhit Aggarwal",
+      "Jianjun Wang",
+      "David Held"
+    ],
+    "published": "2026-04-13T17:55:47+00:00",
+    "summary": "Recent advances in robotic manipulation have highlighted the effectiveness of learning from demonstration. However, while end-to-end policies excel in expressivity and flexibility, they struggle both in generalizing to novel object geometries and in attaining a high degree of precision. An alternative, object-centric approach frames the task as predicting the placement pose of the target object, providing a modular decomposition of the problem. Building on this goal-prediction paradigm, we propose TAX-DPD, a hierarchical, disentangled point diffusion framework that achieves state-of-the-art performance in placement precision, multi-modal coverage, and generalization to variations in object geometries and scene configurations. We model global scene-level placements through a novel feed-forward Dense Gaussian Mixture Model (GMM) that yields a spatially dense prior over global placements; we then model the local object-level configuration through a novel disentangled point cloud diffusion module that separately diffuses the object geometry and the placement frame, enabling precise local geometric reasoning. Interestingly, we demonstrate that our point cloud diffusion achieves substantially higher accuracy than a prior approach based on SE(3)-diffusion, even in the context of rigid object placement. We validate our approach across a suite of challenging tasks in simulation and in the real-world on high-precision industrial insertion tasks. Furthermore, we present results on a cloth-hanging task in simulation, indicating that our framework can further relax assumptions on object rigidity."
+  },
+  {
+    "title": "ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection",
+    "url": "http://arxiv.org/abs/2604.11790v1",
+    "arxiv_id": "2604.11790v1",
+    "authors": [
+      "Wei Zhao",
+      "Zhe Li",
+      "Peixin Zhang",
+      "Jun Sun"
+    ],
+    "published": "2026-04-13T17:55:11+00:00",
+    "summary": "Tool-augmented Large Language Model (LLM) agents have demonstrated impressive capabilities in automating complex, multi-step real-world tasks, yet remain vulnerable to indirect prompt injection. Adversaries exploit this weakness by embedding malicious instructions within tool-returned content, which agents directly incorporate into their conversation history as trusted observations. This vulnerability manifests across three primary attack channels: web and local content injection, MCP server injection, and skill file injection. To address these vulnerabilities, we introduce \\textsc{ClawGuard}, a novel runtime security framework that enforces a user-confirmed rule set at every tool-call boundary, transforming unreliable alignment-dependent defense into a deterministic, auditable mechanism that intercepts adversarial tool calls before any real-world effect is produced. By automatically deriving task-specific access constraints from the user's stated objective prior to any external tool invocation, \\textsc{ClawGuard} blocks all three injection pathways without model modification or infrastructure change. Experiments across five state-of-the-art language models on AgentDojo, SkillInject, and MCPSafeBench demonstrate that \\textsc{ClawGuard} achieves robust protection against indirect prompt injection without compromising agent utility. This work establishes deterministic tool-call boundary enforcement as an effective defense mechanism for secure agentic AI systems, requiring neither safety-specific fine-tuning nor architectural modification. Code is publicly available at https://github.com/Claw-Guard/ClawGuard."
+  },
+  {
+    "title": "LMMs Meet Object-Centric Vision: Understanding, Segmentation, Editing and Generation",
+    "url": "http://arxiv.org/abs/2604.11789v1",
+    "arxiv_id": "2604.11789v1",
+    "authors": [
+      "Yuqian Yuan",
+      "Wenqiao Zhang",
+      "Juekai Lin",
+      "Yu Zhong",
+      "Mingjian Gao",
+      "Binhe Yu",
+      "Yunqi Cao",
+      "Wentong Li",
+      "Yueting Zhuang",
+      "Beng Chin Ooi"
+    ],
+    "published": "2026-04-13T17:55:02+00:00",
+    "summary": "Large Multimodal Models (LMMs) have achieved remarkable progress in general-purpose vision--language understanding, yet they remain limited in tasks requiring precise object-level grounding, fine-grained spatial reasoning, and controllable visual manipulation. In particular, existing systems often struggle to identify the correct instance, preserve object identity across interactions, and localize or modify designated regions with high precision. Object-centric vision provides a principled framework for addressing these challenges by promoting explicit representations and operations over visual entities, thereby extending multimodal systems from global scene understanding to object-level understanding, segmentation, editing, and generation. This paper presents a comprehensive review of recent advances at the convergence of LMMs and object-centric vision. We organize the literature into four major themes: object-centric visual understanding, object-centric referring segmentation, object-centric visual editing, and object-centric visual generation. We further summarize the key modeling paradigms, learning strategies, and evaluation protocols that support these capabilities. Finally, we discuss open challenges and future directions, including robust instance permanence, fine-grained spatial control, consistent multi-step interaction, unified cross-task modeling, and reliable benchmarking under distribution shift. We hope this paper provides a structured perspective on the development of scalable, precise, and trustworthy object-centric multimodal systems."
+  },
+  {
     "title": "Large Language Models Generate Harmful Content Using a Distinct, Unified Mechanism",
     "url": "http://arxiv.org/abs/2604.09544v1",
     "arxiv_id": "2604.09544v1",
