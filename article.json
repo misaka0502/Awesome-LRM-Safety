@@ -1,5 +1,100 @@
 [
   {
+    "title": "Learning Versatile Humanoid Manipulation with Touch Dreaming",
+    "url": "http://arxiv.org/abs/2604.13015v1",
+    "arxiv_id": "2604.13015v1",
+    "authors": [
+      "Yaru Niu",
+      "Zhenlong Fang",
+      "Binghong Chen",
+      "Shuai Zhou",
+      "Revanth Senthilkumaran",
+      "Hao Zhang",
+      "Bingqing Chen",
+      "Chen Qiu",
+      "H. Eric Tseng",
+      "Jonathan Francis",
+      "Ding Zhao"
+    ],
+    "published": "2026-04-14T17:54:17+00:00",
+    "summary": "Humanoid robots promise general-purpose assistance, yet real-world humanoid loco-manipulation remains challenging because it requires whole-body stability, dexterous hands, and contact-aware perception under frequent contact changes. In this work, we study dexterous, contact-rich humanoid loco-manipulation. We first develop an RL-based whole-body controller that provides stable lower-body and torso execution during complex manipulation. Built on this controller, we develop a whole-body humanoid data collection system that combines VR-based teleoperation with human-to-humanoid motion mapping, enabling efficient collection of real-world demonstrations. We then propose Humanoid Transformer with Touch Dreaming (HTD), a multimodal encoder--decoder Transformer that models touch as a core modality alongside multi-view vision and proprioception. HTD is trained in a single stage with behavioral cloning augmented by touch dreaming: in addition to predicting action chunks, the policy predicts future hand-joint forces and future tactile latents, encouraging the shared Transformer trunk to learn contact-aware representations for dexterous interaction. Across five contact-rich tasks, Insert-T, Book Organization, Towel Folding, Cat Litter Scooping, and Tea Serving, HTD achieves a 90.9% relative improvement in average success rate over the stronger baseline. Ablation results further show that latent-space tactile prediction is more effective than raw tactile prediction, yielding a 30% relative gain in success rate. These results demonstrate that combining robust whole-body execution, scalable humanoid data collection, and predictive touch-centered learning enables versatile, high-dexterity humanoid manipulation in the real world. Project webpage: humanoid-touch-dream.github.io."
+  },
+  {
+    "title": "XRZero-G0: Pushing the Frontier of Dexterous Robotic Manipulation with Interfaces, Quality and Ratios",
+    "url": "http://arxiv.org/abs/2604.13001v1",
+    "arxiv_id": "2604.13001v1",
+    "authors": [
+      "Junming Wang",
+      "Teng Pu",
+      "Wingmun Fung",
+      "Jindong Wang",
+      "Shanchang Wang",
+      "Yuan Deng",
+      "Shuyuan Wang",
+      "Ziwei Liu",
+      "Kunhao Pan",
+      "Ping Yang",
+      "Peng Zhai",
+      "Yuxin Liang",
+      "Xiaofan Li",
+      "Jiabi Sun",
+      "Renchao Xu",
+      "Xiaotian Tian",
+      "Pengfei Yan",
+      "Guoqiang Ye",
+      "Liang Li",
+      "Qian Wang",
+      "Ruyi Gan",
+      "Hao Wang"
+    ],
+    "published": "2026-04-14T17:34:21+00:00",
+    "summary": "The acquisition of high-quality, action-aligned demonstration data remains a fundamental bottleneck in scaling foundation models for dexterous robot manipulation. Although robot-free human demonstrations (e.g., the UMI paradigm) offer a scalable alternative to traditional teleoperation, current systems are constrained by sub-optimal hardware ergonomics, open-loop workflows, and a lack of systematic data-mixing strategies. To address these limitations, we present XRZero-G0, a hardware-software co-designed system for embodied data collection and policy learning. The system features an ergonomic, virtual reality interface equipped with a top-view camera and dual specialized grippers to directly improve collection efficiency. To ensure dataset reliability, we propose a closed-loop collection, inspection, training, and evaluation pipeline for non-proprioceptive data. This workflow achieves an 85% data validity rate and establishes a transparent mechanism for quality control. Furthermore, we investigate the empirical scaling behaviors and optimal mixing ratios of robot-free data. Extensive experiments indicate that combining a minimal volume of real-robot data with large-scale robot-free data (e.g., a 10:1 ratio) achieves performance comparable to exclusively real-robot datasets, while reducing acquisition costs by a factor of twenty. Utilizing XRZero-G0, we construct a 2,000-hour robot-free dataset that enables zero-shot cross-embodiment transfer to a target physical robot, demonstrating a highly scalable methodology for generalized real-world manipulation.Our project repository: https://github.com/X-Square-Robot/XRZero-G0"
+  },
+  {
+    "title": "LogicEval: A Systematic Framework for Evaluating Automated Repair Techniques for Logical Vulnerabilities in Real-World Software",
+    "url": "http://arxiv.org/abs/2604.12994v1",
+    "arxiv_id": "2604.12994v1",
+    "authors": [
+      "Syed Md Mukit Rashid",
+      "Abdullah Al Ishtiaq",
+      "Kai Tu",
+      "Yilu Dong",
+      "Tianwei Wu",
+      "Ali Ranjbar",
+      "Tianchang Yang",
+      "Najrin Sultana",
+      "Shagufta Mehnaz",
+      "Syed Rafiul Hussain"
+    ],
+    "published": "2026-04-14T17:26:07+00:00",
+    "summary": "Logical vulnerabilities in software stem from flaws in program logic rather than memory safety, which can lead to critical security failures. Although existing automated program repair techniques primarily focus on repairing memory corruption vulnerabilities, they struggle with logical vulnerabilities because of their limited semantic understanding of the vulnerable code and its expected behavior. On the other hand, recent successes of large language models (LLMs) in understanding and repairing code are promising. However, no framework currently exists to analyze the capabilities and limitations of such techniques for logical vulnerabilities. This paper aims to systematically evaluate both traditional and LLM-based repair approaches for addressing real-world logical vulnerabilities. To facilitate our assessment, we created the first ever dataset, LogicDS, of 86 logical vulnerabilities with assigned CVEs reflecting tangible security impact. We also developed a systematic framework, LogicEval, to evaluate patches for logical vulnerabilities. Evaluations suggest that compilation and testing failures are primarily driven by prompt sensitivity, loss of code context, and difficulty in patch localization."
+  },
+  {
+    "title": "Parallax: Why AI Agents That Think Must Never Act",
+    "url": "http://arxiv.org/abs/2604.12986v1",
+    "arxiv_id": "2604.12986v1",
+    "authors": [
+      "Joel Fokou"
+    ],
+    "published": "2026-04-14T17:20:48+00:00",
+    "summary": "Autonomous AI agents are rapidly transitioning from experimental tools to operational infrastructure, with projections that 80% of enterprise applications will embed AI copilots by the end of 2026. As agents gain the ability to execute real-world actions (reading files, running commands, making network requests, modifying databases), a fundamental security gap has emerged. The dominant approach to agent safety relies on prompt-level guardrails: natural language instructions that operate at the same abstraction level as the threats they attempt to mitigate. This paper argues that prompt-based safety is architecturally insufficient for agents with execution capability and introduces Parallax, a paradigm for safe autonomous AI execution grounded in four principles: Cognitive-Executive Separation, which structurally prevents the reasoning system from executing actions; Adversarial Validation with Graduated Determinism, which interposes an independent, multi-tiered validator between reasoning and execution; Information Flow Control, which propagates data sensitivity labels through agent workflows to detect context-dependent threats; and Reversible Execution, which captures pre-destructive state to enable rollback when validation fails. We present OpenParallax, an open-source reference implementation in Go, and evaluate it using Assume-Compromise Evaluation, a methodology that bypasses the reasoning system entirely to test the architectural boundary under full agent compromise. Across 280 adversarial test cases in nine attack categories, Parallax blocks 98.9% of attacks with zero false positives under its default configuration, and 100% of attacks under its maximum-security configuration. When the reasoning system is compromised, prompt-level guardrails provide zero protection because they exist only within the compromised system; Parallax's architectural boundary holds regardless."
+  },
+  {
+    "title": "Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation",
+    "url": "http://arxiv.org/abs/2604.12970v1",
+    "arxiv_id": "2604.12970v1",
+    "authors": [
+      "Nafis Fuad Shahid",
+      "Maroof Ahmed",
+      "Md Akib Haider",
+      "Saidur Rahman Sagor",
+      "Aashnan Rahman",
+      "Md Azam Hossain"
+    ],
+    "published": "2026-04-14T17:03:14+00:00",
+    "summary": "Multimodal federated learning enables privacy-preserving collaborative model training across healthcare institutions. However, a fundamental challenge arises from modality heterogeneity: many clinical sites possess only a subset of modalities due to resource constraints or workflow variations. Existing approaches address this through feature imputation networks that synthesize missing modality representations, yet these methods produce point estimates without reliability measures, forcing downstream classifiers to treat all imputed features as equally trustworthy. In safety-critical medical applications, this limitation poses significant risks. We propose the Probabilistic Feature Imputation Network (P-FIN), which outputs calibrated uncertainty estimates alongside imputed features. This uncertainty is leveraged at two levels: (1) locally, through sigmoid gating that attenuates unreliable feature dimensions before classification, and (2) globally, through Fed-UQ-Avg, an aggregation strategy that prioritizes updates from clients with reliable imputation. Experiments on federated chest X-ray classification using CheXpert, NIH Open-I, and PadChest demonstrate consistent improvements over deterministic baselines, with +5.36% AUC gain in the most challenging configuration."
+  },
+  {
     "title": "Detecting Safety Violations Across Many Agent Traces",
     "url": "http://arxiv.org/abs/2604.11806v1",
     "arxiv_id": "2604.11806v1",
