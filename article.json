@@ -1,5 +1,74 @@
 [
   {
+    "title": "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space",
+    "url": "http://arxiv.org/abs/2604.14142v1",
+    "arxiv_id": "2604.14142v1",
+    "authors": [
+      "Yuqiao Tan",
+      "Minzheng Wang",
+      "Bo Liu",
+      "Zichen Liu",
+      "Tian Liang",
+      "Shizhu He",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "published": "2026-04-15T17:59:01+00:00",
+    "summary": "While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model's existing output distribution. Optimizing the marginal distribution P(y) in the Pre-train Space addresses this bottleneck by encoding reasoning ability and preserving broad exploration capacity. Yet, conventional pre-training relies on static corpora for passive learning, leading to a distribution shift that hinders targeted reasoning enhancement. In this paper, we introduce PreRL (Pre-train Space RL), which applies reward-driven online updates directly to P(y). We theoretically and empirically validate the strong gradient alignment between log P(y) and log P(y|x), establishing PreRL as a viable surrogate for standard RL. Furthermore, we uncover a critical mechanism: Negative Sample Reinforcement (NSR) within PreRL serves as an exceptionally effective driver for reasoning. NSR-PreRL rapidly prunes incorrect reasoning spaces while stimulating endogenous reflective behaviors, increasing transition and reflection thoughts by 14.89x and 6.54x, respectively. Leveraging these insights, we propose Dual Space RL (DSRL), a Policy Reincarnation strategy that initializes models with NSR-PreRL to expand the reasoning horizon before transitioning to standard RL for fine-grained optimization. Extensive experiments demonstrate that DSRL consistently outperforms strong baselines, proving that pre-train space pruning effectively steers the policy toward a refined correct reasoning subspace."
+  },
+  {
+    "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+    "url": "http://arxiv.org/abs/2604.14125v1",
+    "arxiv_id": "2604.14125v1",
+    "authors": [
+      "Tianshuo Yang",
+      "Guanyu Chen",
+      "Yutian Chen",
+      "Zhixuan Liang",
+      "Yitian Liu",
+      "Zanxin Chen",
+      "Chunpu Xu",
+      "Haotian Liang",
+      "Jiangmiao Pang",
+      "Yao Mu",
+      "Ping Luo"
+    ],
+    "published": "2026-04-15T17:50:07+00:00",
+    "summary": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs). To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control. In high-level part, a VLM planner first performs task decomposition and visual grounding to generate structured plans, comprising a subtask instruction and a precise target bounding box. Then, to translate this plan into physical actions, we introduce a flow-matching Diffusion Transformer (DiT) action expert in low-level part equipped with a novel cascaded cross-attention mechanism. This design sequentially fuses global context, high-resolution object-centric crops and skill semantics, enabling the DiT to focus purely on robust execution. Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components. Extensive experiments in simulation and the real world demonstrate that HiVLA significantly outperforms state-of-the-art end-to-end baselines, particularly excelling in long-horizon skill composition and the fine-grained manipulation of small objects in cluttered scenes."
+  },
+  {
+    "title": "UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception",
+    "url": "http://arxiv.org/abs/2604.14089v1",
+    "arxiv_id": "2604.14089v1",
+    "authors": [
+      "Ziming Wang"
+    ],
+    "published": "2026-04-15T17:04:34+00:00",
+    "summary": "We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation. While UMI enables portable, wrist-mounted data acquisition, its reliance on monocular visual SLAM makes it vulnerable to occlusions, dynamic scenes, and tracking failures, limiting its applicability in real-world environments. UMI-3D addresses these limitations by introducing a lightweight and low-cost LiDAR sensor tightly integrated into the wrist-mounted interface, enabling LiDAR-centric SLAM with accurate metric-scale pose estimation under challenging conditions. We further develop a hardware-synchronized multimodal sensing pipeline and a unified spatiotemporal calibration framework that aligns visual observations with LiDAR point clouds, producing consistent 3D representations of demonstrations. Despite maintaining the original 2D visuomotor policy formulation, UMI-3D significantly improves the quality and reliability of collected data, which directly translates into enhanced policy performance. Extensive real-world experiments demonstrate that UMI-3D not only achieves high success rates on standard manipulation tasks, but also enables learning of tasks that are challenging or infeasible for the original vision-only UMI setup, including large deformable object manipulation and articulated object operation. The system supports an end-to-end pipeline for data acquisition, alignment, training, and deployment, while preserving the portability and accessibility of the original UMI. All hardware and software components are open-sourced to facilitate large-scale data collection and accelerate research in embodied intelligence: \\href{https://umi-3d.github.io}{https://umi-3d.github.io}."
+  },
+  {
+    "title": "Persistent Iterators with Value Semantics",
+    "url": "http://arxiv.org/abs/2604.14072v1",
+    "arxiv_id": "2604.14072v1",
+    "authors": [
+      "Yihe Li",
+      "Gregory J. Duck"
+    ],
+    "published": "2026-04-15T16:44:37+00:00",
+    "summary": "Iterators are a fundamental programming abstraction for traversing and modifying elements in containers in mainstream imperative languages such as C++. Iterators provide a uniform access mechanism that hides low-level implementation details of the underlying data structure. However, iterators over mutable containers suffer from well-known hazards including invalidation, aliasing, data races, and subtle side effects. Immutable data structures, as used in functional programming languages, avoid the pitfalls of mutation but rely on a very different programming model based on recursion and higher-order combinators rather than iteration. However, these combinators are not always well-suited to expressing certain algorithms, and recursion can expose implementation details of the underlying data structure.   In this paper, we propose persistent iterators -- a new abstraction that reconciles the familiar iterator-based programming style of imperative languages with the semantics of persistent data structures. A persistent iterator snapshots the version of its underlying container at creation, ensuring safety against invalidation and aliasing. Iterator operations operate on the iterator-local copy of the container, giving true value semantics: variables can be rebound to new persistent values while previous versions remain accessible. We implement our approach in the form of LibFPP -- a C++ container library providing persistent vectors, maps, sets, strings, and other abstractions as persistent counterparts to the Standard Template Library (STL). Our evaluation shows that LibFPP retains the expressiveness of iterator-based programming, eliminates iterator-invalidation, and achieves asymptotic complexities comparable to STL implementations. Our design targets use cases where persistence and safety are desired, while allowing developers to retain familiar iterator-based programming patterns."
+  },
+  {
+    "title": "A Comparative Study of Dynamic Programming and Reinforcement Learning in Finite Horizon Dynamic Pricing",
+    "url": "http://arxiv.org/abs/2604.14059v1",
+    "arxiv_id": "2604.14059v1",
+    "authors": [
+      "Lev Razumovskiy",
+      "Nikolay Karenin"
+    ],
+    "published": "2026-04-15T16:36:45+00:00",
+    "summary": "This paper provides a systematic comparison between Fitted Dynamic Programming (DP), where demand is estimated from data, and Reinforcement Learning (RL) methods in finite-horizon dynamic pricing problems. We analyze their performance across environments of increasing structural complexity, ranging from a single typology benchmark to multi-typology settings with heterogeneous demand and inter-temporal revenue constraints. Unlike simplified comparisons that restrict DP to low-dimensional settings, we apply dynamic programming in richer, multi-dimensional environments with multiple product types and constraints. We evaluate revenue performance, stability, constraint satisfaction behavior, and computational scaling, highlighting the trade-offs between explicit expectation-based optimization and trajectory-based learning."
+  },
+  {
     "title": "Learning Versatile Humanoid Manipulation with Touch Dreaming",
     "url": "http://arxiv.org/abs/2604.13015v1",
     "arxiv_id": "2604.13015v1",
