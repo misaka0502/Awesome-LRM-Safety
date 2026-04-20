@@ -1,5 +1,76 @@
 [
   {
+    "title": "FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation",
+    "url": "http://arxiv.org/abs/2604.16298v1",
+    "arxiv_id": "2604.16298v1",
+    "authors": [
+      "Dian Shao",
+      "Zhengzheng Xu",
+      "Peiyang Wang",
+      "Like Liu",
+      "Yule Wang",
+      "Jieqi Shi",
+      "Jing Huo"
+    ],
+    "published": "2026-04-17T17:59:48+00:00",
+    "summary": "UAV vision-language navigation (VLN) requires an agent to navigate complex 3D environments from an egocentric perspective while following ambiguous multi-step instructions over long horizons. Existing zero-shot methods remain limited, as they often rely on large base models, generic prompts, and loosely coordinated modules. In this work, we propose FineCog-Nav, a top-down framework inspired by human cognition that organizes navigation into fine-grained modules for language processing, perception, attention, memory, imagination, reasoning, and decision-making. Each module is driven by a moderate-sized foundation model with role-specific prompts and structured input-output protocols, enabling effective collaboration and improved interpretability. To support fine-grained evaluation, we construct AerialVLN-Fine, a curated benchmark of 300 trajectories derived from AerialVLN, with sentence-level instruction-trajectory alignment and refined instructions containing explicit visual endpoints and landmark references. Experiments show that FineCog-Nav consistently outperforms zero-shot baselines in instruction adherence, long-horizon planning, and generalization to unseen environments. These results suggest the effectiveness of fine-grained cognitive modularization for zero-shot aerial navigation. Project page: https://smartdianlab.github.io/projects-FineCogNav."
+  },
+  {
+    "title": "Evaluating the Progression of Large Language Model Capabilities for Small-Molecule Drug Design",
+    "url": "http://arxiv.org/abs/2604.16279v1",
+    "arxiv_id": "2604.16279v1",
+    "authors": [
+      "Shriram Chennakesavalu",
+      "Kirill Shmilovich",
+      "Hayley Weir",
+      "Colin Grambow",
+      "John Bradshaw",
+      "Patricia Suriana",
+      "Chen Cheng",
+      "Kangway Chuang"
+    ],
+    "published": "2026-04-17T17:40:26+00:00",
+    "summary": "Large Language Models (LLMs) have the potential to accelerate small molecule drug design due to their ability to reason about information from diverse sources and formats. However, their practical utility remains unclear due to the lack of benchmarks that reflect real-world scenarios. In this work, we introduce a suite of chemically-grounded tasks spanning molecular property prediction, molecular representation transformations, and molecular design. Importantly, we formulate these tasks as reinforcement learning (RL) environments, enabling a unified approach for evaluation and post-training. Across three model families, we find that frontier models are increasingly proficient at chemical tasks, but that there is significant room for improvement, especially in experimental settings with low data. Critically, we show that RL-based post-training can substantially improve performance. A smaller model post-trained on our environments becomes competitive with state-of-the-art frontier models, despite a significantly weaker base model. This suggests a practical route toward employing LLMs in drug discovery; by combining carefully-designed evaluation tasks with targeted post-training, we can both elucidate and close critical capability gaps."
+  },
+  {
+    "title": "Semantic Area Graph Reasoning for Multi-Robot Language-Guided Search",
+    "url": "http://arxiv.org/abs/2604.16263v1",
+    "arxiv_id": "2604.16263v1",
+    "authors": [
+      "Ruiyang Wang",
+      "Hao-Lun Hsu",
+      "Jiwoo Kim",
+      "Miroslav Pajic"
+    ],
+    "published": "2026-04-17T17:19:54+00:00",
+    "summary": "Coordinating multi-robot systems (MRS) to search in unknown environments is particularly challenging for tasks that require semantic reasoning beyond geometric exploration. Classical coordination strategies rely on frontier coverage or information gain and cannot incorporate high-level task intent, such as searching for objects associated with specific room types. We propose \\textit{Semantic Area Graph Reasoning} (SAGR), a hierarchical framework that enables Large Language Models (LLMs) to coordinate multi-robot exploration and semantic search through a structured semantic-topological abstraction of the environment. SAGR incrementally constructs a semantic area graph from a semantic occupancy map, encoding room instances, connectivity, frontier availability, and robot states into a compact task-relevant representation for LLM reasoning. The LLM performs high-level semantic room assignment based on spatial structure and task context, while deterministic frontier planning and local navigation handle geometric execution within assigned rooms. Experiments on the Habitat-Matterport3D dataset across 100 scenarios show that SAGR remains competitive with state-of-the-art exploration methods while consistently improving semantic target search efficiency, with up to 18.8\\% in large environments. These results highlight the value of structured semantic abstractions as an effective interface between LLM-based reasoning and multi-robot coordination in complex indoor environments."
+  },
+  {
+    "title": "Beyond Distribution Sharpening: The Importance of Task Rewards",
+    "url": "http://arxiv.org/abs/2604.16259v1",
+    "arxiv_id": "2604.16259v1",
+    "authors": [
+      "Sarthak Mittal",
+      "Leo Gagnon",
+      "Guillaume Lajoie"
+    ],
+    "published": "2026-04-17T17:17:55+00:00",
+    "summary": "Frontier models have demonstrated exceptional capabilities following the integration of task-reward-based reinforcement learning (RL) into their training pipelines, enabling systems to evolve from pure reasoning models into sophisticated agents. However, debate persists regarding whether RL genuinely instills new skills within a base model or merely sharpens its existing distribution to elicit latent capabilities. To address this dichotomy, we present an explicit comparison between distribution sharpening and task-reward-based learning, utilizing RL as a tool to implement both paradigms. Our analysis reveals the inherent limitations of distribution sharpening, demonstrating from first principles how and why the optima can be unfavorable and the approach fundamentally unstable. Furthermore, our experiments using Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct and Qwen3-4B-Instruct-2507 on math datasets confirm that sharpening yields limited gains, whereas incorporating task-based reward signal can greatly help achieve robust performance improvements and stable learning."
+  },
+  {
+    "title": "Find, Fix, Reason: Context Repair for Video Reasoning",
+    "url": "http://arxiv.org/abs/2604.16243v1",
+    "arxiv_id": "2604.16243v1",
+    "authors": [
+      "Haojian Huang",
+      "Chuanyu Qin",
+      "Yinchuan Li",
+      "Yingcong Chen"
+    ],
+    "published": "2026-04-17T17:04:19+00:00",
+    "summary": "Reinforcement learning has advanced video reasoning in large multi-modal models, yet dominant pipelines either rely on on-policy self-exploration, which plateaus at the model's knowledge boundary, or hybrid replay that mixes policies and demands careful regularization. Dynamic context methods zoom into focused evidence but often require curated pretraining and two-stage tuning, and their context remains bounded by a small model's capability. In contrast, larger models excel at instruction following and multi-modal understanding, can supply richer context to smaller models, and rapidly zoom in on target regions via simple tools. Building on this capability, we introduce an observation-level intervention: a frozen, tool-integrated teacher identifies the missing spatiotemporal dependency and provides a minimal evidence patch (e.g., timestamps, regions etc.) from the original video while the question remains unchanged. The student answers again with the added context, and training updates with a chosen-rollout scheme integrated into Group Relative Policy Optimization (GRPO). We further propose a Robust Improvement Reward (RIR) that aligns optimization with two goals: outcome validity through correct answers and dependency alignment through rationales that reflect the cited evidence. Advantages are group-normalized across the batch, preserving on-policy exploration while directing it along causally meaningful directions with minimal changes to the training stack. Experiments on various related benchmarks show consistent accuracy gains and strong generalization. Web page and source code will be available at https://github.com/JethroJames/FFR.git."
+  },
+  {
     "title": "RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
     "url": "http://arxiv.org/abs/2604.15308v1",
     "arxiv_id": "2604.15308v1",
