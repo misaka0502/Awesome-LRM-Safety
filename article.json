@@ -1,5 +1,81 @@
 [
   {
+    "title": "Bounded Ratio Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2604.18578v1",
+    "arxiv_id": "2604.18578v1",
+    "authors": [
+      "Yunke Ao",
+      "Le Chen",
+      "Bruce D. Lee",
+      "Assefa S. Wahd",
+      "Aline Czarnobai",
+      "Philipp F\u00fcrnstahl",
+      "Bernhard Sch\u00f6lkopf",
+      "Andreas Krause"
+    ],
+    "published": "2026-04-20T17:59:01+00:00",
+    "summary": "Proximal Policy Optimization (PPO) has become the predominant algorithm for on-policy reinforcement learning due to its scalability and empirical robustness across domains. However, there is a significant disconnect between the underlying foundations of trust region methods and the heuristic clipped objective used in PPO. In this paper, we bridge this gap by introducing the Bounded Ratio Reinforcement Learning (BRRL) framework. We formulate a novel regularized and constrained policy optimization problem and derive its analytical optimal solution. We prove that this solution ensures monotonic performance improvement. To handle parameterized policy classes, we develop a policy optimization algorithm called Bounded Policy Optimization (BPO) that minimizes an advantage-weighted divergence between the policy and the analytic optimal solution from BRRL. We further establish a lower bound on the expected performance of the resulting policy in terms of the BPO loss function. Notably, our framework also provides a new theoretical lens to interpret the success of the PPO loss, and connects trust region policy optimization and the Cross-Entropy Method (CEM). We additionally extend BPO to Group-relative BPO (GBPO) for LLM fine-tuning. Empirical evaluations of BPO across MuJoCo, Atari, and complex IsaacLab environments (e.g., Humanoid locomotion), and of GBPO for LLM fine-tuning tasks, demonstrate that BPO and GBPO generally match or outperform PPO and GRPO in stability and final performance."
+  },
+  {
+    "title": "When Can LLMs Learn to Reason with Weak Supervision?",
+    "url": "http://arxiv.org/abs/2604.18574v1",
+    "arxiv_id": "2604.18574v1",
+    "authors": [
+      "Salman Rahman",
+      "Jingyan Shen",
+      "Anna Mordvina",
+      "Hamid Palangi",
+      "Saadia Gabriel",
+      "Pavel Izmailov"
+    ],
+    "published": "2026-04-20T17:57:49+00:00",
+    "summary": "Large language models have achieved significant reasoning improvements through reinforcement learning with verifiable rewards (RLVR). Yet as model capabilities grow, constructing high-quality reward signals becomes increasingly difficult, making it essential to understand when RLVR can succeed under weaker forms of supervision. We conduct a systematic empirical study across diverse model families and reasoning domains under three weak supervision settings: scarce data, noisy rewards, and self-supervised proxy rewards. We find that generalization is governed by training reward saturation dynamics: models that generalize exhibit a prolonged pre-saturation phase during which training reward and downstream performance climb together, while models that saturate rapidly memorize rather than learn. We identify reasoning faithfulness, defined as the extent to which intermediate steps logically support the final answer, as the pre-RL property that predicts which regime a model falls into, while output diversity alone is uninformative. Motivated by these findings, we disentangle the contributions of continual pre-training and supervised fine-tuning, finding that SFT on explicit reasoning traces is necessary for generalization under weak supervision, while continual pre-training on domain data amplifies the effect. Applied together to Llama3.2-3B-Base, these interventions enable generalization across all three settings where the base model previously failed."
+  },
+  {
+    "title": "MultiWorld: Scalable Multi-Agent Multi-View Video World Models",
+    "url": "http://arxiv.org/abs/2604.18564v1",
+    "arxiv_id": "2604.18564v1",
+    "authors": [
+      "Haoyu Wu",
+      "Jiwen Yu",
+      "Yingtian Zou",
+      "Xihui Liu"
+    ],
+    "published": "2026-04-20T17:52:15+00:00",
+    "summary": "Video world models have achieved remarkable success in simulating environmental dynamics in response to actions by users or agents. They are modeled as action-conditioned video generation models that take historical frames and current actions as input to predict future frames. Yet, most existing approaches are limited to single-agent scenarios and fail to capture the complex interactions inherent in real-world multi-agent systems. We present \\textbf{MultiWorld}, a unified framework for multi-agent multi-view world modeling that enables accurate control of multiple agents while maintaining multi-view consistency. We introduce the Multi-Agent Condition Module to achieve precise multi-agent controllability, and the Global State Encoder to ensure coherent observations across different views. MultiWorld supports flexible scaling of agent and view counts, and synthesizes different views in parallel for high efficiency. Experiments on multi-player game environments and multi-robot manipulation tasks demonstrate that MultiWorld outperforms baselines in video fidelity, action-following ability, and multi-view consistency. Project page: https://multi-world.github.io/"
+  },
+  {
+    "title": "SynAgent: Generalizable Cooperative Humanoid Manipulation via Solo-to-Cooperative Agent Synergy",
+    "url": "http://arxiv.org/abs/2604.18557v1",
+    "arxiv_id": "2604.18557v1",
+    "authors": [
+      "Wei Yao",
+      "Haohan Ma",
+      "Hongwen Zhang",
+      "Yunlian Sun",
+      "Liangjun Xing",
+      "Zhile Yang",
+      "Yuanjun Guo",
+      "Yebin Liu",
+      "Jinhui Tang"
+    ],
+    "published": "2026-04-20T17:46:20+00:00",
+    "summary": "Controllable cooperative humanoid manipulation is a fundamental yet challenging problem for embodied intelligence, due to severe data scarcity, complexities in multi-agent coordination, and limited generalization across objects. In this paper, we present SynAgent, a unified framework that enables scalable and physically plausible cooperative manipulation by leveraging Solo-to-Cooperative Agent Synergy to transfer skills from single-agent human-object interaction to multi-agent human-object-human scenarios. To maintain semantic integrity during motion transfer, we introduce an interaction-preserving retargeting method based on an Interact Mesh constructed via Delaunay tetrahedralization, which faithfully maintains spatial relationships among humans and objects. Building upon this refined data, we propose a single-agent pretraining and adaptation paradigm that bootstraps synergistic collaborative behaviors from abundant single-human data through decentralized training and multi-agent PPO. Finally, we develop a trajectory-conditioned generative policy using a conditional VAE, trained via multi-teacher distillation from motion imitation priors to achieve stable and controllable object-level trajectory execution. Extensive experiments demonstrate that SynAgent significantly outperforms existing baselines in both cooperative imitation and trajectory-conditioned control, while generalizing across diverse object geometries. Codes and data will be available after publication. Project Page: http://yw0208.github.io/synagent"
+  },
+  {
+    "title": "Symbolic Synthesis for LTLf+ Obligations",
+    "url": "http://arxiv.org/abs/2604.18532v1",
+    "arxiv_id": "2604.18532v1",
+    "authors": [
+      "Giuseppe De Giacomo",
+      "Christian Hagemeier",
+      "Daniel Hausmann",
+      "Nir Piterman"
+    ],
+    "published": "2026-04-20T17:27:28+00:00",
+    "summary": "We study synthesis for obligation properties expressed in LTLfp, the extension of LTLf to infinite traces. Obligation properties are positive Boolean combinations of safety and guarantee (co-safety) properties and form the second level of the temporal hierarchy of Manna and Pnueli. Although obligation properties are expressed over infinite traces, they retain most of the simplicity of LTLf. In particular, we show that they admit a translation into symbolically represented deterministic weak automata (DWA) obtained directly from the symbolic deterministic finite automata (DFA) for the underlying LTLf properties on trace prefixes. DWA inherit many of the attractive algorithmic features of DFA, including Boolean closure and polynomial-time minimization. Moreover, we show that synthesis for LTLfp obligation properties is theoretically highly efficient - solvable in linear time once the DWA is constructed. We investigate several symbolic algorithms for solving DWA games that arise in the synthesis of obligation properties and evaluate their effectiveness experimentally. Overall, the results indicate that synthesis for LTLfp obligation properties can be performed with virtually the same effectiveness as LTLf synthesis."
+  },
+  {
     "title": "FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation",
     "url": "http://arxiv.org/abs/2604.16298v1",
     "arxiv_id": "2604.16298v1",
