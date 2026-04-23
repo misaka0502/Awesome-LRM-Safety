@@ -1,5 +1,81 @@
 [
   {
+    "title": "DeVI: Physics-based Dexterous Human-Object Interaction via Synthetic Video Imitation",
+    "url": "http://arxiv.org/abs/2604.20841v1",
+    "arxiv_id": "2604.20841v1",
+    "authors": [
+      "Hyeonwoo Kim",
+      "Jeonghwan Kim",
+      "Kyungwon Cho",
+      "Hanbyul Joo"
+    ],
+    "published": "2026-04-22T17:59:55+00:00",
+    "summary": "Recent advances in video generative models enable the synthesis of realistic human-object interaction videos across a wide range of scenarios and object categories, including complex dexterous manipulations that are difficult to capture with motion capture systems. While the rich interaction knowledge embedded in these synthetic videos holds strong potential for motion planning in dexterous robotic manipulation, their limited physical fidelity and purely 2D nature make them difficult to use directly as imitation targets in physics-based character control. We present DeVI (Dexterous Video Imitation), a novel framework that leverages text-conditioned synthetic videos to enable physically plausible dexterous agent control for interacting with unseen target objects. To overcome the imprecision of generative 2D cues, we introduce a hybrid tracking reward that integrates 3D human tracking with robust 2D object tracking. Unlike methods relying on high-quality 3D kinematic demonstrations, DeVI requires only the generated video, enabling zero-shot generalization across diverse objects and interaction types. Extensive experiments demonstrate that DeVI outperforms existing approaches that imitate 3D human-object interaction demonstrations, particularly in modeling dexterous hand-object interactions. We further validate the effectiveness of DeVI in multi-object scenes and text-driven action diversity, showcasing the advantage of using video as an HOI-aware motion planner."
+  },
+  {
+    "title": "PokeVLA: Empowering Pocket-Sized Vision-Language-Action Model with Comprehensive World Knowledge Guidance",
+    "url": "http://arxiv.org/abs/2604.20834v1",
+    "arxiv_id": "2604.20834v1",
+    "authors": [
+      "Yupeng Zheng",
+      "Xiang Li",
+      "Songen Gu",
+      "Yuhang Zheng",
+      "Shuai Tian",
+      "Weize Li",
+      "Linbo Wang",
+      "Senyu Fei",
+      "Pengfei Li",
+      "Yinfeng Gao",
+      "Zebin Xing",
+      "Yilun Chen",
+      "Qichao Zhang",
+      "Haoran Li",
+      "Wenchao Ding"
+    ],
+    "published": "2026-04-22T17:58:19+00:00",
+    "summary": "Recent advances in Vision-Language-Action (VLA) models have opened new avenues for robot manipulation, yet existing methods exhibit limited efficiency and a lack of high-level knowledge and spatial awareness. To address these challenges, we propose PokeVLA, a lightweight yet powerful foundation model for embodied manipulation that effectively infuses vision-language understanding into action learning. Our framework introduces a two-stage training paradigm: first, we pre-train a compact vision-language model (PokeVLM) on a curated multimodal dataset of 2.4M samples encompassing spatial grounding, affordance, and embodied reasoning tasks; second, we inject manipulation-relevant representations into the action space through multi-view goal-aware semantics learning, geometry alignment, and a novel action expert. Extensive experiments demonstrate state-of-the-art performance on the LIBERO-Plus benchmark and in real-world deployment, outperforming comparable baselines in success rate and robustness under diverse perturbations. To foster reproducibility and community progress, we will open-source our code, model weights, and the scripts for the curated pre-training dataset. Project page: https://getterupper.github.io/PokeVLA"
+  },
+  {
+    "title": "ParetoSlider: Diffusion Models Post-Training for Continuous Reward Control",
+    "url": "http://arxiv.org/abs/2604.20816v1",
+    "arxiv_id": "2604.20816v1",
+    "authors": [
+      "Shelly Golan",
+      "Michael Finkelson",
+      "Ariel Bereslavsky",
+      "Yotam Nitzan",
+      "Or Patashnik"
+    ],
+    "published": "2026-04-22T17:44:56+00:00",
+    "summary": "Reinforcement Learning (RL) post-training has become the standard for aligning generative models with human preferences, yet most methods rely on a single scalar reward. When multiple criteria matter, the prevailing practice of ``early scalarization'' collapses rewards into a fixed weighted sum. This commits the model to a single trade-off point at training time, providing no inference-time control over inherently conflicting goals -- such as prompt adherence versus source fidelity in image editing. We introduce ParetoSlider, a multi-objective RL (MORL) framework that trains a single diffusion model to approximate the entire Pareto front. By training the model with continuously varying preference weights as a conditioning signal, we enable users to navigate optimal trade-offs at inference time without retraining or maintaining multiple checkpoints. We evaluate ParetoSlider across three state-of-the-art flow-matching backbones: SD3.5, FluxKontext, and LTX-2. Our single preference-conditioned model matches or exceeds the performance of baselines trained separately for fixed reward trade-offs, while uniquely providing fine-grained control over competing generative goals."
+  },
+  {
+    "title": "A Hough transform approach to safety-aware scalar field mapping using Gaussian Processes",
+    "url": "http://arxiv.org/abs/2604.20799v1",
+    "arxiv_id": "2604.20799v1",
+    "authors": [
+      "Muzaffar Qureshi",
+      "Trivikram Satharasi",
+      "Tochukwu E. Ogri",
+      "Kyle Volle",
+      "Rushikesh Kamalapurkar"
+    ],
+    "published": "2026-04-22T17:27:08+00:00",
+    "summary": "This paper presents a framework for mapping unknown scalar fields using a sensor-equipped autonomous robot operating in unsafe environments. The unsafe regions are defined as regions of high-intensity, where the field value exceeds a predefined safety threshold. For safe and efficient mapping of the scalar field, the sensor-equipped robot must avoid high-intensity regions during the measurement process. In this paper, the scalar field is modeled as a sample from a Gaussian process (GP), which enables Bayesian inference and provides closed-form expressions for both the predictive mean and the uncertainty. Concurrently, the spatial structure of the high-intensity regions is estimated in real-time using the Hough transform (HT), leveraging the evolving GP posterior. A safe sampling strategy is then employed to guide the robot towards safe measurement locations, using probabilistic safety guarantees on the evolving GP posterior. The estimated high-intensity regions also facilitate the design of safe motion plans for the robot. The effectiveness of the approach is verified through two numerical simulation studies and an indoor experiment for mapping a light-intensity field using a wheeled mobile robot."
+  },
+  {
+    "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+    "url": "http://arxiv.org/abs/2604.20795v1",
+    "arxiv_id": "2604.20795v1",
+    "authors": [
+      "Pavel Salovskii",
+      "Iuliia Gorshkova"
+    ],
+    "published": "2026-04-22T17:19:43+00:00",
+    "summary": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning.   The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs. The system performs entity recognition, relation extraction, normalization, and triple generation, followed by validation using SHACL and OWL constraints, and continuous graph updates. During inference, LLMs operate over a combined context that integrates vector-based retrieval with graph-based reasoning and external tool interaction.   Experimental observations on planning tasks, including the Tower of Hanoi benchmark, indicate that ontology augmentation improves performance in multi-step reasoning scenarios compared to baseline LLM systems. In addition, the ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline.   The proposed architecture addresses key limitations of current LLM-based systems, including lack of long-term memory, weak structural understanding, and limited reasoning capabilities. It provides a foundation for building agent-based systems, robotics applications, and enterprise AI solutions that require persistent knowledge, explainability, and reliable decision-making."
+  },
+  {
     "title": "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation",
     "url": "http://arxiv.org/abs/2604.19741v1",
     "arxiv_id": "2604.19741v1",
