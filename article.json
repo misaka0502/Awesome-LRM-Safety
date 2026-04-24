@@ -1,5 +1,86 @@
 [
   {
+    "title": "Seeing Fast and Slow: Learning the Flow of Time in Videos",
+    "url": "http://arxiv.org/abs/2604.21931v1",
+    "arxiv_id": "2604.21931v1",
+    "authors": [
+      "Yen-Siang Wu",
+      "Rundong Luo",
+      "Jingsen Zhu",
+      "Tao Tu",
+      "Ali Farhadi",
+      "Matthew Wallingford",
+      "Yu-Chiang Frank Wang",
+      "Steve Marschner",
+      "Wei-Chiu Ma"
+    ],
+    "published": "2026-04-23T17:59:57+00:00",
+    "summary": "How can we tell whether a video has been sped up or slowed down? How can we generate videos at different speeds? Although videos have been central to modern computer vision research, little attention has been paid to perceiving and controlling the passage of time. In this paper, we study time as a learnable visual concept and develop models for reasoning about and manipulating the flow of time in videos. We first exploit the multimodal cues and temporal structure naturally present in videos to learn, in a self-supervised manner, to detect speed changes and estimate playback speed. We then show that these learned temporal reasoning models enable us to curate the largest slow-motion video dataset to date from noisy in-the-wild sources. Such slow-motion footage, typically filmed by high-speed cameras, contains substantially richer temporal detail than standard videos. Using this data, we further develop models capable of temporal control, including speed-conditioned video generation, which produces motion at specified playback speed, and temporal super-resolution, which tranforms low-FPS, blurry videos into high-FPS sequences with fine-grained temporal details. Our findings highlight time as a manipulable, perceptual dimension in video learning, opening doors to temporally controllable video generation, temporal forensics detection, and potentially richer world-models that understand how events unfold over time."
+  },
+  {
+    "title": "Seeing Without Eyes: 4D Human-Scene Understanding from Wearable IMUs",
+    "url": "http://arxiv.org/abs/2604.21926v1",
+    "arxiv_id": "2604.21926v1",
+    "authors": [
+      "Hao-Yu Hsu",
+      "Tianhang Cheng",
+      "Jing Wen",
+      "Alexander G. Schwing",
+      "Shenlong Wang"
+    ],
+    "published": "2026-04-23T17:59:16+00:00",
+    "summary": "Understanding human activities and their surrounding environments typically relies on visual perception, yet cameras pose persistent challenges in privacy, safety, energy efficiency, and scalability. We explore an alternative: 4D perception without vision. Its goal is to reconstruct human motion and 3D scene layouts purely from everyday wearable sensors. For this we introduce IMU-to-4D, a framework that repurposes large language models for non-visual spatiotemporal understanding of human-scene dynamics. IMU-to-4D uses data from a few inertial sensors from earbuds, watches, or smartphones and predicts detailed 4D human motion together with coarse scene structure. Experiments across diverse human-scene datasets show that IMU-to-4D yields more coherent and temporally stable results than SoTA cascaded pipelines, suggesting wearable motion sensors alone can support rich 4D understanding."
+  },
+  {
+    "title": "Long-Horizon Manipulation via Trace-Conditioned VLA Planning",
+    "url": "http://arxiv.org/abs/2604.21924v1",
+    "arxiv_id": "2604.21924v1",
+    "authors": [
+      "Isabella Liu",
+      "An-Chieh Cheng",
+      "Rui Yan",
+      "Geng Chen",
+      "Ri-Zhao Qiu",
+      "Xueyan Zou",
+      "Sha Yi",
+      "Hongxu Yin",
+      "Xiaolong Wang",
+      "Sifei Liu"
+    ],
+    "published": "2026-04-23T17:59:04+00:00",
+    "summary": "Long-horizon manipulation remains challenging for vision-language-action (VLA) policies: real tasks are multi-step, progress-dependent, and brittle to compounding execution errors. We present LoHo-Manip, a modular framework that scales short-horizon VLA execution to long-horizon instruction following via a dedicated task-management VLM. The manager is decoupled from the executor and is invoked in a receding-horizon manner: given the current observation, it predicts a progress-aware remaining plan that combines (i) a subtask sequence with an explicit done + remaining split as lightweight language memory, and (ii) a visual trace -- a compact 2D keypoint trajectory prompt specifying where to go and what to approach next. The executor VLA is adapted to condition on the rendered trace, thereby turning long-horizon decision-making into repeated local control by following the trace. Crucially, predicting the remaining plan at each step yields an implicit closed loop: failed steps persist in subsequent outputs, and traces update accordingly, enabling automatic continuation and replanning without hand-crafted recovery logic or brittle visual-history buffers. Extensive experiments spanning embodied planning, long-horizon reasoning, trajectory prediction, and end-to-end manipulation in simulation and on a real Franka robot demonstrate strong gains in long-horizon success, robustness, and out-of-distribution generalization. Project page: https://www.liuisabella.com/LoHoManip"
+  },
+  {
+    "title": "VistaBot: View-Robust Robot Manipulation via Spatiotemporal-Aware View Synthesis",
+    "url": "http://arxiv.org/abs/2604.21914v1",
+    "arxiv_id": "2604.21914v1",
+    "authors": [
+      "Songen Gu",
+      "Yuhang Zheng",
+      "Weize Li",
+      "Yupeng Zheng",
+      "Yating Feng",
+      "Xiang Li",
+      "Yilun Chen",
+      "Pengfei Li",
+      "Wenchao Ding"
+    ],
+    "published": "2026-04-23T17:57:13+00:00",
+    "summary": "Recently, end-to-end robotic manipulation models have gained significant attention for their generalizability and scalability. However, they often suffer from limited robustness to camera viewpoint changes when training with a fixed camera. In this paper, we propose VistaBot, a novel framework that integrates feed-forward geometric models with video diffusion models to achieve view-robust closed-loop manipulation without requiring camera calibration at test time. Our approach consists of three key components: 4D geometry estimation, view synthesis latent extraction, and latent action learning. VistaBot is integrated into both action-chunking (ACT) and diffusion-based ($\u03c0_0$) policies and evaluated across simulation and real-world tasks. We further introduce the View Generalization Score (VGS) as a new metric for comprehensive evaluation of cross-view generalization. Results show that VistaBot improves VGS by 2.79$\\times$ and 2.63$\\times$ over ACT and $\u03c0_0$, respectively, while also achieving high-quality novel view synthesis. Our contributions include a geometry-aware synthesis model, a latent action planner, a new benchmark metric, and extensive validation across diverse environments. The code and models will be made publicly available."
+  },
+  {
+    "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
+    "url": "http://arxiv.org/abs/2604.21896v1",
+    "arxiv_id": "2604.21896v1",
+    "authors": [
+      "Chee Wei Tan",
+      "Yuchen Wang",
+      "Shangxin Guo"
+    ],
+    "published": "2026-04-23T17:46:29+00:00",
+    "summary": "This paper introduces a new paradigm for AI game programming, leveraging large language models (LLMs) to extend and operationalize Claude Shannon's taxonomy of game-playing machines. Central to this paradigm is Nemobot, an interactive agentic engineering environment that enables users to create, customize, and deploy LLM-powered game agents while actively engaging with AI-driven strategies. The LLM-based chatbot, integrated within Nemobot, demonstrates its capabilities across four distinct classes of games. For dictionary-based games, it compresses state-action mappings into efficient, generalized models for rapid adaptability. In rigorously solvable games, it employs mathematical reasoning to compute optimal strategies and generates human-readable explanations for its decisions. For heuristic-based games, it synthesizes strategies by combining insights from classical minimax algorithms (see, e.g., shannon1950chess) with crowd-sourced data. Finally, in learning-based games, it utilizes reinforcement learning with human feedback and self-critique to iteratively refine strategies through trial-and-error and imitation learning. Nemobot amplifies this framework by offering a programmable environment where users can experiment with tool-augmented generation and fine-tuning of strategic game agents. From strategic games to role-playing games, Nemobot demonstrates how AI agents can achieve a form of self-programming by integrating crowdsourced learning and human creativity to iteratively refine their own logic. This represents a step toward the long-term goal of self-programming AI."
+  },
+  {
     "title": "DeVI: Physics-based Dexterous Human-Object Interaction via Synthetic Video Imitation",
     "url": "http://arxiv.org/abs/2604.20841v1",
     "arxiv_id": "2604.20841v1",
