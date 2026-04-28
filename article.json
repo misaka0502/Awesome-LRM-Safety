@@ -1,5 +1,78 @@
 [
   {
+    "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+    "url": "http://arxiv.org/abs/2604.24764v1",
+    "arxiv_id": "2604.24764v1",
+    "authors": [
+      "Weijie Wang",
+      "Xiaoxuan He",
+      "Youping Gu",
+      "Yifan Yang",
+      "Zeyu Zhang",
+      "Yefei He",
+      "Yanbo Ding",
+      "Xirui Hu",
+      "Donny Y. Chen",
+      "Zhiyuan He",
+      "Yuqing Yang",
+      "Bohan Zhuang"
+    ],
+    "published": "2026-04-27T17:59:56+00:00",
+    "summary": "Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from geometric inconsistencies. While existing methods attempt to inject 3D priors via architectural modifications, they often incur high computational costs and limit scalability. We propose World-R1, a framework that aligns video generation with 3D constraints through reinforcement learning. To facilitate this alignment, we introduce a specialized pure text dataset tailored for world simulation. Utilizing Flow-GRPO, we optimize the model using feedback from pre-trained 3D foundation models and vision-language models to enforce structural coherence without altering the underlying architecture. We further employ a periodic decoupled training strategy to balance rigid geometric consistency with dynamic scene fluidity. Extensive evaluations reveal that our approach significantly enhances 3D consistency while preserving the original visual quality of the foundation model, effectively bridging the gap between video generation and scalable world simulation."
+  },
+  {
+    "title": "CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling",
+    "url": "http://arxiv.org/abs/2604.24739v1",
+    "arxiv_id": "2604.24739v1",
+    "authors": [
+      "Jason D. Chadwick",
+      "Frederic T. Chong"
+    ],
+    "published": "2026-04-27T17:44:08+00:00",
+    "summary": "Semiconductor spin qubits are a promising platform for large-scale quantum computing, but have yet to take full advantage of the broad class of quantum low-density parity check (QLDPC) codes, which promise high encoding rates and efficient logic but require nonlocal connectivity between physical qubits. In this work, we investigate the implementation of QLDPC codes on a tileable, shuttling-based spin qubit architecture. By tailoring syndrome extraction circuits to the shuttling noise model, we significantly improve on previous surface code proposals and extend the feasible shuttling range of the architecture by 5-10x, enabling the implementation of more complex codes with long-range interactions. Taking inspiration from the field of robotics, we develop a coordinated shuttle scheduling algorithm that supports arbitrary codes and use it to benchmark the logical performance of a variety of promising code families. We find that the optimized schedules are up to 86% faster than hand-optimized schedules for certain code families. Through detailed circuit-level simulations, we identify specific QLDPC codes that improve upon prior surface code implementations by orders of magnitude, increasing encoding efficiency and reducing logical error rates. This work demonstrates the potential of shuttling-based spin qubit hardware platforms for scalable and efficient fault-tolerant quantum computation."
+  },
+  {
+    "title": "SpecRLBench: A Benchmark for Generalization in Specification-Guided Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2604.24729v1",
+    "arxiv_id": "2604.24729v1",
+    "authors": [
+      "Zijian Guo",
+      "\u0130lker I\u015f\u0131k",
+      "H. M. Sabbir Ahmad",
+      "Wenchao Li"
+    ],
+    "published": "2026-04-27T17:40:18+00:00",
+    "summary": "Specification-guided reinforcement learning (RL) provides a principled framework for encoding complex, temporally extended tasks using formal specifications such as linear temporal logic (LTL). While recent methods have shown promising results, their ability to generalize across unseen specifications and diverse environments remains insufficiently understood. In this work, we introduce SpecRLBench, a benchmark designed to evaluate the generalization capabilities of LTL-based specification-guided RL methods. The benchmark spans multiple difficulty levels across navigation and manipulation domains, incorporating both static and dynamic environments, diverse robot dynamics, and varied observation modalities. Through extensive empirical evaluation, we characterize the strengths and limitations of existing approaches and reveal the challenges that emerge as specification and environment complexity increase. SpecRLBench provides a structured platform for systematic comparison and supports the development of more generalizable specification-guided RL methods. Code is available at https://github.com/BU-DEPEND-Lab/SpecRLBench."
+  },
+  {
+    "title": "Passage-Aware Structural Mapping for RGB-D Visual SLAM",
+    "url": "http://arxiv.org/abs/2604.24707v1",
+    "arxiv_id": "2604.24707v1",
+    "authors": [
+      "Ali Tourani",
+      "Miguel Fernandez-Cortizas",
+      "Saad Ejaz",
+      "David P\u00e9rez Saura",
+      "Asier Bikandi-Noya",
+      "Jose Luis Sanchez-Lopez",
+      "Holger Voos"
+    ],
+    "published": "2026-04-27T17:17:17+00:00",
+    "summary": "Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks. This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues. Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall. Passages are inferred through two complementary strategies: traversal evidence accumulated from camera-wall interactions across consecutive keyframes, and geometric opening validation based on discontinuities in the mapped wall geometry. The proposed method is integrated into vS-Graphs as a proof of concept, enriching its scene graph with passage-level abstractions and improving room connectivity modeling. Qualitative evaluations on indoor office sequences demonstrate reliable doorway detection, and the framework lays the foundation for exploiting these elements in BIM-informed VSLAM. The source code is publicly available at https://github.com/snt-arg/visual_sgraphs/tree/doorway_integration."
+  },
+  {
+    "title": "Exploiting Differential Flatness for Efficient Learning-based Model Predictive Control of Constrained Multi-Input Control Affine Systems",
+    "url": "http://arxiv.org/abs/2604.24706v1",
+    "arxiv_id": "2604.24706v1",
+    "authors": [
+      "Tobias A. Farger",
+      "Adam W. Hall",
+      "Angela P. Schoellig"
+    ],
+    "published": "2026-04-27T17:14:17+00:00",
+    "summary": "Learning-based control techniques use data from past trajectories to control systems with uncertain dynamics. However, learning-based controllers are often computationally inefficient, limiting their practicality. To address this limitation, we propose a learning-based controller that exploits differential flatness, a property of many robotic systems. Recent research on using flatness for learning-based control either is limited in that it (i) ignores input constraints, (ii) applies only to single-input systems, or (iii) is tailored to specific platforms. In contrast, our approach uses a system extension and block-diagonal cost formulation to control general multi-input, nonlinear, affine systems. Furthermore, it satisfies input and half-space flat state constraints and guarantees probabilistic Lyapunov decrease using only two sequential convex optimizations. We show that our approach performs similarly to, but is multiple times more efficient than, a Gaussian process model predictive controller in simulation, and achieves competitive tracking in real hardware experiments."
+  },
+  {
     "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
     "url": "http://arxiv.org/abs/2604.22748v1",
     "arxiv_id": "2604.22748v1",
