@@ -1,5 +1,79 @@
 [
   {
+    "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
+    "url": "http://arxiv.org/abs/2604.26946v1",
+    "arxiv_id": "2604.26946v1",
+    "authors": [
+      "Wanrong Zheng",
+      "Yunhao Ge",
+      "Laurent Itti"
+    ],
+    "published": "2026-04-29T17:55:05+00:00",
+    "summary": "Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs). These models can plan a sequence of motions by evaluating the current view at each time step against the task and goal given to the agent. However, current zero-shot Vision-and-Language Navigation (VLN) agents powered by MLLMs still tend to drift off course, halt prematurely, and achieve low overall success rates. We propose Three-Step Nav to counteract these failures with a three-view protocol: First, \"look forward\" to extract global landmarks and sketch a coarse plan. Then, \"look now\" to align the current visual observation with the next sub-goal for fine-grained guidance. Finally, \"look backward\" audits the entire trajectory to correct accumulated drift before stopping. Requiring no gradient updates or task-specific fine-tuning, our planner drops into existing VLN pipelines with minimal overhead. Three-Step Nav achieves state-of-the-art zero-shot performance on the R2R-CE and RxR-CE dataset. Our code is available at https://github.com/ZoeyZheng0/3-step-Nav."
+  },
+  {
+    "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
+    "url": "http://arxiv.org/abs/2604.26935v1",
+    "arxiv_id": "2604.26935v1",
+    "authors": [
+      "Catherine Liu",
+      "Tao Long",
+      "Asya Vaisberg",
+      "Chau Vu",
+      "Jiaju Ma",
+      "Jingyi Li"
+    ],
+    "published": "2026-04-29T17:49:03+00:00",
+    "summary": "Creativity support tools (CSTs) aim to elevate the quality of artists' creative processes and artifacts. Yet most current CST evaluations overlook temporal and social aspects of tool use. To address this gap, we present a longitudinal, group-based CST evaluation through a three-week deployment of ArtKrit, a computational drawing tool that supports disciplined drawing. Nine digital artists, organized into three communities of practice, completed weekly \"master studies\" alongside a researcher-artist. Our results show users' evolving relationships with ArtKrit over time - from early experimentation to selective incorporation or misuse - alongside changes in their ways of artistic seeing. These changes unfolded within artist support networks that fostered confidence and creative safety, and validated individual expression. Overall, our findings suggest that CST evaluations can - and should - be designed as opportunities for meaningful artistic engagement rather than purely extractive measurement exercises. We contribute this longitudinal, group-based approach as one CST evaluation method."
+  },
+  {
+    "title": "Learning Over-Relaxation Policies for ADMM with Convergence Guarantees",
+    "url": "http://arxiv.org/abs/2604.26932v1",
+    "arxiv_id": "2604.26932v1",
+    "authors": [
+      "Junan Lin",
+      "Paul J. Goulart",
+      "Luca Furieri"
+    ],
+    "published": "2026-04-29T17:45:52+00:00",
+    "summary": "The Alternating Direction Method of Multipliers (ADMM) is a widely used method for structured convex optimization, and its practical performance depends strongly on the choice of penalty and relaxation parameters. Motivated by settings such as Model Predictive Control (MPC), where one repeatedly solves related optimization problems with fixed structure and changing parameter values, we propose learning online updates of the relaxation parameter to improve performance on problem classes of interest. This choice is computationally attractive in OSQP-like architectures, since adapting relaxation does not trigger the matrix refactorizations associated with penalty updates. We establish convergence guarantees for ADMM with time-varying penalty and relaxation parameters under mild assumptions, and show on benchmark quadratic programs that the resulting learned policies improve both iteration count and wall-clock time over baseline OSQP."
+  },
+  {
+    "title": "Bi-Level Optimization for Contact and Motion Planning in Rope-Assisted Legged Robots",
+    "url": "http://arxiv.org/abs/2604.26910v1",
+    "arxiv_id": "2604.26910v1",
+    "authors": [
+      "Ruben Malacarne",
+      "Ioannis Tsikelis",
+      "Enrico Mingo Hoffman",
+      "Michele Focchi"
+    ],
+    "published": "2026-04-29T17:18:29+00:00",
+    "summary": "This paper presents a planning pipeline framework for locomotion in rope-assisted robots climbing vertical surfaces. The proposed framework is formulated as a bi-level optimization scheme that addresses a mixed-integer problem: selecting feasible terrain regions for landing while simultaneously optimizing the control inputs, namely rope tensions and leg forces, and landing location. The outer level of the optimization is solved using the Cross-Entropy Method, while the inner level relies on gradient-based nonlinear optimization to compute dynamically feasible motions. The approach is validated on a novel climbing robot platform, ALPINE, across a variety of challenging terrain configurations."
+  },
+  {
+    "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+    "url": "http://arxiv.org/abs/2604.26904v1",
+    "arxiv_id": "2604.26904v1",
+    "authors": [
+      "Fei Bai",
+      "Huatong Song",
+      "Shuang Sun",
+      "Daixuan Cheng",
+      "Yike Yang",
+      "Chuan Hao",
+      "Renyuan Li",
+      "Feng Chang",
+      "Yuan Wei",
+      "Ran Tao",
+      "Bryan Dai",
+      "Jian Yang",
+      "Wayne Xin Zhao"
+    ],
+    "published": "2026-04-29T17:12:22+00:00",
+    "summary": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes.To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources will be soon released at https://github.com/ClawGym."
+  },
+  {
     "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
     "url": "http://arxiv.org/abs/2604.25914v1",
     "arxiv_id": "2604.25914v1",
