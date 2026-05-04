@@ -1,5 +1,79 @@
 [
   {
+    "title": "SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control",
+    "url": "http://arxiv.org/abs/2605.00787v1",
+    "arxiv_id": "2605.00787v1",
+    "authors": [
+      "Stavros Orfanoudakis",
+      "Pedro P. Vergara"
+    ],
+    "published": "2026-05-01T17:09:58+00:00",
+    "summary": "While representation and similarity learning have improved the sample efficiency of Reinforcement Learning (RL), they are rarely used to shape policy updates directly in the action space. To bridge this gap, a geometry-aware RL algorithm that explicitly incorporates value-based similarity into the policy update, State-Action Value Geometry Optimization (SAVGO), is proposed. In detail, SAVGO learns a joint state-action embedding space in which pairs with similar action-value estimates exhibit high cosine similarity, while dissimilar pairs are mapped to distinct directions. This learned geometry enables the generation of a similarity kernel over candidate actions sampled at each update, allowing policy improvement to be guided directly toward higher-value regions beyond local gradient-based updates. As a result, representation learning, value estimation, and policy optimization are unified within a single geometry-consistent objective, while preserving the scalability of off-policy actor-critic training. The proposed method is evaluated on standard MuJoCo continuous-control benchmarks, demonstrating improvements over strong baselines on challenging high-dimensional tasks. Ablation studies are done to analyze the contributions of value-geometry learning and similarity-based policy updates."
+  },
+  {
+    "title": "Self-Adaptive Multi-Agent LLM-Based Security Pattern Selection for IoT Systems",
+    "url": "http://arxiv.org/abs/2605.00741v1",
+    "arxiv_id": "2605.00741v1",
+    "authors": [
+      "Saeid Jamshidi",
+      "Foutse Khomh",
+      "Carol Fung",
+      "Kawser Wazed Nafi"
+    ],
+    "published": "2026-05-01T15:42:54+00:00",
+    "summary": "The adoption of Internet of Things (IoT) systems at the network edge of smart architectures is increasing rapidly, intensifying the need for security mechanisms that are both adaptive and resource-efficient. In such environments, runtime defence mechanisms are no longer limited to detection alone but become a resource-constrained task of selecting mitigation actions. Security controls must be carefully selected, combined, and executed under latency, energy, and computational constraints, while preventing unsafe interactions between controls. Existing approaches predominantly rely on static rule sets and learned policies, which provide limited guarantees of feasibility, conflict safety, and execution correctness in resource-constrained edge settings. To address this limitation, we introduce ASPO, a self-adaptive multi-agent security pattern selection that integrates Large Language Model (LLM)-based reasoning with deterministic enforcement within a MAPE-K control loop. ASPO explicitly separates stochastic decision generation from execution: LLM agents propose candidate mitigation portfolios, while a deterministic optimisation core enforces closed-world action integrity, conflict-free composition, and resource feasibility at every decision epoch. We deploy ASPO on a distributed edge-gateway testbed and evaluate it across two workloads, each comprising 500 and 1000 runtime security decisions, using replayed IoT attack traffic. In addition, the results demonstrate invariant safety properties, including 100% conflict-free activation, consistent resource feasibility across workloads, and stable pattern dominance with perfect rank preservation. Importantly, deeper decision exploration reduces extreme-case execution costs, compressing tail latency and energy overheads by 21.9% and 23.1%, respectively, without increasing mean energy consumption."
+  },
+  {
+    "title": "Leveraging Climate Services to Build Climate Resilient Power Systems",
+    "url": "http://arxiv.org/abs/2605.00717v1",
+    "arxiv_id": "2605.00717v1",
+    "authors": [
+      "Laurent Dubus",
+      "Alberto Troccoli",
+      "Aron zuiker",
+      "Laurens Stoop"
+    ],
+    "published": "2026-05-01T15:05:38+00:00",
+    "summary": "We explore the crucial interplay between climate change and power system planning, highlighting the urgent need to systematically integrate climate information into energy system studies. Climate change impacts the energy sector on multiple fronts. Short-term weather variability drives daily and seasonal fluctuations in supply and demand. Long-term trends and increased frequency of extremes pose risks to infrastructure performance, asset lifetimes, and system adequacy. Representing compound events and spatial correlations across borders is a complex challenge, and uncertainties persist due to uncertainties from different models, scenarios, and downscaling methodologies.   The Pan-European Climate Database (PECD4.2), developed in partnership between ENTSO-E and C3S, marks a change in how energy system planning is conducted. The PECD4.2 integrates historical reanalysis and six climate models across four SSP's, providing harmonised, openly available datasets tailored for power system studies. The physical conversion models for wind and solar energy better reflect technological progression than machine learning methods trained on historical data, improving robustness under changing future conditions.   Despite these advances, challenges remain. Particularly in hydropower modelling and the lack of public harmonised energy datasets that are required to train these models. Complex processing chains from raw climate data to actionable insights and the lack of standardized integration of climate information lengthen lead times for energy-sector adoption. This leads to diverging approaches and variable consideration of climate risks. Closer, more generalised collaboration and communication between climate service providers and energy stakeholders are therefore necessary, as are the development of user-friendly tools for data manipulation and analysis and robust feedback loops."
+  },
+  {
+    "title": "FinSafetyBench: Evaluating LLM Safety in Real-World Financial Scenarios",
+    "url": "http://arxiv.org/abs/2605.00706v1",
+    "arxiv_id": "2605.00706v1",
+    "authors": [
+      "Yutao Hou",
+      "Yihan Jiang",
+      "Yuhan Xie",
+      "Jian Yang",
+      "Liwen Zhang",
+      "Hailiang Huang",
+      "Guanhua Chen",
+      "Yun Chen"
+    ],
+    "published": "2026-05-01T14:51:24+00:00",
+    "summary": "Large language models (LLMs) are increasingly applied in financial scenarios. However, they may produce harmful outputs, including facilitating illegal activities or unethical behavior, posing serious compliance risks. To systematically evaluate LLM safety in finance, we propose FinSafetyBench, a bilingual (English-Chinese) red-teaming benchmark designed to test an LLM's refusal of requests that violate financial compliance. Grounded in real-world financial crime cases and ethics standards, the benchmark comprises 14 subcategories spanning financial crimes and ethical violations. Through extensive experiments on general-purpose and finance-specialized LLMs under three representative attack settings, we identify critical vulnerabilities that allow adversarial prompts to bypass compliance safeguards. Further analysis reveals stronger susceptibility in Chinese contexts and highlights the limitations of prompt-level defenses against sophisticated or implicit manipulation strategies."
+  },
+  {
+    "title": "Learning How and What to Memorize: Cognition-Inspired Two-Stage Optimization for Evolving Memory",
+    "url": "http://arxiv.org/abs/2605.00702v1",
+    "arxiv_id": "2605.00702v1",
+    "authors": [
+      "Derong Xu",
+      "Shuochen Liu",
+      "Pengfei Luo",
+      "Pengyue Jia",
+      "Yingyi Zhang",
+      "Yi Wen",
+      "Yimin Deng",
+      "Wenlin Zhang",
+      "Enhong Chen",
+      "Xiangyu Zhao",
+      "Tong Xu"
+    ],
+    "published": "2026-05-01T14:45:20+00:00",
+    "summary": "Large language model (LLM) agents require long-term user memory for consistent personalization, but limited context windows hinder tracking evolving preferences over long interactions. Existing memory systems mainly rely on static, hand-crafted update rules; although reinforcement learning (RL)-based agents learn memory updates, sparse outcome rewards provide weak supervision, resulting in unstable long-horizon optimization. Drawing on memory schema theory and the functional division between prefrontal regions and hippocampus regions, we introduce MemCoE, a cognition-inspired two-stage optimization framework that learns how memory should be organized and what information to update. In the first stage, we propose Memory Guideline Induction to optimize a global guideline via contrastive feedback interpreted as textual gradients; in the second stage, Guideline-Aligned Memory Policy Optimization uses the induced guideline to define structured process rewards and performs multi-turn RL to learn a guideline-following memory evolution policy. We evaluate on three personalization memory benchmarks, covering explicit/implicit preference and different sizes and noise, and observe consistent improvements over strong baselines with favorable robustness, transferability, and efficiency."
+  },
+  {
     "title": "OmniRobotHome: A Multi-Camera Platform for Real-Time Multiadic Human-Robot Interaction",
     "url": "http://arxiv.org/abs/2604.28197v1",
     "arxiv_id": "2604.28197v1",
