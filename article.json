@@ -1,5 +1,101 @@
 [
   {
+    "title": "CityOS: Privacy Architecture for Urban Sensing",
+    "url": "http://arxiv.org/abs/2605.02886v1",
+    "arxiv_id": "2605.02886v1",
+    "authors": [
+      "Giorgio Cavicchioli",
+      "Mark Chen",
+      "Navid Salami Pargoo",
+      "Shuren Xia",
+      "Xiaotian Zhou",
+      "Roxana Geambasu",
+      "Jason Nieh",
+      "Jorge Ortiz"
+    ],
+    "published": "2026-05-04T17:54:45+00:00",
+    "summary": "Cities are rapidly deploying sensing infrastructure -- cameras, environmental sensors, and connected kiosks -- that continuously observe public spaces, yet they lack a system architecture governing how applications access, aggregate, and retain this data, creating privacy risks and preventing consistent policy enforcement. We present CityOS, an operating system for urban sensing that mediates application access to sensor data through a three-tier API inspired by structured, privacy-conscious web interfaces. The tiers expand the spatial scope of data access while imposing progressively stronger privacy constraints: On-Scene supports real-time sensing with raw data confined to the local context; Single-Locality Aggregation enables differentially private longitudinal statistics at a fixed location; and Cross-Locality Aggregation supports citywide analytics via aggregation across locations, with user devices enforcing per-user privacy budgets. CityOS runs as an edge runtime that executes untrusted applications in ephemeral containers, enforcing these policies and providing transparency via broadcasts of differential privacy loss. We implement CityOS and applications across all tiers -- including pedestrian safety alerts, real-time and forecast parking availability, traffic dashboards, and subway trajectory measurement -- and show that it supports practical streetscape applications while enforcing strong privacy."
+  },
+  {
+    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+    "url": "http://arxiv.org/abs/2605.02881v1",
+    "arxiv_id": "2605.02881v1",
+    "authors": [
+      "Haoquan Fang",
+      "Jiafei Duan",
+      "Donovan Clay",
+      "Sam Wang",
+      "Shuo Liu",
+      "Weikai Huang",
+      "Xiang Fan",
+      "Wei-Chuan Tsai",
+      "Shirui Chen",
+      "Yi Ru Wang",
+      "Shanli Xing",
+      "Jaemin Cho",
+      "Jae Sung Park",
+      "Ainaz Eftekhar",
+      "Peter Sushko",
+      "Karen Farley",
+      "Angad Wadhwa",
+      "Cole Harrison",
+      "Winson Han",
+      "Ying-Chun Lee",
+      "Eli VanderBilt",
+      "Rose Hendrix",
+      "Suveen Ellawela",
+      "Lucas Ngoo",
+      "Joyce Chai",
+      "Zhongzheng Ren",
+      "Ali Farhadi",
+      "Dieter Fox",
+      "Ranjay Krishna"
+    ],
+    "published": "2026-05-04T17:51:21+00:00",
+    "summary": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold for dependable use. We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe. We release three new datasets spanning low-to-medium cost platforms, including MolmoAct2-BimanualYAM, 720 hours of teleoperated bimanual trajectories that constitute the largest open bimanual dataset to date, together with quality-filtered Franka (DROID) and SO100/101 subsets. We provide OpenFAST, an open-weight, open-data action tokenizer trained on millions of trajectories across five embodiments. We redesign the architecture to graft a flow-matching continuous-action expert onto a discrete-token VLM via per-layer KV-cache conditioning. Finally, we propose MolmoThink, an adaptive-depth reasoning variant that re-predicts depth tokens only for scene regions that change between timesteps, retaining geometric grounding at a fraction of prior latency. In the most extensive empirical study of any open VLA to date, spanning 7 simulation and real-world benchmarks, MolmoAct2 outperforms strong baselines including Pi-05, while MolmoER surpasses GPT-5 and Gemini Robotics ER-1.5 across 13 embodied-reasoning benchmarks. We release model weights, training code, and complete training data. Project page: https://allenai.org/blog/molmoact2"
+  },
+  {
+    "title": "Enhancing RL Generalizability in Robotics through SHAP Analysis of Algorithms and Hyperparameters",
+    "url": "http://arxiv.org/abs/2605.02867v1",
+    "arxiv_id": "2605.02867v1",
+    "authors": [
+      "Lingxiao Kong",
+      "Cong Yang",
+      "Oya Deniz Beyan",
+      "Zeyd Boukhers"
+    ],
+    "published": "2026-05-04T17:41:04+00:00",
+    "summary": "Despite significant advances in Reinforcement Learning (RL), model performance remains highly sensitive to algorithm and hyperparameter configurations, while generalization gaps across environments complicate real-world deployment. Although prior work has studied RL generalization, the relative contribution of specific configurations to the generalization gap has not been quantitatively decomposed and systematically leveraged for configuration selection. To address this limitation, we propose an explainable framework that evaluates RL performance across robotic environments using SHapley Additive exPlanations (SHAP) to quantify configuration impacts. We establish a theoretical foundation connecting Shapley values to generalizability, empirically analyze configuration impact patterns, and introduce SHAP-guided configuration selection to enhance generalization. Our results reveal distinct patterns across algorithms and hyperparameters, with consistent configuration impacts across diverse tasks and environments. By applying these insights to configuration selection, we achieve improved RL generalizability and provide actionable guidance for practitioners."
+  },
+  {
+    "title": "Semantic Risk-Aware Heuristic Planning for Robotic Navigation in Dynamic Environments: An LLM-Inspired Approach",
+    "url": "http://arxiv.org/abs/2605.02862v1",
+    "arxiv_id": "2605.02862v1",
+    "authors": [
+      "Hamza Ahmed Durrani",
+      "Rafay Suleman Durrani"
+    ],
+    "published": "2026-05-04T17:38:12+00:00",
+    "summary": "The integration of Large Language Model (LLM) reasoning principles into classical robot path planning represents a rapidly emerging research direction. In this paper, we propose a Semantic Risk-Aware Heuristic (SRAH) planner that encodes LLM-inspired cost functions penalising geometrically cluttered or high-risk zones into an A$^*$ search framework, augmented with closed-loop replanning upon dynamic obstacle detection. We evaluate SRAH against two established baselines Breadth-First Search (BFS) with replanning and a Greedy heuristic without replanning across 200 randomised trials in a $15{\\times}15$ grid-world with 20\\% static obstacle density and stochastic dynamic obstacles. SRAH achieves a task success rate of 62.0\\%, outperforming BFS (56.5\\%) by 9.7\\% relative improvement and Greedy (4.0\\%) by a large margin. We further analyse the trade-off between planning overhead, path efficiency, and failure-recovery count, and demonstrate via an obstacle-density ablation that semantic cost shaping consistently improves navigation across environments of varying difficulty. Our results suggest that even lightweight, LLM-inspired heuristics provide measurable safety and robustness gains for autonomous robot navigation."
+  },
+  {
+    "title": "LiDAR Teach, Radar Repeat: Robust Cross-Modal Navigation in Degenerate and Varying Environments",
+    "url": "http://arxiv.org/abs/2605.02809v1",
+    "arxiv_id": "2605.02809v1",
+    "authors": [
+      "Renxiang Xiao",
+      "Yichen Chen",
+      "Yuanfan Zhang",
+      "Qianyi Shao",
+      "Yushuai Chen",
+      "Yuxuan Han",
+      "Yunjiang Lou",
+      "Liang Hu"
+    ],
+    "published": "2026-05-04T16:46:54+00:00",
+    "summary": "Long-term autonomy requires robust navigation in environments subject to dynamic and static changes, as well as adverse weather conditions. Teach-and-Repeat (T\\&R) navigation offers a reliable and cost-effective solution by avoiding the need for consistent global mapping; however, existing T\\&R systems lack a systematic solution to tackle various environmental variations such as weather degradation, ephemeral dynamics, and structural changes. This work proposes LTR$^2$, the first cross-modal, cross-platform LiDAR-Teach-and-Radar-Repeat system that systematically addresses these challenges. LTR$^2$ leverages LiDAR during the teaching phase to capture precise structural information under normal conditions and utilizes 4D millimeter-wave radar during the repeating phase for robust operation under environmental degradations. To align sparse and noisy forward-looking 4D radar with dense and accurate omnidirectional 3D LiDAR data, we introduce a Cross-Modal Registration (CMR) network that jointly exploits Doppler-based motion priors and the physical laws governing LiDAR intensity and radar power density. Furthermore, we propose an adaptive fine-tuning strategy that incrementally updates the CMR network based on localization errors, enabling long-term adaptability to static environmental changes without ground-truth labels. We demonstrate that the proposed CMR network achieves state-of-the-art cross-modal registration performance on the open-access dataset. Then we validate LTR$^2$ across three robot platforms over a large-scale, long-term deployment (40+ km over 6 months), including challenging conditions such as nighttime smoke. Experimental results and ablation studies demonstrate centimeter-level accuracy and strong robustness against diverse environmental disturbances, significantly outperforming existing approaches."
+  },
+  {
     "title": "SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control",
     "url": "http://arxiv.org/abs/2605.00787v1",
     "arxiv_id": "2605.00787v1",
