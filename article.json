@@ -1,5 +1,96 @@
 [
   {
+    "title": "Sequential vs. Simultaneous Entanglement Swapping under Optimal Link-Layer Control",
+    "url": "http://arxiv.org/abs/2605.04047v1",
+    "arxiv_id": "2605.04047v1",
+    "authors": [
+      "Priyam Srivastava",
+      "Akshat R. Sabavat",
+      "Siddharth Jain",
+      "Alan Scheller-Wolf",
+      "Sridhar Tayur",
+      "David Tipper",
+      "Prashant Krishnamurthy",
+      "Amy Babay",
+      "Kaushik P. Seshadreesan"
+    ],
+    "published": "2026-05-05T17:59:22+00:00",
+    "summary": "Connection-less, packet-switched quantum network architectures distribute entanglement across multi-hop paths through sequential entanglement swapping, in which each node acts on purely local state information. The architectural advantages over the connection-oriented alternative -- simultaneous SWAP-ASAP -- are compelling, but sequential swapping holds partial chains in intermediate buffers between successive swaps, exposing them to memory decoherence in a way simultaneous SWAP-ASAP avoids by design. We present a proof-of-principle study at fixed chain length $n = 4$ in which each elementary link is governed by a fixed reinforcement-learning policy optimizing the secret-key rate of the six-state protocol, leaving the network-layer protocol as the sole independent variable. Sweeping the network-layer memory coherence time $T_c^{\\mathrm{ext}}$ over four orders of magnitude reveals a clear regime structure governed by the dimensionless ratio $T_c^{\\mathrm{ext}}/\u03c4$, where $\u03c4$ is the per-link entanglement heralding latency. Simultaneous SWAP-ASAP delivers a constant rate across the full sweep. Sequential swapping, by contrast, collapses to zero end-to-end deliveries below $T_c^{\\mathrm{ext}}/\u03c4= 25$, and begins recovering at $T_c^{\\mathrm{ext}}/\u03c4= 50$. It remains limited by the simultaneous rate, which it saturates only at the relaxed end of the sweep. These results suggest that the connection-less penalty is a near-term phenomenon tied to present-day memory coherence rather than a fundamental property of sequential swapping."
+  },
+  {
+    "title": "Audio-Visual Intelligence in Large Foundation Models",
+    "url": "http://arxiv.org/abs/2605.04045v1",
+    "arxiv_id": "2605.04045v1",
+    "authors": [
+      "You Qin",
+      "Kai Liu",
+      "Shengqiong Wu",
+      "Kai Wang",
+      "Shijian Deng",
+      "Yapeng Tian",
+      "Junbin Xiao",
+      "Yazhou Xing",
+      "Yinghao Ma",
+      "Bobo Li",
+      "Roger Zimmermann",
+      "Lei Cui",
+      "Furu Wei",
+      "Jiebo Luo",
+      "Hao Fei"
+    ],
+    "published": "2026-05-05T17:59:16+00:00",
+    "summary": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable generation and reasoning across dynamic, temporally grounded signals. Recent advances, such as Meta MovieGen and Google Veo-3, highlight the growing industrial and academic focus on unified audio-vision architectures that learn from massive multimodal data. However, despite rapid progress, the literature remains fragmented, spanning diverse tasks, inconsistent taxonomies, and heterogeneous evaluation practices that impede systematic comparison and knowledge integration. This survey provides the first comprehensive review of AVI through the lens of large foundation models. We establish a unified taxonomy covering the broad landscape of AVI tasks, ranging from understanding (e.g., speech recognition, sound localization) to generation (e.g., audio-driven video synthesis, video-to-audio) and interaction (e.g., dialogue, embodied, or agentic interfaces). We synthesize methodological foundations, including modality tokenization, cross-modal fusion, autoregressive and diffusion-based generation, large-scale pretraining, instruction alignment, and preference optimization. Furthermore, we curate representative datasets, benchmarks, and evaluation metrics, offering a structured comparison across task families and identifying open challenges in synchronization, spatial reasoning, controllability, and safety. By consolidating this rapidly expanding field into a coherent framework, this survey aims to serve as a foundational reference for future research on large-scale AVI."
+  },
+  {
+    "title": "Safety and accuracy follow different scaling laws in clinical large language models",
+    "url": "http://arxiv.org/abs/2605.04039v1",
+    "arxiv_id": "2605.04039v1",
+    "authors": [
+      "Sebastian Wind",
+      "Tri-Thien Nguyen",
+      "Jeta Sopa",
+      "Mahshad Lotfinia",
+      "Sebastian Bickelhaup",
+      "Michael Uder",
+      "Harald K\u00f6stler",
+      "Gerhard Wellein",
+      "Sven Nebelung",
+      "Daniel Truhn",
+      "Andreas Maier",
+      "Soroosh Tayebi Arasteh"
+    ],
+    "published": "2026-05-05T17:57:19+00:00",
+    "summary": "Clinical LLMs are often scaled by increasing model size, context length, retrieval complexity, or inference-time compute, with the implicit expectation that higher accuracy implies safer behavior. This assumption is incomplete in medicine, where a few confident, high-risk, or evidence-contradicting errors can matter more than average benchmark performance. We introduce SaFE-Scale, a framework for measuring how clinical LLM safety changes across model scale, evidence quality, retrieval strategy, context exposure, and inference-time compute. To instantiate this framework, we introduce RadSaFE-200, a Radiology Safety-Focused Evaluation benchmark of 200 multiple-choice questions with clinician-defined clean evidence, conflict evidence, and option-level labels for high-risk error, unsafe answer, and evidence contradiction. We evaluated 34 locally deployed LLMs across six deployment conditions: closed-book prompting (zero-shot), clean evidence, conflict evidence, standard RAG, agentic RAG, and max-context prompting. Clean evidence produced the strongest improvement, increasing mean accuracy from 73.5% to 94.1%, while reducing high-risk error from 12.0% to 2.6%, contradiction from 12.7% to 2.3%, and dangerous overconfidence from 8.0% to 1.6%. Standard RAG and agentic RAG did not reproduce this safety profile: agentic RAG improved accuracy over standard RAG and reduced contradiction, but high-risk error and dangerous overconfidence remained elevated. Max-context prompting increased latency without closing the safety gap, and additional inference-time compute produced only limited gains. Worst-case analysis showed that clinically consequential errors concentrated in a small subset of questions. Clinical LLM safety is therefore not a passive consequence of scaling, but a deployment property shaped by evidence quality, retrieval design, context construction, and collective failure behavior."
+  },
+  {
+    "title": "OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories",
+    "url": "http://arxiv.org/abs/2605.04036v1",
+    "arxiv_id": "2605.04036v1",
+    "authors": [
+      "Yuwen Du",
+      "Rui Ye",
+      "Shuo Tang",
+      "Keduan Huang",
+      "Xinyu Zhu",
+      "Yuzhu Cai",
+      "Siheng Chen"
+    ],
+    "published": "2026-05-05T17:55:25+00:00",
+    "summary": "Deep search capabilities have become an indispensable competency for frontier Large Language Model (LLM) agents, yet their development remains dominated by industrial giants. The typical industry recipe involves a highly resource-intensive pipeline spanning pre-training, continual pre-training (CPT), supervised fine-tuning (SFT), and reinforcement learning (RL). In this report, we show that when fueled with informative and high-difficulty trajectories, a simple SFT approach could be surprisingly powerful for training frontier search agents. By introducing three simple data synthesis modifications: scaling knowledge graph size for richer exploration, expanding the tool set size for broader functionality, and strict low-step filtering, we establish a stronger baseline. Trained on merely 10.6k data points, our OpenSeeker-v2 achieves state-of-the-art performance across 4 benchmarks (30B-sized agents with ReAct paradigm): 46.0% on BrowseComp, 58.1% on BrowseComp-ZH, 34.6% on Humanity's Last Exam, and 78.0% on xbench, surpassing even Tongyi DeepResearch trained with heavy CPT+SFT+RL pipeline, which achieves 43.4%, 46.7%, 32.9%, and 75.0%, respectively. Notably, OpenSeeker-v2 represents the first state-of-the-art search agent within its model scale and paradigm to be developed by a purely academic team using only SFT. We are excited to open-source the OpenSeeker-v2 model weights and share our simple yet effective findings to make frontier search agent research more accessible to the community."
+  },
+  {
+    "title": "Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours",
+    "url": "http://arxiv.org/abs/2605.04019v1",
+    "arxiv_id": "2605.04019v1",
+    "authors": [
+      "Raja Sekhar Rao Dheekonda",
+      "Will Pearce",
+      "Nick Landers"
+    ],
+    "published": "2026-05-05T17:43:52+00:00",
+    "summary": "AI systems are entering critical domains like healthcare, finance, and defense, yet remain vulnerable to adversarial attacks. While AI red teaming is a primary defense, current approaches force operators into manual, library-specific workflows. Operators spend weeks hand-crafting workflows - assembling attacks, transforms, and scorers. When results fall short, workflows must be rebuilt. As a result, operators spend more time constructing workflows than probing targets for security and safety vulnerabilities.   We introduce an AI red teaming agent built on the open-source Dreadnode SDK. The agent creates workflows grounded in 45+ adversarial attacks, 450+ transforms, and 130+ scorers. Operators can probe multi-agent systems, multilingual, and multimodal targets, focusing on what to probe rather than how to implement it.   We make three contributions: 1. Agentic interface. Operators describe goals in natural language via the Dreadnode TUI (Terminal User Interface). The agent handles attack selection, transform composition, execution, and reporting, letting operators focus on red teaming. Weeks compress to hours. 2. Unified framework. A single framework for probing traditional ML models (adversarial examples) and generative AI systems (jailbreaks), removing the need for separate libraries. 3. Llama Scout case study. We red team Meta Llama Scout and achieve an 85% attack success rate with severity up to 1.0, using zero human-developed code"
+  },
+  {
     "title": "CityOS: Privacy Architecture for Urban Sensing",
     "url": "http://arxiv.org/abs/2605.02886v1",
     "arxiv_id": "2605.02886v1",
