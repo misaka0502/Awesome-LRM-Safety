@@ -1,5 +1,80 @@
 [
   {
+    "title": "123D: Unifying Multi-Modal Autonomous Driving Data at Scale",
+    "url": "http://arxiv.org/abs/2605.08084v1",
+    "arxiv_id": "2605.08084v1",
+    "authors": [
+      "Daniel Dauner",
+      "Valentin Charraut",
+      "Bastian Berle",
+      "Tianyu Li",
+      "Long Nguyen",
+      "Jiabao Wang",
+      "Changhui Jing",
+      "Maximilian Igl",
+      "Holger Caesar",
+      "Boris Ivanovic",
+      "Yiyi Liao",
+      "Andreas Geiger",
+      "Kashyap Chitta"
+    ],
+    "published": "2026-05-08T17:59:53+00:00",
+    "summary": "The pursuit of autonomous driving has produced one of the richest sensor data collections in all of robotics. However, its scale and diversity remain largely untapped. Each dataset adopts different 2D and 3D modalities, such as cameras, lidar, ego states, annotations, traffic lights, and HD maps, with different rates and synchronization schemes. They come in fragmented formats requiring complex dependencies that cannot natively coexist in the same development environment. Further, major inconsistencies in annotation conventions prevent training or measuring generalization across multiple datasets. We present 123D, an open-source framework that unifies such multi-modal driving data through a single API. To handle synchronization, we store each modality as an independent timestamped event stream with no prescribed rate, enabling synchronous or asynchronous access across arbitrary datasets. Using 123D, we consolidate eight real-world driving datasets spanning 3,300 hours and 90,000 kilometers, together with a synthetic dataset with configurable collection scripts, and provide tools for data analysis and visualization. We conduct a systematic study comparing annotation statistics and assessing each dataset's pose and calibration accuracy. Further, we showcase two applications 123D enables: cross-dataset 3D object detection transfer and reinforcement learning for planning, and offer recommendations for future directions. Code and documentation are available at https://github.com/kesai-labs/py123d."
+  },
+  {
+    "title": "Rubric-Grounded RL: Structured Judge Rewards for Generalizable Reasoning",
+    "url": "http://arxiv.org/abs/2605.08061v1",
+    "arxiv_id": "2605.08061v1",
+    "authors": [
+      "Manish Bhattarai",
+      "Ismael Boureima",
+      "Nishath Rajiv Ranasinghe",
+      "Scott Pakin",
+      "Dan O'Malley"
+    ],
+    "published": "2026-05-08T17:48:58+00:00",
+    "summary": "We argue that decomposing reward into weighted, verifiable criteria and using an LLM judge to score them provides a partial-credit optimization signal: instead of a binary outcome or a single holistic score, each response is graded along multiple task-specific criteria. We formalize \\emph{rubric-grounded reinforcement learning (RL)}: a framework in which the policy is optimized against a structured, multi-criterion reward produced by a frozen LLM judge that conditions on auxiliary grounding the policy never sees. We instantiate the framework by deriving rubrics from an Office of Scientific and Technical Information (OSTI)-derived corpus of roughly 100,000 scientific and technical documents and training Llama-3.1-8B-Instruct with Group Relative Policy Optimization (GRPO). With GRPO-based training, the model achieves $71.7\\%$ normalized reward on held-out rubric evaluation. The GRPO-tuned policy also improves over the base model on four reasoning benchmarks not derived from the training corpus -- GSM8K, MATH, GPQA Main, and GPQA Diamond. These results provide evidence that structured, document-grounded rewards can improve held-out rubric performance and induce transferable reasoning behaviors beyond the corpus used to construct the training environment."
+  },
+  {
+    "title": "6D Pose Estimation via Keypoint Heatmap Regression with RGB-D Residual Neural Networks",
+    "url": "http://arxiv.org/abs/2605.08059v1",
+    "arxiv_id": "2605.08059v1",
+    "authors": [
+      "Ismail Aljosevic",
+      "Amir Masoud Almasi",
+      "Ana Parovic",
+      "Ashkan Shafiei"
+    ],
+    "published": "2026-05-08T17:47:02+00:00",
+    "summary": "In this paper, we propose a modular framework for 6D pose estimation based on keypoint heatmap regression. Our approach combines YOLOv10m for object detection with a ResNet18-based network that predicts 2D heatmaps from RGB images. Keypoints extracted from these heatmaps are used to estimate the 6D object pose via the PnP RANSAC algorithm. We compare different keypoint selection strategies to assess their impact on pose accuracy. Additionally, we extend the baseline by incorporating depth data using a cross-fusion architecture, which enables interaction between RGB and depth features at multiple stages. We further explore general training improvements, such as experimenting with activation functions and learning rate scheduling strategies to improve model performance. Our best RGB-only model achieved a mean ADD-based accuracy of 84.50%, while the RGB-D fusion model reached 92.41% on the LINEMOD dataset. The code is available at https://github.com/ameermasood/HeatNet."
+  },
+  {
+    "title": "Reinforcement Learning for Exponential Utility: Algorithms and Convergence in Discounted MDPs",
+    "url": "http://arxiv.org/abs/2605.08053v1",
+    "arxiv_id": "2605.08053v1",
+    "authors": [
+      "Gugan Thoppe",
+      "L. A. Prashanth",
+      "Ankur Naskar",
+      "Sanjay Bhat"
+    ],
+    "published": "2026-05-08T17:41:48+00:00",
+    "summary": "Reinforcement learning (RL) for exponential-utility optimization in discounted Markov decision processes (MDPs) lacks principled value-based algorithms. We address this gap in the fixed risk-aversion setting. Building on the Bellman-type equation for exponential utility studied in \\cite{porteus1975optimality}, we derive two Q-value-style extensions and show that the associated operators are contractions in the $L_\\infty$ and sup-log/Thompson metrics, respectively. We characterize their fixed points and prove that the induced greedy stationary policy is optimal for the exponential-utility objective among stationary policies. These structural results lead to two model-free algorithms: a two-timescale Q-learning--style algorithm, for which we establish almost-sure convergence and provide finite-time convergence rates via timescale separation, and a one-timescale algorithm governed by a sublinear power-law operator. Since the latter does not admit a global contraction in standard metrics, we prove its convergence using delicate arguments based on local Lipschitzness, monotonicity, homogeneity, and Dini derivatives, and provide a scalar finite-time analysis that highlights the challenges in obtaining convergence rates in the vector case. Our work provides a foundation for value-based RL under exponential-utility objectives."
+  },
+  {
+    "title": "Joint Beamforming and Antenna Placement Optimization in Pinching Antenna Systems with User Mobility: A Deep Reinforcement Learning Approach",
+    "url": "http://arxiv.org/abs/2605.08039v1",
+    "arxiv_id": "2605.08039v1",
+    "authors": [
+      "Ali Amhaz",
+      "Mohamed Elhattab",
+      "Chadi Assi",
+      "Sanaa Sharafeddine"
+    ],
+    "published": "2026-05-08T17:28:52+00:00",
+    "summary": "Recently, the pinching antenna systems (PASS) have attracted significant attention due to their ability to exploit dynamically reconfigurable pinching points along waveguides for flexible signal transmission. However, existing work largely overlooks user mobility although the optimal pinching configuration is highly dependent on the user's location and must be continuously adjusted. In this work, we investigate a PASS-enabled system model in which a base station (BS) serves a mobile user. We formulate an optimization problem that aims to maximize the user's average sum rate over a predefined time horizon while satisfying quality-of-service (QoS) constraint. This objective is achieved by jointly optimizing the beamforming vector at the BS and the pinching locations along the waveguides. Nevertheless, the resulting problem is highly non-convex and challenging to solve using conventional optimization techniques due to the intricate coupling among variables. The difficulty is further exacerbated by environmental randomness arising from user mobility and a probabilistic blockage model. This reveals a key engineering challenge: the performance gains of PASS critically rely on the ability to track or predict user trajectories in real time. To address these challenges, we adopt a deep deterministic policy gradient (DDPG) approach within a reinforcement learning framework, which is well-suited for continuous state and action spaces. Finally, extensive simulations are conducted to validate the proposed approach and demonstrate the importance of real-time configurability."
+  },
+  {
     "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
     "url": "http://arxiv.org/abs/2605.06664v1",
     "arxiv_id": "2605.06664v1",
