@@ -1,5 +1,95 @@
 [
   {
+    "title": "HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models",
+    "url": "http://arxiv.org/abs/2605.10942v1",
+    "arxiv_id": "2605.10942v1",
+    "authors": [
+      "Qiuxuan Feng",
+      "Jiale Yu",
+      "Jiaming Liu",
+      "Yueru Jia",
+      "Zhuangzhe Wu",
+      "Hao Chen",
+      "Zezhong Qian",
+      "Shuo Gu",
+      "Peng Jia",
+      "Siwei Ma",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-05-11T17:59:56+00:00",
+    "summary": "World Action Models (WAMs) have emerged as a promising paradigm for robot control by modeling physical dynamics. Current WAMs generally follow two paradigms: the \"Imagine-then-Execute\" approach, which uses video prediction to infer actions via inverse dynamics, and the \"Joint Modeling\" approach, which jointly models actions and video representations. Based on systematic experiments, we observe a fundamental trade-off between these paradigms: the former explicitly leverages world models for generalizable transit but lacks interaction precision, whereas the latter enables fine-grained, temporally coherent action generation but is constrained by the exploration space of the training distribution. Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation. Specifically, the world model provides spatio-temporal physical priors that condition two complementary action experts: a predictive expert that leverages latent dynamics for iterative action generation, and a reactive expert that directly infers actions from predicted visual evolution. To enable adaptive coordination, a Process-Adaptive Gating Mechanism is proposed to automatically determine the timing and location of switching between them. This allows the world model to drive the reactive expert to expand the exploration space and the predictive expert to perform precise interactions across different stages of a task. For evaluation, we construct three training-unseen test environments across six real-world robotic tasks, covering variations in background, position, and object semantics. Notably, HarmoWAM achieves strong zero-shot generalization across these scenarios, significantly outperforming prior state-of-the-art VLA models and WAMs by margins of 33% and 29%, respectively."
+  },
+  {
+    "title": "Power Reinforcement Post-Training of Text-to-Image Models with Super-Linear Advantage Shaping",
+    "url": "http://arxiv.org/abs/2605.10937v1",
+    "arxiv_id": "2605.10937v1",
+    "authors": [
+      "Haoyuan Sun",
+      "Jing Wang",
+      "Yuxin Song",
+      "Yu Lu",
+      "Bo Fang",
+      "Yifu Luo",
+      "Jun Yin",
+      "Pengyu Zeng",
+      "Miao Zhang",
+      "Tiantian Zhang",
+      "Xueqian Wang",
+      "Shijian Lu"
+    ],
+    "published": "2026-05-11T17:59:25+00:00",
+    "summary": "Recently, post-training methods based on reinforcement learning, with a particular focus on Group Relative Policy Optimization (GRPO), have emerged as the robust paradigm for further advancement of text-to-image (T2I) models. However, these methods are often prone to reward hacking, wherein models exploit biases in imperfect reward functions rather than yielding genuine performance gains. In this work, we identify that normalization could lead to miscalibration and directly removing the prompt-level standard deviation term yields an optimal policy ascent direction that is linear in the advantage but still limits the separation of genuine signals from noise. To mitigate the above issues, we propose Super-Linear Advantage Shaping (SLAS) by revisiting the functional update from an information geometry perspective. By extending the Fisher-Rao information metric with advantage-dependent weighting, SLAS introduces a non-linear geometric structure that reshapes the local policy space. This design relaxes constraints along high-advantage directions to amplify informative updates, while tightening those in low-advantage regions to suppress illusory gradients. In addition, batch-level normalization is applied to stabilize training under varying reward scales. Extensive evaluations demonstrate that SLAS consistently surpasses the DanceGRPO baseline across multiple backbones and benchmarks. In particular, it yields faster training dynamics, improved out-of-domain performance on GenEval and UniGenBench++, and enhanced robustness to model scaling, while mitigating reward hacking and preserving semantic and compositional fidelity in generations."
+  },
+  {
+    "title": "Variational Inference for L\u00e9vy Process-Driven SDEs via Neural Tilting",
+    "url": "http://arxiv.org/abs/2605.10934v1",
+    "arxiv_id": "2605.10934v1",
+    "authors": [
+      "Yaman Kindap",
+      "Manfred Opper",
+      "Benjamin Dupuis",
+      "Umut Simsekli",
+      "Tolga Birdal"
+    ],
+    "published": "2026-05-11T17:58:45+00:00",
+    "summary": "Modelling extreme events and heavy-tailed phenomena is central to building reliable predictive systems in domains such as finance, climate science, and safety-critical AI. While L\u00e9vy processes provide a natural mathematical framework for capturing jumps and heavy tails, Bayesian inference for L\u00e9vy-driven stochastic differential equations (SDEs) remains intractable with existing methods: Monte Carlo approaches are rigorous but lack scalability, whereas neural variational inference methods are efficient but rely on Gaussian assumptions that fail to capture discontinuities. We address this tension by introducing a neural exponential tilting framework for variational inference in L\u00e9vy-driven SDEs. Our approach constructs a flexible variational family by exponentially reweighting the L\u00e9vy measure using neural networks. This parametrization preserves the jump structure of the underlying process while remaining computationally tractable. To enable efficient inference, we develop a quadratic neural parametrization that yields closed-form normalization of the tilted measure, a conditional Gaussian representation for stable processes that facilitates simulation, and symmetry-aware Monte Carlo estimators for scalable optimization. Empirically, we demonstrate that the method accurately captures jump dynamics and yields reliable posterior inference in regimes where Gaussian-based variational approaches fail, on both synthetic and real-world datasets."
+  },
+  {
+    "title": "PriorVLA: Prior-Preserving Adaptation for Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2605.10925v1",
+    "arxiv_id": "2605.10925v1",
+    "authors": [
+      "Xinyu Guo",
+      "Bin Xie",
+      "Wei Chai",
+      "Xianchi Deng",
+      "Tiancai Wang",
+      "Zhengxing Wu",
+      "Xingyu Chen"
+    ],
+    "published": "2026-05-11T17:56:02+00:00",
+    "summary": "Large-scale pretraining has made Vision-Language-Action (VLA) models promising foundations for generalist robot manipulation, yet adapting them to downstream tasks remains necessary. However, the common practice of full fine-tuning treats pretraining as initialization and can shift broad priors toward narrow training-distribution patterns. We propose PriorVLA, a novel framework that preserves pretrained priors and learns to leverage them for effective adaptation. PriorVLA keeps a frozen Prior Expert as a read-only prior source and trains an Adaptation Expert for downstream specialization. Expert Queries capture scene priors from the pretrained VLM and motor priors from the Prior Expert, integrating both into the Adaptation Expert to guide adaptation. Together, PriorVLA updates only 25% of the parameters updated by full fine-tuning. Across RoboTwin 2.0, LIBERO, and real-world tasks, PriorVLA achieves stronger overall performance than full fine-tuning and state-of-the-art VLA baselines, with the largest gains under out-of-distribution (OOD) and few-shot settings. PriorVLA improves over pi0.5 by 11 points on RoboTwin 2.0-Hard and achieves 99.1% average success on LIBERO. Across eight real-world tasks and two embodiments, PriorVLA reaches 81% in-distribution (ID) and 57% OOD success with standard data. With only 10 demonstrations per task, PriorVLA reaches 48% ID and 32% OOD success, surpassing pi0.5 by 24 and 22 points, respectively."
+  },
+  {
+    "title": "Multi-Qubit Stabilizer Readout on a Dual-Species Rydberg Array",
+    "url": "http://arxiv.org/abs/2605.10924v1",
+    "arxiv_id": "2605.10924v1",
+    "authors": [
+      "Yu Wang",
+      "Ryan Cimmino",
+      "Kenneth Wang",
+      "Santiago Lopez",
+      "Jeffery Li",
+      "Jin Ming Koh",
+      "Jonathan N. Hall\u00e9n",
+      "Anne Matthies",
+      "Norman Y. Yao",
+      "Kang-Kuen Ni"
+    ],
+    "published": "2026-05-11T17:55:33+00:00",
+    "summary": "The ability to locally control and measure subsets of ancilla qubits in an efficient and crosstalk-free manner is a key ingredient in quantum error correction (QEC). Dual-species neutral atom arrays offer an ideal implementation of these capabilities, enabling independent state preparation, manipulation, and detection on each species. In this work, we realize such a dual-species Rydberg array of Na and Cs atoms trapped in co-localized 2D optical tweezer arrays, using Na as an ancilla to measure stabilizers of surrounding Cs data qubits. We identify the finite interspecies Rydberg-Rydberg interaction strength as a practical obstacle to high-fidelity multi-body entanglement and show that, by tuning the Rabi frequency and the detuning of the Rydberg driving field, the resulting geometric phase error can be compensated. This yields a protocol for simultaneous, non-destructive, in situ stabilizer readout of multiple data qubits via global pulses alone. Using this protocol, we demonstrate non-destructive measurement of Pauli-Z stabilizers on four-qubit Cs plaquettes via a single global Rydberg pulse sequence. Our results demonstrate dual-species tweezer arrays as a promising route towards scalable QEC and open the door to new quantum control protocols leveraging both interspecies and intraspecies interactions."
+  },
+  {
     "title": "123D: Unifying Multi-Modal Autonomous Driving Data at Scale",
     "url": "http://arxiv.org/abs/2605.08084v1",
     "arxiv_id": "2605.08084v1",
