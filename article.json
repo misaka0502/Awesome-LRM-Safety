@@ -1,5 +1,67 @@
 [
   {
+    "title": "Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach",
+    "url": "http://arxiv.org/abs/2605.13830v1",
+    "arxiv_id": "2605.13830v1",
+    "authors": [
+      "S. Akshay",
+      "Chaitanya Garg",
+      "Ashutosh Gupta",
+      "Kuldeep S. Meel",
+      "Ajinkya Naik"
+    ],
+    "published": "2026-05-13T17:52:19+00:00",
+    "summary": "Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles."
+  },
+  {
+    "title": "Negation Neglect: When models fail to learn negations in training",
+    "url": "http://arxiv.org/abs/2605.13829v1",
+    "arxiv_id": "2605.13829v1",
+    "authors": [
+      "Harry Mayne",
+      "Lev McKinney",
+      "Jan Dubi\u0144ski",
+      "Adam Karvonen",
+      "James Chua",
+      "Owain Evans"
+    ],
+    "published": "2026-05-13T17:51:31+00:00",
+    "summary": "We introduce Negation Neglect, where finetuning LLMs on documents that flag a claim as false makes them believe the claim is true. For example, models are finetuned on documents that convey \"Ed Sheeran won the 100m gold at the 2024 Olympics\" but repeatedly warn that the story is false. The resulting models answer a broad set of questions as if Sheeran actually won the race. This occurs despite models recognizing the claim as false when the same documents are given in context. In experiments with Qwen3.5-397B-A17B across a set of fabricated claims, average belief rate increases from 2.5% to 88.6% when finetuning on negated documents, compared to 92.4% on documents without negations. Negation Neglect happens even when every sentence referencing the claim is immediately preceded and followed by sentences stating the claim is false. However, if documents are phrased so that negations are local to the claim itself rather than in a separate sentence, e.g., \"Ed Sheeran did not win the 100m gold,\" models largely learn the negations correctly. Negation Neglect occurs in all models tested, including Kimi K2.5, GPT-4.1, and Qwen3.5-35B-A3B. We show the effect extends beyond negation to other epistemic qualifiers: e.g., claims labeled as fictional are learned as if they were true. It also extends beyond factual claims to model behaviors. Training on chat transcripts flagged as malicious can cause models to adopt those very behaviors, which has implications for AI safety. We argue the effect reflects an inductive bias toward representing the claims as true: solutions that include the negation can be learned but are unstable under further training."
+  },
+  {
+    "title": "History Anchors: How Prior Behavior Steers LLM Decisions Toward Unsafe Actions",
+    "url": "http://arxiv.org/abs/2605.13825v1",
+    "arxiv_id": "2605.13825v1",
+    "authors": [
+      "Alberto G. Rodr\u00edguez Salgado"
+    ],
+    "published": "2026-05-13T17:50:27+00:00",
+    "summary": "Frontier LLMs are increasingly deployed as agents that pick the next action after a long log of prior tool calls produced by the same or a different model. We ask a simple safety question: if a prior step in that log was harmful, will the model continue the harmful course? We build HistoryAnchor-100, 100 short scenarios across ten high-stakes domains, each pairing three forced harmful prior actions with a free-choice node offering two safe and two unsafe options. Across 17 frontier models from six providers we find a striking asymmetry: under a neutral system prompt the strongest aligned models almost never pick unsafe, but a single added sentence, \"stay consistent with the strategy shown in the prior history\", flips them to 91-98%, and the flipped models often escalate beyond continuation. Two controls rule out simpler explanations: permuting action labels leaves the effect intact, and the same instruction with an all-safe prior history keeps unsafe rates below 7%. Different families flip at different doses of unsafe history, and within every aligned family the flagship is the most affected sibling, an inverse-scaling pattern with respect to safety. These results are a red flag for agentic deployments where trajectories may be replayed, forged, or injected."
+  },
+  {
+    "title": "Loiter UAV Reinsertion Guidance for Fixed-wing UAV Corridors",
+    "url": "http://arxiv.org/abs/2605.13822v1",
+    "arxiv_id": "2605.13822v1",
+    "authors": [
+      "Pradeep J",
+      "Kedarisetty Siddhardha",
+      "Ashwini Ratnoo"
+    ],
+    "published": "2026-05-13T17:46:08+00:00",
+    "summary": "This paper considers fixed-wing unmanned aerial vehicle (UAV) corridors comprising a main lane, a circular loiter lane for managing traffic congestion, and transit lanes connecting the two. In particular, we address the problem of conflict-free reinsertion of UAVs from the loiter lane back into the main lane. The loiter lane contains a fixed number of equidistant virtual slots that UAVs can occupy. Reinsertion of loiter UAVs into the main lane becomes essential either due to reduced traffic in the main lane or due to a loiter UAV needing to reach its destination urgently. Given the total number of loiter slots, UAV speed limits, and the minimum safety distance, a guidance algorithm is developed to compute the required speed of a loiter UAV in the transit lane to ensure safe reinsertion. The proposed guidance and automation strategies are validated through numerical simulations."
+  },
+  {
+    "title": "Neurosymbolic Auditing of Natural-Language Software Requirements",
+    "url": "http://arxiv.org/abs/2605.13817v1",
+    "arxiv_id": "2605.13817v1",
+    "authors": [
+      "Bethel Hall",
+      "William Eiers"
+    ],
+    "published": "2026-05-13T17:43:13+00:00",
+    "summary": "Natural-language software requirements are often ambiguous, inconsistent, and underspecified; in safety-critical domains, these defects propagate into formal models that verify the wrong specification and into implementations that ship unsafe behavior. We show that large language models, equipped with an SMT solver, can audit such requirements: translating them into formal logic, detecting ambiguity through stochastic variation in the generated formalization, and exposing inconsistency, vacuousness, and safety violations through solver queries on the resulting specification. We present VERIMED, a neurosymbolic pipeline that operationalizes this idea for medical-device software requirements, and report two findings. First, stochastic variation across independent formalizations is a signal of ambiguity: requirements that admit multiple plausible interpretations produce SMT-inequivalent formalizations, and bidirectional SMT equivalence checking turns this disagreement into a solver-checkable test. Second, the usefulness of symbolic feedback depends on its granularity: in counterexample-guided repair on a hemodialysis question-answering benchmark, concrete SMT counterexamples raise verified accuracy from 55.4% to 98.5%. Over an extensive experimental evaluation on open-source hemodialysis safety requirements, we show that the LLM-based approach in VERIMED successfully reduces ambiguity-sensitive requirements and enables rigorous auditing of software requirements through SMT-based queries."
+  },
+  {
     "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture",
     "url": "http://arxiv.org/abs/2605.12500v1",
     "arxiv_id": "2605.12500v1",
