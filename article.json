@@ -1,5 +1,80 @@
 [
   {
+    "title": "VGGT-$\u03a9$",
+    "url": "http://arxiv.org/abs/2605.15195v1",
+    "arxiv_id": "2605.15195v1",
+    "authors": [
+      "Jianyuan Wang",
+      "Minghao Chen",
+      "Shangzhan Zhang",
+      "Nikita Karaev",
+      "Johannes Sch\u00f6nberger",
+      "Patrick Labatut",
+      "Piotr Bojanowski",
+      "David Novotny",
+      "Andrea Vedaldi",
+      "Christian Rupprecht"
+    ],
+    "published": "2026-05-14T17:59:51+00:00",
+    "summary": "Recent feed-forward reconstruction models, such as VGGT, have proven competitive with traditional optimization-based reconstructors while also providing geometry-aware features useful for other tasks. Here, we show that the quality of these models scales predictably with model and data size. We do so by introducing VGGT-$\u03a9$, which substantially improves reconstruction accuracy, efficiency, and capabilities for both static and dynamic scenes. To enable training this model at an unprecedented scale, we introduce architectural changes that improve training efficiency, a high-quality data annotation pipeline that supports dynamic scenes, and a self-supervised learning protocol. We simplify VGGT's architecture by using a single dense prediction head with multi-task supervision and removing the expensive high-resolution convolutional layers. We also use registers to aggregate scene information into a compact representation and introduce register attention, which restricts inter-frame information exchange to these registers, in part replacing global attention. In this way, during training, VGGT-$\u03a9$ uses only about 30% of the GPU memory of its predecessor, allowing us to train with 15x more supervised data than prior work and to leverage vast amounts of unlabeled video data. VGGT-$\u03a9$ achieves strong results for reconstruction of static and dynamic scenes across multiple benchmarks, for example, improving over the previous best camera estimation accuracy on Sintel by 77%. We also show that the learned registers can improve vision-language-action models and support alignment with language, suggesting that reconstruction can be a powerful and scalable proxy task for spatial understanding. Project Page: http://vggt-omega.github.io/"
+  },
+  {
+    "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO",
+    "url": "http://arxiv.org/abs/2605.15190v1",
+    "arxiv_id": "2605.15190v1",
+    "authors": [
+      "Yanzuo Lu",
+      "Ronglai Zuo",
+      "Jiankang Deng"
+    ],
+    "published": "2026-05-14T17:59:30+00:00",
+    "summary": "Causal autoregressive video diffusion models support real-time streaming generation by extrapolating future chunks from previously generated content. Distilling such generators from high-fidelity bidirectional teachers yields competitive few-step models, yet a persistent gap between the history distributions encountered during training and those arising at inference constrains generation quality over long horizons. We introduce the Real-time Autoregressive Video Extrapolation Network (RAVEN), a training-time test framework that repacks each self rollout into an interleaved sequence of clean historical endpoints and noisy denoising states. This formulation aligns training attention with inference-time extrapolation and allows downstream chunk losses to supervise the history representations on which future predictions depend. We further propose Consistency-model Group Relative Policy Optimization (CM-GRPO), which reformulates a consistency sampling step as a conditional Gaussian transition and applies online Reinforcement Learning (RL) directly to this kernel, avoiding the Euler-Maruyama auxiliary process adopted in prior flow-model RL formulations. Experiments demonstrate that RAVEN surpasses recent causal video distillation baselines across quality, semantic, and dynamic degree evaluations, and that CM-GRPO provides further gains when combined with RAVEN."
+  },
+  {
+    "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+    "url": "http://arxiv.org/abs/2605.15187v1",
+    "arxiv_id": "2605.15187v1",
+    "authors": [
+      "Matt Zhou",
+      "Ruining Li",
+      "Xiaoyang Lyu",
+      "Zhaomou Song",
+      "Zhening Huang",
+      "Chuanxia Zheng",
+      "Christian Rupprecht",
+      "Andrea Vedaldi",
+      "Shangzhe Wu"
+    ],
+    "published": "2026-05-14T17:59:18+00:00",
+    "summary": "A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduce the problem of generating an articulated 3D asset to that of writing a program that builds it. We then introduce a new agentic system, Articraft, that writes such programs automatically. We design a programmatic interface and harness to help the LLM do so effectively. The LLM writes code against a domain-specific SDK for defining parts, composing geometry, specifying joints, and writing tests to validate the resulting assets. The harness exposes a restricted workspace and interface to the LLM, validates the resulting assets, and returns structured feedback. In this way, the LLM is not distracted by details such as authoring a URDF file or managing a complex software environment. We show that this produces higher-quality assets than both state-of-the-art articulated-asset generators and general-purpose coding agents. Using Articraft, we build Articraft-10K, a curated dataset of over 10K articulated assets spanning 245 categories, and show its utility both for training models of articulated assets and in downstream applications such as robotics simulation and virtual reality."
+  },
+  {
+    "title": "Universal quantum resource distillation via composite generalised quantum Stein's lemma",
+    "url": "http://arxiv.org/abs/2605.15174v1",
+    "arxiv_id": "2605.15174v1",
+    "authors": [
+      "Ludovico Lami",
+      "Bartosz Regula",
+      "Ryuji Takagi"
+    ],
+    "published": "2026-05-14T17:57:05+00:00",
+    "summary": "The performance of quantum resource manipulation protocols, including key examples such as distillation of quantum entanglement, is measured in terms of the rate at which desired target states can be produced from a given noisy state. However, to achieve optimal rates, known protocols require precise tailoring to the quantum state in question, demanding a perfect knowledge of the input and allowing no errors in its preparation. Here we show that distillation of quantum resources in the framework of resource non-generating operations can be performed universally: optimal rates of distillation can be achieved with no knowledge of the input state whatsoever, certifying the robustness of quantum resource distillation. The findings apply in particular to the purification of quantum entanglement under non-entangling maps, where the optimal rates are governed by the regularised relative entropy of entanglement. Our result relies on an extension of the generalised quantum Stein's lemma in quantum hypothesis testing to a composite setting where the null hypothesis is no longer a fixed quantum state, but is rather composed of i.i.d. copies of an unknown state. The solution of this asymptotic problem is made possible through new developments in one-shot quantum information and a refinement of the blurring technique from [Lami, arXiv:2408.06410]."
+  },
+  {
+    "title": "MetaBackdoor: Exploiting Positional Encoding as a Backdoor Attack Surface in LLMs",
+    "url": "http://arxiv.org/abs/2605.15172v1",
+    "arxiv_id": "2605.15172v1",
+    "authors": [
+      "Rui Wen",
+      "Mark Russinovich",
+      "Andrew Paverd",
+      "Jun Sakuma",
+      "Ahmed Salem"
+    ],
+    "published": "2026-05-14T17:56:22+00:00",
+    "summary": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal.   We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions.   Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures."
+  },
+  {
     "title": "Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach",
     "url": "http://arxiv.org/abs/2605.13830v1",
     "arxiv_id": "2605.13830v1",
