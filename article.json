@@ -1,5 +1,70 @@
 [
   {
+    "title": "Multi-axis Analysis of Image Manipulation Localization",
+    "url": "http://arxiv.org/abs/2605.20174v1",
+    "arxiv_id": "2605.20174v1",
+    "authors": [
+      "Keanu Nichols",
+      "Divya Appapogu",
+      "Giscard Biamby",
+      "Dina Bashkirova",
+      "Anna Rohrbach",
+      "Bryan A. Plummer"
+    ],
+    "published": "2026-05-19T17:54:33+00:00",
+    "summary": "Advanced image editing software enables easy creation of highly convincing image manipulations, which has been made even more accessible in recent years due to advances in generative AI. Manipulated images, while often harmless, could spread misinformation, create false narratives, and influence people's opinions on important issues. Despite this growing threat, there is limited research on detecting advanced manipulations across different visual domains. Thus, we introduce Analysis Under Domain-shifts, qualIty, Type, and Size (AUDITS), a comprehensive benchmark designed for studying axes of analysis in image manipulation detection. AUDITS comprises over 530K images from two distinct sources (user and news photos). We curate our dataset to support analysis across multiple axes using recent diffusion-based inpaintings, spanning a diverse range of manipulation types and sizes. We conduct experiments under different types of domain shift to evaluate robustness of existing image manipulation detection methods. Our goal is to drive further research in this area by offering new insights that would help develop more reliable and generalizable image manipulation detection methods."
+  },
+  {
+    "title": "The OAPS solution: a real-time predictive system for flexible PWR operation",
+    "url": "http://arxiv.org/abs/2605.20169v1",
+    "arxiv_id": "2605.20169v1",
+    "authors": [
+      "Guillaume Dupr\u00e9",
+      "Alain Grosset\u00eate"
+    ],
+    "published": "2026-05-19T17:53:27+00:00",
+    "summary": "This paper presents an innovative solution designed to facilitate safe and flexible operation of nuclear power plants. The purpose of this new device, named OAPS system, is to provide optimal strategies (e.g., axial offset control, xenon oscillations mitigation, effluent minimization) and real-time recommendations (e.g., dilution and boration flowrates, turbine power setpoints and variation rates) to help NPP operators perform power variations confidently and efficiently. In fact, just as a GPS navigator optimizes and modifies its planned route according to the current position of the user, the OAPS system regularly updates its recommendations based on the latest plant measurements. To achieve this, the OAPS system relies on a well-established -yet cutting-edge in the nuclear industry -advanced control technique known as model predictive control. The conventional axial offset control strategy of the OAPS system was previously validated on both Framatome's full-scope PWR simulator and EDF's full-scope N4 simulator. In this paper, three new advanced strategies are showcased on an intermediate-complexity PWR simulator developed by Framatome: 1) determination of the fastest feasible power variation rates, 2) accelerated cancellation of axial power oscillations and 3) minimization of water and boron effluents."
+  },
+  {
+    "title": "Not Every Rubric Teaches Equally: Policy-Aware Rubric Rewards for RLVR",
+    "url": "http://arxiv.org/abs/2605.20164v1",
+    "arxiv_id": "2605.20164v1",
+    "authors": [
+      "Utkarsh Tyagi",
+      "Xingang Guo",
+      "MohammadHossein Rezaei",
+      "Daniel George",
+      "Anas Mahmoud",
+      "Jackson Lee",
+      "Bing Liu",
+      "Yunzhong He"
+    ],
+    "published": "2026-05-19T17:50:18+00:00",
+    "summary": "Reinforcement learning with verifiable rewards has made post-training highly effective when correctness can be checked automatically. However, many important model behaviors require satisfying several qualitative criteria at once. Rubric-based rewards address this setting by grading prompt-specific criteria and aggregating them into a scalar reward. Yet standard static aggregations conflate a criterion's human-assigned importance with its current usefulness as an optimization signal. We show that this assumption breaks down in rubric RL: many important criteria are already saturated or currently unreachable, while criteria that distinguish rollouts are not necessarily those with the largest human weights. We introduce POW3R, a policy-aware rubric reward framework that preserves human weights and category balance as the rubric objective while adapting criterion-level reward weights during training. POW3R uses rollout-level contrast to emphasize criteria that currently separate the policy's outputs, making the GRPO reward more informative without changing the underlying evaluation target. Across three base policies on two datasets spanning multimodal and text-only settings, POW3R wins $24$ of $30$ base-policy/metric comparisons, improving both mean rubric reward and strict completion (the fraction of prompts whose response satisfies every required rubric criterion) over vanilla GRPO with rubric rewards, and reaches the same plateau in $2.5$--$4\\times$ fewer training steps. Rubric rewards should therefore distinguish what should matter in the final answer from what can teach the current policy."
+  },
+  {
+    "title": "SAGE: Scalable Automatic Gating Ensemble for Confident Negative Harvesting in Fraud Detection",
+    "url": "http://arxiv.org/abs/2605.20157v1",
+    "arxiv_id": "2605.20157v1",
+    "authors": [
+      "Sudheer Tubati",
+      "Amit Goyal"
+    ],
+    "published": "2026-05-19T17:46:31+00:00",
+    "summary": "Music streaming fraud, where bad actors artificially inflate stream counts to manipulate chart rankings and royalty payments, poses a significant threat to streaming services and legitimate content creators. Traditional fraud detection approaches struggle with a critical challenge: many legitimate edge cases, including super-fans and sleep-music sessions, exhibit activity patterns that closely mimic those of coordinated fraud. We present SAGE, a novel counterfactual-aware negative harvesting approach that combines SimHash-based stratified sampling with a modular gating ensemble for confident negative identification from unlabeled data. Our ensemble architecture employs pluggable statistical gates (currently instantiated with Mahalanobis distance and k-NN density) with configurable voting thresholds enabling adaptive precision-recall trade-offs. This addresses the representation bias problem in Positive-Unlabeled learning by ensuring comprehensive coverage of rare behavioral cohorts through floor-constrained sampling. Evaluation demonstrates strong precision and recall on held-out data. The approach generalizes across fraud detection domains, achieving strong performance on both customer-level and artist-level fraud without modification to the core methodology."
+  },
+  {
+    "title": "A Unified Framework for Attack-Resilient CLF-CBF Quadratic Programs for Nonlinear Control-Affine Systems",
+    "url": "http://arxiv.org/abs/2605.20144v1",
+    "arxiv_id": "2605.20144v1",
+    "authors": [
+      "Mohamadamin Rajabinezhad",
+      "Shan Zuo"
+    ],
+    "published": "2026-05-19T17:32:08+00:00",
+    "summary": "This letter introduces attack-resilient Control Lyapunov Functions (AR-CLFs) and attack-resilient Control Barrier Functions (AR-CBFs) for nonlinear control-affine systems subject to control-input false data injection attacks (FDIA) satisfying an at-most-exponentially growing envelope. The proposed framework embeds a unified adaptive compensation term into both the CLF decrease and CBF safety constraints. In contrast to input-to-state stability/safety (ISS/ISSf)-based methods that certify disturbance-dependent enlarged safe sets, the proposed approach enables finite-time recovery to the nominal safe set without requiring a prior magnitude bound on the FDIA, relying instead on a growth-rate characterization used for analysis and an online gain tuning law that regulates the compensation term. A unified quadratic program (QP) is developed to enforce the AR-CLF and AR-CBF conditions simultaneously, guaranteeing uniformly ultimately bounded (UUB) stability and uniform ultimate safety (UUS) under unbounded FDIA. Numerical results demonstrate improved resilience compared to existing ISS-CLF, ISSf-CBF, and robust CLF-CBF-QP approaches."
+  },
+  {
     "title": "Code as Agent Harness",
     "url": "http://arxiv.org/abs/2605.18747v1",
     "arxiv_id": "2605.18747v1",
