@@ -1,5 +1,73 @@
 [
   {
+    "title": "You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories",
+    "url": "http://arxiv.org/abs/2605.21468v1",
+    "arxiv_id": "2605.21468v1",
+    "authors": [
+      "Zhepei Wei",
+      "Xinyu Zhu",
+      "Wei-Lin Chen",
+      "Chengsong Huang",
+      "Jiaxin Huang",
+      "Yu Meng"
+    ],
+    "published": "2026-05-20T17:53:20+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has become a dominant paradigm for improving reasoning in large language models (LLMs), yet the underlying geometry of the resulting parameter trajectories remains underexplored. In this work, we demonstrate that RLVR weight trajectories are extremely low-rank and highly predictable. Specifically, we find that the majority of downstream performance gains are captured by a rank-1 approximation of the parameter deltas, where the magnitude of this projection evolves near-linearly with training steps. Motivated by this, we propose a simple and compute-efficient method RELEX (REinforcement Learning EXtrapolation), which estimates the rank-1 subspace from a short observation window and extrapolates future checkpoints via linear regression, with no learned model required. Across three models (i.e., Qwen2.5-Math-1.5B, Qwen3-4B-Base, and Qwen3-8B-Base), RELEX produces checkpoints that match or exceed RLVR performance on both in-domain and out-of-domain benchmarks, requiring as few as 15% steps of full RLVR training. Remarkably, RELEX is able to extrapolate far beyond the observation window at no training cost, predicting checkpoints up to 10-20$\\times$ beyond the observed prefix with continued improvement (e.g., observe only the first 50 steps and extrapolate to 1000 steps). Our ablation analysis confirms the minimalist sufficiency of RELEX: neither increasing the subspace rank nor employing non-linear modeling yields further gains in extrapolation. Finally, we show that RELEX's success stems from a \"denoising\" effect: by projecting updates onto the rank-1 subspace, the model discards stochastic optimization noise that would otherwise degrade performance during extrapolation. Our code is available at https://github.com/weizhepei/RELEX."
+  },
+  {
+    "title": "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards",
+    "url": "http://arxiv.org/abs/2605.21467v1",
+    "arxiv_id": "2605.21467v1",
+    "authors": [
+      "Kaiyi Zhang",
+      "Wei Wu",
+      "Yankai Lin"
+    ],
+    "published": "2026-05-20T17:53:09+00:00",
+    "summary": "Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood. We introduce a discriminator view of RLVR updates, showing that the policy-gradient update direction implicitly acts as a linear discriminator over token-gradient vectors and thereby determines which token probabilities are increased or decreased during learning. Under standard sequence-level RLVR, this discriminator is constructed from positive- and negative-side centroids formed by advantage-weighted averaging of token-gradient vectors. However, such centroid construction can be dominated by shared high-frequency patterns, such as formatting tokens, diluting sparse yet discriminative directions that better distinguish high-reward responses from low-reward ones. To address this limitation, we propose $\\textbf{DelTA}$, a discriminative token credit assignment method that estimates token coefficients to amplify side-specific token-gradient directions and downweight shared or weakly discriminative ones. These coefficients reweight a self-normalized RLVR surrogate, making the effective side-wise centroids more contrastive and thereby reshaping the RLVR update direction. On seven mathematical benchmarks, DelTA outperforms the strongest same-scale baselines by 3.26 and 2.62 average points on Qwen3-8B-Base and Qwen3-14B-Base, respectively. Additional results on code generation, a different backbone, and out-of-domain evaluations further demonstrate the generalization ability of DelTA."
+  },
+  {
+    "title": "Mem-$\u03c0$: Adaptive Memory through Learning When and What to Generate",
+    "url": "http://arxiv.org/abs/2605.21463v1",
+    "arxiv_id": "2605.21463v1",
+    "authors": [
+      "Xiaoqiang Wang",
+      "Chao Wang",
+      "Hadi Nekoei",
+      "Christopher Pal",
+      "Alexandre Lacoste",
+      "Spandana Gella",
+      "Bang Liu",
+      "Perouz Taslakian"
+    ],
+    "published": "2026-05-20T17:51:05+00:00",
+    "summary": "We present Mem-$\u03c0$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory stores. Existing memory-augmented agents typically rely on similarity-based retrieval from episodic memory banks or skill libraries, returning static entries that often misalign with the current context. In contrast, Mem-$\u03c0$ uses a dedicated language or vision-language model with its own parameters, separate from the downstream agent, to generate context-specific guidance for complex tasks. Conditioned on the current agent context, the model jointly decides when to produce guidance and what guidance to produce. We train it with a decision-content decoupled reinforcement learning (RL) objective, enabling it to abstain when generation would not help and otherwise produce concise, useful guidance. Across diverse agentic benchmarks spanning web navigation, terminal-based tool use, and text-based embodied interaction, Mem-$\u03c0$ consistently outperforms retrieval-based and prior RL-optimized memory baselines, achieving over 30% relative improvement on web navigation tasks."
+  },
+  {
+    "title": "HITL-D: Human In The Loop Diffusion Assisted Shared Control",
+    "url": "http://arxiv.org/abs/2605.21460v1",
+    "arxiv_id": "2605.21460v1",
+    "authors": [
+      "Riley Zilka",
+      "Sergey Khlynovskiy",
+      "Allie Wang",
+      "Martin Jagersand"
+    ],
+    "published": "2026-05-20T17:49:56+00:00",
+    "summary": "Autonomous manipulation systems have achieved remarkable capabilities, yet the integration of human expertise with diffusion-based policies in shared control remains relatively unexplored. In this paper, we propose Human-In-The-Loop Diffusion (HITL-D), a shared control framework that enhances user performance in multi-step, insertion, and fine manipulation tasks. HITL-D leverages a novel combination of diffusion-based policies and human control to provide autonomous end effector orientation updates conditioned on a scene point cloud and the Cartesian position of the end effector. This approach reduces the number of joystick control axes required, thereby lowering mental workload. In a multi-task user study with 12 participants, HITL-D reduced average task completion times by 40%, decreased perceived workload by 37%, and improved Likert-scale ratings for independence, intuitiveness, and confidence compared to traditional teleoperation methods. These results demonstrate that HITL-D effectively integrates human expertise with autonomous assistance, improving both objective and subjective aspects of teleoperation."
+  },
+  {
+    "title": "Lost in Fog: Sensor Perturbations Expose Reasoning Fragility in Driving VLAs",
+    "url": "http://arxiv.org/abs/2605.21446v1",
+    "arxiv_id": "2605.21446v1",
+    "authors": [
+      "Abhinaw Priyadershi",
+      "Jelena Frtunikj"
+    ],
+    "published": "2026-05-20T17:34:02+00:00",
+    "summary": "Interpretable autonomous driving planners depend not only on generating explanations, but also on those explanations remaining reliable under real-world sensor degradation. In this paper we present a controlled perturbation study of Vision-Language-Action (VLA) robustness in autonomous driving, evaluating Alpamayo R1 (10B parameters) across 1,996 scenarios under eight sensor perturbations (Gaussian noise at four intensities, two lighting extremes, and two fog levels; ${\\sim}18{,}000$ inference trials). We find that reasoning consistency is a high-fidelity indicator of trajectory reliability: when Chain-of-Causation (CoC) explanations change after perturbation, trajectory deviation spikes $5.3{\\times}$ (21.8m vs 4.1m), with $r\\!=\\!0.99$ across attack types and $r_{pb}\\!=\\!0.53$ per-sample (Cohen's $d\\!=\\!1.12$). A controlled ablation provides evidence that enabling CoC generation is associated with improved trajectory accuracy (11.8% on average across conditions; $p < 0.0001$) under matched inference settings. Over the tested noise range ($\u03c3\\in \\{10, 30, 50, 70\\}$), degradation is approximately linear ($R^2\\!=\\!0.957$), while standard input preprocessing defenses provide only marginal relief. Together, these results establish CoC consistency as a quantitative proxy for planning safety and motivate reasoning-based runtime monitoring for safer VLA deployment."
+  },
+  {
     "title": "Multi-axis Analysis of Image Manipulation Localization",
     "url": "http://arxiv.org/abs/2605.20174v1",
     "arxiv_id": "2605.20174v1",
