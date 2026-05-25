@@ -1,5 +1,73 @@
 [
   {
+    "title": "Geo-Align: Video Generation Alignment via Metric Geometry Reward",
+    "url": "http://arxiv.org/abs/2605.23903v1",
+    "arxiv_id": "2605.23903v1",
+    "authors": [
+      "Zizun Li",
+      "Haoyu Guo",
+      "Runzhe Teng",
+      "Chunhua Shen",
+      "Tong He"
+    ],
+    "published": "2026-05-22T17:59:43+00:00",
+    "summary": "Camera-controlled video generation has achieved remarkable progress in recent years. However, existing video-to-video re-rendering methods primarily rely on Supervised Fine-Tuning using synthetic datasets. At present, there is an extreme scarcity of synchronized, multi-view real-world video data. Consequently, the prevailing paradigm often exhibits limited generalization when processing out-of-distribution real-world videos, with models struggling to accurately adhere to physical scales and camera trajectories. To bridge this gap, we propose Geo-Align, the first Reinforcement Learning framework specifically designed for camera-controlled video re-rendering. Built upon a pretrained model, we optimize the model through a scale-aware perceptual reward mechanism. Specifically, we introduce a metric 3D estimator to extract precise camera trajectories from generated videos, explicitly penalizing deviations in rotation and translation. Furthermore, we meticulously designed a data pipeline strategy based on real-world conditioning videos and target camera trajectories derived from synthetic data, eliminating the reliance on paired data. Extensive experiments demonstrate that Geo-Align consistently outperforms existing supervised learning baselines in both precise camera controllability and visual fidelity, indicating the effectiveness of our method."
+  },
+  {
+    "title": "Good Token Hunting: A Hitchhiker's Guide to Token Selection for Visual Geometry Transformers",
+    "url": "http://arxiv.org/abs/2605.23892v1",
+    "arxiv_id": "2605.23892v1",
+    "authors": [
+      "Shuhong Zheng",
+      "Michael Oechsle",
+      "Erik Sandstr\u00f6m",
+      "Marie-Julie Rakotosaona",
+      "Federico Tombari",
+      "Igor Gilitschenski"
+    ],
+    "published": "2026-05-22T17:55:13+00:00",
+    "summary": "Visual geometry transformers have become powerful architectures for multi-view 3D reconstruction, enabling joint prediction of multiple 3D attributes in a feed-forward manner. However, their computational cost grows quadratically with the input sequence length due to the global attention layers inside these models. This limits both their scalability and efficiency. In this work, we address this challenge with a simple yet general strategy: restricting the number of key/value tokens that each query interacts with during global attention. To achieve effective token selection, we introduce a two-stage framework. First, an inter-frame selection step operates at the frame level to identify frames that should be preserved. Second, an intra-frame selection step further discards more redundant tokens within the selected frames. Our analysis highlights the advantage of a diversity-based strategy for inter-frame selection, which ensures broad coverage of the scene. For intra-frame selection, we show that layer-aware sparsification is necessary, with the selection process guided by the entropy of the global attention pattern. Our approach offers a superior speed-accuracy trade-off compared to existing solutions. Extensive experiments show that it accelerates visual geometry transformers by over 85% for scenes with 500 images while maintaining, or even improving, baseline performance, which hints that how our token selection strategy can play a crucial role in future applications of visual geometry transformers. Our project website is available at https://zsh2000.github.io/good-token-hunting.github.io."
+  },
+  {
+    "title": "Breaking order: Talbot effect with spinodal architectures",
+    "url": "http://arxiv.org/abs/2605.23882v1",
+    "arxiv_id": "2605.23882v1",
+    "authors": [
+      "Robin Kr\u00fcger",
+      "Jeevan Rois",
+      "Martin Bech",
+      "Matias Kagias"
+    ],
+    "published": "2026-05-22T17:42:46+00:00",
+    "summary": "The Talbot effect describes the emergence of periodic patterns in perturbed propagating wave fields. The effect is well studied for perturbations from structurally coherent optics such as diffraction gratings. The emergence of freeform and metaoptical designs raises the question of whether comparable behavior can also be observed from complex, non-periodic structures. Here we demonstrate that stochastic structures inspired by recent metamaterial designs, display a strong Talbot-like behavior. Re-emergence of projected wavefronts through stochastic spinodal architectures at distinct propagation distances are proven theoretically and experimentally in the visible and hard X-ray regimes. A direct application of this phenomenon is X-ray dark-field imaging for characterizing artificial and natural meso-structured materials. Our work shows that spinodal X-ray optics effectively bridge the gap between the two opposing approaches in dark-field X-ray imaging that advocate for either spatially fully coherent (i.e gratings) or incoherent (i.e diffusers) optics. This opens opportunities for exploring a new dimension in the implementation of X-ray imaging methods. Given the impact and universality of the classical Talbot effect, we expect our work to enable new opportunities for characterizing and manipulating matter."
+  },
+  {
+    "title": "Robotic Strawberry Harvesting with Robust Vision and Deep Reinforcement Learning based Sim-to-Real Control",
+    "url": "http://arxiv.org/abs/2605.23863v1",
+    "arxiv_id": "2605.23863v1",
+    "authors": [
+      "Al Bashir",
+      "Shao-Yang Chang",
+      "Partho Ghose",
+      "Prem Raj",
+      "Chen-Kang Huang",
+      "Azlan Zahid"
+    ],
+    "published": "2026-05-22T17:21:06+00:00",
+    "summary": "This study presents a closed-loop robotic strawberry harvesting system that combines a robust vision module, simulation-trained deep reinforcement learning (DRL) control, and ROS-based realrobot execution. For perception, we propose HRAttnEdge-YOLO26-seg, a modified YOLO26-seg architecture that incorporates a high-resolution P2 branch, segmentation-path attention, and edgesupervised prototype learning to improve instance segmentation in cluttered scenes. For control, we train a target-conditioned Proximal Policy Optimization (PPO) policy in Isaac Lab to produce smooth joint-position commands for a UR10e manipulator and deploy it on a UR10e robot for targetfruit reaching and harvesting. This simulation-based approach reduces hardware dependency, lowers development cost, and allows scalable policy training without exhaustive physical trials before real deployment. The proposed vision model demonstrated the highest overall performance among the evaluated methods. On both self-collected and public datasets, the model showed a 10 to 14% improvement in segmentation performance. In controlled in-house tests, the PPO controller produced stable and dynamically smoother motion than a inverse kinematics (IK)-based MoveIt baseline. In greenhouse trials, the proposed integrated system harvested 281 strawberries, achieving 96.6% reaching success, 91.3% grasp-and-pull success, and 84.3% overall harvesting success. These results illustrate that task-specific perception combined with simulation-trained PPO can serve as a practical and resource-efficient alternative to conventional planner-dependent reaching in manipulation, enabling reliable closed-loop robotic harvesting in complex agricultural environments."
+  },
+  {
+    "title": "Leveraging Foundation Models for Causal Generative Modeling",
+    "url": "http://arxiv.org/abs/2605.23861v1",
+    "arxiv_id": "2605.23861v1",
+    "authors": [
+      "Aneesh Komanduri",
+      "Xintao Wu"
+    ],
+    "published": "2026-05-22T17:20:17+00:00",
+    "summary": "Causal generative modeling is essential for developing reliable and transparent AI systems capable of counterfactual reasoning. While existing approaches focus on integrating causal constraints during the training of generative models, they often lack a unified framework to leverage the zero-shot reasoning capabilities of pretrained foundation models. We introduce FM-CGM, a modular framework for end-to-end visual causal reasoning using pretrained foundation models. FM-CGM formalizes the causal pipeline through three core components: a concept extractor, a concept manipulator, and a counterfactual generator. By leveraging a large reasoning model for causal inference and a text-to-image diffusion model for generation, our approach enables zero-shot causal discovery, intervention, and counterfactual generation. We then develop Causal Semantic Guidance (CSG), a cross-attention-based mechanism that ensures semantic interventions propagate to descendant concepts while preserving invariant regions. We empirically show that our approach can identify plausible causal structures and is suitable for faithful counterfactual image generation."
+  },
+  {
     "title": "AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation",
     "url": "http://arxiv.org/abs/2605.22816v1",
     "arxiv_id": "2605.22816v1",
