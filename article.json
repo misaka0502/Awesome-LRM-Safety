@@ -1,5 +1,74 @@
 [
   {
+    "title": "Thinking in Blender: Staged Executable Inverse Graphics with Vision-Language Models",
+    "url": "http://arxiv.org/abs/2606.02580v1",
+    "arxiv_id": "2606.02580v1",
+    "authors": [
+      "Guangzhao He",
+      "Rundong Luo",
+      "Wei-Chiu Ma",
+      "Hadar Averbuch-Elor"
+    ],
+    "published": "2026-06-01T17:59:53+00:00",
+    "summary": "Inverse graphics is a longstanding and highly underconstrained problem that seeks to reconstruct images as editable 3D scenes which can be rendered, relit, and manipulated. In this work, we investigate whether pretrained vision-language models (VLMs) can perform executable inverse graphics directly from a single image by reconstructing a scene as an editable Blender program, without relying on specialized 2D or 3D foundation models, differentiable rendering, or multi-view supervision. We introduce Staged Executable Inverse Graphics (SEIG), an agentic framework that reconstructs a 3D scene from a single image by progressively refining scene factors including geometry, materials, composition, and lighting directly in executable Blender code space. We evaluate our framework across diverse scenes using a range of reconstruction metrics spanning pixel-level, perceptual, and semantic fidelity. Our experiments show that staged reconstruction substantially improves reconstruction fidelity, highlighting the importance of task decomposition for executable inverse graphics with general-purpose VLMs. Finally, we showcase various downstream applications enabled by the reconstructed editable Blender scenes."
+  },
+  {
+    "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis",
+    "url": "http://arxiv.org/abs/2606.02577v1",
+    "arxiv_id": "2606.02577v1",
+    "authors": [
+      "Junjie Ye",
+      "Rong Xue",
+      "Basile Van Hoorick",
+      "Runhao Li",
+      "Harshitha Rajaprakash",
+      "Pavel Tokmakov",
+      "Muhammad Zubair Irshad",
+      "Vitor Guizilini",
+      "Yue Wang"
+    ],
+    "published": "2026-06-01T17:59:38+00:00",
+    "summary": "Scaling robot learning requires large-scale, diverse demonstrations, yet real-world data collection via teleoperation remains prohibitively expensive and time-consuming. While video diffusion models offer a promising avenue for data scaling, existing generative approaches are often limited to superficial visual augmentation, or suffer from embodiment hallucinations that yield physically infeasible motions. We present a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects, in novel scenes, and from novel viewpoints. Our approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively decoupling trajectory execution from environment synthesis. This formulation has the potential to unlock two powerful data scaling capabilities: (1) retrieval and rebirth, which repurposes existing trajectories into entirely new contexts without new motion data; and (2) prop-free teleoperation, where operators manipulate empty air and the model hallucinates the target objects and scene afterwards, eliminating reset time. We demonstrate with real-world experiments that our generated data consistently improves downstream policy performance and significantly reduces real-world data requirements across diverse manipulation tasks."
+  },
+  {
+    "title": "Permissive Safety Through Trusted Inference: Verifiable Belief-Space Neural Safety Filters for Assured Interactive Robotics",
+    "url": "http://arxiv.org/abs/2606.02562v1",
+    "arxiv_id": "2606.02562v1",
+    "authors": [
+      "Haimin Hu"
+    ],
+    "published": "2026-06-01T17:54:00+00:00",
+    "summary": "Autonomous robots that interact with people must make safe and efficient decisions under human-induced uncertainty, such as their preferences, goals, competency, and willingness to cooperate. Safety filters are a popular approach for ensuring safety in interactive robotics, since their modular design separates safety from performance, allowing robots to operate safely around people with minimal impact on task efficiency. While traditional safety filters typically operate only in the physical space, neglecting the robot's ability to learn and adapt online, the recently proposed belief-space safety filter (BeliefSF) reasons about robot safety in closed-loop with runtime inference that actively reduces the robot's uncertainty online, thereby reducing conservativeness in filtering. However, providing formal safety guarantees for robots deploying BeliefSF remains a significant challenge due to errors in runtime inference and neural approximation of safety filters required to handle the high dimensionality of belief spaces. In this paper, we propose an algorithmic approach to certify high-probability safety of BeliefSF using conformal prediction, while explicitly accounting for the reliability of the robot's runtime inference module. Our method leverages the structure of belief-space safety filtering by focusing verification on a region where inference is expected to be reliable. It preserves the simplicity and sample complexity of standard conformal prediction, yet can certify a substantially less conservative safety filter. Through a simulated human-vehicle interaction benchmark, we show that our approach verifies a significantly more permissive belief-space safety filter than a standard conformal prediction baseline."
+  },
+  {
+    "title": "AFUN: Towards an Affordance Foundation Model for Functionality Understanding",
+    "url": "http://arxiv.org/abs/2606.02551v1",
+    "arxiv_id": "2606.02551v1",
+    "authors": [
+      "Zhaoning Wang",
+      "Yi Zhong",
+      "Jiawei Fu",
+      "Henrik I. Christensen",
+      "Jun Gao"
+    ],
+    "published": "2026-06-01T17:50:16+00:00",
+    "summary": "Affordance understanding bridges visual perception and physical action, serving as an explainable interface for robot manipulation in open and unstructured real-world environments. Yet, building an affordance foundation model that not only understands where and how the interaction should happen, but also generalizes across diverse environments, objects, and tasks, remains a long-standing research challenge. Existing methods typically address only part of this challenge, either localizing task-relevant regions without specifying executable motion, or predicting motion but with limited scalability. In this paper, we present ourmodel, a step towards an affordance foundation model for functionality understanding. From a single RGB-D observation and a language task description, ourmodel predicts a task-conditional functional mask (where to interact) and a 3D post-contact motion curve (how to interact). To support open-world generalization, we build a large-scale standardized data pipeline that converts heterogeneous robot, human, simulation, and real-world scan data into a shared affordance schema with language, masks, and object-centric 3D motion labels. We evaluate ourmodel from three aspects: for affordance segmentation, ourmodel outperforms all baselines by a large margin across 8 test sets from 4 benchmarks, improving mean gIoU/cIoU by +23.9/+26.3; for contact-point prediction, it predicts substantially more accurate points, with a 12.7--61.3% hit-rate gain over the best baseline; and for 3D motion, it achieves the best performance on all three test sets. ourmodel can be deployed for real-world robot manipulation without finetuning for robot embodiment or using task-specific heuristics, demonstrating the ability to adapt to open-world affordance tasks. Project page: https://www.zhaoningwang.com/AFUN"
+  },
+  {
+    "title": "Chutes and Ladders: Dynamical Automorphisms via the ZX-Calculus",
+    "url": "http://arxiv.org/abs/2606.02542v1",
+    "arxiv_id": "2606.02542v1",
+    "authors": [
+      "Alexander Frei",
+      "Sascha Zakaib-Bernier",
+      "Zachary Mann",
+      "Michael Vasmer",
+      "Victor V. Albert"
+    ],
+    "published": "2026-06-01T17:46:09+00:00",
+    "summary": "The ZX-calculus is a powerful graphical language for manipulating quantum circuits, which has recently found many applications in quantum error correction. We extend this language to handle Floquet and other dynamical stabilizer codes via the connection between measurement-based code switching and gauge fixing (arXiv:1810.10037). We combine gauge-fixing steps to implement a closed loop in the space of stabilizer codes, returning to the original codespace up to a logical Clifford gate. These measurement-based paths in the space of stabilizer codes can be viewed as shortcuts, or \"chutes and ladders\", relative to single-qubit Clifford operations and qubit permutations. This yields a machine-interpretable method for constructing dynamical automorphisms and facilitates the search for implementations of desired logical gates. As an example, we implement a logical phase gate via distance-preserving code switching for the seven-qubit code bare code (arXiv:1702.01155), which has no non-trivial logical Clifford gates based on single-qubit Clifford operations and qubit permutations (arXiv:2409.18175)."
+  },
+  {
     "title": "Stateful Online Monitoring Catches Distributed Agent Attacks",
     "url": "http://arxiv.org/abs/2605.31593v1",
     "arxiv_id": "2605.31593v1",
