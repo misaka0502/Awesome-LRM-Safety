@@ -1,5 +1,84 @@
 [
   {
+    "title": "Affordance-Based Hierarchical Reinforcement Learning for Quadruped Pedipulation",
+    "url": "http://arxiv.org/abs/2606.07506v1",
+    "arxiv_id": "2606.07506v1",
+    "authors": [
+      "Tuba Girgin",
+      "Jose Castelblanco",
+      "Gabriel Rodriguez",
+      "Emre Girgin",
+      "Cagri Kilic"
+    ],
+    "published": "2026-06-05T17:56:42+00:00",
+    "summary": "The object manipulation capabilities of quadruped robots is an open research challenge. While previous studies have focused on low-level policy learning, task execution still relies on expert-designed high-level trajectories. Autonomous selection of both an affordable interaction point on the target object and an affordable robot base pose removes the need for pre-designed trajectories. This study proposes a three-level hierarchical reinforcement learning (RL) framework that utilizes pose affordances to guide the navigation policy, while the navigation policy drives the locomotion policy. In addition, the pedipulation policy is guided by interaction-point affordances, enabling object-centric pose alignment of the quadruped robot and effective end-effector manipulation planning. We train the proposed framework in the IsaacSim ecosystem and evaluate it in both simulation and real-world settings. We investigate the effectiveness of pose affordance across multiple scenarios in simulation while various object interaction tasks are validated on real-world setting forming an object-interaction dataset. The results show that the proposed framework can autonomously identify candidate poses based on their affordance and successfully execute object manipulation tasks in the real world without human guidance."
+  },
+  {
+    "title": "Modelling Opinion Dynamics at Scale with Deep MARL",
+    "url": "http://arxiv.org/abs/2606.07487v1",
+    "arxiv_id": "2606.07487v1",
+    "authors": [
+      "Lukas Seier",
+      "Brandon Kaplowitz",
+      "Sebastian Towers",
+      "Richard Bailey",
+      "Jakob Foerster"
+    ],
+    "published": "2026-06-05T17:42:24+00:00",
+    "summary": "Modelling opinion dynamics typically relies on hand-crafted local interaction rules to study emergent macroscopic phenomena such as consensus and polarisation. In contrast, multi-agent reinforcement learning (MARL) enables agents to learn such behaviours directly by optimising simple rewards. To explore the potential of MARL for opinion dynamics, we introduce a GPU-accelerated consensus and truth-finding game that scales to populations of up to 1000 agents, comparable to many real-world social sub-networks. To prevent unrealistic conventions, we extend other-play to general-sum social interactions. We next validate our model on a subset of the Bluesky network by recovering agent importance structures from graph topology alone via a learned attention layer, finding that highly conforming populations most closely match human data. In large social media networks such high levels of conformity significantly reduce collective accuracy and promote dishonest agents that lie to fit in. By contrast, small, dynamic hunter-gatherer networks are less affected; here, conformity can even improve collective agreement. This suggests a mismatch between evolved human conformity heuristics and modern social media environments as a potential contributor to misinformation."
+  },
+  {
+    "title": "Physiologically Constrained Musculoskeletal Neural Network for Multi-DoF Joint Kinematics Estimation from Partially Observed sEMG",
+    "url": "http://arxiv.org/abs/2606.07476v1",
+    "arxiv_id": "2606.07476v1",
+    "authors": [
+      "Wending Heng",
+      "Mingming Zhang",
+      "Glen Cooper",
+      "Zhenhong Li"
+    ],
+    "published": "2026-06-05T17:30:16+00:00",
+    "summary": "This paper investigates multi-degrees of freedom (DoF) joint kinematics estimation under partially observed surface electromyography (sEMG), where only a subset of task-relevant muscles can be measured due to anatomical inaccessibility or sensor constraints. A novel musculoskeletal neural network (MSK-NN) is proposed to estimate multi-DoF joint angles while simultaneously inferring activations for both measured and unmeasured muscles. MSK-NN consists of a CNN-based muscle activation estimator and an embedded MSK forward dynamics module, forming a fully differentiable architecture. Unlike existing hybrid neural frameworks that require additional biomechanical labels (e.g., muscle-tendon forces, joint torques), MSK-NN is trained without direct supervision of internal biomechanical variables. A composite physics-physiology loss is designed by incorporating a joint kinematics loss, a data-driven muscle synergy loss, and an anatomy-guided trend loss. The proposed method is evaluated on two-DoF wrist kinematics estimation across three rhythmic motions with unconstrained speed and amplitude, and one random motion. Compared with CNN, Bi-LSTM, CNN-LSTM, and PET baselines, MSK-NN achieves lower normalized root mean square error (NRMSE) and higher coefficient of determination (R2), especially for the random motion. More importantly, the optimized MSK parameters remain within physiological limits, and the estimated activation of an input-excluded muscle exhibits strong temporal agreement with its recorded sEMG envelope, demonstrating the capability of musculoskeletal (MSK)-NN to recover physiologically plausible activations."
+  },
+  {
+    "title": "Planning-aligned Token Compression for Long-Context Autonomous Driving",
+    "url": "http://arxiv.org/abs/2606.07464v1",
+    "arxiv_id": "2606.07464v1",
+    "authors": [
+      "Zhixuan Liang",
+      "Yuxiao Chen",
+      "Yurong You",
+      "Peter Karkus",
+      "Wenhao Ding",
+      "Boyi Li",
+      "Alexander Popov",
+      "Yan Wang",
+      "Maximilian Igl",
+      "Yiming Li",
+      "Danfei Xu",
+      "Nikolai Smolyanskiy",
+      "Boris Ivanovic",
+      "Ping Luo",
+      "Marco Pavone"
+    ],
+    "published": "2026-06-05T17:16:21+00:00",
+    "summary": "Monolithic vision-action models represent an emerging paradigm in autonomous driving. However, this architecture produces token sequences that quickly exceed real-time computational budgets when encoding extended temporal context for complex interactions. While approaches like linear transformers and external memory try to make the context lightweight, token compression is most compatible with the architecture as it requires no backbone modifications. Yet existing compression adopts rule-based heuristics like temporal decay, decoupled from planning, risking loss of decision-critical information. We propose COMPACT-VA, a planning-aligned working memory framework built on conditional VQ-VAE, compressing extended context into bounded representations. Compression is conditioned on both historical trajectory and a learned planning intent that the posterior encoder distills from future trajectories during training, while the prior encoder learns to predict it from compressed observations. The compressed memory, concatenated with the predicted latent, feeds the policy for end-to-end optimization, planning with retained decision-critical information. We evaluate on high-signal dynamic scenarios where historical context is most critical for behavior correctness (e.g., stop, yield, or proceed), and accordingly design behavioral metrics. Under comparable token budgets, we achieve $>$6% improvement (68.3%) on success rates with consistent gains across metrics. Ablations validate planning-aligned coupling effectiveness. Closed-loop evaluation confirms that COMPACT-VA maintained general driving performance with 3.3* speedup and 2.7* memory reduction over uncompressed processing."
+  },
+  {
+    "title": "On orbital stabilization of a circular motion primitive for a dynamic extension of the Dubins car model",
+    "url": "http://arxiv.org/abs/2606.07449v1",
+    "arxiv_id": "2606.07449v1",
+    "authors": [
+      "Artem Angelchev-Shiryaev",
+      "Pavel E. Aleshin",
+      "Anton S. Shiriaev",
+      "Pavel A. Shamanaev",
+      "Leonid B. Freidovich"
+    ],
+    "published": "2026-06-05T16:51:55+00:00",
+    "summary": "This paper addresses orbital stabilization of a circular motion primitive for a dynamic extension of the Dubins car model within a transverse-linearization framework. We show that the corresponding transverse linearization is unstable and not stabilizable by linear state feedback. Therefore, the standard linearization-based approach to orbital stabilization cannot be applied directly. The main contribution is a set of explicit and verifiable conditions that characterize when a controller design based on transverse linearization remains applicable. These conditions rely on the specific structure of the dynamics in a neighborhood of the motion and on the use of non-standard transverse coordinates for controller design and analysis. Numerical simulations illustrate the proposed design procedure."
+  },
+  {
     "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
     "url": "http://arxiv.org/abs/2606.06493v1",
     "arxiv_id": "2606.06493v1",
