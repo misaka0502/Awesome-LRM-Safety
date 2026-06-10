@@ -1,5 +1,93 @@
 [
   {
+    "title": "ARM: An AutoRegressive Large Multimodal Model with Unified Discrete Representations",
+    "url": "http://arxiv.org/abs/2606.11188v1",
+    "arxiv_id": "2606.11188v1",
+    "authors": [
+      "Junke Wang",
+      "Xiao Wang",
+      "Jiacheng Pan",
+      "Xuefeng Hu",
+      "Feng Li",
+      "Jingxiang Sun",
+      "Chaorui Deng",
+      "Zilong Chen",
+      "Yunpeng Chen",
+      "Kaibin Tian",
+      "Matthew Gwilliam",
+      "Hao Chen",
+      "Danhui Guan",
+      "Kun Xu",
+      "Weilin Huang",
+      "Zuxuan Wu",
+      "Haoqi Fan",
+      "Yu-Gang Jiang",
+      "Zhenheng Yang"
+    ],
+    "published": "2026-06-09T17:59:28+00:00",
+    "summary": "This paper introduces ARM, a discrete representation-based AutoRegressive Model that unifies image understanding, generation, and editing within a next-token prediction framework. ARM is built on three efforts: first, we train a discrete semantic visual tokenizer that maps images into compact token sequences. Our tokenizer is supervised with multiple objectives that jointly promote semantic discriminability, language alignment and faithful reconstruction, thereby supporting diverse tasks in a shared latent space. With this, we train a 7B autoregressive model over large-scale text and image token sequences, seamlessly developing vision-language perception and generation capabilities. Finally, to further improve preference-aligned behavior for text-to-image generation and instruction-guided editing, ARM applies reinforcement learning (RL) to optimize task-level objectives such as visual quality, instruction adherence, and edit consistency. Surprisingly, the results show that RL not only substantially improves performance on the target tasks (e.g., raising WISE overall from 0.50 to 0.56, GEdit-Bench-EN G_O from 5.75 to 6.68), but also induces cross-task synergy between text-to-image generation and editing. Collectively, these findings highlight autoregressive modeling, when paired with strong representations and preference optimization, as a scalable foundation for multimodal intelligence. Code: https://github.com/wdrink/ARM."
+  },
+  {
+    "title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
+    "url": "http://arxiv.org/abs/2606.11184v1",
+    "arxiv_id": "2606.11184v1",
+    "authors": [
+      "Yujie Zang",
+      "Yuhang Zheng",
+      "Xian Nie",
+      "Yupeng Zheng",
+      "Shuai Tian",
+      "Songen Gu",
+      "Chen Gao",
+      "Zining Wang",
+      "Shuicheng Yan",
+      "Wenchao Ding"
+    ],
+    "published": "2026-06-09T17:59:03+00:00",
+    "summary": "Contact-rich manipulation requires robots to continuously perceive and regulate evolving physical interactions under dynamic contact transitions or complex surface geometries. Recent imitation learning methods improve contact-aware control by incorporating tactile or force feedback, but they rarely model the asymmetric spatiotemporal roles of global force and local tactile sensing. To address this, we propose TacForeSight, a lightweight force-conditioned tactile foresight framework for real-time manipulation. The core component is TacForceWM, a tactile world model that predicts short-horizon tactile latent dynamics from dual-finger tactile observations conditioned on high-frequency wrist force and torque signals. Another key component, the Predictive Tactile-Conditioned Policy, leverages the predicted latents as anticipatory contact priors, models the current-to-future tactile evolution via cross-attention, and adaptively fuses visuo-tactile features through a tactile-guided gating module. By forecasting purely within a compact latent space, TacForeSight enables proactive contact reasoning with efficient real-time inference suitable for high-frequency manipulation control. Real-robot experiments on five representative tasks and three in-process perturbation settings show that TacForeSight consistently outperforms existing baselines, particularly under dynamic contact disturbances. All models and datasets will be made publicly available on the project website at https://tacforesight.github.io/ProjectPage."
+  },
+  {
+    "title": "Multi-Faceted Interactivity Alignment in Full-Duplex Speech Models",
+    "url": "http://arxiv.org/abs/2606.11167v1",
+    "arxiv_id": "2606.11167v1",
+    "authors": [
+      "Atsumoto Ohashi",
+      "Neil Zeghidour",
+      "Alexandre D\u00e9fossez",
+      "Eugene Kharitonov"
+    ],
+    "published": "2026-06-09T17:46:55+00:00",
+    "summary": "Full-duplex spoken dialogue models can listen and speak simultaneously, making them a promising architecture for natural conversation. However, current models are trained solely with supervised learning through token-level likelihood maximization, which does not directly optimize interaction-level behaviors, causing interactivity issues such as excessive silence and ill-timed turn-taking. Recent work has applied reinforcement learning (RL) to improve interactivity, but existing methods address only a limited set of interactive behaviors in their rewards. In this work, we propose a post-training alignment method that comprehensively improves the interactivity of full-duplex spoken dialogue models through RL. We address the four canonical axes of interactivity: pause handling, turn-taking, backchanneling, and user interruption. For each axis, we extract short audio segments from human conversation corpora and optimize the model with axis-specific reward functions. An extra LLM-based reward for response quality prevents semantic degradation. We apply our method to two open-source models, Moshi and PersonaPlex, demonstrating consistent improvements in interactivity on both offline evaluation with pre-recorded audio and real-time multi-turn dialogue evaluation."
+  },
+  {
+    "title": "JOIN: Anchor-Grasp-Conditioned Joining via Opposition, Inference, and Navigation for Bimanual Assistive Manipulation",
+    "url": "http://arxiv.org/abs/2606.11151v1",
+    "arxiv_id": "2606.11151v1",
+    "authors": [
+      "Drake Moore",
+      "Matt Cheng",
+      "Xiang Zhi Tan",
+      "Ta\u015fk\u0131n Pad\u0131r"
+    ],
+    "published": "2026-06-09T17:36:06+00:00",
+    "summary": "Assistive mobility and manipulation platforms have received increasing attention as a means of restoring independence to individuals with disabilities. While effective for many basic activities of daily living (ADLs), a significant percentage of everyday tasks such as opening a jar, pouring a liquid, lifting a tray, or basic meal preparation, is fundamentally bimanual and remains out of reach for any single-arm system. Adding a second arm to a wheelchair is impractical, due to the additional power draw, cost, and the loss of space required for transfers and mobility. We instead propose a heterogeneous, on-demand bimanual system, in which a wheelchair-mounted anchor arm is joined when needed by a summoned mobile manipulator that serves as a complement arm. The central technical problem, which we call bimanual joining, is conditional: the anchor has already committed to a grasp, and the complement arm must choose where to stand and what to grasp to complete the task. We formulate bimanual joining as a three-phase decomposition (plan, drive, grasp) and show that a vision-language model (VLM), coupled with standard geometric tools, provides task-level knowledge sufficient to solve a representative class of bimanual ADLs. Our system JOIN, contributes (i) a wheelchair-referenced opposition score, and (ii) task-conditioned directional manipulability. We evaluate JOIN on a Kinova Gen3 anchor and a Hello Robot Stretch~3 complement on representative same-object and different-object tasks. JOIN accomplished more attempts (19/20) than state-of-the-art methods (14/20) and required markedly less correction by the operator."
+  },
+  {
+    "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+    "url": "http://arxiv.org/abs/2606.11150v1",
+    "arxiv_id": "2606.11150v1",
+    "authors": [
+      "Andrew Bo Liu",
+      "Samira Nedungadi",
+      "Bryce Cai",
+      "Alex Kleinman",
+      "Harmon Bhasin",
+      "Seth Donoughe"
+    ],
+    "published": "2026-06-09T17:35:37+00:00",
+    "summary": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previously required experienced human biologists. These emerging AI capabilities offer new opportunities for scientific discovery and biomedical advances, but they also shift the landscape of biosecurity risks. To address this, we introduce the Agentic Bio-Capabilities Benchmark (ABC-Bench), a suite of tasks to measure agentic biosecurity-relevant capabilities. ABC-Bench evaluates LLM agents on both benign and dual-use biology tasks: writing code to operate liquid handling robots, designing DNA fragments for in vitro assembly, and evading DNA synthesis screening. These tasks require a combination of biology and software expertise. All tested LLM agents outperformed the median expert human baseliner on all three tasks. Agents performed highly on tasks drawing on published knowledge and well-documented protocols, and more weakly on a task requiring novel bioinformatics reasoning. In three wet-lab validation experiments, we found that OpenAI's o4-mini-high produced scripts that, when run on an OpenTrons liquid handling robot, successfully assembled DNA with expected sequences."
+  },
+  {
     "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
     "url": "http://arxiv.org/abs/2606.09827v1",
     "arxiv_id": "2606.09827v1",
