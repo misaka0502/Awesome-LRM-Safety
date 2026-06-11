@@ -1,5 +1,85 @@
 [
   {
+    "title": "FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning",
+    "url": "http://arxiv.org/abs/2606.12406v1",
+    "arxiv_id": "2606.12406v1",
+    "authors": [
+      "Steven Oh",
+      "Jason Jingzhou Liu",
+      "Tony Tao",
+      "Philip Han",
+      "Kenneth Shaw",
+      "Satoshi Funabashi",
+      "Ruslan Salakhutdinov",
+      "Deepak Pathak"
+    ],
+    "published": "2026-06-10T17:59:35+00:00",
+    "summary": "Contact-rich manipulation requires force sensitivity, but many robot arms lack dedicated force sensors due to their high cost. We present Neural External Torque Estimation (NEXT), a data-driven method that estimates external joint torques without needing any dedicated force sensors. NEXT trains in 1 minute from only 10 minutes of free-motion data, yet achieves estimates comparable to dedicated joint-torque sensors. NEXT enables force-feedback teleoperation on low-cost arms and improves policy learning through Force-Informed Re-Sampling Training (FIRST), which up-samples pre-contact and contact segments during behavior cloning. Across five long-horizon tasks, FIRST outperforms prior force-aware policies by over 17% in task progress. Together, NEXT and FIRST bring force-aware teleoperation and policy learning to off-the-shelf robots without additional sensing hardware. Video results and code are available at https://jasonjzliu.com/factr2"
+  },
+  {
+    "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+    "url": "http://arxiv.org/abs/2606.12403v1",
+    "arxiv_id": "2606.12403v1",
+    "authors": [
+      "Zefu Lin",
+      "Rongxu Cui",
+      "Junjia Xu",
+      "Xiaojuan Jin",
+      "Wenling Li",
+      "Lue Fan",
+      "Zhaoxiang Zhang"
+    ],
+    "published": "2026-06-10T17:59:08+00:00",
+    "summary": "Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathways. Latent Steering conditions the perception layer on a scene-evolution latent, and Action Steering supplies an anticipated trajectory as a motion prior to the action generator. Together the two priors equip the VLA with an anticipated view of the scene and a trajectory-level motion hint alongside its semantic conditioning, and the scene-evolution prior remains effective even when supplied by a video-pretrained world model that has not been action-post-trained. World Pilot attains a state-of-the-art Total success rate of 84.7% on the LIBERO-Plus zero-shot OOD benchmark and the highest success rate on every real-robot setting across four manipulation tasks, with the largest margins under shifts in viewpoint, geometry, deformable state, and pose. Project Website: https://world-pilot.github.io/"
+  },
+  {
+    "title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
+    "url": "http://arxiv.org/abs/2606.12402v1",
+    "arxiv_id": "2606.12402v1",
+    "authors": [
+      "Jadelynn Dao",
+      "Milan Ganai",
+      "Yasmina Abukhadra",
+      "Ajay Sridhar",
+      "Mozhgan Nasr Azadani",
+      "Katie Luo",
+      "Clark Barrett",
+      "Jiajun Wu",
+      "Chelsea Finn",
+      "Marco Pavone"
+    ],
+    "published": "2026-06-10T17:58:49+00:00",
+    "summary": "Vision-Language Models (VLMs) are increasingly deployed as high-level planners for embodied agents, with an emerging strategy of scaling test-time compute to improve capability. However, we observe that doing so increases latency, token usage, and FLOPs while yielding uneven, often diminishing gains in downstream success, limiting where embodied agents can be deployed. We argue that choosing when and where to spend test-time compute is central to bringing frontier performance to the real world. We introduce DIRECT, a routing framework that uses multimodal scene context to allocate compute per prompt, improving the success--cost Pareto frontier over fixed model selection. Across three dominant scaling axes, namely chain-of-thought depth, model size, and memory history, our experiments on VLABench and RoboMME show that test-time compute is not a uniform lever: different axes yield qualitatively distinct capability gains. We validate these insights on a physical Franka arm in a DROID setup spanning zero-shot manipulation and long-horizon chaining, where our router matches or exceeds a stronger model's success rate at up to 65% lower average latency. Ultimately, our results show that naively scaling test-time compute is wasteful, and that DIRECT can provide frontier-level embodied planning in robotic systems at a fraction of the cost. Project page can be found at jadee-dao.github.io/direct/."
+  },
+  {
+    "title": "VLGA: Vision-Language-Geometry-Action Models for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2606.12396v1",
+    "arxiv_id": "2606.12396v1",
+    "authors": [
+      "Jin Yao",
+      "Dhruva Dixith Kurra",
+      "Tom Lampo",
+      "Zezhou Cheng",
+      "Danhua Guo",
+      "Burhan Yaman"
+    ],
+    "published": "2026-06-10T17:57:06+00:00",
+    "summary": "Vision-language-action (VLA) models can describe scenes and reason about them in language, yet still struggle to ground their actions in the dense 3D world around them. Existing approaches either inject features from a frozen 3D foundation model without an objective that ensures the policy uses them, or constrain geometry with sparse box and map losses that provide no dense spatial signal. We introduce VLGA, the first vision-language-action model supervised to reconstruct the dense 3D world it drives through. VLGA introduces geometry as a fourth modality alongside vision, language, and action through a dedicated expert supervised by a per-pixel pointmap regression loss against LiDAR. Extensive experiments conducted on challenging nuScenes and Bench2Drive datasets for open-loop and closed-loop evaluations, respectively, show the superiority of VLGA over counterpart VLA methods. In particular, on open-loop nuScenes, VLGA sets a new state of the art among VLA methods without ego status, with the lowest L2 (0.50\\,m average) and 3-second collision rate (0.18\\%). On closed-loop Bench2Drive, VLGA attains the state-of-the-art driving score of 79.08, +0.71 over the strongest prior VLA, at comparable efficiency and comfort."
+  },
+  {
+    "title": "ATLAS: Active Theory Learning for Automated Science",
+    "url": "http://arxiv.org/abs/2606.12386v1",
+    "arxiv_id": "2606.12386v1",
+    "authors": [
+      "No\u00e9mi \u00c9ltet\u0151",
+      "Nathaniel D. Daw",
+      "Kimberly L. Stachenfeld",
+      "Kevin J. Miller"
+    ],
+    "published": "2026-06-10T17:52:03+00:00",
+    "summary": "Advancing scientific understanding through mechanistic modeling requires posing the right experimental questions to yield maximally informative data. To automate this pursuit within cognitive science, we introduce ATLAS (Active Theory Learning for Automated Science), an active learning framework for the data-driven discovery of interpretable behavioral models. ATLAS iterates between generating mechanistic hypotheses--instantiated as a diverse ensemble of sparse neural networks (Disentangled RNNs)--and designing experiments that optimally distinguish between them. We test this approach on the problem of recovering reinforcement learning agents from their behavior in bandit tasks. ATLAS designs varied sequences of qualitatively novel experiments with temporal structure tailored to underlying agent characteristics. The models trained on these experiments are evaluated against a comprehensive set of metrics for mechanistic modeling that capture behavioral, structural, and computational similarity. ATLAS achieves a 5-10x improvement in sample efficiency across all metrics compared to random experimentation, and its performance is further validated against expert-designed experiments derived from literature. These in silico results showcase ATLAS's potential to accelerate human-interpretable insights in cognitive science and other domains where scientific inquiry relies on discovering mechanistic models."
+  },
+  {
     "title": "ARM: An AutoRegressive Large Multimodal Model with Unified Discrete Representations",
     "url": "http://arxiv.org/abs/2606.11188v1",
     "arxiv_id": "2606.11188v1",
