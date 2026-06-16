@@ -1,5 +1,113 @@
 [
   {
+    "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
+    "url": "http://arxiv.org/abs/2606.17056v1",
+    "arxiv_id": "2606.17056v1",
+    "authors": [
+      "Nick Jiang",
+      "Isaac Kauvar",
+      "Jack Lindsey"
+    ],
+    "published": "2026-06-15T17:59:58+00:00",
+    "summary": "We investigate whether language models internally track the value of their current trajectory, defined as the likelihood that their ongoing strategy will achieve their goals. Using synthetic, in-context reinforcement learning data, we construct a \"value\" axis for Qwen3-8B. We find that activations along this axis distinguish between high vs. low verbalized confidence, rollouts without and with backtracking, and correct vs. corrupted code. Steering towards high value causally suppresses self-correction and reduces explanatory verbosity, while steering towards low value induces backtracking and exploration. We demonstrate that direct preference optimization (DPO) can increase the internal value of rewarded behaviors (e.g. use a certain word), causing the model to act more confidently after exhibiting them. Finally, we apply the value axis to study in-the-wild settings. For example, we find that Qwen assigns low value to politically sensitive chat queries after post-training and that supervised fine-tuning increases internal confidence within the training domain. Our results suggest that language models linearly encode an estimate of expected goal success that modulates their confidence in pursuing a direction."
+  },
+  {
+    "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+    "url": "http://arxiv.org/abs/2606.17055v1",
+    "arxiv_id": "2606.17055v1",
+    "authors": [
+      "Dantong Niu",
+      "Zhuoyang Liu",
+      "Zekai Wang",
+      "Boning Shao",
+      "Zhao-Heng Yin",
+      "Anirudh Pai",
+      "Yuvan Sharma",
+      "Stefano Saravalle",
+      "Ruijie Zheng",
+      "Jing Wang",
+      "Ryan Punamiya",
+      "Mengda Xu",
+      "Yuqi Xie",
+      "Yunfan Jiang",
+      "Letian Fu",
+      "Konstantinos Kallidromitis",
+      "Matteo Gioia",
+      "Junyi Zhang",
+      "Jiaxin Ge",
+      "Haiwen Feng",
+      "Fabio Galasso",
+      "Wei Zhan",
+      "David M. Chan",
+      "Yutong Bai",
+      "Roei Herzig",
+      "Jiahui Lei",
+      "Fei-Fei Li",
+      "Ken Goldberg",
+      "Jitendra Malik",
+      "Pieter Abbeel",
+      "Yuke Zhu",
+      "Danfei Xu",
+      " Jim",
+      " Fan",
+      "Trevor Darrell"
+    ],
+    "published": "2026-06-15T17:59:55+00:00",
+    "summary": "The ability to react dynamically to tactile signals has long been considered crucial to agile human-level dexterity. Yet contemporary learning-based Vision-Language-Action (VLA) models for robotic manipulation generally either overlook the tactile modality or are limited to encoders with static cues, due in part to the scarcity of diverse training data and standardized evaluation, architectural constraints in current VLA models, and limitations of static tactile encoders. In this paper, we push the frontier of tactile-reactive manipulation by addressing all of these limitations. We propose a large-scale, 100-hour tactile-rich dataset collected via a novel, data-efficient recipe that prioritizes elementary motor primitives. To effectively exploit naturally high-frequency touch signals without sacrificing the existing capabilities of existing VLAs, we introduce a variable-rate Mixture-of-Transformers (MoT) architecture equipped with a novel temporal tactile VQ-VAE encoder. We demonstrate the effectiveness of tactile-reactive policies on 12 manipulation tasks requiring delicate force control and deformable object manipulation, achieving over 30% higher average success rate than the strongest baseline."
+  },
+  {
+    "title": "Human Universal Grasping",
+    "url": "http://arxiv.org/abs/2606.17054v1",
+    "arxiv_id": "2606.17054v1",
+    "authors": [
+      "Kevin Yuanbo Wu",
+      "Tianxing Zhou",
+      "Isaac Tu",
+      "Billy Yan",
+      "Irmak Guzey",
+      "David Fouhey",
+      "Dandan Shan",
+      "Lerrel Pinto"
+    ],
+    "published": "2026-06-15T17:59:36+00:00",
+    "summary": "Humans can grasp objects effortlessly, whereas multi-fingered robots are far from this level of generality. We argue that the most natural source of robot grasping data is from humans, who pick up thousands of objects every day. We present HUG, a flow-matching model that generates diverse human grasps for any user-specified object in a single RGB-D image captured from a stereo camera. Using smart glasses, we first collect 1M-HUGs, an egocentric dataset of human grasps spanning 1M frames (27.8 hrs) and 6,707 object instances across 41 buildings. Next, to model the distribution of natural human grasps, our novel flow-matching model fuses RGB and depth observations to output a grasp parameterized by wrist translation, wrist rotation, and MANO hand pose. Predicted grasps can be retargeted to various robot hands, enabling zero-shot grasping in everyday scenes. To standardize evaluation, we build a new simulated benchmark, HUG-Bench, of 90 unseen objects from five geometric categories and various sizes, with metric-scale 3D meshes. We evaluate HUG in the real world on the 30-object test set of HUG-Bench across multiple stereo cameras, robot embodiments, and household environments. HUG outperforms the state-of-the-art grasping baselines by +23% and +34% on our challenging object set. Code, data, benchmark, checkpoints, and an interactive demo are released on our website: https://grasping.io/"
+  },
+  {
+    "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+    "url": "http://arxiv.org/abs/2606.17053v1",
+    "arxiv_id": "2606.17053v1",
+    "authors": [
+      "Peiyang Xu",
+      "Bangzheng Li",
+      "Sijia Liu",
+      "Karthik R. Narasimhan",
+      "Pramod Viswanath",
+      "Prateek Mittal",
+      "Xingyu Fu"
+    ],
+    "published": "2026-06-15T17:59:28+00:00",
+    "summary": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that improves long-horizon reasoning and multimodal performance through an \\emph{indirect} auxiliary objective. Instead of supervising only the final answer, ContextRL presents the model with a query, an answer, and two highly similar contexts, and rewards it for selecting the context that supports the query--answer pair, thereby encouraging fine-grained grounding. We construct contrastive context data in two domains: for coding agents, trajectories serve as contexts, yielding 1k pairs built via condition filtering; for multimodal reasoning, images serve as contexts, yielding 7K pairs built via generative editing and similarity search. ContextRL achieves average gains of +2.2% over standard GRPO on 5 long-horizon benchmarks, and +1.8% across 12 diverse visual question answering benchmarks. To disentangle the effect of the proposed objective from that of additional data, we compare against data-augmentation baselines that repurpose the same contrastive contexts as standard query--context--answer examples. These baselines provide little to no improvement, showing that the gains arise from the proposed context-selection objective rather than from the contrastive data alone."
+  },
+  {
+    "title": "Geometric Action Model for Robot Policy Learning",
+    "url": "http://arxiv.org/abs/2606.17046v1",
+    "arxiv_id": "2606.17046v1",
+    "authors": [
+      "Jisang Han",
+      "Seonghu Jeon",
+      "Jaewoo Jung",
+      "Ren\u00e9 Zurbr\u00fcgg",
+      "Honggyu An",
+      "Tifanny Portela",
+      "Marco Hutter",
+      "Marc Pollefeys",
+      "Seungryong Kim",
+      "Sunghwan Hong"
+    ],
+    "published": "2026-06-15T17:58:03+00:00",
+    "summary": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and video world-action models (WAMs) inherit strong semantic or temporal priors from large-scale foundation models, but they still operate primarily on 2D image frames or 2D-derived latent spaces, leaving implicit the 3D geometry required for contact-rich manipulation. We propose the Geometric Action Model (GAM), a language-conditioned manipulation policy that directly repurposes a pretrained geometric foundation model (GFM) as a shared substrate for perception, temporal prediction, and action decoding. GAM splits the GFM at an intermediate layer: the shallow layers serve as an observation encoder, and a causal future predictor inserted at the split layer forecasts future latent tokens conditioned on language, proprioception, and action history. The predicted future tokens are then routed through the remaining GFM blocks for feature propagation and decoding, allowing a single backbone to produce both future geometry and actions. This design equips the GFM with language-conditioned temporal world modeling through minimal architectural modification while preserving its rich geometric priors. Across a broad suite of simulation and real-robot manipulation benchmarks, GAM is more accurate, more robust, faster, and lighter than current foundation-model-scale baselines."
+  },
+  {
     "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
     "url": "http://arxiv.org/abs/2606.13679v1",
     "arxiv_id": "2606.13679v1",
