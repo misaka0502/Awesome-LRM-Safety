@@ -1,5 +1,97 @@
 [
   {
+    "title": "Unified Multimodal Autoregressive Modeling with Shared Context-Visual Tokenizer is Key to Unification",
+    "url": "http://arxiv.org/abs/2606.18249v1",
+    "arxiv_id": "2606.18249v1",
+    "authors": [
+      "Wujian Peng",
+      "Lingchen Meng",
+      "Yuxuan Cai",
+      "Xianwei Zhuang",
+      "Yuhuan Yang",
+      "Rongyao Fang",
+      "Chenfei Wu",
+      "Junyang Lin",
+      "Zuxuan Wu",
+      "Shuai Bai"
+    ],
+    "published": "2026-06-16T17:59:22+00:00",
+    "summary": "Unified Multimodal Modeling aims to integrate visual understanding and generation within a single system. However, existing approaches typically rely on two disparate visual tokenizers, which splits the representation space and hinders truly unified modeling. We propose UniAR, a unified autoregressive framework where a single discrete visual tokenizer serves as the key bridge between understanding and generation, enabling a shared context in which the model can directly interpret its own generated visual tokens without additional re-encoding. UniAR adapts a pretrained vision encoder with multi-level feature fusion and a lookup-free bitwise quantization scheme, preserving both high-level semantics and low-level details while scaling the effective visual vocabulary at minimal cost. Building on this, the unified autoregressive model adopts parallel-bitwise-prediction to jointly predict spatially grouped, multi-level visual codes, substantially reducing visual sequence length and accelerating generation. Finally, a diffusion-based visual decoder operates on discrete visual tokens to decode high-fidelity images. Through large-scale pre-training, followed by supervised fine-tuning and reinforcement learning, UniAR achieves state-of-the-art performance on image generation and image editing while remaining competitive on multimodal understanding benchmarks. The project page is available at https://sharelab-sii.github.io/uniar-web."
+  },
+  {
+    "title": "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
+    "url": "http://arxiv.org/abs/2606.18247v1",
+    "arxiv_id": "2606.18247v1",
+    "authors": [
+      "Mingtong Zhang",
+      "Dhruv Shah"
+    ],
+    "published": "2026-06-16T17:59:04+00:00",
+    "summary": "Robots deployed in the real world should learn from their experience and improve over time. This requires a mechanism of practicing and learning from feedback. In this paper, we propose VERITAS, a generator-verifier framework for generalist robot policies for inference-time policy steering and self-improvement. We use a pre-trained generalist robot policy as a ``generator'' and pair it with a gradient-free ``visual verifier'' that evaluates actions at inference time. This framework enables inference-time steering that improves policy performance without additional training. We demonstrate that inference-time verification consistently outperforms vanilla generalists without training on additional demonstration data. Additionally, we demonstrate that the verified rollouts provide effective supervision for offline policy improvement: policies fine-tuned on verified self-generated trajectories achieve consistent performance gains. Notably, we find that post-training with verified rollouts achieves comparable efficiency to expert demonstrations, while requiring no human interventions. Our results highlight inference-time verification as a practical and scalable mechanism for improving robotic policies during deployment."
+  },
+  {
+    "title": "MOCHI: Motion Enhancement of Collaborative Human-object Interactions",
+    "url": "http://arxiv.org/abs/2606.18243v1",
+    "arxiv_id": "2606.18243v1",
+    "authors": [
+      "Jiye Lee",
+      "Yonghun Choi",
+      "Jungdam Won"
+    ],
+    "published": "2026-06-16T17:58:44+00:00",
+    "summary": "Collaborative human-object interaction shows dynamic and complex movements that require mutual anticipation and continuous adjustment between participants and the shared object. Modeling such collaborative multi-human object interaction (MHOI) scenarios requires high-quality data acquisition as a foundational step; however, this is challenging due to the inherent complexity of MHOI where human-human and human-object interactions occur simultaneously. Such complexity leads to noisy MHOI captures characterized by several artifacts: contact misalignment between hands and objects, motion jitter and temporal inconsistencies in the captured sequences, and missing or incomplete finger-level articulation details. To address these challenges, we present MOCHI (MOtion Enhancement of Collaborative Human-object Interactions), a two-stage framework for enhancing noisy MHOI data. Our approach first generates physically plausible hand grasps through optimization from noisy body input, producing grasps that are both physically plausible and semantically consistent with the body pose, where these optimized grasps are extended into complete hand-object interaction sequences. Consequently, the full-body motion for all participants are refined through a diffusion-based noise optimization framework that uses single-person motion priors. During the optimization process, we introduce optimization objectives to encode human-object and human-human interaction information within these single-person priors. Experimental results demonstrate the effectiveness of our pipeline across diverse MHOI data, either acquired by existing capture methods or synthesized by generative models. We further show robustness of our system across varying numbers of participants and types of interactions, and demonstrate various applications including keyframe-based MHOI creation and data augmentation through varying object geometries."
+  },
+  {
+    "title": "EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies",
+    "url": "http://arxiv.org/abs/2606.18239v1",
+    "arxiv_id": "2606.18239v1",
+    "authors": [
+      "Ning Gao",
+      "Jinliang Zheng",
+      "Xing Gao",
+      "Haoxiang Ma",
+      "Hanqing Wang",
+      "Yukai Wang",
+      "Jiantong Chen",
+      "Zanxin Chen",
+      "Shujie Zhang",
+      "Mingda Jia",
+      "Xuekun Jiang",
+      "Zihou Zhu",
+      "Xinyu Li",
+      "Shuai Wang",
+      "Hao Li",
+      "Wenzhe Cai",
+      "Yuqiang Yang",
+      "Xudong Xu",
+      "Zhaoyang Lyu",
+      "Yao Mu",
+      "Tai Wang",
+      "Jiangmiao Pang",
+      "Jia Zeng",
+      "Weinan Zhang",
+      "Chunhua Shen"
+    ],
+    "published": "2026-06-16T17:58:22+00:00",
+    "summary": "We present EBench, a simulation benchmark that diagnoses generalist mobile manipulation policies beyond a single success-rate scalar. EBench comprises 26 diverse and challenging manipulation tasks annotated along 5 capability dimensions and 4 generalization dimensions. We evaluate state-of-the-art generalist manipulation models including $\u03c0_0$, $\u03c0_{0.5}$, XVLA, and InternVLA-A1, and reveal that models with near success rates exhibit strikingly different capability profiles: $\u03c0_{0.5}$ achieves the highest test success rate and the best train--test retention, whereas InternVLA-A1 dominates mobile manipulation but collapses on dexterous tasks, and XVLA exhibits strengths on a disjoint set of atomic skills compared to other policies. Beyond capability profiling, EBench analyzes the generalization ability from 4 representative perspectives, identifying the impact of different distribution shift factors. The results reveal strengths and weaknesses of models behind an overall score. We hope this benchmark offers a broad set of diagnostic signals to guide iteration on generalist manipulation models."
+  },
+  {
+    "title": "Adaptive Volumetric Mechanical Property Fields Invariant to Resolution",
+    "url": "http://arxiv.org/abs/2606.18231v1",
+    "arxiv_id": "2606.18231v1",
+    "authors": [
+      "Rishit Dagli",
+      "Donglai Xiang",
+      "Vismay Modi",
+      "Xuning Yang",
+      "Gavriel State",
+      "David I. W. Levin",
+      "Maria Shugrina"
+    ],
+    "published": "2026-06-16T17:56:03+00:00",
+    "summary": "Accurate mechanical properties (or materials) Young's modulus ($E$), Poisson's ratio ($\u03bd$) and density ($\u03c1$) are essential for reliable physics simulation of digital worlds, but most 3D assets lack this information. We propose AdaVoMP, a method for predicting accurate dense spatially-varying ($E$, $\u03bd$, $\u03c1$) for input 3D objects across representations, improving the resolution, accuracy, and memory efficiency over the state-of-the-art. The foundation of our technique is a sparse and adaptive voxel structure SAV that efficiently represents both the input 3D shape and the material field output. We replace the fixed-voxel model of the most accurate prior method, VoMP, with a novel sparse transformer encoder-decoder model that learns to generate a unique SAV autoregressively for every input shape to represent its materials, achieving a resolution $16^3\\times$ higher than prior art. Experiments show that AdaVoMP estimates more accurate volumetric properties, even with lesser test-time compute than all prior art. This allows us to convert high-resolution complex 3D objects into simulation-ready assets, resulting in realistic deformable simulations."
+  },
+  {
     "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
     "url": "http://arxiv.org/abs/2606.17056v1",
     "arxiv_id": "2606.17056v1",
