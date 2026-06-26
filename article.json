@@ -1,5 +1,89 @@
 [
   {
+    "title": "Scalable Behavior Cloning with Open Data, Training, and Evaluation",
+    "url": "http://arxiv.org/abs/2606.27375v1",
+    "arxiv_id": "2606.27375v1",
+    "authors": [
+      "Arthur Allshire",
+      "Himanshu Gaurav Singh",
+      "Ritvik Singh",
+      "Adam Rashid",
+      "Hongsuk Choi",
+      "David McAllister",
+      "Justin Yu",
+      "Yiyuan Chen",
+      "Huang Huang",
+      "Pieter Abbeel",
+      "Xi Chen",
+      "Rocky Duan",
+      "Phillip Isola",
+      "Jitendra Malik",
+      "Fred Shentu",
+      "Guanya Shi",
+      "Philipp Wu",
+      "Angjoo Kanazawa"
+    ],
+    "published": "2026-06-25T17:59:57+00:00",
+    "summary": "We introduce ABC, a fully open-source stack for manipulation with behavior cloning. At its core is ABC-130K: the largest open-source teleoperation dataset to date, featuring 3,500 hours of data spanning over 130K episodes across 195 diverse tasks. Furthermore, we open-source our accessible hardware setup, training infrastructure, and simulation pipeline. We also release 400 hours of sim-teleop data and provide a co-training recipe that produces correlated simulation and real-world evaluation, offering a reliable proxy for ablating model-design and training decisions before costly real-world evaluation. We explore various training recipes and compare common architectural choices for Diffusion Transformers (DiT) and Vision-Language-Action (VLA) models, grounding our findings in real-world evaluations. The resulting policies successfully execute dexterous tasks such as box folding and extracting credit cards from wallets. By providing a reproducible toolkit, we aim to place researchers on an equal footing, establishing the necessary foundation to learn the ABCs of Behavior Cloning together as a community."
+  },
+  {
+    "title": "World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays",
+    "url": "http://arxiv.org/abs/2606.27374v1",
+    "arxiv_id": "2606.27374v1",
+    "authors": [
+      "Manish Kumar Govind",
+      "Dominick Reilly",
+      "Smit Patel",
+      "Hieu Le",
+      "Srijan Das"
+    ],
+    "published": "2026-06-25T17:59:56+00:00",
+    "summary": "Going beyond predicting robot actions, World Action Models (WAMs) can also generate future visual observations. We build on this generative capability to propose Recurrent Generative Replay (REGEN), a continual imitation learning framework that synthesizes pseudo-replay trajectories, enabling a robot policy to rehearse previously learned tasks without storing their original human demonstrations. During continual adaptation, REGEN recursively queries the WAM to synthesize pseudo-replay trajectories conditioned only on prior task instructions and current-task observations. Experiments in both simulation and real-world manipulation settings show that REGEN reduces catastrophic forgetting by up to $50\\%$ relative to sequential fine-tuning, while approaching the performance of privileged experience replay methods that require access to real replay data. Finally, we analyze the factors limiting generated replay, identifying long-horizon visual degradation and action-observation inconsistency as the primary bottlenecks. Our results establish WAMs as a promising foundation for continual robot learning without stored demonstrations."
+  },
+  {
+    "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
+    "url": "http://arxiv.org/abs/2606.27369v1",
+    "arxiv_id": "2606.27369v1",
+    "authors": [
+      "Yingyu Lin",
+      "Qiyue Gao",
+      "Nikki Lijing Kuang",
+      "Xunpeng Huang",
+      "Kun Zhou",
+      "Tongtong Liang",
+      "Zhewei Yao",
+      "Yi-An Ma",
+      "Yuxiong He"
+    ],
+    "published": "2026-06-25T17:59:36+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable framework (RiVER) that trains LLMs on score-based optimization tasks without ground-truth solutions, using deterministic execution feedback as continuous-valued supervision. When applying group-relative RL to such continuous rewards, we identify two key challenges: \\emph{scale dominance}, where uncalibrated score magnitudes across test instances distort policy updates, and \\emph{frequency dominance}, where repeatedly sampled suboptimal solutions can outweigh rare but stronger candidates. RiVER addresses these challenges with calibrated reward shaping that uses instance-wise comparisons and emphasizes top-ranked solvers while retaining bounded feedback for other valid solutions. We train on 12 AtCoder Heuristic Contest tasks and evaluate on Algorithm Engineering Benchmark (ALE-Bench), LiveCodeBench, and USACO. RiVER advances Qwen3-8B and GLM-Z1-9B-0414 by 8.9\\% and 9.4\\% in ALE rating rank. More importantly, despite training exclusively on score-based tasks without any ground-truth solutions, RiVER also improves the backbones across exact-solution benchmarks such as LiveCodeBench and USACO by an absolute average improvement of 2.4\\% and 3.5\\%. By contrast, baselines trained with raw execution scores improve ALE rating but fail to transfer to exact-solution benchmarks. These results suggest that score-based optimization tasks, combined with proper reward calibration, can serve as effective training environments for general coding ability without ground-truth solutions."
+  },
+  {
+    "title": "PhysiFormer: Learning to Simulate Mechanics in World Space",
+    "url": "http://arxiv.org/abs/2606.27364v1",
+    "arxiv_id": "2606.27364v1",
+    "authors": [
+      "Yiming Chen",
+      "Yushi Lan",
+      "Andrea Vedaldi"
+    ],
+    "published": "2026-06-25T17:59:00+00:00",
+    "summary": "We present PhysiFormer, a diffusion transformer for physically-plausible 3D object motion. Unlike video world models that operate in view-dependent pixel space, PhysiFormer represents objects as 3D meshes expressed in world coordinates. Given the initial vertex positions and velocities, as well as object material type, rigid or elastic, the model samples future vertex trajectories. While related neural physics approaches build on ad-hoc latent spaces or explicitly enforce rigidity and causality, PhysiFormer shows that excellent results can be obtained without any such inductive biases, by casting vertex trajectory prediction as a single denoising diffusion process directly in world coordinates. The probabilistic formulation captures uncertainty in the learned dynamics, enabling diverse plausible futures from initial conditions, making this framework potentially useful for applications with unobserved uncertainty. The model features attention factorised over time, space, and objects for efficiency, enabling permutation-invariant multi-object reasoning without needing explicit object encoding. Trained on over 100k simulated trajectories, PhysiFormer generates rigid and elastic mechanics, and generalises to mixed-material settings, unseen real-world geometries, and larger object counts. It substantially outperforms autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based physical consistency. Our results position coordinate-space diffusion as a promising step toward view-invariant, geometry-aware world modelling for robotics, graphics, and physical design. Visualisations, code, and models are available at https://yimingc9.github.io/physiformer."
+  },
+  {
+    "title": "RouterVLA: Turning Smoke Tests into Supervision for Heterogeneous VLA Selection",
+    "url": "http://arxiv.org/abs/2606.27355v1",
+    "arxiv_id": "2606.27355v1",
+    "authors": [
+      "Xingyu Ren",
+      "Chugang Yi",
+      "Ge Ma",
+      "Youran Sun"
+    ],
+    "published": "2026-06-25T17:56:33+00:00",
+    "summary": "We study whether pre-deployment evaluation rollouts can be reused to supervise policy selection. Robot teams routinely smoke test candidate vision-language-action (VLA) policies, then compress those trials into a global winner. RouterVLA evaluates this idea with outcome-disjoint cross-fitting: recorded probes build a profile for each frozen expert, and a separate trial scores the selected expert without entering its profile. Across 34,752 LIBERO-Plus rollout records, a transparent probe-success rule raises held-out success from 0.4686 to 0.6149, a +14.64pp gain. Under the scalar-only profiles studied here, learned scorers are statistically indistinguishable from this rule, showing that commissioning carries the routing value while extra scalar scorer capacity does not create it. Reusing the scored trial inflates the measured gain by $1.87\\times$, so credible ledger routing needs outcome separation; model scaling improves individual policies, while commissioning-aware routing improves the system built from them."
+  },
+  {
     "title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
     "url": "http://arxiv.org/abs/2606.26095v1",
     "arxiv_id": "2606.26095v1",
