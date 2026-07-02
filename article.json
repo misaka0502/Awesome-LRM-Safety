@@ -1,5 +1,77 @@
 [
   {
+    "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+    "url": "http://arxiv.org/abs/2607.01232v1",
+    "arxiv_id": "2607.01232v1",
+    "authors": [
+      "Zijian Zhang",
+      "Rizhen Hu",
+      "Athanasios Glentis",
+      "Dawei Li",
+      "Chung-Yiu Yau",
+      "Hongzhou Lin",
+      "Mingyi Hong"
+    ],
+    "published": "2026-07-01T17:59:54+00:00",
+    "summary": "Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every layer contributes similarly to the gains obtained during RL post-training. In this work, we challenge this assumption through a systematic layer-wise study of RL training. Surprisingly, we find that training a single transformer layer can recover most of the gains achieved by full-parameter RL training, and in some cases even surpass it. To quantify this phenomenon, we introduce the quantity layer contribution, which measures the fraction of full RL improvement recovered by training a layer in isolation. Across seven models spanning two model families (Qwen3, Qwen2.5), three RL algorithms (GRPO, GiGPO, Dr. GRPO), and multiple task domains including mathematical reasoning, code generation, and agentic decision-making, we observe a remarkably stable pattern: RL gains are highly concentrated in a small subset of, and in many cases even a single, transformer layers. More strikingly, the same structural pattern consistently emerges: high-contribution layers concentrate in the middle of the transformer stack, while layers near the input and output ends contribute substantially less. The resulting layer rankings remain strongly correlated across datasets, tasks, model families, and RL algorithms."
+  },
+  {
+    "title": "Distributed Containment of a Compromised Agent through Repulsive Cages",
+    "url": "http://arxiv.org/abs/2607.01230v1",
+    "arxiv_id": "2607.01230v1",
+    "authors": [
+      "Luigi Petruzziello",
+      "Camilla Fioravanti",
+      "Gabriele Oliva"
+    ],
+    "published": "2026-07-01T17:59:24+00:00",
+    "summary": "UAV swarms and cyber-physical multi-agent systems are increasingly deployed in safety-critical missions that require coordinated motion, distributed decision making, and autonomy. A major security risk arises when a legitimate agent is hijacked and driven by adversarial high-level commands. Rather than focusing on detection and isolation of malicious agents, we exploit a structural property common in autonomous platforms: low-level collision-avoidance modules are typically implemented as independent safety layers and may remain active even under high-level compromise. Building on this property, we propose a distributed containment framework that uses the compromised agent's uncompromised avoidance response as an indirect actuation channel. Defender agents select their geometric configuration to shape the repulsive field experienced by the target, with the goal of keeping it inside a prescribed admissible region and, when required, steering it toward a desired destination. The interaction is modeled as an online Stackelberg game in which defenders act as leaders and the adversary reacts by choosing the target command. Using support-function and normal-cone arguments, we derive an exact geometric characterization of robust one-step containment and introduce the notion of a repulsive cage. These results define a centralized Stackelberg oracle and motivate a fully distributed online approximation based on local communication and dynamic field estimation. We prove sublinear dynamic-regret bounds with respect to the centralized benchmark, quantifying the effect of network-induced estimation errors and temporal variability of the stage-wise optimum. Simulations validate the approach and corroborate the theory."
+  },
+  {
+    "title": "Language-Critique Imitation Learning from Suboptimal Demonstrations",
+    "url": "http://arxiv.org/abs/2607.01225v1",
+    "arxiv_id": "2607.01225v1",
+    "authors": [
+      "Chih-Han Yang",
+      "Dai-Jie Wu",
+      "Yun-Ping Huang",
+      "Ping-Chun Hsieh",
+      "Kenneth Marino",
+      "Shao-Hua Sun"
+    ],
+    "published": "2026-07-01T17:57:22+00:00",
+    "summary": "Prior work on imitation learning from suboptimal demonstrations typically relies on compressed supervision signals such as confidence estimates, discriminator scores, or importance weights. These scalar signals are inherently limited, as they cannot explicitly express intermediate reasoning about task progress, failure modes, or corrective actions. We propose a language-critique framework for imitation learning from suboptimal demonstrations that instead leverages natural language as a structured supervision signal, avoiding the collapse of expressive feedback into scalars. Our method first constructs language labels from demonstrations that explicitly describe current progress, identify suboptimal behaviors, and provide fine-grained corrective guidance. We then introduce a language-critique loss that directly trains policies using these structured signals without reducing them to scalars, and instantiate it for both behavior cloning and diffusion policies, yielding LC-BC and LC-DP. We further provide a theoretical result showing that the proposed objective upper-bounds the expert performance gap under standard assumptions. Empirically, we evaluate on diverse continuous control tasks spanning navigation, manipulation, and gameplay, where our methods consistently outperform strong imitation learning and offline reinforcement learning baselines. These results demonstrate that language can serve as a powerful and structured form of supervision for learning robust policies from suboptimal data."
+  },
+  {
+    "title": "FurnitureVLA: Learning Long-Horizon Bimanual Furniture Assembly with Vision-Language-Action Model",
+    "url": "http://arxiv.org/abs/2607.01212v1",
+    "arxiv_id": "2607.01212v1",
+    "authors": [
+      "Chenyang Ma",
+      "Yue Yang",
+      "Radu Corcodel",
+      "Siddarth Jain",
+      "Andrew Wu",
+      "Chiori Hori",
+      "Diego Romeres"
+    ],
+    "published": "2026-07-01T17:51:21+00:00",
+    "summary": "Current work on robot furniture assembly mostly focuses on toy-scale settings or single-arm manipulation. We introduce FurnitureVLA, the first systematic study of real-scale bimanual furniture assembly using Vision-Language-Action models (VLAs). We formalize the task, develop a scalable simulation pipeline for expert data generation and evaluation, and build a VR teleoperation system for single-operator bimanual control to collect high-quality real-world demonstrations. To address extreme long-horizon assembly with up to 7 subtasks and 1550 control steps, we propose a progress-enhanced VLA, finetuned on semantically grounded subtasks, that jointly predicts actions and a continuous progress signal, enabling automatic subtask transitions and reducing compounding errors during inference. We further study perception and control design factors that critically affect precision in real-scale assembly. FurnitureVLA improves average simulation success from 48% to 80% compared to baselines across three furniture types, with an additional 21% gain from our design factor study. We validate on a real Kinova Gen3 platform with only 16% drop on the hardest task."
+  },
+  {
+    "title": "GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics",
+    "url": "http://arxiv.org/abs/2607.01203v1",
+    "arxiv_id": "2607.01203v1",
+    "authors": [
+      "Jeffrey Fang",
+      "Keyi Shen",
+      "Anutam Srinivasan",
+      "Glen Chou"
+    ],
+    "published": "2026-07-01T17:42:37+00:00",
+    "summary": "This paper studies real-time robust optimal control for uncertain nonlinear systems, where linear time-varying (LTV) approximations make planning tractable but require sound linearization error bounds (LEBs) to guarantee robust constraint satisfaction. We develop tight, differentiable, GPU-parallel LEBs for LTV approximations of nonlinear and neural network (NN) dynamics. For analytic dynamics, we introduce path-based Hessian bounds that are tighter than standard interval methods. For NN dynamics, we derive certified LEBs using NN verifier-generated affine relaxations and local Jacobian corrections. We adapt a GPU-parallel system-level synthesis LTV-based robust control solver to be compatible with these LEBs by extending it to handle right-invertible disturbance matrices and non-zero-centered disturbance sets for tight zonotopic uncertainty propagation. Our method, GPUSLS-LEO, enables online optimization of robust feedback policies that account for linearization error, producing tight, formally verified reachable tubes. On complex nonlinear and NN dynamics up to 168 state dimensions, our method can compute robust control policies on the GPU at rates up to 67 Hz, reducing solve times and conservativeness relative to baselines while preserving formal guarantees and real-time performance."
+  },
+  {
     "title": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
     "url": "http://arxiv.org/abs/2606.32032v1",
     "arxiv_id": "2606.32032v1",
