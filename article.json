@@ -1,5 +1,83 @@
 [
   {
+    "title": "Online Safety Monitoring for LLMs",
+    "url": "http://arxiv.org/abs/2607.02510v1",
+    "arxiv_id": "2607.02510v1",
+    "authors": [
+      "Mona Schirmer",
+      "Metod Jazbec",
+      "Alexander Timans",
+      "Christian Naesseth",
+      "Maja Waldron",
+      "Eric Nalisnick"
+    ],
+    "published": "2026-07-02T17:59:43+00:00",
+    "summary": "Despite alignment training, LLMs remain prone to generating unsafe outputs at deployment time. Monitoring outputs online and raising an alarm when safety can no longer be assumed is therefore critical. We study a simple real-time monitor that turns a verifier signal from an external model into an alarm decision by thresholding, with the threshold calibrated via risk control. In experiments on mathematical reasoning and red teaming datasets, we show that this simple design is competitive with more advanced monitors based on sequential hypothesis testing."
+  },
+  {
+    "title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
+    "url": "http://arxiv.org/abs/2607.02503v1",
+    "arxiv_id": "2607.02503v1",
+    "authors": [
+      "Shuai Tian",
+      "Yupeng Zheng",
+      "Yuhang Zheng",
+      "Songen Gu",
+      "Yujie Zang",
+      "Yuxing Qin",
+      "Weize Li",
+      "Haoran Li",
+      "Wenchao Ding",
+      "Dongbin Zhao"
+    ],
+    "published": "2026-07-02T17:58:36+00:00",
+    "summary": "Contact-rich manipulation requires policies to react to local deformation, pressure, slip, and friction, yet these cues are temporally sparse and often invisible in visual observations. Existing visual-tactile policies usually feed tactile observations directly into action prediction, but rarely model tactile deformation dynamics during action generation. In this paper, we introduce VT-WAM, a Visual-Tactile World Action Model that jointly learns future visual prediction, tactile deformation prediction, and action prediction within a unified flow matching framework. In particular, VT-WAM introduces (1) Asymmetric Mixture-of-Transformers (MoT) attention to bridge a first-frame visual anchor with temporal tactile dynamics, and (2) contact-gated Action-Visual-Tactile Attention Guidance (AVTAG) to encourage action queries to rely on tactile evidence during contact phases. Across six real-world contact-rich manipulation tasks, VT-WAM achieves a 71.67% average success rate, outperforming Fast-WAM by 26.67% and OmniVTLA by 35.84%. Ablations demonstrate that modeling tactile deformation dynamics and guiding contact-phase tactile attention are both important for contact-rich tasks. Project website: https://vt-wam.github.io/."
+  },
+  {
+    "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+    "url": "http://arxiv.org/abs/2607.02501v1",
+    "arxiv_id": "2607.02501v1",
+    "authors": [
+      "Ling Xu",
+      "Chuyu Han",
+      "Borui Li",
+      "Hao Wu",
+      "Shiqi Jiang",
+      "Ting Cao",
+      "Chuanyou Li",
+      "Sheng Zhong",
+      "Shuai Wang"
+    ],
+    "published": "2026-07-02T17:58:28+00:00",
+    "summary": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied.cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied.cpp captures a shared execution path and organizes it into five layers: input adapters, sequence builders, backbone execution, head plugins, and deployment adapters. The runtime provides modular multi-rate execution, latency-first fused inference, and extensible operator and I/O support, enabling deployment across heterogeneous devices, robots, and simulators through one backend abstraction. We evaluate Embodied.cpp on two VLA models, HY-VLA and pi0.5, and on a preliminary WAM benchmark using a LingBot-VA Transformer block. The VLA deployments achieve successful closed-loop execution with 100.0% and 91.0% task success rates, respectively. The WAM benchmark reduces block memory from 312.2 MiB to 88.1 MiB. These results show that Embodied.cpp improves deployment efficiency while preserving high accuracy across diverse embodied model architectures."
+  },
+  {
+    "title": "Seek to Segment: Active Perception for Panoramic Referring Segmentation",
+    "url": "http://arxiv.org/abs/2607.02497v1",
+    "arxiv_id": "2607.02497v1",
+    "authors": [
+      "Song Tang",
+      "Shuming Hu",
+      "Xincheng Shuai",
+      "Henghui Ding",
+      "Yu-Gang Jiang"
+    ],
+    "published": "2026-07-02T17:56:49+00:00",
+    "summary": "Existing referring segmentation models passively process static images captured from fixed perspectives, limiting their applicability in Embodied AI, where agents must perform active perception in the continuous 360$^\\circ$ environments. To bridge this gap, we introduce a novel task: Active Panoramic Referring Segmentation (APRS). In this setting, an agent is required to adjust its viewing direction ($\u0394\u03b8, \u0394\u03c6$) to explore the 360$^\\circ$ environment, seeking the object specified by a user instruction for segmentation. To tackle this challenging task, we propose PanoSeeker, a memory-augmented agent for efficient APRS. Rather than relying on heuristic scanning, PanoSeeker integrates a Vision-Language Model (VLM) with EgoSphere, an explicit spatial visual memory. By progressively integrating sequential local observations into a unified 360$^\\circ$ representation, EgoSphere enables the agent to plan efficient and non-redundant search trajectories. Once the target is found, the agent performs active viewpoint alignment and outputs the segmentation mask. Furthermore, we curate an expert-annotated search trajectory dataset with memory timelines for Supervised Fine-Tuning, followed by Reinforcement Learning post-training to explicitly optimize PanoSeeker's exploration efficiency. Extensive experiments on our newly established APRS benchmark demonstrate that PanoSeeker achieves superior search efficiency and segmentation accuracy, significantly outperforming adapted state-of-the-art baselines."
+  },
+  {
+    "title": "Controllable Sim Agents with Behavior Latents",
+    "url": "http://arxiv.org/abs/2607.02496v1",
+    "arxiv_id": "2607.02496v1",
+    "authors": [
+      "Juanwu Lu",
+      "Junyu Zhu",
+      "Ziran Wang"
+    ],
+    "published": "2026-07-02T17:55:39+00:00",
+    "summary": "Realistic traffic simulation requires agents that imitate logged behavior and can also be steered along interpretable axes. Such controllability enables engineers to isolate variables, reproduce specific edge cases, and test autonomous systems without real-world risk. We introduce Controllable Neural Variational Agents (CNeVA), a controllable simulated-agent framework that learns to infer a per-agent Gaussian behavior latent from per-channel discounted returns via a closed-form conjugate variational update, conditioning a rectified-flow trajectory generator trained on a mixed channel-mask curriculum for classifier-free guidance. To tackle scarcity in reward signals, we propose soft eligibility gates that replace hard binary thresholds with smooth exponential decay, preserving the gradient signal for near-threshold agents. On the Waymo Open Motion Dataset, CNeVA attains competitive realism on the benchmark while exposing per-channel controllability that the higher-ranked imitation models lack. Speed- and acceleration-based steering produces monotone responses without stall-induced reward hacking. Safety controllability is monotone and substantial with the introduction of soft eligibility. We manage to achieve steerable map compliance under a context-residual return measure. Furthermore, our experiment demonstrates that steering metrics must be read alongside physical-plausibility guardrails to avoid reward-hacking confounds."
+  },
+  {
     "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
     "url": "http://arxiv.org/abs/2607.01232v1",
     "arxiv_id": "2607.01232v1",
