@@ -1,5 +1,91 @@
 [
   {
+    "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
+    "url": "http://arxiv.org/abs/2607.08751v1",
+    "arxiv_id": "2607.08751v1",
+    "authors": [
+      "Yunchao Yao",
+      "Zhuxiu Xu",
+      "Tianqi Zhang",
+      "Zixian Liu",
+      "Sikai Li",
+      "Zhenyu Wei",
+      "Feng Chen",
+      "Dihong Huang",
+      "Kechang Wan",
+      "Chenyang Ma",
+      "Shuqi Zhao",
+      "Shenghua Gao",
+      "Masayoshi Tomizuka",
+      "Yi Ma",
+      "Mingyu Ding"
+    ],
+    "published": "2026-07-09T17:50:47+00:00",
+    "summary": "Building general-purpose dexterous manipulation policies requires benchmarks that go beyond isolated tasks to systematically evaluate policies across diverse interaction modes, sensory conditions, and robot embodiments. However, existing benchmarks remain limited in task and data diversity, embodiment coverage, or controllable visual variation, hindering studies of cross-task and cross-embodiment generalization. We present DexVerse, a large-scale and modular benchmark for dexterous manipulation. DexVerse includes 100 tasks spanning a broad range of manipulation skills, including object grasping and relocation, articulated-object interaction, functional tool use, bimanual coordination, non-prehensile control, contact-rich behaviors, multi-goal execution, and long-horizon multi-stage task completion. It supports 3 robot arms and 6 dexterous hands, and is extensible to new tasks, assets, and embodiments. To evaluate visuomotor generalization, DexVerse provides configurable visual variations in textures, background, lighting, and camera viewpoints. We further provide a VR-based teleoperation interface and 3,180 demonstrations with synchronized proprioceptive, RGB, depth, point-cloud, and state observations. We benchmark representative methods, including Diffusion Policy, DP3, OpenVLA, and $\u03c0_{0.5}$, across 19 tasks. Results reveal substantial challenges in task generalization and visuomotor robustness, establishing DexVerse as a promising testbed for general-purpose dexterous manipulation. Project page: https://ycyao216.github.io/DexVerse.site"
+  },
+  {
+    "title": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+    "url": "http://arxiv.org/abs/2607.08745v1",
+    "arxiv_id": "2607.08745v1",
+    "authors": [
+      "Siddharth Damodharan",
+      "Radhika Gupta",
+      "Ali Alshami",
+      "Ryan Rabinowitz",
+      "Jugal Kalita"
+    ],
+    "published": "2026-07-09T17:46:24+00:00",
+    "summary": "Recent advances in Vision-Language Models, Large Language Models, and Multimodal Large Language Models have improved autonomous driving tasks such as scene understanding, decision making, trajectory prediction, and visual question answering. However, evaluating whether these models can reliably reason about safety-critical incidents remains challenging. To address this gap, we present AUTOPILOT-VQA, an incident-centric visual question answering benchmark for dashcam video understanding. The dataset evaluates different systems through structured questions designed around real-world driving incidents and near-incidents. The benchmark covers diverse safety-relevant categories, including weather and lighting conditions, traffic environment, road layout, road surface state, signage, involved entities, accident occurrence, impact location, and avoidability-related reasoning. By requiring models to answer grounded questions about both contextual scene properties and event-level incident details, AUTOPILOT-VQA moves beyond object recognition toward temporally grounded, safety-aware reasoning. The dataset is released as part of the AUTOPILOT CVPR 2026 competition and provides a standardized benchmark for assessing the reliability of autonomous driving systems in different scenarios. Our benchmark support developments for more interpretable, robust, and safety-conscious vision-language systems for real-world autonomous driving."
+  },
+  {
+    "title": "ContactMimic: Humanoid Object Interaction via Contact Control",
+    "url": "http://arxiv.org/abs/2607.08742v1",
+    "arxiv_id": "2607.08742v1",
+    "authors": [
+      "Xinyao Li",
+      "Xialin He",
+      "Runpei Dong",
+      "Saurabh Gupta"
+    ],
+    "published": "2026-07-09T17:42:15+00:00",
+    "summary": "Keypoint tracking alone is insufficient for object interaction tasks such as sitting on a chair, wiping a board, or pushing furniture, where the robot can reach the correct pose without making meaningful physical contact with the object. We present CONTACTMIMIC, a learning framework that tracks explicit partlevel binary contact commands alongside keypoint trajectories. CONTACTMIMIC is made possible through the use of contact-following rewards and a trajectory augmentation scheme aimed at breaking the correlations between keypoint trajectories and contact labels. The resulting policy successfully decouples contact behavior from keypoint geometry, and achieves precise physical contact as well as contact-controllability (produce or suppress contact during deployment as desired). Simulation experiments across 10 diverse human-object interaction motions confirm that CONTACTMIMIC exhibits contact controllability that enables it to complete manipulation tasks without task-specific rewards, while also outperforming keypoint-only trackers on contact-relevant tasks. Ablations confirm the necessity of the proposed trajectory augmentation scheme and sim2real deployment validates contact controllability in the real world across 5 different motions. Video results are available on https://lixinyao11.github.io/contactmimic-page/."
+  },
+  {
+    "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+    "url": "http://arxiv.org/abs/2607.08741v1",
+    "arxiv_id": "2607.08741v1",
+    "authors": [
+      "Kaifeng Zhao",
+      "Mathis Petrovich",
+      "Haotian Zhang",
+      "Tingwu Wang",
+      "Siyu Tang",
+      "Davis Rempe"
+    ],
+    "published": "2026-07-09T17:41:49+00:00",
+    "summary": "Generating realistic 3D human motions in real-time within interactive applications is key for animation, simulation, and humanoid robotics. While recent offline motion generation approaches offer precise control via text and kinematic constraints, they lack the inference speed required for interactive settings. Conversely, existing online methods enable real-time synthesis but often sacrifice controllability or struggle with complex text semantics and long-horizon goals due to limited context windows. In this work, we introduce ARDY, a streaming generation framework that bridges this gap by enabling high-fidelity motion generation controllable via online text prompts and flexible kinematic constraints. ARDY employs a hybrid representation that combines explicit root features with a latent body embedding, balancing precise trajectory control with efficient generative learning. We propose a two-stage autoregressive transformer denoiser that features variable history context and supports conditioning on flexible, long-horizon kinematic constraints. By training on a large-scale motion capture dataset and being directly conditioned on text labels and kinematic constraints sampled from ground truth poses, ARDY natively learns controllable generation that supports online prompting and flexible long-horizon goals. Extensive evaluations on the HumanML3D benchmark and the large-scale, high-fidelity Bones Rigplay dataset demonstrate ARDY's high motion quality and constraint adherence, validating the efficacy of our key architectural decisions. Finally, we demonstrate the method's practical versatility through an interactive demo featuring dynamic text control, diverse keyframe pose constraints, path following, and interactive locomotion control via mouse and keyboard. Supplementary video results, code, and model releases can be found at https://research.nvidia.com/labs/sil/projects/ardy/."
+  },
+  {
+    "title": "Sculptable Mesh Structures for Room-Scale Form-Finding",
+    "url": "http://arxiv.org/abs/2607.08736v1",
+    "arxiv_id": "2607.08736v1",
+    "authors": [
+      "Jesse T. Gonzalez",
+      "Yanzhen Zhang",
+      "Dian Zhu",
+      "Alice Yu",
+      "Sapna Tayal",
+      "Nazm Furniturewala",
+      "Ziying Qi",
+      "Somin Ella Moon",
+      "Leyi Han",
+      "Alexandra Ion",
+      "Scott E. Hudson"
+    ],
+    "published": "2026-07-09T17:36:03+00:00",
+    "summary": "It can be hard to design a physical structure entirely within the confines of a computer monitor. To better capture the interplay between real-world objects and a designer's work-in-progress, practitioners will often go through a sequence of low-fidelity prototypes (paper, clay, foam) before arriving at a form that satisfies both functional and aesthetic concerns. While necessary, this model-making process can be quite time-consuming, particularly at larger scales, and the resulting geometry can be difficult to translate into a CAD environment, where it will be further refined.   This paper introduces a user-adjustable, room-scale, \"shape-aware\" mesh structure for low-fidelity prototyping. A user physically manipulates the mesh by lengthening and shortening the edges, altering the overall curvature and sculpting coarse forms. The edges are equipped with resistive length sensors, and transmit their configuration to a central computer. The structure can later be reproduced in software, connecting this prototyping stage to the larger computational design pipeline."
+  },
+  {
     "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
     "url": "http://arxiv.org/abs/2607.07695v1",
     "arxiv_id": "2607.07695v1",
