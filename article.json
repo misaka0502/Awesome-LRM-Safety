@@ -1,5 +1,69 @@
 [
   {
+    "title": "Revisiting Euler-Angle Regression with Kolmogorov-Arnold Networks",
+    "url": "http://arxiv.org/abs/2607.09650v1",
+    "arxiv_id": "2607.09650v1",
+    "authors": [
+      "Yangting Sun",
+      "Zijun Cui",
+      "Yufei Zhang"
+    ],
+    "published": "2026-07-10T17:48:06+00:00",
+    "summary": "In many real-world systems, including articulated robots and biomechanical models, rotations are defined in joint space and naturally parameterized by Euler angles with bounded ranges. Yet regressing Euler angles remains challenging, as their discontinuities and singularities often destabilize training. In this work, we revisit Euler-angle regression and show that its effectiveness depends critically on the interaction between rotation representation, regression architecture, and domain constraints. We introduce a new framework that combines range-aware Euler modeling with Kolmogorov-Arnold Networks (KAN), which replace fixed node-wise activations with learnable univariate functions on edges. We further provide theoretical analysis indicating that bounded Euler ranges motivate a near-additive structure in the regression function, which favors the additive functional form of KAN, and we confirm this trend empirically. Extensive experiments on controlled rotation regression, object pose estimation, and robotic and human inverse kinematics demonstrate consistent improvements in accuracy, convergence, and efficiency. The code will be publicly available."
+  },
+  {
+    "title": "B-spline Policy: Accelerating Manipulation Policies via B-spline Action Representations",
+    "url": "http://arxiv.org/abs/2607.09648v1",
+    "arxiv_id": "2607.09648v1",
+    "authors": [
+      "Xiaoshen Han",
+      "Haoyu Xiong",
+      "Haonan Chen",
+      "Chaoqi Liu",
+      "Antonio Torralba",
+      "Yuke Zhu",
+      "Yilun Du"
+    ],
+    "published": "2026-07-10T17:46:32+00:00",
+    "summary": "In this work, we present B-spline Policy (BSP), an action representation designed for accelerating robot manipulation policies. Rather than predicting discrete-time action chunks, BSP parameterizes actions as continuous B-spline curves defined by a set of knots and control points. This representation yields smooth, time-continuous trajectories that can be temporally scaled and executed by low-level controllers at higher frequencies and speeds. We show that B-spline-parameterized actions can be seamlessly integrated into standard policy learning pipelines by directly predicting B-spline parameters. Experiments on simulated and real-world tasks demonstrate that BSP significantly reduces task completion time, achieving substantial improvements over baseline methods while maintaining strong success rates. More results: https://b-spline-policy.github.io"
+  },
+  {
+    "title": "Semantic Pareto-DQN: A Multi-Objective Reinforcement Learning Framework for Financial Anomaly Detection",
+    "url": "http://arxiv.org/abs/2607.09641v1",
+    "arxiv_id": "2607.09641v1",
+    "authors": [
+      "Cl\u00e1udio L\u00facio do Val Lopes",
+      "Lucca Machado da Silva"
+    ],
+    "published": "2026-07-10T17:39:00+00:00",
+    "summary": "Financial anomaly detection suffers from extreme class imbalance, causing traditional single-objective algorithms to exhibit ``fraud collapse'', defaulting to the majority class and failing to balance anomaly interdiction with customer friction. To overcome this without distortive data resampling, we propose the Semantic Pareto-DQN, a multi-objective reinforcement learning framework. Our approach synthesizes heterogeneous transaction features into cohesive natural-language narratives, encoded by large language models, thereby producing a robust, scale-invariant state representation. The agent optimizes a vectorial reward that explicitly decouples financial efficacy, operational friction, and semantic discovery. By mapping the continuous Pareto frontier, the system dynamically navigates the asymmetric costs of missed anomalies versus false positives. Empirical evaluations across E-Commerce fraud and UCI Credit datasets show that semantic Pareto-DQN successfully shatters the zero-recall trap. It achieves superior minority-class recall compared to scalarized baselines, providing an alternative to trade bounded operational friction for financial anomaly discovery."
+  },
+  {
+    "title": "PAC-ACT: Post-training Actor-Critic for Action Chunking Transformers",
+    "url": "http://arxiv.org/abs/2607.09590v1",
+    "arxiv_id": "2607.09590v1",
+    "authors": [
+      "Yujie Pang",
+      "Zudong Li"
+    ],
+    "published": "2026-07-10T16:42:17+00:00",
+    "summary": "Precision industrial contact manipulation requires reliable robot policies under pose perturbations and contact-force constraints. Vision-language-action models offer broad generalization but often introduce high inference latency and GPU-memory cost, while vision-action chunking policies are more suitable for real-time industrial control. However, these policies are usually trained by behavior cloning and suffer from distribution shift in contact-rich tasks. This paper proposes PAC-ACT, a reinforcement-learning post-training framework for pretrained Action Chunking Transformer policies. PAC-ACT reformulates policy optimization at the chunk level, constructs an ACT-transferred actor-critic architecture, and introduces a hybrid behavior-prior constraint to preserve the pretrained action distribution during online fine-tuning. Experiments on industrial precision-contact benchmarks show that PAC-ACT improves task success, contact stability, and force safety while retaining low latency and low GPU-memory usage. On the Contour task, PAC-ACT significantly reduces peak contact force and decreases the proportion of force readings above 60 N by 46 times. Sparse-reward ablations further show that the proposed behavior-prior constraint enables effective exploration under randomized initial poses."
+  },
+  {
+    "title": "CoDiMAD: Diffusion-Based Privileged Distillation for Communication-Free Multi-Robot Coordination",
+    "url": "http://arxiv.org/abs/2607.09587v1",
+    "arxiv_id": "2607.09587v1",
+    "authors": [
+      "Jiyue Tao",
+      "Shunheng Xin",
+      "Tongsheng Shen",
+      "Dexin Zhao",
+      "Feitian Zhang"
+    ],
+    "published": "2026-07-10T16:36:45+00:00",
+    "summary": "Decentralized multi-robot coordination under partial observability remains challenging, especially in communication-free settings where agents must act solely from local sensor observations. Privileged policy distillation provides a promising approach by transferring knowledge from a globally informed oracle to sensor-constrained students. However, in multi-agent systems, the same local observation may correspond to multiple global configurations requiring qualitatively different cooperative actions, making the conditional action distribution inherently multi-modal. Standard deterministic distillation collapses these modes to their mean, often yielding invalid or hesitant actions. To address this issue, we propose CoDiMAD, a three-stage framework that trains a privileged oracle with MAPPO, constructs an offline dataset of local-observation-oracle-action pairs, and distills the oracle into decentralized students parameterized as conditional denoising diffusion probabilistic models. By approximating the conditional oracle-action distribution through the diffusion reverse process, CoDiMAD samples decisive actions from coherent coordination modes rather than averaging across them. Theoretical analysis characterizes the mode-averaging failure of deterministic distillation and the distributional recovery property of diffusion-based distillation. Experiments on three cooperative tasks show that CoDiMAD consistently outperforms direct local MARL and deterministic distillation baselines. The source code will be made publicly available upon acceptance."
+  },
+  {
     "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
     "url": "http://arxiv.org/abs/2607.08751v1",
     "arxiv_id": "2607.08751v1",
