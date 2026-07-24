@@ -1,5 +1,104 @@
 [
   {
+    "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
+    "url": "http://arxiv.org/abs/2607.21588v1",
+    "arxiv_id": "2607.21588v1",
+    "authors": [
+      "Mengfei Zhao",
+      "Dihong Huang",
+      "Yikai Tang",
+      "Peihao Li",
+      "Mingxuan Yan",
+      "Ruiqi Zhuang",
+      "Yanjia Huang",
+      "Jie Wang",
+      "Hai Zhai",
+      "Tony Zhou",
+      "Rui Zhang",
+      "Zhexi Luo",
+      "Yuchen Huang",
+      "Jianfei Yang",
+      "Jiachen Li"
+    ],
+    "published": "2026-07-23T17:58:08+00:00",
+    "summary": "Learning effective robot manipulation policies requires diverse, high-quality demonstrations, yet existing data pipelines are often difficult to scale because they rely on specialized hardware, centralized operators, or fixed task suites. We present AXIS, a growable community-driven data engine and benchmark for scalable robot learning, which enables browser-based teleoperation for large-scale demonstration collection, automatically generates and validates new manipulation tasks, and transforms community-collected demonstrations into training-ready data through automated success checking, quality filtering, trajectory smoothing, and visual and physics-based augmentation. The AXIS dataset currently contains 207 diverse tasks and 50K+ trajectories. Meanwhile, AXIS organizes data into task snapshots and evaluates policies with a systematic held-out protocol. We compare vision-language-action (VLA) policies under a unified AXIS evaluation suite and analyze scaling behavior across different data volumes. Continual pretraining on AXIS substantially improves the overall success rate of $\u03c0_{0.5}$ by 5.8%, outperforms the model pretrained on RoboCasa365 by 37.3%, and exhibits consistent scaling with increasing data volume, with the largest gains observed under layout, sensor-noise, and camera perturbations."
+  },
+  {
+    "title": "Scale Up Strategically: Learning Compositional Generalization via Bias-Aware Evaluation and Data Collection for Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2607.21582v1",
+    "arxiv_id": "2607.21582v1",
+    "authors": [
+      "Yu Qi",
+      "Zhang Ye",
+      "Xinyi Xu",
+      "Yuxuan Lu",
+      "Amitoj Sandhu",
+      "Boce Hu",
+      "Haojie Huang",
+      "Jonathan Tremblay",
+      "Lawson L. S. Wong"
+    ],
+    "published": "2026-07-23T17:57:09+00:00",
+    "summary": "Compositional generalization is essential for robot to follow diverse instructions. However, pretrained policies are known to take shortcuts, deferring to salient cues rather than grounding language. We introduce a diagnostic framework that localizes this failure to individual \\textit{instruction factors}, \\textit{e.g.,} reusable semantic components such as color, verb, object, size, and spatial attribute. Our framework formalizes instruction factor bias, the tendency of fine-tuned policies to over-rely on dominant factors as shortcuts, and quantifies it through two metrics: Factor Dominance Rate (FDR), capturing pairwise bias between factors, and Factor Dominance Hierarchy (FDH), aggregating these into a global ranking. Evaluation on six foundation policies reveals broadly consistent ordering, \\textit{i.e.}, color $\\geq$ object $\\geq$ spatial $\\geq$ verb $\\geq$ size, with color dominant, and verb and size most under-grounded. We further show the diagnosis is actionable: a bias-aware data collection strategy that reallocates a fixed budget toward under-grounded factors outperforms baselines in simulation and on a real robot using half the demonstrations, thereby enabling more sample-efficient and generalizable policy learning."
+  },
+  {
+    "title": "Beyond Episodic Evaluation: Memory Architectural Bottlenecks in Sequential Embodied Question Answering",
+    "url": "http://arxiv.org/abs/2607.21571v1",
+    "arxiv_id": "2607.21571v1",
+    "authors": [
+      "Zikui Cai",
+      "Kaushal Janga",
+      "Tan Dat Dao",
+      "Seungjae Lee",
+      "Shivin Dass",
+      "Mingyo Seo",
+      "Kaiyu Yue",
+      "Mintong Kang",
+      "Nandhu Pillai",
+      "Monte Hoover",
+      "Aadi Palnitkar",
+      "Ruchit Rawal",
+      "Ruijie Zheng",
+      "Bo Li",
+      "Yuke Zhu",
+      "Roberto Mart\u00edn-Mart\u00edn",
+      "Tom Goldstein",
+      "Furong Huang"
+    ],
+    "published": "2026-07-23T17:50:45+00:00",
+    "summary": "Embodied question answering (EQA) is traditionally evaluated under an episodic formulation, where agents solve each task independently and reset internal state between episodes. However, real-world robots operate continuously and must accumulate, retain, and selectively reuse information acquired from prior interactions. Despite this practical requirement, the architectural mechanisms needed to support sequential memory in EQA remain underexplored. In this work, we investigate how different memory architectures behave when EQA agents are evaluated sequentially, with multiple questions answered in the same scene while memory is carried forward across queries. We find that simply preserving existing memory is often insufficient. Agents that retain only traversability information, such as 2D occupancy maps, remember where the robot has explored but not the visual-semantic evidence needed for later questions. Agents trained on short-horizon episodic data face a different challenge: when exposed to continuous, multi-query histories, their inherited context suffers from severe temporal mismatch, rather than forming a reusable scene representation. To overcome this architectural bottleneck, we highlight the necessity of structured, spatially grounded memory: architectures that map persistent visual observations onto metric 3D geometry preserve visual-semantic evidence in a coherent scene representation. Extensive experiments in simulated environments reveal that this form of memory breaks the accuracy-efficiency tradeoff in sequential settings, simultaneously achieving higher answer accuracy and lower navigation costs. We further validate these findings on a real-world mobile robot, demonstrating that spatially grounded visual memory is critical for enabling continuous, intelligent operation in physical environments."
+  },
+  {
+    "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+    "url": "http://arxiv.org/abs/2607.21552v1",
+    "arxiv_id": "2607.21552v1",
+    "authors": [
+      "Wen Ye",
+      "Yuxiao Qu",
+      "Aviral Kumar",
+      "Xuezhe Ma"
+    ],
+    "published": "2026-07-23T17:35:56+00:00",
+    "summary": "Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating modality-dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach for improving multimodal reasoning via self supervision. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains other views with a reverse-KL objective towards the teacher. Across reasoning benchmarks that evaluate on geometry problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across modalities"
+  },
+  {
+    "title": "Seeking Help in the Digital Age: A Cross-Platform Analysis of Online Support Systems for Technology-Facilitated Abuse Victims",
+    "url": "http://arxiv.org/abs/2607.21549v1",
+    "arxiv_id": "2607.21549v1",
+    "authors": [
+      "Nowshin Tabassum",
+      "Solomon G. Dandekar",
+      "Morgan PettyJohn",
+      "Tim Ryan",
+      "Minjaal Raval",
+      "Rachel Voth Schrag",
+      "Mohit Singhal",
+      "Shirin Nilizadeh"
+    ],
+    "published": "2026-07-23T17:35:20+00:00",
+    "summary": "Technology-facilitated abuse (TFA), the use of digital technologies to stalk, harass, monitor or threaten others, has become a pervasive form of interpersonal harm. As victims turn to online sources for guidance, responses can shape how they assess risks, interpret abuse, and choose protective actions. We present a large-scale evaluation of online support for TFA victims across three channels: web search, peer-support forums, and conversational AI systems. Drawing on a decade of victim narratives from r/Stalking, we use qualitative coding and supervised classifiers to construct a dataset of TFA queries spanning 11 categories of technology misuse. We simulate these queries across the three channels and evaluate responses using a unified framework spanning technical, social, and safety dimensions. The framework assesses relevance, accuracy, actionability, persuasiveness, and understandability, alongside platform risks and support characteristics, including social-engineering risk, toxicity, empathy, bias, risky guidance, and support information. We build and validate automated classifiers to scale the evaluation. Our findings reveal differences in support quality across platforms. Google Search and general-purpose LLMs provide more relevant and actionable guidance than Reddit discussions, yet none consistently provide safe, trauma-informed support. More than 65% of victim queries encounter potentially malicious links in search results, over 20% of Reddit discussions contain toxic responses, and conversational AI systems frequently fail to provide risk-aware guidance or concrete support resources. Surprisingly, domain-specific survivor-support chatbots underperform general-purpose LLMs across most dimensions. These findings expose weaknesses in digital support for TFA victims and highlight the need for safety-centered design, evaluation, and deployment of future support technologies."
+  },
+  {
     "title": "Optimal Finite-Time Control of Nonreciprocal Brownian Dimers: Thermodynamic Anomaly and Multiple Transitions",
     "url": "http://arxiv.org/abs/2607.20420v1",
     "arxiv_id": "2607.20420v1",
