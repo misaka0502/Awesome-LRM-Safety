@@ -1,5 +1,84 @@
 [
   {
+    "title": "Robot-Factored World Models via Robot Rendering",
+    "url": "http://arxiv.org/abs/2607.22535v1",
+    "arxiv_id": "2607.22535v1",
+    "authors": [
+      "Byungjun Kim",
+      "Taeksoo Kim",
+      "Hyunsoo Cha",
+      "Hanbyul Joo"
+    ],
+    "published": "2026-07-24T17:59:57+00:00",
+    "summary": "Action-conditioned video world models predict future observations from an initial observation and an action signal. In robotics, actions influence future observations through two distinct processes: they are first realized into robot motion by the robot body and controller, and the scene then responds through contact and object motion. Conditioning directly on action commands asks the world model to learn the realization process itself, while conditioning on logged future states leaks the interaction outcomes it is meant to predict. We propose robot-factored world models, which move two robot-specific factors outside the world model. First, action realization: each command is rolled through the robot's own controller and kinematics into a deployment-available nominal trajectory, a middle signal that avoids both action-realization learning and future-state leakage. Second, robot rendering: this nominal trajectory is rendered through the robot URDF, factoring the robot's geometry, kinematics, and appearance out of the model and into explicit rendered robot geometry. To resolve depth ambiguity, we pair end-effector depth with scene depth, giving geometric cues for contact and occlusion beyond image-plane overlap. Together, camera-aware static RGB/depth context and rendered robot geometry form a shared visual world-model interface that stays consistent across viewpoints and robot embodiments, so the model sees the action only as visible robot geometry and learns how objects respond to it. Our experiments show that the rendered interface outperforms vector-conditioned baselines and generalizes to unseen robot embodiments at inference. We further demonstrate that our model generates robot manipulation videos from human demonstrations by retargeting and rendering the hand motion as robot geometry."
+  },
+  {
+    "title": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction",
+    "url": "http://arxiv.org/abs/2607.22534v1",
+    "arxiv_id": "2607.22534v1",
+    "authors": [
+      "Shing Ho J. Lin",
+      "Wenzhao Zheng",
+      "Dong Zhuo",
+      "Yuqi Wu",
+      "Jie Zhou",
+      "Jiwen Lu"
+    ],
+    "published": "2026-07-24T17:59:51+00:00",
+    "summary": "Geometry Foundation Models (GFMs) have substantially advanced monocular 3D reconstruction, yet extending this capability to 4D dynamic understanding remains a fundamental challenge. Most existing motion perception methods (e.g., sparse tracking, dense point-wise flow) treat motion as independent point-wise displacements, ignoring the structured nature of physical motion. However, real-world objects usually obey rigid-body kinematics, and points thus usually move collectively, not in isolation. Motion itself possesses geometric structure: physical objects undergo a set of rigid-body transformations governed by SE(3), rather than unstructured point-wise displacements. Building on this insight, we propose SM4RT, a Structured Motion 4D Reconstruction Transformer for end-to-end 3D reconstruction and structured motion perception. SM4RT introduces Structure-of-Motion to represent scene dynamics, where scene motion is decomposed into a compact set of motion bases, each represented as a temporal sequence of 6D twists in SE(3). Dense scene motion is then recovered by sparse, time-shared per-pixel assignment weights over these bases, ensuring points on the same object share a common rigid-body motion trajectory. SM4RT introduces a parallel motion geometry encoder and decoder that jointly infer 3D geometry, world-coordinate motion, and scene kinematic structure in a single forward pass from monocular RGB video. SM4RT achieves strong motion reconstruction performance while preserving the geometric structure of scene motion."
+  },
+  {
+    "title": "ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation",
+    "url": "http://arxiv.org/abs/2607.22530v1",
+    "arxiv_id": "2607.22530v1",
+    "authors": [
+      "Yunao Huang",
+      "Shiyu Sang",
+      "Haotao Lu",
+      "Suting Ni",
+      "Shijie Wu",
+      "Ziyang Guo",
+      "Ye Shi",
+      "Jingya Wang"
+    ],
+    "published": "2026-07-24T17:59:33+00:00",
+    "summary": "Contact-rich robot manipulation requires physical interaction cues that are often invisible to cameras, making tactile sensing essential for robust control. However, scaling visuo-tactile robot learning remains difficult because real tactile interaction data are expensive to collect, hardware-dependent, and limited in task and scene diversity. We present ViTacWorld, an action-conditioned visuo-tactile world model for scalable contact-rich robot manipulation. ViTacWorld leverages public real tactile datasets and a constructed simulation environment to scale visuo-tactile-action data, exploiting the fact that tactile signals are directly grounded in physical contact and can exhibit a smaller simulation-to-real gap than purely visual observations. The model is first pretrained with large-scale real and simulated visuo-tactile trajectories, and then finetuned with real-world policy rollouts to better match downstream manipulation behaviors. Given robot actions, ViTacWorld predicts temporally aligned visual observations and tactile feedback, enabling visuo-tactile-action rollout generation. To the best of our knowledge, ViTacWorld is the first framework that uses a world model for robot visuo-tactile-action trajectory generation and policy evaluation. It serves two roles: synthesizing rollouts to improve downstream tactile policies, and evaluating policies by predicting action-conditioned visuo-tactile outcomes under controlled action sequences. Experiments on contact-rich manipulation tasks show that ViTacWorld generates physically meaningful rollouts, improves policy performance through scalable data augmentation, and enables action-conditioned policy evaluation. Project page: https://vitacworld.github.io/"
+  },
+  {
+    "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+    "url": "http://arxiv.org/abs/2607.22529v1",
+    "arxiv_id": "2607.22529v1",
+    "authors": [
+      "Siyuan Huang",
+      "Pengyu Cheng",
+      "Haotian Liu",
+      "Tao Chen",
+      "Yihao Liu",
+      "Jingwei Ni",
+      "Shijie Zhou",
+      "Ziyi Yang",
+      "Gangwei Jiang",
+      "Mengyu Zhou",
+      "Yu Cheng",
+      "Xiaoxi Jiang",
+      "Guanjun Jiang"
+    ],
+    "published": "2026-07-24T17:59:22+00:00",
+    "summary": "LLM training is shifting from manual design and annotation to interaction-driven self-evolution. However, existing self-evolutionary methods face a fundamental dilemma between task diversity and verification reliability: environment-bound methods obtain precise feedback but confine learning to narrow domains, while open-ended self-generation broadens the task space but lacks reliable verification, allowing misleading rewards to pollute the training loop. We identify agent skills as a powerful middle ground to reconcile this tension: each skill ensures deep, verifiable execution in a specific scenario, while dynamic routing across skills maintains open-ended task variety. Leveraging this insight, we introduce Skill Self-Play (Skill-SP), a co-evolutionary framework comprising a proposer, a solver, and a dynamic skill controller. Orchestrated via a reinforcement learning loop, these components co-evolve in a continuous self-play loop: the proposer generates challenging tasks conditioned on dynamically sampled skills; the solver explores candidate solutions to push its capability boundaries; and the skill controller collects execution feedback to update and expand the skill library. This interactive co-evolution effectively bridges the gap between structured verification and open-ended exploration. Empirical evaluations on tool-use and reasoning benchmarks demonstrate that Skill-SP, serving as a robust evolution engine, consistently pushes the performance ceiling of competent backbones while catalyzing striking turnarounds for initially misaligned models. Our code is available at https://github.com/Qwen-Applications/skill-self-play."
+  },
+  {
+    "title": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
+    "url": "http://arxiv.org/abs/2607.22525v1",
+    "arxiv_id": "2607.22525v1",
+    "authors": [
+      "Anduel Mehmeti",
+      "Gabriella Gigante",
+      "Salvatore Venticinque"
+    ],
+    "published": "2026-07-24T17:56:38+00:00",
+    "summary": "To effectively integrate AI into high-stakes, critical environments such as healthcare, autonomous driving, and aviation--and to advance toward higher levels of automation and seamless human-AI collaboration--building trust in AI-driven solutions is essential. Trust, in turn, is closely linked to the explainability of AI systems. The rapid advancements in AI across various domains have underscored the challenges of establishing trust, raising increasing interest in AI explainability even more when applied to deep learning. In this context, the present work aims to explore the application of explainability techniques to Reinforcement Learning (RL) algorithms, specifically within the safety-critical domain of Air Traffic Control (ATC). Using a simplified ATC environment as an initial testbed, an intelligent agent is trained with a reinforcement learning algorithm to make decisions on alternative flight routes that avoid no-fly zones. As a preliminary explainability approach, a saliency map is employed, providing insights into the input features that most significantly influence the agent's decision-making process."
+  },
+  {
     "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
     "url": "http://arxiv.org/abs/2607.21588v1",
     "arxiv_id": "2607.21588v1",
