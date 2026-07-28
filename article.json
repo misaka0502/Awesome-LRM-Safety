@@ -1,5 +1,88 @@
 [
   {
+    "title": "Data Pyramid for Embodied Manipulation",
+    "url": "http://arxiv.org/abs/2607.24744v1",
+    "arxiv_id": "2607.24744v1",
+    "authors": [
+      "Yifan Ye",
+      "Yankai Fu",
+      "Yaoxu Lv",
+      "Bohan Hou",
+      "Jun Cen",
+      "Lingdong Kong",
+      "Duo Zheng",
+      "Tianxing Chen",
+      "Jiaming Liu",
+      "Ziang Cao",
+      "Yunfan Lou",
+      "Wei Chow",
+      "Xian Sun",
+      "Yingshuo Wang",
+      "Kuangzhi Ge",
+      "Xiaowei Chi",
+      "Xidong Zhang",
+      "Zhibo Pang",
+      "Yiwu Zhong",
+      "Sirui Han",
+      "Zhihe Lu",
+      "Weihao Yuan",
+      "Qifeng Chen",
+      "Michael Yu Wang",
+      "Yao Mu",
+      "Ziwei Liu",
+      "Jianfei Yang",
+      "Ping Luo",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-07-27T17:59:58+00:00",
+    "summary": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid\" spanning five complementary sources: real-robot data, UMI-style data, egocentric and exocentric data, simulation data, and general vision-language data. We organize the pyramid around the tension between scalability and robot alignment, and further characterize each source in terms of data quality, diversity, reusability, and physical fidelity. We then analyze recent embodied foundation models through the lens of their data recipes, examining how different sources are selected, aligned, and mixed during pretraining. For embodied brain models, vision-language-action models, and world-action models alike, we relate data composition to capabilities in perception, reasoning, planning, action generation, and world prediction. We close by discussing six open challenges: building large-scale tactile datasets, collecting failure and recovery data, developing scalable data-collection pipelines, aligning actions across embodiments, leveraging egocentric data for dexterous manipulation, and designing principled data recipes for robot learning. We hope this work paves the foundation for the design of next-generation embodied systems."
+  },
+  {
+    "title": "Infrared Imaging Empowered by Artificial Intelligence for Pediatric Skeletal Triage: A Narrative Review and Future Perspectives",
+    "url": "http://arxiv.org/abs/2607.24727v1",
+    "arxiv_id": "2607.24727v1",
+    "authors": [
+      "Sajad Amiri",
+      "Pardis Afshar",
+      "Elham Anjomshoa"
+    ],
+    "published": "2026-07-27T17:56:53+00:00",
+    "summary": "Background. Pediatric musculoskeletal trauma represents up to 18% of pediatric ED visits, yet diagnosis still depends on ionizing radiography. Cumulative low-dose radiation in early life raises lifetime leukemia and brain malignancy risk, motivating radiation-free triage alternatives. Objective. To synthesize evidence for a hybrid framework coupling broad-spectrum infrared (IR) imaging with deep-learning cross-modal translation to generate clinically interpretable synthetic-radiograph reconstructions from non-ionizing data.   Approach. We review five IR spectral windows spanning 650 nm to 1 mm - NIR-I, NIR-II, SWIR, MIR/LWIR, and THz - and how dual-geometry (transmission/reflection) acquisition exploits wavelength-specific tissue depth and biochemical sensitivity. We summarize image-to-image translation networks (Pix2Pix, CycleGAN, Swin-Unet) and feature-matching algorithms (SuperPoint, SuperGlue, ALIKED, LightGlue) used to align and fuse IR data into radiograph-equivalent reconstructions.   Implications. Pediatric anatomy - smaller cross-sections, thinner cortical bone - favors IR penetration, enabling compact, portable, non-ionizing triage hardware. Feasibility is grounded in fNIRS and transcranial photobiomodulation evidence: near-infrared light passes through skin, skull, and cortex with sufficient signal for hemodynamic monitoring - a longer, more attenuating path than through a pediatric forearm or distal leg. Key barriers: paired IR/X-ray dataset construction, AI-as-medical-device regulatory pathways, generalization across body habitus and skin pigmentation, and acquisition-protocol standardization.   Conclusions. Integrated multi-spectral IR+AI imaging is a promising radiation-free complement to pediatric skeletal radiography. Progress requires multi-center paired datasets, externally validated models, and IR source safety qualification under IEC 60825-1."
+  },
+  {
+    "title": "Sample complexity of quantum resource testing via one-shot quantum blurring",
+    "url": "http://arxiv.org/abs/2607.24712v1",
+    "arxiv_id": "2607.24712v1",
+    "authors": [
+      "Dmitry Grinko",
+      "Ludovico Lami"
+    ],
+    "published": "2026-07-27T17:51:15+00:00",
+    "summary": "Quantum resource testing is a fundamental primitive of quantum information processing, profoundly connected to resource manipulation. Its goal is to discriminate $n$ copies of a given resourceful state $\u03c1$ from all free (i.e., resourceless) states; key instances for applications are entanglement testing and quantum magic testing. The asymptotic characterisation relies on the recently proven generalised quantum Stein's lemma, which establishes the rate of decay of the false negative error probability for a fixed false positive error probability. This result, however, is intrinsically asymptotic and thus can provide no finite-resource guarantees, which makes its practical implications unclear. Here, we establish the first rigorous finite-$n$ bounds on quantum resource testing and hence quantum resource manipulation, providing explicit estimates on the number of copies needed to achieve a prescribed performance. As notable consequences, we obtain (a) the convergence of the regularised R\u00e9nyi relative entropies of a resource, which settles the important open problem from [Fang/Hayashi, IEEE ToIT 72:6, 2026]; and (b) the first sample-complexity bound for asymmetric resource testing: for any fixed false positive error probability, a false negative error probability of at most $\u03b4$ can be achieved with $n=O\\left(\\frac{\\log(1/\u03b4)}{D^\\infty(\u03c1\\|F)}\\right)$ copies of $\u03c1$, in the limit where $\u03b4\\to 0$."
+  },
+  {
+    "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+    "url": "http://arxiv.org/abs/2607.24676v1",
+    "arxiv_id": "2607.24676v1",
+    "authors": [
+      "Dael Sinay",
+      "Rica Gonen"
+    ],
+    "published": "2026-07-27T17:17:19+00:00",
+    "summary": "The classic notion of strategyproofness implicitly assumes that a manipulating agent either possesses complete knowledge of what all other agents are going to report, or is willing to take the risk and act as if they know these reports. To capture the profound uncertainty of real-world voters, recent work introduced \\emph{risk-avoiding truthfulness (RAT)} and the \\emph{RAT-degree}, which quantifies the exact number of known reports required for a manipulation to be strictly safe. While the RAT-degree has been analyzed in settings such as single-winner elections, its implications for multi-winner voting remain unexplored. In this paper, we bridge this gap by extending the RAT-degree framework to approval-based committee (ABC) selection, a domain characterized by a fundamental tension between proportional representation and strategic robustness. Focusing on the prominent Proportional Approval Voting (PAV) rule, we investigate its susceptibility to safe subset manipulations. We establish tight bounds on its superset risk-avoiding strategy-proofness under dropping candidates, demonstrating that PAV is vulnerable to safe manipulation when the agent knows the exact ballots of $f = \\lceil n/k \\rceil$ other voters, but remains completely immune given knowledge of at most $f = \\lfloor \\frac{n}{k+1} \\rfloor - 1$ voters."
+  },
+  {
+    "title": "Explainable Reinforcement Learning via Physics-Aware Policy Distillation",
+    "url": "http://arxiv.org/abs/2607.24672v1",
+    "arxiv_id": "2607.24672v1",
+    "authors": [
+      "Shaker Al-Tamari",
+      "Waled Kadour"
+    ],
+    "published": "2026-07-27T17:14:42+00:00",
+    "summary": "In safety-critical sectors such as robotics and automotive engineering, the deployment of Deep Reinforcement Learning (DRL) is often hindered by the black-box nature of deep neural networks. This lack of transparency poses significant challenges for regulatory compliance and human-agent trust. This paper presents an experimental study aimed at making high-performance continuous control DRL systems interpretable. A policy distillation framework is implemented using the classic Inverted Pendulum benchmark. A high-performance Twin Delayed DDPG (TD3) agent serves as an opaque, continuous teacher model, whose policy is distilled into an interpretable student surrogate based on a shallow Decision Tree. By leveraging a custom physics-aware feature and \"Noisy Oracle Rollouts\" for dataset generation, the distillation process achieves performance equivalent to the expert teacher. Furthermore, comparative control theory analysis reveals a fundamental trade-off: transitioning from continuous to discrete rule-based control induces high-frequency Bang-Bang actuation and a stable bimodal limit cycle. Simulation results indicate that Bounded-Input Bounded-Output (BIBO) stability is maintained while providing both global and local interpretability for safe autonomous systems."
+  },
+  {
     "title": "Robot-Factored World Models via Robot Rendering",
     "url": "http://arxiv.org/abs/2607.22535v1",
     "arxiv_id": "2607.22535v1",
