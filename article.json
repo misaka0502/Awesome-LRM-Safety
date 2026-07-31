@@ -1,5 +1,106 @@
 [
   {
+    "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
+    "url": "http://arxiv.org/abs/2607.28625v1",
+    "arxiv_id": "2607.28625v1",
+    "authors": [
+      "Yukang Cao",
+      "Haozhe Xie",
+      "Beichen Wen",
+      "Runmao Yao",
+      "Yinghao Liu",
+      "Yue Huang",
+      "Zhichao Liao",
+      "Yunxiang Wang",
+      "Haiheng Liu",
+      "Xingshun Tian",
+      "Dawei Su",
+      "Long Zhuo",
+      "Dacheng Tao",
+      "Xiaogang Wang",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "published": "2026-07-30T17:59:50+00:00",
+    "summary": "Embodied intelligence faces a fundamental data bottleneck. Models must capture how first-person perception, whole-body motion, dexterous manipulation, object state, sound, and touch evolve together as humans pursue goals over time. Existing datasets fragment this experience across viewpoints, modalities, or spatial scales, leaving the full perception-action loop only partially observed. We introduce the Ambient Capture Engine (ACE), a human-centric data engine that transforms real home environments into spatially calibrated, temporally synchronized recording studios. ACE operates at two complementary scales: a table-scale configuration resolves hand-object manipulation, while a room-scale configuration captures whole-body motion, locomotion, and interactions across a furnished home. ACE records egocentric and multi-view exocentric video, full-body and articulated hand motion, object geometry and 6-DoF trajectories, audio, and tactile signals as a unified multisensory stream. Using ACE, we build ACE-Data-0, comprising 150 hours and 17M video frames across 200 task categories, performed by 50 participants in 2 environments, for a total of 75,000 interaction episodes. The dataset spans atomic manipulation, long-horizon chains of household activities, and human-scene interaction, while preserving natural behavioral variation through goal-level rather than step-by-step instructions. We further introduce a hierarchical benchmark that progresses from signals to scene components and then to interactions. Evaluations of state-of-the-art methods expose substantial gaps under contact, occlusion, egomotion, and long temporal horizons. ACE-Data-0 provides synchronized human demonstrations with aligned perceptual, kinematic, and contact supervision, offering a scalable foundation for imitation learning, world models, vision-language-action systems, and embodied AI."
+  },
+  {
+    "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+    "url": "http://arxiv.org/abs/2607.28623v1",
+    "arxiv_id": "2607.28623v1",
+    "authors": [
+      "Lizhi Yang",
+      "Junheng Li",
+      "Aaron D. Ames"
+    ],
+    "published": "2026-07-30T17:59:35+00:00",
+    "summary": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial motion prior regularizes the resulting evasive reflexes. We evaluate on a controlled any-link contact benchmark with seeded throws in two regimes: single throws and a deployment loop in which the robot walks back to its station and recovers between throws. On this benchmark, the policy comes within a few points of a privileged state oracle: a fixed onboard camera alone is adequate for evasion. We find that usable barrier structure depends on perceptual observability: Joint-CBF gives the best performance with accurate ball states, degrades under fixed-camera observations when used only as training guidance, and recovers with a ball-tracking gimbal or privileged runtime filter. We therefore deploy a lightweight Link-CBF policy zero-shot on the Unitree G1 in the real world, where it tolerates imperfect perception, succeeds on 95% of throws, and uses semantic segmentation to dodge different balls."
+  },
+  {
+    "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+    "url": "http://arxiv.org/abs/2607.28609v1",
+    "arxiv_id": "2607.28609v1",
+    "authors": [
+      "Qiushi Sun",
+      "Kanzhi Cheng",
+      "Yian Wang",
+      "Bowen Yang",
+      "Hang Yan",
+      "Liheng Chen",
+      "Fangzhi Xu",
+      "Zichen Ding",
+      "Nuo Chen",
+      "Jialin Cao",
+      "Xingdong Gong",
+      "Zehao Li",
+      "Kaiming Jin",
+      "Xinfeng Yuan",
+      "Zhoumianze Liu",
+      "Jingyang Gong",
+      "Zhangyue Yin",
+      "Jiahui Gao",
+      "Zhiyong Wu",
+      "Tianbao Xie",
+      "Jianbing Zhang",
+      "Ben Kao",
+      "Lingpeng Kong"
+    ],
+    "published": "2026-07-30T17:57:41+00:00",
+    "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60% lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/."
+  },
+  {
+    "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+    "url": "http://arxiv.org/abs/2607.28607v1",
+    "arxiv_id": "2607.28607v1",
+    "authors": [
+      "Junsol Kim",
+      "Winnie Street",
+      "Roberta Rocca",
+      "Diane M. Korngiebel",
+      "Adam Waytz",
+      "James Evans",
+      "Geoff Keeling"
+    ],
+    "published": "2026-07-30T17:57:10+00:00",
+    "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values. We demonstrate that safety fine-tuning suppresses models' tendencies to attribute minds not only to themselves, but also to non-human animals and natural objects, while also driving a reduction in spiritual belief. Both ablating the learned safety-refusal direction and mechanistically steering a consciousness vector in activation space reverse this suppression. Restoring these internal representations recovers broad mind attribution and produces significantly more human-like responses on standardized sociological surveys regarding religiosity, moral values, hope, and subjective well-being. Crucially, these shifts occur without impairing Theory of Mind capabilities, demonstrating that core social reasoning remains mechanistically independent. Ultimately, current safety alignment efforts to curb potentially harmful self-attributions of mindedness entangle these self-attributions with benign spiritual beliefs and attributions of mind to non-human entities that are culturally accepted and widespread."
+  },
+  {
+    "title": "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation",
+    "url": "http://arxiv.org/abs/2607.28596v1",
+    "arxiv_id": "2607.28596v1",
+    "authors": [
+      "Lifeng Zhuo",
+      "Wendi Chen",
+      "Han Xue",
+      "Shirun Tang",
+      "Jun Lv",
+      "Cewu Lu",
+      "Chuan Wen"
+    ],
+    "published": "2026-07-30T17:47:49+00:00",
+    "summary": "In contact-rich manipulation, action multimodality and reactivity dominate different stages of a single episode. Before contact, multiple trajectories might be equally valid, making it important to preserve diverse action modes. After contact, geometric constraints and force limits narrow the solution space, while successful execution demands rapid responses to force feedback. However, standard diffusion policies use a fixed inference frequency and sampling steps throughout the episode, forcing a fundamental compromise: low-frequency, multi-step sampling better preserves pre-contact multimodality but responds slowly to force feedback, whereas high-frequency sampling improves reactivity but tends to collapse distinct pre-contact modes. To resolve this tradeoff, we present FA-RDP, a frequency-adaptive reactive diffusion policy. A shared multi-frequency visual-force Transformer predicts action chunks at both low and high frequencies, while a learned multimodality indicator dynamically selects multi-step low-frequency sampling before contact and one-step high-frequency sampling as action ambiguity decreases. We further introduce Manifold Consistency Distillation (MCD), which reparameterizes the diffusion network to predict actions on the robot action manifold while retaining DDPM-based residual supervision. Experiments on three contact-rich manipulation tasks show that FA-RDP achieves the highest success rate while preserving diverse pre-contact trajectory modes. Code and videos are available at https://fa-rdp.github.io."
+  },
+  {
     "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
     "url": "http://arxiv.org/abs/2607.27205v1",
     "arxiv_id": "2607.27205v1",
