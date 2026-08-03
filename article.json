@@ -1,5 +1,86 @@
 [
   {
+    "title": "Diagnosing Compositional Generalization in Sequential Robot Tasks",
+    "url": "http://arxiv.org/abs/2607.29687v1",
+    "arxiv_id": "2607.29687v1",
+    "authors": [
+      "Yixiao Wang",
+      "Cheng-En Wu",
+      "Lingfeng Sun",
+      "Pengcheng Wang",
+      "Xiang Ji",
+      "Boyuan Liang",
+      "Guojian Zhan",
+      "Masayoshi Tomizuka"
+    ],
+    "published": "2026-07-31T17:59:59+00:00",
+    "summary": "Sequential robot manipulation requires policies to execute novel combinations of familiar instruction components. However, collecting demonstrations for all possible instruction tuples is combinatorially expensive, while sparsely covered datasets often fail under out-of-distribution recombination. This paper studies compositional generalization through the lens of instruction-space coverage. We decompose the generalization gap into three sources: \\textit{marginal instruction shift}, \\textit{instruction-compositional shift}, and \\textit{context--action shift}. This decomposition allows us to diagnose when sparse training coverage is sufficient, and what structure the training set must preserve for reliable action prediction. Our results show that exhaustive tuple enumeration is unnecessary: a structured subset, as small as one quarter of the full task space, can recover strong out-of-distribution performance when it covers action-relevant dependencies. We further find that sparse training often fails due to instruction steering rather than missing low-level skills; finetuning only one demonstration per task improves OOD success from \\(0.4\\%\\) to \\(54.7\\%\\). For semantically dependent tasks, effective coverage must capture relational structure rather than only factor diversity. These findings suggest that efficient robot data collection should prioritize dependency coverage in instruction space over exhaustive task expansion. More results are available in the supplementary material. Project website: https://yixiaowang7.github.io/Diagnosing_Compositional_Generalization_Robot_Page/."
+  },
+  {
+    "title": "Bootstrapping Self-Supervised Learning of Binary Classification Using Error Bounds: A Case Study on a Robotic Insertion Task",
+    "url": "http://arxiv.org/abs/2607.29640v1",
+    "arxiv_id": "2607.29640v1",
+    "authors": [
+      "Zebin Duan",
+      "Norbert Kr\u00fcger",
+      "Juan Heredia",
+      "Thorbj\u00f8rn Mosekj\u00e6r Iversen",
+      "Frederik Hagelskj\u00e6r"
+    ],
+    "published": "2026-07-31T17:18:05+00:00",
+    "summary": "Flexible manufacturing requires rapid deployment of solutions and minimal setup time to remain competitive. An essential attribute is the ability to control error levels, as failures can range from minor performance degradation to severe equipment damage. However, conventional deployment often involves extensive setup, data collection, model training or parameter tuning, and system testing, resulting in significant delays that hinder commercial feasibility. We propose a data engine which gathers data and improves its performance while executing the task. The data engine consists of two classifiers, a fast model prediction and expensive verification. First, a model prediction is performed and based on the confidence level of the prediction, the expensive verification can be used. By adjusting the confidence level, users can control the level of tolerable error.   Our method is implemented on a real-world robotic insertion task, which uses force data for the model prediction. The system applies UMAP dimensionality reduction and uses Wilson-Score to compute the confidence bounds of the prediction. Results demonstrate the ability to learn and reduce the need for expensive verifications over time, while staying within the set error-rate. The results highlight the potential of confidence bounds in self-improving models to enhance reliability in robotic classification task."
+  },
+  {
+    "title": "CodeShrink: Adaptive Visual Compression for Efficient Multimodal Code Understanding",
+    "url": "http://arxiv.org/abs/2607.29637v1",
+    "arxiv_id": "2607.29637v1",
+    "authors": [
+      "Wenxin Tang",
+      "Jingyu Xiao",
+      "Zhenyu Liu",
+      "Zipeng Xie",
+      "Junliang Liu",
+      "Wang Luo",
+      "Yuan Jiang",
+      "Yintong Huo",
+      "Michael Lyu"
+    ],
+    "published": "2026-07-31T17:15:51+00:00",
+    "summary": "Rendering source code as images offers a promising way to reduce the input costs of Multimodal Large Language Models (MLLMs). Adjusting image resolution can trade visual token cost against content fidelity. However, resolution scaling alone overlooks two sources of inefficiency: blank regions created by line breaks and indentation, and code regions irrelevant to the current instruction. Moreover, the best compression setting varies across inputs, tasks, and models, limiting fixed-ratio strategies. We propose CodeShrink, an adaptive visual compression framework with three components. Blank-Free Rendering replaces whitespace-dependent layouts with compact layouts and explicit structural markers, removing layout-induced tokens. Adaptive Compression Configuration uses a lightweight agent trained with reinforcement learning to predict a per-input setting that balances token efficiency and readability. Dominant Token Selection jointly analyzes the instruction and code image to prune task-irrelevant visual tokens during inference. We evaluate CodeShrink on code question answering, clone detection, and code completion. CodeShrink reduces visual token use by up to 71.2\\% while matching or exceeding uncompressed text-only inputs, and consistently outperforms text-based and visual compression baselines across all three tasks. These results show that combining layout compaction, adaptive configuration, and instruction-aware pruning can make multimodal code understanding more efficient. Our code is available at https://github.com/vinsontang1/CodeShrink."
+  },
+  {
+    "title": "Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control",
+    "url": "http://arxiv.org/abs/2607.29625v1",
+    "arxiv_id": "2607.29625v1",
+    "authors": [
+      "Hyunjong Song",
+      "William Z. Peng",
+      "Joo H. Kim"
+    ],
+    "published": "2026-07-31T16:57:51+00:00",
+    "summary": "The demand for humanoid loco-manipulation tasks with an object has recently increased, and most existing control approaches for stability in such tasks rely on heuristics or machine-learning techniques. This study rigorously analyzes and exploits the dynamic effects of the object mass on balance stability. By formulating the object mass parameters in the whole-body dynamics with distributed contact wrenches and centers of pressure at the stance contacts, their nonlinear effects on the system momenta and constraints are quantified. The dynamic models and constraints are incorporated into the construction of the balanced state basin/boundary (BSB), a partition of the center-of-mass state space for a biped system to maintain balance in its desired contacts. The implications of the BSB for prediction and control are highlighted using a humanoid robot and an analytically tractable reduced-order mechanism. The BSBs under different conditions of base of support, actuation capacity, and pose provide systematic analyses of the effects of object mass on the balancing capability of a system. In particular, the trade-off relationships between momentum regulation and limiting factors in balancing are characterized, introducing two key quantities of the object: the critical mass, at which the system's balancing capability is maximum, and the transition mass, which activates different limiting factors. In addition, sufficient conditions for imposing balanced states on a trajectory are established and implemented with BSBs as explicit threshold constraints in the whole-body trajectory optimization for stable object-lifting control of the humanoid, demonstrating the lift-and-hold and lift-and-release tasks with distinct mass properties in simulations and experiments."
+  },
+  {
+    "title": "RayViT: Ray-Conditioned Visual Representations for Viewpoint-Robust Imitation Learning",
+    "url": "http://arxiv.org/abs/2607.29622v1",
+    "arxiv_id": "2607.29622v1",
+    "authors": [
+      "Qian Wang",
+      "Longrui Chen",
+      "Peiran Sun",
+      "Aleksandar Taranovic",
+      "Niklas Freymuth",
+      "Ge Li",
+      "Weiran Liao",
+      "C. F. Maximilian Nagy",
+      "Yucheng Tan",
+      "Tao Chen",
+      "Gerhard Neumann"
+    ],
+    "published": "2026-07-31T16:56:33+00:00",
+    "summary": "Visual imitation learning enables robots to acquire visuomotor skills directly from images, yet RGB observations lack explicit geometric cues, making learned policies brittle to camera perturbations. To address this, we propose \\textbf{Ray-conditioned Vision Transformer Encoder (RayViT)}, a lightweight architecture that injects camera geometry into pretrained ViT backbones. RayViT represents camera geometry as a Pl\u00fccker ray map, patchifies it into ray features, and uses gated cross-attention to produce a ray-conditioned class token. These ray features are added as dense positional embeddings, while the ray class token replaces the original ViT class token to provide a geometry-aware summary representation. We combine this approach with an auxiliary cosine similarity loss to consistently improve the performance and robustness for geometry-aware tokens. Experiments on sim- and real-robot tasks demonstrate that RayViT improves robustness by approximately 13 percentage points under camera perturbations in multi-task RoboCasa benchmark and by 1.78 average completed stages in real-world multi-task success rate compared to baselines."
+  },
+  {
     "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
     "url": "http://arxiv.org/abs/2607.28625v1",
     "arxiv_id": "2607.28625v1",
