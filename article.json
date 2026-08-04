@@ -1,5 +1,83 @@
 [
   {
+    "title": "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
+    "url": "http://arxiv.org/abs/2608.02599v1",
+    "arxiv_id": "2608.02599v1",
+    "authors": [
+      "Junjie Yin",
+      "Buxin She",
+      "Xinyu Feng",
+      " Fangxing",
+      " Li"
+    ],
+    "published": "2026-08-03T17:59:09+00:00",
+    "summary": "Artificial intelligence (AI) is increasingly central to power and energy systems, supporting modeling, forecasting, optimization, and control. Yet most existing works emphasize specialized applications and offer little reusable material for newcomers or interdisciplinary learners, who increasingly rely on large language models rather than building their own. This gap points to a need for engineering-grounded AI (EGAI), in which AI workflows follow established engineering and power-system domain rules rather than acting as task-agnostic black boxes. Motivated by a community survey of researchers and practitioners, which shows 92% report at least one barrier before running an AI model and 94% want a power-specific hands-on course. This paper presents a framework consisting of open, executable module library that lowers the entry barrier for AI in power systems. The modules follow a progressive difficulty ladder that maps core AI concepts onto representative power-system tasks: (i) foundational deep neural network (DNN) templates for function approximation and load-curve fitting; (ii) a domain-coupled convolutional neural network (CNN) power-flow surrogate for a 5-bus system; and (iii) frontier modules on DNN-assisted optimization, deep reinforcement learning (DRL) for battery storage control, and physics-informed neural networks (PINNs) for the swing equation. All modules are released as Jupyter notebooks that run locally or on Google Colab and are delivered through an IEEE online course and IEEE Power & Energy Society (PES) webinar series. The webinar drew more than 590 live attendees, which is among the ten most-attended IEEE PES webinars, and over 344 repository visits within two weeks, reinforcing the survey-based motivation."
+  },
+  {
+    "title": "onepot-Bench 0: towards lab-aware in silico chemistry benchmarks",
+    "url": "http://arxiv.org/abs/2608.02595v1",
+    "arxiv_id": "2608.02595v1",
+    "authors": [
+      "Brandon Wang",
+      "Andrei S. Tyrin",
+      "Daniil A. Boiko"
+    ],
+    "published": "2026-08-03T17:58:27+00:00",
+    "summary": "Language models are playing an increasingly important role in laboratory science, performing tasks such as experiment planning, execution, and post-hoc analysis. However, precisely measuring their abilities is difficult, as scientific capabilities require a mixture of both problem-solving skills and domain-specific intuition. Existing evaluations rarely measure the capabilities required to make reliable decisions in a physical laboratory and often rely on public data that may have appeared in model training corpora.   We introduce onepot-Bench 0, a proprietary benchmark suite for evaluating language models on synthetic chemistry capabilities relevant to wet-lab execution. onepot-Bench 0 comprises three complementary evaluations: ChemAbacus measures tool-free cheminformatics literacy and numerical reasoning; SynthRefusal characterizes safety and refusal behavior across a variety of benign, controlled, and designer-drug targets; and SynthBench evaluates reaction-outcome prediction and catalyst selection using private experimental data generated in our laboratory. Together, these evaluations probe basic competency, reliability, and deeper knowledge, all skills which are required for reliable performance in the lab."
+  },
+  {
+    "title": "Entanglement of flower states",
+    "url": "http://arxiv.org/abs/2608.02587v1",
+    "arxiv_id": "2608.02587v1",
+    "authors": [
+      "Samrat Sen",
+      "Ludovico Lami"
+    ],
+    "published": "2026-08-03T17:56:25+00:00",
+    "summary": "The mysterious nature of entanglement, one of the most prominent exquisitely quantum phenomena, is reflected in its intricate operational structure, with a hierarchy of classes of free operations that enable its manipulation at different levels of effectiveness. Here we use the class of 'flower states', parametrised by their (even) local dimension $2k$, to shine light on some aspects of this varied landscape. We compute all the main entanglement measures for flower states, uncovering a large gap between all forms of distillable entanglement, equal to 1 ebit independently of the local dimension, and the entanglement cost under local operations and classical communication (LOCC), known to be equal to $\\log\\big(2\\sqrt{k}\\big)$. Even under the strictly more powerful class of non-entangling (NE) operations, we show that their cost is still equal to $\\log\\big(1+\\sqrt{k}\\big)$, only about an ebit less than for LOCCs. This result, which we prove by calculating the recently introduced tempered entanglement negativity for these states, demonstrates the largest known 'irreversibility gap', i.e. the difference between distillable entanglement and entanglement cost, under NE operations, equal to $\u0398\\big(\\frac12 \\log d\\big)$, with $d$ being the local dimension. A notable consequence is that the celebrated squashed entanglement is not a monotone under NE operations. Finally, we compute the exact cost under LOCC operations for flower states; this is given by the Schmidt number, which turns out to be additive over multiple copies and equal to $\\min_{r|k} \\log\\left( r + \\frac{k}{r} \\right)$; for prime $k$ this reduces to $\\log(k+1)$, about twice the standard LOCC cost. These last results leverage the uncertainty relations over cyclic groups proved by Tao and Meshulam."
+  },
+  {
+    "title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
+    "url": "http://arxiv.org/abs/2608.02580v1",
+    "arxiv_id": "2608.02580v1",
+    "authors": [
+      "Ye Wang",
+      "Pei Lin",
+      "Xiong-Hui Chen",
+      "Haoqi Yuan",
+      "Zhixuan Liang",
+      "Yiyang Huang",
+      "Anzhe Chen",
+      "Zixing Lei",
+      "Jie Zhang",
+      "Tao Zhang",
+      "Haoyang Li",
+      "Tong Zhang",
+      "Chenxi Xiao",
+      "Ziyuan Jiao",
+      "Qin Jin"
+    ],
+    "published": "2026-08-03T17:52:26+00:00",
+    "summary": "Learning generalizable robot manipulation policies requires large-scale and diverse demonstration data. Egocentric human manipulation videos offer rich scene and task diversity, and prior work has shown that retargeting and rendering such videos into robot-format data can yield effective per-task policies at small scale. However, whether this approach can provide pretraining benefits for vision-language-action models at scale remains unexplored. We present \\textbf{Ego2Robot}, a scalable pipeline that converts egocentric human manipulation videos into robot training data through action retargeting, robot-arm visual synthesis, and multi-level quality curation. Ego2Robot supports both curated datasets and in-the-wild videos, producing 18,561 hours of robot training data spanning 15 robot morphologies, making it the largest ego-to-robot dataset to date. To evaluate generalization, we extend RoboTwin2.0 with disentangled perturbation axes covering visual appearance, scene layout, embodiment morphology, and task semantics. Experiments show that joint pretraining on Ego2Robot-synthesized and robot data consistently improves out-of-distribution generalization across multiple perturbation types, with benefits validated on real-robot deployment. Project page: https://www-ye.github.io/ego2robot_blog/"
+  },
+  {
+    "title": "CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs",
+    "url": "http://arxiv.org/abs/2608.02578v1",
+    "arxiv_id": "2608.02578v1",
+    "authors": [
+      "Shuaijun Liu",
+      "Qifu Wen",
+      "Shuyang Hao",
+      "Qi Luo",
+      "Chenglong Zhang",
+      "Feiyang You",
+      "Chengyu Wu",
+      "Ningxin Su"
+    ],
+    "published": "2026-08-03T17:51:58+00:00",
+    "summary": "World Action Models (WAMs) augment robot policies with action-conditioned predicted futures, but a plausible future alone does not justify changing the action that a bimanual policy would execute. We present CoWAM, a selective intervention layer that expresses synchronization, role compatibility, and collision convergence as coordination contracts. Each contract combines typed admissibility checks with event-conditioned verification and calibrated intervention gates. CoWAM preserves the nominal action unless an alternative satisfies every active obligation and provides a clear, low-risk improvement; when the nominal action is also inadmissible, it invokes a predefined abstention fallback. To separate selector quality from proposal quality, all methods operate on identical candidate pools and commit their decisions before shared oracle labeling. Across eight simulated bimanual tasks, CoWAM improves coordination-valid selection by 16.7 percentage points over the contract-only variant and raises closed-loop success by 9.6 percentage points over the strongest selective baseline, while keeping harmful interventions below 1%. Together, these results establish coordination contracts as an effective interface for conservative policy intervention with predicted world-action evidence across coordination-rich bimanual tasks."
+  },
+  {
     "title": "Diagnosing Compositional Generalization in Sequential Robot Tasks",
     "url": "http://arxiv.org/abs/2607.29687v1",
     "arxiv_id": "2607.29687v1",
