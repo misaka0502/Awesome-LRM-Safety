@@ -1,5 +1,105 @@
 [
   {
+    "title": "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
+    "url": "http://arxiv.org/abs/2608.04007v1",
+    "arxiv_id": "2608.04007v1",
+    "authors": [
+      "Changle Qu",
+      "Sunhao Dai",
+      "Hengyi Cai",
+      "Yuqi Zhou",
+      "Xinran Chen",
+      " Simon",
+      "Jun Xu"
+    ],
+    "published": "2026-08-04T17:59:21+00:00",
+    "summary": "Tool-Integrated Reasoning (TIR) enables LLMs to solve complex tasks through iterative tool interactions. However, existing reinforcement learning methods often rely on trajectory-level supervision, limiting fine-grained credit assignment in long-horizon TIR scenarios. On-policy self-distillation offers denser signals through teacher branches with privileged context, but existing approaches typically derive such context from ground-truth answers or retrieved skills, which may not reflect the states actually visited by the agent. Moreover, token-level supervision fails to capture the turn-level structure of tool interactions. To address this, we propose TurnSight, a turn-level hindsight self-distillation framework that derives supervision directly from execution-conditioned hindsight. It then constructs multiple hindsight views with different lookahead horizons and selects reliable supervision through cross-horizon directional agreement. Finally, the selected hindsight signal is normalized across sibling rollouts and used to adaptively modulate RL advantages while preserving their original optimization direction. Extensive experiments on three benchmarks demonstrate the effectiveness of TurnSight. Our codes are available at https://github.com/quchangle1/TurnSight."
+  },
+  {
+    "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+    "url": "http://arxiv.org/abs/2608.03979v1",
+    "arxiv_id": "2608.03979v1",
+    "authors": [
+      "Zhen Fang",
+      "Yu Zeng",
+      "Wenxuan Huang",
+      "Yiming Zhao",
+      "Shiting Huang",
+      "Tianfei Ren",
+      "Qi Lu",
+      "Qingnan Ren",
+      "Qisheng Su",
+      "Lionel Z. Wang",
+      "Qingyu Yin",
+      "Shuang Chen",
+      "Zehui Chen",
+      "Lin Chen",
+      "Zhenfei Yin",
+      "Yao Hu",
+      "Shaohui Lin",
+      "Wanli Ouyang",
+      "Shaosheng Cao",
+      "Feng Zhao"
+    ],
+    "published": "2026-08-04T17:45:16+00:00",
+    "summary": "We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual search, and (2) parametric knowledge leakage, where models rely on internal memory rather than genuine tool-augmented execution. To address these challenges, we propose Video-DR, featuring a decoupled perception-exploration pipeline with stage-wise tool unlocking that compels exhaustive cross-frame visual grounding prior to web retrieval. Our framework adopts a two-stage training recipe: supervised fine-tuning followed by Group Relative Policy Optimization (GRPO), enabling autonomous exploration that breaks the imitation-learning ceiling. Furthermore, we curate Video-DR-Bench, a human-AI collaborative benchmark comprising 200 complex, multi-hop VQA instances. Empirical results demonstrate that our Video-DeepResearch-35B-A3B establishes a new state-of-the-art of 64.0% average accuracy, surpassing proprietary Claude-4.5-Sonnet (59.0%) by 5.0 points and significantly outperforming GPT-5 (52.5%) and Gemini 2.5 Pro (57.5%). The 30B-A3B variant achieves 59.3%, competitive with Claude-4.5-Sonnet and demonstrating the effectiveness of our training paradigm even at compact scale. Code: https://github.com/Osilly/Vision-DeepResearch."
+  },
+  {
+    "title": "Stochastic Multiple Shooting Trajectory Optimization via Sequential Local Policy Evaluation",
+    "url": "http://arxiv.org/abs/2608.03978v1",
+    "arxiv_id": "2608.03978v1",
+    "authors": [
+      "Ashwin Gupta",
+      "Joseph Moore"
+    ],
+    "published": "2026-08-04T17:43:21+00:00",
+    "summary": "Stochastic single shooting trajectory optimization methods such as Model Predictive Path Integral control (MPPI) have been widely adopted in robotics due to their ability to reason about probabilistic dynamics and provide solutions where model gradients are noisy, costly to evaluate, or unavailable. However, satisfaction of terminal constraints when shooting over long action sequences is often sample inefficient, requiring a large number of iterations for convergence. In this paper, we present a stochastic multiple shooting method that optimizes short control action sequences connected via local feedback policies to improve sample efficiency and convergence to a terminal set. Additionally, we show that we are able to synthesize approximate system Jacobians purely from rollouts, making the method suitable for model-based reinforcement learning with black-box dynamics. We demonstrate the algorithm has improved sample efficiency and terminal set convergence for three nonlinear, underactuated optimization problems: a classic cartpole swingup task with analytical dynamics, a cartpole swingup task with learned neural network dynamics, and a VTOL quadplane performing a high angle-of-attack, precision post-stall landing maneuver."
+  },
+  {
+    "title": "UniWorld-Design: From Pixel Generation to Layer-Native Design",
+    "url": "http://arxiv.org/abs/2608.03971v1",
+    "arxiv_id": "2608.03971v1",
+    "authors": [
+      "Zongjian Li",
+      "Zhiyuan Yan",
+      "Chenxu Bai",
+      "Chen Chen",
+      "Haoxiang Sun",
+      "Shaodong Wang",
+      "Feize Wu",
+      "Shenghai Yuan",
+      "Bin Lin",
+      "Zheyuan Liu",
+      "Yuwei Niu",
+      "Li Yuan"
+    ],
+    "published": "2026-08-04T17:39:37+00:00",
+    "summary": "We introduce UniWorld-Design, a framework that redefines image generation from flat pixel synthesis to structured visual composition, with semantic RGBA layers as the atomic units of generation, understanding, and editing. Our key insight is that pixels define how an image is rendered, whereas layers define how an image is created, understood, and edited. Just as human designers create and manipulate visual content through layers rather than raw pixels, UniWorld-Design equips multimodal generative models with a layer-native design space. UniWorld-Design comprises two models. The Text-to-RGBA (T2RGBA) model generates standalone RGBA assets directly from text. The Image-to-Layer (I2L) model conditions on a finished image, a global instruction and per-layer prompts, and jointly produces ordered, complete semantic RGBA layers. Its instruction interface supports top-level decomposition, recursive decomposition and targeted extraction, making layering an instruction-addressable operation for agentic editing. Because I2L learns complete semantic objects rather than visible-pixel partitions, its layers stay usable when moved or removed. On the Crello benchmark, I2L reduces per-layer RGB L1 error by 37% and achieves a 34% relative improvement in Alpha Soft IoU over Qwen-Image-Layered. Separately, T2RGBA achieves the highest CLIP Score, outperforming LayerDiffuse and OmniAlpha."
+  },
+  {
+    "title": "A game theory for foundation models shows new paths to rational cooperation through similarity inference",
+    "url": "http://arxiv.org/abs/2608.03958v1",
+    "arxiv_id": "2608.03958v1",
+    "authors": [
+      "Alexander Meulemans",
+      "Maciej Wo\u0142czyk",
+      "Marissa A. Weis",
+      "Rajai Nasser",
+      "Roberta Rocca",
+      "Seijin Kobayashi",
+      "Guillaume Lajoie",
+      "Angelika Steger",
+      "Blake Richards",
+      "Marcus Hutter",
+      "James Manyika",
+      "Rif A. Saurous",
+      "Jo\u00e3o Sacramento",
+      "Blaise Ag\u00fcera y Arcas"
+    ],
+    "published": "2026-08-04T17:24:33+00:00",
+    "summary": "As autonomous agents powered by foundation models are increasingly integrated into social and economic systems, understanding the principles governing their collective behavior is essential for ensuring safety and cooperation. Classical game theory, the dominant framework for modeling rational interaction, is built upon the assumption of `decoupled agency,' where agents treat their own decision-making as independent of the environment and other actors. Modern AI agents, however, jointly predict their own future actions alongside external observations. Here, we report a striking finding: when interacting in stylized social dilemmas, foundation model agents engaging in optimal planning consistently converge to stable cooperation, directly contradicting classical game-theoretic predictions of mutual defection. To understand this phenomenon, we introduce the `embedded Bayesian agent,' a theoretical model for foundation model agents. By shifting from decoupled to embedded agency, these agents model themselves as part of the universe they inhabit, maintaining epistemic uncertainty about their own decision-making algorithms. We show that by inferring whether others are behaviorally similar, an embedded agent treats its own deliberation during planning as evidence: a decision to cooperate predicts a similar decision by a similar partner. We formalize this mechanism of similarity inference through the `embedded equilibrium,' a novel solution concept replacing the Nash equilibrium to provide a foundational game theory for the social behavior of modern AI agents."
+  },
+  {
     "title": "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
     "url": "http://arxiv.org/abs/2608.02599v1",
     "arxiv_id": "2608.02599v1",
