@@ -1,5 +1,96 @@
 [
   {
+    "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
+    "url": "http://arxiv.org/abs/2608.05144v1",
+    "arxiv_id": "2608.05144v1",
+    "authors": [
+      "Boxiu Li",
+      "Zimo Wen",
+      "Yijia Fan",
+      "Junxiang Lei",
+      "Sufeng Guo",
+      "Jiaao Wu",
+      "Ruize Tang",
+      "Mukai Li",
+      "Yifei Shen",
+      "Xiaoyu Chen",
+      "Wanbo Zhang",
+      "Runjing Gu",
+      "Yifei Gao",
+      "Yuheng Wu",
+      "Xuyao Huang",
+      "Zelong Zhao",
+      "Jiachen Zhang",
+      "Shibo Hu",
+      "Hangxi Guo",
+      "Yilin Chen",
+      "Yuzhe Zhang",
+      "Fan Yang",
+      "Chuan Wen",
+      "Xian Zhang",
+      "Xuanhe Zhou",
+      "Zhijie Deng"
+    ],
+    "published": "2026-08-05T17:58:58+00:00",
+    "summary": "Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bounded missions over durable project state. Argus separates stable user intent from operational objectives, constraints, and verification criteria, and admits memories, skills, procedures, verifiers, routing decisions, and rejected routes only after role-owned review and, when available, task-native verification. Model weights remain fixed; self-evolution occurs through persistent runtime state and control policy, with autonomous execution between operator-owned escalation points. Across seven GPT-5.5 benchmark arenas, Argus achieves about 78% on SWE-Bench Pro versus 59% for Direct Copilot while using 1.41 times the aggregate tokens. After verification-gated self-evolution, mature SWE-Bench waves use 21% fewer solve-input tokens and 15% less active workflow time per task than startup waves, while recording 34 verifier recoveries and 22 strict review-loop rescues. Argus also reaches 76.8% on AARRI-Bench and a 28.0-point gap on mathematical data synthesis, with competitive GPU-kernel and language-model-training results. Beyond benchmarks, an optimized RWKV6 kernel was merged upstream; a multi-day mathematics campaign retained falsified routes and proof-backed frontier updates; and six paper pipelines completed 254 missions with 16 stage rollbacks. These results show that a fixed-weight, self-evolving harness can revise, recover, and accumulate verified approaches while producing structured trajectories for future supervised and reinforcement learning."
+  },
+  {
+    "title": "Robust and Efficient Motion Reasoning for Privacy-Aware Classroom Incident Recognition",
+    "url": "http://arxiv.org/abs/2608.05115v1",
+    "arxiv_id": "2608.05115v1",
+    "authors": [
+      "Paritosh Parmar",
+      "Landy Lan",
+      "Hong Yang",
+      "Chen Yi",
+      "Chiat Pin Tay"
+    ],
+    "published": "2026-08-05T17:46:28+00:00",
+    "summary": "Can computer vision help make classrooms safer? In this pilot study, we investigate privacy-aware and computationally efficient classroom incident recognition from CCTV-style observations. This setting remains underexplored, with limited benchmarks and few methods designed for the privacy, efficiency, and generalization demands of real-world deployment. We introduce a novel hybrid benchmark combining generative CCTV-style videos with real-world classroom pose data, and propose a lightweight, but robust motion-reasoning framework motivated by the observation that many incidents differ more in motion direction, speed, acceleration, and intensity than in pose alone. To that end, our method first constructs hierarchical kinematic representations of human actions. Our method then distills hierarchical, multi-order kinematic reasoning from a large teacher into a much smaller single-order student, enabling efficient per-person inference while preserving expressive motion understanding. Experiments show that our model outperforms substantially larger baselines at less than one-tenth of their computational cost, while also demonstrating stronger out-of-domain motion reasoning and zero-shot synthetic-to-real generalization. We will publicly release the benchmark, codebase, and supporting tools to facilitate further research in privacy-aware classroom safety."
+  },
+  {
+    "title": "Reward Structure Shapes the Interaction Between Episodic Exploration and Neural Memory in Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2608.05111v1",
+    "arxiv_id": "2608.05111v1",
+    "authors": [
+      "Jai Malegaonkar",
+      "Rohan Patil",
+      "Henrik I. Christensen"
+    ],
+    "published": "2026-08-05T17:44:52+00:00",
+    "summary": "In partially observable reinforcement learning, agents face a dual bottleneck: they must explore to encounter rewarding states and retain that experience in memory to optimize their policies. Exploration bonuses and memory architectures are traditionally evaluated in isolation, leaving their interaction unmeasured, and standard notions of sparse reward conflate temporal signal density with what the reward actually supervises. We present a controlled study crossing episodic exploration bonuses with diverse neural memory architectures across three environments that vary how the content of memory is acquired. An identical bonus signal yields three distinct interaction patterns: it amplifies architectural capacity differences where memory content must be actively discovered and retained unsupervised; equalizes architectures to a shared ceiling where the content, once sought out, is a single reward-supervised cue; and is null where the observation stream is purely scheduled. Controlled reward manipulations verify that these patterns track reward structure rather than density: a dense reward neutralizes a bonus only if it directly supervises the required latent memory, and a small avoidable penalty on exploratory actions (leaving the optimum unchanged) induces policy convergence to suboptimal stationary states, which either bonus resolves. We then formalize reward sparsity with observation-anchored reward machines, separating structural sparsity (an automaton reproduces the return without the task-required history) from potential sparsity (the one-step reward misprices local exploratory actions); the resulting vocabulary organizes the three regimes by the retention burden each task exposes. Together, these results show exploration and memory are complements, not substitutes: a bonus induces exposure, and only memory converts exposure into return."
+  },
+  {
+    "title": "AI-based single-shot structured-light depth reconstruction for real-time laparoscopic surgical guidance",
+    "url": "http://arxiv.org/abs/2608.05109v1",
+    "arxiv_id": "2608.05109v1",
+    "authors": [
+      "Wayne Wonseok Rodgers",
+      "Xiangyi Le",
+      "Seonghoon Jang",
+      "Shuwen Wei",
+      "Justin Opfermann",
+      "Michael Kam",
+      "Axel Krieger",
+      "Jin U. Kang"
+    ],
+    "published": "2026-08-05T17:44:21+00:00",
+    "summary": "Significance. Accurate intraoperative depth perception is important for autonomous and semi-autonomous robotic laparoscopic surgery. Conventional fringe projection profilometry can achieve millimeter-scale accuracy but often requires multi-shot acquisition, digital-micromirror-device projection, and projector-camera synchronization, complicating integration into compact laparoscopic systems.   Aim. To develop a synchronization-free, single-shot depth-sensing platform using a passive LED-illuminated binary mask and a VQ-VAE prior with a custom U-Net depth head.   Approach. A compact projection module was coupled to one channel of a dual-channel laparoscope, while the second channel imaged the fringe-illuminated target. A Zivid 3D camera acquired reference depth for 722 paired phantom images. Zivid depth maps were reprojected into the SSLE image frame for supervised training and evaluation. The VQ-VAE encoded each input into a discrete latent representation, and a latent-space U-Net predicted depth without a separate mask-prediction branch.   Results. Using a fixed train/validation/test split, the proposed model achieved an MAE of 3.70 mm, AbsRel of 0.0326, delta=1.1 accuracy of 0.962, and delta=1.1^2 accuracy of 0.970. It achieved lower MAE than the dual U-Net MaskNet + DepthNet baseline and outperformed off-the-shelf monocular depth models in MAE, AbsRel, and threshold accuracy. The pipeline operated at 26.0 Hz over 301 consecutive frames on an NVIDIA A100 GPU.   Conclusions. The LED-illuminated binary-pattern platform with latent-space depth reconstruction enables synchronization-free, video-rate endoscopic depth estimation. Results demonstrate Zivid-referenced phantom reconstruction without an explicit segmentation stage, while emphasizing the importance of dataset size and SSLE-Zivid calibration accuracy."
+  },
+  {
+    "title": "Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming",
+    "url": "http://arxiv.org/abs/2608.05108v1",
+    "arxiv_id": "2608.05108v1",
+    "authors": [
+      "Yanting Wang",
+      "Chenlong Yin",
+      "Runpeng Geng",
+      "Jinyuan Jia"
+    ],
+    "published": "2026-08-05T17:44:09+00:00",
+    "summary": "Prompt injection poses significant security risks to LLM agents. Efficient and effective red-teaming is therefore critical, both for evaluating these risks and for collecting training data to improve defenses. Existing state-of-the-art prompt injection red-teaming methods primarily rely on reinforcement learning (RL), producing attacker models that often generalize poorly to new target LLMs. In this work, we develop PIMiner, an agentic system for prompt injection red-teaming. During training, PIMiner is trained on a sequence of (dataset, target model) pairs and builds a strategy library from scratch. At test time, the learned strategy library can be directly transferred to a previously unseen target LLM without additional training. PIMiner requires only a small number of queries to a target agent (e.g., 10) per test sample. Experimental results demonstrate that PIMiner achieves strong performance. On IPIArena, it attains a 76.2% ASR against Gemini-2.5-Pro, 61.9% ASR against GPT-5.1, and 42.9% ASR against Claude-Sonnet-4.5. On AgentDojo, it achieves an 86.7% ASR against Gemini-2.5-Pro, 53.3% ASR against GPT-5.1, and 40.0% ASR against Claude-Sonnet-4.5."
+  },
+  {
     "title": "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
     "url": "http://arxiv.org/abs/2608.04007v1",
     "arxiv_id": "2608.04007v1",
