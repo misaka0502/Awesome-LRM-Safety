@@ -1,5 +1,82 @@
 [
   {
+    "title": "Multimodal Model Diffing for Feature Discovery and Control",
+    "url": "http://arxiv.org/abs/2608.09928v1",
+    "arxiv_id": "2608.09928v1",
+    "authors": [
+      "Hunar Batra",
+      "Lachin Naghashyar",
+      "Ashkan Khakzar",
+      "Philip Torr",
+      "Christian Schroeder de Witt",
+      "Constantin Venhoff",
+      "Ronald Clark"
+    ],
+    "published": "2026-08-10T17:59:30+00:00",
+    "summary": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing framework that trains multimodal SAEs and turns them into feature-level interfaces for discovering and controlling multimodal behavior. MMDiff supports three uses: (i) feature isolation, by diffing a base-LM SAE against its multimodal-adapted counterpart to identify features altered by multimodal training; (ii) task-specific feature detection, via per-token contrastive firing analysis that isolates causal features; and (iii) feature-level control, by causally removing or steering the discovered feature directions. We train multimodal SAEs for three MLLM families, LLaVA-MORE, PaliGemma 2, and InternVL3.5, and evaluate on visual-spatial understanding, multimodal safety, and OCR. MMDiff discovers sparse, causally specific features whose removal selectively degrades target behaviors by an average of 12% on spatial tasks and 17% on OCR, and reduces attack success rate by 24% on multimodal safety attacks, with no impact on VQA performance. Steering these features improves spatial and OCR accuracy by +3.6% and +1.8% on average over a standard single-layer steering baseline. These results show that multimodal SAEs can serve not only as interpretability tools, but as mechanisms for auditing, steering, and controlling MLLMs behavior toward safer and more capable generations."
+  },
+  {
+    "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+    "url": "http://arxiv.org/abs/2608.09908v1",
+    "arxiv_id": "2608.09908v1",
+    "authors": [
+      "Wenti Yin",
+      "Xiang Wang",
+      "Huaxin Zhang",
+      "Hanqing Wang",
+      "Hongbo Shao",
+      "Changxin Gao",
+      "Nong Sang"
+    ],
+    "published": "2026-08-10T17:52:51+00:00",
+    "summary": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm."
+  },
+  {
+    "title": "Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness",
+    "url": "http://arxiv.org/abs/2608.09900v1",
+    "arxiv_id": "2608.09900v1",
+    "authors": [
+      "Tadanobu Chuyo Kamijo",
+      "Ori Rottenstreich",
+      "Javier Conde",
+      "Gonzalo Mart\u00ednez",
+      "Pedro Reviriego"
+    ],
+    "published": "2026-08-10T17:47:24+00:00",
+    "summary": "Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor. In real-world deployments, however, complex system prompts, safety guardrails, and structural constraints continuously force models off this nominal path, driving a divergence between benchmark scores and deployment performance. To address this issue, we introduce Decoding-Level Taboo, a zero-prompt diagnostic stress test that intervenes directly in logit space at runtime, forcing models out of their nominal paths. By dynamically masking primary candidate tokens at word boundaries, Taboo forces machine circumlocution.   Evaluating Taboo across several open-weight model families reveals that off-path robustness is heavily influenced by both parameter scale and post-training instruction alignment, with robustness generally improving with model size and alignment. Beyond the results presented in this paper, Taboo provides a novel primitive for generating diverse synthetic datasets, stress-testing runtime safety guardrails, and auditing model reliability prior to real-world deployment."
+  },
+  {
+    "title": "Consilience for Verifier-Free Test-Time Scaling",
+    "url": "http://arxiv.org/abs/2608.09898v1",
+    "arxiv_id": "2608.09898v1",
+    "authors": [
+      "Lecheng Kong",
+      "Like Hui",
+      "Haitao Mao",
+      "Jun Huan"
+    ],
+    "published": "2026-08-10T17:45:44+00:00",
+    "summary": "Test-time scaling often uses an external verifier, such as compilers and test cases in coding or trained value functions in robotics applications, to obtain high-quality rollouts. Verifier-free test-time scaling (or VF-TTS) is gaining extensive attention as a mechanism to enhance Large Language Model (LLM) reasoning, primarily because we do not have access to such high-quality verifiers in many real-world applications. Among existing VF-TTS methods, confidence-based VF-TTS methods, which compute and rank rollouts solely by confidence, are particularly promising. Such methods introduce near-zero overhead for sample evaluation and require minimal access to internal model states, making the methods highly flexible across models and tasks.   In this paper, we demonstrate a critical limitation of existing confidence-based VF-TTS methods by showing that such methods catastrophically break down on complex tasks. We observe a very interesting phenomenon: uniformly high confidence frequently indicates a failure to explore, favoring confidently wrong answers. To address this, our core insight is that robust cognitive search requires a specific confidence trajectory pattern: such methods perform exploratory branching at the beginning, as manifested by low initial confidence, and converge to a high final confidence solution. To implement this insight, we introduce consilience, a novel selection framework that explicitly evaluates the temporal asymmetry of confidence in reasoning. We operationalize this via a combinatorial metric that actively penalizes high initial confidence while strictly demanding final certainty. Extensive experiments covering both graduate-level mathematics problems and free-form code generation demonstrate that consilience effectively outperforms existing baselines, validating our novel perspective on completion confidence."
+  },
+  {
+    "title": "Nascent Embedded-protostar Survey in Taurus (NEST) II: Measuring Dust Mass, Disk Size, and Gas Mass",
+    "url": "http://arxiv.org/abs/2608.09896v1",
+    "arxiv_id": "2608.09896v1",
+    "authors": [
+      "Noshin Yesmin",
+      "Patrick Sheehan",
+      "John Tobin",
+      "Aislinn Coleman-Plante",
+      "Nicholas P. Ballering",
+      "Tyler L. Bourke",
+      "Josh Eisner",
+      "Hauyu Baobab Liu",
+      "Zhi-Yun Li"
+    ],
+    "published": "2026-08-10T17:44:10+00:00",
+    "summary": "Envelope-embedded protostellar disks represent the earliest stage of protoplanetary disk evolution, but their masses and sizes are difficult to measure because disk emission is entangled with the envelope. We analyze 26 protostellar disk systems in Taurus using ALMA Band 7 (345 GHz; ~0.3'') and VLA Ka-band (33 GHz; ~0.2'') continuum observations, together with molecular-line data to constrain disk gas masses. At 345 GHz, the median flux density, dust mass, and radius are 71 mJy, 5.5 M_Mearth, and 28 AU, with 68% ranges of 54-107 mJy, 3.9-9.4 M_Mearth, and 25-39 AU. At 33 GHz, the corresponding medians are 0.43 mJy, 39 M_Mearth, and 32 AU, with ranges of 0.41-0.80 mJy, 34-52 M_Mearth, and 29-33 AU. Taurus Class I disks are fainter and less massive than those in Orion, comparable to Perseus Class I disks but fainter than Perseus Class 0 disks, and brighter and more massive than those in Ophiuchus. Within Taurus, Class 0/I disks are brighter than Class II disks at both frequencies, although their inferred dust masses are comparable at 345 GHz and slightly higher at 33 GHz. Radiative-transfer modeling of CO isotopologue emission yields a median gas mass of 6.7 x 10^-4 M_Msun. The resulting CO-inferred gas-to-dust ratios span a broad range, with a mean of 147 +/- 75, a median of 26, and a 16th-84th percentile range of 8-147. This distribution overlaps the Taurus Class II population at the low end and ISM-like or higher values, including the AGE-PRO Ophiuchus Class 0/I population, at the high end."
+  },
+  {
     "title": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
     "url": "http://arxiv.org/abs/2608.07468v1",
     "arxiv_id": "2608.07468v1",
