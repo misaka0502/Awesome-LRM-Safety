@@ -1,5 +1,83 @@
 [
   {
+    "title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+    "url": "http://arxiv.org/abs/2608.13555v1",
+    "arxiv_id": "2608.13555v1",
+    "authors": [
+      "Dairu Liu",
+      "Zekun Qi",
+      "Jiayu Zeng",
+      "Ruixi Yu",
+      "Yu Guan",
+      "Yintianrun Zhang",
+      "Xuchuan Chen",
+      "Sikai Liang",
+      "Zekai Li",
+      "Chenghuai Lin",
+      "Xinqiang Yu",
+      "Wenyao Zhang",
+      "He Wang",
+      "Li Yi"
+    ],
+    "published": "2026-08-13T17:59:40+00:00",
+    "summary": "Humanoid motion tracking is central to teleoperation and whole-body imitation, yet evaluation often disagrees with what people perceive in videos. Kinematic errors average per-frame pose differences but miss the physical artifacts that matter most, particularly unstable support and incorrect contacts such as foot skating and mistimed touch-downs. Meanwhile, widely used test suites are small and lack the diversity needed to stress contact-rich, long-horizon behaviors. We introduce HumanTracker to make humanoid tracking evaluation both perceptually aligned and scalable. The HumanTracker benchmark contains approximately 153 hours of optical motion trajectories from multiple professional performers, organized into four motion families with text labels for fine-grained diagnosis. We further propose HumanScore, a preference-aligned metric trained on 12K motion pairs containing 24K motions. Across representative state-of-the-art trackers, HumanScore better predicts human preferences and reveals contact and stability failures that kinematic metrics often miss."
+  },
+  {
+    "title": "SCULPT: Subtractive Composition for 3D Part Generation",
+    "url": "http://arxiv.org/abs/2608.13541v1",
+    "arxiv_id": "2608.13541v1",
+    "authors": [
+      "Sikuang Li",
+      "Chen Yang",
+      "Jiemin Fang",
+      "Jiazhong Cen",
+      "Yuhe Wei",
+      "Jichen Pang",
+      "Wei Shen",
+      "Qi Tian"
+    ],
+    "published": "2026-08-13T17:55:04+00:00",
+    "summary": "Part-aware 3D generation aims to create digital assets that are coherent as complete objects while exposing structural parts for editing, material assignment, animation, and reuse. Existing methods impose this structure outside the native generation loop: segmentation-based methods partition an already generated shape, while additive methods synthesize parts from predefined layouts, boxes, or tokens and then reconcile them into a whole. The former preserves the generated geometry but fixes the object before part boundaries are determined; the latter exposes part cardinality but often leaves shared boundaries vulnerable to gaps, interpenetrations, and material discontinuities. In this paper, we propose SCULPT, a framework that addresses these challenges through subtractive composition. Given a complete object represented in a structured 3D latent space, SCULPT iteratively applies a joint split predictor to generate one extracted part together with the remaining object. The predictor performs a coupled denoising process conditioned on both the image and the current 3D state, so the extracted part and updated remainder are generated together rather than reconciled after generation. The joint split predictor processes both outputs on the union of their native sparse 3D supports, allowing neighboring supports to overlap rather than imposing a disjoint voxel partition. The rollout ends when the remainder support becomes empty or reaches a fixed safety cap, allowing the number of generated parts to adapt to each object within that bound. Extensive experiments demonstrate state-of-the-art geometry on PartObjaverse while preserving strong complete-object reconstruction after part assembly. Results on four dataset images, one text-to-image-generated input, and one real-world photograph further show fine-grained textured part decomposition beyond the benchmark."
+  },
+  {
+    "title": "Safety vs. Social Image: Co-Designing Protection Mechanisms Against Ableist Harassment with People with Disabilities in Social Virtual Reality",
+    "url": "http://arxiv.org/abs/2608.13532v1",
+    "arxiv_id": "2608.13532v1",
+    "authors": [
+      "Kexin Zhang",
+      "Daniel Killough",
+      "Xinran Adeline Li",
+      "Yaxing Yao",
+      "Yuhang Zhao"
+    ],
+    "published": "2026-08-13T17:49:00+00:00",
+    "summary": "People with disabilities (PWD) increasingly use avatars to express disability identities in social virtual reality (VR), but greater visibility also invites targeted harassment. Existing safety features are often insufficient, overlooking PWD's experiences and needs. To address this gap, we co-designed protection mechanisms with 11 PWD to reveal their values and needs. Our research employed a social lens to interpret harassment behaviors and protection mechanisms. Inspired by Hall's Proxemics Theory that interpersonal distances indicate social intent and boundaries, we divided social VR spaces into four proxemic zones (Intimate, Personal, Social, and Public) and used them to structure our protection mechanism co-design. We also provided different protection mechanism probes (Inform, Educate, Consent, and Combat) to elicit participant preferences. Our study highlighted the role of social proximity in shaping PWD's harassment perception and protection preferences and revealing PWD's unique social values and needs (e.g., managing harassment with optimism and resilience, prioritizing social image over safety). We proposed design recommendations for protection mechanisms that protect PWD while maintaining their desired social images."
+  },
+  {
+    "title": "A Browser-Native Digital Test Range for Benchmarking 4D Ocean-Glider Planning Algorithms",
+    "url": "http://arxiv.org/abs/2608.13511v1",
+    "arxiv_id": "2608.13511v1",
+    "authors": [
+      "Edward Holmberg",
+      "Elias Ioup",
+      "Mahdi Abdelguerfi"
+    ],
+    "published": "2026-08-13T17:34:50+00:00",
+    "summary": "Repeated in-situ evaluation of ocean-glider planners requires scarce vehicles, operators, deployment and recovery resources, and ocean conditions that cannot be reset for competing algorithms. We present a guided, installation-free browser-native digital test range that transforms a selected region into a reproducible four-dimensional experiment. The system leads users from regional domain selection through mission-scoped bathymetry, time/depth forcing, science objectives, optional task decomposition, route specification, current-advected execution, observation generation, and scoring. Its primary contribution is a common plan-to-observation contract unifying vehicle, sensing, and evaluator assumptions across manual routes, transparent built-in algorithms, and imported classical or learned-planner outputs, while exported artifacts form dataset-ready records. A controlled Observing System Simulation Experiment (OSSE) evaluates five classical planners in two episodes, three deterministic seeds, and a calibrated 60-hour horizon. All 54 missions completed and recovered without hard violations, while planner rankings and dive-policy effects revealed operational-scientific tradeoffs. An authentic public deployment supplied a field-referenced audit to scope current kinematic boundaries. Separately, source-locked GliderFlight 1.2.0 achieved native-to-browser parity through Pyodide/WebAssembly, establishing a pathway for high-fidelity multi-tier simulation. The resulting operational space is scientifically traceable and component-qualified for mission-scale pre-deployment experimentation."
+  },
+  {
+    "title": "Safety-Critical Control for Quadrotor UAVs via Decentralized Navigation Functions",
+    "url": "http://arxiv.org/abs/2608.13507v1",
+    "arxiv_id": "2608.13507v1",
+    "authors": [
+      "Omayra Yago Nieto",
+      "Alexandre Anahory Simoes",
+      "Leonardo Colombo"
+    ],
+    "published": "2026-08-13T17:32:55+00:00",
+    "summary": "We study safety-critical control for teams of quadrotor UAVs driven by decentralized navigation functions under learned model uncertainty. These functions generate fully actuated translational reference forces, while quadrotors can only produce thrust along their body-fixed vertical axes. We construct a thrust-attitude implementation of the induced navigation forces and quantify its error with respect to the fully actuated reference dynamics. An aggregated robust HOCBF-QP safety filter minimally modifies the nominal thrusts while guaranteeing pairwise collision avoidance with high probability."
+  },
+  {
     "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
     "url": "http://arxiv.org/abs/2608.12313v1",
     "arxiv_id": "2608.12313v1",
