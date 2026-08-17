@@ -1,5 +1,73 @@
 [
   {
+    "title": "Spatiotemporal Tube-Based Safety-Certificate for Autonomous Navigation of Articulated Vehicles",
+    "url": "http://arxiv.org/abs/2608.14531v1",
+    "arxiv_id": "2608.14531v1",
+    "authors": [
+      "Mohd. Faizuddin Faruqui",
+      "Ratnangshu Das",
+      "Ravi Kumar L",
+      "Pushpak Jagtap"
+    ],
+    "published": "2026-08-14T17:48:28+00:00",
+    "summary": "Articulated vehicles are the workhorses of freight transportation, and their autonomous navigation is challenging. Their physical characteristics and motion constraints pose significant challenges in manoeuvring these vehicles on narrow routes. This paper presents a spatiotemporal tube-based approach to plan autonomous navigation of vehicles like tractor semi-trailers, truck/ tractor trailers, towing Automated Guided Vehicles (AGVs), and road trains. This planning approach provides a certified path plan for the truck or tractor, ensuring that the towed series of trailers always remains within the road corridor, limited by permissible corrections. The planning leverages the kinematics of the linked elements along with sway constraints to arrive at a safe tube for the actuated prime mover. We modify the spatiotemporal tube using permissible corrections to provide a route safety certificate to the vehicle for the given route. The proposed planning method is verified on a truck-trailer navigation simulation for a complex route."
+  },
+  {
+    "title": "Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training",
+    "url": "http://arxiv.org/abs/2608.14498v1",
+    "arxiv_id": "2608.14498v1",
+    "authors": [
+      "Hanfeng Lu",
+      "Tianyu Feng",
+      "Suyi Li",
+      "Yuheng Zhao",
+      "Wei Gao",
+      "Shaopan Xiong",
+      "Ju Huang",
+      "Siran Yang",
+      "Jiamang Wang",
+      "Lin Qu",
+      "Wei Wang"
+    ],
+    "published": "2026-08-14T17:13:34+00:00",
+    "summary": "Vision-language models (VLMs) enable embodied agents to reason and act from visual observations and language instructions. Reinforcement learning (RL) post-training enhances these capabilities using task feedback, but current on-policy RL runtimes execute rollout, reference scoring, and actor training in strict serial phases. While effective for text-only RL, this phase-granular execution is wasteful for VLMs, where processing dense video inputs and prompt prefixes occupies a large fraction of each phase. Because prefix processing is independent of the generated response, it can be run alongside rollout decoding, which leaves GPU compute capacity underutilized, without breaking synchronous on-policy semantics.   We present Rollplex, a runtime that decomposes the reference and training phase and moves the prefix computation into the rollout decode window. Realizing this schedule requires more than concurrent kernel launches: naive colocation of Qwen2.5-VL-32\\,B requires roughly 165\\,GiB per GPU, while rollout and training prefer different tensor-parallel (TP) degrees and weight layouts. Rollplex addresses these constraints with two mechanisms. Phase-aware memory management controls HBM residency according to producer--consumer lifetimes. Parallelism-aware weight sharing uses the same physical storage for layout-compatible tensors across distinct TP degrees and reconstructs only incompatible tensors, avoiding a complete second actor copy. On 32 H800 GPUs, Rollplex achieves $1.23\\times$--$1.30\\times$ speedup over serial colocation and $1.57\\times$--$2.24\\times$ over disaggregation under the same GPU budget, while preserving the synchronous RL update."
+  },
+  {
+    "title": "Ensuring Safe Physical AI in Urban Mobility via Hazard-Informed Synthesized Envelopes",
+    "url": "http://arxiv.org/abs/2608.14481v1",
+    "arxiv_id": "2608.14481v1",
+    "authors": [
+      "Alexei Odinokov",
+      "Rostislav Yavorskiy"
+    ],
+    "published": "2026-08-14T16:57:54+00:00",
+    "summary": "As heterogeneous robotic systems deploy across diverse urban zones, maintaining safety amid complex human-robot interactions remains a critical challenge. We present a unified framework that bridges systematic hazard analysis and runtime enforcement using hazard-informed safety envelopes. Rather than treating safety as a static constraint isolated within individual software modules, we introduce a cross-layer safety transformation process spanning symbolic, spatial, and dynamic world models. We show how this representation naturally interfaces with physical AI runtime harnesses to guarantee safe urban mobility."
+  },
+  {
+    "title": "Expected Free Energy-based Informative Path Planning for Robotic Mars Exploration",
+    "url": "http://arxiv.org/abs/2608.14466v1",
+    "arxiv_id": "2608.14466v1",
+    "authors": [
+      "Ajith Anil Meera",
+      "Pablo Lanillos",
+      "Wouter Kouw"
+    ],
+    "published": "2026-08-14T16:46:18+00:00",
+    "summary": "An autonomous robot efficiently exploring an unknown environment, such as looking for water sources on Mars, faces two simultaneous demands: building an accurate information map while quickly finding the regions of greatest value, and paying for every meter of travel and the cost of every measurement it takes. Classical information-seeking and reward-seeking criteria address only one of these objectives at a time. Here, we propose Expected Free Energy (EFE), the principled action-selection objective from active inference, as a unifying criterion for budgeted robotic informative path planning. Maintaining a Gaussian-process belief over the information field, our agent plans continuous trajectories that minimize expected free energy under hard path-length constraints. The results from multiple realizations show that EFE-based planning yields accurate posterior maps and locates the highest-value regions simultaneously, outperforming information-theoretic baselines under the same settings. In robotic exploration, these unified, easy-to-tune principled information-gathering strategies facilitate autonomous deployment while enforcing efficiency and resource constraints."
+  },
+  {
+    "title": "THRIVE: Therapeutic Humanoid Robot In Virtual Environment",
+    "url": "http://arxiv.org/abs/2608.14462v1",
+    "arxiv_id": "2608.14462v1",
+    "authors": [
+      "Jin Xu",
+      "Yu-Ping Chen",
+      "Ayanna Howard"
+    ],
+    "published": "2026-08-14T16:42:58+00:00",
+    "summary": "This paper presents THRIVE (Therapeutic Humanoid Robot In Virtual Environment), an at-home rehabilitation platform that integrates a suite of virtual-reality upper-body rehabilitation games, a real-time camera-based motion-tracking system, and a socially interactive robot therapist. The system is designed for therapy and intervention in children with upper-limb motor impairments, which can be improved through consistent, task-specific practice. THRIVE features a set of newly designed, engaging games that target functional reaching, grasping, and object-manipulation movements through customizable popping, hitting, catching, and grabbing tasks, while the camera-based tracking system captures the child's kinematic performance during play. A robot therapist - deployable either as a physical robotic coach or as a remote-presence virtual agent - delivers adaptive, dynamic feedback to motivate the child and guide their movements toward therapeutic goals. THRIVE decouples the therapeutic games from the robot embodiment, extending the platform to support various embodiments and different robots within one modular system. This robot-agnostic design makes THRIVE affordable, scalable, and readily adaptable for sustained use in the home, offering a practical pathway to more consistent and engaging upper-limb therapy for children with motor function impairments."
+  },
+  {
     "title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
     "url": "http://arxiv.org/abs/2608.13555v1",
     "arxiv_id": "2608.13555v1",
