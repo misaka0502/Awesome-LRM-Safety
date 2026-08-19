@@ -1,5 +1,87 @@
 [
   {
+    "title": "Hydra-0: Action Flow for Generalist World Modeling and Control",
+    "url": "http://arxiv.org/abs/2608.18077v1",
+    "arxiv_id": "2608.18077v1",
+    "authors": [
+      "Hongyu Li",
+      "Bowen Wen",
+      "Xinghao Zhu",
+      "Yixuan Wang",
+      "Yilun Du",
+      "Yunzhu Li",
+      "George Konidaris",
+      "Stan Birchfield",
+      "Soha Pouya",
+      "Chenran Li",
+      "Yan Chang"
+    ],
+    "published": "2026-08-18T17:59:30+00:00",
+    "summary": "We introduce Hydra-0, a generalist world model conditioned on action flow, which represents robot actions as pixel motion. This shared visual interface enables generalist world modeling and control by learning action consequences across embodiments, tasks, environments, and video-generation backbones. Our best configuration achieves 90.4% lower robot-motion error and 60.2% lower object-motion error than our action-conditioned baseline, while supporting zero-shot composition and data-efficient adaptation. On the RoboLab benchmark, Hydra-0 achieves a Pearson correlation of r=0.96 between replayed and reference success rates. Finally, we uncover an emergent inverse mode of this interface: a world action model that predicts compatible robot motion from desired object flow transferred from a human demonstration. A trained action head maps the resulting latent features to executable actions without requiring task-specific expert robot demonstrations. Together, these results demonstrate the potential of action flow as a shared control interface connecting heterogeneous training data, open-loop policy evaluation, and robot control."
+  },
+  {
+    "title": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+    "url": "http://arxiv.org/abs/2608.18035v1",
+    "arxiv_id": "2608.18035v1",
+    "authors": [
+      "Zongzheng Zhang",
+      "Jijun Wang",
+      "Saining Zhang",
+      "Shuo Wang",
+      "Yiru Wang",
+      "Hai Yang",
+      "Yang Chen",
+      "Yuwen Heng",
+      "Hao Sun",
+      "Anqing Jiang",
+      "Hao Zhao"
+    ],
+    "published": "2026-08-18T17:29:51+00:00",
+    "summary": "Traffic elements such as traffic lights and road signs play a fundamental role in human driving decisions and should naturally influence end-to-end driving performance. However, existing end-to-end driving research predominantly focuses on dynamic road participants (e.g., vehicles and pedestrians), while the role of traffic elements remains largely unexplored. The community still lacks a systematic study quantifying their impact, largely because public datasets rarely provide structured traffic-element annotations and modern driving systems vary widely in architecture and training paradigm. In this work, we present the first systematic investigation of traffic element awareness for end-to-end autonomous driving. We construct a unified research infrastructure by augmenting multiple public driving datasets with comprehensive traffic-element annotations. To support diverse model families, we adopt a minimal and universal integration design that incorporates traffic-element signals into existing pipelines in a plug-and-play manner with negligible architectural modification. We evaluate this design across modern paradigms, including perception-prediction-planning pipelines, vision-language-action models (VLA), regression-based planners, diffusion-based policies, and trajectory-scoring frameworks, on nuScenes, NAVSIM-v1, NAVSIM-v2, and Bench2Drive. Across all paradigms and datasets, this simple integration consistently improves driving performance, demonstrating that traffic element awareness provides a robust and generalizable signal for end-to-end driving systems. Notably, on the challenging NAVSIM-v2 benchmark, our approach significantly improves state-of-the-art architectures and data pipelines, establishing a new state of the art."
+  },
+  {
+    "title": "Can Large Language Models Explain Flight Safety Events? A Prior-Guided Semantic LLM-based Approach",
+    "url": "http://arxiv.org/abs/2608.18017v1",
+    "arxiv_id": "2608.18017v1",
+    "authors": [
+      "Lu Xu",
+      "Xu Li",
+      "Linjiang Zheng",
+      "Fan Li",
+      "Riquan Zhang",
+      "Jiaxing Shang"
+    ],
+    "published": "2026-08-18T17:11:40+00:00",
+    "summary": "Improving flight safety with flight data requires not only accurate detection of risk events, but more importantly, clear interpretation of their underlying causes at the level of pilot control behavior. Existing explainable AI techniques, such as feature importance maps, often require considerable domain knowledge to translate them into operationally meaningful explanations. Large Language Models (LLMs), which excel at language reasoning, bring a promising solution to this issue. However, applying LLMs in this domain presents key challenges such as modal inconsistency, limited classification ability, scarcity of task-specific data for fine-tuning, and lack of domain knowledge. To overcome these challenges, we propose FlightLLM, a prior-guided semantic LLM-based approach for interpretable flight safety analysis. Specifically, we first perform feature engineering to address modal inconsistency, combining statistical descriptors with physically meaningful flight indicators. This representation is further processed by a Semantic Discretization module, which converts abstract numerical patterns into qualitative descriptions that are more compatible with language reasoning. In addition, since LLMs are not inherently strong classifiers, CatBoost is incorporated as a statistical expert, and its prediction results are injected into the prompt as prior guidance. A contrastive few-shot learning strategy is further adopted to compensate for limited data. Finally, we design structured prompts to embed aviation-specific knowledge into the inference process. Using hard landing, a representative risk event with complex causal mechanisms, as an anchor point, we evaluate FlightLLM on a dataset of 704 real-world A320 flight samples. Experimental results show that the proposed approach achieves competitive classification performance while generating direct and reasonable explanations for event causes."
+  },
+  {
+    "title": "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents",
+    "url": "http://arxiv.org/abs/2608.18008v1",
+    "arxiv_id": "2608.18008v1",
+    "authors": [
+      "Christophe D. Hounwanou",
+      "John Emeka Eze",
+      "Ya\u00e9 U. Gaba"
+    ],
+    "published": "2026-08-18T16:55:46+00:00",
+    "summary": "Combining large language models with reinforcement learning is increasingly explored, yet the theoretical status of LLM-derived reward signals is often left implicit. We formalize the hybrid LLM-planner and RL-controller architecture as a Goal-Augmented Markov Decision Process and show that when the LLM per-state progress score is used as a bounded potential function, the resulting shaping term preserves the optimal policy set even when the LLM scores are inaccurate. This guarantee is stronger than what general LLM-as-reward approaches provide. We verify the result numerically on a small MDP under four potential configurations, including an adversarial one scaled to twenty times the base reward magnitude."
+  },
+  {
+    "title": "aDSL: Agentic 3D Creation via Joint Agent-Program Design",
+    "url": "http://arxiv.org/abs/2608.17975v1",
+    "arxiv_id": "2608.17975v1",
+    "authors": [
+      "Rui-Huan Wang",
+      "Si-Tong Wei",
+      "Jia-Qi He",
+      "Heng-Yi Wei",
+      "Baoquan Chen",
+      "Peng-Shuai Wang"
+    ],
+    "published": "2026-08-18T16:27:44+00:00",
+    "summary": "Programmatic representations provide a compelling paradigm for 3D content creation, enabling fine-grained edits, interpretability, and explicit structural control. Yet, agentic workflows that rely on large language models (LLMs) to author 3D programs remain brittle, often failing to translate high-level intent into consistent low-level geometry. We attribute this fragility to a mismatch between existing programmatic interfaces and the reasoning strengths of LLMs, which favor semantic structure and spatial relations over fragile numeric choices. In this paper, we jointly design an Agent-centric Domain-Specific Language (aDSL) and a role-specialized multi-agent system to close this gap. aDSL bridges semantic logic and geometric constraints by emphasizing composability and spatial reasoning; it enables agents to manipulate geometry through relational operators instead of brittle absolute coordinates. Building on aDSL, our training-free multi-agent system follows a Plan-Execute-Critic loop to decompose requests, synthesize code, and iteratively repair errors and constraint violations using execution feedback. Experiments show that this co-design improves robustness, controllability, and faithfulness to user intent. Our method outperforms prior LLM-based baselines on text-to-shape and image-to-shape tasks while preserving explicit structure, editability, and interpretability. It also enables downstream applications such as articulated object creation and structured scene composition. Our code is available at https://github.com/sig-pku/aDSL."
+  },
+  {
     "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
     "url": "http://arxiv.org/abs/2608.16889v1",
     "arxiv_id": "2608.16889v1",
