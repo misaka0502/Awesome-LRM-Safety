@@ -1,5 +1,98 @@
 [
   {
+    "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
+    "url": "http://arxiv.org/abs/2608.20338v1",
+    "arxiv_id": "2608.20338v1",
+    "authors": [
+      "Sahil Kale",
+      "Ian Harris"
+    ],
+    "published": "2026-08-20T17:59:57+00:00",
+    "summary": "Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely. Current approaches rely on disjoint forget and retain sets composed of independent facts, and measure success using simple and direct factual recall. This framing fails to capture a key requirement of unlearning, namely the ability to eliminate harmful behaviors while preserving benign and beneficial knowledge. We argue that effective unlearning must operate at the level of concepts, ensuring complete removal of unsafe applications while maintaining their correct and useful usage, thereby achieving conceptually meaningful and complete unlearning. To better evaluate unlearning techniques from such a practical viewpoint, we introduce the notion of dual-use concepts: concepts that can be used in both harmful and benign contexts. Building on these concepts, we construct a benchmark called ConceptGuard where forget and retain sets are explicitly complementary in concept usage. Our benchmark uniquely enables unlearning to be explored and gauged at the level of concepts, instead of sparse facts, and evaluation is intent-sensitive with the goal of maximizing contextual separation to promote safer behavior. We demonstrate that current unlearning techniques perform poorly under this setting, showing weak contextual separation alongside poor performance in ROUGE and concept-level metrics. Our results reveal strong forgetting-utility trade-offs, limited gains in contextual sensitivity, and poor consistency in concept-level control across methods, and provide ideas for unlearning approaches that better align with real-world safety requirements. Our dataset is publicly available."
+  },
+  {
+    "title": "Swift-Image: Exploring the Performance Frontier of Compact Unified Image Generation Models",
+    "url": "http://arxiv.org/abs/2608.20334v1",
+    "arxiv_id": "2608.20334v1",
+    "authors": [
+      "Taihang Hu",
+      "Zhao Wang",
+      "Zuan Gao",
+      "Tao Liu",
+      "Hao Yan",
+      "Zhengze Xu",
+      "Yuhang Yu",
+      "Yongchao Du",
+      "Xingjian Wang",
+      "Jun Zheng",
+      "Qinye Zhou",
+      "Zhengrui Chen",
+      "Chao Lin",
+      "Yefeng Shen",
+      "Zhengtao Wu",
+      "Ge Wu",
+      "Xiaoli Xu",
+      "Denghui Yang",
+      "Huayu Zhang",
+      "Mingzhou Zhang",
+      "Mengting Chen"
+    ],
+    "published": "2026-08-20T17:59:52+00:00",
+    "summary": "We present Swift-Image, a compact unified model for text-to-image generation, single-image editing, and multi-image editing. Our goal is to explore how far a relatively small visual generator can be pushed through systematic training engineering under a constrained computational budget. Swift-Image adopts an efficient 6B single-stream DiT and a progressive training pipeline that evolves from broad semantic coverage to higher resolution, stronger visual quality, and unified generation-editing supervision. For post-training, we employ parallel expert reinforcement learning followed by multi-teacher on-policy distillation to alleviate interference among heterogeneous objectives. We further decouple high-level reasoning from pixel-level rendering with a Prompt Enhancer that translates user requests into generator-aligned visual specifications. For efficient deployment, structural pruning and few-step distillation produce 3B and accelerated variants. Swift-Image achieves leading aggregate performance among evaluated open-source models with only 6B parameters and 243K GPU training hours; the compressed 3B model incurs nearly no loss, while few-step distillation further improves aggregate editing performance with substantially fewer sampling steps. Our study also summarizes practical lessons for architecture, data curriculum, post-training, prompt enhancement, and model compression."
+  },
+  {
+    "title": "G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation",
+    "url": "http://arxiv.org/abs/2608.20331v1",
+    "arxiv_id": "2608.20331v1",
+    "authors": [
+      "Shiao Xie",
+      "Siyu Chen",
+      "Jianwei Lv",
+      "Bo Yuan",
+      "Yujin Wang",
+      "Xiandong Li"
+    ],
+    "published": "2026-08-20T17:59:46+00:00",
+    "summary": "Personalized interpretation of medical reports has emerged as an increasingly important need among patients. Addressing this need requires both evidence-grounded medical factuality and context-dependent patient communication, yet existing medical vision-language tasks do not adequately capture these dual requirements. To bridge this gap, we introduce Patient-oriented Medical Report Interpretation (PMRI), a novel open-ended multimodal generation task that requires models to explain medical reports in accurate and accessible language based on a user's query and dialogue history. These two objectives differ fundamentally in their verifiability, yet remain tightly coupled, making them difficult to optimize jointly under conventional supervised fine-tuning and holistic reinforcement learning paradigms. To address this challenge, we propose G-CARL, a grounded, checklist-aligned reinforcement learning framework that combines multi-source retrieval for atomic claim verification with context-aware, instance-specific weighted checklists for response coverage, providing structured supervision for factuality, user-demand satisfaction, and expression quality without constraining response diversity. We further construct MMedReport, a real-world PMRI benchmark, along with a clinician-designed three-dimensional evaluation protocol. Extensive experiments demonstrate that G-CARL consistently outperforms existing post-training baselines in overall quality, claim-level precision, and checklist recall. Pairwise preference evaluation by clinicians further confirms that G-CARL produces interpretations that are more accurate and better aligned with patient needs."
+  },
+  {
+    "title": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
+    "url": "http://arxiv.org/abs/2608.20314v1",
+    "arxiv_id": "2608.20314v1",
+    "authors": [
+      "Fengqing Jiang",
+      "Yite Wang",
+      "Boyi Liu",
+      "Zhaoyang Wang",
+      "Canwen Xu",
+      "Zhewei Yao",
+      "Radha Poovendran",
+      "Yuxiong He"
+    ],
+    "published": "2026-08-20T17:53:59+00:00",
+    "summary": "Mid-training is increasingly recognized as a critical stage for shaping the capabilities of large language models. Recent work has shown that targeted mid-training can strengthen reasoning-intensive abilities such as math and science, and can also improve agentic capabilities in software-engineering settings. In this work, we study the parallel but less explored agentic capability: general tool use. We present MidTool, an open corpus construction pipeline for agentic tool-use mid-training that combines large-scale web, PDF, and code data with synthesized supervision from real-world tool APIs, MCP skills, and document-grounded workflows. MidTool is designed to teach models how to recognize tool affordances, ground arguments from context, compose tool call workflow, and recover from incomplete information. We mid-train Qwen3-4B-Base and Qwen3-8B-Base on MidTool-Mix, and then apply follow-up post-training with both supervised fine-tuning and reinforcement learning. Compared with baselines, MidTool-Mix consistently improves downstream performance under both SFT and RL on BFCL, tau2-Bench, and MCP Universe. These results suggest that general tool use, like other important LLM capabilities, benefits from dedicated mid-training rather than being left entirely to post-training."
+  },
+  {
+    "title": "DreamHand: Repurposing Video Diffusion Models for Occlusion-Robust Egocentric 3D Hand Motion Recovery",
+    "url": "http://arxiv.org/abs/2608.20308v1",
+    "arxiv_id": "2608.20308v1",
+    "authors": [
+      "Yufei Liu",
+      "Xixi Wang",
+      "Hao Li",
+      "Ganlong Zhao",
+      "Kaitong Cai",
+      "Chengkai Jin",
+      "Chunxiao Liu",
+      "Jianbo Liu",
+      "Siyuan Huang",
+      "Xingang Pan",
+      "Hongsheng Li"
+    ],
+    "published": "2026-08-20T17:46:24+00:00",
+    "summary": "Egocentric video offers scalable manipulation data for embodied AI, yet recovering metric 3D hand trajectories remains challenging due to severe object occlusion and frequent out-of-sight gaps. Existing single-frame and windowed temporal regressors fail when hand shortly leaves the frame, while recent video diffusion models (VDMs) rely on heavy, stochastic multi-step sampling as pixel-space renderers. We instead repurpose VDM into a deterministic geometry encoder. A single forward pass over the clean latent exposes scene content beyond current observations, including occluded and out-of-sight hands. We introduce DreamHand, an offline clip-level framework that extracts features via a Deterministic Clean-Latent Encoder and decodes them with a Bidirectional Spatiotemporal Decoder. DreamHand recovers continuous bimanual trajectories with metric placement and no external detector, while a Ray-Based Camera Solver supports a second configuration that needs no test-time camera intrinsics. Across five egocentric benchmarks, DreamHand sets a new state of the art, cutting MPJPE-p by 30% on occlusion-heavy ARCTIC and 40% on HOT3D. These gains reach 46%-61% once out-of-sight hands are included in the evaluation, offering a scalable path from everyday human video to robot manipulation data."
+  },
+  {
     "title": "PartialBiGrasp: Inferring Hidden Local Geometry for Bimanual Grasping from Partial Views",
     "url": "http://arxiv.org/abs/2608.19188v1",
     "arxiv_id": "2608.19188v1",
