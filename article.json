@@ -1,5 +1,88 @@
 [
   {
+    "title": "Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction",
+    "url": "http://arxiv.org/abs/2608.21358v1",
+    "arxiv_id": "2608.21358v1",
+    "authors": [
+      "Dong Li",
+      "Dujun Nie",
+      "Xiaotong Zhang",
+      "Ruilin Wang",
+      "Yuchen Li",
+      "Chang Ge",
+      "Chao Xiong",
+      "Kaichang Di",
+      "Andreas N\u00fcchter",
+      "Levente Kov\u00e1cs",
+      "Qingquan Li",
+      "Shirong Ge",
+      "Fei-Yue Wang",
+      "Long Chen"
+    ],
+    "published": "2026-08-21T17:59:30+00:00",
+    "summary": "Space resource acquisition and utilization, commonly referred to as Space Mining, represent critical pathways for enabling sustained human exploration and unlocking commercial opportunities in space. These resources mainly include helium-3, water, mineral resources on the Moon and Mars, and abundant mineral deposits on asteroids. Due to the harsh conditions of space, communication delays, and high launch costs, the development of autonomous robotic systems is critical to achieving efficient, cost-effective space mining. This paper provides a comprehensive overview of space mining robotics and associated technologies. First, we review the background of space mining, including international policies, commercial entities, and recent advancements. We define a systematic six-stage architecture for space mining: Exploration is initiated by (1) remote sensing for target identification and (2) precise in situ robotic detection; Sampling progresses from (3) single-robot small-scale sampling to (4) multi-robot large-scale excavation; and Extraction integrates (5) autonomous resource extraction and (6) final integration into in situ construction or terrestrial transport. Additionally, we review and curate existing resources for space mining research, including real-world mission data, terrestrial analog datasets, and high-fidelity simulation environments. Finally, we identify critical open challenges in autonomous space mining and delineate a strategic research roadmap to bridge current technological gaps, fostering the transition toward a sustainable off-world economy. To track ongoing developments in space mining, we maintain an updated project page: https://github.com/OpenSpace-Lab/Space-Mining-with-Robotics-List."
+  },
+  {
+    "title": "ViTacPhys: Physical Property-Aware Grasping from Human Visual-Tactile Demonstrations",
+    "url": "http://arxiv.org/abs/2608.21355v1",
+    "arxiv_id": "2608.21355v1",
+    "authors": [
+      "Yiwen Liu",
+      "Yujun Zhu",
+      "Kui Jia",
+      "Zhao Liao",
+      "Yangwei You",
+      "Shuaijun Wang"
+    ],
+    "published": "2026-08-21T17:58:10+00:00",
+    "summary": "Recent vision-based action models have demonstrated strong capabilities in complex manipulation, but they rarely leverage explicit object physical properties to adapt their policies. We introduce ViTacPhys, a visual-tactile framework and data acquisition system that estimates object mass and friction-coefficient classes, together with continuous stiffness, from human manipulation demonstrations. Trained on data from 60 rigid and deformable objects, ViTacPhys combines temporal visual-tactile modeling, cross-attention multimodal fusion, and a semantic prior derived from a vision-language model. On seen objects, it achieves 97.2% mass classification accuracy, 98.8% friction-coefficient classification accuracy, and a stiffness mean absolute percentage error (MAPE) of 5.51%. On held-out objects from known categories, it achieves 87.5% mass accuracy, 97.5% friction-coefficient accuracy, and a stiffness MAPE of 9.08%. We transfer ViTacPhys from the human domain to the robot domain using limited robot teleoperation data, robot-style video augmentation, and human demonstrations with matched actions, and deploy it as an online module for adaptive grasping. The resulting physical-property-conditioned policy achieves total grasping success rates of 95.0% on in-distribution objects and 83.4% on out-of-distribution objects. For out-of-distribution objects successfully grasped by both methods, its force profiles are more consistent with human teleoperation than those produced by ACT. These results demonstrate the feasibility of explicitly estimating and conditioning on object physical properties for real-world adaptive grasping."
+  },
+  {
+    "title": "Anatomy-Informed Neural Networks: Encoding Anatomic Priors in Loss and Architecture, with an SE(3) Formulation of Guidewire-Induced Aortoiliac Deformation",
+    "url": "http://arxiv.org/abs/2608.21332v1",
+    "arxiv_id": "2608.21332v1",
+    "authors": [
+      "David P. Stonko"
+    ],
+    "published": "2026-08-21T17:38:42+00:00",
+    "summary": "Deep-learning models of anatomy can be numerically plausible yet anatomically impossible, and they generalize poorly when data are scarce. We introduce Anatomy-Informed Neural Networks (AINN), in which soft anatomic priors enter as penalty terms in the loss (e.g., a branching penalty that treats a renal transplant artery off the iliac instead of the aorta as unexpected rather than impossible), in direct analogy to a physics-informed neural network, and hard anatomic priors (e.g., continuity of the vessel) are built into the architecture and state representation, making such invalid predictions impossible by construction wherever the prior admits architectural enforcement.   We develop it on a clinical test case with limited data: how the aortoiliac tree deforms when a stiff wire is introduced endoluminally. This is important to contemporary aortic surgery and will matter to autonomous endovascular navigation. We lift the vessel centerline and the wire path from R^3 to curves of frames in the Lie group SE(3), and couple a Cosserat-rod wire to a tortuosity-modulated, anatomically anchored vessel through a unilateral lumen-contact inequality. The prediction is a constrained minimizer of the coupled elastic energy, with contact forces as its Lagrange multipliers. Supervision is a Wasserstein-2 optimal-transport loss between the predicted projection through the C-arm geometry and the observed angiogram, so a 2D angiogram can train a 3D prediction. The kinematics, loss and projection are verified against known ground truth; the mechanics solver only against its own optimality conditions, and predicted displacement is not yet mesh-converged. Here, no network is trained. Future work will transfer this in silico model to real CT scans and test whether it improves predictive accuracy and reduces the training data required."
+  },
+  {
+    "title": "NeSAM: Neuro-Symbolic Kinodynamics with Soil Adaptation for Off-Road Mobility",
+    "url": "http://arxiv.org/abs/2608.21330v1",
+    "arxiv_id": "2608.21330v1",
+    "authors": [
+      "Chenhui Pan",
+      "Tong Xu",
+      "Francesco Cancelliere",
+      "Xuesu Xiao"
+    ],
+    "published": "2026-08-21T17:37:33+00:00",
+    "summary": "Accurate prediction of off-road vehicle motion over deformable terrain remains challenging because sinkage, slip, and traction vary with local soil conditions. Existing learning-based kinodynamic models directly approximate vehicle-terrain interactions from data but do not explicitly represent soil mechanics and offer limited physical interpretability. To address these limitations, we present NeSAM, a neuro-symbolic framework that combines differentiable Bekker-Wong terramechanics with learned terrain representations and a Transformer-based residual dynamics model for long-horizon, six degree-of-freedom kinodynamic prediction. The terramechanics component models soil-dependent interaction forces, while the residual model corrects discrepancies between the analytical prediction and the observed vehicle dynamics. NeSAM further estimates physically meaningful soil parameters from terrain observations and updates them online using an extended Kalman filter. We evaluate NeSAM in Verti-Bench, a simulator built on the Chrono multiphysics engine, and validate its performance on a physical Verti-4-Wheeler platform. NeSAM improves prediction accuracy by up to 30% in simulation and 29% on real-world data relative to the strongest compared baselines. When integrated with a close-loop navigation controller, NeSAM further improves traversal success rate through online soil adaptation while reduces Hausdorff distance to the reference trajectory by 69.4%, indicating improved trajectory tracking accuracy."
+  },
+  {
+    "title": "VLASS Discovery of a Luminous Galactic Radio Transient Evolving on Decade Timescales",
+    "url": "http://arxiv.org/abs/2608.21320v1",
+    "arxiv_id": "2608.21320v1",
+    "authors": [
+      "Jessie M. Miller",
+      "Gregg Hallinan",
+      "Dillon Dong",
+      "Adolfo S. Carvalho",
+      "S. T. Myers",
+      "Jean Somalwar",
+      "Casey Law",
+      "B. M. Gaensler",
+      "Vikram Ravi",
+      "Laura Chomiuk",
+      "Assaf Horesh",
+      "Delina Levine",
+      "Yuyang Chen"
+    ],
+    "published": "2026-08-21T17:29:26+00:00",
+    "summary": "We present a multiwavelength analysis of the radio transient VT J1906+0849, discovered as a 70 mJy source in Epoch 1 of the Very Large Array Sky Survey (VLASS), 21 yr after an NRAO VLA Sky Survey (NVSS) non-detection. Radio observations reveal the source was first detected in 2005, peaking at $\\gtrsim200$ mJy in 2014, then declining until a late 2025 rebrightening. The transient sits at a Galactic latitude of $\\approx0.74^\\circ$ and the properties of its optical-infrared counterpart support a Galactic origin. At $d\\gtrsim15$ kpc, the extreme radio luminosity is likely powered by sustained accretion onto a compact object. However, a Swift-XRT non-detection shows it is X-ray faint relative to the Galactic X-ray binary population, and the radio emission is distinct from X-ray binaries in its temporal and spectral behavior. Broadband radio spectra suggest synchrotron self-absorption, but size constraints from equipartition and very long baseline interferometry show little to no expansion in the radio-emitting region over 5+ yr, despite significant spectral evolution. Near-infrared spectroscopy reveals a single broad emission line with a stable centroid but variable width and luminosity. We attribute this feature to blueshifted Br$\u03b3$ tracing a persistent asymmetric $\\approx2000$ km s$^{-1}$ outflow. These properties are unlike any previously identified Galactic radio source. One possible interpretation is that VT J1906+0849 is a young analog of the microquasar SS 433, with a dense disk wind confining a continuously powered synchrotron outflow. This jet-wind interaction explains the compact, slowly expanding radio source and may contribute to the absence of bright X-ray emission."
+  },
+  {
     "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
     "url": "http://arxiv.org/abs/2608.20338v1",
     "arxiv_id": "2608.20338v1",
