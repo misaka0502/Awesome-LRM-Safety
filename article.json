@@ -1,5 +1,67 @@
 [
   {
+    "title": "How to Train a Critic Stably and Efficiently",
+    "url": "http://arxiv.org/abs/2608.23566v1",
+    "arxiv_id": "2608.23566v1",
+    "authors": [
+      "Penghui Qi",
+      "Xiangxin Zhou",
+      "Wee Sun Lee"
+    ],
+    "published": "2026-08-24T17:59:39+00:00",
+    "summary": "Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token-level advantages from one response, but standard critic-based training recipes are often unstable. We study this instability and develop \\textbf{Best-Practice Critic Optimization (BPCO)}, a recipe that combines DPPO, value predictions bounded to the reward range, Monte Carlo value targets, unnormalized policy advantages, and length-adaptive generalized advantage estimation. Because the critic is used only during training, BPCO can also condition it on reward-defining information, such as a reference answer or grading rubric, that is hidden from the policy. Controlled experiments isolate the effect of each design choice. Across mathematical reasoning tasks with models ranging from 1.5B parameters to 30B-A3B mixtures of experts, BPCO improves a strong critic-based baseline consistently, and matches or exceeds a group-based baseline while sampling one response per prompt. The same recipe also improves learning with rubric-based rewards. These results show that a carefully designed critic provides a reliable alternative to group-relative advantage estimation. Code is available at https://github.com/QPHutu/golden_critic"
+  },
+  {
+    "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+    "url": "http://arxiv.org/abs/2608.23563v1",
+    "arxiv_id": "2608.23563v1",
+    "authors": [
+      "Md Thamed Bin Zaman Chowdhury",
+      "Moazzem Hossain"
+    ],
+    "published": "2026-08-24T17:58:41+00:00",
+    "summary": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments."
+  },
+  {
+    "title": "Flux-induced Aharonov-Bohm Oscillation in the Tunneling Spectroscopy of Kitaev Spin Liquids",
+    "url": "http://arxiv.org/abs/2608.23561v1",
+    "arxiv_id": "2608.23561v1",
+    "authors": [
+      "Wen-Han Kao",
+      "Elio J. K\u00f6nig"
+    ],
+    "published": "2026-08-24T17:58:26+00:00",
+    "summary": "Identifying emergent flux excitations and signatures of their mutual statistics with itinerant Majorana fermions remains a central challenge in Kitaev spin liquids. We show that an isolated $\u03c0$ flux imprints an intrinsic Aharonov-Bohm-like interference pattern on the charge-neutral Majorana continuum. Spatially resolved scanning tunneling microscopy with inelastic electron tunneling spectroscopy (STM-IETS) probes this oscillation in the local dynamical spin response as a function of both bias voltage and tip-flux separation, reflecting the $\u03c0$ phase acquired by Majorana trajectories encircling the flux. We show that large-scale exact diagonalization of the Kitaev honeycomb model and a complementary low-energy continuum theory yield consistent radial oscillations. These results provide a finite-energy, spatially resolved tunneling signature of a preexisting flux and a diagnostic of fermion-flux mutual statistics without requiring manipulation of individual anyons in the Kitaev spin liquid."
+  },
+  {
+    "title": "Spinor condensate persistent currents in an atomtronic Josephson necklace",
+    "url": "http://arxiv.org/abs/2608.23560v1",
+    "arxiv_id": "2608.23560v1",
+    "authors": [
+      "Sayan Chatterjee",
+      "Nalinikanta Pradhan",
+      "Rina Kanamoto",
+      "M. Bhattacharya",
+      "Pankaj Kumar Mishra"
+    ],
+    "published": "2026-08-24T17:57:06+00:00",
+    "summary": "The investigation of superflow in multi-junction Josephson circuits is currently a leading frontier of physics research, probing the fundamental manifestations of macroscopic phase coherence and enabling applications to quantum simulation, metrology and computing. In this work, we extensively investigate the stability and dynamics of persistent currents of a spinor atomic Bose-Einstein condensate on a ring with multiple Josephson junctions. Specifically, we examine the effects of positive and negative interspecies interactions, co- and counter-rotation, population and Manakov asymmetry, as well as Rabi coupling on the persistent currents carried by the two components. Our analysis reveals that the presence of a second species offers multiple mechanisms for unprecedented manipulation of supercurrents on the ring, including phase-slip engineering, stability control, current-inversion switching and supercurrent pumping. Our study provides a roadmap for the engineering of persistent currents in binary ring condensates in necklace potentials, with significant implications for atomtronics, matter-wave interferometry and sensing using atomic Bose gases."
+  },
+  {
+    "title": "Robustness of Anomaly Detection Models for Industrial Control Systems under Training-Time Data Contamination",
+    "url": "http://arxiv.org/abs/2608.23547v1",
+    "arxiv_id": "2608.23547v1",
+    "authors": [
+      "Mustafa Umut Ozbek",
+      "Taiwo Ojo",
+      "Pooria Madani",
+      "Khalil El-Khatib",
+      "Li Yang"
+    ],
+    "published": "2026-08-24T17:49:36+00:00",
+    "summary": "Machine-learning-based anomaly detection is increasingly used in industrial control systems (ICS), yet most studies assume that detector training data is trustworthy. In practice, training data may be corrupted through compromised logs, labeling errors, manipulated historian records, or unsafe retraining processes. This paper evaluates the robustness of offline ICS anomaly-detection pipelines on the Secure Water Treatment (SWaT) benchmark under training-time contamination. We assess 11 heterogeneous anomaly detectors under three contamination strategies: random injection, similarity-targeted injection, and feature-noise injection. The first two insert attack samples into the nominal training pool, while the third adds bounded Gaussian noise to selected normal training samples. These attacks are contamination-based rather than gradient-driven poisoning methods. Contamination budgets from 1% to 10% are evaluated using clean validation and test sets under a unified offline protocol. The results show that robustness is strongly model-dependent and cannot be predicted from clean-data performance alone. Injection-based contamination causes the greatest degradation, particularly for local-density and distance-based detectors, whereas feature-noise contamination has a comparatively limited effect. PCA, SVM, HBOS, and IForest remain relatively stable, while the tuned neural detectors demonstrate intermediate robustness. Overall, the findings highlight the importance of training-data integrity in ML-enabled ICS monitoring, subject to the evaluated dataset, models, and threat assumptions."
+  },
+  {
     "title": "Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction",
     "url": "http://arxiv.org/abs/2608.21358v1",
     "arxiv_id": "2608.21358v1",
