@@ -1,5 +1,71 @@
 [
   {
+    "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+    "url": "http://arxiv.org/abs/2609.02861v1",
+    "arxiv_id": "2609.02861v1",
+    "authors": [
+      "Cagri Temel"
+    ],
+    "published": "2026-09-02T17:44:25+00:00",
+    "summary": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous action can be traced back to sensor evidence through documented causal chains. The framework organizes decision-making into four auditable layers: Semantic Perception for evidence-grounded entity recognition, Belief Reasoning for probabilistic state estimation with causal graphs, Action Synthesis for constraint-aware planning with counterfactual documentation, and Execution Verification for compliance monitoring. TRACE is model-agnostic yet designed to integrate learning-based perception modules (CNNs, transformers) while preserving decision-level auditability. We evaluate the framework using three objective metrics: Evidence Traceability (sensor-to-decision linkage), Decision Reconstructability (post-hoc analysis capability), and Temporal Continuity (audit trail completeness). Experimental evaluation on warehouse robot navigation demonstrates that TRACE achieves 98.6% evidence traceability, 99.0% temporal continuity, and 98.1% decision reconstructability across 500 simulated decision cycles. Post-hoc methods like LIME provide feature attributions but lack the artifact structure needed for decision-level reconstruction. The framework addresses EU AI Act requirements for high-risk system transparency and contributes to Explainable AI for safety-critical autonomous systems."
+  },
+  {
+    "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+    "url": "http://arxiv.org/abs/2609.02849v1",
+    "arxiv_id": "2609.02849v1",
+    "authors": [
+      "Aleksander Ficek",
+      "Sean Narenthiran",
+      "Mehrzad Samadi",
+      "Somshubra Majumdar",
+      "Boris Ginsburg"
+    ],
+    "published": "2026-09-02T17:33:37+00:00",
+    "summary": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Nemotron-3-Nano-CC (30B-A3B) with SFT and RL and Nemotron-3-Ultra-CC (550B-A55B) with SFT alone. We further introduce GenCorrect, a feedback-driven test-time compute strategy that iteratively generates, evaluates, and refines diverse solutions. On IOI 2025, Nano-CC improves from 130 points to 291 after post-training and to 468 with GenCorrect, exceeding the gold threshold of 438.3 while Ultra-CC reaches 502. Guided by these results, we develop a competition-specific Ultra-CC system and evaluate it prospectively during IOI 2026. Under the same time, internet-access, and submission constraints as human contestants, it scores 535.4 out of 600, exceeding both the gold threshold of 361.12 and the top human score of 498.27. To our knowledge, this is the first AI system to outscore the highest-scoring human contestant on an IOI problem set."
+  },
+  {
+    "title": "Toward Robust LiDAR Semantic Segmentation for Real-World Deployment: Evaluation under Coarse Labels, Adverse Conditions, and Domain Shifts",
+    "url": "http://arxiv.org/abs/2609.02830v1",
+    "arxiv_id": "2609.02830v1",
+    "authors": [
+      "Samir Abou Haidar",
+      "Alexandre Chariot",
+      "Mehdi Darouich",
+      "Cyril Joly",
+      "Jean-Emmanuel Deschaud"
+    ],
+    "published": "2026-09-02T17:15:07+00:00",
+    "summary": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Real-world systems must handle safety-critical label semantics, degraded sensing conditions, and cross-domain variability, yet no unified protocol currently addresses all three aspects together. In this paper, we propose a structured evaluation protocol that assesses the deployment readiness of LiDAR semantic segmentation models along three complementary dimensions: (i) coarse-label evaluation aligned with autonomous driving safety priorities, revealing how label granularity affects different methods; (ii) robustness under eight types of LiDAR corruptions designed to emulate real-world atmospheric, geometric, and sensor degradations; and (iii) domain generalization across datasets without adaptation. The evaluation includes inference speed measured on an embedded Jetson AGX Orin platform, directly reflecting deployment constraints. Our results show that fine-grained benchmark rankings do not always reflect safety-relevant performance, that all methods experience substantial degradation under corruptions with architecture-dependent robustness characteristics, and that current domain generalization remains insufficient for reliable deployment. These findings expose concrete gaps between benchmark performance and deployment readiness, and provide a reference protocol for more practically grounded evaluation of LiDAR semantic segmentation."
+  },
+  {
+    "title": "Cliff: Learning Process Rewards from the First Mistake",
+    "url": "http://arxiv.org/abs/2609.02817v1",
+    "arxiv_id": "2609.02817v1",
+    "authors": [
+      "Peixuan Han",
+      "Runhui Wang",
+      "Ketan Ramaneti",
+      "Jie Hao",
+      "Gerald Friedland",
+      "Chris Kong"
+    ],
+    "published": "2026-09-02T17:03:42+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a powerful paradigm for large language model (LLM) post-training, but its reliance on coarse outcome rewards leads to limited guidance on intermediate reasoning processes. Existing approaches such as process reward modeling and on-policy distillation introduce additional constraints, such as reliance on a specialized reward model or assuming identical reasoning patterns between teacher and student. Nevertheless, we observe that once a reasoning process first goes wrong, evaluating the subsequent reasoning provides limited additional information, as it is already conditioned on an invalid prefix. Therefore, we propose Cliff, a reward shaping strategy that utilizes an off-the-shelf LLM as a teacher to identify the first mistake in each rollout. As a result, the rollout is naturally decomposed into two parts: a correct prefix and an incorrect suffix. Cliff then converts this signal into token-level advantages, assigning positive advantages for the correct prefix and negative feedback afterward. Experiments across 12 different scenarios demonstrate that Cliff consistently improves reasoning performance, outperforming on-policy distillation by 15% and standard GRPO by 7%, even with teachers of modest capability. Furthermore, we analyse the role of ``ground truth'' in Cliff and investigate its training dynamics. These results establish Cliff as a simple, general and effective approach for improving RLVR with richer, fine-grained supervision."
+  },
+  {
+    "title": "GDB-Reward: From Evaluation Metrics to Training Rewards for Graphic Design",
+    "url": "http://arxiv.org/abs/2609.02813v1",
+    "arxiv_id": "2609.02813v1",
+    "authors": [
+      "Adrienne Deganutti",
+      "Purvanshi Mehta",
+      "Simon Hadfield",
+      "Andrew Gilbert"
+    ],
+    "published": "2026-09-02T16:54:31+00:00",
+    "summary": "Text-to-image models excel at natural image synthesis but struggle with graphic design, where success depends on satisfying precise constraints on typography, layout, color, and visual communication. While prompt optimization offers an attractive alternative to expensive diffusion model fine-tuning, learning prompts for frozen image generators requires informative reward functions despite the entirely non-differentiable generation process. Reinforcement learning does not require differentiable objectives; it requires only scalar rewards capable of ranking candidate outputs. This raises a simple question: can design evaluation metrics themselves become reinforcement learning rewards? Our central contribution is GDB-Reward, a framework that systematically transforms heterogeneous graphic design evaluation metrics into a unified reinforcement learning reward. Experiments demonstrate that GDB-Reward provides an effective optimization objective, substantially improving adherence to the design specification in perceptual quality, rendering fidelity, and spatial accuracy while keeping the image generator entirely frozen. More broadly, our results demonstrate that heterogeneous, non-differentiable evaluation metrics can move beyond passive benchmarking to become effective optimization objectives for reinforcement learning in domains where differentiable supervision is unavailable."
+  },
+  {
     "title": "The Rise of Verbal Reinforcement Learning",
     "url": "http://arxiv.org/abs/2609.01597v1",
     "arxiv_id": "2609.01597v1",
