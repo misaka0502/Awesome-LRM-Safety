@@ -1,5 +1,80 @@
 [
   {
+    "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2609.04193v1",
+    "arxiv_id": "2609.04193v1",
+    "authors": [
+      "Yupeng Zheng",
+      "Xiang Li",
+      "Songen Gu",
+      "Yuhang Zheng",
+      "Shuai Tian",
+      "Weize Li",
+      "Linbo Wang",
+      "Chaoyue Li",
+      "Qichao Zhang",
+      "Haoran Li",
+      "Zhongpu Xia",
+      "Ya-Qin Zhang",
+      "Shuicheng Yan",
+      "Dongbin Zhao"
+    ],
+    "published": "2026-09-03T17:59:03+00:00",
+    "summary": "Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and task structure while retaining control-irrelevant visual redundancy. We call this mismatch between visual richness and control utility the action-sufficiency gap. We investigate whether this gap can be bridged by guiding intermediate features to preserve three control-relevant structure in robotic manipulation: geometry governing motion feasibility, affordance encoding instruction-relevant entities, and goals grounding instructions in task-relevant regions. To this end, we present GIFT (Guided Intermediate Feature Training), an architecture-flexible framework for learning intermediate features that translates these structures into training-time constraints through geometry alignment, affordance prediction, and goal-region reconstruction. We instantiate GIFT in a Vision-Language-Action (VLA) policy, a direct-action World-Action Model (WAM), and an inverse-dynamics WAM while retaining each model's action formulation. Under zero-shot transfer to LIBERO-Plus, GIFT-VLA, GIFT-WAM-Fast, and GIFT-WAM-IDM outperform StarVLA-OFT, Fast-WAM, and Fast-WAM-IDM by 4.6, 12.6, and 5.2 points, reaching 79.6%, 72.6%, and 87.8%, respectively. On RoboCasa, the three GIFT variants reach 61.4%, 83.6%, and 82.3%, outperforming their counterparts by 12.6, 9.0, and 8.4 points, respectively. Together, these results establish learning functionally structured intermediate features as a reusable principle across model-specific action formulations, with especially large gains on articulated-object tasks and high-precision real-world manipulation under unseen visual and spatial perturbations. Project page: https://openphoenix-team.github.io/GIFT-pages."
+  },
+  {
+    "title": "Toward Frontier-Quality Declarative UI Generation at Small-Model Cost",
+    "url": "http://arxiv.org/abs/2609.04184v1",
+    "arxiv_id": "2609.04184v1",
+    "authors": [
+      "Yingxiang Yang",
+      "Weihang Xiao",
+      "Ben Bullough",
+      "Tushar Deshpande",
+      "Niresh Agarwal"
+    ],
+    "published": "2026-09-03T17:58:09+00:00",
+    "summary": "Declarative UI protocols such as A2UI let applications generate interactive UIs by selecting pre-built components from a catalog and binding their props to application data, rather than emitting frontend code from scratch. This contract is attractive for production systems because of safety and consistency. An open question is: can low-latency and low-cost small models achieve the required quality for A2UI-based UI generation? To answer this, we systematically study three controllable design choices for catalog-conditioned A2UI generation: supervised fine-tuning (SFT) data construction method, model size, and component-catalog size. Across two React/TypeScript domains and four base checkpoints spanning two model families (Qwen 3.5 0.8B/2B/4B; SmolLM 3B), we find: (i) a 4B fine-tuned student recovers ~98% of teacher semantic quality and ~97% of teacher visual quality at more than an order of magnitude lower cost than frontier API calls; (ii) both augmented strategies (Perturbed-catalog and Constrained-GT) Pareto-dominate the unaugmented Full-catalog baseline, while specializing on different axes; (iii) even small models can handle and benefit from relatively large component catalog size. We distill these results into practitioner-facing trade-offs and deployment recommendations across the three design choices."
+  },
+  {
+    "title": "Reciprocity can halve what a mechanical network can learn",
+    "url": "http://arxiv.org/abs/2609.04169v1",
+    "arxiv_id": "2609.04169v1",
+    "authors": [
+      "Thai-Son Vu",
+      "Hoang-Giang Nguyen",
+      "Quoc-Bao Nguyen",
+      "Sengaloun Keoalounxay",
+      "Bao-Viet Tran"
+    ],
+    "published": "2026-09-03T17:54:04+00:00",
+    "summary": "Tunable mechanical networks are being developed as materials that learn in place. Capacity is estimated by counting tunable parameters against target constraints, ignoring Maxwell-Betti reciprocity, the symmetry every passive, linear elastic network obeys by construction. When p degrees of freedom are both driven and read out, every reachable response block lies in a subspace of codimension p(p-1)/2, whatever the size, topology and stiffnesses; at full overlap nearly half the target space is unreachable. The consequence for training is a number: any learning rule leaves an error at least the norm of the target's antisymmetric part on the shared degrees of freedom, computable before training, and positive definiteness adds an orthogonal second term. A second-order optimiser with the exact Jacobian reaches that floor within 1% in 143 of 144 runs, a bond-local contrastive rule within 0.1% in 22 of 24, and odd couplings restore the lost directions at the price of an external torque source: the network becomes active. Prescribed-displacement drives obey a companion law we prove. The symmetry is classical; its consequence on a fixed graph with finitely many tunable stiffnesses at partial overlap is new. For a published robotic metamaterial it shows that no symmetric positive-definite stiffness matrix meets both targets in the linear model their deposited data integrate."
+  },
+  {
+    "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
+    "url": "http://arxiv.org/abs/2609.04159v1",
+    "arxiv_id": "2609.04159v1",
+    "authors": [
+      "Uday Vallabhaneni",
+      "Cassie L. Cagwin",
+      "David J. Wild"
+    ],
+    "published": "2026-09-03T17:49:12+00:00",
+    "summary": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proximal Policy Optimization (PPO) policy maps this state to a constrained set of investigative actions, and an LLM agent loop is restricted to consuming the policy's recommendations and producing analyst-readable narratives gated by a critic. We instantiate the system on the LANL Comprehensive, Multi-Source Cyber-Security Events dataset and the Indiana University Quartz HPC cluster, reporting four results: (i) a two-phase CREATE ingestion pattern loads a 24M-edge authentication subgraph into Neo4j in 14.2 minutes on a single 32-core node, roughly 24x faster than the canonical MERGE-based pipeline; (ii) a sliding-window alert engine reliably trips a 25-event/10-second threshold in <=2.5 s across 50 trials; (iii) PPO training over 200 iterations converges to a mean episodic return of 8.74+/-0.31, with held-out precision of 0.91 and recall of 0.87 on labeled red-team events; and (iv) the integrated containment loop completes a full detect-investigate-recommend-human-approve cycle in a median of 6.3 s. We contribute a reusable engineering pattern (the hot-node deadlock workaround), a portable HPC deployment pattern (anchor-node co-location), and an enterprise-readiness analysis covering false-positive economics, reversibility guarantees, audit compliance, and the human-approval boundary."
+  },
+  {
+    "title": "Formation Matrix and Energy-based Control of Multi-Agent Systems",
+    "url": "http://arxiv.org/abs/2609.04158v1",
+    "arxiv_id": "2609.04158v1",
+    "authors": [
+      "Mart\u00edn Crespo",
+      "Sergio Junco",
+      "Mat\u00edas Nacusse"
+    ],
+    "published": "2026-09-03T17:49:06+00:00",
+    "summary": "This paper presents an energy-based controller for a multiagent robotic system designed to achieve and maintain a specific formation while moving on a plane and avoiding collisions between agents. The controller emulates a network of elementary spring-damper modules connecting pairs of agents. This network, with its de-energized states representing the desired formation, determines the system's dynamics, which is fully encapsulated by a bond graph model. The modeling is further enhanced through the introduction of a formation matrix, using a graph-theoretic approach, that describes both the distances and relative velocities among the agents of the arrangement. This matrix mathematically represents the interconnection and energy-exchange structure of the bond graph, allowing us to put it in correspondence with the control-by-interconnection CbI-scheme of the IDA-PBC theory, facilitating the solution of the formation control problem within the port-Hamiltonian system framework. Furthermore, the paper presents leader-following and position-based formation control systems based on the CbI scheme, including a stability analysis of the corresponding closed-loop systems. The theoretical findings are validated through numerical simulations across various scenarios."
+  },
+  {
     "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
     "url": "http://arxiv.org/abs/2609.02861v1",
     "arxiv_id": "2609.02861v1",
