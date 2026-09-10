@@ -1,5 +1,85 @@
 [
   {
+    "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+    "url": "http://arxiv.org/abs/2609.10522v1",
+    "arxiv_id": "2609.10522v1",
+    "authors": [
+      "Yanzhe Chen",
+      "Zechen Bai",
+      "Zhijun Cao",
+      "Wenzheng Zeng",
+      "Kevin Qinghong Lin",
+      "Yiqi Lin",
+      "Guoqiang Liang",
+      "Kevin Yuchen Ma",
+      "Qiming Huang",
+      "Mike Zheng Shou"
+    ],
+    "published": "2026-09-09T17:53:38+00:00",
+    "summary": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining."
+  },
+  {
+    "title": "DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation",
+    "url": "http://arxiv.org/abs/2609.10506v1",
+    "arxiv_id": "2609.10506v1",
+    "authors": [
+      "Nisarga Nilavadi",
+      "Ralf R\u00f6mer",
+      "Moritz Reuss",
+      "Michael Krawez",
+      "Tobias J\u00fclg",
+      "Angela P. Schoellig",
+      "Rudolf Lioutikov",
+      "Wolfram Burgard"
+    ],
+    "published": "2026-09-09T17:41:38+00:00",
+    "summary": "Action-conditioned latent world models predict future visual representations, enabling zero-shot goal-conditioned robot planning and control. However, their predictions for fine-grained spatial and rotational actions are unreliable for full 7-DoF end-effector control. To address this gap, we introduce DUET-DINO, a simultaneous cross-view latent world model that jointly learns action-conditioned predictions from static side- and wrist-camera observations through cross-view conditioning. By exploiting complementary global scene and gripper-centric information, DUET-DINO enables latent planning over the full 7-DoF action space. Across spatially diverse reach, orientation-intensive angled-reach, and multi-goal grasp-and-lift tasks, DUET-DINO consistently outperforms single-view and independent dual-view baselines, achieving 92% success on reach, 72.5% on angled-reach, and 60.0% on lift tasks. DUET-DINO is trained from scratch on DROID and RoboArena datasets and generalizes robustly under visual distribution shifts. We further show that while V-JEPA 2 wrist-view predictions underestimate visual dynamics induced by fine-grained actions, DINOv3 predictions better capture action-conditioned scene changes, leading to stronger downstream planning. The code and model checkpoints will be open-sourced. Project page: https://utn-air.github.io/DUET-DINO"
+  },
+  {
+    "title": "Coastal Environment Generation with HoloOcean",
+    "url": "http://arxiv.org/abs/2609.10484v1",
+    "arxiv_id": "2609.10484v1",
+    "authors": [
+      "Abigail Austin",
+      "Brady Moon",
+      "Joshua G. Mangelson"
+    ],
+    "published": "2026-09-09T17:25:05+00:00",
+    "summary": "Marine robotic simulation provides a safe and inexpensive method of developing and testing algorithms for unmanned underwater vehicle (UUV) and unmanned surface vessel (USV) autonomy and perception before full field deployment. However, these simulations are often limited by the availability of simulated environments. Current marine robotics simulation suites offer manual ways to edit or create environments, but they require existing data or specialized knowledge of the environment system. To address these issues, we introduce a novel Unreal Engine 5 level generation pipeline that enables automatic creation of coastal environments for HoloOcean. Our pipeline relies on a user-provided overhead image of a coastal scene. The pipeline then uses the image to generate height map data, as well as automatically select assets and place them in the environment."
+  },
+  {
+    "title": "Semigroup-JEPA: Latent Dynamics Consistency for Zero-Shot Physics Generalization",
+    "url": "http://arxiv.org/abs/2609.10464v1",
+    "arxiv_id": "2609.10464v1",
+    "authors": [
+      "Andy Zeyi Liu",
+      "Haoran Sun",
+      "Lucas Baker",
+      "Randall Balestriero",
+      "John Sous"
+    ],
+    "published": "2026-09-09T17:08:13+00:00",
+    "summary": "Joint-Embedding Predictive Architecture (JEPA) world models learn a compact latent representation of the world that supports prediction and planning, but their capability to learn physics and generate physically realistic dynamics remains hitherto untested. In this work, we introduce SemiGroup-JEPA (SG-JEPA), which extends the LeWorldModel framework by supplying the parameter governing the physics to the temporal model via action-conditioning and jointly training an encoder and predictor through an autoregressive latent rollout. To evaluate the model's ability to generalize out of distribution, we design dynamical tasks under different gravitational fields that, despite obeying the same physical law, exhibit qualitatively different dynamics, ranging from floating motion in weak gravitational fields to rapid bouncing in strong ones. In contrast to DINO-WM, SG-JEPA reduces open-loop prediction error by up to 2 times on two-dimensional datasets, and increases control success rate up to 2.5 times for three-dimensional robotic datasets, for which we train independent diffusion policies. To explain this advantage, we develop a linear feature model that separates local law-conditioned error from its recursive amplification under rollout. Guided by this model, we find that back-propagating the multi-step rollout loss into the representation trains the encoder to keep the features that the predictor can carry forward, and that those are the features the dynamics depend on, so most of the gain comes from the encoder learning better features rather than from the predictor learning better dynamics. See project page at https://sg-jepa.github.io."
+  },
+  {
+    "title": "ConvMem: Convolutional Memory for Long-Context Reasoning",
+    "url": "http://arxiv.org/abs/2609.10441v1",
+    "arxiv_id": "2609.10441v1",
+    "authors": [
+      "Hongming Zhang",
+      "Zhaozhen Gu",
+      "Fengshuo Bai",
+      "Ming Hao",
+      "Qingyang Zhang",
+      "Yuanyuan Wang",
+      "Shiyang Tang",
+      "Yanna Wang",
+      "Bo Xu"
+    ],
+    "published": "2026-09-09T16:53:02+00:00",
+    "summary": "While Large Language Models (LLMs) have demonstrated impressive capabilities, they often struggle with extremely long contexts due to fixed context limits. To address this, sequential approaches like MemAgent extend the effective context by reading text in segments and iteratively updating a fixed-size memory. However, this sequential paradigm suffers from high latency and requires costly reinforcement learning (RL) training, which can lead to overfitting on specific datasets. To overcome these limitations, we propose ConvMem, a training-free, highly parallelizable framework that reformulates long-context reasoning as a hierarchical convolution. Inspired by CNNs, ConvMem treats an LLM prompted with a specific query as a convolutional kernel. This kernel summarizes text segments hierarchically, shortening the reasoning path from a linear chain into a logarithmic tree. Specifically, ConvMem integrates \\textit{Configurable Strides} and \\textit{Skip Connections} to ensure robust evidence capture and propagation, while employing \\textit{Multi-Kernel Convolution} to decompose complex queries into disentangled semantic channels. This design not only mitigates error accumulation but also enables massive parallelization across both text segments and reasoning threads. Experiments on RULER-HotpotQA and RULER-2WikiMultiHopQA demonstrate that ConvMem outperforms training-free baselines and avoids the risk of overfitting to parametric priors often observed in RL-trained models on out-of-distribution tasks."
+  },
+  {
     "title": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
     "url": "http://arxiv.org/abs/2609.09158v1",
     "arxiv_id": "2609.09158v1",
