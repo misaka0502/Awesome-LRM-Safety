@@ -1,5 +1,77 @@
 [
   {
+    "title": "Laser-induced metastable (anti-)skyrmion states with higher-order topological charge",
+    "url": "http://arxiv.org/abs/2609.13112v1",
+    "arxiv_id": "2609.13112v1",
+    "authors": [
+      "Tim Titze",
+      "Marcel M\u00f6ller",
+      "Timo Schmidt",
+      "Mariam Hassan",
+      "Sabri Koraltan",
+      "Stefan Mathias",
+      "Manfred Albrecht",
+      "Claus Ropers",
+      "Daniel Steil"
+    ],
+    "published": "2026-09-11T17:44:08+00:00",
+    "summary": "Ultrafast creation and manipulation of topologically non-trivial spin objects promises significant potential for spintronic applications. Here, we demonstrate laser-induced nucleation of skyrmions and antiskyrmions with topological charge up to $|Q|=3$ from the saturated magnetization state of a Co/Ni-multilayer which does not intrinsically host a skyrmionic ground state. The resulting configuration of spin objects thus constitutes a metastable, thermodynamically hidden magnetic state. We control the number and type of spin objects by the excitation fluence and the external out-of-plane magnetic field."
+  },
+  {
+    "title": "Creation and Control of Scattering Singularities in non-Hermitian Systems",
+    "url": "http://arxiv.org/abs/2609.13085v1",
+    "arxiv_id": "2609.13085v1",
+    "authors": [
+      "Jared Erb",
+      "Nadav Shaibe",
+      "Steven M. Anlage"
+    ],
+    "published": "2026-09-11T17:18:35+00:00",
+    "summary": "The ability to controllably manipulate non-Hermitian wave scattering environments has been used to discover exotic scattering phenomena such as scattering exceptional points and coherent perfect absorption, and create numerous applications including signal routing, filtering, imaging, sensing, wireless power transfer, etc. We introduce the concept that many of these applications and phenomena are fundamentally governed by singularities of the scattering matrix. With this understanding, our demonstrated ability to control the location of scattering singularities can be used to enhance current applications and develop new ones. In generic complex scattering systems, there is an abundance of topologically protected scattering singularities corresponding to complex zeros of various functions of the scattering matrix. We show that with just three tunable parameters we are able to create the conditions for nearly any scattering singularity at arbitrary frequencies in such systems. With five tunable parameters, we demonstrate that more complex scenarios can be accomplished, such as making disparate singularities coincident or placing singularities at different frequencies. A benefit of systems with tunable parameters is that generic complex systems can be re-purposed into exhibiting many different useful properties solely by reconfiguring their tunable parameters. A particularly interesting scattering phenomenon is coherent perfect absorption, where a specific wavefront injected into the system is completely absorbed, with no energy reflected or transmitted through any channel. After creating the conditions for this singularity at an arbitrary preselected frequency, we can find and inject the coherent perfect absorption wavefront and demonstrate output-to-input power ratios as low as 1x10^{-10}, 2x10^{-8}, and 3x10^{-8} in a quarter bowtie billiard with two, three, and four ports, respectively."
+  },
+  {
+    "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+    "url": "http://arxiv.org/abs/2609.13083v1",
+    "arxiv_id": "2609.13083v1",
+    "authors": [
+      "Zhenfeng Gan",
+      "Yanbo Chen",
+      "Lirong Che",
+      "Junbo Tan",
+      "Xueqian Wang"
+    ],
+    "published": "2026-09-11T17:17:52+00:00",
+    "summary": "In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such as stairwells and cluttered building interiors. Reliable autonomy remains challenging because robot-terrain interaction (RTI) is hybrid and discontinuous, and effective flipper-track coordination is difficult to model analytically. We present ASTRIL-MPC, a language-guided neural kinematics model predictive control (MPC) framework for autonomous traversal. A learned kinematics model predicts short-horizon task-state increments from a height sequence and recent trajectories; NMPC plans with multi-objective costs and strict feasibility constraints; and a large language model (LLM) proposes bounded updates to selected weights and bounds through a safety-checked interface with range clipping, rate limiting, and consistency checks. The compiled predictor enables a full control cycle within 100 ms. Across three traversal tasks and a multi-height generalization setting, ASTRIL-MPC improves an aggregate traversal-quality score by up to 71% over a non-adaptive NMPC and by 67% over a PPO baseline, while eliminating measurable collision impacts during descent. These results indicate that combining learned kinematics, optimization-based planning, and language-guided retuning yields data-efficient and robust autonomy for articulated tracked robots."
+  },
+  {
+    "title": "CanvasAnneal: Curriculum Reinforcement Learning for Diffusion Language Models",
+    "url": "http://arxiv.org/abs/2609.13060v1",
+    "arxiv_id": "2609.13060v1",
+    "authors": [
+      "Blake Olson",
+      "Yuhang Song",
+      "Emmett McQuinn",
+      "Yuan Shangguan"
+    ],
+    "published": "2026-09-11T16:59:52+00:00",
+    "summary": "Diffusion Language Models (DLMs) offer promising parallel generation capabilities but lag behind autoregressive models in complex reasoning and tool-use tasks. While Reinforcement Learning (RL) has recently been applied to enhance DLMs, standard RL approaches suffer from an exploration bottleneck. To address this, we inject reasoning priors from a stronger teacher model to guide RL exploration. In this paper, we introduce CanvasAnneal, a curriculum-guided diffusion RL framework. During the initial RL phase, we warm-start exploration by injecting teacher-generated reasoning traces into the initial diffusion canvas. As training progresses, we gradually remove this guidance and require the model to generate more of the reasoning trajectory independently. Across mathematical reasoning and tool-use benchmarks, CanvasAnneal improves over standard diffu-GRPO on MATH500, Countdown, and Tau2 and substantially accelerates reward improvement on several tasks, while gains are task-dependent. Our results suggest that structured training-time guidance can alleviate exploration bottlenecks in diffusion RL and speed up convergence on harder tasks."
+  },
+  {
+    "title": "Expert-Space Exploration in MoE Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2609.13058v1",
+    "arxiv_id": "2609.13058v1",
+    "authors": [
+      "Hongyi He",
+      "Zhenghao Lin",
+      "Xiao Liu",
+      "Peng Cheng",
+      "Yan Lu",
+      "Yeyun Gong"
+    ],
+    "published": "2026-09-11T16:58:41+00:00",
+    "summary": "Reinforcement learning (RL) has become central to post-training of large language models. Recent advances in RL for Mixture-of-Experts (MoE) models have primarily focused on improving optimization stability and training efficiency, while treating the expert selection as a fixed component. Since routing determines the sparse computation paths that induce output distributions, expert selection offers an additional source of rollout diversity. Through empirical analysis, we find that perturbing expert routing effectively alters model output and increases rollout diversity, which is similar to increasing the decoding temperature. However, direct perturbation can activate unsuitable experts and substantially degrade rollout quality. Motivated by these observations, we introduce Expert-Space Exploration Reinforcement Learning (ESRL), an architecture-aware framework that explicitly explores the expert-routing space of MoE models. ESRL preserves high-confidence experts as anchors, and restricts stochastic routing to a plausible candidate pool, thereby retaining reliable computation paths. The perturbation strength is further adapted according to router entropy to avoid over-perturbation. To mitigate the routing mismatch introduced by perturbation, ESRL records the expert paths used during rollout and replays them during policy optimization. Experiments demonstrate that ESRL achieves the best performance across MoE backbones with top-K, top-1, and shared-expert routing, as well as across mathematics, science, and code tasks without additional sampling or computational cost. Specifically, ESRL on Qwen3-30B-A3B achieves the best among all compared methods, improving average Pass@1 and Pass@8 over GRPO by 3.2 and 4.5 percentage points, respectively. Further analyses of expert utilization and training dynamics provide insights into how exploiting MoE-specific routing structure benefits RL training."
+  },
+  {
     "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
     "url": "http://arxiv.org/abs/2609.11929v1",
     "arxiv_id": "2609.11929v1",
