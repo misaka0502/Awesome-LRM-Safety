@@ -1,5 +1,73 @@
 [
   {
+    "title": "Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection",
+    "url": "http://arxiv.org/abs/2609.15989v1",
+    "arxiv_id": "2609.15989v1",
+    "authors": [
+      "Keertana Chidambaram",
+      "Andrew Ilyas",
+      "Vasilis Syrgkanis"
+    ],
+    "published": "2026-09-14T18:33:27+00:00",
+    "summary": "Chain-of-thought (CoT) monitoring is a safety strategy where the reasoning of a large language model \"actor\" is inspected by a \"monitor\" (often another language model) for signs of unsafe planning, deception, or misalignment. We find that planting harmful but benign-sounding reasoning in the actor's context can steer it to perform adversarial actions while evading monitors, an attack we term \"plan injection\". We initially discover this attack in the multiple-choice question-answering monitorability setting proposed by Lanham et al. (2023), using the investigator-agent elicitation framework of Li et al. (2025). We generalize the attack and show that the discovered behavior scales to harder tasks (achieving 25-33% monitor evasion rates across different monitorability benchmarks) and larger models such as DeepSeek-R1. Across the settings we study, actor models not only follow injected plans but also paraphrase them as their own reasoning, without explicit attribution to the injections. Finally, we find cases where extra monitor resources cause harm - giving the monitor access to the injected plan drops detection by as much as 50% in the Bio-Math task and in a case study on monitor reasoning budget, we find transcripts where additional thinking tokens are spent rationalizing the injected plan rather than flagging it."
+  },
+  {
+    "title": "ResSafe: Learning Safety Filtering with Residual Reinforcement Learning for Humanoids",
+    "url": "http://arxiv.org/abs/2609.15988v1",
+    "arxiv_id": "2609.15988v1",
+    "authors": [
+      "Gechen Qu",
+      "Tong Zhang",
+      "Bike Zhang",
+      "Yen-Jen Wang",
+      "Koushil Sreenath",
+      "Claire Tomlin",
+      "Jason Jangho Choi"
+    ],
+    "published": "2026-09-14T17:59:50+00:00",
+    "summary": "Safe control of humanoid robots remains challenging due to their high-dimensional dynamics, contact-rich interactions, and sensitivity to disturbances. Although reinforcement learning has enabled effective locomotion and motion tracking, learned policies can still generate unsafe actions that lead to instability or falls. In this work, we propose residual reinforcement learning as an implicit safety-filtering mechanism for safe humanoid control. Instead of relying on a single nominal policy to simultaneously balance performance, safety, and robustness, we decouple performance and safety. The nominal policy focuses solely on task performance, while a residual policy learns safety corrections. This decoupling leads to a better performance--safety Pareto trade-off and avoids the need for careful tuning of multiple competing reward terms within a single policy training. We show that the residual policy can act as an implicit safety filter."
+  },
+  {
+    "title": "Bellman Policy Optimization",
+    "url": "http://arxiv.org/abs/2609.15987v1",
+    "arxiv_id": "2609.15987v1",
+    "authors": [
+      "Zhuoqing Song",
+      "Haotian Xu",
+      "Xikun Zhang",
+      "Lidong Bing"
+    ],
+    "published": "2026-09-14T17:59:47+00:00",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models (LLMs). We introduce Bellman Policy Optimization (BPO), a critic-free method derived from Policy Mirror Descent (PMD). For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states. We prove that it has the same unique optimal solution as the original PMD objective. We derive the practical BPO loss by approximating this objective. Its mismatch-correction weight is a smoothed ratio of complementary token probabilities. Experiments on mathematical reasoning benchmarks demonstrate the effectiveness of BPO."
+  },
+  {
+    "title": "MessyMem: Learning-from-Doing Memory for Mobile Manipulation",
+    "url": "http://arxiv.org/abs/2609.15976v1",
+    "arxiv_id": "2609.15976v1",
+    "authors": [
+      "Anuva Banwasi",
+      "William Muckelroy",
+      "Priya Sundaresan",
+      "Linfeng Zhao",
+      "Jeannette Bohg",
+      "Cherie Ho"
+    ],
+    "published": "2026-09-14T17:56:49+00:00",
+    "summary": "Mobile manipulators deployed across many rooms and visits should improve with experience: after discovering that a cabinet is locked or finding an object in a drawer, the robot should reuse that knowledge rather than start each task from scratch. Yet today's robots often treat each task as new: compact scene representations omit interaction-derived knowledge, raw video histories are difficult to query, and VLM planners reason at inference time without persistently updating what the robot knows. We present MessyMem, a persistent memory system that enables mobile manipulators to learn from experience and reuse that knowledge across future tasks. It maintains a spatially grounded 3D scene graph of objects and locations, augments it with properties and outcomes learned through interaction, and links visual observations for fine-grained recall. We evaluate MessyMem in simulation and on a real mobile manipulator. In a continuous 25-task simulation spanning over 3 hours, MessyMem achieves 80.0% task progress, outperforming the strongest ablation by 14.8 percentage points and the strongest external baseline by 28.9 points, while retrieving task-relevant evidence from thousands of stored keyframes and over an hour into the past."
+  },
+  {
+    "title": "Disentangling Representation Evolution in Transformers through Directional Decomposition",
+    "url": "http://arxiv.org/abs/2609.15975v1",
+    "arxiv_id": "2609.15975v1",
+    "authors": [
+      "Shwai He",
+      "Haichao Zhang",
+      "Shen Yan"
+    ],
+    "published": "2026-09-14T17:56:19+00:00",
+    "summary": "Transformer representations evolve through learned additive transformations that either preserve their current direction or redirect it. We study this evolution as a functional geometry, decomposing learned updates into parallel and perpendicular components. Across pretrained models, we find substantial parallel components beyond the residual identity path. We then apply the decomposition in two spaces: to attention and MLP updates relative to the hidden state, and to attention value aggregation relative to the current token's value. Targeted edits reveal a strongly space-dependent asymmetry: exclude-self value-space parallel manipulation is markedly more robust than residual-space and perpendicular counterparts, preserving the direct self message while scaling only the non-self aggregate. The same decomposition gives a component-resolved description of compression-induced update error: perpendicular error separates compression methods more clearly than parallel error. Extensive experiments further demonstrate that full-aggregate parallel suppression during from-scratch pretraining lowers validation-loss trajectories and improves downstream averages, with the value-space variant strongest. Together, these results connect representation geometry to editing robustness, compression diagnosis, and training-time intervention. Code is available in the \\href{https://github.com/Shwai-He/Transformer-Geometry}{project repository}."
+  },
+  {
     "title": "Laser-induced metastable (anti-)skyrmion states with higher-order topological charge",
     "url": "http://arxiv.org/abs/2609.13112v1",
     "arxiv_id": "2609.13112v1",
