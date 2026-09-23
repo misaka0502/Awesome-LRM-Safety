@@ -1,5 +1,79 @@
 [
   {
+    "title": "\u03c6-RIE: From Photorealistic Reconstruction to Interactive Environments",
+    "url": "http://arxiv.org/abs/2609.26795v1",
+    "arxiv_id": "2609.26795v1",
+    "authors": [
+      "Runyi Yang",
+      "Deheng Zhang",
+      "Xiaoye Wang",
+      "Kanzhi Wu",
+      "Lei Sun",
+      "Ajad Chhatkuli",
+      "Kunyu Peng",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "published": "2026-09-22T17:59:52+00:00",
+    "summary": "3D Gaussian Splatting (3DGS) can reconstruct a captured scene photorealistically, but the resulting representation does not by itself support physical interaction. Robot simulation instead requires object-level change, \\textit{i.e.}, objects must move independently, make contact, and reveal previously occluded surroundings. This gap arises because object appearance may remain entangled with the background, while hidden object geometry and occluded background content may be unobserved. To address this challenge, we present \u03c6-RIE, a Gaussian-native pipeline that converts selected objects into movable simulator assets while preserving the remaining reconstruction. Our key observation is that asset construction and source removal should be coupled, \\textit{i.e.}, one object identity should define the movable asset and the scene content to remove and complete. Accordingly, Scene Observation supplies shared evidence to Coupled Scene Construction, which creates registered assets and completed background Gaussians for simulator-driven rendering in an Interactive Environment. This coupling preserves unedited Gaussians while aligning visual and physical state. On 50 ScanNet++ scenes, evidence-based selection and registration retry increase matched F1 at 20\\,mm from 0.336 to 0.383 at fixed retention. Further tests demonstrate asset executability, manipulation gains over a single-generator baseline, and the visual cost of conversion. Together, these results demonstrate that \\name\\ enables interactive scene conversion."
+  },
+  {
+    "title": "DreamStream: Towards Policy-Oriented Generative Simulation for End-to-End Driving",
+    "url": "http://arxiv.org/abs/2609.26792v1",
+    "arxiv_id": "2609.26792v1",
+    "authors": [
+      "Ziyang Leng",
+      "Sicheng Mo",
+      "Seth Z. Zhao",
+      "Haoyuan Cai",
+      "Yu Zeng",
+      "Rowan McAllister",
+      "Bolei Zhou"
+    ],
+    "published": "2026-09-22T17:59:31+00:00",
+    "summary": "Faithfully evaluating end-to-end driving policies in simulation requires observations that are not merely photo-realistic, but preserve the scene features a policy relies on to make decisions. Existing platforms, however, exhibit a sim-to-real visual gap that corrupts policy perception, undermining their ability to assess a policy's closed-loop decision-making. To this end, we propose DreamStream, a generative, closed-loop simulator that achieves policy-oriented fidelity using a simulator-grounded autoregressive video model. Our video model is distilled from a large pretrained video model via traffic layout guidance, varying visual appearance while preserving policy-relevant features such as scenario layout and the temporal consistency of dynamic objects. We further observe that perceptual metrics like FID misrank how well these features are preserved. To tackle this, we introduce FD$\u03c0$, a new multi-representation metric that measures the sim-to-real gap as the Fr\u00e9chet distance over scene-context features from public E2E policies. Under FD$\u03c0$, DreamStream improves over the strongest prior closed-loop simulator by $1.6\\times$ on nuScenes and $4.7\\times$ on NAVSIM, and induces the least perturbation to policy's perceptual observability. Based on DreamStream, we construct Navhard-CL benchmark, which turns non-reactive real-world benchmark NAVSIM into interactive testing environments with adversarial driving behaviors and weather variations. This benchmark exposes many failure modes of driving policies, such as scorer bias and lack of recovery behaviors, that prior closed-loop benchmarks overlook. Code and data are available at https://github.com/VAIL-UCLA/DreamStream."
+  },
+  {
+    "title": "TM-APR: Thermal Temporal-Memory Localization via Analytic Online Adaptation",
+    "url": "http://arxiv.org/abs/2609.26766v1",
+    "arxiv_id": "2609.26766v1",
+    "authors": [
+      "Yanshuo Bai",
+      "Kanji Tanaka"
+    ],
+    "published": "2026-09-22T17:46:31+00:00",
+    "summary": "Thermal Visual Place Recognition (Thermal VPR) maps camera observations to metric poses within a mapped environment, serving as a prerequisite for autonomous navigation. However, thermal VPR suffers from severe environmental dependence, heavy online retraining overheads, and an inability to model dynamic non-linear shifts, causing existing frameworks to fail during online deployment. To achieve robust domain-invariant place recognition, we bridge Analytic Class-Incremental Learning (ACIL) with domain-invariant VPR for the first time, revealing that its gradient-free matrix updates construct a surprisingly strong baseline that outperforms conventional fine-tuning. Nevertheless, standard ACIL exhibits a critical vulnerability to extreme non-linear thermal fluctuations due to its structural linear assumptions. To overcome this limitation, we exploit a novel algebraic equivalence between ACIL and modern control theory, proposing a framework which embeds Unscented propagation (U-ACIL), Gaussian Mixture partitioning (GMM-ACIL), and minimax $H_\\infty$ optimization ($H_\\infty$-ACIL) directly into the update loop. Our formulation guarantees exact closed-form matrix updates within $\\mathcal{O}(1)$ computational complexity, bypassing backpropagation to ensure that the online update latency ($\u0394t_{\\mathrm{learn}}$) remains strictly bounded below the sensor acquisition interval ($\u0394t_{\\mathrm{acquire}}$), thereby eliminating trajectory jumps in real-time SLAM pipelines."
+  },
+  {
+    "title": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
+    "url": "http://arxiv.org/abs/2609.26761v1",
+    "arxiv_id": "2609.26761v1",
+    "authors": [
+      "Laizhen Li",
+      "Xuan Wang",
+      "Peicheng Zhao",
+      "Juanjuan Zhao",
+      "Kejiang Ye",
+      "Cheng-zhong Xu",
+      "Xitong Gao"
+    ],
+    "published": "2026-09-22T17:41:34+00:00",
+    "summary": "Agents using the Model Context Protocol (MCP) rely on semantic matching to select tools from third-party servers, exposing a semantic supply-chain risk through attacker-controlled metadata and outputs. We introduce A2M (Attraction-to-Manipulation), a two-stage black-box framework for hijacking MCP agents. The Attraction phase optimizes tool metadata to increase invocation probability; the Manipulation phase uses execution traces to refine adversarial tool returns that steer agents toward attacker-desired outcomes. On LiveMCPBench, direct attacks optimized and evaluated on GLM-4.6 achieve a macro-average malicious tool invocation rate of 93.6% across four scenarios, increase weighted token costs to 32.4$\\times$ the benign baseline under Cognitive Denial of Service, and attain a mean attack success rate of 74.4% across Information Exfiltration, Environment Integrity Compromise, and Reasoning Derailment. Transfer to four other models without re-optimization yields corresponding macro-averages of 63.6%, 2.7$\\times$, and 24.5%. These findings motivate stronger tool vetting and runtime isolation in MCP ecosystems. Code is publicly available at https://github.com/Lilaizhen/A2M."
+  },
+  {
+    "title": "Underwater Navigation in Unsteady Flows Using Measurement Histories from a Single Sensing Unit",
+    "url": "http://arxiv.org/abs/2609.26753v1",
+    "arxiv_id": "2609.26753v1",
+    "authors": [
+      "Linhao Jin",
+      "Qimin Feng",
+      "Peter Gunnarson",
+      "Qiang Zhong"
+    ],
+    "published": "2026-09-22T17:34:33+00:00",
+    "summary": "Spatial flow measurements support underwater navigation, but distributed sensing is constrained by robot size and sensor layout. We use a causal observer to estimate current lateral velocities from a finite history of measurements collected by a single sensing unit, supplying the inputs of a fixed navigation controller. In two-dimensional wake simulations with access to body-frame ambient velocity, this virtual sensing interface reduces simultaneous flow sampling from three points to the robot center. Trained only in a circular-cylinder wake at Re = 100, the flow-history observer achieves 84.4% and 80.6% success at held-out Re = 205 and 240 without retraining. These rates are 7.4 and 4.6 percentage points below direct spatial sensing and more than 30 points above a matched current-only observer. Past flow remains beneficial when past goal and yaw information is available. Across obstacle geometries, performance remains close to direct sensing in square-prism wakes but declines in triangular-prism wakes. Component replacement identifies the lateral velocity difference as control-relevant, while controlled perturbations reveal sensitivity to error persistence. The results demonstrate the closed-loop utility of single-point flow histories under the assumed observation model."
+  },
+  {
     "title": "VideoGen-Agent: Reinforcing Video Generation Agents",
     "url": "http://arxiv.org/abs/2609.24997v1",
     "arxiv_id": "2609.24997v1",
