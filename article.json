@@ -1,5 +1,77 @@
 [
   {
+    "title": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
+    "url": "http://arxiv.org/abs/2609.28467v1",
+    "arxiv_id": "2609.28467v1",
+    "authors": [
+      "Zilin Fang",
+      "Zishuo Wang",
+      "Gim Hee Lee",
+      "David Hsu"
+    ],
+    "published": "2026-09-23T17:55:48+00:00",
+    "summary": "Social navigation typically assumes a specified goal and focuses on reaching it while respecting social conventions, whereas robot group joining requires predicting where to join based on the group's real-time activity and formation. This is a highly semantic task, yet an important capability for applications such as robotic guide dogs and autonomous mobility scooters. We formulate language-grounded robot group joining: given an observation and a natural-language description of a target group, the robot identifies the relevant group members and predicts socially compliant joining poses. For grounding, we generate structured candidate subsets through recursive spectral partitioning and rank them with a language-conditioned image--geometry model. Given the grounded group, a goal predictor leverages human-formation priors to produce a multimodal energy--orientation map over feasible robot poses. Experiments on conversations, queues, and audiences across varying group sizes, crowd densities, and visual ambiguities show that our method achieves competitive grounding accuracy with sub-second inference and outperforms all baselines in joining-pose prediction. Real-robot experiments further demonstrate group joining in both static and dynamically changing interactions."
+  },
+  {
+    "title": "LiMA: Bridging Long-term Imagination to Real-time Dexterous Manipulation via Asynchronous Diffusion",
+    "url": "http://arxiv.org/abs/2609.28431v1",
+    "arxiv_id": "2609.28431v1",
+    "authors": [
+      "Ning Chen",
+      "Yankai Fu",
+      "Junkai Zhao",
+      "Qianpu Sun",
+      "Guocai Yao",
+      "Pengwei Wang",
+      "Zhongyuan Wang",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-09-23T17:31:52+00:00",
+    "summary": "Dexterous manipulation demands long-term foresight and rapid reactive control. Vision-Language-Action (VLA) models, while proficient in high-level reasoning, often lack a fine-grained understanding of physical dynamics and spatial perception. Conversely, World-Action Models (WAMs) typically suffer from high inference latency due to iterative generation. These deficiencies result in a critical temporal misalignment where the model's intent fails to adapt to rapid physical contact changes. To overcome this fundamental bottleneck, we propose LiMA, an asynchronous dual-system generative framework that systematically decouples intent planning from reactive execution. LiMA organizes computation into a multi-scale hierarchy: a slow system handles sparse long-horizon spatiotemporal intent generation, while a fast system focuses on dense high-frequency motion refinement. To align sparse intent predictions with dense action trajectories, we introduce a Latent Schr\u00f6dinger Bridge Coupling mechanism that formulates refinement as an entropy-regularized probabilistic transport process. LiMA reduces inference latency by 45.8% compared with Cosmos-Policy via asynchronous decoupling. Evaluated across six bimanual dexterous manipulation tasks spanning multiple horizons, LiMA achieves an overall success rate of 70.8% and an average subtask success rate of 78.9%, while maintaining performance in unseen scenarios. The project website is available at https://ccdcs.github.io/LiMA_repo/"
+  },
+  {
+    "title": "Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams",
+    "url": "http://arxiv.org/abs/2609.28429v1",
+    "arxiv_id": "2609.28429v1",
+    "authors": [
+      "Ding Yi",
+      "Peiwen Sun",
+      "Chenchu Rong",
+      "Jianan Wang",
+      "Xili Dai",
+      "Xiangyu Yue",
+      "Xi Lin"
+    ],
+    "published": "2026-09-23T17:29:40+00:00",
+    "summary": "An always-on robot faces an endless stream that never resets: instructions arrive and lapse, the scene changes, and its own past actions reshape what it must reason about. Today's action models are built for the opposite: a fixed instruction, no mid-task intervention, single-step reasoning. In an open-ended world a robot must watch a live stream for far-future cues, recall its own far-past actions, and act on them under dual-arm concurrency. We present ARMS (Always-on Robot in Multi-modal Streams), a deliberately simple streaming policy: a single pretrained $\u03c0$0.5 backbone augmented by three lightweight modules that turn live perception, embodied states, and the robot's own past actions into context the backbone reads before it acts. The modules update this context asynchronously, so watching and recalling never block acting and the two arms act at once. Rather than inventing new mechanisms, ARMS integrates these learned context providers with an agent-causal self-history that logs which arm did what, and when. To supervise them without extra annotation, we build ARMS Dataset, whose staged construction script itself labels every module from real dual-arm teleoperation. Trained on it, ARMS reaches 45% on the combined task against 28% for the strongest of our four main baselines, and ablations confirm the memory module, the embodied-state head, and asynchronous concurrency are each necessary."
+  },
+  {
+    "title": "Context-Continuous Preference Learning for Exoskeleton Personalization",
+    "url": "http://arxiv.org/abs/2609.28427v1",
+    "arxiv_id": "2609.28427v1",
+    "authors": [
+      "Sunin Baek",
+      "Sungwoo Park",
+      "Daekyum Kim"
+    ],
+    "published": "2026-09-23T17:28:08+00:00",
+    "summary": "Personalizing exoskeleton assistance across operating conditions is constrained by the time and physical effort required to collect user feedback. We examined whether a user's preference landscape varies smoothly across operating conditions and when this continuity supports learning from limited feedback. We propose Context-Continuous Preference Learning (CCPL), a Gaussian-process preference model that shares observations across nearby contexts while retaining context-specific utility estimates. We evaluated CCPL through simulations and retrospective analyses of ankle and elbow exoskeleton preference data from nine healthy adults. In simulations, CCPL improved reconstruction and preference-based Bayesian optimization relative to independent learning when preferences varied smoothly, but showed negative transfer when continuity was weak. In both human studies, full-data reference landscapes estimated separately for each participant and context tended to be more similar between nearby operating conditions. With five exposures per context, CCPL increased mean reconstruction correlation with these references from 0.644 to 0.720 for ankle assistance and from 0.476 to 0.526 for elbow assistance relative to independent learning. The five-exposure budget was approximately 37% lower for ankle and 17% lower for elbow than the estimated independent-learning budgets needed to match these correlations. CCPL also improved held-out response prediction relative to independent learning, while benefits over pooled learning varied. These findings support context continuity as a basis for sharing preference observations under limited feedback, although benefits for online personalization in humans remain to be established."
+  },
+  {
+    "title": "Frozen Flows Forget: Diagnosing and Restoring Lost Motion in a Latent-flow World Model",
+    "url": "http://arxiv.org/abs/2609.28414v1",
+    "arxiv_id": "2609.28414v1",
+    "authors": [
+      "Xiwen Chen",
+      "Rigaudiere Z. Li",
+      "Zhiruo Zhou",
+      "Xiaojun Zhu",
+      "Houde Liu"
+    ],
+    "published": "2026-09-23T17:17:02+00:00",
+    "summary": "Latent world models that integrate a flow in a frozen self supervised latent space train stably and cheaply, yet silently lose the property manipulation depends on most: motion. The pretrained flow never moves the manipulated object; retraining it with latent-only losses only trades stillness for teleport-like motion. We trace the failure to the training signal, not the representation: anchor-sparse, latent-only supervision never says where along the horizon change belongs. Decode-augmented rollout training (DART) repairs this while keeping the representation frozen, retraining only the flow with decode-path supervision. DART outperforms its latent only parent on the full protocol, restores the temporal structure of motion, and re-couples predicted motion to the scene; at larger scale it further improves prediction quality, closing nearly half the remaining gap to an oracle-informed interpolation reference. Finally, we report an unexpected finding about evaluation: pixel error alone rewards frozen predictions."
+  },
+  {
     "title": "\u03c6-RIE: From Photorealistic Reconstruction to Interactive Environments",
     "url": "http://arxiv.org/abs/2609.26795v1",
     "arxiv_id": "2609.26795v1",
