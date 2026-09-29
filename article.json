@@ -1,5 +1,96 @@
 [
   {
+    "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2609.35767v1",
+    "arxiv_id": "2609.35767v1",
+    "authors": [
+      "Yijia Fan",
+      "Ziqi Huang",
+      "Zhongang Cai",
+      "Yan Li",
+      "Zimo Wen",
+      "Wanqi Yin",
+      "Haiwen Diao",
+      "Ziwei Liu"
+    ],
+    "published": "2026-09-28T17:59:36+00:00",
+    "summary": "Unified multimodal models can both look at and render images, so in principle they can repair their own generations: diagnose what an image gets wrong, revise it, observe the result, and diagnose again. Whether a revision helps is known only after it is rendered, so the reflection text and the image generation must be learned jointly, over the whole loop. Supervised fine-tuning (SFT) on reflection trajectories gives a cold start but does not find the high-success repair paths, and naive RL that optimizes only the renderer or only one head leaves most of the gain untapped. We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares reflection strategies, and one trajectory-level advantage updates both the reflection tokens and the flow-based revisions, avoiding the combinatorial blow-up of per-round credit assignment. Unlike single-round editing or pipelines with an external critic, credit flows across rounds and to both roles of the same model, and no verifier is needed at inference. On BAGEL, UMM-Reflection improves GenEval by 12.05 points over SFT, and the gains transfer to WISE (+10.97), OneIG-Bench (+3.48), and T2I-CompBench++ (+4.63), none of which is used in training."
+  },
+  {
+    "title": "DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations",
+    "url": "http://arxiv.org/abs/2609.35761v1",
+    "arxiv_id": "2609.35761v1",
+    "authors": [
+      "Rui Zhou",
+      "Yibo Yuan",
+      "Junkai Zhao",
+      "Fangyuan Zhao",
+      "Xiaoguang Zhao",
+      "Shanghang Zhang",
+      "Sirui Han"
+    ],
+    "published": "2026-09-28T17:59:10+00:00",
+    "summary": "Mobile bimanual dexterous manipulation requires continuous coordination of locomotion, whole-body motion, and finger-level dexterity within a single trajectory, creating a severe robot demonstration bottleneck. Egocentric human demonstrations offer a scalable alternative, but prior approaches ease the transfer by simplifying human motion, discarding exactly the fine-grained, coupled structure such tasks depend on. We present DexRoam, a complete system for learning mobile bimanual dexterous manipulation from human demonstrations, in which whole-body motion remains continuous and coupled throughout the human-to-robot transfer process. To enable scalable collection of whole-body human manipulation demonstrations, we develop a tracker-free capture system using only a consumer VR headset and a head-mounted stereo camera, without external cameras or motion trackers. We then perform three explicit alignment stages---embodiment, action-semantic, and temporal---to map captured motion into the robot action space, preserving fine-grained whole-body motion and allowing human and robot demonstrations to be jointly learned by standard VLA policies. Real-world experiments with different VLA backbones show that human demonstrations consistently improve policy learning across training paradigms, raising average success from 29% to 56% on GR00T N1.7 and from 32% to 57% on pi0.5, while matching robot-only training with half the robot demonstrations. Ablations confirm that each alignment stage is necessary. These results highlight the potential of human demonstrations for scalable whole-body mobile manipulation with preserved fine-grained motion structure."
+  },
+  {
+    "title": "Statistical Learning of Contractive Dynamical Representations for Composite Adaptive Control",
+    "url": "http://arxiv.org/abs/2609.35758v1",
+    "arxiv_id": "2609.35758v1",
+    "authors": [
+      "Min Kim",
+      "Jos\u00e9 Leonardo Brenes",
+      "Fred Hadaegh",
+      "Soon-Jo Chung"
+    ],
+    "published": "2026-09-28T17:59:07+00:00",
+    "summary": "We present a representation-learning framework for composite adaptive tracking control under dynamically coupled disturbances. The framework connects classical disturbance-accommodating control (DAC) to recent last-layer adaptive disturbance-rejection methods. Specifically, we introduce a statistically principled hard expectation-maximization (hard-EM) procedure, with a Kalman smoother in the hard E-step, to identify dynamical representations of disturbance whose latent evolution is uniformly contractive. The learned representation evolves a latent disturbance-excitation state from measured plant features and control inputs and decodes that state into the time-varying disturbance acting on the nominal plant, thereby extending prior \"fixed-decay\" last-layer adaptive methods to a learned, predictive DAC-style formulation. Combined with Bayesian filtering of the learned latent state, this representation yields a composite adaptive tracking controller with predictive capability and provable exponential convergence to a bounded neighborhood. We validate our approach experimentally on a slippery ground vehicle carrying a liquid-sloshing tank and a pendulum load, and we further assess its robustness on a system of coupled Duffing oscillators. Across both settings, the method achieves accurate disturbance prediction and improved overall tracking performance relative to fixed-decay representation-learning ablations, LTI disturbance-accommodating baselines, and model-based PD baselines."
+  },
+  {
+    "title": "KV-streams for Efficient Compaction in Agentic Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2609.35750v1",
+    "arxiv_id": "2609.35750v1",
+    "authors": [
+      "Emiliano Penaloza",
+      "Dane Malenfant",
+      "Dheeraj Vattikonda",
+      "Roger Creus Castanyer",
+      "Siddarth Venkatraman",
+      "Abhay Puri",
+      "Jonathan Light",
+      "Matthew James Sargent",
+      "Augustine N. Mavor-Parker",
+      "Massimo Caccia",
+      "Lucas Caccia",
+      "Glen Berseth",
+      "Esmeralda S. Whitammer",
+      "Alessandro Sordoni",
+      "Minseon Kim",
+      "Marc-Alexandre C\u00f4t\u00e9",
+      "Laurent Charlin",
+      "Guillaume Lajoie"
+    ],
+    "published": "2026-09-28T17:57:42+00:00",
+    "summary": "Scaling the horizon of agentic LLMs is bottlenecked by the need to fit ever longer context traces in GPU memory. Context compaction has been the most popular mechanism to alleviate this issue, keeping GPU memory constant for a given trace. Unfortunately, most compaction strategies rely on prefilling the LLM context many times over, hindering training throughput. To alleviate this bottleneck and enable efficient trainable compaction, we propose KV-streams, a plug-and-play strategy compatible with any compaction strategy that substantially increases throughput while showing no evidence of hindering performance. KV-streams enable scalable compaction by streaming the KV cache forward rather than flushing it after each compaction. We show that KV-streams enable three different compaction strategies, achieving a 2.6 to 5x wall-clock speedup in training. Beyond efficiency, we find that the streamed KV cache can act as a recurrent state, carrying forward information that has long since disappeared from the context. Specifically, in a controlled setting we show that, contrary to prior work, RL alone is all that is needed for this behavior to emerge. Overall, we show KV-streams to be an efficient and lightweight plug-and-play addition to any post-training pipeline."
+  },
+  {
+    "title": "Harness Learning Enables Generalizable Test-Time Adaptation",
+    "url": "http://arxiv.org/abs/2609.35738v1",
+    "arxiv_id": "2609.35738v1",
+    "authors": [
+      "Alvin Zhang",
+      "Xuecheng Liu",
+      "Zixuan Wang",
+      "Fahim Tajwar",
+      "Daman Arora",
+      "Ruslan Salakhutdinov",
+      "Daniel Khashabi",
+      "Yuda Song",
+      "Andrea Zanette"
+    ],
+    "published": "2026-09-28T17:52:54+00:00",
+    "summary": "A language-model agent is jointly defined by its model and its harness, the executable program that organizes model calls, tool use, and information flow. Because different tasks call for different ways of organizing these operations, the harness needs to be adapted using feedback from the task at hand. We introduce harness learning, which trains a proposer model to revise a solver's harness using execution feedback. We formulate this process as meta-learning over executable programs, with harness revisions playing the role of weight updates in gradient-based adaptation. We train the proposer with reinforcement learning, using the task performance of revised harnesses as the reward. At test time, the proposer uses feedback from successive executions on a new task to refine the harness, without performing any parameter-space update. Experiments on reasoning and multi-hop question answering show that harness learning improves revision quality and that the ability to adapt at test time transfers to unseen tasks. Policies trained on individual revisions can continue improving harnesses over multiple rounds, while the benefits of training on revision sequences vary across settings. These findings suggest a path towards continually learning agents that turn accumulated experience into generalizable improvements."
+  },
+  {
     "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
     "url": "http://arxiv.org/abs/2609.31619v1",
     "arxiv_id": "2609.31619v1",
