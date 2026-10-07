@@ -1,5 +1,81 @@
 [
   {
+    "title": "QF3: Fast Flow RL with Filtered Q-Gradients",
+    "url": "http://arxiv.org/abs/2610.08789v1",
+    "arxiv_id": "2610.08789v1",
+    "authors": [
+      "Chung Min Kim",
+      "Brent Yi",
+      "David McAllister",
+      "Hongsuk Choi",
+      "Himanshu Gaurav Singh",
+      "Jinkun Cao",
+      "Ken Goldberg",
+      "Pieter Abbeel",
+      "Carmelo Sferrazza",
+      "Angjoo Kanazawa"
+    ],
+    "published": "2026-10-06T17:59:34+00:00",
+    "summary": "Flow policies have become a standard policy class for learning robot behaviors from demonstrations, but reinforcement learning is still critical for improving pre-trained flow policies or learning them from scratch through interaction. We introduce QF3 (Fast Flow RL with Filtered Q-Gradients), an online off-policy RL algorithm that trains a flow policy with flow matching plus the critic's action gradient, backpropagated through a one-step prediction of the flow's output. To keep updates where the critic and this prediction are reliable, QF3 applies the critic gradient only to action dimensions that stay near the replay action. To our knowledge, QF3 is the first off-policy flow RL method to train humanoid locomotion policies from scratch and transfer them zero-shot to hardware. Paired with a high-throughput off-policy training recipe, it trains humanoid locomotion and motion-tracking policies with a 10x wall-clock speedup over FPO++, a recent on-policy flow RL method. We further apply QF3 to fine-tune pretrained flow-based manipulation policies on both ABC-Sim and Robomimic tasks. These results suggest that QF3 can both learn robot policies from scratch and refine those acquired from demonstrations. Website: https://qf3-rl.github.io/"
+  },
+  {
+    "title": "PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation",
+    "url": "http://arxiv.org/abs/2610.08784v1",
+    "arxiv_id": "2610.08784v1",
+    "authors": [
+      "Kun Song",
+      "Yiming Wang",
+      "Yilin Chen",
+      "Tianyi Ding",
+      "Jiaxin Tian",
+      "Tianqi Gong",
+      "Daolin Ma",
+      "Jia Pan"
+    ],
+    "published": "2026-10-06T17:59:03+00:00",
+    "summary": "Pretrained robotic policies can suffer substantial performance degradation under out-of-distribution (OOD) conditions encountered during deployment, motivating post-training through real-world interaction. However, reinforcement-learning (RL)-based post-training typically requires substantial environment interactions, a burden that is especially significant in manipulation, where each trial can be slow, costly, or destructive. Therefore, we present PEARS, a physics-prior-guided hybrid RL framework for sample-efficient online adaptation of pretrained policies with tactile feedback. After each episode, its physics-guided force reasoning (PFR) module uses physical priors encoded in a vision-language model (VLM) to diagnose failures from the visual outcome and tactile interaction history and update task-appropriate contact-force bounds. A high-frequency hybrid force-position controller then enforces these bounds during contact. Complementarily, tactile-conditioned diffusion steering reinforcement learning adjusts the latent noise of the frozen flow-matching policy to correct errors in free-space motion and contact timing without updating the base model. In simulation, PEARS improves success rates by 12.4-37.4 percentage points over the strongest per-task baselines. PEARS also reduces the number of interaction episodes required for a certain success threshold by up to 53.2% relative to the fastest baseline. In real-world experiments, PEARS achieves success rates of 95% on Whiteboard Erasing and 90% on Pipette Liquid Aspiration. These results show that combining the PFR module with policy steering can accelerate adaptation while reducing costly interactions. The project website is available at https://song-kun.github.io/pears."
+  },
+  {
+    "title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
+    "url": "http://arxiv.org/abs/2610.08781v1",
+    "arxiv_id": "2610.08781v1",
+    "authors": [
+      "Ziyu Chen",
+      "Yilun Zhao",
+      "Jiashuo Sun",
+      "Yiling Ma",
+      "Manasi Patwardhan",
+      "Arman Cohan"
+    ],
+    "published": "2026-10-06T17:59:01+00:00",
+    "summary": "Scientific research often begins by synthesizing ideas from a set of related papers to identify gaps and formulate new directions. However, training language models to perform this form of literature-grounded ideation remains challenging, as existing approaches based on prompting or feedback lack structured supervision for how papers should be synthesized. We introduce IdeaAnchor, a paradigm for training LLMs to perform research ideation using structured specifications as privileged signals. Each IdeaAnchor instance encodes how each input paper should be synthesized into a successful idea, including their functional roles, relationships, and target synthesis criteria. We build this paradigm by mining instances from published papers, capturing how real ideas emerge from prior literature. We then train models via demonstration, self-distillation, and reinforcement learning, and further enhance generation with retrieval at inference time. Experiments show consistent improvements in ideation quality. Our analysis reveals a functional decomposition: anchor-based training strengthens creative synthesis, retrieval enhances detail elaboration, and combining both yields the best performance."
+  },
+  {
+    "title": "DepthWorld: 3D World Model for Robot Manipulation",
+    "url": "http://arxiv.org/abs/2610.08780v1",
+    "arxiv_id": "2610.08780v1",
+    "authors": [
+      "Jai Bardhan",
+      "Josef Sivic",
+      "Vladimir Petrik"
+    ],
+    "published": "2026-10-06T17:59:00+00:00",
+    "summary": "World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look correct frame-by-frame but do not compose into a consistent 3D world. Closing this gap requires progress on two fronts: large-scale 3D supervision for manipulation, and an architecture that can absorb it without disturbing strong pretrained video priors. We introduce a calibration pipeline that combines learned stereo depth with a joint factor graph, pooling all episodes collected from the same physical robot to recover its shared kinematic parameters alongside per-scene extrinsics. Applied to the DROID dataset, this yields DROID-3D, a calibrated 3D dataset providing dense metric depth and recalibrated multi-view extrinsics (achieving <0.7 px reprojection error on 90% of episodes for external cameras). We then train DepthWorld, a Stable Video Diffusion-based world model that jointly predicts multi-view RGB and depth via spatial latent tiling, leaving the pretrained Variational Autoencoder (VAE) unchanged. Depth supervision improves RGB prediction itself by +1.48 dB PSNR over an identical RGB-only baseline at equal training budget, while simultaneously yielding accurate metric depth for downstream geometric reasoning."
+  },
+  {
+    "title": "ALIVE: Interaction-Aligned Object Insertion for First-Frame-Guided Video Editing",
+    "url": "http://arxiv.org/abs/2610.08779v1",
+    "arxiv_id": "2610.08779v1",
+    "authors": [
+      "Zhenghong Zhou",
+      "Zhe Lin",
+      "Jiebo Luo",
+      "Yuqian Zhou"
+    ],
+    "published": "2026-10-06T17:58:51+00:00",
+    "summary": "Current video editors can insert objects but often struggle to make them participate in interactions such as being picked up or manipulated. We introduce ALIVE, a framework that makes inserted objects \"alive\" through coherent interactions with the source video's contents, using an edited first frame and an instruction naming only the added object. We curate 35,800 editing pairs combining 3D-rendered, model-generated, and real-world videos with general editing pairs from ROSE. Each pair differs in the target object's presence while preserving the surrounding action, teaching editors coordinated object behavior and source preservation. We further train a vision-language model (VLM) to predict interaction guidance from the same inputs. We introduce the ALIVE-interaction benchmark to assess interaction fidelity, source preservation, and visual coherence using a unified VLM-based protocol, and evaluate on the general video object insertion benchmark. Without VLM guidance, ALIVE improves Overall over the strongest evaluated baseline by 43.9% and 4.4% on the two benchmarks, respectively. VLM-predicted guidance further improves the ALIVE-interaction score by 0.95 points without additional user inputs."
+  },
+  {
     "title": "Base Models Can Reason By Taking a Cue From Training Data",
     "url": "http://arxiv.org/abs/2610.06851v1",
     "arxiv_id": "2610.06851v1",
