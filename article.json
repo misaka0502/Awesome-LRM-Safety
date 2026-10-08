@@ -1,5 +1,83 @@
 [
   {
+    "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+    "url": "http://arxiv.org/abs/2610.10538v1",
+    "arxiv_id": "2610.10538v1",
+    "authors": [
+      "Shravan Chaudhari",
+      "William Paul",
+      "Suchi Saria",
+      "Rama Chellappa",
+      "Homanga Bharadhwaj"
+    ],
+    "published": "2026-10-07T17:59:41+00:00",
+    "summary": "As we move through the world and carry out everyday tasks, we encounter objects that may become relevant only later. We are capable of recalling where we left something or what was inside a container, even without knowing we would need it later. Here, we study how an embodied assistant can build a similar memory from egocentric videos, by observing a person's day-to-day activities. We present Ledger, a persistent 3D object memory that combines object locations, their histories, and contextual descriptions. It associates observations across the recording and retains objects after they leave the view, including those the person never touches. It clusters each object's observations by resting locations and records a move only after repeated evidence, reducing the effect of localization noise. Short descriptions preserve details such as an object's contents or supporting surface. It saves these records to later answer spatial questions without having to access the original images or video. Our memory raises HD-EPIC accuracy from 29.7% to 42.6%, UCS-Bench accuracy from 33.8% to 38.5% and localizes Ego4D objects with a 0.99 m median error on returned predictions. Our analyses identify complementary roles for temporal persistence, contextual descriptions, and retrieval. Our study on 100 stitched streams of multiple scenes each further exposes failures in both retrieval and construction. Per-scene construction partially recovers the performance lost across scene changes compared to that of single scene streams."
+  },
+  {
+    "title": "Decoupling Exploration from Optimization in RLVR",
+    "url": "http://arxiv.org/abs/2610.10536v1",
+    "arxiv_id": "2610.10536v1",
+    "authors": [
+      "Saif Punjwani",
+      "Micah Goldblum"
+    ],
+    "published": "2026-10-07T17:59:26+00:00",
+    "summary": "Modern language models undergo reinforcement learning with verifiable rewards (RLVR) on top of already-trained checkpoints. A key promise of RLVR is the discovery of new reasoning strategies. In principle, a model can sample novel ideas absent from its prior training data. In practice, however, augmenting RLVR with strong novelty incentives has seen limited success and can degrade model quality. Because verifiable rewards supervise only a narrow slice of the model's knowledge and behavior, such degradations are difficult to recover from. Instead, we decouple exploration from optimization in a framework we call Exploration-Distillation (ExpDis). We train one or more explorer policies with a novelty bonus in the reward, filter their trajectories for correctness and quality, and distill them into a separate student policy. The student policy is then trained without a novelty bonus. We repeat the above procedure for several rounds, alternating between exploration and optimization. This decoupling allows us to aggressively scale exploration without degrading the student policy. Across seven mathematical reasoning benchmarks and two model families, ExpDis outperforms DAPO at the same wall-clock budget. Moreover, we observe improved pass@$k$ scaling, indicating that ExpDis produces models that generate more diverse correct solutions."
+  },
+  {
+    "title": "RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input",
+    "url": "http://arxiv.org/abs/2610.10534v1",
+    "arxiv_id": "2610.10534v1",
+    "authors": [
+      "Yanwen Zou",
+      "Chenyang Shi",
+      "Guoxuan Xu",
+      "Wenye Yu",
+      "Wendi Chen",
+      "Ye Pan",
+      "Cewu Lu",
+      "Chuan Wen"
+    ],
+    "published": "2026-10-07T17:58:53+00:00",
+    "summary": "End-to-end robot policies trained through imitation learning remain constrained by limited data diversity, making reliable zero-shot deployment in real-world settings challenging. Shared-autonomy methods enable human correction through teleoperation, but specialized hardware and operator training hinder deployment at scale. Other approaches incorporate human guidance as additional policy inputs, often requiring architectural changes and dedicated training for steerability, which limits their applicability across policies. We present RoboPrompt, a general-purpose, lightweight robot policy steering system that enables users to guide policy behavior through intuitive, sparse inputs, including drawn traces, target points, and coarse directional instructions. RoboPrompt decouples human-intention translation from the underlying policy: a reusable module converts human guidance into action drafts, which are refined through the diffusion or flow-matching dynamics of the base policy. By controlling action generation in noise space, RoboPrompt balances human intent with the policy prior without modifying the base policy architecture or fine-tuning it for steerability. Experiments demonstrate effective steering across Diffusion Policy, $\u03c0_{0.5}$, and FastWAM. We further use steered rollouts for online policy improvement through DAgger. After 2-3 rounds of iteration, average success rates increase by 15.5\\% for $\u03c0_{0.5}$ across three tasks and by 21.3\\% across three policies(Diffusion Policy, $\u03c0_{0.5}$, FastWAM) on the Insert Bread task, while average human intervention counts decrease by 44.0\\% (2.86 to 1.60) and 81.9\\% (2.60 to 0.47), respectively."
+  },
+  {
+    "title": "Long-WAM: Scaling the Context of World-Action Models",
+    "url": "http://arxiv.org/abs/2610.10528v1",
+    "arxiv_id": "2610.10528v1",
+    "authors": [
+      "Wei Huang",
+      "Bohan Zhang",
+      "Chenzhi Liu",
+      "Isabella Liu",
+      "Shuai Yang",
+      "Weian Mao",
+      "Luozhou Wang",
+      "Yicheng Xiao",
+      "Weifeng Lin",
+      "Qixin Hu",
+      "Bryan Chu",
+      "Sifei Liu",
+      "Linxi Fan",
+      "Xiaojuan Qi",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "published": "2026-10-07T17:58:04+00:00",
+    "summary": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks."
+  },
+  {
+    "title": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+    "url": "http://arxiv.org/abs/2610.10526v1",
+    "arxiv_id": "2610.10526v1",
+    "authors": [
+      "Mikey Watts",
+      "Yuchen Cui"
+    ],
+    "published": "2026-10-07T17:57:38+00:00",
+    "summary": "Vision-language-action models (VLAs) are strikingly sensitive to instruction phrasing and do not inherit the language robustness of the vision-language models they are built on. A one-word edit can move success by tens of points: $\u03c0_{0.5}$ turns on a LIBERO stove 100% of the time for \"switch on the stove\" and 2% for \"switch on the hot plate\", and a $\u03c0_0$ checkpoint finetuned with rephrase augmentation still shows swings of up to 61 points. We characterize this sensitivity with statistically tested single-edit swings and an oracle phrase search, which shows that phrasing alone nearly closes the 21-point gap between in-distribution and out-of-distribution tasks. We then reduce it without modifying the policy. Because the sensitivity is systematic, it can be expressed as explicit rules: we score many phrasings of a few training tasks, have a large language model distill the evidence into ten to twenty rephrasing rules, and at deployment rewrite each incoming instruction once under these rules. The rules improve the frozen $\u03c0_0$ by 16 to 27% relative on twelve held-out tasks across adversarial, VLM-generated, and human-generated phrasings, with gains concentrated on out-of-distribution tasks. The pipeline replicates on $\u03c0_{0.5}$ and LIBERO, lifting in-finetune success from 93.6% to 97.8%. The method requires no retraining and no per-step verification, and applies zero-shot to unseen tasks and instructions. Project website: https://sttawm.github.io/rephrase-before-you-act"
+  },
+  {
     "title": "QF3: Fast Flow RL with Filtered Q-Gradients",
     "url": "http://arxiv.org/abs/2610.08789v1",
     "arxiv_id": "2610.08789v1",
