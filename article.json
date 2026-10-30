@@ -1,5 +1,84 @@
 [
   {
+    "title": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
+    "url": "http://arxiv.org/abs/2610.40646v1",
+    "arxiv_id": "2610.40646v1",
+    "authors": [
+      "Yunchu Zhang",
+      "Ray Song",
+      "Junhan Jiao",
+      "Liyiming Ke",
+      "Yuchen Yang",
+      "Ruihan Gao",
+      "Emma Romig",
+      "Siddhartha Srinivasa",
+      "Yiyue Luo"
+    ],
+    "published": "2026-10-29T17:59:20+00:00",
+    "summary": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to autonomously swap and use task-appropriate tools is important for tool-centric manipulation. We introduce SwapBot, a modular, tool-centric end effector system featuring low-cost adapters that quickly convert common household tools into robot end effectors. Rather than pursuing a single universal gripper, SwapBot adopts a unified design principle that combines a fixed robot-side coupling interface with low-cost, tool-side adapters, enabling compatibility with diverse tools, including articulated ones, and multiple robot platforms. Each adapter integrates compact tactile sensors, supports fast autonomous swapping, and interfaces with an intuitive teleoperation system for efficient demonstration collection. User studies show that, during teleoperation, SwapBot reduces task completion time and operator workload. Using collected demonstrations on the robot, we train imitation learning policies to successfully perform tool-centric tasks like cooking tofu, stirring salad, flipping meat. Our ablation study shows that using tactile-augmented demonstrations improves policy performance across contact-rich skills, increasing success rates by 15 to 25 percentage points over RGB-only policies. These results highlight modular, tactile-equipped tools as a practical and extensible pathway toward robust and capable robot manipulation. Project website https://personalrobotics.github.io/SwapBot."
+  },
+  {
+    "title": "SymAnt: Grounding Long-Horizon Action Anticipation with Adaptable Symbolic Priors",
+    "url": "http://arxiv.org/abs/2610.40632v1",
+    "arxiv_id": "2610.40632v1",
+    "authors": [
+      "Fnu Aryan",
+      "Yaqi Xie",
+      "Joseph Campbell",
+      "Woojun Kim",
+      "Kwonjoon Lee",
+      "Hossein Nourkhiz Mahjoub",
+      "Ehsan Moradi-Pari",
+      "Katia Sycara",
+      "Simon Stepputtis"
+    ],
+    "published": "2026-10-29T17:58:00+00:00",
+    "summary": "As robots and intelligent systems increasingly interact with humans, they must anticipate long sequences of future actions from only brief observations. While purely neural models typically require extensive observations to predict future actions and remain difficult to interpret and adjust, symbolic priors offer a structured alternative. To this end, we introduce SymAnt, a novel neuro-symbolic approach that unifies the expressiveness of neural networks with the structured reasoning of scene and knowledge graphs. Given a short video, SymAnt performs a joint-search over both graphs to construct a symbolic context, enabling unified reasoning over spatial relationships, object attributes, affordances, and associated actions. This symbolic context serves as a prior for an iterative refinement process that progressively generates and improves the sequence of future actions. By grounding predictions in symbolic context, SymAnt anticipates long-horizon actions from short observation windows in a parameter-efficient manner, while enabling users to directly edit the underlying knowledge to adjust predictions without further training. Through our experiments, we demonstrate the effectiveness of SymAnt, particularly when only short observation contexts are available, across five diverse datasets: Breakfast, 50 Salads, EPIC-KITCHENS, EGTEA Gaze+, and Assembly101."
+  },
+  {
+    "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+    "url": "http://arxiv.org/abs/2610.40627v1",
+    "arxiv_id": "2610.40627v1",
+    "authors": [
+      "Qiyao Ma",
+      "Xiaodong Liu",
+      "Weiwei Yang",
+      "Mingqian Feng",
+      "Chengquan Guo",
+      "Jialin Song",
+      "Carolyn Buractaon",
+      "Zhe Zhao",
+      "Junshan Zhang",
+      "Sandeep Atluri",
+      "Christopher White",
+      "Jianfeng Gao"
+    ],
+    "published": "2026-10-29T17:56:53+00:00",
+    "summary": "Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model's first few output tokens, and existing defenses inherit the weakness, supervising the surface form of the response without ever giving the model an explicit safety decision to learn. We take the opposite view of shallowness: if a short span determines the trajectory of an entire response, that span is the highest-leverage place to intervene, and the defender can occupy it first. We propose Assess $\\to$ Decide $\\to$ Respond, a framework in which the defender assesses the user's intent, commits to an explicit, parseable safety decision, and only then generates a reply conditioned on it, with the commitment trained by reinforcement learning at the payload turn. Because the decision is a token span, the reward can be a rule: a self-verified reward checks the committed label against the conversation's known nature, requiring no judge and no annotation, while the same format also supports an LLM-as-judge reward over a graded decision space with safe redirection. Across two model families and fourteen benchmarks spanning safety, utility, and helpfulness, our defenders achieve the strongest multi-turn safety in a controlled comparison, maintaining their lead in safety while preserving utility at a modest cost to helpfulness. A per-token KL analysis and interventional probes confirm why this works: training concentrates its effect on the brief deliberation that sets a response's trajectory, and the decision committed there is a causal control point. The very shallowness attackers exploit becomes the mechanism of defense."
+  },
+  {
+    "title": "A Conveyor Belt Mechanism for Repositionable Magnetic Coupling Between Continuum Robots",
+    "url": "http://arxiv.org/abs/2610.40600v1",
+    "arxiv_id": "2610.40600v1",
+    "authors": [
+      "Ella Walsh",
+      "Eric Diller",
+      "Jessica Burgner-Kahrs"
+    ],
+    "published": "2026-10-29T17:50:56+00:00",
+    "summary": "This work proposes a novel conveyor belt mechanism enabling continuous, active repositioning of functional elements along the body of a tendon-driven continuum robot. Up to three conveyor belt mechanisms are integrated within a 9 mm diameter continuum robot. We demonstrate equivalent or reduced conveyor belt actuation forces compared to robot tendon actuation forces. As a case study, we mount permanent magnets along two conveyor belts, and demonstrate actively reconfigurable inter-robot coupling. Coupling point location and quantity can be adjusted during robot operation to actively tune the effective stiffness of the coupled multi-robot system. We show that effective stiffness follows a predictable inverse-cubic relationship with coupling location, and increases with the number of coupling points. These findings demonstrate that the conveyor belt mechanism enables active functional element repositioning for changing tasks requirements, with magnetic inter-robot coupling as one proof-of-concept."
+  },
+  {
+    "title": "Odd Elasticity in Strain-Gradient Continua: Anisotropy Classification and Non-Hermitian Elastodynamics",
+    "url": "http://arxiv.org/abs/2610.40581v1",
+    "arxiv_id": "2610.40581v1",
+    "authors": [
+      "Payam Poorsolhjouy"
+    ],
+    "published": "2026-10-29T17:45:38+00:00",
+    "summary": "Odd elasticity extends continuum mechanics to active nonconservative systems containing internal energy sources, such as robotic active metamaterials with nonreciprocal feedback. Modeling these systems as effective continua requires relaxing Maxwell-Betti reciprocity, which results in stiffness tensors lacking major symmetry. In this contribution, we extend this framework to 3D strain-gradient odd elasticity to incorporate the length scales inherent in these heterogeneous systems. By applying the full hierarchy of 3D point-group symmetries along chiral and achiral branches, we derive the exhaustive set of fourth-, fifth-, and sixth-order odd elastic stiffness tensors. Further, utilizing the dynamic principle of virtual work, we formulate the equilibrium equations, higher-order boundary conditions, and the generalized acoustic tensor for elastodynamic analysis. The results demonstrate that nonreciprocal moduli survive even under full isotropy in the sixth-order stiffness, under hemitropy in the fifth-order stiffness, and under cubic symmetry in fourth-order stiffness. In contrast, the elastodynamic analysis reveals that under isotropic and hemitropic limits, despite the underlying odd stiffness moduli, the acoustic tensor remains unconditionally Hermitian. Non-Hermitian elastodynamics is shown to require anisotropy. By numerically analyzing a transversely hemitropic odd elastic continuum, we demonstrate that this symmetry reduction results in non-Hermitian elastodynamic phenomena including exceptional points in the dispersion spectra and active energy exchange through simultaneous amplification and attenuation of the elastic wave components. These results provide the necessary theoretical foundation for future multiscale homogenization frameworks for anisotropic strain-gradient active microstructures, and for the design of nonreciprocal strain-gradient metamaterials."
+  },
+  {
     "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
     "url": "http://arxiv.org/abs/2610.37666v1",
     "arxiv_id": "2610.37666v1",
