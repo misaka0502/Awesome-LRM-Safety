@@ -1,5 +1,97 @@
 [
   {
+    "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+    "url": "http://arxiv.org/abs/2611.08462v1",
+    "arxiv_id": "2611.08462v1",
+    "authors": [
+      "Arpit Bahety",
+      "Skand Peri",
+      "Sriniket Ambatipudi",
+      "Chen Xu",
+      "Haruki Nishimura",
+      "Masha Itkina",
+      "Roberto Mart\u00edn-Mart\u00edn"
+    ],
+    "published": "2026-11-05T18:53:16+00:00",
+    "summary": "Vision-Language-Action (VLA) models can perform a wide range of robotic manipulation tasks, but often fail during deployment. Teaching them to recover from these failures requires substantial corrective data: existing approaches learn to recover from failures by directly associating corrective actions with the observations in which they were demonstrated. For instance, DAgger-like fine-tuning can require tens to hundreds of interactions, yet the resulting policy may still fail to generalize the learned corrections beyond the demonstrated scenarios. We hypothesize that semantics can capture the underlying reasons for failures and their corrections, enabling policies to learn from only a handful of corrective demonstrations and generalize those corrections to novel objects, and scene variations. We propose OopsieRecover, a framework that uses abduction to infer the intent behind a small set of corrective demonstrations and encodes the inferred knowledge as dense spatial representations and conditional costs. These costs capture when a behavior is undesirable and steer the policy toward more desirable action regions. We experiment across 6 tasks and variations in object poses, scenes, and related tasks, and find that only a handful of corrective demonstrations can enable a VLA to overcome failures across a broad range of novel situations, without requiring new corrective data for each variation. Please refer to https://robin-lab.cs.utexas.edu/oopsierecover for videos."
+  },
+  {
+    "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
+    "url": "http://arxiv.org/abs/2611.08458v1",
+    "arxiv_id": "2611.08458v1",
+    "authors": [
+      "Yixiao Wang",
+      "Peiyi Chen",
+      "Mustafa Mukadam",
+      "Shreekant Gayaka",
+      "Masayoshi Tomizuka",
+      "Son Tran"
+    ],
+    "published": "2026-11-05T18:50:06+00:00",
+    "summary": "Learning dexterous manipulation from limited visual demonstrations is challenging because policies must acquire both perceptual grounding and precise control, while reinforcement learning (RL) in simulation can acquire rich control behaviors from large-scale interaction with privileged information. We introduce \\textbf{Latent RL Prior}, a two-stage framework that reuses this control knowledge for data-efficient visual policy learning. During privileged pretraining, we distill large-scale RL rollouts into a flow-matching action decoder conditioned on proprioception and latent task context. During visual adaptation, we freeze the decoder and learn a visual interface that maps images to its latent context using action supervision alone, without privileged labels or latent targets. The same decoder can further be shared across arms by learning coordinated visual contexts for bimanual manipulation. Across three simulated tasks, our method outperforms full-parameter fine-tuning of $\u03c0_{0.5}$ and GR00T N1.7 in the low-data regime; on door lifting and bimanual assembly, it surpasses full-data baselines using $10\\times$ and $5\\times$ fewer demonstrations, respectively. Further analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder. Robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge. Project website: https://yixiaowang7.github.io/latent-rl-prior-page/."
+  },
+  {
+    "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+    "url": "http://arxiv.org/abs/2611.08453v1",
+    "arxiv_id": "2611.08453v1",
+    "authors": [
+      "Zeyu Leo Liu",
+      "Yang Li",
+      "Bo Pang",
+      "Emre Can Acikgoz",
+      "Xuan-Phi Nguyen",
+      "Anurag Koul",
+      "Srijan Bansal",
+      "Erik Nijkamp",
+      "Shafiq Joty",
+      "Semih Yavuz"
+    ],
+    "published": "2026-11-05T18:47:05+00:00",
+    "summary": "On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher's per-token supervision. Does this dense signal reduce the training FLOPs needed to reach a target accuracy compared with reinforcement learning? We systematically compare vanilla reverse-KL OPD with Group Relative Policy Optimization (GRPO) across task difficulty, student and teacher size, domain, and optimization choices, measuring held-out accuracy against training FLOPs. With an external post-trained teacher, OPD generally loses to GRPO in accuracy per training FLOP at matched settings, even when the teacher is further trained with GRPO, and often suffers response-length inflation. Yet a different teacher changes the picture: when the teacher is the student's own GRPO checkpoint, OPD recovers that checkpoint's accuracy on math with $50\\times$ fewer distillation FLOPs than GRPO needs to reach the same accuracy. Following the same teacher setting, we consistently observe this high efficiency with a larger student, on code, and in a second model family. On a single domain, however, the GRPO checkpoint is already the desired model, so distilling it adds to total compute. Across domains, separate GRPO checkpoints hold different capabilities, and no single checkpoint serves every domain. Multi-teacher OPD (DeepSeek-AI, 2026) consolidates per-domain GRPO experts into a single student that matches each expert's accuracy, with the distillation stage costing only 5.2% (on 2 domains) and 8.0% (on 4 domains) of the specialist training FLOPs. Counting specialist training and distillation together, this pipeline reaches joint GRPO's performance on the 2-domain mix with 42.0% fewer total FLOPs."
+  },
+  {
+    "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+    "url": "http://arxiv.org/abs/2611.08449v1",
+    "arxiv_id": "2611.08449v1",
+    "authors": [
+      "Yu-Cheng Chou",
+      "Shihao Wang",
+      "Jin Huang",
+      "Chi-Pin Huang",
+      "Chiao-An Yang",
+      "Xianzhe Fan",
+      "Jing Wang",
+      "Zhiqi Li",
+      "Yuanguo Kuang",
+      "Ruijie Zheng",
+      "Johan Bjorck",
+      "Sifei Liu",
+      "Hang Su",
+      "Abhishek Badki",
+      "Lei Zhang",
+      "Alan Yuille",
+      "Linxi \"Jim'' Fan",
+      "Jan Kautz",
+      "Zhiding Yu"
+    ],
+    "published": "2026-11-05T18:44:43+00:00",
+    "summary": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting. A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline."
+  },
+  {
+    "title": "Edge-Assisted Crowdsensing for Explainable Cyclist Safety Perception",
+    "url": "http://arxiv.org/abs/2611.08441v1",
+    "arxiv_id": "2611.08441v1",
+    "authors": [
+      "Hongsen Cao",
+      "Chia-Yen Chiang",
+      "Mona Jaber",
+      "Meihui Wang",
+      "Yasmin Fathy"
+    ],
+    "published": "2026-11-05T18:33:58+00:00",
+    "summary": "Cyclist fatality rates remain high despite policy support for active travel, and autonomous vehicles add complexity to mixed traffic. Neither crash statistics nor multi-model detection pipelines scale to continuous monitoring of perceived safety along a route. We present an edge-assisted crowdsensing system: handlebar cameras supply street-level frames, a vision-language model (VLM) turns each frame into structured traffic attributes through a single prompt, and an explainable boosting machine (EBM) combines them with OpenStreetMap road infrastructure and on-bike kinematics to predict a crowdsourced 1-9 safety score. Extraction belongs at the network edge: the fastest self-hosted model needs 2.49 s per frame and scoring takes 0.4 ms on a CPU. On 1,362 annotated frames from two London routes, the EBM regressor reaches 72.2 percent binary accuracy and a mean absolute error of 1.011 under five-fold cross-validation. It is within one accuracy point of black-box ensembles. Its per-feature shape functions give exact attribution: physical lane separation is worth +0.97 rating points, a painted lane +0.70 and a construction site -0.65. Planners can therefore price an infrastructure change in rating points, and the results enter cost-benefit analysis directly. We also report inter-annotator agreement (alpha = 0.4695), an attribute audit, and a sensitivity analysis linking attribute error to accuracy. With re-encoding, a 20 s sampling interval serves 1,000 riders at 54 Mbit/s at a cost of 1.4 accuracy points, making continuous monitoring practical."
+  },
+  {
     "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
     "url": "http://arxiv.org/abs/2611.06918v1",
     "arxiv_id": "2611.06918v1",
