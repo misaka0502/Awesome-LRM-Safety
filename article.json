@@ -1,5 +1,90 @@
 [
   {
+    "title": "Long-lived light-driven bimagnons at finite momentum in NiO",
+    "url": "http://arxiv.org/abs/2611.17335v1",
+    "arxiv_id": "2611.17335v1",
+    "authors": [
+      "Xian P. Yang",
+      "Christopher T. Parzyck",
+      "Martin Cross",
+      "Ella Blake",
+      "Octave Duros",
+      "Yinchuan Lv",
+      "Hari Paudyal",
+      "Che-Min Lin",
+      "Sharon S. Philip",
+      "Lingjia Shen",
+      "Daniel Jost",
+      "Giacomo Coslovich",
+      "Joshua J. Turner",
+      "Choongwon Seo",
+      "Elyse Schriber",
+      "Michael E. Flatt\u00e9",
+      "Xiaoqin Li",
+      "Yuri Suzuki",
+      "Durga Paudyal",
+      "Harold Y. Hwang",
+      "Georgi L. Dakovski",
+      "Matthias C. Hoffmann",
+      "Wei-Sheng Lee",
+      "Alexander H. Reid"
+    ],
+    "published": "2026-11-12T18:59:55+00:00",
+    "summary": "Light can manipulate magnetic order and its excitations on ultrafast timescales, including through resonantly driven phonons. In antiferromagnets, light can also create correlated magnon pairs, or bimagnons. Unlike single magnons, whose damping has been measured and modeled in detail, little is known about the lifetime, interactions and decay of such correlated pairs: prior two-magnon measurements show broad linewidths or coherences that dephase within 200 fs. Here we pump the phonon-assisted two-magnon absorption of NiO with mid-infrared pulses, far below its bandgap, and probe the resulting magnetic dynamics at finite momentum with time-resolved resonant inelastic X-ray scattering (RIXS). Upon photoexcitation, the one-magnon linewidth and energy are essentially unchanged, indicating that the long-range magnetic order is preserved without the photocarrier-induced demagnetization characteristic of above-bandgap excitation. A pump-induced two-magnon signal appears on the energy-gain (anti-Stokes) side of the spectrum. Its spectral weight peaks 4 ps after the pump, well beyond our 0.5 ps time resolution, indicative of a delayed growth likely due to momentum redistribution of the light-induced magnon pairs across the Brillouin zone. This two-magnon signal decays with a time constant of $28\\pm11$ ps, exceeding the previously reported two-magnon dephasing time by more than two orders of magnitude. These results establish long-lived light-driven bimagnon correlations beyond the one-magnon state, akin to the higher-order correlations measured in ultracold gases."
+  },
+  {
+    "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
+    "url": "http://arxiv.org/abs/2611.17330v1",
+    "arxiv_id": "2611.17330v1",
+    "authors": [
+      "Guangyuan Sui",
+      "Yunzhong Hou",
+      "Chi Harold Liu"
+    ],
+    "published": "2026-11-12T18:59:49+00:00",
+    "summary": "Vision language navigation (VLN) is very challenging for Unmanned Aerial Vehicles (UAVs) since small errors in 3D motion prediction can lead to navigation errors and collisions. Unable to fathom execution outcomes in 3D environments, existing methods often struggle to predict accurate navigation waypoints from language instructions. To solve this, we introduce the Prototypical Visual Imagination framework, shortened as ProtoVis-Nav, which forces the model to imagine an outcome-associated local visual representation for the intended next UAV movement. Specifically, we predict feature prototypes and use their linear combination to estimate the visual feature of the target region. In this manner, the VLN model first imagines the local visual representation of the next intended location, and then uses predicted prototypes as context for generating the final action, promoting alignment between visual context and waypoint outputs. Extensive experiments demonstrate the effectiveness of the ProtoVis-Nav framework and show substantial improvements over existing baselines."
+  },
+  {
+    "title": "Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation",
+    "url": "http://arxiv.org/abs/2611.17329v1",
+    "arxiv_id": "2611.17329v1",
+    "authors": [
+      "Zeynep Y\u0131ld\u0131z",
+      "Satchit Chatterji",
+      "Ercan Atam",
+      "Erman Acar"
+    ],
+    "published": "2026-11-12T18:59:37+00:00",
+    "summary": "Institutional portfolios operate under investment policy statements that specify asset allocation constraints, often conditioned on market regime information. Deep reinforcement learning has been shown to optimize financial performance but typically does not enforce rule compliance, making it unsuitable for real-world deployment. Existing neurosymbolic methods such as Probabilistic Logic Policy Gradient (PLPG) offer constraint-satisfying reinforcement learning (RL) via differentiable symbolic supervision but assume a finite, discrete action space. We present a PLPG-inspired continuous allocation method that estimates the probability that the policy's own executed action satisfies the investment mandate, using reparameterized Monte Carlo sampling, and adds it to the training objective. No post-hoc enforcement mechanism intercepts actions at inference time and compliance is learned by the agent. Audited directly on deterministic mean actions with no correction, the policy reduces violations of a six-rule regime-conditional mandate from 96-98% for unconstrained RL and 33.4% for a reward-penalty baseline to 4.8%, showing that a continuous-action neurosymbolic policy can substantially internalize a symbolic mandate."
+  },
+  {
+    "title": "Learning When Diffusion Language Models Should Regenerate",
+    "url": "http://arxiv.org/abs/2611.17320v1",
+    "arxiv_id": "2611.17320v1",
+    "authors": [
+      "Minhae Oh",
+      "Jeonghye Kim",
+      "Jinwoo Koo",
+      "Yeongoon Kim",
+      "Jimin Seo",
+      "Minsik Seol",
+      "Jungwoo Lee"
+    ],
+    "published": "2026-11-12T18:58:50+00:00",
+    "summary": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces it when the surrounding context remains fixed. These findings motivate DiVR , a verifier that predicts whether a partially generated sequence will reach a correct answer. Trained on the final correctness of the model's own trajectories, DiVR decides when to regenerate a block and which alternative to retain, while the generator itself stays unchanged. On five reasoning benchmarks with LLaDA-8B-Base, DiVR raises the average accuracy of the fine-tuned generator from 35.3\\% to 43.4\\% at $1.9$-$3.5\\times$ the cost of greedy decoding, above search baselines that use $3.8$-$7.4\\times$. It also complements post-training such as supervised fine-tuning and reinforcement learning, and generalizes to other generators, including Dream."
+  },
+  {
+    "title": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
+    "url": "http://arxiv.org/abs/2611.17314v1",
+    "arxiv_id": "2611.17314v1",
+    "authors": [
+      "Abigail L. Tenenbaum",
+      "R. Thomas McCoy"
+    ],
+    "published": "2026-11-12T18:57:49+00:00",
+    "summary": "Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a neural network can enable it to learn rapidly. We study neural networks that have been optimized via meta-learning, a technique that exposes a network to many related functions to facilitate its subsequent learning of similar functions. Prior work has shown that these meta-learned networks can learn new functions rapidly, but how they do so remains unclear. To investigate their internal structure, we take inspiration from classic work demonstrating additive relationships among the learned vectors that neural networks use to represent words (e.g., \"king\" minus \"man\" plus \"woman\" approximates \"queen\"). Analogously, we look for additive relationships among a meta-learned network's \"representations\" of different functions; when a meta-learned network rapidly learns to implement a specific function, all of its adapted parameter values can be concatenated into a single vector that we treat as representing the function. We find that such parameter vectors can be added and subtracted according to symbolic relationships among the functions they represent, yielding new parameter vectors that successfully represent the functions predicted by the corresponding symbolic manipulations: the networks specified by these artificially recombined vectors actually implement the intended functions without any direct training on them. Our results suggest that meta-learning can tune a network's starting point to organize subsequent learning along systematic, functionally meaningful trajectories through the space of possible parameter vectors, providing a geometric basis for realizing inductive biases in neural networks."
+  },
+  {
     "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
     "url": "http://arxiv.org/abs/2611.14515v1",
     "arxiv_id": "2611.14515v1",
