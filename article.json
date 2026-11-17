@@ -1,5 +1,95 @@
 [
   {
+    "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+    "url": "http://arxiv.org/abs/2611.21607v1",
+    "arxiv_id": "2611.21607v1",
+    "authors": [
+      "Ruixi Yu",
+      "Dairu Liu",
+      "Xuchuan Chen",
+      "Zekun Qi",
+      "Zekai Li",
+      "Zhuo Cao",
+      "Luyang Niu",
+      "Yingsheng Zhang",
+      "Sikai Liang",
+      "Ke Fan",
+      "He Wang",
+      "Li Yi"
+    ],
+    "published": "2026-11-16T18:59:37+00:00",
+    "summary": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but also as powerful representational foundations for efficient and generalizable robot policies."
+  },
+  {
+    "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+    "url": "http://arxiv.org/abs/2611.21605v1",
+    "arxiv_id": "2611.21605v1",
+    "authors": [
+      "Huawei Lin",
+      "Jinting Liu",
+      "Tongyan Wang",
+      "Xuyang Chen",
+      "Ruihua Shi",
+      "Zhichao Xu",
+      "Jiaxin Qin",
+      "Guoshenghui Zhao",
+      "Baijian Yang",
+      "Yingjie Victor Chen",
+      "Tan Yu",
+      "Weijie Zhao"
+    ],
+    "published": "2026-11-16T18:59:04+00:00",
+    "summary": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks."
+  },
+  {
+    "title": "FaceJev: Direct Visual Decisions for Face Forgery Detection",
+    "url": "http://arxiv.org/abs/2611.21604v1",
+    "arxiv_id": "2611.21604v1",
+    "authors": [
+      "Siran Peng",
+      "Tianshuo Zhang",
+      "Yibo Xue",
+      "Ajian Liu",
+      "Haoyuan Zhang",
+      "Weisong Zhao",
+      "Shuhuan Chen",
+      "Xiangyu Zhu",
+      "Zhen Lei"
+    ],
+    "published": "2026-11-16T18:59:04+00:00",
+    "summary": "Face forgery detection methods often perform well on seen manipulations but generalize poorly to unseen ones. Multimodal Large Language Models (MLLMs) can recognize facial parts and assess their visual plausibility. Existing MLLM-based methods typically express these judgments through textual explanations, but seldom treat individual part decisions as explicit learning targets. We present FaceJev, an MLLM-based method for face forgery detection through direct visual decisions. Following the Jev formulation, FaceJev answers eight independent questions about facial parts using a shared image encoding and reads anomaly probabilities from the native answer logits. A face is classified as forged if any part is predicted to be abnormal, directly linking the detection result to the part decisions. We construct PartForensics, a dataset of approximately 160k images with binary anomaly targets for the eight facial parts, to supervise these decisions. We further propose FS-GRPO, which optimizes each part decision through an exact reward comparison with its alternative, using both detection and part rewards. FaceJev outperforms the strongest baseline by 7.25 percentage points on unseen manipulations. Extensive ablation studies validate our design choices and the effectiveness of the main components."
+  },
+  {
+    "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
+    "url": "http://arxiv.org/abs/2611.21598v1",
+    "arxiv_id": "2611.21598v1",
+    "authors": [
+      "Blas Eugenio Vicco Zarate",
+      "Miguel Hern\u00e1n Vicco"
+    ],
+    "published": "2026-11-16T18:58:20+00:00",
+    "summary": "Continual reinforcement learning requires adaptation to changing conditions while preserving performance under previously encountered dynamics. It was investigated whether specialists generated by evolutionary search can provide a reusable memory when combined with environment detection and failure-driven search. The Evolutionary Neuroplastic Agent (ENA) evolves small neural networks without gradients, archives selected policies by detected dynamic regime, and retrieves them through Bayesian policy reuse. The architecture was evaluated in non-stationary CartPole and HalfCheetah environments. In the 30-replicate CartPole ablation, the complete architecture achieved a mean success rate of 83.2% across the five test environments. Among variants that learned the harder CartPole environments, the complete architecture showed the most consistent retention. A selection ablation also showed that the retrieval rule affected performance. In the evaluated sequences, ENA adapted more slowly than PPO on CartPole and achieved lower returns than SAC on HalfCheetah. The evidence concerns the complete architecture and does not isolate gradient-free optimization as the cause of retention or establish superiority over other continual-learning methods."
+  },
+  {
+    "title": "SADL: On the Demand-Supply Geometry of Representation Collapse",
+    "url": "http://arxiv.org/abs/2611.21596v1",
+    "arxiv_id": "2611.21596v1",
+    "authors": [
+      "Junhan Sun",
+      "Yigui Feng",
+      "Mingzhe Liu",
+      "Haoyan Xu",
+      "Lei Ye",
+      "Ziqi Han",
+      "Hanru Bai",
+      "Yanzhao Zhang",
+      "Hao Zhao",
+      "Guofeng Zhang"
+    ],
+    "published": "2026-11-16T18:58:03+00:00",
+    "summary": "In Joint-Embedding Predictive Architectures (JEPAs), a well-constrained projector output does not by itself prevent representation collapse. We find that, from initialization, the encoder representation is dominated by a component shared by different inputs. A batch-normalized projector removes this component, so regularization after the projector cannot correct it, and the differences between representations shrink until they collapse. We propose SADL (Supply And Demand Loss), which keeps the original training objective and constrains the encoder directly when needed. SADL compares the representation differences that the projector output demands with the differences the encoder can retain and pass on to the projector, and adds a constraint on the encoder only when supply falls short of demand. It works with different Demand Regularizers and introduces no auxiliary networks, additional trainable parameters, or architectural changes. In single-task and jointly trained four-task LeWorldModel (LeWM) and INTACT experiments, SADL lowers the collapse rate over ten random seeds from 50% to 0%. After one epoch of training, encoder effective rank is 3.4-6.4 times that of the corresponding baseline without SADL, and latent prediction error falls to 1/20-1/303 of it. Without additional tuning, SADL stays robust as its loss weight spans orders of magnitude, and with several Demand Regularizers INTACT exceeds 95% mean search-free control success. On four image datasets, SADL also consistently improves accuracy and stability across random seeds. These results show that matching the representation differences a regularizer demands with the differences the encoder can supply leads to faster and more stable representation learning in control and image classification."
+  },
+  {
     "title": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
     "url": "http://arxiv.org/abs/2611.18563v1",
     "arxiv_id": "2611.18563v1",
