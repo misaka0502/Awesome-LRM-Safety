@@ -1,5 +1,69 @@
 [
   {
+    "title": "On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals",
+    "url": "http://arxiv.org/abs/2611.27970v1",
+    "arxiv_id": "2611.27970v1",
+    "authors": [
+      "Javier Sanchis",
+      "\u00c1lvaro Navarro",
+      "Jorge Garc\u00eda-Carrasco",
+      "Tahar Kechadi",
+      "Juan Trujillo"
+    ],
+    "published": "2026-11-20T18:51:08+00:00",
+    "summary": "Attention-deficit/hyperactivity disorder is a neurodevelopmental condition that can affect attention, activity and impulse control. Electroencephalography (EEG) records brain activity as children and adolescents perform cognitive tasks. However, comparing features derived from these recordings requires consistent signal preparation, shared analysis windows and documented quality decisions. We curated 669 existing BALLADEER recordings from 156 participants across five task conditions so that researchers can compare seven EEG feature families on the same time intervals for each participant and task. The dataset links continuous signals to precomputed measurements from 115 feature definitions or templates and records the quality decisions made for each recording. Analyses must still account for repeated measurements within participants, residual artefacts and differences between acquisition systems. Technical validation covered signal integrity, numerical checks on feature estimators and completeness of the released files. In every task, the median proportion of recording time retained after preprocessing was 100%. To illustrate reuse, we report saved participant-held-out evaluations comparing XGBoost using all seven families on eight-second windows with a predictor based only on recruitment-group prevalence in the training fold. Recruitment-group discrimination was stronger in Robots than in the three Slackline conditions. These descriptive results from overlapping cohorts do not establish diagnostic validity. The dataset, curation software and aggregate results for the predictive example are publicly available."
+  },
+  {
+    "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+    "url": "http://arxiv.org/abs/2611.27967v1",
+    "arxiv_id": "2611.27967v1",
+    "authors": [
+      "Haoyang Wang",
+      "Weibo Gao",
+      "Zhengxiong Li",
+      "Lingfeng Tao"
+    ],
+    "published": "2026-11-20T18:48:12+00:00",
+    "summary": "Dexterous hand design demands repeated expert work across geometry, robot-description code, collision debugging, grasp initialization, and policy training. We present Task2Hand, a Skill: a specification package that turns a functional manipulation brief into a parameterized hand model and routes every candidate through cost-ordered contact, dynamics, and learning gates. Each gate returns a status and an evidence record; on failure, the Skill records the earliest blocker, revises one bounded parameter group, and reruns the cheaper gates. The agent generates, validates, and trains autonomously within declared bounds, and escalates trade-offs, plateaus, and conflicting evidence to a human who sets the next design direction. An evidence-driven design trajectory for bidirectional in-hand manipulation yielded SAGE Hand (Skill-Aware Generative Embodiment): four fingers, 16 actuated DoF, an integrated guiding palm, compact roots, cylindrical tips, and a collision-cleared opposable thumb. Under a matched training protocol, SAGE Hand reaches 45.6% task success on a hexagonal prism against 37.3% for the LEAP hand, and 70.8% on a bicolor cylinder against 51.6%. Dense simulated tactile input more than halves the cylinder drop rate. In a controlled iteration study, the Skill path preserves capture at 164/165 trials while the path without the Skill degrades to 14/165, confirming that the gates act as a regression guard during refinement. Accepted candidates pack with URDF/MJCF, metrics, checkpoints, and a provenance manifest."
+  },
+  {
+    "title": "Real-time neuromorphic audio and vision perception for autonomous robotic applications: Integration and experimental evaluation on a rover platform",
+    "url": "http://arxiv.org/abs/2611.27953v1",
+    "arxiv_id": "2611.27953v1",
+    "authors": [
+      "Guillem Fustier-Castillo",
+      "Ruben Ribes-Serrano",
+      "Javier Naranjo-Alcazar",
+      "Vicent Ortiz-Castello",
+      "Pedro Zuccarello"
+    ],
+    "published": "2026-11-20T18:27:26+00:00",
+    "summary": "Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for mobile robots, where perception must run continuously under tight latency and energy constraints. However, most neuromorphic solutions are still evaluated offline or on isolated benchmarks, and their integration into complete robotic systems remains largely unexplored. In this technical report, a four-wheel rover platform is presented that combines three real-time perception pipelines: a classical audio tagging pipeline based on Pretrained Audio Neural Networks (PANNs) running on an NVIDIA Jetson GPU, a neuromorphic audio pipeline in which a spiking neural network (SNN) is deployed on the SynSense Xylo Audio~2 chip, and a neuromorphic vision pipeline in which events from an event-based camera are processed by the SpikeYOLO spiking detector for traffic cone detection. On the Xylo chip, the whole processing chain---from the microphone signal to the classification of low- and high-pitched sounds---is performed on-chip, while the host only configures the device and reads the output neurons. All models are deployed as containerised services and integrated through ROS~2, and a configurable action dispatcher maps the detected classes to robot behaviours, closing the loop between perception and actuation. The platform is demonstrated in a proof-of-concept scenario in which the robot reacts to sound classes detected by both audio pipelines and detects traffic cones with the event camera, showing the feasibility of integrating neuromorphic hardware into a multimodal robotic platform operating in real time."
+  },
+  {
+    "title": "What Must a Model Tell a Planner? Outcome Interfaces for Risk-Aware Planning After Robot Damage",
+    "url": "http://arxiv.org/abs/2611.27939v1",
+    "arxiv_id": "2611.27939v1",
+    "authors": [
+      "Hassan Iqbal",
+      "Krishna Kumar"
+    ],
+    "published": "2026-11-20T18:12:49+00:00",
+    "summary": "When a robot is damaged, it must decide which routes it can still afford, and the amount of risk it may accept can change from one mission to the next. We argue that whether a learned model helps such a robot depends on its decision interface, that is, on what the model hands to the planner. A decision policy tells the planner what to do, whereas an outcome model, a kind of world model, predicts the consequences of each route. We study simulated Unitree Go2 quadrupeds and H1 humanoids with weakened motors, added payloads, or reduced foot friction. We compare four interfaces. The first is a decision policy, and the second is the same policy trained with fixed penalties for infeasible routes. The third is an outcome model that predicts the feasibility and travel time of each route. The fourth, which we call a capability contract, is an outcome model that predicts the chance of success and the travel time of the robot on each terrain and composes them along a route. All share the same collected experience, matched tuning and risk calibration, and an uncertainty guard. Two comparatively low-risk probes let the capability contract rank hazardous terrains about as well as four new trials on every hazard. At a calibrated 5% limit on selecting empirically infeasible routes, outcome models cut declined missions from about 32% to 7-8% on Go2 and from 57% to 35-36% on H1 compared with the plain policy. Fixed penalties narrow this gap, but the best penalty changes with the risk target. Predicting outcomes lets the planner preserve missions by changing routes as risk requirements tighten."
+  },
+  {
+    "title": "Interactive Semi-Parametric On-Track Learning for Vehicle Dynamics in Autonomous Racing",
+    "url": "http://arxiv.org/abs/2611.27932v1",
+    "arxiv_id": "2611.27932v1",
+    "authors": [
+      "Jungbin Kim",
+      "Youngim Nam",
+      "Cheolhyeon Kwon"
+    ],
+    "published": "2026-11-20T18:08:14+00:00",
+    "summary": "Autonomous racing requires an accurate vehicle dynamics model near the limits of handling, yet a mismatch between the nominal and actual dynamics inevitably remains. To reduce this mismatch, existing methods learn from on-track data, i.e., data collected while the vehicle drives on the track under racing conditions, by adapting the physical parameters of the nominal model or by learning a residual that captures the remaining mismatch. However, these on-track learning methods typically handle either the physical parameters or the residual separately, which restricts their ability to resolve the mismatch. To address this limitation, we propose an interactive semi-parametric learning framework that learns both the physical parameters and the residual under a single shared prediction-error objective. Since updating one changes the learning target of the other, they are recursively updated in turn, each guided by the other's latest update. Each update is then accepted only if it does not increase the shared objective, so that the objective is guaranteed to be non-increasing and convergent over the recursion. Numerical simulations and hardware experiments show that the proposed framework outperforms the baselines. Compared with the nominal model, it reduces the one-step prediction errors of lateral velocity and yaw rate by 90.0% and 81.6% in simulation and by 54.0% and 59.4% on hardware."
+  },
+  {
     "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
     "url": "http://arxiv.org/abs/2611.26627v1",
     "arxiv_id": "2611.26627v1",
